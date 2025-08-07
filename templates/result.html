@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABG Interpretation Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <h1>ABG Interpretation Result – RAPHA AI</h1>
+  </header>
+
+  <section class="result">
+    <ul>
+      <li><strong>pH:</strong> {{ ph }}</li>
+      <li><strong>pCO₂:</strong> {{ pco2 }} mmHg</li>
+      <li><strong>HCO₃⁻:</strong> {{ hco3 }} mEq/L</li>
+      <li><strong>Na⁺:</strong> {{ na }}</li>
+      <li><strong>Cl⁻:</strong> {{ cl }}</li>
+      <li><strong>Lactate:</strong> {{ lactate }}</li>
+      <li><strong>PaO₂:</strong> {{ po2 }}</li>
+      <li><strong>FiO₂:</strong> {{ fio2 }}</li>
+      <li><strong>Primary Disorder:</strong> {{ disorder }}</li>
+      <li><strong>Primary Status:</strong> {{ primary }}</li>
+      <li><strong>Anion Gap:</strong> {{ anion_gap }}</li>
+      <li><strong>Delta Ratio:</strong> {{ delta_ratio }}</li>
+      <li><strong>A-a Gradient:</strong> {{ aagrad }}</li>
+      <li><strong>Oxygenation:</strong> {{ oxygen_status }}</li>
+    </ul>
+    <a href="/" class="cta-button">Interpret Another ABG</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PARABOX. All rights reserved.</p>
+  </footer>
+</body>
+</html>
