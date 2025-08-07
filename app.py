@@ -1,82 +1,98 @@
-from flask import Flask, request, render_template
-
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
-def interpret_abg(pH, pCO2, HCO3):
-    result = {
-        "Primary Disorder": "",
-        "Compensation": "",
-        "Likely Cause": ""
-    }
-
-    if 7.35 <= pH <= 7.45:
-        if 35 <= pCO2 <= 45 and 22 <= HCO3 <= 26:
-            result["Primary Disorder"] = "Normal Acid-Base Status"
-        elif pCO2 > 45 and HCO3 > 26:
-            result["Primary Disorder"] = "Compensated Respiratory Acidosis"
-        elif pCO2 < 35 and HCO3 < 22:
-            result["Primary Disorder"] = "Compensated Respiratory Alkalosis"
-        elif HCO3 > 26 and pCO2 > 45:
-            result["Primary Disorder"] = "Compensated Metabolic Alkalosis"
-        elif HCO3 < 22 and pCO2 < 35:
-            result["Primary Disorder"] = "Compensated Metabolic Acidosis"
-        else:
-            result["Primary Disorder"] = "Mixed or Compensated Disorder"
-    elif pH < 7.35:
-        if pCO2 > 45:
-            if HCO3 >= 22:
-                result["Primary Disorder"] = "Uncompensated Respiratory Acidosis"
-            else:
-                result["Primary Disorder"] = "Mixed Respiratory and Metabolic Acidosis"
-        elif HCO3 < 22:
-            if pCO2 <= 45:
-                result["Primary Disorder"] = "Uncompensated Metabolic Acidosis"
-            else:
-                result["Primary Disorder"] = "Mixed Disorder"
-        result["Compensation"] = "Uncompensated or Partial"
-    elif pH > 7.45:
-        if pCO2 < 35:
-            if HCO3 <= 26:
-                result["Primary Disorder"] = "Uncompensated Respiratory Alkalosis"
-            else:
-                result["Primary Disorder"] = "Mixed Alkalosis"
-        elif HCO3 > 26:
-            if pCO2 >= 35:
-                result["Primary Disorder"] = "Uncompensated Metabolic Alkalosis"
-            else:
-                result["Primary Disorder"] = "Mixed Alkalosis"
-        result["Compensation"] = "Uncompensated or Partial"
-
-    disorder = result["Primary Disorder"]
-    if "Metabolic Acidosis" in disorder:
-        result["Likely Cause"] = "Possible causes: DKA, Renal Failure, Lactic Acidosis, Diarrhea"
-    elif "Metabolic Alkalosis" in disorder:
-        result["Likely Cause"] = "Possible causes: Vomiting, Diuretics, Hypokalemia"
-    elif "Respiratory Acidosis" in disorder:
-        result["Likely Cause"] = "Possible causes: COPD, Drug Overdose, Airway Obstruction"
-    elif "Respiratory Alkalosis" in disorder:
-        result["Likely Cause"] = "Possible causes: Anxiety, Pain, Fever, Hyperventilation"
-
-    return result
-
 @app.route('/')
-def form():
-    return render_template("try-abg.html")
+def home():
+    return render_template('index.html')
 
-@app.route('/interpret', methods=['POST'])
-def interpret():
+@app.route('/result', methods=['POST'])
+def result():
     try:
-        pH = float(request.form['ph'])
-        pCO2 = float(request.form['pco2'])
-        HCO3 = float(request.form['hco3'])
+        ph = float(request.form['ph'])
+        pco2 = float(request.form['pco2'])
+        hco3 = float(request.form['hco3'])
+        na = float(request.form.get('na', 0))
+        cl = float(request.form.get('cl', 0))
+        lactate = float(request.form.get('lactate', 0))
+        po2 = float(request.form.get('po2', 0))
+        fio2 = float(request.form.get('fio2', 0.21))
 
-        result = interpret_abg(pH, pCO2, HCO3)
-        return render_template("try-abg.html", result=result)
+        # Primary disorder
+        if ph < 7.35:
+            primary = "Acidosis"
+        elif ph > 7.45:
+            primary = "Alkalosis"
+        else:
+            primary = "Normal"
+
+        # Determine if metabolic or respiratory
+        if primary == "Acidosis":
+            if hco3 < 22:
+                disorder = "Metabolic Acidosis"
+            elif pco2 > 45:
+                disorder = "Respiratory Acidosis"
+            else:
+                disorder = "Mixed or Compensated"
+        elif primary == "Alkalosis":
+            if hco3 > 26:
+                disorder = "Metabolic Alkalosis"
+            elif pco2 < 35:
+                disorder = "Respiratory Alkalosis"
+            else:
+                disorder = "Mixed or Compensated"
+        else:
+            disorder = "Normal"
+
+        # Compensation status (simple version)
+        if disorder == "Metabolic Acidosis":
+            expected_pco2 = 1.5 * hco3 + 8
+        elif disorder == "Metabolic Alkalosis":
+            expected_pco2 = 0.7 * hco3 + 20
+        elif disorder == "Respiratory Acidosis":
+            expected_hco3 = 24 + 0.35 * (pco2 - 40)
+        elif disorder == "Respiratory Alkalosis":
+            expected_hco3 = 24 - 0.25 * (40 - pco2)
+        else:
+            expected_pco2 = expected_hco3 = None
+
+        # Anion Gap
+        anion_gap = na - (cl + hco3)
+
+        # Delta Ratio
+        delta_ratio = (anion_gap - 12) / (24 - hco3) if hco3 < 24 else 0
+
+        # A-a gradient (Alveolar-arterial gradient)
+        pao2 = fio2 * (760 - 47) - (pco2 / 0.8)
+        aagrad = pao2 - po2
+
+        # Oxygenation status
+        if po2 / fio2 < 300:
+            oxygen_status = "Impaired oxygenation"
+        else:
+            oxygen_status = "Normal oxygenation"
+
+        return render_template('result.html',
+                               ph=ph,
+                               pco2=pco2,
+                               hco3=hco3,
+                               na=na,
+                               cl=cl,
+                               lactate=lactate,
+                               po2=po2,
+                               fio2=fio2,
+                               disorder=disorder,
+                               anion_gap=round(anion_gap, 2),
+                               delta_ratio=round(delta_ratio, 2),
+                               aagrad=round(aagrad, 2),
+                               oxygen_status=oxygen_status,
+                               primary=primary)
+
     except Exception as e:
-        return render_template("try-abg.html", result={"error": str(e)})
+        return f"Error: {e}"
 
-if __name__ == '__main__':
- import os
+
+  
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
