@@ -56,7 +56,7 @@ Commit and push after every section file.
 | 3.3 MCQ practice & exam strategy | 50 | done |
 | 3.4 Long & short answer writing | 30 | done |
 | 3.5 Viva, OSCE & practical exams | 50 | done |
-| 3.6 Clinical reasoning & differential diagnosis | 60 | pending |
+| 3.6 Clinical reasoning & differential diagnosis | 60 | done |
 | 3.7 Memory aids & high-yield summaries | 30 | pending |
 
 ## Sparse-page check (run after rendering)

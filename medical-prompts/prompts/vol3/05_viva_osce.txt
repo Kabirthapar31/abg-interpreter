@@ -137,7 +137,7 @@ tips:
 - Know your sample-size calculation and every test you used. They're asked in almost every defence.
 - Admit limitations before the examiner points them out. It shows maturity.
 - Rehearse the "how would you do it differently?" answer. It's almost always asked.
-next: stats-viva-drill
+next: mock-viva-drill
 
 @@ M | spotters-master | Spotters and table viva: instruments, specimens, images, drugs
 aud: MBBS Student / PG Resident
@@ -395,7 +395,7 @@ rules: Follow standard technique and current guidelines (e.g. resuscitation guid
 output: The steps, the critical steps, the errors, then the checklist. Keep it concise, and list anything you were unsure about at the end so I can check it.
 tip: Say your safety checks aloud: "confirming patient identity", "checking the expiry date". Examiners can't mark what they don't see.
 try: Procedure: urinary catheterisation in a male patient.
-next: skills-teaching
+next: examination-technique
 
 @@ S | data-station | Data-interpretation station
 aud: MBBS Student / PG Resident / OSCE candidate

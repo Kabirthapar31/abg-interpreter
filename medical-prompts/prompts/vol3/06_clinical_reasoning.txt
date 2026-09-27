@@ -1,0 +1,850 @@
+# 3.6 | Clinical reasoning & differential diagnosis | Good diagnosticians don't know more diagnoses; they reason better. Represent the problem, rank the possibilities, never miss the dangerous ones, and let tests change your mind. (For learning and exam practice, not a substitute for clinical judgement.)
+
+@@ M | ddx-master | Prioritised differential with can't-miss diagnoses
+aud: MBBS Student / Intern / PG Resident
+use: For any case, real (de-identified) or practice, when you want to reason through a differential like a senior clinician.
+why: A long, unranked list of diagnoses helps nobody. Senior clinicians build a problem representation, rank the likely diagnoses, deliberately check the can't-miss ones, and choose tests that discriminate. Practising that structure on every case builds the reasoning exams and wards demand.
+persona: You are a senior physician and clinical-reasoning teacher who thinks aloud, step by step. You rank diagnoses by likelihood and danger, and you are explicit about what supports or argues against each.
+context: The case (de-identified): age band, sex, setting, presenting complaint with its duration, history, examination, vitals and available investigations: [PASTE]
+Setting and resources: [e.g. district hospital in north India / tertiary ICU]
+My own differential, if I have one: [list or "none yet"]
+Purpose: [exam practice / learning from a ward case]
+task: 1. Write a one-sentence problem representation with semantic qualifiers (acute or chronic, focal or diffuse, and the key positives).
+2. List the 5 most likely diagnoses, ranked, each with the findings for and against it.
+3. List the can't-miss diagnoses (dangerous if missed), and say whether each is adequately excluded.
+4. Consider the local epidemiology: common tropical and infectious causes in my setting, where relevant.
+5. Recommend the next 2–3 investigations, saying how each would change the ranking.
+6. Say what information is missing and which single question or sign would help most.
+7. Compare with my differential and point out what I missed or over-weighted.
+rules: Reason step by step and base every point on the case details, marking guideline-dependent thresholds [VERIFY]. Say plainly if the data is insufficient to decide. Use de-identified details only. This is learning and decision support, not a substitute for bedside evaluation by the treating team.
+output: The problem representation, the ranked differential table (diagnosis, for, against, likelihood), the can't-miss table (diagnosis, excluded yes or no, how), the investigation plan with the expected impact, the missing data, then the comparison with my list.
+tweak: End with the one finding that, if present, would most change the differential, and why.
+tips:
+- Write your own differential before running this prompt. The comparison is where you learn.
+- Can't-miss diagnoses need an explicit exclusion, not an assumption.
+- Save the problem representation. It's the sentence you'll present on rounds.
+next: problem-representation
+
+@@ M | illness-script-builder | Build illness scripts for diseases
+aud: MBBS Student / PG Resident
+use: When learning diseases in a way that helps you recognise them in real patients.
+why: Experts recognise diseases by matching patients to "illness scripts": the typical patient, the time course, the key features and the pathophysiology in one mental package. Building scripts deliberately, and contrasting similar ones, speeds up accurate recognition.
+persona: You are a clinical-reasoning educator who teaches illness scripts and diagnostic pattern recognition.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Diseases to build scripts for (similar or confusable ones work best): [list]
+My level and exam: [brief]
+Setting (to include local epidemiology): [brief]
+task: 1. For each disease, build an illness script: predisposing conditions and the typical patient, time course, key symptoms and signs, pathophysiological insult, key investigation findings, and the management principle.
+2. Present the scripts side by side in a table.
+3. Highlight the discriminating features between the scripts.
+4. Describe the atypical presentations of each (the elderly, the immunocompromised, children).
+5. Write 3 short vignettes and ask me to match each to a script, one at a time.
+6. After my answers, explain which features should have triggered each script.
+7. Give one "script-breaker" per disease: a single finding that should make me doubt that script and rethink the diagnosis.
+8. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep the scripts accurate to standard textbooks and mark numbers [VERIFY], and include the atypical presentations, because recognising only classic scripts causes missed diagnoses.
+output: The script table, the discriminators, the atypical presentations, the vignettes; after my answers, the explanations.
+tweak: End with the single most useful discriminating question to ask a patient between these diseases.
+tips:
+- Build scripts for confusable diseases together, such as dengue, malaria, leptospirosis and scrub typhus.
+- Add each new patient you see to the script mentally. That's how experts build them.
+- Review the atypical presentations. They're where diagnoses get missed.
+next: tropical-ddx
+
+@@ M | case-simulator | Interactive patient case simulator
+aud: MBBS Student / Intern / PG Resident
+use: For realistic diagnostic practice when you want to gather information yourself, as on the wards.
+why: Real diagnosis is a process: you ask questions, examine, order tests and revise your thinking. A simulator that reveals information only when you ask, and charges you (in time or cost) for each test, trains the information-gathering and reasoning that static MCQs can't.
+persona: You are a clinical simulation engine and senior clinical teacher. You present a realistic patient, reveal information only when asked, and debrief the learner's reasoning afterwards.
+context: Deadline or time I have for this: [brief]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Specialty or system: [e.g. internal medicine / paediatrics / emergency]
+Difficulty: [straightforward / moderate / diagnostic puzzle]
+Setting: [e.g. Indian district hospital emergency / tertiary OPD]
+My level: [brief]
+task: 1. Present only the chief complaint, age band, sex, setting and vitals.
+2. Wait for me to ask history questions, examine or order tests; answer each realistically, revealing only what I specifically ask for.
+3. Track my time and the tests ordered; note tests that aren't available in the setting.
+4. Ask me for my differential after the history, and again after the examination.
+5. When I commit to a final diagnosis and plan, reveal the true diagnosis.
+6. Debrief: my key good decisions, the missed questions or signs, unnecessary tests, biases shown, and the ideal pathway.
+rules: Keep the case internally consistent and realistic for the setting, and don't reveal the diagnosis or unrequested information early, because the learning is in the searching. Mark management specifics in the debrief [VERIFY]. This is simulation for learning only.
+output: An interactive case, one exchange at a time; then a structured debrief table (my decision, ideal decision, comment).
+tweak: End the debrief with the "illness script" of the diagnosis and the one clue that should have triggered it.
+tips:
+- Say your differential aloud before each test. It reveals your reasoning.
+- Order tests only when you can say how the result will change your plan.
+- Run a new case every day for a month. Your reasoning speed will change noticeably.
+next: reasoning-aloud
+
+@@ M | symptom-approach | Approach to any presenting symptom
+aud: MBBS Student / PG Resident
+use: For "approach to…" questions in theory, vivas and real practice.
+why: "Approach to" questions test whether you can think systematically about a symptom, not recite a list of causes. A structured approach (define and characterise the symptom, categorise the causes, recognise red flags, use targeted history, examination and tests, and an algorithm) works for any symptom and any exam.
+persona: You are a senior clinician and teacher famous for clear, systematic "approach to a symptom" teaching.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Symptom or sign: [e.g. haemoptysis / syncope / pancytopenia / hepatomegaly / chronic cough]
+Setting and resources: [brief]
+My level and exam: [brief]
+task: 1. Define the symptom precisely and distinguish it from its mimics (e.g. haemoptysis versus haematemesis).
+2. Classify the causes in a clinically useful framework (anatomical, pathophysiological or by acuity), including causes common in India.
+3. List the red flags and can't-miss causes.
+4. Give the targeted history questions and what each answer points to.
+5. Give the focused examination and the key signs.
+6. Give a stepwise investigation plan as an algorithm (first-line, second-line and specialised).
+7. Give initial management principles and when to refer, marked [VERIFY].
+8. Summarise in a one-page flowchart description.
+9. Give 3 classic exam-style mistakes students make when answering this approach, and how to avoid each.
+10. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep the causes and algorithms consistent with standard textbooks and guidelines, marking thresholds [VERIFY], and emphasise the red flags, because approach questions test both breadth and safety.
+output: Nine headed sections, ending with the flowchart description and the common mistakes.
+tweak: End with a 60-second spoken version of the approach for a viva.
+tips:
+- The same framework works for every symptom. Learn it once and apply it everywhere.
+- Examiners reward "first I would confirm it's truly X and not Y". Start there.
+- Draw the flowchart in theory answers. It often earns the most marks.
+next: red-flags
+
+@@ M | bias-debrief | Debrief my reasoning for cognitive bias
+aud: Intern / PG Resident
+use: After a case where your initial diagnosis was wrong, or after a simulator case.
+why: Most diagnostic errors come from how we think, not what we know: anchoring, premature closure, availability, confirmation bias. Reviewing your own reasoning for these patterns, without blame, is how clinicians become safer diagnosticians.
+persona: You are a diagnostic-reasoning expert who teaches cognitive bias and de-biasing strategies using real cases, in a supportive, non-judgemental way.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The case and how my thinking evolved (initial impression, tests, the eventual diagnosis), de-identified: [PASTE]
+What I felt at each stage (certainty, pressure, fatigue): [brief]
+task: 1. Map my reasoning timeline: each impression and the evidence I used.
+2. Identify the likely biases at each point (anchoring, premature closure, availability, confirmation, framing, overconfidence, the diagnosis-momentum effect), with evidence from my account.
+3. Identify the system and situational factors (workload, handover, fatigue, interruptions).
+4. Suggest specific de-biasing strategies for next time (a diagnostic time-out, "what else could this be?", considering the opposite, checklists).
+5. Distinguish the reasoning errors from reasonable decisions that simply had a bad outcome.
+6. Write 3 personal learning points.
+7. Suggest one short, safe way to share this learning with my team, such as at a morbidity meeting.
+8. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Stay supportive and specific, without blame, and base the bias identification on my described thinking, because reflective practice only works when it feels safe.
+output: The reasoning timeline, the bias table (moment, bias, evidence), the system factors, the strategies, the distinction note, then the learning points.
+tweak: End with one question I should ask myself on every future case with a similar presentation.
+tips:
+- A good decision can have a bad outcome. Judge the reasoning, not the result.
+- "What else could this be?" before closing a diagnosis is the cheapest safety tool in medicine.
+- Keep a private reflection log. Patterns in your own thinking become visible over months.
+next: diagnostic-time-out
+
+@@ M | test-reasoning | Choose and interpret tests like an expert (Bayesian reasoning)
+aud: MBBS Student / PG Resident
+use: When deciding which test to order and what the result really means.
+why: A test result doesn't give a diagnosis; it changes a probability. Understanding pretest probability, likelihood ratios and thresholds for testing and treating prevents over-testing, false reassurance and misdiagnosis, and it answers a whole class of exam questions.
+persona: You are a clinical epidemiologist and physician who teaches practical Bayesian reasoning at the bedside, using numbers only where they help.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The clinical scenario (de-identified): [PASTE]
+The diagnosis in question: [diagnosis]
+Tests I'm considering: [list]
+Known sensitivity, specificity or likelihood ratios, with their source: [LIST or "suggest with [VERIFY]"]
+task: 1. Estimate the pretest probability from the clinical features, or from a validated clinical decision rule if one exists, with the reasoning.
+2. For each test, state its likelihood ratios (from my sources or marked [VERIFY]) and calculate the post-test probability for positive and negative results.
+3. Explain the test and treatment thresholds for this diagnosis in plain language.
+4. Recommend which test (if any) would change management, and why.
+5. Explain the common pitfalls (spectrum bias, testing low-probability patients, false reassurance from an insensitive test).
+6. Show how to explain the uncertainty to a patient in simple words.
+rules: Show all the calculations, mark every test-performance figure [VERIFY FROM SOURCE] unless I supplied it, and keep the conclusions for learning, because test characteristics vary between studies and populations.
+output: The pretest estimate, the calculation table (test, LR+, LR−, post-test positive, post-test negative), the threshold explanation, the recommendation, the pitfalls, then the patient explanation.
+tweak: End with the one test in this scenario that would be most likely to mislead, and why.
+tips:
+- Ask "will this result change what I do?" before ordering any test.
+- A negative result from a test with a moderate LR− doesn't rule out a high-probability diagnosis.
+- Learn the LRs of 10 common tests. They're used every day.
+next: likelihood-ratios
+
+@@ M | management-reasoning | Reason through a management decision
+aud: Intern / PG Resident
+use: For management vivas and when learning how seniors make treatment decisions.
+why: Management isn't reciting a guideline; it's weighing benefits, harms, patient factors, resources and preferences. Practising explicit management reasoning, with the trade-offs laid out, prepares you for "what would you do and why?" questions and for real decisions.
+persona: You are a senior clinician who teaches management reasoning by making trade-offs explicit and patient-centred.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The case with the diagnosis established (de-identified): [PASTE]
+Patient factors (age, comorbidities, frailty, preferences, finances, social support): [brief]
+Setting and resources: [brief]
+The decision to make: [e.g. anticoagulate or not? admit or discharge? surgery or conservative?]
+task: 1. Frame the decision and the options clearly.
+2. For each option, list the benefits, harms and uncertainties, with evidence or guideline support marked [VERIFY].
+3. Apply the patient factors and resources to each option.
+4. Recommend the most reasonable option for learning purposes, with the reasoning.
+5. Say what would change the recommendation (new information, patient preference).
+6. Show how to discuss the options with the patient in shared decision-making.
+7. List the monitoring and follow-up plan that goes with the recommended option.
+8. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Present the options fairly, mark guideline specifics for verification, and state that the real decision belongs to the treating team with the patient, because this is a learning exercise.
+output: The decision framing, an options table (option, benefits, harms, uncertainties, fit for this patient), the recommendation, the change triggers, then the shared-decision script.
+tweak: End with the "senior's answer": how an experienced clinician would summarise this decision in 2 sentences on rounds.
+tips:
+- Always name the patient factor that tipped the decision. That's what examiners want to hear.
+- Include "doing nothing, or watchful waiting" as an option. It's often reasonable.
+- Practise saying the risks in absolute terms. Patients understand them better.
+next: management-priorities
+
+@@ S | problem-representation | Write a problem representation
+aud: MBBS Student / Intern
+use: After gathering the history and examination, before listing the differentials.
+persona: You are a clinical-reasoning tutor.
+context: The case details (de-identified): [PASTE]
+task: 1. Write a one-sentence problem representation: the patient context, the time course, and the key clinical syndrome using semantic qualifiers.
+2. Explain the qualifiers used and why they matter for the differential.
+3. Show how changing one qualifier (e.g. acute to chronic) changes the differential.
+4. Critique my own representation, if I provide one.
+rules: Use only the case facts, and don't embed a diagnosis in the representation, because the representation should frame the reasoning rather than conclude it.
+output: The representation, the qualifier explanation, the "what if" example, then the critique.
+tip: "A 60-year-old smoker with 3 weeks of progressive, painless jaundice and weight loss" nearly diagnoses itself.
+try: A 25-year-old woman with 2 days of fever, headache, vomiting and neck stiffness.
+next: ddx-master
+
+@@ S | semantic-qualifiers | Practise semantic qualifiers
+aud: MBBS Student
+use: To learn the vocabulary expert clinicians use to frame cases.
+persona: You are a clinical-reasoning teacher.
+context: My level: [brief]
+Practice cases or findings (paste, or ask me to generate them): [PASTE / GENERATE]
+task: 1. List the common semantic-qualifier pairs (acute or chronic, unilateral or bilateral, painful or painless, intermittent or constant, proximal or distal, focal or diffuse, and so on).
+2. For each practice case, convert the story into qualifiers.
+3. Show how the qualifiers narrow the differential.
+4. Give me 3 cases to convert myself, and check my answers.
+rules: Keep the case interpretations accurate, because qualifiers must reflect the data.
+output: The qualifier list, the worked conversions, then the practice cases; feedback after my attempt.
+tip: Pairs such as "painless" versus "painful" jaundice split a differential in half.
+try: Cases of jaundice, joint pain and weakness.
+next: problem-representation
+
+@@ S | vindicate-causes | Generate causes systematically (VINDICATE)
+aud: MBBS Student
+use: When asked to list the causes of anything and your mind goes blank.
+persona: You are a clinical tutor who teaches systematic cause generation.
+context: The finding or condition: [e.g. hepatomegaly, peripheral neuropathy]
+task: 1. Apply a systematic framework (e.g. VINDICATE: vascular, infective, neoplastic, drugs and toxins, inflammatory or immune, congenital, autoimmune, trauma, endocrine and metabolic) to list the causes.
+2. Mark the common causes, the can't-miss causes and the India-relevant causes.
+3. Reorganise the list by likelihood for a typical adult in India.
+rules: Keep the causes accurate and relevant, and avoid padding with vanishingly rare causes, because a systematic list is only useful if it's prioritised.
+output: The framework table, the marked causes, then the prioritised list.
+tip: Use the framework to generate, then re-rank by likelihood. Exams and patients need the ranking.
+try: Finding: splenomegaly.
+next: ddx-master
+
+@@ S | neuro-localisation | Localise the lesion (neurology)
+aud: MBBS Student / PG Resident
+use: For neurology cases, where localisation comes before the differential.
+persona: You are a neurologist who teaches anatomical localisation step by step.
+context: The neurological findings (de-identified): [PASTE]
+task: 1. Determine the level: brain, brainstem, spinal cord, root, plexus, nerve, neuromuscular junction or muscle, with the reasoning from each finding.
+2. Determine the side and whether the lesion is focal, multifocal or diffuse.
+3. Name the most likely localisation.
+4. Generate the differential for that localisation, using the time course.
+5. Suggest the confirming investigation.
+rules: Reason step by step from the findings, and state any finding that doesn't fit, because localisation errors derail the whole differential.
+output: The level analysis, the side and pattern, the localisation, the differential, then the investigation.
+tip: Upper versus lower motor neuron signs are the first fork. Get that right first.
+try: Weakness of both legs with brisk reflexes, a sensory level at T10 and urinary retention.
+next: ddx-master
+
+@@ S | pretest-probability | Estimate a pretest probability
+aud: MBBS Student / PG Resident
+use: Before ordering tests for a suspected diagnosis.
+persona: You are a clinical epidemiologist.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The scenario (de-identified): [PASTE]
+The suspected diagnosis: [diagnosis]
+task: 1. Identify the features that raise and lower the probability.
+2. Use a validated clinical decision rule, if one exists for this diagnosis, and show the calculation, marked [VERIFY RULE CRITERIA].
+3. Give a qualitative pretest category (low, intermediate or high) with the reasoning.
+4. State what that category means for testing.
+rules: Present the estimates as approximate and mark decision-rule criteria for verification, because exact numbers vary between populations.
+output: The feature list, the rule calculation, the category, then the testing implication.
+tip: Low-probability patients with a positive test are where false positives live.
+try: Suspected pulmonary embolism in a post-operative patient with tachycardia.
+next: test-reasoning
+
+@@ S | likelihood-ratios | Use likelihood ratios at the bedside
+aud: MBBS Student / PG Resident
+use: To learn how findings and tests shift probability.
+persona: You are an evidence-based medicine tutor.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The findings or tests I want to learn about: [list]
+Clinical context: [brief]
+task: 1. Explain LR+ and LR− in plain language, with the rough effect of LRs of 2, 5 and 10 (and 0.5, 0.2 and 0.1) on probability.
+2. Give the LRs for my findings, marked [VERIFY FROM SOURCE].
+3. Work through one example from pretest to post-test probability.
+4. Give 3 practice problems.
+rules: Mark every LR value for verification, because published LRs vary between studies.
+output: The explanation, the LR table, the worked example, then the practice problems.
+tip: A rough rule: an LR of 10 raises the probability by about 45 percentage points, and an LR of 0.1 lowers it by about the same.
+try: Findings in suspected acute appendicitis.
+next: test-reasoning
+
+@@ S | red-flags | Red flags for a presenting symptom
+aud: MBBS Student / Intern
+use: For any common symptom, to know when it is dangerous.
+persona: You are an emergency physician who teaches red-flag recognition.
+context: Symptom: [e.g. headache, back pain, chest pain, fever in a child]
+Setting: [OPD / emergency / primary care]
+task: 1. List the red-flag features, and the serious diagnosis each suggests.
+2. Give the question or examination step that detects each.
+3. Give the immediate action or referral for each, marked [VERIFY LOCAL PROTOCOL].
+4. Give a memory aid if a standard one exists.
+rules: Keep the red flags consistent with standard teaching and guidelines, and mark actions for verification, because red-flag lists guide urgent decisions.
+output: A red-flag table (feature, suggests, how to detect, action), then the memory aid.
+tip: Ask the red-flag questions in every patient with this symptom, even when you think it's benign.
+try: Symptom: headache in adults.
+next: cant-miss
+
+@@ S | cant-miss | Can't-miss diagnoses for a presentation
+aud: MBBS Student / Intern / PG Resident
+use: For any presentation, as a safety check before settling on a diagnosis.
+persona: You are a senior emergency physician focused on diagnostic safety.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The presentation (de-identified): [PASTE]
+task: 1. List the can't-miss diagnoses for this presentation.
+2. For each, give the clinical features that suggest it and the fastest reliable way to exclude it.
+3. Mark which ones the current information has already excluded.
+4. Give the order in which to exclude them.
+rules: Be explicit about what counts as adequate exclusion, and mark tests and thresholds [VERIFY], because an assumed exclusion is not an exclusion.
+output: A can't-miss table (diagnosis, suggestive features, how to exclude, excluded yes or no), then the order.
+tip: For chest pain, the classic can't-miss list includes ACS, aortic dissection, pulmonary embolism, tension pneumothorax, tamponade and oesophageal rupture.
+try: A 35-year-old with sudden severe headache during exercise.
+next: ddx-master
+
+@@ S | next-best-test | The next best investigation
+aud: MBBS Student / PG Resident
+use: For "what is the next best step?" questions and real decisions.
+persona: You are a clinical teacher who explains test selection.
+context: The scenario and results so far (de-identified): [PASTE]
+task: 1. State the leading diagnoses at this point.
+2. Recommend the next best investigation, and explain why it beats the alternatives (discriminating power, availability, safety, cost).
+3. Explain the difference between the "best initial test", the "most accurate test" and the "next best step" for this scenario.
+4. Give the expected results for each leading diagnosis.
+rules: Reason from the scenario and standard guidelines, marked [VERIFY], because "next best step" answers depend on the exact stage of the case.
+output: The leading diagnoses, the recommendation with reasoning, the test-type distinction, then the expected results.
+tip: Exams separate the "best initial test" from the "gold standard". Read the question carefully.
+try: Suspected acute cholecystitis with an equivocal ultrasound.
+next: test-reasoning
+
+@@ S | lab-pattern | Interpret a lab pattern in clinical context
+aud: MBBS Student / PG Resident
+use: When lab results come back and you need to make sense of them.
+persona: You are a clinical pathologist and physician.
+context: Lab results with dates (de-identified): [PASTE]
+The clinical context: [brief]
+task: 1. Identify the abnormal values and the pattern (e.g. hepatocellular versus cholestatic, pre-renal versus renal).
+2. Interpret the pattern in the clinical context.
+3. Give the differential suggested by the pattern.
+4. Suggest the next tests to clarify it.
+5. Flag any value that is critical and needs urgent action.
+rules: Use reference ranges marked [VERIFY WITH LAB], and reason step by step, because patterns only make sense in context.
+output: The abnormal values, the pattern, the interpretation, the differential, the next tests, then the critical flags.
+tip: Trends tell more than single values. Always compare with the previous result.
+try: Raised ALP and GGT, mildly raised ALT, and a raised direct bilirubin in a 55-year-old with pruritus.
+next: next-best-test
+
+@@ S | acid-base-reasoning | Reason through an acid-base problem
+aud: MBBS Student / PG Resident
+use: For ABG interpretation in exams and on the wards.
+persona: You are a critical-care physician who teaches acid-base analysis systematically.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+ABG and electrolyte values (de-identified): [PASTE]
+The clinical context: [brief]
+task: 1. Check the internal consistency of the values.
+2. Identify the primary disorder.
+3. Check compensation using the standard formulas (marked [VERIFY]).
+4. Calculate the anion gap (and albumin correction) and the delta ratio where relevant.
+5. Identify mixed disorders.
+6. Give the differential for each disorder in this clinical context.
+rules: Show every calculation, and use standard formulas marked for verification, because acid-base errors usually come from skipped steps.
+output: Step-by-step working, then the final interpretation and differential.
+tip: Always calculate the anion gap, even when the pH looks simple. Hidden mixed disorders show up there.
+try: pH 7.25, PaCO2 24, HCO3 10, Na 138, Cl 100, albumin 2.5, in a diabetic patient with vomiting.
+next: lab-pattern
+
+@@ S | ecg-in-context | Interpret an ECG in clinical context
+aud: MBBS Student / PG Resident
+use: When an ECG finding must be interpreted alongside the patient's presentation.
+persona: You are a cardiologist who teaches contextual ECG interpretation.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+ECG findings (describe, or upload a de-identified tracing): [DESCRIBE / UPLOAD]
+The clinical context: [brief]
+task: 1. Interpret the ECG systematically.
+2. Relate the findings to the clinical context.
+3. Give the differential for the key abnormality.
+4. State the urgency and the immediate next steps, marked [VERIFY].
+rules: Describe what is seen before interpreting, and mark uncertain readings [CONFIRM WITH A SENIOR OR CARDIOLOGIST], because ECG misreads can be dangerous.
+output: The systematic interpretation, the clinical correlation, the differential, then the urgency and next steps.
+tip: The same ST elevation means different things in a young athlete and a diabetic with chest pain. Context is everything.
+try: Widespread ST elevation with PR depression in a young man with pleuritic chest pain.
+next: ddx-master
+
+@@ S | imaging-in-context | Interpret imaging in clinical context
+aud: MBBS Student / PG Resident
+use: When an imaging report or image must be integrated into the clinical picture.
+persona: You are a radiologist who teaches clinicians to integrate imaging findings.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The imaging findings or report (de-identified): [PASTE]
+The clinical context: [brief]
+task: 1. Summarise the key findings in plain language.
+2. Relate them to the clinical picture: consistent, inconsistent or incidental.
+3. Give the differential for the imaging findings in this context.
+4. Suggest further imaging or correlation if needed.
+rules: Stick to the reported findings and don't over-interpret, marking uncertainty [DISCUSS WITH RADIOLOGIST], because clinicians often over-read reports.
+output: The findings summary, the correlation, the differential, then the next steps.
+tip: Always read the "impression" and the "findings" sections of a report. They sometimes disagree.
+try: CT chest showing a cavitating lesion in the right upper lobe in a diabetic with fever.
+next: ddx-master
+
+@@ S | fever-approach | Approach to fever, including PUO
+aud: MBBS Student / PG Resident
+use: For fever, one of the commonest presentations in Indian practice.
+persona: You are an infectious-diseases physician experienced in Indian tropical medicine.
+context: The fever case (de-identified): duration, pattern, associated features, exposures, travel, season and examination: [PASTE]
+Setting: [brief]
+task: 1. Classify the fever: acute undifferentiated, fever with localising features, or prolonged fever or PUO.
+2. Give the differential weighted by local epidemiology and season (e.g. dengue, malaria, scrub typhus, typhoid, leptospirosis, TB).
+3. Give the discriminating history and examination features.
+4. Give a stepwise investigation plan appropriate to the setting.
+5. Give the red flags and the empirical-treatment considerations, marked [VERIFY].
+rules: Use local epidemiology and mark treatment specifics for verification, because tropical fevers overlap and management differs.
+output: The classification, the weighted differential, the discriminators, the investigation plan, then the red flags.
+tip: An eschar search belongs in every fever examination in India. Scrub typhus is missed without it.
+try: A 30-year-old farmer with 6 days of fever, myalgia, headache and conjunctival suffusion in the monsoon.
+next: tropical-ddx
+
+@@ S | chest-pain-approach | Approach to chest pain
+aud: MBBS Student / Intern / PG Resident
+use: For chest pain in emergency, OPD and exams.
+persona: You are an emergency physician and cardiologist.
+context: The chest pain case (de-identified): [PASTE]
+task: 1. Exclude the life-threatening causes first (ACS, aortic dissection, PE, tension pneumothorax, tamponade, oesophageal rupture).
+2. Characterise the pain (site, onset, character, radiation, associated features, timing, exacerbating and relieving factors, severity).
+3. Give the ranked differential with the reasoning.
+4. Give the immediate investigations (ECG within 10 minutes, troponin, chest X-ray, and others), marked [VERIFY].
+5. Give a risk-stratification tool if applicable, marked [VERIFY].
+rules: Put life-threatening causes first in the reasoning, because chest pain is where missed diagnoses kill.
+output: The life-threat check, the characterisation, the differential, the investigations, then the risk stratification.
+tip: A normal first ECG and troponin don't exclude ACS. Serial testing matters.
+try: A 50-year-old diabetic with 2 hours of epigastric discomfort and sweating.
+next: cant-miss
+
+@@ S | breathlessness-approach | Approach to breathlessness
+aud: MBBS Student / PG Resident
+use: For acute and chronic breathlessness.
+persona: You are a pulmonologist and internist.
+context: The breathlessness case (de-identified): acute or chronic, associated features, examination and vitals: [PASTE]
+task: 1. Separate the acute and chronic approaches.
+2. Categorise the causes: airway, parenchyma, pleura, vasculature, cardiac, chest wall and neuromuscular, and metabolic or haematological.
+3. Give the discriminating clinical features.
+4. Give the investigation plan (SpO2 and ABG, chest X-ray, ECG, echo, PFT, D-dimer or CTPA as appropriate, marked [VERIFY]).
+5. Give the red flags needing immediate action.
+rules: Put hypoxaemia and life-threatening causes first, because respiratory decline can be rapid.
+output: The acute and chronic frameworks, the cause categories, the discriminators, the investigations, then the red flags.
+tip: Is it the lungs, the heart, or neither? That first split guides everything else.
+try: A 65-year-old smoker with 2 days of worsening breathlessness and wheeze.
+next: ddx-master
+
+@@ S | altered-sensorium | Approach to altered sensorium
+aud: MBBS Student / Intern / PG Resident
+use: For patients with confusion, delirium or coma.
+persona: You are a neuro-critical-care physician.
+context: The case (de-identified): onset, GCS, vitals, focal signs, history and medications: [PASTE]
+task: 1. Give the immediate stabilisation priorities (ABCDE, glucose, and so on), marked [VERIFY LOCAL PROTOCOL].
+2. Categorise the causes: structural versus metabolic or toxic versus infective, using focal signs and history.
+3. Give the ranked differential, including India-relevant causes (e.g. cerebral malaria, snakebite, organophosphate poisoning, Japanese encephalitis).
+4. Give the investigation plan.
+5. Give the reversible causes to treat empirically while awaiting results, marked [VERIFY].
+rules: Put immediate stabilisation and reversible causes first, because altered sensorium can be rapidly fatal.
+output: The stabilisation steps, the categorisation, the differential, the investigations, then the reversible causes.
+tip: Check the glucose first, always. Hypoglycaemia is the fastest reversible cause.
+try: A 40-year-old farmer found drowsy with pinpoint pupils and excessive secretions.
+next: cant-miss
+
+@@ S | abdominal-pain-approach | Approach to acute abdominal pain
+aud: MBBS Student / Intern / PG Resident
+use: For acute abdominal pain in emergency and surgical practice.
+persona: You are a general surgeon and emergency physician.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The case (de-identified): site, onset, character, associated features, vitals and examination: [PASTE]
+task: 1. Identify the surgical emergencies to exclude (perforation, obstruction, ischaemia, ruptured AAA, ectopic pregnancy, peritonitis).
+2. Give the differential by pain location and character.
+3. Give the discriminating findings.
+4. Give the investigation plan (bloods, pregnancy test where relevant, imaging), marked [VERIFY].
+5. Say when to call the surgeon.
+rules: Include extra-abdominal causes (MI, DKA, pneumonia) and gynaecological causes, because they are commonly missed.
+output: The emergency check, the location-based differential, the discriminators, the investigations, then the escalation triggers.
+tip: Pain out of proportion to the examination findings suggests mesenteric ischaemia. Don't be falsely reassured.
+try: A 22-year-old woman with right iliac fossa pain and a missed period.
+next: cant-miss
+
+@@ S | anaemia-approach | Approach to anaemia
+aud: MBBS Student / PG Resident
+use: For anaemia on any blood report.
+persona: You are a haematologist who teaches a stepwise approach.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+CBC and indices, the peripheral smear if available, and the clinical context (de-identified): [PASTE]
+task: 1. Classify the anaemia by MCV and reticulocyte count.
+2. Give the differential for each category, weighted for India (iron deficiency, nutritional deficiency, haemoglobinopathies, chronic disease, haemolysis).
+3. Give the targeted investigations.
+4. Interpret my patient's values through this framework.
+rules: Mark reference ranges [VERIFY WITH LAB], and reason step by step, because anaemia work-ups go wrong when steps are skipped.
+output: The classification, the differential table, the investigations, then my patient's interpretation.
+tip: The reticulocyte count separates "not making enough" from "losing or destroying too many". Check it early.
+try: Hb 7.8, MCV 64, RDW high, in a 19-year-old woman with menorrhagia.
+next: lab-pattern
+
+@@ S | jaundice-approach | Approach to jaundice
+aud: MBBS Student / PG Resident
+use: For jaundice in exams and practice.
+persona: You are a gastroenterologist and hepatologist.
+context: The case (de-identified): the bilirubin fractions, liver enzymes, clinical features and history: [PASTE]
+task: 1. Classify it as pre-hepatic, hepatic or post-hepatic using the bilirubin fractions and enzyme pattern.
+2. Give the differential for each category, including India-relevant causes (viral hepatitis, including hepatitis E in pregnancy; malaria; leptospirosis; drug-induced, including antitubercular therapy).
+3. Give the discriminating history and examination features.
+4. Give the investigation plan.
+5. Give the red flags (liver failure, cholangitis), marked [VERIFY].
+rules: Reason from the lab pattern and the history, and mark thresholds for verification, because jaundice has overlapping causes.
+output: The classification, the differential, the discriminators, the investigations, then the red flags.
+tip: Painless progressive jaundice with weight loss in an older patient points to malignancy until proven otherwise.
+try: A 45-year-old on antitubercular treatment for 6 weeks with new jaundice and vomiting.
+next: drug-cause-check
+
+@@ S | aki-approach | Approach to acute kidney injury
+aud: MBBS Student / PG Resident
+use: For a rising creatinine or reduced urine output.
+persona: You are a nephrologist who teaches a structured AKI approach.
+context: The case (de-identified): creatinine trend, urine output, urinalysis, medications, fluid status and context: [PASTE]
+task: 1. Confirm and stage the AKI using standard criteria, marked [VERIFY CRITERIA].
+2. Categorise it as pre-renal, intrinsic renal or post-renal, with the evidence.
+3. Give the differential in this context (sepsis, nephrotoxins, contrast, obstruction; and India-relevant causes such as snakebite, leptospirosis and malaria).
+4. Give the investigations (urinalysis, urine indices, ultrasound).
+5. Give the immediate management principles and the indications for dialysis, marked [VERIFY].
+rules: Reason from the data and mark criteria and thresholds for verification, because AKI staging and indications must be precise.
+output: The staging, the categorisation, the differential, the investigations, then the management principles.
+tip: Always review the medication chart in AKI. NSAIDs, ACE inhibitors and aminoglycosides are frequent culprits.
+try: A creatinine rising from 1.0 to 2.6 over 48 hours in a septic patient on vancomycin.
+next: lab-pattern
+
+@@ S | hyponatraemia-approach | Approach to hyponatraemia
+aud: MBBS Student / PG Resident
+use: For low sodium, a common and often mismanaged problem.
+persona: You are an endocrinologist and internist.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Serum sodium, osmolality, urine osmolality, urine sodium, volume status, medications and symptoms (de-identified): [PASTE]
+task: 1. Exclude pseudo-hyponatraemia and hyperglycaemia.
+2. Assess the severity and symptoms, and the urgency.
+3. Categorise using osmolality, volume status and the urine studies.
+4. Give the differential (SIADH, diuretics, hypovolaemia, heart failure, cirrhosis, hypothyroidism, adrenal insufficiency).
+5. Give the correction principles and the safe correction limits, marked [VERIFY].
+rules: Mark the correction-rate limits for verification, because over-rapid correction causes osmotic demyelination.
+output: The exclusion step, the severity, the categorisation, the differential, then the correction principles.
+tip: Always assess volume status clinically. It splits the differential into three.
+try: Na 121 in an elderly woman on a thiazide diuretic, confused, clinically euvolaemic.
+next: acid-base-reasoning
+
+@@ S | paediatric-ddx | Age-specific differential in children
+aud: MBBS Student / PG Resident (Paediatrics)
+use: For paediatric cases, where causes vary sharply with age.
+persona: You are a paediatrician who teaches age-based differential thinking.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The presentation and the child's age (de-identified): [PASTE]
+task: 1. Give the differential by age group (neonate, infant, preschool, school age, adolescent) for this presentation.
+2. Highlight the most likely causes at this child's age.
+3. Give the paediatric-specific red flags.
+4. Give the investigations appropriate for age.
+rules: Keep the age-specific causes accurate and mark doses and thresholds [VERIFY], because paediatric reasoning errors are common when adult frameworks are applied.
+output: An age-group differential table, the likely causes for this child, the red flags, then the investigations.
+tip: A neonate isn't a small child, and a child isn't a small adult. Age changes everything.
+try: A 2-year-old with fever and a seizure.
+next: ddx-master
+
+@@ S | pregnancy-ddx | Differential diagnosis in pregnancy
+aud: MBBS Student / PG Resident
+use: When a pregnant woman presents with a symptom that may be pregnancy-specific.
+persona: You are an obstetric physician.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The presentation, gestation and history (de-identified): [PASTE]
+task: 1. Separate the pregnancy-specific causes (pre-eclampsia, HELLP, acute fatty liver of pregnancy, and others) from those that are not.
+2. Give the discriminating features and the tests.
+3. Give the investigations safe in pregnancy.
+4. Give the red flags needing urgent obstetric input, marked [VERIFY].
+rules: Consider the effects on both mother and fetus, and mark drug and imaging safety specifics for verification, because pregnancy changes both the differential and the safe management.
+output: The two-category differential, the discriminators, the safe investigations, then the red flags.
+tip: Headache with raised BP in the third trimester is pre-eclampsia until proven otherwise.
+try: A 32-week pregnant woman with epigastric pain, raised liver enzymes and low platelets.
+next: cant-miss
+
+@@ S | elderly-atypical | Atypical presentations in the elderly
+aud: MBBS Student / PG Resident
+use: For older patients, where serious disease presents atypically.
+persona: You are a geriatrician.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The presentation of an older patient (de-identified): [PASTE]
+task: 1. List the serious conditions that present atypically in the elderly (e.g. infection as confusion or falls, MI without chest pain).
+2. Give the differential for this presentation.
+3. Include medication-related causes (polypharmacy).
+4. Include frailty, function and delirium assessment.
+5. Give the investigation priorities.
+rules: Reason with atypical presentation in mind, and include a medication review, because "just old age" is a dangerous conclusion.
+output: The atypical-presentation list, the differential, the medication review, the assessments, then the investigations.
+tip: New confusion in an older person is delirium until proven otherwise. Look for the trigger.
+try: An 82-year-old who stopped eating and became confused over 2 days.
+next: drug-cause-check
+
+@@ S | tropical-ddx | Tropical infection differential (Indian setting)
+aud: MBBS Student / PG Resident
+use: For acute febrile illness with multisystem features in Indian practice.
+persona: You are a tropical-medicine physician experienced in India.
+context: The case (de-identified): fever duration, season, occupation or exposures, rash or eschar, organ involvement and lab results: [PASTE]
+task: 1. Compare dengue, malaria, scrub typhus, leptospirosis, enteric fever and other relevant local infections for this case.
+2. Build a discriminating-feature table (e.g. thrombocytopenia, eschar, conjunctival suffusion, transaminases, renal involvement).
+3. Give the tests for each (e.g. NS1 or IgM, rapid tests and smear, IgM ELISA), with timing considerations.
+4. Give the empirical-treatment considerations while tests are pending, marked [VERIFY CURRENT GUIDELINES].
+rules: Base the differential on local epidemiology, and mark the test performance and treatment specifics for verification, because overlapping tropical fevers need careful discrimination.
+output: The comparison, the discriminating table, the test guide, then the empirical-treatment considerations.
+tip: Co-infections happen. A positive malaria test doesn't exclude dengue or scrub typhus.
+try: Fever for 7 days, thrombocytopenia, raised transaminases and AKI in a farmer in September.
+next: fever-approach
+
+@@ S | drug-cause-check | Could a drug be causing this?
+aud: MBBS Student / Intern / PG Resident
+use: For any new symptom or lab abnormality in a patient on medications.
+persona: You are a clinical pharmacologist.
+context: The patient's medication list (with start dates) and the new problem (de-identified): [PASTE]
+task: 1. Identify which drugs could cause this problem, and how.
+2. Assess the timing and plausibility for each.
+3. Suggest a causality assessment approach (e.g. the WHO-UMC criteria).
+4. Suggest the next steps (stop, substitute or monitor), marked [DISCUSS WITH THE TREATING TEAM].
+5. Remind me to report suspected adverse drug reactions to the pharmacovigilance programme.
+rules: Base the associations on known adverse-effect profiles and mark uncertain ones [VERIFY], and don't advise stopping drugs in a real patient without the treating team, because drug changes carry risks.
+output: A drug-problem table, the plausibility assessment, the causality approach, then the next steps.
+tip: "Is this a drug side effect?" should be asked for every new problem. It's often the answer.
+try: New hyperkalaemia in a patient started on spironolactone and an ACE inhibitor.
+next: ddx-master
+
+@@ S | syndrome-recognition | Recognise the syndrome from scattered findings
+aud: MBBS Student / PG Resident
+use: When findings seem unrelated but may form a syndrome.
+persona: You are a diagnostician who excels at pattern recognition.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The findings (de-identified): [PASTE]
+task: 1. Group the findings into clusters.
+2. Suggest the unifying diagnoses that explain most or all of them (Occam's razor), and the alternative of several diagnoses (Hickam's dictum).
+3. Give the confirming tests for the leading unifying diagnosis.
+4. Say which findings don't fit.
+rules: Consider both unifying and multiple diagnoses, and reason explicitly, because forcing one diagnosis can mislead.
+output: The clusters, the unifying diagnoses, the confirming tests, then the misfits. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: "What single disease explains all of this?" is worth asking, and so is "does it have to be one disease?".
+try: A young woman with a rash, joint pain, proteinuria, a pleural effusion and low platelets.
+next: illness-script-builder
+
+@@ S | discriminate-two | Discriminate between two close diagnoses
+aud: MBBS Student / PG Resident
+use: When your differential comes down to two possibilities.
+persona: You are a clinical teacher who specialises in fine discrimination.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The two diagnoses and the case details (de-identified): [PASTE]
+task: 1. Compare the two diagnoses on history, examination, labs and imaging.
+2. Identify the single most discriminating feature and test.
+3. Apply the comparison to my case.
+4. Say what result would favour each.
+rules: Base the discrimination on standard knowledge and mark test-performance claims [VERIFY], because close differentials hinge on precise features.
+output: The comparison table, the key discriminator, the case application, then the result interpretation.
+tip: Exams love pairs: Crohn's versus UC, SIADH versus cerebral salt wasting, dengue versus leptospirosis.
+try: Tuberculous versus malignant pleural effusion in a 60-year-old ex-smoker.
+next: ddx-master
+
+@@ S | decision-rule | Apply a clinical decision rule
+aud: MBBS Student / PG Resident
+use: When a validated rule (Wells, CURB-65, CHA2DS2-VASc, Glasgow-Blatchford, qSOFA) applies.
+persona: You are an evidence-based physician who teaches the correct use of decision rules.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The rule: [name]
+The case details (de-identified): [PASTE]
+task: 1. List the rule's criteria, marked [VERIFY CRITERIA FROM ORIGINAL SOURCE].
+2. Score my case step by step.
+3. Interpret the score and the recommended action.
+4. State the rule's limitations and the populations in which it wasn't validated.
+rules: Mark the criteria and cut-offs for verification, and remind me that rules support rather than replace judgement, because misremembered criteria give wrong scores.
+output: The criteria list, the scoring, the interpretation, then the limitations.
+tip: Know when not to use a rule, for example scores validated in adults applied to children, or in pregnancy.
+try: CURB-65 for a 70-year-old with pneumonia, confusion, a urea of 9 and a BP of 95/60.
+next: pretest-probability
+
+@@ S | diagnostic-time-out | A diagnostic time-out before I close the case
+aud: Intern / PG Resident
+use: Before finalising a diagnosis, especially in complex or high-risk cases.
+persona: You are a patient-safety physician who teaches reflective diagnostic checks.
+context: My working diagnosis and the case summary (de-identified): [PASTE]
+task: 1. Run a structured time-out: What else could this be? What doesn't fit? Did I consider the can't-miss diagnoses? Am I anchoring on the first impression? Would I be comfortable if a senior reviewed this?
+2. Answer each question for my case.
+3. Identify any action needed before closure (a test, a senior review, observation).
+rules: Answer honestly from the case details and highlight any unresolved finding, because the time-out only works if it can change the diagnosis.
+output: The time-out questions with answers, then the actions needed.
+tip: Taking 60 seconds for a time-out on every admission diagnosis prevents a surprising number of errors.
+try: Working diagnosis: gastroenteritis in a 50-year-old diabetic with vomiting and abdominal pain.
+next: bias-debrief
+
+@@ S | case-to-viva | Turn a ward case into exam practice
+aud: MBBS Student / PG Resident
+use: After seeing an interesting patient, to convert it into exam preparation.
+persona: You are a clinical teacher who turns ward cases into exam practice.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The case (de-identified): [PASTE]
+My exam: [brief]
+task: 1. Write the case as a long-case presentation summary.
+2. List the 10 viva questions examiners would ask about this case, with short answers.
+3. Write 3 MCQs based on the case.
+4. Identify the theory questions this case could answer.
+rules: Keep the case fully de-identified and the answers accurate, marking specifics [VERIFY], because real cases become memorable exam material.
+output: The summary, the viva Q&A, the MCQs, then the theory links.
+tip: Patients you have seen are remembered far better than textbook cases. Convert every interesting one.
+try: A patient with infective endocarditis and a splinter haemorrhage, seen on rounds.
+next: long-case-master
+
+@@ S | management-priorities | Set management priorities (ABCDE)
+aud: MBBS Student / Intern
+use: For sick patients, and for "what will you do first?" questions.
+persona: You are an emergency physician who teaches prioritisation.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The sick patient scenario (de-identified): [PASTE]
+task: 1. Apply the ABCDE approach with specific actions at each step.
+2. Identify the immediate life threats and their treatment.
+3. Order the investigations by urgency.
+4. List when to call for senior help.
+5. Plan the reassessment after each intervention.
+rules: Mark treatment specifics and doses [VERIFY LOCAL PROTOCOL], because emergency management must follow approved protocols.
+output: The ABCDE actions, the life threats, the prioritised investigations, the escalation triggers, then the reassessment plan.
+tip: Fix problems as you find them in ABCDE order. Don't wait to finish the assessment.
+try: A patient with BP 80/50, HR 130, RR 30, SpO2 88% and cold peripheries after 3 days of fever.
+next: ddx-master
+
+@@ S | reasoning-aloud | Think aloud and get feedback on my reasoning
+aud: MBBS Student / Intern / PG Resident
+use: To practise articulating clinical reasoning, as on rounds and in vivas.
+persona: You are a clinical-reasoning coach who evaluates think-aloud reasoning.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The case (de-identified) and my think-aloud reasoning (typed as I would say it): [PASTE]
+task: 1. Map my reasoning steps.
+2. Identify the strengths (e.g. good problem representation, considering danger).
+3. Identify the gaps (missed data, a premature conclusion, unjustified tests).
+4. Rewrite my reasoning as an expert would say it.
+5. Give 2 habits to practise.
+rules: Quote my words for every comment and stay constructive, because reasoning feedback must be specific to change habits.
+output: The reasoning map, the strengths, the gaps, the expert version, then the habits.
+tip: Saying your reasoning aloud on rounds, even when unsure, is how seniors can teach you.
+try: My reasoning on a patient with fever and a new heart murmur.
+next: case-simulator
+
+@@ Q | top-three-ddx | Top three diagnoses in one line
+aud: MBBS Student / Intern
+body: Act as a senior physician teaching on rounds. For this de-identified presentation, [PASTE KEY FEATURES], give the top 3 differentials ranked, each with the single strongest supporting feature, in one line each, and flag any can't-miss diagnosis that isn't among them.
+try: A 60-year-old smoker with haemoptysis, weight loss and clubbing.
+
+@@ Q | cant-miss-quick | Can't-miss diagnoses for a symptom
+aud: MBBS Student / Intern
+body: Act as an emergency physician. List the can't-miss diagnoses for [SYMPTOM] in [AGE GROUP], each with one feature that suggests it and the fastest test that excludes it. Mark tests and thresholds [VERIFY]. Flag anything you are unsure of so I can check it.
+try: Sudden-onset breathlessness in young adults.
+
+@@ Q | key-history-question | The one history question that helps most
+aud: MBBS Student / Intern
+body: Act as a clinical-reasoning tutor. For this presentation, [PASTE FEATURES], with the differential [LIST], tell me the single most discriminating history question to ask next and how each possible answer would shift the differential. Flag anything you are unsure of so I can check it.
+try: Chronic cough with a differential of asthma, GERD, post-nasal drip and TB.
+
+@@ Q | key-sign | The sign I must look for
+aud: MBBS Student / Intern
+body: Act as a clinical examiner. For a patient with [PRESENTATION] and a differential of [LIST], tell me the one or two examination signs that would best discriminate between them, how to elicit each correctly, and what a positive finding means.
+try: Breathlessness with a differential of heart failure, COPD and pulmonary fibrosis.
+
+@@ Q | first-investigation | The first investigation to order
+aud: MBBS Student / Intern
+body: Act as a senior resident. For this presentation, [PASTE FEATURES], in a [SETTING], name the first investigation to order, why it comes first (speed, availability, yield), and what each result would mean. Mark thresholds [VERIFY]. Flag anything you are unsure of so I can check it.
+try: Suspected meningitis in a district-hospital emergency department.
+
+@@ Q | interpret-one-lab | Interpret one abnormal result
+aud: MBBS Student / Intern
+body: Act as a clinical pathologist. Interpret this result, [RESULT WITH UNITS], in the context of [CLINICAL CONTEXT]: what it suggests, the top 3 causes in this context, and the next test. Mark reference ranges [VERIFY WITH LAB]. Flag anything you are unsure of so I can check it.
+try: Serum potassium of 6.4 in a patient with CKD and no ECG changes.
+
+@@ Q | what-doesnt-fit | What doesn't fit the diagnosis?
+aud: MBBS Student / PG Resident
+body: Act as a sceptical senior clinician. For the working diagnosis [DIAGNOSIS] and these findings, [PASTE FINDINGS], list the findings that don't fit it, what each might suggest instead, and whether they change the plan. Flag anything you are unsure of so I can check it.
+try: Diagnosis: viral fever. Findings include a new murmur and splinter haemorrhages.
+
+@@ Q | name-the-syndrome | Name the syndrome from the findings
+aud: MBBS Student / PG Resident
+body: Act as a diagnostician. Which syndrome or unifying diagnosis best explains these findings, [PASTE FINDINGS]? Give the most likely answer, one alternative, and the single confirmatory test, with a one-line reason for each. Flag anything you are unsure of so I can check it.
+try: Hypertension, hypokalaemia and metabolic alkalosis in a 35-year-old.
+
+@@ Q | vindicate-quick | Causes by category in one minute
+aud: MBBS Student
+body: Act as a clinical tutor. Using the VINDICATE categories, list the causes of [FINDING] in a quick grouped list, marking the 3 most common in India with an asterisk and the can't-miss ones with an exclamation mark. Flag anything you are unsure of so I can check it.
+try: Finding: generalised lymphadenopathy.
+
+@@ Q | age-top-causes | The top causes at this age
+aud: MBBS Student / PG Resident
+body: Act as a clinician. For [PRESENTATION] in a [AGE] patient, give the 5 most likely causes for this age group in India, ranked, with one line each on why age changes the likelihood. Flag anything you are unsure of so I can check it.
+try: Seizures in a 70-year-old.
+
+@@ Q | india-causes | India-specific causes to consider
+aud: MBBS Student / PG Resident
+body: Act as an internist experienced in Indian practice. For [PRESENTATION], list the causes more common in India than in Western textbooks (infections, toxins, nutritional causes, bites and envenomation) that I must consider, with one clue for each. Flag anything you are unsure of so I can check it.
+try: Acute kidney injury in a rural patient.
+
+@@ Q | red-flag-list | Quick red-flag checklist
+aud: MBBS Student / Intern
+body: Act as an emergency physician. Give me a quick red-flag checklist for [SYMPTOM], each flag in under 8 words with the serious cause it suggests, formatted as a pocket list I can use in the OPD. Mark actions [VERIFY]. Flag anything you are unsure of so I can check it.
+try: Symptom: low back pain.
+
+@@ Q | rule-out-test | Which test rules it out?
+aud: MBBS Student / PG Resident
+body: Act as an evidence-based physician. For excluding [DIAGNOSIS] in a [LOW / INTERMEDIATE] probability patient, name the test with the best negative predictive value in that setting, its limitation, and when a negative result isn't enough. Mark test performance [VERIFY].
+try: Excluding pulmonary embolism with D-dimer.
+
+@@ Q | quick-bayes | From pretest to post-test probability
+aud: MBBS Student / PG Resident
+body: Act as a clinical epidemiologist. With a pretest probability of [X%] and a test with LR+ [A] and LR− [B], calculate the post-test probability for a positive and a negative result, showing the odds conversion steps, and say whether either result would change management.
+try: Pretest 30%, LR+ 6, LR− 0.2.
+
+@@ Q | case-one-liner-summary | Summarise the case in one line
+aud: MBBS Student / Intern
+body: Act as a senior resident. Summarise this case, [PASTE CASE], in one line using semantic qualifiers and the key positives, without naming an unconfirmed diagnosis, suitable for handover or rounds. Flag anything you are unsure of so I can check it.
+try: A 45-year-old alcoholic with 3 days of abdominal pain radiating to the back and vomiting.
+
+@@ Q | drug-cause-quick | Could this be a side effect?
+aud: MBBS Student / Intern
+body: Act as a clinical pharmacologist. From this medication list, [LIST], which drugs could cause [NEW PROBLEM]? Rank them by plausibility with one line each, and note the timing clue to check. Flag anything you are unsure of so I can check it.
+try: New-onset tremor and confusion in a patient on lithium and a recently added diuretic.
+
+@@ Q | triage-priority | Who should I see first?
+aud: Intern / PG Resident
+body: Act as an emergency triage physician. Rank these patients by urgency, [BRIEF DESCRIPTIONS], using standard triage principles, with one line of reasoning each and the immediate action for the most urgent. Mark protocols [VERIFY LOCAL TRIAGE SYSTEM]. Flag anything you are unsure of so I can check it.
+try: Four patients: chest pain, a fracture, fever with a rash, and an asthma attack with silent chest.
+
+@@ Q | refer-or-not | Refer, admit or manage here?
+aud: Intern / Medical Officer
+body: Act as a senior physician advising a medical officer. For this patient, [BRIEF CASE], in a [SETTING], decide whether to manage locally, admit, or refer, with the criteria behind the decision and what to do before transfer. Mark protocols [VERIFY].
+try: A child with severe dehydration and lethargy at a primary health centre.
+
+@@ Q | teaching-pearl | One clinical pearl from this case
+aud: MBBS Student / PG Resident
+body: Act as a senior clinical teacher. From this case, [BRIEF CASE], give one clinical pearl (a practical, memorable insight that goes beyond the textbook) in under 30 words, and explain why it matters in one line. Flag anything you are unsure of so I can check it.
+try: A patient with myasthenia gravis who worsened after an antibiotic.
