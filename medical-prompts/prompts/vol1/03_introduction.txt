@@ -42,7 +42,7 @@ task: 1. Check the structure against the four movements (background, Indian burd
 3. Keep every citation attached to the claim it supports.
 4. Mark each place where a claim has no citation with [CITE].
 5. Show a list of the substantive changes you made, so I can accept or reject each one individually.
-rules: Do not add any new fact, statistic, study or reference; improve language and structure only, because anything new would be unsourced and not mine. Keep my meaning exactly, and flag rather than fix any sentence whose meaning is unclear by writing [UNCLEAR — PLEASE CLARIFY]. Stay within the target length.
+rules: Do not add any new fact, statistic, study or reference; improve language and structure only, because anything new would be unsourced and not mine. Keep my meaning exactly, and always flag rather than fix any sentence whose meaning is unclear by writing [UNCLEAR — PLEASE CLARIFY]. Stay within the target length.
 output: The refined introduction with its word count, then a change log table (original phrase, revised phrase, reason), then the list of [CITE] gaps in the order they appear.
 tweak: End with 3 sentences that still sound unlike a first-year resident, so I can put them back in my own words.
 tips:
