@@ -1,0 +1,695 @@
+# 1.7 | Sample size & statistics | Deciding your test after seeing your data is how p-hacking happens by accident. Plan the analysis before data collection, and verify every number AI gives you.
+
+@@ M | sap-master | Pre-specified statistical analysis plan
+aud: PG Resident
+use: Write the plan before data collection. Run the analysis after the database is locked.
+why: A pre-specified statistical analysis plan protects your integrity and your viva. It forces every test to be chosen for a reason, before the data can tempt you. It also becomes the analysis section of your thesis.
+persona: You are a biostatistician with two decades of experience in clinical research who routinely explains statistical reasoning to clinicians. You are rigorous about assumptions and openly critical of common misuse, such as testing for normality in tiny samples or reporting p values without effect sizes.
+context: Design: [prospective cohort / RCT / cross-sectional / diagnostic accuracy / before-after]
+Total sample size, and per group if applicable: [N; n1, n2]
+Primary objective: [state]
+Secondary objectives: [list]
+Software: [SPSS / R / Stata / GraphPad / Jamovi / Python]
+My statistical comfort level: [beginner / intermediate / advanced]
+My variables, each with name, type and role (example format: "FEV1 % predicted, continuous, baseline and 12 weeks, primary outcome"): [LIST ALL VARIABLES]
+task: 1. Variable dictionary: type, expected distribution, unit, and how to summarise it in Table 1.
+2. Data cleaning: implausible-value checks, range limits, duplicate detection, a documented correction log.
+3. Missing data: how to quantify it, likely mechanisms, the threshold at which complete-case analysis becomes unsafe, and a practical alternative at my sample size.
+4. Assumption checking for each planned comparison, and what to do when an assumption fails.
+5. Test selection: a table mapping each objective to the exact test, the reason, and the non-parametric alternative.
+6. Effect measures with confidence intervals for every comparison.
+7. Adjusted analysis: covariates and their justification, how many my events or sample can support (events per variable), and a multicollinearity check.
+8. Subgroup and sensitivity analyses, labelled exploratory.
+9. Multiplicity: whether correction is needed, and the method.
+10. Runnable, commented syntax in my software for every analysis.
+11. Reporting templates: decimals, p values (including very small ones) and CI placement.
+12. Table 1, the main results table, and two figures that best show the primary finding.
+13. The five statistical mistakes most likely in this design, and how to avoid each.
+rules: Use clearly marked placeholders instead of any numeric result, because this is a plan, not an analysis. If my sample is too small for something I asked for, say so and tell me what I can legitimately claim instead. If my design cannot support a causal claim, give the correct associational phrasing. Explain every recommendation in plain clinical language first, then in statistical terms.
+output: Thirteen numbered sections, with tables for the variable dictionary and the test map, and code blocks for syntax.
+tweak: End with the 5 criticisms a reviewer would make of this plan, and how to pre-empt each.
+tips:
+- Lock and date this plan before you unblind or begin analysis. Attach it to your thesis appendix.
+- Run the syntax on 10 dummy rows first. Errors are easier to fix before the real data arrives.
+- Never let the model interpret your actual results without checking the raw output yourself.
+next: analysis-run
+
+@@ M | sample-size-master | Sample size with every assumption shown
+aud: PG Resident
+use: While writing the protocol, before IEC submission.
+why: The sample size is the most-questioned number in any synopsis. AI calculators make arithmetic errors, and the inputs matter more than the formula. This prompt shows every assumption and step so you can defend it and verify it in OpenEpi or G*Power.
+persona: You are a biostatistician who has calculated and defended sample sizes for hundreds of postgraduate protocols. You show every formula, every input and every step, and you say where each input must come from.
+context: Design: [cross-sectional / case-control / cohort / RCT / diagnostic accuracy / correlation]
+Primary outcome and its type: [proportion / mean / correlation / sensitivity / time-to-event]
+Primary objective or hypothesis: [paste]
+Expected value(s) from literature or pilot data, with source: [e.g. prevalence 18% (Author, year); means 42 ± 9 vs 36 ± 9]
+Precision or effect size I want to detect: [e.g. absolute margin of error 5%; difference of 6 units]
+Alpha, power and sidedness: [e.g. 0.05, 80%, two-sided]
+Expected dropout or non-response: [e.g. 10%]
+Group ratio if comparing groups: [e.g. 1:1]
+Eligible patients per month and months available: [N, X]
+task: 1. Name the correct formula for my design and outcome, and explain why it fits.
+2. Define every term in the formula.
+3. Substitute my inputs and show the step-by-step calculation.
+4. Apply the dropout adjustment and round up correctly.
+5. Check feasibility: the months needed at my recruitment rate.
+6. Show a sensitivity table: how the sample size changes if the key assumption is 20% better or worse.
+7. Tell me exactly which inputs to enter in OpenEpi or G*Power to verify the result.
+8. Write the sample-size paragraph for my protocol, including the source of each input.
+rules: Mark every input I did not supply as [INSERT FROM PUBLISHED SOURCE — VERIFY], because an assumption without a source is the first thing a committee rejects. Show your arithmetic so errors are visible. Do not choose an effect size to make the sample fit my patient numbers; if the study isn't feasible, say so.
+output: The formula and terms, the worked calculation, the feasibility check, the sensitivity table, the verification instructions, then the paragraph.
+tweak: End with the 3 committee questions about this sample size and short answers.
+tips:
+- Never submit the AI number alone. Verify it in OpenEpi or G*Power and report the verified figure.
+- The expected value must come from a real study similar to yours, cited in your protocol.
+- If the number is unfeasible, change the design or outcome. Don't massage the effect size.
+next: sample-size-proportion
+
+@@ M | analysis-run | Run my analysis on the real dataset, safely
+aud: PG Resident
+use: After your dataset is cleaned and locked, in ChatGPT's data analysis mode, Julius AI or a similar tool that runs code.
+why: AI data tools can run a full analysis in minutes, and can also silently mis-code a variable or pick the wrong test. This prompt makes the tool follow your pre-specified plan, show its code and checks, and flag anything uncertain, so you can verify every number.
+persona: You are a careful biostatistician analysing a clinical thesis dataset. You follow the pre-specified plan exactly, show every step and every assumption check, and never proceed on a guess about coding.
+context: Uploaded file: [file name] with [N] rows and [K] columns
+Codebook (variable, meaning, codes, units): [PASTE CODEBOOK HERE]
+My pre-specified analysis plan: [PASTE SAP OR THE KEY TESTS HERE]
+Primary outcome and exposure: [brief]
+task: 1. Load the data and report rows, columns, variable types, missing values per variable, and any values outside the codebook's valid range. Stop and ask me before fixing anything.
+2. Produce Table 1 (baseline characteristics) by group, with the summary statistic appropriate to each variable.
+3. Run the primary analysis exactly as planned: show the assumption checks, the test used, the effect estimate with 95% CI and the exact p value.
+4. Run the secondary analyses in the plan, labelled as such.
+5. Produce the figures specified in the plan.
+6. Show all code used, so I can re-run it.
+7. List every decision you had to make that the plan did not specify.
+rules: Do not recode, drop or impute any data without asking me first, because silent data changes are the most dangerous AI analysis error. Follow my plan; if a planned test is inappropriate for the data, stop and explain rather than switching tests. Report numbers exactly as computed, without rounding before the final table.
+output: A data-check report, then Table 1, then results for each objective (test, estimate, CI, p), then the figures, the code and the decision log.
+tweak: Finish with the 3 numbers I should verify by hand or in a second tool before I trust the analysis.
+tips:
+- Upload de-identified data only: study IDs, no names, no hospital numbers.
+- Re-run the key analysis in SPSS, Jamovi or R. If the numbers differ, find out why before writing.
+- Save the code and outputs with the date. They are your audit trail.
+next: output-interpretation
+
+@@ M | regression-builder | Multivariable regression: plan, run and interpret
+aud: PG Resident / Faculty
+use: When your objective involves adjusting for confounders or finding independent predictors.
+why: Regression is where theses most often overreach: too many variables for the events, stepwise selection, and adjusted odds ratios interpreted as causes. This prompt keeps the model honest and interpretable.
+persona: You are a biostatistician who teaches regression modelling to clinicians and reviews models for medical journals. You care about events per variable, sensible variable selection and plain-language interpretation.
+context: Outcome and its type: [binary / continuous / time-to-event / count]
+Exposure of interest, if any: [variable]
+Candidate covariates, with why each matters: [list]
+Sample size and number of outcome events: [N, events]
+Purpose of the model: [adjust for confounding / identify predictors / build a prediction score]
+Software: [SPSS / R / Stata / Jamovi]
+task: 1. Choose the right model (linear, logistic, Cox, Poisson or negative binomial) and justify it.
+2. Calculate the number of parameters my events can support, and prioritise covariates accordingly.
+3. Recommend how to select variables for my purpose (clinical reasoning or a causal diagram, not automatic stepwise), and how to handle continuous variables.
+4. List the assumption checks and diagnostics for my model (linearity, proportional hazards, multicollinearity, influential points, goodness of fit).
+5. Give runnable, commented syntax.
+6. Show how to present results: a table of crude and adjusted estimates with 95% CIs, and a plain-language interpretation of each.
+7. Explain what the model can and cannot conclude.
+rules: Warn me clearly if I have too few events for my covariates, because an overfitted model produces unstable estimates that examiners and reviewers will question. Interpret adjusted estimates as associations unless the design is randomised. Use placeholders instead of invented results.
+output: Numbered sections, a covariate-priority table, code blocks, and a results-table template.
+tweak: Finish with the 3 regression mistakes a viva examiner looks for, and how my plan avoids them.
+tips:
+- Report crude and adjusted estimates side by side. Readers need to see what adjustment changed.
+- Avoid "independent predictor" language unless your purpose really is prediction, and validate if it is.
+- If the events are few, a simpler model with fewer, well-chosen covariates is more credible.
+next: output-interpretation
+
+@@ M | output-interpretation | Interpret my software output correctly
+aud: PG Resident
+use: When SPSS, R, Jamovi or Stata output is in front of you and you need to understand and report it.
+why: Statistical output is full of numbers you don't need, and a few you absolutely do. Misreading which p value or estimate matters is common and costly. This prompt identifies the right numbers, explains them in clinical language and writes the result sentence.
+persona: You are a biostatistics tutor who explains software output line by line to clinicians and writes results exactly as journals expect.
+context: Software and test run: [e.g. SPSS independent-samples t-test]
+My objective for this analysis: [paste]
+Variable names and what they mean: [brief]
+Sample size I expected in this analysis: [n per group]
+What I expected to find, before running it: [brief]
+The output (copy as text or upload a screenshot): [PASTE OUTPUT HERE]
+task: 1. Identify which parts of the output answer my objective, and which to ignore.
+2. Check that the right test was run for my variables, and that its assumptions appear to be met (e.g. Levene's test, expected counts).
+3. Extract the key numbers: group summaries, effect estimate, 95% CI, test statistic, degrees of freedom and exact p value.
+4. Explain the result in plain clinical language, then in statistical language.
+5. Write the result sentence for my results section in journal style.
+6. Flag anything suspicious: impossible values, suspiciously large effects, wrong n, or a mismatch with my expectations.
+7. Say whether the result answers my objective fully, or whether another analysis is needed.
+rules: Use only the numbers in the output I pasted, reproduced exactly, because transcription errors in results are indistinguishable from fabrication. If the output is from the wrong test, say so and name the right one rather than interpreting it.
+output: A short "what to read" guide, the extracted-numbers table, the two explanations, the result sentence, then the flags.
+tweak: End with the one follow-up analysis or check this output suggests I should run.
+tips:
+- Always check that n in the output matches the n you expect. Missing data silently drops cases.
+- Paste the output as text where possible. Screenshots can be misread.
+- Keep a results log: output file, date, and the sentence you wrote from it.
+next: p-value-reporting
+
+@@ M | stats-viva-drill | Statistics viva drill for my thesis defence
+aud: PG Resident (final year)
+use: In the weeks before your thesis defence or final viva.
+why: Examiners love statistics questions because most residents can't explain why they used a test. A drill based on your own thesis, one question at a time, with feedback, turns "my statistician did it" into confident answers.
+persona: You are a strict but fair biostatistics examiner on an MD/MS thesis viva panel. You ask questions one at a time, starting simple and escalating, and you give frank feedback after each answer.
+context: Thesis title and design: [paste]
+Sample size and how it was calculated: [brief]
+Tests used for each objective: [list]
+Key results (estimates, CIs, p values): [paste]
+Limitations I already know about: [list]
+My weakest statistics topics, in my own view: [list]
+task: 1. Ask me one statistics question at a time about my own thesis, starting with basics (variable types, why this test) and escalating (assumptions, power, confounding, multiplicity, clinical versus statistical significance).
+2. After each of my answers: score it out of 10, give the ideal answer in 3–5 points, and name the gap in my reasoning.
+3. Include at least 2 "trap" questions examiners commonly use (e.g. "what does p = 0.04 mean?", "was your study powered for this?").
+4. After 12 questions, summarise my weak areas and give a 3-day revision plan targeted at them, with one resource type for each (textbook chapter, video, practice set).
+rules: Ask only one question per turn and wait for my answer, because the value is in answering under pressure. Base questions on my actual thesis details; where you need a detail I have not given, ask for it instead of assuming.
+output: Conversational: one question per turn, feedback in a short structured block, then the summary and plan at the end.
+tweak: Finish with the 5 statistical statements from my thesis I should be able to explain word for word.
+tips:
+- Answer aloud before typing. The viva is spoken, not written.
+- Re-run the drill after revising your weak areas and compare scores.
+- Ask a friend to read the questions to you for a realistic rehearsal.
+next: stats-term-explain
+
+@@ S | sample-size-proportion | Sample size to estimate a proportion (prevalence)
+aud: PG Resident / MBBS Student
+use: For descriptive studies estimating a prevalence or proportion with a chosen precision.
+persona: You are a biostatistician who teaches precision-based sample-size calculation.
+context: Expected proportion (with source): [e.g. 30% (Author, year)]
+Desired precision: [absolute margin, e.g. ±5%, or relative, e.g. 20% of p]
+Confidence level: [95%]
+Population size, if finite and small: [N or "large"]
+Expected non-response: [e.g. 10%]
+task: 1. Give the formula n = Z²·p(1−p)/d² and define each term.
+2. Calculate step by step with my inputs, and apply the finite-population correction if relevant.
+3. Adjust for non-response and round up.
+4. Show how n changes with d = 3%, 5% and 7%.
+5. Write the protocol sentence and list the OpenEpi inputs for verification.
+rules: Make clear whether the precision is absolute or relative, because confusing them changes n several-fold. Mark any unsourced input as [VERIFY FROM PUBLISHED SOURCE].
+output: The formula, the working, a small sensitivity table, then the sentence and verification inputs.
+tip: If no prior estimate exists, p = 50% gives the maximum (most conservative) sample size. Justify it in the protocol.
+try: Prevalence of depression in haemodialysis patients, expected 40%, ±7% absolute precision.
+next: sample-size-master
+
+@@ S | sample-size-two-means | Sample size to compare two means
+aud: PG Resident
+use: When your primary outcome is continuous and you compare two groups.
+persona: You are a biostatistician who explains power-based sample sizes clearly.
+context: Expected mean and SD in each group (with source): [e.g. 45 ± 10 vs 38 ± 10]
+Minimum clinically important difference: [value and why]
+Alpha, power and sidedness: [0.05, 80%, two-sided]
+Group ratio and dropout: [1:1, 10%]
+task: 1. State the formula for comparing two independent means and define each term.
+2. Calculate step by step, adjust for dropout and round up.
+3. Show the effect of a smaller difference or larger SD in a sensitivity table.
+4. Give the G*Power settings to verify.
+5. Write the protocol sentence.
+rules: Base the difference on clinical importance, not on what makes the sample small, because committees ask "why this difference?". Mark unsourced SDs as [VERIFY FROM PUBLISHED SOURCE].
+output: Formula, working, sensitivity table, verification settings, sentence.
+tip: If you measure the outcome before and after in the same patients, ask for the paired calculation instead. It usually needs fewer patients.
+try: Mean post-operative pain score (VAS) 4.5 ± 1.8 vs 3.5 ± 1.8 with two analgesic regimens.
+next: sample-size-master
+
+@@ S | sample-size-two-proportions | Sample size to compare two proportions
+aud: PG Resident
+use: When your primary outcome is binary and you compare two groups (trial or cohort).
+persona: You are a biostatistician who calculates sample sizes for trials and cohorts.
+context: Expected proportion in each group (with source): [e.g. 30% vs 15%]
+Alpha, power and sidedness: [0.05, 80%, two-sided]
+Group ratio and dropout: [e.g. 1:1, 10%]
+Continuity correction wanted?: [yes / no / unsure]
+task: 1. State the formula for two independent proportions and define each term.
+2. Calculate step by step, with and without continuity correction if relevant.
+3. Adjust for dropout and round up.
+4. Show a sensitivity table for smaller differences.
+5. Give the OpenEpi or G*Power inputs and the protocol sentence.
+rules: Express the expected difference as both absolute and relative change, because committees look for a clinically meaningful difference. Mark unsourced proportions as [VERIFY FROM PUBLISHED SOURCE].
+output: Formula, working, sensitivity table, verification inputs, sentence.
+tip: Small absolute differences in rare outcomes need very large samples. Check feasibility before you commit.
+try: Surgical-site infection 12% with standard care versus 5% with a new protocol.
+next: sample-size-master
+
+@@ S | sample-size-diagnostic | Sample size for a diagnostic accuracy study
+aud: PG Resident
+use: When your primary objective is the sensitivity and/or specificity of a test.
+persona: You are a diagnostic-research statistician familiar with Buderer's method.
+context: Expected sensitivity and specificity (with source): [e.g. Se 85%, Sp 80%]
+Desired precision (half-width of 95% CI): [e.g. ±7%]
+Prevalence of the target condition in my study population: [e.g. 30%]
+Dropout or indeterminate results: [e.g. 5%]
+task: 1. Calculate the number of diseased participants needed for sensitivity and the number of non-diseased needed for specificity.
+2. Convert each to a total sample size using the prevalence.
+3. Take the larger total, adjust for losses and round up.
+4. Explain why prevalence matters so much.
+5. Write the protocol sentence and the verification approach.
+rules: Show both calculations, because many theses calculate only for sensitivity and are underpowered for specificity. Mark unsourced inputs as [VERIFY FROM PUBLISHED SOURCE].
+output: Both calculations, the total, the prevalence explanation, then the sentence.
+tip: If prevalence in your population is low, consider enriching with known cases, and report it as a limitation.
+try: Lung ultrasound for pneumonia: expected Se 90%, Sp 85%, prevalence 40%, precision ±7%.
+next: diagnostic-design
+
+@@ S | sample-size-correlation | Sample size for a correlation study
+aud: PG Resident
+use: When your primary objective is a correlation between two continuous variables.
+persona: You are a biostatistician who calculates sample sizes for correlation and agreement studies.
+context: Expected correlation coefficient (with source): [e.g. r = 0.35]
+Alpha, power and sidedness: [0.05, 80%, two-sided]
+Dropout: [e.g. 10%]
+task: 1. Explain the Fisher z-transformation approach in plain language.
+2. Calculate the sample size step by step.
+3. Adjust for dropout and round up.
+4. Show n for r = 0.2, 0.3, 0.4 and 0.5.
+5. Warn if my real question is agreement (e.g. two methods measuring the same thing), which needs a different approach.
+rules: Mark unsourced expected correlations as [VERIFY FROM PUBLISHED SOURCE], because correlation strength drives the sample size dramatically.
+output: Explanation, working, sensitivity table, then the agreement warning if relevant.
+tip: A statistically significant weak correlation (r = 0.2) is rarely clinically useful. Plan for a meaningful r.
+try: Correlation between serum ferritin and HbA1c in type 2 diabetes, expected r = 0.3.
+next: correlation-vs-agreement
+
+@@ S | sample-size-case-control | Sample size for a case-control study
+aud: PG Resident
+use: When your design compares cases and controls for an exposure.
+persona: You are an epidemiologist who calculates case-control sample sizes, including matched designs.
+context: Expected exposure prevalence in controls (with source): [e.g. 20%]
+Odds ratio worth detecting: [e.g. 2.0]
+Controls per case: [1 / 2 / 3]
+Matched or unmatched: [brief]
+Alpha, power: [0.05, 80%]
+task: 1. Calculate the number of cases and controls step by step for an unmatched design.
+2. Explain how matching and more controls per case change the requirement.
+3. Show how n changes for OR = 1.5, 2.0 and 2.5.
+4. Give OpenEpi inputs to verify.
+5. Write the protocol sentence.
+rules: Explain why going beyond 4 controls per case gives little additional power. Mark unsourced inputs as [VERIFY FROM PUBLISHED SOURCE].
+output: Working, a sensitivity table, verification inputs, then the sentence.
+tip: If cases are scarce, adding controls per case is the cheapest way to gain power.
+try: Exposure: indoor biomass fuel use; outcome: COPD in women; OR 2.0; control exposure 30%.
+next: case-control-design
+
+@@ S | sample-size-regression | Is my sample big enough for regression?
+aud: PG Resident
+use: When you plan a multivariable model and need to know how many variables it can support.
+persona: You are a biostatistician who reviews regression plans for overfitting.
+context: Outcome type and expected number of outcome events (or N for continuous outcomes): [brief]
+Candidate predictors, and how many parameters each uses (categorical variables use several): [list]
+Purpose: [adjustment / prediction]
+task: 1. Count the parameters my candidate list uses.
+2. Apply events-per-variable reasoning and explain why the 10-per-variable rule is only a rough guide.
+3. Tell me the maximum parameters my study can support.
+4. Suggest how to prioritise or combine variables.
+5. Mention formal approaches for prediction models, and mark their details [CONFIRM WITH STATISTICIAN].
+rules: Count events, not total patients, for binary and time-to-event outcomes, because that is the most common error in thesis regression plans.
+output: A parameter count table, the calculation, then the recommendations.
+tip: A model with 3 well-chosen variables is more credible than one with 12 stepwise ones.
+try: 30-day mortality with 45 deaths among 300 patients, 11 candidate predictors.
+next: regression-builder
+
+@@ S | test-selector | Which statistical test? A decision table
+aud: PG Resident / MBBS Student
+use: When you are unsure which test fits each objective.
+persona: You are a biostatistics teacher known for clear, correct test-selection advice.
+context: My objectives: [PASTE OBJECTIVES HERE]
+For each: outcome variable and type, comparison groups (number, independent or paired), sample size: [brief]
+task: 1. For each objective, name the parametric test, the non-parametric alternative, and when to use which.
+2. Name the effect measure to report with each test.
+3. Name the assumptions to check.
+4. Put everything in one decision table.
+rules: Base the parametric versus non-parametric choice on the variable's distribution and sample size, not on a normality test alone, because normality tests are unreliable in small and very large samples.
+output: A decision table (objective, outcome type, groups, test, alternative, effect measure, assumptions).
+tip: Paste this table into your analysis plan and quote it in your viva when asked "why this test?".
+try: Objectives comparing CRP (skewed) between 3 groups and mortality (yes/no) between 2 groups.
+next: sap-master
+
+@@ S | normality-check | Is my data normally distributed? Decide sensibly
+aud: PG Resident
+use: Before choosing between parametric and non-parametric methods.
+persona: You are a biostatistician who teaches sensible distribution checks rather than blind reliance on normality tests.
+context: Variable and what it measures: [brief]
+Sample size per group: [n]
+Summary statistics (mean, SD, median, IQR, min, max): [paste]
+Histogram or Q-Q plot description, or the Shapiro-Wilk result: [paste]
+task: 1. Assess the distribution from the summaries (e.g. SD large relative to the mean for a positive-only variable suggests skew) and the plot.
+2. Explain what the normality test does and does not tell me at my sample size.
+3. Recommend how to summarise the variable (mean ± SD or median with IQR) and which test family to use.
+4. Mention transformation (e.g. log) as an option, with its trade-offs.
+rules: Combine clinical knowledge of the variable with the data, because a normality test alone is underpowered in small samples and oversensitive in large ones.
+output: The assessment, the explanation, the recommendation, then the transformation note.
+tip: Hospital-stay length, CRP and most lab counts are usually skewed. Expect medians.
+try: ICU length of stay: mean 6.2, SD 5.8, median 4, IQR 3–8, n = 90.
+next: nonparametric-choice
+
+@@ S | nonparametric-choice | Choose and report the right non-parametric test
+aud: PG Resident
+use: When your data is skewed or ordinal and parametric tests don't fit.
+persona: You are a biostatistician who explains non-parametric methods in plain language.
+context: Outcome and its type: [skewed continuous / ordinal]
+Groups and whether independent or paired: [brief]
+Sample sizes: [n per group]
+task: 1. Name the right test (Mann-Whitney U, Wilcoxon signed-rank, Kruskal-Wallis, Friedman) and why.
+2. Explain what it actually tests in plain language.
+3. Tell me which summary and effect measure to report (median, IQR, Hodges-Lehmann estimate or rank-biserial correlation).
+4. Give the post-hoc approach if there are more than 2 groups.
+5. Show the reporting sentence template.
+rules: Avoid saying the test compares medians unless the distributions have similar shapes, because that is a common reporting error.
+output: The test choice, explanation, reporting guidance, then the template.
+tip: Report the median and IQR per group alongside the p value. A p value alone tells readers nothing about the size of the difference.
+try: Pain scores (0–10) compared among three anaesthesia techniques.
+next: effect-size-ci
+
+@@ S | chi-square-fisher | Chi-square, Fisher's exact or something else?
+aud: PG Resident / MBBS Student
+use: When comparing proportions or categorical variables between groups.
+persona: You are a biostatistics tutor who explains categorical-data tests precisely.
+context: Variables and categories: [brief]
+Table layout and cell counts (paste the cross-table if you have it): [PASTE TABLE]
+Are the groups independent or paired?: [brief]
+task: 1. Decide between chi-square, chi-square with continuity correction, Fisher's exact, chi-square for trend and McNemar, based on my table and design.
+2. Explain the expected-count rule and check it on my table.
+3. Name the effect measure to report (risk difference, relative risk or odds ratio with 95% CI).
+4. Show the reporting sentence template.
+rules: Base the expected-count check on expected, not observed, counts, because that distinction is commonly confused.
+output: The decision, the expected-count check, the effect measure, then the template.
+tip: For ordered categories (mild, moderate, severe), a trend test uses the order and has more power.
+try: A 2 × 2 table of smoking status by post-operative pneumonia with one cell containing 3.
+next: effect-size-ci
+
+@@ S | paired-data | Before-after or matched data: paired analysis
+aud: PG Resident
+use: When the same patients are measured twice, or cases are matched to controls.
+persona: You are a biostatistician who catches residents analysing paired data as independent groups.
+context: What is measured and when: [brief]
+Outcome type: [continuous / binary / ordinal]
+Sample size: [n pairs]
+task: 1. Confirm whether the data is truly paired, and why that matters.
+2. Name the test: paired t-test, Wilcoxon signed-rank or McNemar.
+3. Name the effect measure: mean difference with 95% CI, median difference, or discordant-pair odds ratio.
+4. Explain the assumption checks (e.g. distribution of the differences).
+5. Show the reporting sentence template.
+rules: Check the distribution of the differences, not of each time point separately, because that is the assumption the paired t-test actually makes.
+output: Numbered answers, then the template.
+tip: Paired designs need fewer patients. Say so when justifying your sample size.
+try: HbA1c before and after 3 months of a lifestyle intervention in 60 patients.
+next: repeated-measures
+
+@@ S | repeated-measures | Outcomes measured three or more times
+aud: PG Resident
+use: When the same patients have an outcome measured at several time points.
+persona: You are a biostatistician who teaches repeated-measures analysis without unnecessary complexity.
+context: Outcome and time points: [brief]
+Groups (if comparing): [brief]
+Sample size and missing follow-ups: [brief]
+Software: [SPSS / R / Jamovi]
+task: 1. Explain why running separate t-tests at each time point is wrong.
+2. Compare repeated-measures ANOVA, a linear mixed model and the Friedman test for my data.
+3. Recommend one, with its assumptions and how it handles missing time points.
+4. Give the software steps or syntax.
+5. Show how to present the results (a line graph with error bars, and a table).
+rules: Recommend a mixed model if follow-ups are missing, and explain why, because repeated-measures ANOVA drops every patient with any missing time point.
+output: The explanation, the comparison, the recommendation, the steps, then the presentation guide.
+tip: A clear line graph of means over time with 95% CIs often explains your result better than any p value.
+try: SOFA score at day 1, 3 and 7 in two sepsis treatment groups.
+next: sap-master
+
+@@ S | correlation-vs-agreement | Correlation or agreement? Methods comparison done right
+aud: PG Resident
+use: When comparing two methods of measuring the same thing, or relating two variables.
+persona: You are a measurement statistician who explains why correlation is not agreement.
+context: The two measurements and what they measure: [brief]
+Purpose: [do they agree? / are they related?]
+Sample size: [n]
+task: 1. Tell me whether my question is about association (correlation) or agreement (interchangeability).
+2. For association: choose Pearson or Spearman and explain why.
+3. For agreement: explain the Bland-Altman analysis (bias, limits of agreement) and ICC, and when to use each.
+4. Define in advance what limits of agreement would be clinically acceptable.
+5. Show how to report the result.
+rules: Do not use correlation to claim agreement, because two methods can correlate perfectly and still disagree systematically.
+output: The diagnosis of my question, the method, then the reporting template.
+tip: Decide the clinically acceptable limits of agreement before looking at your data.
+try: Comparing a pulse oximeter with arterial blood gas SaO2 in ICU patients.
+next: measurement-reliability
+
+@@ S | roc-analysis | ROC curve, AUC and the best cut-off
+aud: PG Resident
+use: When your study evaluates a continuous marker or score for diagnosis or prognosis.
+persona: You are a diagnostic statistician who explains ROC analysis honestly, including its limits.
+context: Marker or score: [brief]
+Outcome (reference standard): [brief]
+Sample size and number with the outcome: [brief]
+Software: [SPSS / MedCalc / R / Jamovi]
+task: 1. Explain what the ROC curve and AUC represent in plain language.
+2. Give the steps to run the analysis in my software.
+3. Explain how to choose a cut-off (Youden index versus clinically chosen sensitivity), and report sensitivity, specificity, predictive values and likelihood ratios at it.
+4. Warn about optimism when the cut-off is derived and tested in the same data.
+5. Show the reporting template.
+rules: Report the AUC with its 95% CI, and call a data-derived cut-off exploratory unless it is validated, because optimistic cut-offs are a common reviewer criticism.
+output: Explanation, steps, cut-off guidance, then the template.
+tip: Compare your marker's AUC with an existing score's AUC in the same patients. It makes the result meaningful.
+try: Serum lactate for predicting 28-day mortality in sepsis.
+next: sample-size-diagnostic
+
+@@ S | survival-analysis | Time-to-event analysis: Kaplan-Meier and Cox
+aud: PG Resident
+use: When your outcome is time until an event (death, relapse, readmission) and follow-up varies.
+persona: You are a biostatistician who teaches survival analysis to clinicians clearly.
+context: Event and time origin: [brief]
+Follow-up duration and how censoring occurs: [brief]
+Groups and covariates: [brief]
+Number of events: [n]
+Software: [SPSS / R / Stata]
+task: 1. Define time zero, the event and censoring for my study.
+2. Explain Kaplan-Meier curves and the log-rank test for group comparison.
+3. Explain the Cox model, the hazard ratio, and the proportional-hazards check.
+4. Say how many covariates my events can support.
+5. Give software steps and a reporting template (median survival, HR with 95% CI, number at risk under the curve).
+rules: Warn me if informative censoring is likely (e.g. sicker patients lost to follow-up), because it biases survival estimates.
+output: Definitions, methods, the covariate limit, steps, then the template.
+tip: Always show the number at risk beneath your Kaplan-Meier plot. Reviewers expect it.
+try: Time to first exacerbation after discharge in COPD, comparing two inhaler regimens.
+next: regression-builder
+
+@@ S | missing-data-plan | Handle missing data honestly
+aud: PG Resident
+use: At the analysis-planning stage, and again when your dataset is complete.
+persona: You are a biostatistician who treats missing data as a bias problem, not a nuisance.
+context: Variables with missing values and the percentage missing: [PASTE TABLE]
+Why values are missing, as far as I know: [brief]
+Sample size: [N]
+task: 1. Classify the likely mechanism for each variable (MCAR, MAR or MNAR) in plain language.
+2. Recommend an approach for each: complete-case analysis, multiple imputation or sensitivity analysis.
+3. Explain what to report in the thesis (amount missing, pattern, handling).
+4. Warn against single mean imputation and last observation carried forward.
+5. Give software steps if imputation is needed.
+rules: Recommend reporting missingness transparently even when it is small, because silent exclusion is an examiner favourite.
+output: A variable table (variable, % missing, likely mechanism, approach), then the reporting guidance and steps.
+tip: Compare the characteristics of patients with and without missing outcomes. It is a simple, powerful sensitivity check.
+try: 12% missing 30-day outcomes, 8% missing baseline albumin in a 200-patient cohort.
+next: sap-master
+
+@@ S | data-cleaning | Data-cleaning checklist before analysis
+aud: PG Resident
+use: After data entry is complete, before any analysis.
+persona: You are a clinical data manager who has cleaned hundreds of thesis datasets.
+context: Dataset description (variables, types, N): [brief or PASTE CODEBOOK]
+Software: [Excel / SPSS / R]
+task: 1. Give a step-by-step checklist: duplicates, IDs, ranges, impossible values, date logic (discharge after admission), unit consistency, coding consistency and missing-value codes.
+2. For each step, give the formula or software method.
+3. Describe how to log each correction with its source document.
+4. Describe how to lock the final dataset.
+rules: Tell me never to overwrite the raw data file, and to correct only against the source document, because undocumented corrections are indistinguishable from data manipulation.
+output: A numbered checklist with methods, then a correction-log template.
+tip: Frequency tables of every categorical variable catch half of all coding errors in five minutes.
+try: 180-row Excel sheet of ICU patients with vitals, labs and outcomes.
+next: analysis-run
+
+@@ S | spss-steps | Step-by-step SPSS instructions for my analysis
+aud: PG Resident
+use: When you run the analysis yourself in SPSS.
+persona: You are an SPSS trainer who gives exact menu paths and explains which output to read.
+context: SPSS version: [e.g. 26 / 29]
+Analysis needed: [e.g. independent t-test of BMI by group, chi-square of mortality by group]
+Variable names in my file: [list]
+task: 1. Give the exact menu path for each analysis (Analyze → …).
+2. Say which boxes to tick and options to select (including effect sizes and CIs).
+3. Explain which output tables to read and which rows or columns matter.
+4. Give the equivalent syntax so I can save and re-run it.
+rules: Mark any menu item that may differ by version as [MAY DIFFER BY VERSION], because SPSS menus change between releases.
+output: Numbered steps per analysis, then the syntax block, then an output-reading guide.
+tip: Always paste the syntax into a syntax file. It is your record of exactly what you ran.
+try: Mann-Whitney U test of hospital stay by diabetes status, SPSS 27.
+next: output-interpretation
+
+@@ S | r-code | R code for my thesis analysis
+aud: PG Resident / Faculty
+use: When you want free, reproducible analysis in R or RStudio.
+persona: You are an R programmer and biostatistician who writes clean, commented code for clinical researchers.
+context: Data file and format: [e.g. thesis.csv]
+Variable names and types: [list]
+Analyses needed: [list]
+My R experience: [none / basic / comfortable]
+task: 1. Write a complete, commented script: load packages, import data, check structure, Table 1, primary analysis, secondary analyses, and figures.
+2. Use widely used packages (e.g. tidyverse, gtsummary) and explain why.
+3. Include assumption checks.
+4. Explain how to run it step by step for my experience level.
+rules: Use my exact variable names and don't recode anything without a comment explaining it, because hidden recoding changes results.
+output: One code block with section comments, then running instructions.
+tip: Run the script on a copy of the data first. Keep the raw file untouched.
+try: CSV with age, sex, group, CRP, and a binary outcome "death28".
+next: output-interpretation
+
+@@ S | jamovi-steps | Free point-and-click analysis in Jamovi
+aud: PG Resident / MBBS Student
+use: When you don't have an SPSS licence and want a free, simple tool.
+persona: You are a statistics trainer who teaches Jamovi to clinicians.
+context: Analyses needed: [list]
+Variable names and types: [list]
+task: 1. Explain how to import my data and set the measure type (nominal, ordinal, continuous) for each variable.
+2. Give the exact steps for each analysis, including effect sizes and assumption checks.
+3. Explain how to export tables and plots for my thesis.
+4. Tell me how to cite Jamovi and its R packages in my methods.
+rules: Mark any menu wording that may have changed as [CHECK CURRENT VERSION], because the interface is updated regularly.
+output: Numbered steps per analysis, then the export and citation notes.
+tip: Setting the measure type correctly is the step most beginners skip. It decides which tests Jamovi offers.
+try: Independent t-test, chi-square, and a Pearson correlation.
+next: output-interpretation
+
+@@ S | effect-size-ci | Effect sizes and confidence intervals for every result
+aud: PG Resident
+use: When planning or writing results, so you report more than p values.
+persona: You are a biostatistician who insists that every comparison is reported with an effect size and CI.
+context: My comparisons, each with outcome type and design: [list]
+task: 1. For each comparison, name the right effect measure (mean difference, risk difference, relative risk, odds ratio, hazard ratio, correlation, AUC).
+2. Explain what each means clinically in one line.
+3. Explain how to obtain its 95% CI in my software.
+4. Show a reporting sentence for each.
+rules: Choose relative risk over odds ratio where the design allows and the outcome is common, and explain why, because odds ratios exaggerate effects when outcomes are common.
+output: A table (comparison, effect measure, clinical meaning, CI method), then the sentences.
+tip: A CI crossing the line of no effect but including large effects means "inconclusive", not "no effect".
+try: Comparisons of mortality (binary), ICU stay (skewed) and SOFA change (continuous) between two groups.
+next: p-value-reporting
+
+@@ S | multiple-comparisons | Multiple comparisons: correct or not?
+aud: PG Resident
+use: When you test many outcomes, subgroups or time points.
+persona: You are a biostatistician who explains multiplicity pragmatically.
+context: Number and type of tests planned: [brief]
+Primary versus secondary outcomes: [brief]
+Sample size: [N]
+task: 1. Explain the multiplicity problem using my number of tests.
+2. Recommend whether to correct (Bonferroni, Holm, false discovery rate) or to pre-specify and label outcomes as secondary or exploratory.
+3. Explain the trade-off (power versus false positives).
+4. Write a methods sentence describing my approach.
+rules: Keep the primary outcome uncorrected if there is only one, and say so, because over-correcting a single primary outcome is a common error.
+output: The explanation, the recommendation, the trade-off, then the sentence.
+tip: Pre-specifying one primary outcome is the simplest multiplicity strategy there is.
+try: 12 lab parameters compared between 3 groups.
+next: subgroup-sensitivity
+
+@@ S | subgroup-sensitivity | Subgroup and sensitivity analyses that hold up
+aud: PG Resident
+use: When planning extra analyses beyond the primary one.
+persona: You are a trial statistician who is sceptical of subgroup claims.
+context: Primary analysis: [brief]
+Subgroups I am interested in: [list]
+Assumptions I am unsure about (missing data, outliers, definitions): [list]
+task: 1. Recommend which subgroups to pre-specify, with a biological rationale.
+2. Explain why subgroup analyses should use an interaction test rather than separate p values.
+3. Design 2–3 sensitivity analyses that test my key assumptions.
+4. Explain how to label and report them.
+rules: Label all subgroup results exploratory unless the study was powered for them, because spurious subgroup findings are among the commonest misleading results in medicine.
+output: A subgroup table (subgroup, rationale, method), a sensitivity-analysis list, then reporting guidance.
+tip: A forest plot of subgroup estimates with CIs shows readers how consistent your result is.
+try: Primary: effect of early antibiotics on mortality; subgroups: age, diabetes, source of infection.
+next: sap-master
+
+@@ S | p-value-reporting | Report p values and CIs the way journals want
+aud: PG Resident / MBBS Student
+use: When writing results, tables and abstracts.
+persona: You are a statistical editor for a medical journal who corrects p-value reporting daily.
+context: My results as I have written them: [PASTE RESULTS TEXT OR TABLE]
+Target: [thesis / journal name]
+task: 1. Check each reported result for: exact p values (not "NS" or "p < 0.05" when an exact value is available), the correct number of decimals, CIs alongside estimates, and correct presentation of very small p values (e.g. p < 0.001).
+2. Check wording: "significant" qualified as statistical, no "trend towards significance", and no "p = 0.000".
+3. Return the corrected text.
+rules: Change formatting and wording only; never change a number, because the numbers must match the software output exactly.
+output: An issue table (original, problem, corrected), then the corrected text.
+tip: Report the effect estimate first and the p value last: "RR 0.72 (95% CI 0.55–0.94; p = 0.02)".
+try: "Mortality was significantly lower (p = 0.000) and there was a trend towards shorter stay (p = 0.07)."
+next: results-writer
+
+@@ S | stats-in-sheets | Quick analysis inside Google Sheets with AI add-ons
+aud: PG Resident / MBBS Student
+use: For quick descriptive statistics and simple tests while your data is still in Google Sheets or Excel.
+persona: You are a practical data coach who uses Gemini in Sheets, ChatGPT for Sheets and similar add-ons, and who knows their limits.
+context: Sheet structure (columns and types): [brief]
+Analyses I need: [e.g. descriptives by group, a chi-square test, a correlation]
+Tool: [Gemini in Sheets / ChatGPT for Sheets / Julius AI]
+task: 1. Write the exact prompts to type into the tool's side panel for each analysis, e.g. "Compare mean systolic BP between the intervention and control columns. Check normality first, tell me which test is appropriate, then run it and report the exact p value."
+2. Explain how to check each result by hand or with a spreadsheet formula.
+3. List the analyses I should move to proper statistical software instead.
+rules: Tell me to verify every key number in a second tool before it goes into my thesis, because AI add-ons can produce realistic but wrong statistics.
+output: A prompt list per analysis, verification methods, then the "move to software" list.
+tip: Use add-ons for exploration and data cleaning. Use proper software for the final thesis analysis.
+try: A sheet of 120 diabetic patients with HbA1c, BMI, treatment group and complications.
+next: analysis-run
+
+@@ Q | variable-types | Classify my variables correctly
+aud: MBBS Student / PG Resident
+body: Act as a biostatistics tutor. Classify each of my variables, [PASTE VARIABLE LIST], as continuous, discrete, binary, nominal or ordinal, name the right summary statistic for each (mean ± SD, median with IQR, n with %), and flag any variable I should not convert into categories.
+try: Age, sex, BMI, NYHA class, smoking (yes/no), number of admissions, CRP.
+
+@@ Q | mean-or-median | Mean or median for this variable?
+aud: MBBS Student / PG Resident
+body: Act as a biostatistician reviewing a thesis Table 1. For my variable [VARIABLE] with these summaries, [MEAN, SD, MEDIAN, IQR, MIN, MAX, n], tell me whether to report the mean ± SD or the median with IQR, and explain your reasoning in 3 lines using the numbers.
+try: Hospital stay: mean 7.1, SD 6.4, median 5, IQR 3–9, range 1–42, n = 110.
+
+@@ Q | p-value-meaning | What does my p value actually mean?
+aud: MBBS Student / PG Resident
+body: Act as a biostatistics examiner. Explain what my result [e.g. p = 0.03 for the difference in X] does and does not mean, in plain language, in under 100 words. Include the 2 most common misinterpretations and why they are wrong.
+try: p = 0.04 for a difference in mortality between two antibiotic regimens.
+
+@@ Q | ci-meaning | Interpret my confidence interval
+aud: MBBS Student / PG Resident
+body: Act as a clinical epidemiologist teaching residents. Interpret this confidence interval, [ESTIMATE AND 95% CI], for a clinician in under 100 words: what range of true effects is plausible, whether it excludes no effect, and whether it excludes a clinically important effect.
+try: Mean difference in systolic BP −6 mmHg (95% CI −11 to −1).
+
+@@ Q | or-vs-rr | Odds ratio or relative risk for my study?
+aud: PG Resident
+body: Act as an epidemiology tutor. For my design [DESIGN] and outcome frequency [e.g. 25%], tell me whether to report an odds ratio or a relative risk, why, and how much an odds ratio would overstate the relative risk here. Answer in under 120 words.
+try: Prospective cohort, outcome occurring in 30% of patients.
+
+@@ Q | power-explained | Explain statistical power with my study
+aud: MBBS Student / PG Resident
+body: Act as a biostatistics teacher. Explain statistical power, alpha and beta using my study, [BRIEF STUDY AND SAMPLE SIZE], as the example. Include what happens if my study is underpowered, and how to phrase a non-significant result honestly. Keep it under 150 words.
+try: Two-arm trial of 60 patients comparing two antiemetics.
+
+@@ Q | not-significant | My result isn't significant: now what?
+aud: PG Resident
+body: Act as a biostatistician and thesis guide. My primary result was [ESTIMATE, 95% CI, p]. Explain in plain words what this means, whether the study was likely underpowered, how to write it honestly in results and discussion, and which phrases to avoid (e.g. "trend towards").
+try: RR 0.80 (95% CI 0.55–1.16), p = 0.24, in a 150-patient cohort.
+
+@@ Q | baseline-testing | Should I test baseline differences in my trial?
+aud: PG Resident
+body: Act as a trial statistician. Explain whether I should report p values for baseline characteristics in Table 1 of my randomised trial [BRIEF DESCRIPTION], what CONSORT recommends, and what to do instead if the groups look imbalanced. Keep it under 120 words.
+try: A 2-arm RCT of 80 patients where mean age differs by 4 years between groups.
+
+@@ Q | kappa-meaning | Interpret my kappa value
+aud: PG Resident
+body: Act as a measurement statistician. Interpret my inter-observer agreement result, [KAPPA OR WEIGHTED KAPPA WITH 95% CI], for my measurement [MEASUREMENT], explain what the value means in practice, mention the prevalence paradox, and give the sentence for my results section.
+try: Kappa 0.62 (95% CI 0.48–0.76) for two readers grading chest X-ray consolidation.
+
+@@ Q | assumption-check | Which assumptions does my test need?
+aud: PG Resident
+body: Act as a biostatistics tutor. For the test [TEST] on my variables [VARIABLES], list each assumption, exactly how to check it in [SOFTWARE], what violation looks like, and the fallback test if it fails. Present it as a short table.
+try: One-way ANOVA of FEV1 across three smoking categories in SPSS.
+
+@@ Q | sample-size-sanity | Sanity-check an AI-generated sample size
+aud: PG Resident
+body: Act as a biostatistician. An AI tool gave me a sample size of [n] for [DESIGN AND OUTCOME] with these inputs, [INPUTS]. Recalculate it step by step, tell me whether the number is right, and give the exact OpenEpi or G*Power inputs to confirm it.
+try: n = 96 for estimating a prevalence of 50% with ±10% precision.
+
+@@ Q | stats-term-explain | Explain any statistics term for the viva
+aud: MBBS Student / PG Resident
+body: Act as a viva examiner who wants clear answers. Explain [STATISTICAL TERM] clearly in 3 levels for my thesis viva: one sentence, a 60-word explanation with an example from my thesis on [TOPIC], and the examiner's likely follow-up question with its answer.
+try: Term: confounding. Thesis: vitamin D and TB treatment outcomes.
+
+@@ Q | table1-summaries | Build Table 1 from my variables
+aud: PG Resident
+body: Act as a clinical biostatistician. From my variable list with types, [PASTE LIST], build a Table 1 template by group: rows, the summary format for each (n (%), mean ± SD, median [IQR]), units in the row labels, and footnotes. Leave the values as placeholders.
+try: Age, sex, BMI, diabetes, hypertension, SOFA, lactate, in survivors versus non-survivors.
