@@ -1,0 +1,512 @@
+# 2.5 | Posters & visual teaching aids | Ward protocol posters, infographics, patient leaflets, pocket cards and AI-generated illustrations: visuals teach faster than words, when they are accurate and simple.
+
+@@ M | ward-protocol-poster | Clinical protocol poster for a ward or ICU
+aud: PG Resident / Faculty / Nursing educator
+use: When your unit adopts a protocol (sepsis bundle, hypoglycaemia, anaphylaxis, blood transfusion) and staff need it at a glance.
+why: Protocols in files are not followed; protocols on the wall, clear enough to use at 3 a.m., are. A well-designed poster turns a guideline into action, provided every dose and threshold is verified and it matches your hospital's approved protocol.
+persona: You are a clinical quality-improvement lead and medical illustrator who designs bedside protocol posters that nurses and doctors actually use in emergencies.
+context: Protocol topic: [e.g. management of hypoglycaemia in adult inpatients]
+Source: our hospital's approved protocol or guideline: [UPLOAD / PASTE]
+Users: [nurses / residents / all staff]
+Where it will hang, and the size: [e.g. nursing station, A3]
+Language(s): [English / Hindi / bilingual]
+Drugs and equipment available locally: [list]
+task: 1. Extract the steps that must be on the poster: recognition criteria, immediate actions, drug doses and routes, monitoring, escalation triggers and who to call.
+2. Design a top-to-bottom flow: a trigger box, action steps, decision points (yes/no), and escalation.
+3. Write the text for each box in under 12 words, using action verbs.
+4. Specify the design: large fonts, a colour code (red for emergency actions), icons and plenty of white space.
+5. Add a footer with the source protocol, version and date, the approving authority, and the review date.
+6. Write a 5-minute staff briefing to launch the poster.
+rules: Take every dose, threshold and step only from the approved protocol I provided, and mark each [VERIFY AGAINST APPROVED PROTOCOL] until it is checked, because a wrong dose on a wall poster can harm patients. Match the local drug formulation and route. Get sign-off from the unit in-charge before printing.
+output: The content extraction, the flow description (box by box), the design specification, the footer, then the briefing script.
+tweak: End with a checklist for testing the poster: can a new nurse follow it correctly in 60 seconds?
+tips:
+- Test the poster with 3 staff members before printing. Watch where they hesitate.
+- Laminate it and put a review date on it. Outdated protocol posters are dangerous.
+- Put the poster where the action happens, not where there's space.
+next: pocket-card
+
+@@ M | comic-infographic | Comic-style teaching infographic (AI image tools)
+aud: PG Resident / Faculty / Medical educator
+use: When you want a shareable, memorable 5-panel comic on a clinical topic, using ChatGPT image generation, Gemini or similar tools.
+why: A comic with two recurring characters, one asking and one answering, turns five high-yield facts into a story students remember and share. The prompt fixes the layout, characters and style so the tool produces a consistent, legible single image, and you verify every fact first.
+persona: You are a medical educator and visual designer who writes precise image-generation prompts for educational comics, and who checks every clinical fact before it goes into an image.
+context: Topic: [e.g. hypokalaemia: 5 things you must know]
+The 5 questions and answers, written and verified by me: [PASTE 5 Q&A PAIRS]
+Character A (the asker): [e.g. a curious junior doctor in a white coat with a stethoscope, holding a clipboard]
+Character B (the answerer): [e.g. a calm, confident senior physician in scrubs]
+Brand colours and handle: [e.g. black and orange, @yourhandle]
+Image tool: [ChatGPT image / Gemini / other]
+task: 1. Check each of my 5 Q&A pairs for accuracy and brevity (answers under 12 words), and flag anything to verify.
+2. Assign a tone to character A (curious, puzzled, worried, sceptical, alarmed, thinking) and an emotion to character B (reassuring, serious, knowing smile, warning finger) for each panel.
+3. Write the complete image prompt: a single vertical comic-style infographic (portrait, 4:5), the title bar "[TOPIC]: 5 Things You Must Know", a clean modern medical-comic style with bold outlines, flat cell-shaded colouring and a soft palette, the brand colours on the title bar and panel borders, and 5 stacked numbered panels, each with both characters, a question bubble and an answer bubble.
+4. Specify that both characters look identical in every panel, the text is short and legible, nothing is cropped, and a footer bar shows my handle.
+5. Write 2 fix-up prompts for common problems: garbled text in one panel, and characters that drift between panels.
+rules: Put only facts I have verified into the image, and flag doubtful ones as [VERIFY] before generating, because errors in viral images can't be corrected once shared. Keep each bubble's text short, because image tools garble long text.
+output: The accuracy check, the tone table, the full image prompt in a code block, then the fix-up prompts.
+tweak: End with a caption of under 60 words for posting the comic, with 2 references to cite.
+tips:
+- Fix one panel at a time: "Fix the spelling in panel 3 only, keep everything else."
+- Keep answers under 12 words. Longer text is where image tools make spelling errors.
+- Read the generated image letter by letter before posting. Image tools still misspell medical terms.
+next: infographic-medical
+
+@@ M | handwritten-notes-image | Handwritten-style revision notes image
+aud: MBBS Student / PG Resident / Medical educator
+use: When you want an attractive A4 handwritten-style revision sheet on a topic, generated with an AI image tool.
+why: Students love revising from colour-coded handwritten notes, and a consistent design system (paper, handwriting, colour-coded boxes, highlights and sketches) makes every topic look like a page from the same notebook. The content must be verified first, because image tools reproduce errors beautifully.
+persona: You are a medical educator and designer who creates handwritten-style study sheets with AI image tools, and who checks every fact before generating.
+context: Topic: [TOPIC NAME]
+The verified content outline (definition, anatomy or pathophysiology, key features, clinical presentation, tests, differentials, treatment, complications, key points): [PASTE]
+Diagrams I want (2–4), described: [list]
+Footer text: [e.g. "1 / 1 | @yourhandle"]
+Image tool: [ChatGPT image / Gemini / other]
+task: 1. Check my outline for accuracy and trim it so it fits one A4 page.
+2. Write the full image prompt with this design system: warm cream background (#FEFDF6) with faint blue ruled lines; neat, slightly imperfect dark-navy gel-pen handwriting; rounded section boxes with solid header bars rotating between blue #3B5FAC, green #1E7A3D, red #C0392B and purple #6C3483, with white bold uppercase headings; highlighting in yellow #FFF176 for mnemonics, blue #BBDEFB for definitions, green #C8E6C9 for treatment, pink #F8BBD9 for clinical features and orange #FFCC80 for warnings; bullets, red stars before key points, and underlined key words.
+3. Specify 2–4 small pen-and-ink labelled sketches with captions.
+4. Specify the section order from my outline, a full-width yellow "key distinction" warning banner, and a "key points" box at the bottom.
+5. Add the footer, and the instruction that it must look hand-done, not typed or printed.
+6. Write 2 fix-up prompts: overcrowded text, and a misspelled term.
+rules: Include only content I have verified, marking anything doubtful [VERIFY] before generating, and don't reproduce copyrighted atlas plates, only original sketches "in the style of" clean anatomical line drawings, because both errors and copyright problems multiply once images are shared.
+output: The accuracy check, the trimmed outline, the full image prompt in a code block, then the fix-up prompts.
+tweak: End with a list of the 5 terms most likely to be misspelled in the image, to proofread first.
+tips:
+- One topic per page. If the outline is long, split it into two sheets.
+- Proofread every word of the generated image. Handwriting styles hide spelling errors.
+- Keep the design system identical across topics. It makes a recognisable series.
+next: infographic-medical
+
+@@ M | awareness-campaign | Awareness poster series for a health day
+aud: PG Resident / Faculty / Community Medicine
+use: For World TB Day, World Diabetes Day, Breastfeeding Week and similar campaigns in the hospital, community or social media.
+why: Awareness posters often say too much, scare people, or repeat the same slogan everywhere. A small, coordinated series with one message per poster, local language, a clear action and consistent design reaches more people and changes behaviour.
+persona: You are a public-health communication specialist who designs health-awareness campaigns for Indian audiences in hospitals, communities and online.
+context: Health day or theme: [e.g. World TB Day]
+Official theme for the year, if any: [paste or "check"]
+Audiences: [patients in OPD / community / students / social media followers]
+Languages: [list]
+Where the posters will be used: [OPD walls / health camp / Instagram / WhatsApp]
+Key programme information (free services, helplines, facilities) from official sources: [PASTE]
+task: 1. Define 4–5 key messages, one per poster, each with a single action (e.g. "Cough for more than 2 weeks? Get tested free at [facility].").
+2. For each poster, write the headline (under 8 words), 2 supporting lines, the call to action and a visual idea.
+3. Define a consistent design: colours, fonts, logo placement, and the space for local information.
+4. Adapt the messages to each language, simply, not literally.
+5. Adapt the formats: A3 print, a 1:1 social post and a WhatsApp status.
+6. Suggest how to launch and distribute the series, and how to measure reach.
+rules: Take programme details only from the official sources I provided, marking anything else [VERIFY WITH PROGRAMME], and avoid stigmatising images and words, because stigma keeps people from seeking care. Follow the official campaign's branding rules if it has any.
+output: A message table, the poster-by-poster text and visuals, the design system, the language versions, the format list, then the distribution plan.
+tweak: End with the one poster that would work best alone if only one could be printed.
+tips:
+- Show people like your audience in the visuals. People respond to posters that look like them.
+- Always include where to go and that services are free, if they are. That's the action people need.
+- Test the headline with 3 people from the audience. If they can't repeat it back, simplify it.
+next: patient-leaflet
+
+@@ S | infographic-medical | A medical infographic for teaching or social media
+aud: PG Resident / Faculty
+use: When you want to summarise a topic visually for students, colleagues or the public.
+persona: You are a medical infographic designer who balances accuracy and visual simplicity.
+context: Topic and audience: [brief]
+Verified key facts or data to include: [PASTE]
+Format: [A4 portrait / 1:1 Instagram / 4:5 / slide]
+Tool: [Canva / PowerPoint / AI image tool]
+task: 1. Choose a structure: a process, a comparison, a list with icons, a statistics highlight, or a timeline.
+2. Write a headline, 5–7 content blocks (under 15 words each) and a source line.
+3. Suggest icons and a colour scheme.
+4. Suggest the reading flow and hierarchy.
+rules: Use only the facts I provided, with sources cited on the infographic, and mark numbers [VERIFY], because infographics are shared without context.
+output: The structure, the text blocks, the design notes, then the source line.
+tip: One infographic, one message. If it needs a second message, make a second infographic.
+try: "5 signs of sepsis every nurse should know", 4:5 for Instagram.
+next: carousel-teaching
+
+@@ S | patient-leaflet | A patient-education leaflet
+aud: PG Resident / Faculty / Nurse educator
+use: For patients to take home after a diagnosis, procedure or discharge.
+persona: You are a patient-education specialist who writes clear leaflets at a low reading level.
+context: Topic: [e.g. living with heart failure / preparing for colonoscopy]
+Patient group and language: [brief]
+Our hospital's advice and contact details (placeholders are fine): [PASTE]
+task: 1. Structure the leaflet: what it is, why it matters, what you should do, warning signs to come back for, and who to contact.
+2. Write it at about a sixth-to-eighth-grade reading level, in short sentences.
+3. Suggest simple pictures or icons.
+4. Make a version in [LANGUAGE] if requested.
+5. Keep it to one or two sides of A4.
+rules: Keep all advice consistent with our hospital's protocols, marking specifics [VERIFY WITH TREATING TEAM], because patients follow leaflets literally.
+output: The leaflet text with headings, the picture suggestions, then the translated version if requested.
+tip: Test the leaflet on a patient's relative. If they can't tell you the warning signs afterwards, rewrite them.
+try: A discharge leaflet on inhaler use and COPD warning signs, in Hindi and English.
+next: pictorial-medication-chart
+
+@@ S | pocket-card | Pocket quick-reference card
+aud: PG Resident / MBBS Intern
+use: For a pocket card or phone-wallpaper reference on something you need often at the bedside.
+persona: You are a clinical educator who designs dense but readable quick-reference cards.
+context: Topic: [e.g. ABG interpretation steps / common emergency drug doses / GCS]
+Verified content from source: [PASTE WITH SOURCE]
+Size: [ID card / half A5 / phone screen]
+task: 1. Select the essential information that fits.
+2. Organise it into a clear layout (sections, tables, a mnemonic).
+3. Suggest a front and back design.
+4. Add the source and version date in small print.
+rules: Mark every dose and threshold [VERIFY FROM SOURCE] until checked, and include "check the local protocol" wording, because pocket cards get used for years after guidelines change.
+output: The card content by side, the layout, then the source line.
+tip: Put the date on the card, and replace it when the guideline updates.
+try: An emergency drug-dose card for adult cardiac arrest.
+next: ward-protocol-poster
+
+@@ S | concept-map | A concept map for a complex topic
+aud: MBBS Student / PG Resident / Faculty
+use: For teaching or revising topics with many connected ideas.
+persona: You are a medical educator who uses concept maps to show how knowledge connects.
+context: Topic: [TOPIC]
+Level: [brief]
+Key concepts I want included: [list or "suggest"]
+task: 1. Identify the central concept and 12–20 linked concepts.
+2. Define the links with labelled arrows ("causes", "leads to", "treated by", "detected by").
+3. Organise them into clusters (e.g. mechanisms, features, tests, treatment).
+4. Describe the layout for drawing by hand or in a tool (e.g. draw.io, Miro).
+5. Suggest 3 questions to test understanding using the map.
+rules: Keep every link clinically accurate and mark any uncertain relationship [VERIFY], because a wrong arrow teaches a wrong mechanism.
+output: A concept list, a link table (from, label, to), the layout description, then the questions.
+tip: Ask students to build the map themselves first, then compare it with yours. That's where the learning happens.
+try: Topic: heart failure (causes, mechanisms, features, investigations and drug classes).
+next: whiteboard-plan
+
+@@ S | whiteboard-plan | Plan a chalk-and-talk or whiteboard session
+aud: PG Resident / Faculty
+use: For bedside teaching, tutorials or rooms without projectors.
+persona: You are a master chalk-and-talk teacher.
+context: Topic and duration: [brief]
+Audience and group size: [brief]
+Board size: [small whiteboard / large blackboard]
+task: 1. Plan the board layout in zones: title, a central diagram, key points, and a "parking lot" for questions.
+2. Plan the build order: what to draw first, and when to add each element as you talk.
+3. Specify the diagrams to draw, with simple step-by-step drawing instructions.
+4. Suggest colour use (if markers are available).
+5. Plan a final summary that the finished board shows.
+rules: Keep drawings simple enough to draw in under 2 minutes each, because long drawing loses the audience.
+output: The board-zone layout, the build sequence with timings, the drawing instructions, then the summary.
+tip: Practise the diagram twice beforehand. Confident drawing looks expert; hesitant drawing looks unprepared.
+try: A 20-minute tutorial on the brachial plexus for MBBS students.
+next: concept-map
+
+@@ S | sketchnote | Sketchnote summary of a topic
+aud: MBBS Student / PG Resident
+use: For visual notes during or after a lecture, or as a teaching handout.
+persona: You are a visual-thinking coach who teaches sketchnoting to medical students.
+context: Topic or lecture content: [PASTE]
+Audience: [self / students]
+task: 1. Identify the central idea and 5–7 supporting ideas.
+2. Suggest a simple icon or doodle for each idea.
+3. Suggest a layout (radial, linear path or grid) with arrows and short labels.
+4. Suggest one memorable example to draw.
+5. If an AI image tool will be used, write a prompt with a text fallback.
+rules: Keep the labels accurate and short, and check the key facts, because sketchnotes are revised from repeatedly.
+output: The ideas, the icons, the layout, then the image prompt.
+tip: Simple shapes and arrows are enough. Sketchnoting isn't about drawing talent.
+try: A sketchnote of the renin-angiotensin-aldosterone system.
+next: concept-map
+
+@@ S | poster-competition | Educational poster for a student competition
+aud: MBBS Student / PG Resident
+use: For poster competitions at college festivals, health days or academic events.
+persona: You are a judge of educational poster competitions.
+context: Theme and rules (size, format, judging criteria): [PASTE]
+My topic idea: [brief]
+Audience: [brief]
+task: 1. Sharpen the topic into one clear message that fits the theme.
+2. Plan the poster: headline, 3–5 content blocks, visuals and a call to action.
+3. Map the plan against the judging criteria (content, creativity, clarity, relevance).
+4. Suggest how to present the poster to the judges in 90 seconds.
+rules: Keep all medical content accurate and cited, and follow the size and format rules exactly, because rule violations disqualify entries.
+output: The message, the poster plan, the criteria map, then the pitch.
+tip: Judges walk past dozens of posters. A striking headline and one strong visual decide who stops.
+try: A theme on antimicrobial resistance for a college health festival.
+next: infographic-medical
+
+@@ S | opd-poster | Patient-facing poster for the OPD waiting area
+aud: PG Resident / Faculty
+use: For waiting areas, where patients have a few minutes and a real need.
+persona: You are a patient-communication designer for Indian hospitals.
+context: Message topic: [e.g. how to use an inhaler / diabetic foot care / when to come back]
+Patient languages and literacy: [brief]
+Poster size and location: [brief]
+task: 1. Choose one message with one action.
+2. Write a headline (under 7 words) and 3–4 picture-supported steps.
+3. Suggest pictograms for low-literacy readers.
+4. Produce versions in the required languages.
+5. Suggest placement (eye level, near the relevant clinic).
+rules: Keep advice consistent with our clinicians' practice, marking specifics [VERIFY WITH DEPARTMENT], and avoid frightening images, because patients should feel informed, not scared.
+output: The headline, the steps with pictograms, the language versions, then the placement.
+tip: Pictures of hands doing each step work better than any text for inhaler technique.
+try: "How to use your inhaler" for a chest-clinic waiting area, in Hindi and English.
+next: patient-leaflet
+
+@@ S | pictorial-medication-chart | Pictorial medication schedule for patients
+aud: PG Resident / Nurse educator / Pharmacist
+use: For patients who struggle with complex medication schedules, especially elderly or low-literacy patients.
+persona: You are a clinical pharmacist experienced in designing pictorial medication aids.
+context: The patient's medication list with timings (de-identified): [PASTE]
+Patient literacy and language: [brief]
+task: 1. Design a daily chart with columns for morning, afternoon, evening and night, and pictures of meal times (before or after food).
+2. Represent each medicine with its colour and shape (to be filled in from the actual tablets) and its purpose in simple words.
+3. Add key warnings (e.g. do not stop suddenly).
+4. Add a tick box for each dose.
+rules: Copy the medication details exactly from the prescription and have the pharmacist or doctor check the chart before giving it to the patient, because a wrong chart causes medication errors.
+output: The chart layout with the content filled in, then the verification step.
+tip: Use actual photos of the patient's tablets if possible. Generic pill icons confuse people.
+try: An elderly patient on 7 medicines, including insulin, with limited literacy.
+next: patient-leaflet
+
+@@ S | illustration-brief | Brief for a medical illustration
+aud: PG Resident / Faculty
+use: When you need an accurate diagram for a talk, poster or paper and will draw it or commission it.
+persona: You are a medical illustrator who writes precise illustration briefs.
+context: What the illustration must show: [brief]
+Where it will be used and the size: [brief]
+Style: [line drawing / colour / schematic]
+Reference sources (textbook, atlas, published figure): [LIST]
+task: 1. Describe the illustration's content precisely: structures, labels, orientation and view.
+2. Specify the labels (terminology) and leader-line placement.
+3. Specify the style, colours and level of detail.
+4. List accuracy checkpoints for the finished illustration.
+rules: Base anatomical and pathological details on the named reference sources, and don't copy copyrighted figures directly, because accuracy and copyright both matter.
+output: The content description, the label list, the style specification, then the checklist.
+tip: Ask for a draft sketch before the final version. Anatomical errors are easier to fix early.
+try: A labelled diagram of the bronchopulmonary segments for a seminar.
+next: ai-medical-image-prompt
+
+@@ S | ai-medical-image-prompt | Prompt an AI image tool for medical visuals
+aud: PG Resident / Faculty
+use: When generating illustrations for slides or posters with ChatGPT, Gemini or other image tools.
+persona: You are a prompt engineer for AI image generation in medical education.
+context: What I need (concept, diagram or scene): [brief]
+Where it will be used: [slide / poster / social post]
+Tool: [name]
+task: 1. Write a detailed image prompt: subject, style (flat vector, line drawing, 3D render), composition, colours, text to include (minimal) and aspect ratio.
+2. Add instructions to avoid anatomical inaccuracies and to keep text minimal.
+3. Suggest a two-step approach: generate a text-free image, then add labels in PowerPoint or Canva.
+4. Write a checklist for reviewing the generated image.
+rules: Don't rely on AI images for precise anatomy or data, and label them "illustrative", because AI images frequently contain anatomical and text errors.
+output: The image prompt in a code block, the approach, then the review checklist.
+tip: Add labels yourself afterwards. AI-generated text inside images is the most error-prone part.
+try: A friendly illustration of a doctor explaining an inhaler to an elderly patient, for a slide.
+next: comic-infographic
+
+@@ S | carousel-teaching | Educational carousel for Instagram or LinkedIn
+aud: PG Resident / Faculty
+use: When sharing medical education on social media in a swipeable format.
+persona: You are a medical educator and social-media content strategist.
+context: Topic and audience: [e.g. residents / students / the public]
+Verified key points: [PASTE]
+Number of slides: [e.g. 7–10]
+Brand style: [brief]
+task: 1. Write a hook for slide 1 (under 10 words).
+2. Write the slide-by-slide text: one idea per slide, under 30 words each.
+3. Write the final slide: a summary and a call to action (save, share, follow).
+4. Suggest visuals for each slide.
+5. Write a caption with sources.
+rules: Use only verified content and cite the sources in the caption, and avoid sensational claims, because medical misinformation spreads quickly on social media.
+output: The slide-by-slide text table, the visual notes, then the caption.
+tip: A strong first slide decides everything. If it doesn't stop the scroll, the rest won't be seen.
+try: "7 ECG patterns every intern must recognise", 9 slides.
+next: infographic-medical
+
+@@ S | teaching-model | Low-cost teaching model or demonstration
+aud: PG Resident / Faculty
+use: When a physical model would teach better than a slide.
+persona: You are a creative medical educator who builds low-cost teaching models.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The concept to demonstrate: [brief]
+Audience: [brief]
+Materials and budget available: [brief]
+task: 1. Suggest 2–3 model or demonstration ideas using cheap, available materials.
+2. Give build instructions for the best one.
+3. Write a demonstration script linking the model to the clinical concept.
+4. Note the model's limitations (where the analogy breaks down).
+rules: Ensure the model is safe to handle and doesn't introduce misconceptions, and state its limitations explicitly, because models are remembered vividly, including their errors.
+output: The ideas, the build instructions, the script, then the limitations.
+tip: A balloon in a jar teaches lung compliance better than any animation.
+try: Demonstrating pneumothorax and chest-drain function for nursing students.
+next: whiteboard-plan
+
+@@ S | procedure-steps-poster | Step-by-step procedure wall chart
+aud: PG Resident / Nurse educator
+use: For procedures done often on a ward: central-line care, catheterisation, nebulisation, NG-tube insertion.
+persona: You are a clinical skills educator who designs procedure charts.
+context: Procedure: [name]
+Our hospital's approved procedure steps: [PASTE / UPLOAD]
+Users: [brief]
+task: 1. Break the procedure into 8–12 numbered steps with action verbs.
+2. Mark the critical safety steps (hand hygiene, verification, sterility) visually.
+3. Suggest a picture or icon for each step.
+4. Add a checklist box format for audits.
+5. Add the source, version and review date.
+rules: Follow our approved procedure exactly and mark any step to confirm as [VERIFY WITH SOP], because procedure charts become the de facto standard on the ward.
+output: The numbered steps, the safety highlights, the picture list, then the footer.
+tip: Put the chart where the procedure is prepared, such as the dressing trolley or the clean utility room.
+try: Steps for central-line dressing change in the ICU.
+next: ward-protocol-poster
+
+@@ S | multilingual-poster | Adapt a poster into several Indian languages
+aud: PG Resident / Faculty
+use: When a poster or leaflet must reach patients who speak different languages.
+persona: You are a health-communication translator experienced in Indian languages.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The English poster text: [PASTE]
+Target languages: [list]
+Audience literacy: [brief]
+task: 1. Adapt (not literally translate) the text into each language, keeping it simple.
+2. Keep familiar medical words (e.g. "sugar", "BP") where patients use them.
+3. Check the text length fits the layout, and suggest cuts if not.
+4. Recommend a review by a native speaker from the target community.
+rules: Keep the meaning exactly consistent across languages, because inconsistent translations confuse patients and staff.
+output: A text table by language, the layout notes, then the review recommendation.
+tip: Back-translate the key warning line into English to check it survived translation intact.
+try: A "warning signs of dengue" poster in Hindi, Bengali and Odia.
+next: opd-poster
+
+@@ S | visual-review | Critique my poster or infographic
+aud: PG Resident / Faculty
+use: Before printing or posting any visual aid.
+persona: You are a senior medical educator and design critic.
+context: My poster or infographic text and a description (or upload the image): [PASTE / UPLOAD]
+Purpose and audience: [brief]
+task: 1. Check accuracy: flag any claim, number or dose to verify.
+2. Check clarity: the single message, reading order and text amount.
+3. Check the design: contrast, font size, hierarchy and clutter.
+4. Check accessibility: language, literacy and colour-blind safety.
+5. Give the top 5 fixes.
+rules: Flag doubtful facts as [VERIFY] rather than correcting them from memory, because I must confirm them from my sources.
+output: A review table by criterion, then the top 5 fixes.
+tip: Look at your poster from across the room for 5 seconds. What you remember is its real message.
+try: An A3 poster on hand hygiene with 180 words and 6 colours.
+next: infographic-medical
+
+@@ S | print-specs | Print specifications for posters and charts
+aud: PG Resident / Faculty
+use: Before sending posters, charts or leaflets to print.
+persona: You are a print-production specialist.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Item, size and quantity: [brief]
+Where it will be used (wall, bedside, outdoors, handout): [brief]
+File source: [Canva / PowerPoint / other]
+task: 1. Recommend the file format (PDF), resolution (300 dpi), colour mode and bleed.
+2. Recommend the paper or material (lamination, vinyl, sunboard) for the use and durability needed.
+3. Recommend minimum font sizes for the viewing distance.
+4. Give a pre-print checklist (spelling, logos, contact details, version date).
+rules: Recommend wipeable, laminated materials for clinical areas, because paper posters in wards become infection-control problems.
+output: The specification table, then the checklist.
+tip: Print one proof copy and look at it on the actual wall before printing the full batch.
+try: 20 laminated A3 sepsis-protocol posters for medical wards.
+next: ward-protocol-poster
+
+@@ S | qr-resources-poster | Poster with QR codes to videos and resources
+aud: PG Resident / Faculty
+use: When a poster should lead people to videos, forms or detailed resources.
+persona: You are a digital-health educator who connects print and online resources.
+context: Poster topic: [brief]
+Resources to link (videos, PDFs, forms): [list]
+Audience and their phones or data access: [brief]
+task: 1. Choose what the QR code should link to, and why.
+2. Write the call to action beside the QR code.
+3. Suggest QR code size and placement for scanning distance.
+4. Suggest a stable link strategy (a link you control and can update).
+5. Suggest how to track scans.
+rules: Link only to trustworthy, stable resources and test every code before printing, because broken or hijacked links undermine trust.
+output: The link choice, the call to action, the size and placement, the link strategy, then the tracking.
+tip: Use a URL you can redirect later. Printed posters outlive most links.
+try: A poster in the physiotherapy department linking to home-exercise videos.
+next: opd-poster
+
+@@ S | emergency-algorithm-card | Emergency algorithm card for the crash cart
+aud: PG Resident / Nurse educator
+use: For emergencies where seconds matter: anaphylaxis, cardiac arrest, status epilepticus, hyperkalaemia, massive haemorrhage.
+persona: You are a resuscitation-training instructor who designs algorithm cards for crash carts and emergency rooms.
+context: Emergency: [name]
+Source: our hospital protocol or the current resuscitation guideline: [UPLOAD / PASTE]
+Drugs and equipment on our crash cart: [list]
+Card size: [A5 / A4, laminated]
+task: 1. Extract the time-critical steps in order, with drug, dose, route and repeat interval.
+2. Design a one-page flow that can be read in under 10 seconds per step.
+3. Colour-code the actions (e.g. red for immediate, amber for next, green for monitor).
+4. Add a "call for help" box with placeholders for local numbers.
+5. Add the source, version date and review date.
+rules: Take every dose only from the protocol I provided and mark each [VERIFY AGAINST PROTOCOL], because an error on an emergency card is repeated in every emergency until someone notices.
+output: The step list, the card layout description, the colour code, then the footer.
+tip: Run a mock drill with the card. Where people hesitate, the card needs simplifying.
+try: An anaphylaxis card for the emergency department, adults.
+next: pocket-card
+
+@@ S | mnemonic-visual | A visual mnemonic poster
+aud: MBBS Student / PG Resident / Faculty
+use: When a list must be memorised and a picture could anchor it.
+persona: You are a medical educator skilled in visual memory techniques.
+context: The list to remember: [LIST]
+Audience: [brief]
+Format: [poster / slide / flashcard]
+task: 1. Create a mnemonic (acronym, phrase or story) where each element maps accurately to an item.
+2. Design a visual scene or image that links the mnemonic to the items.
+3. Write a caption explaining each element.
+4. Suggest an image prompt or drawing instructions.
+rules: Check that every mnemonic element maps to the correct item, and keep it respectful, avoiding offensive humour, because memorable errors are the worst kind.
+output: The mnemonic, the scene description, the caption, then the image prompt.
+tip: Absurd, vivid images are easiest to remember, as long as they stay professional.
+try: Causes of clubbing, as a visual poster for final-year MBBS students.
+next: comic-infographic
+
+@@ Q | poster-headline | Headline for my poster
+aud: PG Resident / Faculty
+body: Act as a health-communication copywriter. Write 5 headlines of under 8 words for a poster on [TOPIC] for [AUDIENCE], each stating the benefit or action rather than the topic name, accurate and free of fear-based language. Mark your favourite. Flag anything you are unsure of so I can check it.
+try: A poster encouraging TB testing for anyone with a cough of more than 2 weeks.
+
+@@ Q | awareness-slogans | Short slogans for a health campaign
+aud: PG Resident / Faculty
+body: Act as a public-health campaign writer. Write 6 slogans of under 7 words for [HEALTH DAY OR THEME], in English and [LANGUAGE], that are memorable, positive, non-stigmatising and linked to one clear action. Flag anything you are unsure of so I can check it.
+try: World Diabetes Day, English and Hindi.
+
+@@ Q | icon-list | Icons for my visual aid
+aud: PG Resident
+body: Act as a graphic designer for health materials. For these items on my poster, [LIST ITEMS], suggest one simple, culturally appropriate icon for each, with search keywords for Canva or PowerPoint, and keep them in a single consistent style. Flag anything you are unsure of so I can check it.
+try: Items: wash hands, wear mask, cover cough, see a doctor, take full treatment.
+
+@@ Q | patient-colours | Colours for a patient-facing poster
+aud: PG Resident
+body: Act as a health-communication designer. Suggest a colour scheme with hex codes for a patient-facing poster on [TOPIC] that is calm, readable, high-contrast, colour-blind safe and not alarming, and say which colour to use for the call to action. Flag anything you are unsure of so I can check it.
+try: A poster on diabetes foot care for an OPD waiting area.
+
+@@ Q | reading-level | Check the reading level of my text
+aud: PG Resident / Nurse educator
+body: Act as a plain-language editor. Check this patient text, [PASTE TEXT], for reading level, long sentences and medical jargon, and rewrite it at about a sixth-grade level, keeping every instruction accurate. List the words you replaced. Flag anything you are unsure of so I can check it.
+try: Discharge instructions after a heart attack, written by a resident.
+
+@@ Q | pictogram-steps | Pictogram instructions for low literacy
+aud: PG Resident / Nurse educator
+body: Act as a patient-education designer. Turn these instructions, [PASTE STEPS], into 4–6 pictogram panels, describing each picture and giving a caption of 5 words or fewer, so that patients with limited literacy can follow them. Flag anything you are unsure of so I can check it.
+try: How to use an insulin pen.
+
+@@ Q | infographic-caption | Caption for my infographic post
+aud: PG Resident / Faculty
+body: Act as a medical social-media writer. Write a caption of under 80 words for my infographic on [TOPIC] for [AUDIENCE], with a hook line, a one-line summary, 2 sources, a call to save or share, and a short "educational, not medical advice" note.
+try: An infographic on the warning signs of stroke (BE-FAST).
+
+@@ Q | poster-size-fonts | Poster size and font sizes
+aud: PG Resident
+body: Act as a print designer. For a [POSTER SIZE] poster viewed from [DISTANCE] metres in [LOCATION], recommend the minimum font sizes for the headline, body text and footnotes, the maximum word count, and the margins, in a short table. Flag anything you are unsure of so I can check it.
+try: An A3 poster viewed from 2 metres in a ward corridor.
+
+@@ Q | image-fix-prompt | Fix a garbled AI image
+aud: PG Resident / Faculty
+body: Act as an AI image-prompt expert. My generated image has these problems: [DESCRIBE PROBLEMS, e.g. misspelled words, a drifting character, cropped text]. Write targeted fix-up prompts that change only the faulty parts and keep everything else identical. Flag anything you are unsure of so I can check it.
+try: Panel 3 says "hypokalmia" and character B's face has changed.
+
+@@ Q | social-alt-text | Description for a visual post
+aud: PG Resident
+body: Act as an accessibility writer. Write alt text of under 40 words for my medical infographic or carousel image, [DESCRIBE IMAGE], so that screen-reader users get the key message, and suggest where to add it on Instagram or LinkedIn. Flag anything you are unsure of so I can check it.
+try: A carousel slide showing the 5 steps of an ABG interpretation.
+
+@@ Q | awareness-cta | Call to action for an awareness poster
+aud: PG Resident / Faculty
+body: Act as a public-health communicator. Write 4 calls to action for a poster on [TOPIC] for [AUDIENCE] that tell people exactly what to do, where and when, with placeholders for local facility names and helplines, in under 15 words each.
+try: A poster on early cancer screening for women in a district town.

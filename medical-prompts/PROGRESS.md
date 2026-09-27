@@ -40,7 +40,7 @@ Commit and push after every section file.
 | 2.2 Journal club | 60 | done |
 | 2.3 Slide design & structure | 40 | done |
 | 2.4 Talks & oral presentations | 35 | done |
-| 2.5 Posters & visual teaching aids | 35 | pending |
+| 2.5 Posters & visual teaching aids | 35 | done |
 | 2.6 Case presentations & grand rounds | 40 | pending |
 | 2.7 Delivery, Q&A & teaching | 30 | pending |
 
