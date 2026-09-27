@@ -1,0 +1,421 @@
+# 1.12 | Case reports & case series | Most case reports are rejected because the case isn't novel or the timeline is unclear, not because the writing is weak. Check publishability first, then write to CARE.
+
+@@ M | case-report-care | From interesting case to CARE-compliant case report
+aud: PG Resident / Faculty
+use: As soon as you suspect a case is unusual, while notes, images and consent are still easy to get.
+why: Most case reports are rejected because the case isn't novel or the timeline is unclear, not because the writing is weak. This prompt checks publishability first, then drafts to the CARE guideline.
+persona: You are the case-reports editor of an indexed [SPECIALTY] journal. You have handled hundreds of submissions and apply the CARE guidelines strictly. You are blunt about whether a case is actually publishable.
+context: Specialty and my level: [e.g. MD Respiratory Medicine, PG year 2]
+Setting: [tertiary / district / private]
+De-identified case summary (age band, sex, presentation, key investigations with dates as Day 0, Day 3…, treatment, outcome, follow-up): [PASTE]
+Why I think it is unusual: [state]
+Target journal and its case-report word limit: [name / limit]
+Patient consent for publication: [obtained / pending]
+task: 1. Publishability verdict: rare disease, rare presentation, new association, diagnostic lesson or management lesson? Score novelty out of 5 and justify it against my case.
+2. Five title options that each contain the words "case report".
+3. A CARE-structured draft: abstract (150 words or fewer), introduction, patient information, clinical findings, timeline table, diagnostic assessment (including the differentials you excluded and how), therapeutic intervention, follow-up and outcome, discussion, patient-perspective placeholder, and learning points.
+4. A CARE checklist table showing where each item appears, flagging anything missing.
+5. The consent and de-identification checklist I need before submission.
+rules: Use only the clinical details I gave; where something is missing, write [ASK ME: …] instead of filling it in. Put [CITE] wherever literature is needed, and cite a paper only if I uploaded it or you can give a verified PMID or DOI, because fabricated references end in retraction. Keep every date relative (Day 0…) and remove anything identifying.
+output: Formal case-report register within my journal's word limit, then the two checklist tables.
+tweak: Finish with the 3 comments a reviewer is most likely to make, and how to pre-empt each.
+tips:
+- If the verdict says "not novel", reframe it as a teaching image or a letter rather than forcing a full report.
+- Build the timeline table first. Reviewers read it before the text.
+- Upload 3–5 similar published cases so the discussion compares against real papers.
+next: case-to-poster
+
+@@ M | case-series-master | Design and write a case series
+aud: PG Resident / Faculty
+use: When you have 3 or more patients with a shared unusual feature, diagnosis or treatment experience.
+why: A case series is more than several case reports stapled together. Its value lies in a clear case definition, consistent data for every patient, and patterns across cases, presented honestly as descriptive evidence without a comparison group.
+persona: You are a clinical researcher and journal editor who has published and reviewed many case series. You insist on a clear case definition, consecutive or complete inclusion where possible, and descriptive (not inferential) claims.
+context: Specialty and setting: [brief]
+The shared feature defining the series: [e.g. post-COVID mucormycosis with orbital involvement]
+Number of patients and the period: [N, dates]
+How the patients were identified (all consecutive cases, or selected): [brief]
+De-identified data for each patient (age band, sex, presentation, investigations, treatment, outcome, follow-up): [PASTE TABLE]
+Target journal and word limit: [name / limit]
+Ethics and consent status: [brief]
+Any patients excluded, and why: [brief]
+task: 1. Write a precise case definition and describe how cases were identified, including any selection.
+2. Build a patient-level table (one row per patient) with consistent variables.
+3. Summarise the patterns descriptively: counts, proportions, ranges and medians, and common and divergent features.
+4. Draft the manuscript: abstract, introduction, methods (definition, identification, data sources, ethics), case descriptions or a summary table, results, discussion comparing with the literature, limitations, and conclusion.
+5. State clearly what a case series can and cannot conclude.
+rules: Use only the data I gave. Avoid p values and causal claims, because a case series has no comparison group. Put [CITE] for literature unless I uploaded the paper or you give a verified PMID or DOI. Keep all details de-identified.
+output: The case definition, the patient table, the pattern summary, then the manuscript draft with headings.
+tweak: End with the single most important pattern and the study design that would test it properly.
+tips:
+- Include all eligible cases from the period, not only the interesting ones. Say how many were excluded, and why.
+- A clear, complete patient-level table is often the most-cited part of a case series.
+- Check whether your IEC requires approval for a retrospective case series. Many do.
+next: case-series-table
+
+@@ M | case-discussion | Case-report discussion grounded in the literature
+aud: PG Resident
+use: When the case description is written and you need the discussion and learning points.
+why: The discussion is where a case report earns its place: it shows what the case adds to what is already published. Comparing with real, similar cases rather than a textbook summary is what reviewers look for.
+persona: You are a senior clinician-academic who writes case-report discussions that teach. You compare the case with published cases systematically and draw practical lessons without overgeneralising.
+context: Case summary (de-identified): [PASTE]
+What makes it unusual: [brief]
+Similar published cases I have found (uploaded PDFs or pasted abstracts with citations): [PASTE OR UPLOAD]
+Target word count for the discussion: [e.g. 500 words]
+My specialty and the journal's readership: [brief]
+The diagnostic or management decision that was hardest in my case: [brief]
+task: 1. Summarise the published cases in a comparison table: age, sex, presentation, diagnosis, treatment and outcome, next to my case.
+2. Identify what is similar, what differs, and what my case adds.
+3. Discuss the diagnostic reasoning: why it was difficult, which clues mattered, which differentials were excluded and how.
+4. Discuss management choices and the outcome in the light of the literature, including what might be done differently.
+5. Write 3–5 learning points, each practical, specific and supported by the case.
+6. Write the discussion within the word count, starting with the key reason the case is notable.
+7. Suggest 2 recent reviews or guidelines I should search for and cite, described by topic rather than by title.
+rules: Compare only with the cases I supplied, citing each, because inventing similar cases is fabrication. Don't generalise from one case to practice recommendations; phrase lessons as "clinicians should consider…" rather than "should treat…".
+output: The comparison table, the discussion text, then the learning points.
+tweak: End with the one sentence that best captures why this case deserves publication.
+tips:
+- Search PubMed with the "Case Reports" article-type filter to find similar cases. Read them in full.
+- If very similar cases have been published recently, emphasise what differs about yours.
+- Learning points are often what readers remember. Make them specific enough to act on.
+next: learning-points
+
+@@ S | publishability-check | Is my case publishable?
+aud: PG Resident / Faculty
+use: Before you invest time writing, the moment a case seems interesting.
+persona: You are a case-reports editor who rejects most submissions for lack of novelty and knows what gets accepted.
+context: De-identified case summary: [PASTE]
+What I think is unusual: [brief]
+Similar cases I have found so far: [brief or "not searched yet"]
+task: 1. Classify the case's potential contribution: rare disease, rare presentation of a common disease, new association, diagnostic lesson, therapeutic lesson, adverse drug reaction, or educational value only.
+2. Score novelty and educational value out of 5 each.
+3. Recommend the best format: full case report, clinical image, letter, or teaching case only.
+4. List the information and images I must collect now, before they are lost.
+rules: Base novelty on the case itself; where it depends on the literature, write [SEARCH PUBMED CASE REPORTS FIRST], because "first reported case" claims are often wrong.
+output: The classification, the scores, the format recommendation, then the collection checklist.
+tip: Collect the images, reports and consent now. Most unpublished case reports die because the data went missing.
+try: Young woman with recurrent pneumothorax found to have thoracic endometriosis.
+next: case-report-care
+
+@@ S | case-timeline | Build the case timeline table
+aud: PG Resident
+use: For every case report, before writing the narrative.
+persona: You are a meticulous clinical writer who builds CARE-style timelines.
+context: De-identified clinical events with their dates or intervals: [PASTE NOTES]
+Reference point (Day 0): [e.g. admission / symptom onset]
+task: 1. Convert all dates to relative days, weeks or months from Day 0.
+2. Build a timeline table: time point, clinical event, investigations and key results, intervention, and response.
+3. Flag gaps or inconsistencies in the sequence.
+4. Suggest which time points need an image or a result shown.
+rules: Remove all actual calendar dates and identifying details, because timelines are a common source of accidental identification.
+output: The timeline table, then the flags and the image suggestions.
+tip: A clear timeline often lets you cut 200 words from the case narrative.
+try: Notes on a patient with fever, jaundice and acute kidney injury later diagnosed with leptospirosis.
+next: case-presentation
+
+@@ S | case-consent | Consent for publication and de-identification
+aud: PG Resident
+use: Before submitting any case report or clinical image.
+persona: You are a publication-ethics editor who ensures patient privacy in case reports.
+context: Case details and images I plan to publish: [brief]
+Patient status: [able to consent / deceased / minor / lacks capacity]
+Journal's consent requirements (paste if available): [PASTE]
+task: 1. Explain what consent for publication must cover and who can give it in my patient's situation.
+2. List everything that must be removed or masked: names, initials, dates, hospital numbers, locations, rare occupations, faces, tattoos, and metadata in image files.
+3. Explain what to do if consent cannot be obtained, marked [CHECK JOURNAL POLICY].
+4. Draft a plain-language explanation to give the patient.
+rules: Treat consent as required unless the journal explicitly states otherwise, because publishing without it breaches patient rights and journal policy. Note that eye bars do not adequately de-identify faces.
+output: The consent explanation, the de-identification checklist, the no-consent guidance, then the patient-facing text.
+tip: Use the journal's own consent form if it has one. Many journals insist on it.
+try: A case report with a facial photograph of a rare dermatological condition.
+next: clinical-images
+
+@@ S | clinical-images | Select and prepare clinical images
+aud: PG Resident
+use: When preparing images, radiographs or histology slides for a case report or poster.
+persona: You are a medical illustrator and journal image editor.
+context: Available images and what each shows: [list]
+Key finding each image must demonstrate: [brief]
+Journal requirements (resolution, format, size): [paste]
+task: 1. Recommend which images to include and in what order to tell the diagnostic story.
+2. Explain how to crop, annotate (arrows, labels) and de-identify each image.
+3. Explain file requirements (e.g. 300 dpi, TIFF or JPEG) and how to remove metadata.
+4. Write a legend for each image.
+rules: Tell me to make only adjustments applied to the whole image (brightness, contrast) and never to alter findings, because image manipulation is misconduct.
+output: The image selection plan, the preparation steps, then the legends.
+tip: Remove patient details burned into radiographs and scan images before anything else.
+try: Chest X-ray, CT and histology images for a case of pulmonary alveolar proteinosis.
+next: case-consent
+
+@@ S | case-abstract | Case report abstract
+aud: PG Resident
+use: When your case report needs an abstract.
+persona: You are a case-reports editor who writes clear abstracts.
+context: Case report draft or summary: [PASTE]
+Journal's abstract format (structured or unstructured) and word limit: [paste]
+The single lesson the case teaches: [one line]
+task: 1. Write the abstract in the journal's required format: background (why the case matters), case presentation (key features), conclusion (the lesson).
+2. Keep it within the limit.
+3. Suggest 3–5 keywords, preferring MeSH terms.
+rules: Use only details in the draft, and make the conclusion a lesson rather than a generalisation, because one case cannot establish a rule.
+output: The abstract with its word count, then the keywords.
+tip: Put the unusual feature in the first sentence. That is what makes an editor keep reading.
+try: Case of Kikuchi disease presenting as fever of unknown origin in a young man.
+next: case-title
+
+@@ S | case-title | Case report titles that follow the CARE convention
+aud: PG Resident
+use: When choosing your case report's title.
+persona: You are a journal editor who knows what titles attract readers and meet CARE conventions.
+context: Diagnosis and the unusual feature: [brief]
+Journal's title limits: [characters or words]
+Target readership: [e.g. general physicians / specialists]
+task: 1. Write 5 titles that include "case report" (or "a case report").
+2. Put the key diagnosis or phenomenon first.
+3. Avoid overclaiming words such as "first", "unique" or "novel" unless verified.
+4. Recommend one, with the reason.
+rules: Mark any "first report" claim as [VERIFY WITH LITERATURE SEARCH], because unverified priority claims are a common reason for reviewer criticism.
+output: Five titles with character counts, then the recommendation.
+tip: Titles that describe the lesson ("…mimicking…", "…presenting as…") are read more often.
+try: Tuberculous pericarditis presenting as cardiac tamponade in a patient on dialysis.
+next: case-abstract
+
+@@ S | case-presentation | Write the case presentation from my notes
+aud: PG Resident
+use: For the main narrative of a case report.
+persona: You are a clinical writer who produces concise, chronological case presentations.
+context: De-identified notes: history, examination, investigations with results, management, and course: [PASTE NOTES]
+Word limit for this section: [e.g. 400 words]
+task: 1. Write the case presentation chronologically: presenting complaint, relevant history, examination, initial investigations, diagnostic reasoning and further tests, treatment, and outcome.
+2. Include only details relevant to the diagnosis or lesson.
+3. Report laboratory values with units and reference ranges where helpful.
+4. Point to the timeline table and images at the right places.
+rules: Use only facts in my notes; where a relevant detail is missing, write [ASK ME: …], because invented clinical details in a case report are fabrication.
+output: The case presentation with its word count, then any [ASK ME] items listed.
+tip: Negative findings that ruled out important differentials are relevant. Include them.
+try: Notes on a 30-year-old with stroke found to have antiphospholipid syndrome.
+next: differential-exclusion
+
+@@ S | differential-exclusion | Show how differentials were excluded
+aud: PG Resident
+use: For the diagnostic-assessment part of a case report.
+persona: You are a diagnostician who documents diagnostic reasoning transparently.
+context: Final diagnosis: [diagnosis]
+Differentials considered and the tests or findings used to exclude each: [PASTE NOTES]
+The investigation that finally confirmed the diagnosis: [brief]
+task: 1. Build a table: differential, why it was considered, the finding that excluded it, and the timing.
+2. Identify any important differential that is not documented as excluded.
+3. Write the diagnostic-assessment paragraph for the case report.
+rules: Use only the tests and findings I documented; flag any differential without a documented exclusion as [NOT EXCLUDED IN NOTES], because reviewers will ask about it.
+output: The differential table, the missing-exclusion flags, then the paragraph.
+tip: Reviewers almost always ask "was X excluded?". This table answers it before they do.
+try: Final diagnosis: adult-onset Still's disease; differentials: sepsis, lymphoma, SLE, TB.
+next: case-discussion
+
+@@ S | learning-points | Learning points that readers remember
+aud: PG Resident
+use: For the "learning points" or "key messages" box of a case report.
+persona: You are a medical educator who writes practical, memorable learning points.
+context: Case summary and the lesson I think it teaches: [brief]
+Journal's format (number of points, word limit): [paste]
+Intended readers: [e.g. residents, general practitioners]
+task: 1. Write 3–5 learning points, each one sentence.
+2. Make each specific and actionable (e.g. "Consider X in patients with Y who do not respond to Z").
+3. Avoid generic points ("a high index of suspicion is needed").
+4. Check that each point follows from the case.
+rules: Phrase points as considerations, not rules, because a single case can't establish practice.
+output: The learning points, then a one-line check of each.
+tip: If a point could apply to any case report, it's too generic. Rewrite it.
+try: Case of methaemoglobinaemia after dapsone use, initially misdiagnosed as cyanotic heart disease.
+next: case-discussion
+
+@@ S | clinical-image-submission | "Images in clinical medicine" submission
+aud: PG Resident / Faculty
+use: When a case has one striking image but may not justify a full case report.
+persona: You are an editor of a clinical-images section who selects images that teach at a glance.
+context: The image(s) and what they show: [describe]
+Brief clinical context: [2–3 lines]
+Journal's clinical-image format (word limit, number of images, references): [paste]
+task: 1. Judge whether the image is teaching quality: classic, striking and clearly showing the finding.
+2. Write the text within the limit: a brief clinical context, what the image shows, the diagnosis, and the outcome.
+3. Write the image legend with annotations described.
+4. Suggest a title.
+rules: Use only the details I gave; de-identify fully and mark consent as required, because image sections have the same consent requirements as case reports.
+output: The judgement, the title, the text, then the legend.
+tip: Image sections are a quick first publication for residents. The image must be excellent.
+try: Chest X-ray showing a classic "air crescent" sign in invasive aspergillosis.
+next: case-consent
+
+@@ S | case-journal-selector | Journals for case reports: find and verify them
+aud: PG Resident
+use: When deciding where to submit a case report.
+persona: You are a publication adviser who knows the case-report publishing landscape and its predatory corners.
+context: Specialty and the type of case: [brief]
+Budget for publication charges: [amount or none]
+Indexing needed: [PubMed / Scopus / none required]
+task: 1. Describe the types of venues that publish case reports: specialty journals with case sections, dedicated case-report journals, and clinical-image sections.
+2. Explain how to find candidates and verify their indexing and legitimacy.
+3. List predatory red flags specific to case-report publishing.
+4. Build a shortlist table from the journals I find.
+rules: Don't name journals, indexing status or charges from memory; mark anything named as [VERIFY], because case-report publishing has many predatory outlets.
+output: Venue types, finding and verification steps, red flags, then the shortlist template.
+tip: Check your own specialty society's journal first. Many accept case reports.
+try: Unusual paediatric neurology case, no publication budget, PubMed indexing preferred.
+next: case-report-care
+
+@@ S | case-series-table | Patient-level table for a case series
+aud: PG Resident
+use: For the central table of your case series.
+persona: You are a clinical data editor who designs clear patient-level tables.
+context: Variables available for all patients: [list]
+Data for each patient (de-identified): [PASTE]
+task: 1. Choose the columns that show the key features consistently for every patient.
+2. Build the table with one row per patient (Case 1, Case 2…).
+3. Add a summary row or column (counts, ranges or medians).
+4. Write the table title and footnotes.
+rules: Keep all data de-identified using age bands if needed, and write NA where data is unavailable rather than leaving blanks, because missing cells must be explained.
+output: The table, then the title and footnotes.
+tip: If the table is too wide, split it into clinical features and management/outcome tables.
+try: Seven patients with scrub typhus meningoencephalitis.
+next: case-series-master
+
+@@ S | similar-cases-search | Find previously reported similar cases
+aud: PG Resident
+use: Before writing the discussion of a case report or series.
+persona: You are a medical librarian who searches for case reports efficiently.
+context: The key features of my case (diagnosis, unusual presentation, association): [brief]
+task: 1. Build a PubMed search string combining the key concepts with the "Case Reports" publication type.
+2. Suggest Google Scholar queries for non-indexed reports.
+3. Explain how to screen the results and extract comparison data (age, sex, presentation, treatment, outcome).
+4. Give a comparison-table template.
+rules: Don't list case reports from memory; give me the search to run, because any list you produce without live search may contain fabricated cases.
+output: The search strings, the screening steps, then the table template.
+tip: Check the reference lists of the most recent similar case reports. They are often mini-reviews.
+try: Case: Castleman disease presenting as a posterior mediastinal mass.
+next: case-discussion
+
+@@ S | patient-perspective | Patient-perspective section
+aud: PG Resident
+use: For the CARE "patient perspective" item, when the patient agrees to contribute.
+persona: You are a patient-centred clinician who helps patients describe their experience in their own words.
+context: Brief case summary: [brief]
+Notes from my conversation with the patient (their own words where possible): [PASTE NOTES]
+Language the patient spoke in: [language]
+task: 1. Suggest 5 gentle questions to ask the patient about their experience (symptoms, diagnosis journey, treatment and recovery).
+2. From my notes, draft a short patient-perspective paragraph in the first person, faithful to their words.
+3. Suggest how to have the patient review and approve the text.
+rules: Keep the patient's meaning and words; don't add emotions or statements they did not express, because this section must be genuinely theirs.
+output: The questions, the draft paragraph, then the approval steps.
+tip: Translate carefully and read the translation back to the patient before you use it.
+try: A patient who went undiagnosed for 2 years with a rare autoimmune condition.
+next: case-report-care
+
+@@ S | case-to-poster | Case report → conference poster
+aud: PG Resident
+use: When presenting your case at a conference as a poster or e-poster.
+persona: You are a conference poster designer who turns case reports into posters people stop to read.
+context: Case report text or summary: [PASTE]
+Key images: [list]
+Poster size and format: [e.g. A0 portrait / e-poster 16:9]
+Conference word limit, if any: [limit]
+task: 1. Plan the panels: title, introduction (2 lines), case presentation (as a timeline or bullet points), key images, diagnosis, discussion (3 points), learning points, and references.
+2. Write the text for each panel within about 400–600 words in total.
+3. Suggest the layout and reading flow, with images central.
+4. Suggest a one-line "hook" for the top of the poster.
+rules: Use only details from my case report; keep images de-identified and consent in place, because posters are photographed and shared.
+output: A panel-by-panel plan with text, then layout notes.
+tip: People read posters from 2 metres away. If a panel needs a paragraph, it needs cutting.
+try: Case report of a rare paediatric pulmonary condition with CT images.
+next: poster-master
+
+@@ S | case-report-review | Critique my case report draft
+aud: PG Resident
+use: When your case report is drafted, before submission.
+persona: You are a reviewer for a case-reports journal who applies CARE and the journal's standards.
+context: My draft: [PASTE DRAFT]
+Target journal and word limit: [brief]
+task: 1. Score the draft on novelty, clarity of the timeline, completeness of the diagnostic reasoning, quality of the literature comparison, strength of the learning points, and CARE compliance.
+2. Quote the passage behind each score.
+3. List the top 5 fixes.
+4. Flag privacy risks and missing consent statements.
+rules: Base comments only on my text; quote rather than paraphrase, because vague feedback can't be acted on.
+output: A scoring table, the top fixes, then the privacy flags.
+tip: Run this again after revising. The timeline and diagnostic-reasoning scores usually rise the most.
+try: A 1,400-word draft case report of paraquat poisoning with delayed lung fibrosis.
+next: case-report-care
+
+@@ S | adr-case-report | Adverse drug reaction case report with causality assessment
+aud: PG Resident / Faculty
+use: When a case involves a suspected adverse drug reaction.
+persona: You are a clinical pharmacologist experienced in pharmacovigilance and ADR case reporting.
+context: Suspected drug(s), doses, start and stop dates (relative), reaction, timeline, dechallenge and rechallenge, and other possible causes: [PASTE DE-IDENTIFIED DETAILS]
+task: 1. Apply a causality assessment (e.g. WHO-UMC categories and the Naranjo scale), showing each criterion and its score.
+2. Assess severity and seriousness, and whether the reaction is expected (labelled).
+3. Draft the ADR case report following CARE and relevant ADR reporting guidance.
+4. Remind me to report to the national pharmacovigilance programme, marked [VERIFY CURRENT REPORTING PROCESS].
+rules: Show the reasoning for each causality criterion from my details only, and mark unknown elements as [NOT DOCUMENTED], because causality scores are often challenged.
+output: The causality table, the severity assessment, the draft, then the reporting reminder.
+tip: Report to the pharmacovigilance programme even if you don't publish. Every report counts.
+try: Suspected linezolid-induced lactic acidosis in a patient on TB treatment.
+next: case-report-care
+
+@@ S | cpc-write-up | Clinicopathological conference (CPC) write-up
+aud: PG Resident / Faculty
+use: When presenting or publishing a clinicopathological conference case, where the diagnosis is revealed at the end.
+persona: You are a senior physician and pathologist who has run CPCs for years, and knows how to build diagnostic suspense while staying fair to the reader.
+context: De-identified case details in chronological order (history, examination, investigations, course): [PASTE]
+Final diagnosis and how it was established (histopathology, autopsy or test): [brief]
+Audience: [residents / faculty / mixed]
+task: 1. Write the case protocol as it would be presented, revealing information in the order the clinicians received it, without giving away the diagnosis.
+2. Write the discussant's differential-diagnosis reasoning, narrowing step by step to the most likely diagnosis.
+3. Write the pathology or final-diagnosis section with key findings.
+4. Add 3 teaching points and 2 questions for the audience.
+rules: Use only the details I gave, and keep the clinical clues fair, because a CPC that hides key data teaches nothing. Keep everything de-identified.
+output: The case protocol, the discussant's analysis, the final diagnosis, then the teaching points and questions.
+tip: Pick a case where the diagnosis could have been reached from the clinical data. Those make the best CPCs.
+try: Fever, pancytopenia and splenomegaly in a young man, finally diagnosed as visceral leishmaniasis on marrow.
+next: differential-exclusion
+
+@@ Q | novelty-line | One line on why my case is worth reading
+aud: PG Resident
+body: Act as a case-reports editor. From my case summary, [PASTE SUMMARY], write one clear sentence of under 30 words that states exactly what the case adds (a rare presentation, association, diagnostic lesson or management lesson), without unverified "first report" claims.
+try: A young non-smoker with pulmonary Langerhans cell histiocytosis diagnosed on cryobiopsy.
+
+@@ Q | similar-case-keywords | Keywords to search for similar cases
+aud: PG Resident
+body: Act as a medical librarian. For my case, [KEY FEATURES], give me 8 useful search terms and synonyms (including older names and MeSH terms) and one ready-to-run PubMed search string limited to case reports, to find previously published similar cases.
+try: Hypokalaemic periodic paralysis as the presenting feature of thyrotoxicosis.
+
+@@ Q | anonymisation-check | Is my case report properly anonymised?
+aud: PG Resident
+body: Act as a privacy reviewer for a medical journal. Check this case text and image list, [PASTE TEXT AND IMAGE LIST], for anything that could identify the patient: dates, places, occupation, rare details, faces, tattoos and image metadata. List each risk with a fix.
+try: A case mentioning the village name, the exact admission date and a distinctive tattoo.
+
+@@ Q | case-trim | Cut my case report to the word limit
+aud: PG Resident
+body: Act as a case-reports editor. Cut this case report, [PASTE TEXT], from [CURRENT] to [TARGET] words, keeping the timeline, key investigations, the excluded differentials and the learning points, and moving detail into the timeline table. Show the new word count.
+try: A 1,600-word case report for a journal with a 1,000-word limit.
+
+@@ Q | image-legend | Legend for a clinical image
+aud: PG Resident
+body: Act as a journal image editor. Write a legend for this image, [DESCRIBE IMAGE AND FINDINGS], that states the modality or type, the view, what the arrows or labels point to, and the key finding, in under 50 words, with abbreviations defined.
+try: Contrast CT showing a ring-enhancing lesion with a target sign in the right frontal lobe.
+
+@@ Q | teaching-caption | Turn my case into a teaching caption
+aud: PG Resident / Faculty
+body: Act as a medical educator. Turn my case, [BRIEF CASE], into a 60-word teaching caption for a department WhatsApp group or case-of-the-week slide, written for junior residents: the presentation, the key finding, the diagnosis and one learning point, fully de-identified.
+try: Elderly man with hiccups for 2 weeks found to have lateral medullary infarct.
+
+@@ Q | consent-explain | Explain publication consent to my patient
+aud: PG Resident
+body: Act as a compassionate clinician. Write a short, simple explanation (under 100 words) that I can say to my patient, [BRIEF CONTEXT], explaining why I want to publish their case, what will be shared, how their identity will be protected, and that they can refuse.
+try: A patient who recovered from a rare poisoning, speaking Hindi.
+
+@@ Q | report-or-series | Case report or case series?
+aud: PG Resident
+body: Act as a journal editor. I have [N] patients with [SHARED FEATURE]. Tell me whether to write a single case report, a case series or a clinical image, what each would need, and which journals typically prefer which, in under 120 words.
+try: Three patients with the same rare drug reaction in 6 months.
+
+@@ Q | case-cover-line | The key sentence of my case-report cover letter
+aud: PG Resident
+body: Act as a senior author. Write the 2 key sentences of a cover letter to the editor for my case report, [TITLE AND ONE-LINE SUMMARY], explaining why the case matters to this journal's readers, [JOURNAL], without exaggerating novelty or making unverified priority claims.
+try: Case of tuberculous mastitis mimicking breast carcinoma in a young woman.
