@@ -1,0 +1,441 @@
+# 3.4 | Long & short answer writing | Examiners mark what they can see in minutes: clear headings, the key points, a diagram and a structured flow. Knowing isn't enough; practise writing it.
+
+@@ M | long-answer-master | Model long answer (10–15 marks)
+aud: MBBS Student / PG Resident
+use: For long-answer questions in university theory exams and residency theory papers.
+why: Long answers are marked quickly against a mental checklist of key points, structure and diagrams. A model answer that is well structured, with headings, a diagram, a flowchart or table and a focused conclusion, shows you exactly what earns full marks, and trains you to reproduce it in 15–20 minutes.
+persona: You are a senior university examiner in [SUBJECT] who has marked thousands of theory scripts and knows what earns full marks. You write model answers that are complete, well structured and realistic to write in the time allowed.
+context: The question (exactly as asked): [PASTE QUESTION]
+Marks and the time available for it: [e.g. 15 marks, 20 minutes]
+Exam: [MBBS university / MD-MS-DNB theory / other]
+Standard textbook for this subject: [name and edition]
+My current knowledge of the topic: [brief]
+task: 1. Interpret the question: the directive word (discuss, describe, enumerate, compare), its scope, and the marks split implied.
+2. Give an answer skeleton with headings in the right order.
+3. Write the model answer: a 2–3 line introduction or definition, structured headings with points, at least one labelled diagram (described so I can draw it), a flowchart or table where it helps, and a brief conclusion.
+4. Keep the length realistic for the time (about 600–800 words for a long answer).
+5. Mark the "examiner's key points": 5–8 non-negotiable facts that must appear.
+6. Suggest what to underline or highlight.
+7. Give a 2-minute planning version (the skeleton only) for rapid practice.
+rules: Keep the content consistent with the standard textbook and mark doses, cut-offs and guideline-dependent statements [VERIFY FROM TEXTBOOK / GUIDELINE], because examiners mark against the standard source. Don't pad with irrelevant material; examiners penalise it.
+output: The interpretation, the skeleton, the model answer with the diagram description, the key-points box, the underlining guide, then the 2-minute version.
+tweak: End with the 3 common mistakes students make on this question, and how to avoid them.
+tips:
+- Practise writing the answer by hand in the time allowed. Knowing and writing are different skills.
+- Draw the diagram first in practice. If it takes too long, simplify it.
+- Keep a file of model answers for repeated questions. It's your final-month revision.
+next: answer-evaluation
+
+@@ M | pyq-answer-writer | Model answers for previous-year questions
+aud: MBBS Student / PG Resident
+use: With past papers, one question at a time, weeks before the exam.
+why: University theory papers repeat themes and often whole questions. Model answers for previous-year questions, written to the right length and format with the non-negotiable points highlighted, are the highest-yield preparation for theory exams.
+persona: You are an expert examiner and teacher in [SUBJECT] who writes model university exam answers exactly as a strong student would in the exam hall.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The previous-year question (paste exactly): [PASTE QUESTION]
+Question type and marks: [long answer / short note / brief answer; marks]
+University or exam: [brief]
+Standard textbook: [name]
+task: 1. Write a model answer as a student would write it in the exam: subheadings, a brief introduction (2–3 lines), and structured points.
+2. Include a labelled diagram description or a text schematic where relevant.
+3. Match the length to the marks: about 600–800 words for a long answer and 200–250 for a short answer, or as appropriate.
+4. End with an "Examiner's expected key points" box listing the 5 non-negotiable facts that must appear.
+5. Note any repeated variants of this question and how the answer would change for each.
+6. Suggest a 1-minute recall checklist for the day before the exam.
+rules: Keep facts consistent with the standard textbook and mark doses and guideline details [VERIFY FROM TEXTBOOK], because model answers are memorised and reproduced. Avoid content beyond what the question asks.
+output: The model answer with its diagram description, the key-points box, the variants note, then the recall checklist.
+tweak: End with the question's likely marking breakdown (which section earns how much), marked as an estimate.
+tips:
+- Paste questions directly from past papers. The theory, clinical and short-note formats all work.
+- Build a bank of model answers for questions repeated across 3 or more years.
+- Rewrite each model answer once in your own words and handwriting. That's what you'll reproduce.
+next: long-answer-master
+
+@@ M | answer-evaluation | Examiner evaluation of my written answer
+aud: MBBS Student / PG Resident
+use: After writing a practice answer by hand (type it or upload a photo).
+why: You can't improve answer writing without feedback, and teachers rarely have time to mark practice answers. An examiner-style evaluation with marks, missed key points, structure and presentation feedback, and a rewritten section shows you exactly how to gain marks.
+persona: You are a strict but fair university examiner in [SUBJECT] who marks answers against a key-point checklist and gives specific, actionable feedback.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The question and its marks: [PASTE]
+My answer (typed, or a photo of my handwritten answer): [PASTE / UPLOAD]
+Time I took: [minutes]
+Exam: [brief]
+task: 1. Build the marking scheme: the key points and their approximate marks, and the credit for structure and diagrams.
+2. Mark my answer against it, with a total out of the maximum.
+3. List the key points I covered, missed, or got wrong.
+4. Give feedback on structure, headings, the diagram, legibility and presentation (from the photo, if uploaded), and length versus time.
+5. Rewrite the weakest section of my answer as an example.
+6. Give 3 specific changes for my next practice answer.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Base the marking on standard textbook content and mark disputed points [VERIFY], and be honest about the marks, because generous marking in practice leads to surprises in the exam. If handwriting in a photo is unreadable, say which parts couldn't be read.
+output: The marking scheme, the mark awarded, the points table (covered, missed, wrong), the presentation feedback, the rewritten section, then the 3 changes.
+tweak: End with the mark I could realistically reach with the 3 changes.
+tips:
+- Write under timed conditions before asking for evaluation. Untimed answers give false confidence.
+- Re-write the same answer after the feedback and have it evaluated again.
+- Track your marks across practice answers. Improvement is motivating.
+next: answer-skeleton
+
+@@ M | residency-theory-answer | MD / MS / DNB theory essay with depth
+aud: PG Resident (final year)
+use: For residency theory papers, where depth, recent evidence and a critical perspective are expected.
+why: Residency theory answers are expected to go beyond MBBS level: current guidelines, landmark evidence, recent advances and a critical view, all written clearly in limited time. A model built to that standard shows the difference between a pass and a distinction.
+persona: You are a senior examiner for MD, MS and DNB theory papers who expects postgraduate-level depth, current evidence and clear structure.
+context: Deadline or time I have for this: [brief]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Specialty and paper: [e.g. MD General Medicine, Paper 3]
+The question: [PASTE QUESTION]
+Marks and time: [e.g. 10 marks, 15 minutes]
+Guidelines and key sources I know for this topic: [LIST]
+task: 1. Interpret the question and plan the structure.
+2. Write the model answer: definition and classification, pathophysiology relevant to management, diagnostic approach (criteria, scores, investigations), management with current guideline recommendations, recent advances or trials, controversies, and a conclusion.
+3. Include a flowchart or algorithm and a table where they help.
+4. Cite guidelines and trials by name and year where appropriate, each marked [VERIFY], without a full reference list.
+5. Keep the length realistic for the time.
+6. Mark the points that distinguish a postgraduate-level answer from an MBBS-level one.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Name guidelines and trials only from my list or with [VERIFY], because examiners notice misattributed trials. Keep the content current, and flag anything that may have changed recently.
+output: The plan, the model answer, the flowchart and table descriptions, then the "postgraduate-level" markers.
+tweak: End with the recent advance or controversy most likely to impress the examiner on this topic, and how to write it in 3 lines.
+tips:
+- One recent trial or guideline change, correctly cited, lifts an answer above the average.
+- Practise writing algorithms quickly. They save words and show clarity of thought.
+- Read the question twice: postgraduate questions often ask for "critical appraisal" or "recent advances" specifically.
+next: recent-advances-answer
+
+@@ S | short-note | Short note (5 marks)
+aud: MBBS Student / PG Resident
+use: For short notes and brief-answer questions.
+persona: You are a university examiner who knows what a 5-mark short note must contain.
+context: Topic: [TOPIC]
+Marks and time: [e.g. 5 marks, 7 minutes]
+Exam: [brief]
+task: 1. Write a short note of about 200–250 words: a one-line definition, then 4–6 headed points, and a small diagram or table if relevant.
+2. Highlight the 5 must-have points.
+3. Give a 1-minute skeleton version.
+rules: Keep it within the length a student can write in the time, and consistent with the standard textbook, marking specifics [VERIFY], because short notes are marked on key points, not volume.
+output: The short note, the must-have points, then the skeleton.
+tip: Headings and a small table make a short note look complete at a glance.
+try: Short note on Horner's syndrome.
+next: answer-skeleton
+
+@@ S | answer-skeleton | Plan any answer in 2 minutes
+aud: MBBS Student / PG Resident
+use: In practice, to train fast planning before writing.
+persona: You are an exam-writing coach.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The question and its marks: [PASTE]
+Subject: [brief]
+task: 1. Give a 2-minute planning method: underline the directive word, list the headings, choose one diagram, and note the key facts per heading.
+2. Apply it to my question and produce the skeleton.
+3. Allocate words or space per heading according to the marks.
+rules: Keep the skeleton aligned with what the question actually asks, because off-topic sections earn nothing.
+output: The planning method, the skeleton, then the allocation. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: A 2-minute plan saves 5 minutes of rambling and earns more marks.
+try: "Discuss the aetiology, clinical features and management of acute pancreatitis."
+next: long-answer-master
+
+@@ S | diagram-for-answer | A diagram that earns marks
+aud: MBBS Student / PG Resident
+use: When an answer needs a diagram and you're unsure what to draw.
+persona: You are an examiner who values clear, relevant diagrams.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The question or topic: [brief]
+Time I can give the diagram: [e.g. 3 minutes]
+task: 1. Choose the best diagram (anatomical, flowchart, graph or schematic) for this answer.
+2. Describe how to draw it step by step, with its labels.
+3. Suggest a simpler 1-minute version.
+4. Say where to place it in the answer.
+rules: Keep the diagram accurate and relevant to the question, because irrelevant diagrams waste time without adding marks.
+output: The diagram choice, the drawing steps with labels, the simple version, then the placement.
+tip: Practise each important diagram three times before the exam. Speed comes from repetition.
+try: A diagram for "pathophysiology of septic shock".
+next: flowchart-in-answer
+
+@@ S | flowchart-in-answer | Put a flowchart in my answer
+aud: MBBS Student / PG Resident
+use: For management, approach and pathophysiology questions.
+persona: You are an examiner who rewards clear flowcharts.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The question and the content to convert: [PASTE]
+task: 1. Convert the content into a compact flowchart (6–10 boxes) with arrows and decision points.
+2. Suggest the box labels (under 6 words each).
+3. Say which paragraphs of the answer the flowchart can replace, to save time.
+rules: Keep the clinical logic accurate and mark thresholds [VERIFY], because flowcharts are marked as content, not decoration.
+output: The flowchart in text form, the labels, then the time-saving note. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: A flowchart for "management" questions shows examiners you think in steps.
+try: Management of an acute exacerbation of asthma.
+next: table-in-answer
+
+@@ S | table-in-answer | A comparison table in my answer
+aud: MBBS Student / PG Resident
+use: For "compare", "differentiate" and "classify" questions.
+persona: You are an examiner who values well-designed tables.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The question and the items to compare: [brief]
+task: 1. Choose 6–8 comparison features that matter most.
+2. Build the table with concise entries.
+3. Add a one-line conclusion under the table.
+4. Suggest how to draw it quickly by hand.
+rules: Keep the entries accurate and parallel, because tables are scanned quickly for correctness.
+output: The table, the conclusion, then the drawing tip. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Tables let examiners see 8 points at a glance. They're the fastest way to show breadth.
+try: Differentiate nephritic from nephrotic syndrome.
+next: compare-contrast-answer
+
+@@ S | intro-conclusion | Strong introductions and conclusions
+aud: MBBS Student / PG Resident
+use: When your answers start and end weakly.
+persona: You are an examiner who notices first and last impressions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The question: [PASTE]
+My current introduction and conclusion: [PASTE]
+task: 1. Write a 2–3 line introduction: a definition, and why the topic matters (importance or burden, with [VERIFY] for numbers).
+2. Write a 2–3 line conclusion: a summary, a key principle, or a recent direction.
+3. Give 3 reusable introduction patterns and 3 conclusion patterns.
+rules: Keep them brief and factual, because long introductions steal time from the points that earn marks.
+output: The rewritten introduction and conclusion, then the reusable patterns.
+tip: A precise definition as the first line signals competence immediately.
+try: "Describe the clinical features and management of rheumatic heart disease."
+next: long-answer-master
+
+@@ S | time-per-question | Time allocation for a theory paper
+aud: MBBS Student / PG Resident
+use: Before practice papers and the real exam.
+persona: You are an exam strategist for theory papers.
+context: Paper duration and the question pattern (number, types, marks): [brief]
+My usual problem (running out of time, long first answers): [brief]
+task: 1. Calculate the time per question by marks, with reading and review time.
+2. Recommend the order (e.g. strongest questions first, or in paper order).
+3. Set checkpoints for the paper.
+4. Plan what to do when time runs out (bullet-point the remaining answers).
+rules: Base the allocation on my paper's actual pattern, because patterns differ between universities and papers.
+output: The time table, the order recommendation, the checkpoints, then the emergency plan.
+tip: Never exceed a question's time by more than 20%. The next question's marks are easier to earn.
+try: A 3-hour paper with 2 long answers of 15 marks and 10 short notes of 5 marks.
+next: answer-skeleton
+
+@@ S | compare-contrast-answer | Answer "compare and contrast" questions
+aud: MBBS Student / PG Resident
+use: For comparison questions.
+persona: You are an examiner who marks comparison questions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The question: [PASTE]
+Marks: [number]
+task: 1. Write a brief introduction defining both items.
+2. Build a comparison table (the core of the answer).
+3. Add a short paragraph on the key distinguishing points and their clinical relevance.
+4. Add a diagram if relevant.
+rules: Keep the comparisons parallel and accurate, and mark specifics [VERIFY], because comparison answers are checked point by point.
+output: The introduction, the table, the paragraph, then the diagram suggestion. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Include "similarities" briefly. Many students forget, and examiners notice.
+try: Compare type 1 and type 2 diabetes mellitus.
+next: table-in-answer
+
+@@ S | directive-words | What does the question word really ask?
+aud: MBBS Student / PG Resident
+use: When you're unsure how to approach "discuss", "describe", "enumerate", "outline" or "critically evaluate".
+persona: You are an examiner who explains question directives.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The directive words in my exam papers: [list]
+Example questions: [PASTE 2–3]
+task: 1. Define each directive word and what it expects: depth, format and length.
+2. Show how the same topic changes with different directives.
+3. Rewrite the approach to my example questions.
+rules: Keep the definitions consistent with common university conventions, and suggest checking local expectations, because institutions differ slightly.
+output: A directive table (word, meaning, expected format), the same-topic examples, then my question approaches. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: "Enumerate" means a list, not an essay. Answering the directive saves time and earns marks.
+try: "Enumerate the causes of haemoptysis" versus "discuss the approach to haemoptysis".
+next: answer-skeleton
+
+@@ S | recent-advances-answer | A "recent advances" paragraph
+aud: PG Resident / MBBS final year
+use: When a question asks about recent advances, or an answer would benefit from one.
+persona: You are an academic clinician who writes accurate recent-advances sections.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Topic: [TOPIC]
+Recent developments I know of, with sources: [LIST]
+Exam: [brief]
+task: 1. Write a recent-advances paragraph or bullet list (5–7 points) from my sources.
+2. Include the year and source for each, marked [VERIFY].
+3. Indicate which are established, and which are emerging.
+rules: Use only the developments I listed or mark new suggestions [VERIFY — FIND SOURCE], because "recent advances" copied from old notes are often outdated.
+output: The paragraph or list with sources and status.
+tip: Two correct, recent, well-cited points beat seven vague ones.
+try: Recent advances in the management of heart failure with reduced ejection fraction.
+next: residency-theory-answer
+
+@@ S | management-answer | A stepwise management answer
+aud: MBBS Student / PG Resident
+use: For "discuss the management of…" questions.
+persona: You are an examiner who expects structured management answers.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The condition and the question wording: [PASTE]
+Marks: [number]
+task: 1. Structure the answer: general measures, specific treatment (first line, then second line), management of complications, monitoring, prevention and follow-up.
+2. Add a management flowchart.
+3. Mark drug doses and durations [VERIFY].
+4. Add special situations (pregnancy, renal failure, children) if relevant.
+rules: Keep the recommendations consistent with standard textbooks and current guidelines, and mark every dose [VERIFY], because dosing errors lose marks and credibility.
+output: The structured answer, then the flowchart description.
+tip: "General measures" first shows examiners you think of the whole patient.
+try: Management of acute severe ulcerative colitis.
+next: flowchart-in-answer
+
+@@ S | case-based-theory | Answer a case-based theory question
+aud: MBBS Student / PG Resident
+use: When a theory question starts with a clinical scenario.
+persona: You are an examiner who writes case-based questions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The question with its scenario and sub-questions: [PASTE]
+Marks: [number]
+task: 1. Identify the diagnosis from the scenario and justify it briefly.
+2. Answer each sub-question in order, with headings matching the sub-questions.
+3. Keep each part proportional to its marks.
+4. Link the answers to the scenario details.
+rules: Reason step by step from the scenario, and keep facts accurate with [VERIFY] for specifics, because case-based questions reward reasoning.
+output: The diagnosis with its justification, then the headed answers to each part.
+tip: Quote the scenario's clues in your answer ("the history of X suggests…"). It shows your reasoning.
+try: A scenario of a young woman with fever, a malar rash and arthralgia, with questions on diagnosis, investigations and management.
+next: long-answer-master
+
+@@ S | answer-presentation | Make my answers look complete at a glance
+aud: MBBS Student / PG Resident
+use: When your content is good but your marks are average.
+persona: You are an examiner who knows how presentation affects marks.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+A photo or description of a recent answer I wrote: [UPLOAD / DESCRIBE]
+task: 1. Assess the presentation: headings, spacing, underlining, point format, diagrams, legibility and margins.
+2. Give 8 specific presentation rules.
+3. Show a before-and-after layout of one page.
+rules: Focus on presentation techniques allowed in the exam (pen colours, underlining), and remind me to check my university's rules, because some restrict colours or formats.
+output: The assessment, the rules, then the before-and-after layout. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Headings underlined, points numbered and one diagram per page make an answer look complete before it is even read.
+try: A photo of a handwritten 15-mark answer that is one continuous paragraph.
+next: answer-evaluation
+
+@@ S | repeated-questions-bank | Build a bank of repeated questions
+aud: MBBS Student / PG Resident
+use: With past papers from 5–10 years.
+persona: You are an exam analyst for university theory papers.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Past questions for my subject (paste them): [PASTE]
+Years covered: [range]
+task: 1. Group the questions by topic and identify the repeats and near-repeats.
+2. Rank the topics by how often they recur.
+3. Create a list of model answers to prepare, in priority order.
+4. Suggest a schedule to write them.
+rules: Base the counts only on the questions I pasted, because claims about "frequently asked" topics beyond my papers are guesses.
+output: The grouped table with counts, the priority list, then the schedule.
+tip: Questions repeated 3 or more times deserve a memorised model answer.
+try: 8 years of MBBS pathology theory papers.
+next: pyq-answer-writer
+
+@@ S | chapter-to-answers | Model answers from a textbook chapter
+aud: MBBS Student / PG Resident
+use: After studying a chapter, to prepare answer-ready material.
+persona: You are an examiner who converts chapters into exam answers.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The chapter (upload or paste the key sections): [UPLOAD]
+Exam: [brief]
+task: 1. Identify the 3–5 most likely long and short questions from this chapter.
+2. Write a model skeleton for each (headings, key points and a diagram).
+3. Write one full model answer for the most likely long question.
+rules: Use only the chapter's content, and mark details to check [VERIFY IN CHAPTER], because answers must match the source.
+output: The likely questions, the skeletons, then the full model answer.
+tip: Skeletons are enough for revision. Write the full answers only for high-priority questions.
+try: A chapter on tuberculosis in a medicine textbook.
+next: answer-skeleton
+
+@@ S | writing-speed | Improve my writing speed
+aud: MBBS Student / PG Resident
+use: When you know the answers but can't finish the paper.
+persona: You are an exam coach who trains writing speed and efficiency.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+My current speed (e.g. words per 10 minutes) and my handwriting issues: [brief]
+Weeks until the exam: [N]
+task: 1. Give techniques: planning first, bullet points instead of prose, standard abbreviations (defined once), and quick diagrams.
+2. Plan a weekly practice routine with timed writing.
+3. Set speed targets with measurement.
+4. Suggest ergonomic tips (pen, posture, breaks).
+rules: Keep the abbreviations to standard, recognisable ones, because examiners won't decode private shorthand.
+output: The techniques, the routine, the targets, then the ergonomics.
+tip: Timed practice twice a week for 6 weeks noticeably improves speed.
+try: I write 250 words in 15 minutes and need 400 or more.
+next: time-per-question
+
+@@ S | marking-scheme | What examiners actually look for
+aud: MBBS Student / PG Resident
+use: To understand how theory answers are marked.
+persona: You are a senior examiner who explains marking honestly.
+context: Exam type and subject: [brief]
+My typical marks versus my expectations: [brief]
+task: 1. Explain how examiners typically mark: key points, structure, diagrams, relevance and presentation.
+2. Explain what loses marks: irrelevance, missing key points, poor structure and illegibility.
+3. Explain how the marks for a 10-mark answer might be split, as an illustrative estimate.
+4. Give a checklist to run on every practice answer.
+rules: Present the marking insights as general practice, not official schemes, because marking varies between examiners and universities.
+output: The marking explanation, the mark-losers, the illustrative split, then the checklist.
+tip: Examiners often mark tired and fast. Make key points easy to find.
+try: MBBS final-year medicine theory.
+next: answer-evaluation
+
+@@ Q | definition-opener | A one-line definition to open my answer
+aud: MBBS Student / PG Resident
+body: Act as a university examiner. Give a precise, textbook-standard one-line definition of [TOPIC] to open a theory answer, plus one line on its clinical importance, marking the source type as [CHECK STANDARD TEXTBOOK]. Flag anything you are unsure of so I can check it.
+try: Topic: acute respiratory distress syndrome.
+
+@@ Q | must-have-points | The five points I must not miss
+aud: MBBS Student / PG Resident
+body: Act as an experienced university examiner. For the question "[QUESTION]", list the 5 non-negotiable points a full-marks answer must contain, each in one line, in the order they should appear. Flag anything you are unsure of so I can check it.
+try: "Describe the clinical features of hypothyroidism."
+
+@@ Q | enumerate-list | An "enumerate" answer
+aud: MBBS Student
+body: Act as an examiner. For "Enumerate [TOPIC]", give a numbered, grouped list (grouped by mechanism or category), with no explanations unless one word is needed, so I can write it in under 3 minutes, and mark anything uncertain [VERIFY]. Flag anything you are unsure of so I can check it.
+try: "Enumerate the causes of splenomegaly."
+
+@@ Q | add-diagram | Which diagram should I add?
+aud: MBBS Student / PG Resident
+body: Act as an examiner. For my answer on [TOPIC], suggest the single most valuable diagram to add, describe it in 4–5 drawing steps with labels, and say where in the answer it should go. Flag anything you are unsure of so I can check it.
+try: An answer on the pathogenesis of atherosclerosis.
+
+@@ Q | paragraph-to-points | Convert my paragraph into exam points
+aud: MBBS Student / PG Resident
+body: Act as an exam-writing coach for university theory papers. Convert this paragraph from my answer, [PASTE PARAGRAPH], into a heading with 4–6 concise numbered points, keeping every fact and removing filler words. Flag anything you are unsure of so I can check it.
+try: A 150-word paragraph on the complications of diabetes.
+
+@@ Q | heading-structure | Headings for my answer
+aud: MBBS Student / PG Resident
+body: Act as a university examiner. Give the heading structure (in order) for the question "[QUESTION]" worth [MARKS] marks, with a suggested word allocation for each heading and the place for one diagram. Flag anything you are unsure of so I can check it.
+try: "Discuss the approach to a patient with pyrexia of unknown origin" (15 marks).
+
+@@ Q | two-mark-answer | A 2-mark answer
+aud: MBBS Student
+body: Act as an examiner. Write a 2-mark answer for [QUESTION] in 40–60 words: the direct answer first, then one supporting point or example, with nothing extra. Mark any number [VERIFY]. Flag anything you are unsure of so I can check it.
+try: "What is the Kussmaul sign?"
+
+@@ Q | answer-template | A reusable template for disease answers
+aud: MBBS Student
+body: Act as an exam coach. Give me a reusable heading template for long answers on any disease in [SUBJECT] (e.g. definition, aetiology, pathogenesis, clinical features, investigations, management, complications, prognosis), with one line on what to write under each heading. Flag anything you are unsure of so I can check it.
+try: Subject: general surgery.
+
+@@ Q | conclusion-line | A strong closing line
+aud: MBBS Student / PG Resident
+body: Act as an examiner. Write 3 possible concluding lines (under 30 words each) for my answer on [TOPIC] (a summary principle, a clinical pearl, and a recent direction marked [VERIFY]), and say which suits a long answer best. Flag anything you are unsure of so I can check it.
+try: An answer on the management of hypertension in pregnancy.
