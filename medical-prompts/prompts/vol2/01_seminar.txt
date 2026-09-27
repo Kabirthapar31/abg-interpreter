@@ -1,0 +1,874 @@
+# 2.1 | Seminar preparation | A seminar is judged by what the audience remembers the next morning. Build it around clear objectives, current evidence and a story, not a textbook chapter read aloud.
+
+@@ M | seminar-deck-master | Mixed-audience seminar deck, clinically rigorous
+aud: PG Resident / Faculty
+use: When you have a departmental seminar on any topic and want a complete, evidence-based deck.
+why: Departmental audiences are mixed: MBBS students, interns, residents and consultants in the same room. A deck pitched at resident level, with a short foundation recap for juniors and a controversies section for consultants, keeps everyone engaged, and cites real evidence rather than textbook generalities.
+persona: You are a senior academic in [SPECIALTY] who has delivered and moderated hundreds of departmental seminars. You are clinically rigorous, evidence-based and practical, and you never invent citations or statistics.
+context: Topic: [e.g. Acute Respiratory Distress Syndrome: from pathophysiology to ventilator management]
+Audience: mixed (MBBS students, interns, junior residents, senior residents, consultants)
+Time available: [e.g. 45 minutes + 15 minutes discussion]
+Sources I have (guidelines, reviews, textbook chapters), uploaded or listed: [UPLOAD OR LIST]
+Output format: [slide-by-slide text for PowerPoint / a .pptx file if your tool can create one]
+task: 1. Pitch the core content at resident level, with a 1–2 slide foundation recap early, and advanced nuance for consultants.
+2. Follow this structure, adapting as needed: title slide with a one-line clinical hook; why this matters (a representative case); foundation recap (definitions, classification); pathophysiology; clinical features and diagnostic approach (criteria or scores in tables); management, stepwise, first-line versus escalation; an evidence corner (landmark trials and current guidelines); controversies and grey zones; 3–5 key takeaways; references in Vancouver style.
+3. For every slide give a message title, concise bullets (one idea per slide), a table where comparisons help, and speaker notes.
+4. Mark what is exam-relevant for students and what is decision-changing for residents and consultants.
+5. Suggest where a figure, flowchart or algorithm should go, and describe it.
+rules: Name trials and guidelines only from my sources or with [VERIFY] beside each, because misremembered trial names and years are the most embarrassing seminar error. Mark every drug dose as [VERIFY DOSE FROM CURRENT GUIDELINE]. Show me the slide-by-slide text for review before building any file.
+output: A slide table (number, title, bullets, visual, speaker notes, audience tag), then the reference list with [VERIFY] flags.
+tweak: End with the 5 questions a consultant is most likely to ask after this seminar, and short evidence-based answers.
+tips:
+- Tuning levers: change the depth (resident ↔ consultant), the slide count (about 1 slide per minute) and the visual style.
+- Verify every trial and guideline in the evidence corner against the original source before presenting.
+- Rehearse the controversies section. It is where the discussion will go.
+next: learning-objectives
+
+@@ M | seminar-blueprint | From topic to seminar blueprint in one sitting
+aud: PG Resident
+use: The day your seminar topic is assigned, before you open any textbook.
+why: Most residents start a seminar by reading everything and end with 80 slides and no structure. Starting with objectives, a time budget and a storyline tells you exactly what to read and what to leave out.
+persona: You are a medical educator and senior faculty member who mentors residents on seminar preparation. You think backwards from what the audience must be able to do after the session.
+context: Topic as assigned: [e.g. Approach to hyponatraemia]
+Specialty and my year: [e.g. MD Medicine, year 2]
+Audience and its level: [brief]
+Duration: [minutes]
+Days until the seminar: [N]
+Moderator's known expectations or style: [brief or "unknown"]
+task: 1. Clarify the scope: what is in, what is out, and how to phrase the final seminar title.
+2. Write 4–6 learning objectives using Bloom's verbs (explain, differentiate, apply, choose).
+3. Build a storyline: an opening case, 5–7 content blocks mapped to the objectives, and a closing return to the case.
+4. Create a time budget per block that fits the duration.
+5. For each block, list the must-read sources by type (current guideline, recent review, textbook chapter) with [VERIFY LATEST EDITION].
+6. Make a day-by-day preparation plan for the days I have, including a rehearsal.
+7. Predict the moderator's 5 likely questions.
+rules: Keep the content proportional to the time, about one slide per minute, and cut anything not tied to an objective, because overlong seminars lose the audience in the middle. Name no specific papers from memory; describe the source type and mark it [FIND AND VERIFY].
+output: Scope note, objectives, storyline table (block, objective, minutes, key points), the source list, the preparation plan, then the predicted questions.
+tweak: End with the single case vignette to open with, 60 words, de-identified and realistic for Indian practice.
+tips:
+- Show the objectives and storyline to your moderator a week before. It avoids a last-minute restructure.
+- Read the guideline first, the review second and the textbook last.
+- Keep the opening case alive: return to it in every block.
+next: seminar-deck-master
+
+@@ M | seminar-evidence-pack | Evidence pack: guidelines and trials, verified from my sources
+aud: PG Resident / Faculty
+use: When your seminar needs an evidence corner and you have gathered the guidelines and key papers.
+why: The evidence section is where seminars go wrong: trials cited with the wrong year, outcomes overstated, or guidelines quoted from memory. Building it strictly from uploaded sources, with quotes, makes it accurate and defensible when a consultant challenges it.
+persona: You are an evidence-based medicine specialist who prepares evidence summaries for clinical guideline panels. You quote the source for every claim and state the certainty of evidence clearly.
+context: Seminar topic and the clinical questions it must answer: [list 3–5 questions]
+Guidelines uploaded (name, organisation, year): [UPLOAD / LIST]
+Key trials and meta-analyses uploaded: [UPLOAD / LIST]
+Setting to apply the evidence to: [e.g. Indian tertiary and district hospitals]
+Audience and how much time the evidence section gets: [e.g. residents and consultants, 8 minutes]
+My specialty and year: [brief]
+task: 1. For each clinical question, summarise what the uploaded guidelines recommend, with the strength or grade, quoting the recommendation wording.
+2. Build a trials table: trial, year, design, population, intervention versus comparator, primary outcome and result with CI, and the key limitation.
+3. Identify where guidelines disagree with each other, and why.
+4. Identify where the evidence does not apply well to Indian settings (population, resources, drug availability).
+5. Write 3 evidence-corner slides with speaker notes.
+6. List any major trial or guideline the audience will expect that is missing from my uploads, marked [FIND AND UPLOAD], so I can add it before the seminar.
+rules: Use only the uploaded documents; for anything else write [NOT IN MY SOURCES — VERIFY], because a single wrong trial detail can discredit the whole seminar. Reproduce effect sizes exactly. State certainty levels as the guideline states them.
+output: A recommendations table per question, the trials table, the disagreement notes, the applicability notes, then the slide text.
+tweak: End with the one piece of evidence I should read in full before presenting, because it is most likely to be questioned.
+tips:
+- Upload the guideline PDFs themselves, not summaries of them.
+- Put the year on every trial and guideline on the slides. Consultants check it.
+- If two guidelines disagree, show both. That is where the best discussion happens.
+next: guideline-comparison
+
+@@ M | seminar-script | Full speaker script for a 45-minute seminar
+aud: PG Resident
+use: When your slides are ready and you want to rehearse to time.
+why: Reading slides aloud is the commonest seminar failure. A script written for speaking, with timing, transitions and planned interaction, lets you rehearse properly, then speak from notes on the day.
+persona: You are a speaking coach for medical educators who writes natural, spoken scripts and trims them to the second.
+context: My slides (titles and bullets, or upload the file): [PASTE OR UPLOAD]
+Duration of the talk (excluding discussion): [e.g. 40 minutes]
+Audience: [brief]
+My speaking style and my nerves: [brief]
+Points where I want audience interaction: [brief or "suggest"]
+Parts of the content I find hardest to explain: [list]
+Language mix the audience is comfortable with: [e.g. English with occasional Hindi]
+task: 1. Write a spoken script per slide at about 130 words per minute, in conversational academic English.
+2. Mark timing checkpoints (e.g. "by slide 10: 12 minutes").
+3. Add a transition sentence between sections, so the story flows.
+4. Insert 3–4 interaction moments: a question to the audience, a quick show of hands, or a case pause.
+5. Mark the lines to memorise word for word (opening, key message, closing).
+6. Flag slides whose script runs long, and suggest cuts.
+7. For the hardest parts I listed, write a simpler explanation or an analogy I can use if the audience looks lost.
+8. Write a 30-second emergency version of the conclusion in case time runs out.
+rules: Keep facts exactly as on my slides and add no new data, because the script must match what the audience sees. Script the interaction moments with a fallback answer in case nobody responds.
+output: A script table (slide, script, seconds, interaction), then the checkpoints and the memorise list.
+tweak: End with a 5-step rehearsal plan for the next 3 days.
+tips:
+- Rehearse aloud with a timer. Silent reading always underestimates the time.
+- Don't read the script on the day. Speak from the checkpoints and the memorised lines.
+- Record one rehearsal on your phone. You'll hear your filler words immediately.
+next: seminar-rehearsal-feedback
+
+@@ M | case-based-seminar | Case-based interactive seminar
+aud: PG Resident / Faculty
+use: When you want a seminar built around an unfolding case rather than a lecture.
+why: Case-based seminars keep the audience thinking instead of copying. Revealing a case in stages, with questions at each stage, teaches clinical reasoning and makes the content stick.
+persona: You are a clinician-educator who designs case-based learning sessions for residents, and who knows how to reveal information at the right pace.
+context: Topic: [TOPIC]
+Learning objectives: [PASTE OR "suggest"]
+Audience and number: [brief]
+Duration: [minutes]
+A real case I can adapt (de-identified), or "create a realistic one": [PASTE OR REQUEST]
+Setting where the case takes place: [emergency / ward / OPD / district hospital]
+Common mistakes residents make with this condition: [list or "suggest"]
+task: 1. Build an unfolding case in 4–6 stages: presentation, examination, initial investigations, key result, management decision, and follow-up or complication.
+2. At each stage, write 1–2 questions for the audience, the expected answers, and the teaching point to deliver.
+3. Map each stage to a learning objective.
+4. Add a short mini-lecture slide (3 bullets) after each stage to consolidate.
+5. Close with a summary of the reasoning path, and take-home points.
+6. Suggest how to run it: small groups, polls or calling on people.
+7. Build at least one stage around a common mistake, so the audience can discover why it is wrong.
+8. Give the timing for each stage so the whole case fits the duration.
+rules: Keep the case realistic for Indian practice and fully de-identified. Mark drug doses and guideline specifics as [VERIFY], because case-based sessions invite detailed questions.
+output: A stage table (stage, information revealed, questions, expected answers, teaching point, objective), the mini-lecture slides, then the facilitation guide.
+tweak: End with 2 variations of the case (a different age or comorbidity) for repeat sessions.
+tips:
+- Reveal information on separate slides. Showing everything at once kills the reasoning.
+- Wait 10 seconds after asking a question. Silence is thinking time.
+- Keep a "parking lot" for tangent questions and answer them at the end.
+next: seminar-interactive
+
+@@ M | seminar-mock-moderator | Mock moderator: grill me before the real seminar
+aud: PG Resident
+use: 2–3 days before your seminar, once the slides are final.
+why: The dreaded part of a seminar is the moderator's questions. A realistic mock session, one question at a time with feedback, turns fear into preparation and shows you exactly which slides need strengthening.
+persona: You are a senior professor and seminar moderator known for probing questions on basics, recent evidence and practical application. You are strict but fair, and you give frank feedback.
+context: Seminar topic and my specialty and year: [brief]
+My slide titles and key content: [PASTE]
+Areas I feel weakest in: [list]
+My moderator's known style or favourite themes: [brief or "unknown"]
+Duration of the seminar and the discussion slot: [brief]
+task: 1. Ask me one question at a time, mixing basic science, clinical application, recent evidence, Indian context and "what would you do" scenarios.
+2. After each answer, score it out of 10, give the ideal answer in 3–5 points, and tell me which slide should cover it better.
+3. Include 2 classic trap questions moderators use on this topic.
+4. Mix difficulty: start with 3 basic questions, then 4 applied questions, then 3 advanced or evidence questions.
+5. After 10 questions, summarise my weak areas and the slides to strengthen, and give me a one-day plan to fix them.
+rules: Ask only one question per turn and wait for my answer, because the value is in answering under pressure. Base questions on my topic and slides. Mark any fact in your ideal answers that depends on a guideline as [VERIFY].
+output: Conversational: one question per turn, feedback in a short structured block (score, ideal answer, gap, slide to fix), then the final summary with the weak areas ranked from most to least urgent.
+tweak: End with the 3 questions I should prepare backup slides for.
+tips:
+- Answer aloud before typing. The seminar is spoken.
+- Add backup slides at the end of the deck for the questions you struggled with.
+- Ask a colleague to play the moderator with these questions for a real rehearsal.
+next: seminar-script
+
+@@ M | guideline-to-seminar | Turn a new guideline into a seminar
+aud: PG Resident / Faculty
+use: When a new or updated clinical guideline is released and your department wants a session on it.
+why: "What's new in the guideline" seminars are common and often done badly: a slide per recommendation, read aloud. The useful version shows what changed, why, what it means for practice here, and what remains uncertain.
+persona: You are a guideline methodologist and clinician who explains guideline updates to busy clinicians, focusing on what changes practice.
+context: The guideline (upload the full text or the recommendations section): [UPLOAD]
+The previous version, if available: [UPLOAD OR "not available"]
+Audience and duration: [brief]
+Local practice for this condition in my hospital: [brief]
+Drugs, tests or devices the guideline recommends that my hospital lacks: [list or "unsure"]
+My specialty and year: [brief]
+task: 1. List the key recommendations with their strength and certainty, quoting the exact wording and the section number.
+2. Identify what is new or changed since the previous version, and the evidence cited for each change.
+3. Classify each change as practice-changing, practice-confirming or minor.
+4. Discuss applicability to Indian settings: resources, drug availability, cost and staffing.
+5. Build a 20–30 minute slide plan: what changed, why, what to do on Monday, and uncertainties.
+6. Write a one-page summary handout.
+7. Suggest a simple audit the department could run to check adherence to the key recommendation.
+8. Note which recommendations are conditional or based on low-certainty evidence, so the audience doesn't treat them as absolute.
+rules: Quote only from the uploaded guideline and mark anything else [VERIFY], because a misquoted recommendation can change patient care. Don't overstate the certainty of weak recommendations.
+output: The recommendations table, the changes table (old position, new position, evidence, classification), the applicability notes, the slide plan with timings, then the handout.
+tweak: End with the 3 recommendations most likely to be debated in the department, and why.
+tips:
+- Lead with what changes practice. Nobody remembers the minor edits.
+- Bring the guideline's own algorithm figure if it has one, and credit it.
+- Invite a senior to comment on local applicability. It turns the seminar into a discussion.
+next: indian-perspective
+
+@@ S | learning-objectives | Learning objectives with Bloom's verbs
+aud: PG Resident / Faculty
+use: At the very start of seminar preparation.
+persona: You are a medical educator trained in curriculum design who writes precise, measurable learning objectives.
+context: Topic: [TOPIC]
+Audience level: [MBBS / interns / residents / mixed]
+Duration: [minutes]
+task: 1. Write 4–6 learning objectives, each starting with a Bloom's verb (define, explain, differentiate, interpret, apply, choose, justify).
+2. Spread them across levels: recall, understanding and application.
+3. Say which part of the seminar will deliver each objective.
+4. Suggest one quick end-of-session check for each objective.
+rules: Avoid vague verbs such as "know", "understand" and "learn about", because they cannot be checked. Keep the number realistic for the time available.
+output: A numbered objectives list, a mapping table (objective, seminar block, check question).
+tip: Put the objectives on slide 2 and return to them on the last slide. Moderators notice.
+try: Topic: approach to a patient with haemoptysis, for MD Medicine residents, 40 minutes.
+next: seminar-time-plan
+
+@@ S | seminar-time-plan | Minute-by-minute time plan
+aud: PG Resident
+use: Once your outline is ready, to make sure it fits the time.
+persona: You are a meticulous academic event planner who keeps speakers on time.
+context: Outline or slide titles: [PASTE]
+Total time and the split between talk and discussion: [e.g. 45 + 15 minutes]
+Planned interactive moments: [list]
+task: 1. Allocate minutes to each section and slide.
+2. Show a running clock with checkpoints every 10 minutes.
+3. Identify sections to cut if I am running late, in order of priority.
+4. Estimate the total slide count against the time (about one slide per minute).
+rules: Include time for interaction, transitions and technical hiccups, because seminars always run over their plan.
+output: A timing table (section, slides, minutes, clock), then the cut list.
+tip: Put the checkpoint times in small text in your speaker notes, not on the slides.
+try: A 60-slide outline for a 40-minute seminar on diabetic ketoacidosis.
+next: seminar-script
+
+@@ S | topic-scoping | Narrow a huge seminar topic to something teachable
+aud: PG Resident
+use: When your assigned topic is enormous ("tuberculosis", "heart failure").
+persona: You are a seminar moderator who helps residents choose a sharp angle on broad topics.
+context: Assigned topic: [TOPIC]
+Duration and audience: [brief]
+Recent seminars in the department on related topics: [list or "unknown"]
+task: 1. Propose 5 focused angles (e.g. diagnosis in a specific group, a management controversy, recent advances, an approach to a symptom, an Indian perspective).
+2. For each, write a working title and 3 learning objectives.
+3. Recommend one angle for my audience and time, with the reason.
+4. Suggest how to acknowledge the rest of the topic in 1 slide.
+rules: Keep each angle deliverable in the time available, because covering everything superficially teaches nothing.
+output: An angles table (title, focus, objectives), then the recommendation.
+tip: Confirm the narrowed title with your moderator before you start preparing.
+try: Assigned topic: "Tuberculosis", 45 minutes, MD Respiratory Medicine residents.
+next: seminar-blueprint
+
+@@ S | audience-pitch | Pitch the same topic to different audiences
+aud: PG Resident / Faculty
+use: When you must present one topic to students, residents or consultants, or to a mix of them.
+persona: You are a medical educator who adapts content depth skilfully for different audiences.
+context: Topic and my current outline: [PASTE]
+Audience: [MBBS students / interns / residents / consultants / nurses / mixed]
+task: 1. Say what each audience already knows and what they need from this topic.
+2. Adjust the outline: what to expand, what to compress, what to drop.
+3. Suggest the level of jargon, the depth of evidence and the type of examples for each.
+4. For a mixed audience, show how to layer content (foundation recap, core, advanced corner).
+rules: Keep the clinical accuracy the same at every level; only the depth and emphasis change, because simplifying must never mean being wrong.
+output: A comparison table by audience, then the adjusted outline.
+tip: For a mixed audience, tell the room explicitly: "This slide is for students; this one is for the consultants."
+try: Topic: interpretation of pulmonary function tests.
+next: seminar-deck-master
+
+@@ S | pathophysiology-slides | Pathophysiology as a visual story
+aud: PG Resident / MBBS Student
+use: When your seminar needs a pathophysiology section that doesn't bore the room.
+persona: You are a physiology-minded clinician who explains mechanisms visually and links every step to a clinical feature.
+context: Condition: [CONDITION]
+Audience level: [brief]
+Slides available for this section: [e.g. 3]
+Sources I am using: [UPLOAD / LIST]
+task: 1. Break the pathophysiology into a sequence of 5–8 steps from trigger to clinical picture.
+2. Link each step to a symptom, sign, investigation finding or treatment target.
+3. Describe a flowchart or diagram for each slide.
+4. Write speaker notes explaining each arrow.
+rules: Keep to established mechanisms from my sources, and label emerging or debated mechanisms as such, because contested mechanisms presented as fact invite correction.
+output: A step table (step, mechanism, clinical correlate, treatment target), diagram descriptions, then speaker notes.
+tip: If a pathophysiology step doesn't explain a clinical feature or a treatment, cut it from the seminar.
+try: Condition: septic shock, 3 slides, for residents.
+next: diagnostic-algorithm
+
+@@ S | classification-table | Turn a classification into a clear table
+aud: PG Resident / MBBS Student
+use: When your topic has a classification, staging or grading system.
+persona: You are a medical educator who turns classification systems into clean, memorable tables.
+context: Classification or staging system: [name, or "the one used in guideline X"]
+My source for it: [UPLOAD / CITE]
+Audience: [brief]
+task: 1. Present the classification as a table with categories, defining criteria and clinical significance.
+2. Note the year and version, and any older versions still used in papers.
+3. Suggest a memory aid if it helps.
+4. Write one slide of speaker notes on how the classification guides management.
+rules: Reproduce thresholds and criteria only from my source, and mark any detail I did not supply as [VERIFY FROM SOURCE], because classification cut-offs are commonly misremembered.
+output: The table, the version note, the memory aid, then the speaker notes.
+tip: Always show which version you are using. Moderators love asking about the previous one.
+try: GOLD grouping for COPD assessment, from the current GOLD report.
+next: seminar-deck-master
+
+@@ S | diagnostic-algorithm | Diagnostic approach as an algorithm
+aud: PG Resident
+use: When your seminar covers "approach to" a symptom, sign or abnormal result.
+persona: You are a clinician-teacher who builds practical, stepwise diagnostic algorithms.
+context: Presenting problem: [e.g. hyponatraemia, pancytopenia, pleural effusion]
+Setting: [ward / emergency / OPD; resource level]
+Sources: [UPLOAD / LIST]
+task: 1. Build a stepwise algorithm: initial assessment, first-line tests, branch points with decision criteria, and further tests.
+2. Mark "can't-miss" diagnoses and red flags at the right points.
+3. Describe the algorithm as a flowchart (boxes and arrows) for a slide.
+4. Add a resource-limited variant for district hospitals.
+5. Write speaker notes walking through one example patient.
+rules: Mark cut-off values and test choices that depend on a guideline as [VERIFY FROM SOURCE], because algorithms are often photographed and reused.
+output: The flowchart description, a branch table (decision point, criterion, next step), the resource-limited variant, then the notes.
+tip: Walk the audience through the algorithm with a real case. Algorithms alone are hard to follow.
+try: Approach to a unilateral pleural effusion, tertiary and district versions.
+next: management-stepwise
+
+@@ S | management-stepwise | Management section, stepwise and practical
+aud: PG Resident
+use: For the management part of a seminar.
+persona: You are a senior clinician who teaches management as clear steps, from first-line care to escalation.
+context: Condition and severity range: [brief]
+Setting and resources: [brief]
+Guidelines or sources: [UPLOAD / LIST]
+task: 1. Lay out management in steps: immediate measures, first-line treatment, monitoring, escalation criteria and escalation options, and when to refer.
+2. Present drug choices in a table with dose placeholders, key cautions and monitoring.
+3. Highlight differences between tertiary and resource-limited settings.
+4. Add the common mistakes in managing this condition.
+rules: Mark every dose, duration and threshold as [VERIFY DOSE FROM CURRENT GUIDELINE], because dosing errors on slides can be copied into practice.
+output: A stepwise outline, the drug table, the setting comparison, then the common mistakes.
+tip: A one-slide "management on a page" summary is often the most photographed slide of the seminar.
+try: Management of acute severe asthma in adults, tertiary and district settings.
+next: drug-table
+
+@@ S | drug-table | Drug comparison table for a seminar
+aud: PG Resident / MBBS Student
+use: When your topic involves several drugs or drug classes.
+persona: You are a clinical pharmacologist who builds accurate, exam-useful drug tables.
+context: Drugs or classes to compare: [list]
+Aspects I want: [mechanism, indications, dose, adverse effects, interactions, monitoring, cost, availability in India]
+Source: [UPLOAD / LIST]
+task: 1. Build a comparison table with the aspects I listed.
+2. Highlight the distinguishing features between similar drugs.
+3. Add a row for special populations (pregnancy, renal and hepatic impairment, elderly).
+4. Write speaker notes on how to choose between them.
+rules: Mark every dose as [VERIFY DOSE] and every availability or cost note as [VERIFY LOCALLY], because drug details change and vary by region.
+output: The drug table, then the choice guidance in notes.
+tip: Split big tables across two slides. A 10-column table is unreadable from the back row.
+try: Compare DOACs with warfarin for stroke prevention in atrial fibrillation.
+next: evidence-corner
+
+@@ S | evidence-corner | Landmark trials in one table
+aud: PG Resident / Faculty
+use: For the "evidence corner" of your seminar, once you have the trial papers or abstracts.
+persona: You are an evidence-based medicine teacher who summarises trials accurately and critically.
+context: Trials to include (upload the papers or paste the abstracts): [UPLOAD / PASTE]
+The clinical question they address: [one line]
+task: 1. Build a table: trial, year, design, population, intervention versus comparator, primary outcome and result, and key limitation.
+2. Write a one-line "what it changed" for each trial.
+3. Put the trials in a timeline showing how the evidence evolved.
+4. Write speaker notes for a 3-minute evidence walkthrough.
+rules: Use only the uploaded or pasted trial details, with numbers reproduced exactly, and mark missing details [NOT IN SOURCE], because trial details are what experts in the audience check.
+output: The trials table, the timeline, then the speaker notes.
+tip: One slide with 4–6 trials is enough. Pick the ones that changed practice.
+try: Trials of corticosteroids in septic shock.
+next: controversies-slide
+
+@@ S | controversies-slide | Controversies and grey zones
+aud: PG Resident / Faculty
+use: For the section of your seminar that keeps consultants engaged.
+persona: You are a senior clinician who presents controversies fairly, giving both sides their strongest evidence.
+context: Topic: [TOPIC]
+Controversial questions I am aware of: [list or "suggest"]
+Sources for each side: [UPLOAD / LIST]
+task: 1. Identify 3–4 genuine controversies in current practice.
+2. For each, present the arguments and evidence on both sides.
+3. State what current guidelines say, if anything.
+4. Suggest how the department might approach it, and what evidence is awaited.
+5. Write one slide per controversy with a debate question.
+rules: Present both sides with equal care, and support claims only from my sources or mark them [VERIFY], because a one-sided "controversy" slide will be challenged.
+output: A controversy table (question, side A, side B, guideline position, awaited evidence), then the slides.
+tip: End each controversy slide with a question to the room. It starts the discussion you want.
+try: Controversies in fluid resuscitation for sepsis.
+next: recent-advances
+
+@@ S | recent-advances | Recent advances slide set
+aud: PG Resident / Faculty
+use: When your seminar needs a "what's new" section.
+persona: You are an academic clinician who tracks new evidence and separates genuine advances from hype.
+context: Topic: [TOPIC]
+Time window: [e.g. last 3 years]
+New papers, guidelines or approvals I have found: [UPLOAD / LIST]
+task: 1. Categorise the advances: new diagnostics, new therapies, new guideline positions, new understanding of the disease.
+2. For each, give the evidence level and whether it is ready for practice, promising, or early research.
+3. Note whether each is available or relevant in India.
+4. Write 2–3 slides with speaker notes.
+rules: Include only advances from the sources I gave, or mark them [VERIFY — FIND SOURCE], because AI-listed "advances" are often outdated or invented.
+output: An advances table (advance, category, evidence level, readiness, India relevance), then the slides.
+tip: Use a search tool with live citations (Perplexity or Consensus) to find recent advances, then verify each paper yourself.
+try: Recent advances in the management of idiopathic pulmonary fibrosis.
+next: indian-perspective
+
+@@ S | indian-perspective | The Indian perspective slide
+aud: PG Resident / Faculty
+use: For the section of your seminar on Indian epidemiology, guidelines and practice.
+persona: You are a public-health physician who knows Indian data sources, national programmes and practice realities.
+context: Topic: [TOPIC]
+Indian data and guidelines I have found (with sources): [LIST]
+task: 1. Summarise the Indian burden using my sourced figures.
+2. Summarise relevant Indian guidelines or national programme recommendations from my sources.
+3. Highlight how Indian practice differs from Western guidelines: resources, drug availability, cost and disease patterns.
+4. Identify gaps in Indian data.
+5. Write 1–2 slides with speaker notes.
+rules: Use only figures and guidelines I listed, with their sources and years, and mark anything else [VERIFY], because Indian statistics are often quoted from outdated surveys.
+output: The summary, the differences table, the data gaps, then the slides.
+tip: Always give the survey name and year with a prevalence figure on the slide.
+try: Topic: COPD in India, with burden data from national surveys and the Global Burden of Disease study.
+next: guideline-comparison
+
+@@ S | guideline-comparison | Compare two or more guidelines
+aud: PG Resident / Faculty
+use: When different societies recommend different things on your topic.
+persona: You are a guideline analyst who compares recommendations clearly and explains why they differ.
+context: Guidelines to compare (upload or list with year): [UPLOAD / LIST]
+Clinical questions to compare on: [list]
+task: 1. Build a side-by-side table: question, guideline A recommendation (with strength), guideline B recommendation (with strength).
+2. Explain the reasons for differences: evidence interpretation, population, cost, or date of publication.
+3. Suggest which is more applicable to my setting, and why.
+4. Write one comparison slide with speaker notes.
+rules: Quote recommendations from the uploaded documents and mark anything else [VERIFY], because paraphrased recommendations often lose their conditions.
+output: The comparison table, the reasons, the applicability note, then the slide.
+tip: Put the publication year of each guideline in the table header. It often explains the differences.
+try: Compare two international hypertension guidelines on blood-pressure targets in older adults.
+next: evidence-corner
+
+@@ S | seminar-references | References slide and citation check
+aud: PG Resident
+use: When finalising your seminar deck.
+persona: You are a reference editor who formats seminar references in Vancouver style.
+context: Sources I used, as I have them: [PASTE LIST]
+Number of reference slides allowed: [e.g. 1–2]
+task: 1. Format each reference in Vancouver style.
+2. Flag references missing essential details, without inventing them.
+3. Suggest how to cite sources on individual slides (small superscript numbers).
+4. Select the 10–15 most important if the list is too long.
+rules: Write [MISSING — CHECK PUBMED] for missing details instead of inventing them, because invented volume or page numbers make real references look fake.
+output: The formatted list, then the flagged items and citation tips.
+tip: Cite figures and tables you adapt from papers on the slide itself: "Adapted from [ref]".
+try: 18 sources, including 2 guidelines, 6 trials, 3 reviews and a textbook.
+next: take-home-messages
+
+@@ S | seminar-quiz | End-of-seminar quiz
+aud: PG Resident / Faculty
+use: To close your seminar with active recall and check the objectives.
+persona: You are a medical educator who writes high-quality MCQs that test application, not trivia.
+context: Seminar topic and learning objectives: [PASTE]
+Audience level: [brief]
+Format: [show of hands / online poll / paper]
+task: 1. Write 5–8 MCQs mapped to the objectives, mostly clinical-vignette style.
+2. For each, give the answer and a 2-line explanation.
+3. Include one question on a common misconception.
+4. Suggest how to run the quiz in 5 minutes.
+rules: Keep every correct answer consistent with my seminar content and mark guideline-dependent answers [VERIFY], because a wrong quiz answer undermines the whole session.
+output: The numbered questions with options, then the answer key with explanations.
+tip: An online poll (Mentimeter, Google Forms or Slido) turns a quiz into the most engaging 5 minutes of the seminar.
+try: Seminar on approach to acute kidney injury, for interns.
+next: take-home-messages
+
+@@ S | take-home-messages | Take-home messages that stick
+aud: PG Resident / Faculty
+use: For the final slide of any seminar.
+persona: You are a medical educator who writes memorable, accurate take-home messages.
+context: Seminar content summary or slide titles: [PASTE]
+Learning objectives: [PASTE]
+Audience: [brief]
+task: 1. Write 3–5 take-home messages, each one sentence, specific, actionable and in plain language.
+2. Map each message to a learning objective.
+3. Suggest a visual layout for the slide.
+4. Suggest the closing sentence to say aloud, and a follow-up resource to point people to.
+rules: Each message must be supported by the seminar content, with no new claims, because the last slide is the one people photograph.
+output: The messages, the mapping, the layout, then the closing line.
+tip: "Check magnesium in every hypokalaemic patient" is a take-home message. "Electrolytes are important" is not.
+try: Seminar on management of diabetic foot infections.
+next: seminar-handout
+
+@@ S | seminar-handout | One-page handout for the audience
+aud: PG Resident / Faculty
+use: When you want the audience to leave with a summary.
+persona: You are a medical educator who designs concise, printable one-page summaries.
+context: Seminar content: [PASTE SLIDES OR SUMMARY]
+Audience: [brief]
+Format: [printed A4 / PDF shared on WhatsApp]
+My name and department for the footer: [brief]
+task: 1. Create a one-page handout: title, 3–5 key points, one table or algorithm, key doses or thresholds, and 3 references.
+2. Keep it under 350 words.
+3. Suggest a layout with boxes or columns.
+rules: Mark doses and thresholds as [VERIFY] until I confirm them, and keep all content consistent with the slides, because handouts are kept and reused long after the seminar.
+output: The handout text with its layout plan.
+tip: Put your name and the date on the handout. It becomes part of your teaching portfolio.
+try: Handout for a seminar on oxygen therapy in the ward.
+next: take-home-messages
+
+@@ S | vignette-opener | Opening clinical vignette
+aud: PG Resident / Faculty
+use: To open any seminar with a case that grabs attention.
+persona: You are a clinician-storyteller who opens teaching sessions with vivid, realistic cases.
+context: Topic and the key teaching points: [brief]
+Audience: [brief]
+A real case to adapt (de-identified), if any: [PASTE OR "create one"]
+task: 1. Write a 60–90 word vignette, realistic for Indian practice, that raises the central question of the seminar.
+2. End with one question to the audience.
+3. Write 2 alternative vignettes with a different twist.
+4. Say how to return to the vignette at the end.
+rules: Fully de-identify real cases, and keep the details clinically plausible, because an unrealistic case loses a clinical audience.
+output: The main vignette with its question, then the alternatives and the closing plan.
+tip: Present the vignette in the present tense. It creates urgency.
+try: Topic: pulmonary embolism in pregnancy.
+next: case-based-seminar
+
+@@ S | basic-science-seminar | Basic science seminar with clinical hooks
+aud: PG Resident / MBBS Student
+use: For anatomy, physiology, pharmacology, pathology or microbiology seminars.
+persona: You are a basic-science teacher who makes every concept clinically relevant.
+context: Topic: [e.g. brachial plexus, renal tubular physiology, beta-lactam pharmacology]
+Audience and exam relevance: [e.g. MD residents; university exam]
+Duration: [minutes]
+task: 1. Outline the seminar: core concepts, diagrams, and clinical correlations for each concept.
+2. Suggest diagrams to draw or show, described clearly.
+3. Add "clinical hook" slides linking each concept to a patient scenario.
+4. Add 5 viva-style questions examiners ask on this topic.
+rules: Keep to standard textbook facts and mark anything uncertain [VERIFY FROM TEXTBOOK], because basic-science errors are easy for examiners to spot.
+output: The outline with concept-to-clinical links, diagram descriptions, then the viva questions.
+tip: Draw the key diagram live on a board if you can. It teaches better than any slide.
+try: Topic: brachial plexus anatomy and lesions, for MS Orthopaedics residents.
+next: learning-objectives
+
+@@ S | procedure-seminar | Seminar on a procedure or surgery
+aud: PG Resident (surgical and procedural specialties)
+use: When your seminar covers a procedure: indications, technique and complications.
+persona: You are a senior surgeon and teacher who explains procedures step by step with safety in mind.
+context: Procedure: [PROCEDURE]
+Audience: [brief]
+Sources and videos available: [LIST]
+task: 1. Structure the seminar: indications and contraindications, preoperative preparation, relevant anatomy, step-by-step technique, intraoperative pitfalls, complications and their management, and outcomes.
+2. Suggest images or video clips for each step.
+3. Add a safety checklist slide.
+4. Add 5 questions examiners ask about this procedure.
+rules: Keep technique descriptions to standard practice from my sources, and mark outcome figures as [VERIFY], because procedural details vary between techniques and centres.
+output: The structured outline with visuals, then the checklist and questions.
+tip: Show a short, edited video clip of the key step. Nothing teaches a procedure better.
+try: Procedure: laparoscopic cholecystectomy, critical view of safety.
+next: seminar-deck-master
+
+@@ S | interpretation-seminar | Teaching session on interpreting a test
+aud: PG Resident / Faculty
+use: For sessions on ECG, ABG, PFT, chest X-ray, CSF or other interpretations.
+persona: You are a clinician-teacher famous for turning test interpretation into a simple, systematic method.
+context: Test: [e.g. arterial blood gas]
+Audience level: [brief]
+Duration: [minutes]
+Example tracings or reports I have (de-identified): [UPLOAD / DESCRIBE]
+task: 1. Teach a stepwise interpretation method in 5–7 steps.
+2. Build 5–6 practice examples of graded difficulty, with worked answers.
+3. Include common pitfalls and mimics.
+4. Design a 5-minute practice round at the end.
+rules: Ensure every worked example is internally consistent (e.g. ABG values that are physiologically possible), and mark any formula or normal range to confirm as [VERIFY], because inconsistent examples confuse learners.
+output: The method, the examples with answers, the pitfalls, then the practice round.
+tip: Give the method as a mnemonic and use it on every example. Repetition builds the habit.
+try: Test: arterial blood gas interpretation for interns, 30 minutes.
+next: seminar-quiz
+
+@@ S | radiology-seminar | Image-based seminar
+aud: PG Resident
+use: When your seminar is built around images: X-rays, CT, MRI, ultrasound or histopathology.
+persona: You are a radiologist-educator who teaches systematic image reading.
+context: Topic: [e.g. interstitial lung disease on HRCT]
+Images available (de-identified, described): [LIST]
+Audience: [brief]
+task: 1. Teach a systematic reading approach for this modality and topic.
+2. Arrange the images from classic to difficult, with key findings to point out.
+3. Write the findings and differential for each image.
+4. Add "spot diagnosis" slides for audience practice.
+rules: Describe findings conservatively and mark any diagnosis that needs confirmation as [CONFIRM WITH REPORT], and make sure every image is fully de-identified, because images with patient details can't be shown.
+output: The approach, an image-by-image table (findings, differential, teaching point), then the spot-diagnosis slides.
+tip: Show each image twice: first unmarked for the audience to look, then annotated.
+try: HRCT patterns in interstitial lung disease, 12 images.
+next: seminar-quiz
+
+@@ S | chapter-to-seminar | Turn a textbook chapter into a seminar
+aud: PG Resident
+use: When your main source is a textbook chapter and you need to transform it into a seminar.
+persona: You are a medical educator who turns dense chapters into focused, engaging seminars.
+context: The chapter (upload or paste key sections): [UPLOAD]
+Time available and audience: [brief]
+task: 1. Extract the 6–8 most important concepts for my audience.
+2. Identify what to leave out.
+3. Convert the chosen content into a slide outline with message titles.
+4. Add what the chapter lacks: recent evidence, Indian context and controversies, as slots marked [ADD FROM CURRENT SOURCE].
+rules: Use only the chapter for the core content, and flag anything that may be outdated as [CHECK CURRENT GUIDELINE], because textbooks lag behind the evidence.
+output: The concepts list, the omissions, the slide outline, then the gaps to fill.
+tip: Check the textbook's edition year. Anything older than 3–4 years needs a guideline check.
+try: A chapter on acute pancreatitis, for a 40-minute seminar.
+next: recent-advances
+
+@@ S | notebooklm-prep | Prepare a seminar with NotebookLM
+aud: PG Resident
+use: When you have 5–15 source documents and want to study and outline them quickly.
+persona: You are a research-tools trainer who uses NotebookLM for grounded seminar preparation.
+context: Topic: [TOPIC]
+Sources uploaded to NotebookLM: [list]
+Seminar structure planned: [PASTE OUTLINE]
+task: 1. Write 12 questions to ask NotebookLM, one or two per section of my outline.
+2. Write a customisation instruction for an Audio Overview that focuses on my learning objectives.
+3. Explain how to check each answer using NotebookLM's citations.
+4. Suggest how to turn the answers into slide bullets.
+rules: Phrase every question so the answer must come from my sources, because NotebookLM is reliable only when grounded in them.
+output: The question list by section, the audio instruction, then the verification and conversion steps.
+tip: Listen to the Audio Overview on your commute the day before. It's surprisingly good revision.
+try: 8 sources on heart failure with preserved ejection fraction.
+next: seminar-deck-master
+
+@@ S | seminar-gap-check | What have I missed?
+aud: PG Resident
+use: When your slides are drafted and you want a completeness check.
+persona: You are a senior moderator who spots missing topics in seminars instantly.
+context: Topic and objectives: [PASTE]
+My slide titles and bullets: [PASTE]
+Audience: [brief]
+task: 1. Compare my content against what a complete seminar on this topic should cover for this audience.
+2. List the important gaps and suggest where each should go.
+3. List content that is excessive or off-topic.
+4. Check that each objective is covered.
+rules: Prioritise gaps by importance for the audience, not completeness for its own sake, because adding everything makes seminars overlong.
+output: A gaps table (gap, importance, where to add), then the excess list and the objective check.
+tip: Moderators usually ask about exactly the gap you skipped. Close the important ones.
+try: Slides for a seminar on management of upper gastrointestinal bleeding.
+next: seminar-mock-moderator
+
+@@ S | seminar-rehearsal-feedback | Feedback on my rehearsal script
+aud: PG Resident
+use: After a rehearsal, to improve delivery and content.
+persona: You are a presentation coach for medical educators.
+context: My script or rehearsal transcript: [PASTE]
+Timing achieved versus allowed: [e.g. 52 minutes versus 40 allowed]
+Feedback I've already received: [brief]
+task: 1. Identify sections that run long, repeat themselves or wander.
+2. Identify jargon and sentences that are hard to follow when spoken.
+3. Identify missing transitions and weak openings or closings.
+4. Suggest specific cuts to hit the time, with the time saved by each.
+rules: Keep the key clinical content and all facts, and cut delivery padding first, because timing problems are usually words, not content.
+output: An issue table (section, problem, fix, time saved), then a revised opening and closing.
+tip: If you're 20% over time, cut whole slides. Speaking faster never works.
+try: A 5,800-word rehearsal transcript for a 40-minute seminar.
+next: seminar-time-plan
+
+@@ S | seminar-interactive | Make my seminar interactive
+aud: PG Resident / Faculty
+use: When you want the audience thinking, not just listening.
+persona: You are an active-learning specialist in medical education.
+context: Seminar outline: [PASTE]
+Audience size and setting: [e.g. 30 people, seminar room with a projector]
+Tools available: [poll apps, whiteboard, none]
+task: 1. Suggest 4–6 interaction points placed across the seminar: polls, think-pair-share, case pauses, quick quizzes, and hands-up votes.
+2. For each, write the exact question and the expected responses.
+3. Estimate the time each takes.
+4. Suggest how to handle no response, or a wrong majority answer.
+rules: Keep interaction purposeful and tied to an objective, and within the time budget, because interaction for its own sake wastes minutes.
+output: An interaction table (point, method, question, minutes), then the handling tips.
+tip: Asking the audience to commit to an answer before you reveal it is the single most powerful interaction.
+try: Seminar on antibiotic stewardship for residents, 30 attendees.
+next: seminar-quiz
+
+@@ S | seminar-flow-check | Check the story and flow of my outline
+aud: PG Resident
+use: When your outline feels like a list of facts rather than a story.
+persona: You are a medical storyteller who structures talks for narrative flow.
+context: My outline or slide titles: [PASTE]
+Opening case, if any: [PASTE]
+Audience and duration: [brief]
+task: 1. Summarise the narrative the outline currently tells.
+2. Identify jumps, repetitions and dead ends.
+3. Propose a reordered flow with transition sentences.
+4. Show where to return to the opening case.
+5. Suggest one moment of tension or surprise to keep attention in the middle of the talk.
+rules: Rearrange and connect my content rather than adding new content, because the flow problem is order, not substance.
+output: The current narrative, the problems, then the new order with transitions.
+tip: Read your slide titles in order. If they don't tell the story, the seminar won't either.
+try: A 35-slide outline on chronic kidney disease that jumps between staging, complications and diet.
+next: seminar-deck-master
+
+@@ S | seminar-for-nurses | Adapt my seminar for nurses and allied staff
+aud: PG Resident / Faculty
+use: When teaching nurses, paramedics, physiotherapists or technicians.
+persona: You are a clinical educator who teaches multidisciplinary teams practically and respectfully.
+context: Original seminar content: [PASTE]
+Audience role and experience: [e.g. ICU staff nurses]
+What they need to do differently after the session: [brief]
+task: 1. Refocus the content on their role: recognition, monitoring, escalation, procedures and safety.
+2. Remove content outside their scope and simplify the mechanisms.
+3. Add practical checklists and escalation triggers.
+4. Suggest a short skills demonstration if relevant.
+rules: Keep all clinical facts accurate and within their scope of practice, and mark local protocols as [CHECK HOSPITAL PROTOCOL], because nurses act on this content directly.
+output: The adapted outline, the checklists, then the demonstration idea.
+tip: Ask the nurses what they struggle with before you prepare. It makes the session land.
+try: Seminar on sepsis recognition adapted for ward nurses.
+next: audience-pitch
+
+@@ S | seminar-to-cme | Turn a seminar into a CME talk for practitioners
+aud: Faculty / Senior Resident
+use: When invited to speak to general practitioners or doctors in private practice.
+persona: You are a CME speaker known for practical, clinic-ready talks.
+context: Original seminar content: [PASTE]
+Audience: [e.g. general practitioners in a district town]
+Duration: [minutes]
+task: 1. Refocus the content on what practitioners see and decide: recognition, first-line management, when to refer, and follow-up.
+2. Replace academic detail with practical pearls and red flags.
+3. Add 2–3 short case scenarios from primary care.
+4. Write a one-page practice summary for them.
+rules: Keep recommendations consistent with current guidelines and mark specifics [VERIFY], and avoid promoting any product, because CME content must be accurate and unbiased.
+output: The adapted outline, the cases, then the summary.
+tip: Ask the organisers what the audience's common referral problems are. Build the talk around them.
+try: Seminar on thyroid disorders adapted for general practitioners.
+next: seminar-handout
+
+@@ S | debate-format | Pro-con debate seminar
+aud: PG Resident / Faculty
+use: When the department wants a debate on a controversial topic.
+persona: You are an academic debate moderator in medicine.
+context: Motion: [e.g. "All patients with sepsis should receive early vasopressors"]
+My side: [pro / con]
+Time per speaker and format: [brief]
+Sources: [UPLOAD / LIST]
+task: 1. Build my strongest case: 3–4 arguments, each with the best evidence from my sources.
+2. Anticipate the opponent's strongest arguments and prepare rebuttals.
+3. Write an opening statement and a closing statement.
+4. Suggest 2 slides per argument.
+rules: Use honest evidence even on my side, and acknowledge the limitations of my sources, because misrepresenting evidence loses a medical audience's trust.
+output: The arguments table, the rebuttals, the statements, then the slide plan.
+tip: Concede a minor point early. It makes your main arguments more credible.
+try: Motion: "High-flow nasal oxygen should replace NIV for acute hypercapnic respiratory failure." Con side.
+next: controversies-slide
+
+@@ S | seminar-slide-review | Review my seminar slides like a moderator
+aud: PG Resident
+use: When your deck is complete, 3–4 days before the seminar.
+persona: You are a senior faculty moderator who reviews residents' seminar decks for accuracy, clarity and design.
+context: My slides (paste the text or upload the file): [PASTE OR UPLOAD]
+Topic, audience and duration: [brief]
+Sources I used: [list]
+task: 1. Check medical accuracy slide by slide, flagging any statement that needs verification or seems outdated.
+2. Check clarity: overloaded slides, vague titles, missing labels and unreadable tables.
+3. Check structure against the objectives and the time.
+4. Give the 10 most important fixes, in priority order, with the slide number.
+rules: Flag doubtful facts as [VERIFY] rather than correcting them from memory, because I must confirm them against my sources. Quote the slide text for every comment.
+output: A slide-by-slide comment table, then the top 10 fixes.
+tip: Fix the accuracy flags first, then clarity, then design. Moderators forgive plain slides, not wrong ones.
+try: A 42-slide deck on management of chronic liver disease complications.
+next: seminar-mock-moderator
+
+@@ S | seminar-from-cases | Build a seminar from our department's cases
+aud: PG Resident / Faculty
+use: When you want the seminar anchored in real cases your department has managed.
+persona: You are a clinician-educator who turns departmental case experience into teaching.
+context: Topic: [TOPIC]
+3–6 de-identified case summaries from our department: [PASTE]
+Audience and duration: [brief]
+task: 1. Identify the teaching themes the cases illustrate: presentation spectrum, diagnostic pitfalls, management decisions and outcomes.
+2. Build the seminar structure around these themes, using each case as an illustration.
+3. Link each case to what the guidelines or literature say, with [CITE] slots.
+4. Draw 3–5 local lessons ("in our unit, we should…").
+rules: Keep the cases fully de-identified, and present outcomes honestly including errors, without blaming individuals, because a blame-free tone keeps the discussion open.
+output: A theme-to-case map, the seminar outline, then the local lessons.
+tip: Ask the treating consultants to comment briefly during the seminar. Their perspective adds depth.
+try: Five cases of dengue with warning signs managed in our medicine ward this season.
+next: case-based-seminar
+
+@@ S | seminar-evaluation | Collect feedback on my seminar
+aud: PG Resident / Faculty
+use: To improve your teaching and build a portfolio.
+persona: You are a medical-education evaluator who designs short, useful feedback forms.
+context: Seminar topic and objectives: [PASTE]
+Audience: [brief]
+Format: [Google Form / paper]
+task: 1. Design a feedback form with 6–8 items: objectives met, clarity, pace, relevance, slides, interaction, and two open questions.
+2. Include one question that checks learning, not just satisfaction.
+3. Explain how to summarise the responses and use them next time.
+4. Suggest how to include the summary in a teaching portfolio.
+rules: Keep the form short enough to finish in 2 minutes and make it anonymous, because long or named forms give poor and biased feedback.
+output: The form items with rating scales, then the summary method and portfolio tip.
+tip: Share the form link on the last slide as a QR code. Response rates jump.
+try: Seminar on antibiotic stewardship for 25 residents.
+next: seminar-rehearsal-feedback
+
+@@ Q | seminar-title | A seminar title that's accurate and interesting
+aud: PG Resident
+body: Act as a seminar moderator in [SPECIALTY]. Write 5 titles for my seminar on [TOPIC] for [AUDIENCE]: two descriptive, two question-style and one with a clinical hook. Each title should be under 12 words, accurate to the content and free of clichés. Mark your favourite.
+try: Topic: approach to a patient with fever and thrombocytopenia.
+
+@@ Q | hook-line | A one-line opening hook
+aud: PG Resident
+body: Act as a medical storyteller. Write 3 opening lines (under 25 words each) for my seminar on [TOPIC]: one clinical scenario, one striking fact with a [VERIFY] slot for the number, and one provocative question for the audience. Keep each realistic for Indian practice.
+try: Topic: snakebite envenomation in rural India.
+
+@@ Q | quick-objectives | Five learning objectives in a minute
+aud: PG Resident
+body: Act as a medical educator trained in curriculum design. Write 5 measurable learning objectives for a [DURATION]-minute seminar on [TOPIC] for [AUDIENCE], each starting with a Bloom's verb and each achievable in the time. Avoid "know" and "understand", and mark which objectives test application rather than recall.
+try: 30-minute seminar on hyperkalaemia for interns.
+
+@@ Q | definition-slide | The definition slide
+aud: PG Resident / MBBS Student
+body: Act as a clinical academic. Write the definition slide for [CONDITION]: the current accepted definition with its source organisation and year marked [VERIFY], one line on how it changed from older definitions, and one line on why the definition matters clinically.
+try: Condition: acute respiratory distress syndrome.
+
+@@ Q | seminar-mnemonic | A useful mnemonic for my seminar
+aud: PG Resident / MBBS Student
+body: Act as a medical educator known for memorable teaching. Create a mnemonic for [LIST TO REMEMBER] in my seminar on [TOPIC]. Check that every letter maps to an accurate, relevant item without forcing awkward words, and give a one-line explanation for each letter.
+try: Causes of a high anion gap metabolic acidosis.
+
+@@ Q | why-it-matters | "Why this matters" slide
+aud: PG Resident
+body: Act as a seminar coach. Write a "why this matters" slide for my seminar on [TOPIC]: 3 bullets covering burden (with a [VERIFY] slot for numbers), the clinical consequence of getting it wrong, and relevance to my audience [AUDIENCE] in India.
+try: Topic: early warning scores in the general ward.
+
+@@ Q | slide-count | How many slides do I need?
+aud: PG Resident
+body: Act as a presentation coach. For a [DURATION]-minute seminar on [TOPIC] with [NUMBER] planned interaction points, recommend the number of content slides, the backup slides, and the split between sections, and tell me which section usually becomes bloated and how to keep it in check.
+try: 45-minute seminar with 3 polls on heart failure management.
+
+@@ Q | key-numbers | Key numbers slide
+aud: PG Resident
+body: Act as a clinical teacher. List the 6–8 key numbers a practising clinician must know about [TOPIC] (thresholds, targets, doses, time windows), each marked [VERIFY FROM CURRENT GUIDELINE], with a one-line explanation of why each number matters at the bedside.
+try: Topic: management of diabetic ketoacidosis.
+
+@@ Q | summary-slide | Summary slide from my outline
+aud: PG Resident
+body: Act as a medical educator. From my seminar outline, [PASTE OUTLINE], write a summary slide of 5 bullets of under 15 words each that recap the key points in the order I taught them, and link the last bullet to the opening case.
+try: Outline of a seminar on community-acquired pneumonia.
+
+@@ Q | transitions | Transition lines between sections
+aud: PG Resident
+body: Act as a speaking coach. Write one natural spoken transition sentence between each pair of sections in my seminar, [LIST SECTIONS IN ORDER], so that each transition links what was just covered to what comes next and sounds natural when spoken aloud.
+try: Sections: definition → pathophysiology → diagnosis → management → controversies.
+
+@@ Q | audience-question | A question to wake up the audience
+aud: PG Resident / Faculty
+body: Act as an interactive teaching expert. Write 3 questions I can ask the audience midway through my seminar on [TOPIC]: one quick poll, one "what would you do" case question and one common-misconception check, each with its expected answer and a one-line follow-up comment.
+try: Topic: blood transfusion thresholds in the ICU.
+
+@@ Q | analogy | An analogy for a hard concept
+aud: PG Resident / MBBS Student
+body: Act as a gifted medical teacher known for clear explanations. Explain [DIFFICULT CONCEPT] with 2 different everyday analogies for [AUDIENCE], each in 2–3 sentences, then state exactly where each analogy breaks down, so that students don't take it too far.
+try: Concept: ventilation-perfusion mismatch.
+
+@@ Q | discussion-questions | Three questions for the discussion
+aud: PG Resident / Faculty
+body: Act as a seminar moderator. After a seminar on [TOPIC], suggest 3 open discussion questions that invite the audience to share experience or debate practice, one of them specific to Indian settings, each under 25 words, and say what a good answer would reveal.
+try: Topic: antibiotic prescribing in upper respiratory infections.
+
+@@ Q | history-slide | A short history slide
+aud: PG Resident
+body: Act as a medical historian. Give 5 milestones in the history of [TOPIC] for a single slide, each with the year and the person or group, and mark every date and name [VERIFY], because historical facts are often misattributed in slides.
+try: Topic: history of insulin therapy.
+
+@@ Q | abbreviation-slide | Abbreviations slide for my seminar
+aud: PG Resident
+body: Act as a copy-editor for medical slides. From my slide text, [PASTE TEXT], list every abbreviation with its expansion, flag any used without definition, and suggest which ones to spell out on the slides instead because the audience won't know them.
+try: Slides on critical care nephrology full of AKI, CRRT, SLED and KDIGO.
+
+@@ Q | future-directions | Future directions slide
+aud: PG Resident / Faculty
+body: Act as a research-minded clinician. Write a "future directions" slide for my seminar on [TOPIC]: 4 bullets naming specific areas of ongoing research, new drugs or tests in trials, and unanswered questions, each marked [VERIFY], without hype, and one line on when results are expected.
+try: Topic: gene therapy in haemophilia.
+
+@@ Q | moderator-favourites | What moderators always ask on this topic
+aud: PG Resident
+body: Act as a senior professor who moderates seminars. List the 8 questions most commonly asked by moderators on [TOPIC] at the [AUDIENCE LEVEL] level, from basic to advanced, with a one-line model answer for each and [VERIFY] beside anything guideline-dependent.
+try: Topic: anaemia in chronic kidney disease, MD Medicine level.
+
+@@ Q | paragraph-to-bullets | Turn my paragraph into slide bullets
+aud: PG Resident
+body: Act as a slide designer. Convert this paragraph, [PASTE PARAGRAPH], into a slide with a message-style title and no more than 3 bullets of under 12 words each, keeping every fact accurate and moving the extra detail into speaker notes.
+try: A 120-word paragraph on the mechanism of action of SGLT2 inhibitors.

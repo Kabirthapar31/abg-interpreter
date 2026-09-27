@@ -36,7 +36,7 @@ Commit and push after every section file.
 
 | Section | Target | Status |
 |---|---:|---|
-| 2.1 Seminar preparation | 60 | pending |
+| 2.1 Seminar preparation | 60 | done |
 | 2.2 Journal club | 60 | pending |
 | 2.3 Slide design & structure | 40 | pending |
 | 2.4 Talks & oral presentations | 35 | pending |
