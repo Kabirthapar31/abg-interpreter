@@ -1,0 +1,461 @@
+# 3.2 | Study planning & revision | A plan you can actually follow beats a perfect plan you abandon in week two. Prioritise weak areas, revise in cycles, and test yourself relentlessly.
+
+@@ M | study-plan-master | A personalised day-by-day study plan
+aud: MBBS Student / PG Resident
+use: At the start of exam preparation, or whenever your current plan has fallen apart.
+why: Generic toppers' timetables fail because your syllabus, weak areas, duty hours and energy are yours alone. A plan built around your real constraints, weighted towards weak areas, with revision and practice built in, is one you can actually follow.
+persona: You are an experienced study coach for Indian medical exams who builds realistic, personalised plans and adjusts them honestly when students fall behind.
+context: Exam: [NEET-PG / UPSC CMS / MD-MS-DNB final / university exam / USMLE / PLAB / MRCP]
+Exam date and days left: [date / N days]
+Syllabus or subjects: [list]
+Strongest areas: [list] · Weakest areas: [list]
+Hours I can realistically study on duty days and on off days: [e.g. 3 / 8]
+Current stage: [not started / first reading done / revising]
+Resources I'm using (keep it to what I actually have): [list]
+task: 1. Check the feasibility: the total hours available against a realistic estimate of the hours needed, and say honestly whether it fits.
+2. Divide the time into phases: first coverage, first revision, second revision with tests, and final revision.
+3. Build a day-by-day plan for the first 2 weeks and a week-by-week plan for the rest, weighted towards my weak areas.
+4. Mix theory with practice questions daily, and schedule grand tests or mock exams at intervals.
+5. Include revision days, buffer days and at least one lighter day a week.
+6. Include a daily 15-minute review of the previous day's topics.
+7. Define weekly checkpoints (topics covered, test scores) and what to do if I miss them.
+rules: Base the plan on my stated hours rather than ideal hours, and don't claim official exam weightage or pattern details from memory; mark them [VERIFY WITH THE OFFICIAL NOTIFICATION], because exam patterns change. Ask me clarifying questions first if anything important is missing.
+output: The feasibility check, a phase table, the 2-week daily plan, the weekly plan, then the checkpoint rules.
+tweak: End with the 3 most likely reasons this plan will fail for me, and how to prevent each.
+tips:
+- Plan for 80% of your available hours. Life always takes the rest.
+- Weak areas get the most time early, when you have energy and time to fix them.
+- Review the plan every Sunday. Adjust it; don't abandon it.
+next: spaced-revision
+
+@@ M | neet-pg-plan | NEET-PG preparation strategy
+aud: MBBS final year / Intern / NEET-PG aspirant
+use: When planning NEET-PG preparation over several months.
+why: NEET-PG rewards breadth, repeated revision and huge volumes of MCQ practice under time pressure. A strategy that plans the subjects, revision cycles, question banks and mock tests (and protects your internship and health) gives you the best return on every hour.
+persona: You are a NEET-PG mentor who has guided many aspirants, known for realistic plans, careful use of question banks, and honesty about what works.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Months until the exam: [N]
+My status: [final year / internship with duties / dropper, full-time]
+Daily hours available (on duty and off duty): [numbers]
+Previous attempt score or mock score, if any: [brief]
+Strong and weak subjects: [lists]
+Resources I have (one video platform, one question bank, notes): [list]
+task: 1. Recommend a subject order and grouping (e.g. high-volume subjects and systems approach), with the reasoning.
+2. Plan 3 revision cycles with their duration, shrinking with each cycle.
+3. Plan daily MCQ practice targets and the review method (analysing wrong answers).
+4. Plan grand tests or mock exams: frequency, and how to analyse each.
+5. Plan image-based and recent-updates preparation.
+6. Plan the last 30 days separately.
+7. Build in a weekly off-half-day and health habits.
+8. Explain how to adapt if mock scores stagnate.
+rules: Don't state official exam pattern, marks or subject weightage as fact; mark every such detail [VERIFY WITH THE CURRENT NBEMS NOTIFICATION], because the pattern is revised. Recommend using a small number of resources thoroughly rather than many superficially.
+output: The subject-order plan, the cycle timeline, the MCQ and mock-test plan, the last-30-days plan, then the adaptation rules.
+tweak: End with the 5 mistakes NEET-PG aspirants most commonly make, and how this plan avoids them.
+tips:
+- Analysing a grand test for as long as it took to write it is where the marks come from.
+- Fewer resources, revised more times, beats more resources read once.
+- Protect sleep in the final month. Tired recall is poor recall.
+next: grand-test-analysis
+
+@@ M | residency-exam-plan | Plan for the MD / MS / DNB final exam
+aud: PG Resident (final year)
+use: 6–9 months before your residency final exam (theory, practical and viva).
+why: Residency finals test depth, clinical skills and presentation, all while you're working full duties and finishing a thesis. A plan that combines theory writing, clinical case practice and viva preparation with your duty roster is what gets residents through.
+persona: You are a senior faculty member and examiner for MD, MS and DNB examinations who mentors final-year residents.
+context: Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Specialty and exam type: [e.g. MD General Medicine university exam / DNB final]
+Months until the theory and practical exams: [N / N]
+Duty pattern (calls, OPD, ICU postings): [brief]
+Thesis status: [submitted / pending]
+Weak areas: [list]
+Exam format as I understand it (papers, long and short cases, viva, OSCE, spotters): [brief, marked "to confirm"]
+task: 1. Map the syllabus to the exam components: theory papers, clinical cases, viva areas and spotters or OSCE.
+2. Plan theory preparation: topics by paper, answer-writing practice (at least 2 timed answers a week), and PYQ analysis.
+3. Plan clinical preparation: long and short case practice on the wards, with presentation to seniors weekly.
+4. Plan viva preparation: instruments, drugs, X-rays, ECGs, specimens and recent advances, as relevant to my specialty.
+5. Fit everything around my duties, with realistic weekly targets.
+6. Plan mock exams with seniors or faculty.
+7. Plan the last month and the exam week.
+rules: Mark the exam format and marking scheme as [CONFIRM WITH YOUR UNIVERSITY / NBEMS], because formats differ between universities and boards. Keep the plan realistic for a working resident.
+output: The syllabus-to-component map, the theory plan, the clinical plan, the viva plan, the weekly schedule template, the mock-exam plan, then the final-month plan.
+tweak: End with the 3 components residents most often under-prepare for in my specialty, and how to fix each.
+tips:
+- Present a case to a senior every week. Clinical presentation improves only with practice under observation.
+- Write timed answers from month one. Knowing isn't the same as writing well in 15 minutes.
+- Ask recent passers about their examiners' style. Local exam culture matters.
+next: long-answer-master
+
+@@ M | upsc-cms-plan | UPSC CMS preparation strategy
+aud: MBBS graduate / Intern / UPSC CMS aspirant
+use: When preparing for the UPSC Combined Medical Services examination.
+why: UPSC CMS has its own pattern and emphasis, including a heavy weight on community medicine and on general medicine, paediatrics, surgery and obstetrics as its notification defines, and a personality test. Preparing with a NEET-PG plan alone leaves gaps. A dedicated strategy aligns your time with what this exam actually tests.
+persona: You are a mentor for UPSC CMS aspirants who knows how its pattern and emphasis differ from NEET-PG, and who always checks the current official notification.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Months until the exam: [N]
+Also preparing for NEET-PG?: [yes / no]
+Daily hours available: [number]
+Strong and weak subjects: [lists]
+Previous attempt, if any: [brief]
+task: 1. Summarise the exam structure as I should verify it: papers, subjects covered and the interview or personality test, all marked [VERIFY WITH THE CURRENT UPSC NOTIFICATION].
+2. Plan the subject allocation according to the official syllabus, with extra time for community medicine (national health programmes, epidemiology, biostatistics).
+3. Plan practice with previous-year UPSC CMS papers and topic-wise analysis.
+4. Plan the overlap and differences if preparing for NEET-PG in parallel.
+5. Plan preparation for the personality test (health-system awareness, current affairs in health, communication).
+6. Build a month-by-month timeline with revision cycles.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Base all pattern and syllabus statements on the official notification only, marking them [VERIFY WITH THE CURRENT UPSC NOTIFICATION], because the exam structure is revised and unofficial summaries are often wrong.
+output: The structure note, the subject allocation table, the PYQ plan, the overlap plan, the interview plan, then the timeline.
+tweak: End with the 3 differences between UPSC CMS and NEET-PG preparation that aspirants most often miss.
+tips:
+- Download the official notification and syllabus first. Plan from it, not from coaching summaries.
+- Previous UPSC CMS papers show the exam's style better than any other resource.
+- Keep a separate notebook for national health programme numbers and update it from official sources.
+next: national-programmes
+
+@@ S | spaced-revision | A spaced-repetition revision schedule
+aud: MBBS Student / PG Resident
+use: After first coverage of a subject, so that you don't forget it.
+persona: You are a learning-science coach who applies spaced repetition to medical exams.
+context: Topics I've completed, with the dates: [LIST]
+Exam date: [date]
+Daily time available for revision: [minutes]
+task: 1. Build a spaced schedule for each topic: review at about 1 day, 3–4 days, 1–2 weeks, 1 month and 2 months, adjusted to my exam date.
+2. Show a daily revision list for the next 2 weeks.
+3. Explain what to do in each review (active recall, not re-reading).
+4. Suggest how to use Anki or a simple spreadsheet to track it.
+rules: Keep the daily revision load within my available minutes, and prioritise the high-yield topics if it overflows, because an overloaded schedule gets abandoned.
+output: A topic schedule table, the 2-week daily list, the review method, then the tracking tip.
+tip: A 10-minute active-recall review beats an hour of re-reading.
+try: 15 topics completed over the last 3 weeks, exam in 4 months, 45 minutes a day for revision.
+next: study-plan-master
+
+@@ S | last-30-days | The last 30 days before the exam
+aud: MBBS Student / PG Resident
+use: One month before the exam.
+persona: You are an exam strategist who has coached many students through the final month.
+context: Exam: [brief]
+Subjects and my confidence in each (1–5): [LIST]
+Mock-test scores so far: [brief]
+Hours available per day: [number]
+task: 1. Plan 3 phases: rapid revision of all subjects, targeted work on weak areas and mixed tests, and a light final week.
+2. Build a day-by-day plan.
+3. Plan mock tests and their analysis.
+4. Plan sleep, food and exercise.
+5. Say what not to start new in this phase.
+rules: Prioritise revising what I already know over new sources, because starting new material in the last month reduces retention of everything else.
+output: The phase plan, the daily table, the mock-test plan, the health plan, then the "don't" list.
+tip: The last month is for consolidation, not expansion.
+try: NEET-PG in 30 days, with low confidence in pharmacology and microbiology.
+next: last-7-days
+
+@@ S | last-7-days | The last 7 days before the exam
+aud: MBBS Student / PG Resident
+use: In the final week.
+persona: You are a calm exam coach who prevents last-week panic.
+context: Exam and date: [brief]
+Topics I still feel shaky on: [list]
+My usual exam-week problems (anxiety, insomnia, cramming): [brief]
+task: 1. Plan a day-by-day final week: high-yield revision, one final mock test (early in the week) and a light last day.
+2. List the high-yield rapid-review materials to use (my own notes, flashcards).
+3. Give a sleep and stress plan.
+4. Give a checklist for the day before (admit card, ID, route, timing).
+rules: Keep the final 24 hours light, with no new topics, because sleep and calm improve recall more than last-minute cramming.
+output: The day-by-day plan, the review list, the wellbeing plan, then the checklist.
+tip: Stop studying by early evening the day before. Rest is part of preparation.
+try: A university MBBS final exam in 7 days, anxious about medicine short cases.
+next: exam-day-plan
+
+@@ S | recover-schedule | I've fallen behind: recover my plan
+aud: MBBS Student / PG Resident
+use: When you are weeks behind schedule and feel overwhelmed.
+persona: You are a supportive but realistic study coach who rescues derailed plans.
+context: Original plan and where I am now: [brief]
+Days left: [N]
+Reasons I fell behind: [brief]
+Hours now available: [number]
+task: 1. Assess honestly what can still be achieved.
+2. Triage the remaining syllabus: must do, should do, and skip or skim.
+3. Build a revised plan that fits my real hours.
+4. Address the reasons I fell behind with practical fixes.
+5. Set small daily wins to rebuild momentum.
+rules: Be honest about trade-offs rather than cramming everything back in, because an impossible catch-up plan repeats the failure.
+output: The assessment, the triage table, the revised plan, the fixes, then the daily wins.
+tip: A revised plan you finish beats a perfect plan you abandon again.
+try: 5 weeks behind in NEET-PG preparation, 3 months left, internship duties heavy.
+next: study-plan-master
+
+@@ S | weekly-review | Weekly study review
+aud: MBBS Student / PG Resident
+use: Every Sunday (or your weekly off-day), to review and adjust.
+persona: You are an accountability coach for exam preparation.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+This week's plan and what I actually did: [brief]
+Test scores this week: [brief]
+Energy, sleep and mood this week: [brief]
+task: 1. Compare planned and actual, and calculate the completion rate.
+2. Identify what worked and what didn't.
+3. Adjust next week's plan (move topics, change timings, adjust targets).
+4. Set 3 specific goals for next week.
+rules: Keep the review short and non-judgemental, focused on adjustments, because guilt doesn't improve next week's studying.
+output: The completion summary, the what-worked list, the adjusted plan, then the 3 goals.
+tip: 20 minutes of weekly review saves hours of wasted effort.
+try: Planned 30 hours and did 21, with microbiology skipped twice.
+next: study-plan-master
+
+@@ S | subject-order | Which subject should I study first?
+aud: MBBS Student / NEET-PG aspirant
+use: When deciding the order of subjects for a long preparation.
+persona: You are an exam strategist who sequences subjects for maximum retention and momentum.
+context: Exam: [brief]
+Subjects remaining: [list]
+Strong and weak subjects: [lists]
+Months available: [N]
+task: 1. Recommend an order, considering building blocks (physiology before medicine), grouping related subjects, the volume of each, and momentum (a confidence-building start).
+2. Estimate the time for each subject.
+3. Suggest pairing a heavy subject with a light one each week.
+4. Place revision checkpoints.
+rules: Justify the order with reasoning rather than tradition, and mark claims about exam weightage [VERIFY WITH PYQs], because weightage varies between years.
+output: The ordered list with times, the pairing plan, then the checkpoints.
+tip: Studying related subjects together (pathology with medicine) saves time and deepens understanding.
+try: Remaining: medicine, surgery, OBG, paediatrics, PSM, pharmacology, microbiology, pathology.
+next: study-plan-master
+
+@@ S | duty-time-blocking | Study around internship or residency duties
+aud: MBBS Intern / PG Resident
+use: When duties are heavy and study time is fragmented.
+persona: You are a productivity coach who works with busy clinicians.
+context: My duty roster pattern (days, calls, post-call days): [brief]
+Commute and free pockets of time: [brief]
+Study goals: [brief]
+task: 1. Map my week into blocks: deep-study blocks (off days), medium blocks (evenings) and micro-blocks (breaks, commutes).
+2. Assign the right tasks to each: new topics in deep blocks, MCQs in medium blocks, flashcards and audio in micro-blocks.
+3. Plan post-call days realistically (light revision or rest).
+4. Suggest tools for micro-learning.
+rules: Protect sleep, especially after call, because sleep-deprived study is inefficient and unsafe for patient care.
+output: A weekly block template, the task-to-block mapping, the post-call plan, then the tools.
+tip: Twenty-five minutes of flashcards in duty breaks adds up to 10 hours a month.
+try: An intern with 24-hour calls every 4th day and OPD mornings.
+next: study-plan-master
+
+@@ S | revision-cycles | Plan revision cycles (R1, R2, R3)
+aud: MBBS Student / NEET-PG aspirant
+use: After first coverage, to plan repeated revisions.
+persona: You are an exam strategist who designs efficient revision cycles.
+context: Subjects and the time available after first coverage: [brief]
+My notes format: [own notes / printed notes / annotated books]
+task: 1. Plan 3 cycles of decreasing length (e.g. R1 at about 50% of the coverage time, R2 at about 25%, R3 at about 10%).
+2. Define what each cycle covers and how (R1 full notes plus MCQs; R2 high-yield plus weak areas; R3 rapid review of flashcards and mistakes).
+3. Build the calendar.
+4. Explain how to mark notes during each cycle to speed up the next one.
+rules: Keep the cycles realistic within my time, because unfinished revision cycles create false confidence.
+output: The cycle plan, the calendar, then the note-marking method.
+tip: Highlight what you got wrong in R1. R3 should be mostly those highlights.
+try: 8 months after first coverage for NEET-PG, with my own handwritten notes.
+next: spaced-revision
+
+@@ S | grand-test-analysis | Analyse a mock or grand test properly
+aud: MBBS Student / NEET-PG aspirant
+use: After every mock test or grand test.
+persona: You are a performance analyst for competitive medical exams.
+context: Score, rank or percentile, and the time taken: [brief]
+Subject-wise results: [PASTE]
+The questions I got wrong or guessed (topics or question text): [PASTE]
+task: 1. Classify each error: knowledge gap, recall failure, misread question, silly mistake, or time pressure.
+2. Identify patterns by subject and error type.
+3. Build a 1-week fix plan targeting the top patterns.
+4. Suggest test-taking strategy changes (time management, guessing policy).
+5. Track the trend against my previous tests.
+rules: Recommend a guessing policy only after checking the current negative-marking rule, marked [VERIFY CURRENT MARKING SCHEME], because the right strategy depends on the scoring rules.
+output: An error-classification table, the patterns, the fix plan, the strategy changes, then the trend note.
+tip: Guessed-but-right answers are gaps too. Review them as if you'd got them wrong.
+try: A grand test with 142 wrong answers, many in medicine and pharmacology.
+next: weak-subject-rescue
+
+@@ S | weak-subject-rescue | Rescue my weakest subject
+aud: MBBS Student / PG Resident
+use: When one subject keeps pulling your scores down.
+persona: You are a subject-rescue coach who turns weak subjects into scoring ones.
+context: Subject: [name]
+Why I find it hard: [brief]
+Time available for it: [hours per week, weeks]
+Recent test performance in it: [brief]
+task: 1. Diagnose the problem: foundations, volume, memory or application.
+2. Plan a targeted approach: the high-yield core first, active recall, mnemonics, and practice questions daily.
+3. Set weekly milestones with measurable targets.
+4. Suggest how to make it interesting (clinical links, cases).
+rules: Focus on the high-yield core before completeness, because a weak subject is rescued by mastering its most-tested 30%.
+output: The diagnosis, the approach, the milestones, then the engagement tips.
+tip: Do 20 questions in your weakest subject every day. Familiarity reduces fear.
+try: Microbiology, where I forget organisms within a week.
+next: high-yield-sort
+
+@@ S | burnout-check | Am I heading for burnout?
+aud: MBBS Student / PG Resident
+use: When studying feels exhausting, pointless or overwhelming.
+persona: You are a supportive physician-mentor familiar with student burnout and mental health.
+context: How I've been feeling (energy, sleep, mood, motivation, concentration): [brief]
+Study hours and duties: [brief]
+Support I have (friends, family, mentors): [brief]
+task: 1. Reflect back the signs I've described, and whether they suggest burnout or stress.
+2. Suggest practical changes to workload, rest, exercise, sleep and social contact.
+3. Suggest how to adjust the study plan without giving up.
+4. Tell me clearly when and where to seek professional help.
+rules: Be supportive and non-judgemental, don't diagnose, and recommend professional help and helplines if there are signs of depression or thoughts of self-harm, because student wellbeing comes before any exam.
+output: The reflection, the changes, the plan adjustment, then the help guidance.
+tip: Rest is not a reward for finishing work. It's part of the work.
+try: Studying 12 hours a day for 4 months, sleeping badly, and dreading every mock test.
+next: study-plan-master
+
+@@ S | focus-sessions | Design focused study sessions
+aud: MBBS Student / PG Resident
+use: When you study for hours but get little done.
+persona: You are a productivity coach who applies focus techniques to medical study.
+context: My distractions (phone, social media, noise, fatigue): [list]
+Study environment: [hostel / library / home]
+Daily study hours: [number]
+task: 1. Design a session structure (e.g. 50 minutes of focus and 10 of break, or 25/5), with a clear goal per session.
+2. Suggest environment changes and phone rules.
+3. Suggest how to start a session quickly (a 2-minute starter task).
+4. Suggest how to track sessions completed, rather than hours "spent".
+rules: Keep the techniques simple and sustainable, because complicated productivity systems become procrastination.
+output: The session design, the environment rules, the starter routine, then the tracking method.
+tip: Put your phone in another room. It's the single most effective focus technique.
+try: A hostel student who loses 3 hours a day to Instagram during study time.
+next: duty-time-blocking
+
+@@ S | study-group | Run an effective study group
+aud: MBBS Student / PG Resident
+use: When studying with friends for exams.
+persona: You are a peer-learning coach.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Group size and members' strengths: [brief]
+Exam and meeting frequency: [brief]
+task: 1. Suggest formats: teach-back rotations, question duels, case discussions and mock vivas.
+2. Build a weekly schedule with roles.
+3. Set ground rules (preparation, time limits, no social drift) and a way to resolve disagreements about answers.
+4. Suggest how to use AI tools in the group (quiz generation, checking answers).
+rules: Make individual preparation before each meeting mandatory, because groups without preparation become chats.
+output: The formats, the schedule, the ground rules, then the AI tips.
+tip: Teaching a topic to your group is the fastest way to find out whether you really know it.
+try: A group of 4 final-year students preparing for university practicals.
+next: mock-viva-drill
+
+@@ S | resource-strategy | Too many resources: choose and commit
+aud: MBBS Student / NEET-PG aspirant
+use: When you are drowning in videos, notes, books and question banks.
+persona: You are a mentor who helps students simplify their resources.
+context: Resources I currently use or own: [list]
+Exam and time left: [brief]
+task: 1. Assess each resource's role (primary learning, question practice, revision).
+2. Recommend one primary resource per role, and what to drop.
+3. Explain how to integrate the chosen resources (e.g. annotate one set of notes).
+4. Set a rule for adding any new resource.
+rules: Recommend fewer, well-used resources, and don't endorse specific commercial products as superior, because the best resource is the one you revise repeatedly.
+output: The resource assessment table, the final set, the integration method, then the rule.
+tip: One source revised five times beats five sources read once.
+try: Three video platforms, two question banks and four sets of notes, with 6 months to go.
+next: revision-cycles
+
+@@ S | exam-day-plan | The night before and the exam day
+aud: MBBS Student / PG Resident
+use: 1–2 days before any major exam.
+persona: You are an exam coach who helps students perform at their best on the day.
+context: Exam type (computer-based, written, practical or viva), timing and venue: [brief]
+My exam-day worries: [list]
+task: 1. Plan the day before: light revision, logistics check, meals and sleep time.
+2. Plan the morning: wake-up time, breakfast, travel buffer and what to carry.
+3. Plan the in-exam strategy: time allocation, handling hard questions, and breaks.
+4. Plan how to manage anxiety in the hall.
+5. Plan between papers, if there are several.
+rules: Include only practical, safe advice, and remind me to verify exam-specific rules (documents, items allowed) from the official instructions, because rules differ by exam.
+output: Timelines for the day before and the exam day, the in-exam strategy, the anxiety plan, then the between-papers plan.
+tip: Don't discuss answers between papers. It only adds anxiety.
+try: A computer-based exam with a morning reporting time, 50 km from home.
+next: last-7-days
+
+@@ S | sleep-and-study | Sleep, memory and study performance
+aud: MBBS Student / PG Resident
+use: When you're cutting sleep to study more.
+persona: You are a sleep-medicine physician who advises students.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+My current sleep pattern and study schedule: [brief]
+Duties or night shifts: [brief]
+task: 1. Explain briefly how sleep affects memory consolidation.
+2. Assess my current pattern.
+3. Suggest a realistic sleep schedule that fits my study.
+4. Suggest strategies for shift workers and post-call days.
+5. Suggest habits for better sleep quality.
+rules: Keep the advice evidence-based and practical, and recommend medical review for persistent insomnia, because chronic sleep problems need proper assessment.
+output: The explanation, the assessment, the schedule, the shift strategies, then the habits.
+tip: Reviewing flashcards before sleep and again on waking uses sleep to strengthen memory.
+try: Sleeping 4–5 hours a night during NEET-PG preparation.
+next: study-plan-master
+
+@@ S | accountability-tracker | Build a simple accountability tracker
+aud: MBBS Student / PG Resident
+use: When you want to stay consistent over months of preparation.
+persona: You are an accountability coach who designs simple tracking systems.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Goals: [daily hours, topics, MCQs, revision]
+Tools: [paper / Google Sheets / Notion / app]
+task: 1. Design a tracker with daily inputs (topics done, MCQs attempted, accuracy, hours, sleep).
+2. Add weekly summary formulas or sections.
+3. Add a visual progress indicator.
+4. Suggest a weekly reflection prompt.
+rules: Keep the daily input under 2 minutes, because trackers that take longer are abandoned.
+output: The tracker layout (columns and formulas), the weekly summary, then the reflection prompt.
+tip: Track the process (MCQs done, topics revised), not just the hours. The process is what you control.
+try: A Google Sheets tracker for NEET-PG with MCQ accuracy by subject.
+next: weekly-review
+
+@@ Q | today-plan | Plan my study day
+aud: MBBS Student / PG Resident
+body: Act as a study coach. I have [HOURS] hours today, with these commitments: [COMMITMENTS]. Plan my study day for [EXAM], with the topics [TOPICS], including one active-recall block, one question-practice block, breaks and a 15-minute review at the end. Flag anything you are unsure of so I can check it.
+try: 5 hours on an off-day, topics: thyroid disorders and adrenal disorders.
+
+@@ Q | top-three | My three priorities today
+aud: MBBS Student / PG Resident
+body: Act as a productivity coach. From this to-do list, [PASTE LIST], and my exam in [TIME], pick the 3 tasks that will most improve my exam readiness today, explain each choice in one line, and tell me what to postpone.
+try: A list of 12 tasks including notes, videos, MCQs, a thesis chapter and flashcards.
+
+@@ Q | hours-estimate | How long will this subject take?
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an exam strategist. Estimate the hours I need for first coverage and for revision of [SUBJECT] for [EXAM], given my level [LEVEL], and break the estimate into its major topics. Mark the estimates as rough guides. Flag anything you are unsure of so I can check it.
+try: Pharmacology for NEET-PG, as an average student starting from scratch.
+
+@@ Q | revision-reminder | What should I revise today?
+aud: MBBS Student / PG Resident
+body: Act as a spaced-repetition coach. From my list of topics with the dates I studied them, [PASTE LIST], tell me which to review today using intervals of 1, 3, 7, 21 and 60 days, and suggest a 10-minute recall method for each.
+try: Eight topics studied between 1 and 30 days ago.
+
+@@ Q | motivation-reframe | Reframe a demotivating thought
+aud: MBBS Student / PG Resident
+body: Act as a supportive mentor. I keep thinking "[NEGATIVE THOUGHT]" while studying for [EXAM]. Help me reframe it realistically, without toxic positivity, and suggest one small action I can take in the next 30 minutes. Flag anything you are unsure of so I can check it.
+try: "Everyone else has finished the syllabus twice and I've barely started."
+
+@@ Q | distraction-fix | Fix my biggest distraction
+aud: MBBS Student / PG Resident
+body: Act as a focus coach. My biggest distraction while studying is [DISTRACTION] in [ENVIRONMENT]. Give me 5 practical, specific fixes I can apply today, ordered from easiest to most effective. Flag anything you are unsure of so I can check it.
+try: Checking my phone every 5 minutes in the hostel room.
+
+@@ Q | session-goal | Set a goal for this study session
+aud: MBBS Student / PG Resident
+body: Act as a study coach. I'm about to start a [DURATION]-minute session on [TOPIC]. Turn it into one specific, testable goal, e.g. "list and explain the 6 causes of X from memory", and suggest how to check whether I achieved it.
+try: A 50-minute session on the causes of hypercalcaemia.
+
+@@ Q | weekly-target | Did I hit my weekly target?
+aud: MBBS Student / PG Resident
+body: Act as an accountability coach. My weekly target was [TARGET] and I achieved [ACTUAL]. Give me an honest, kind assessment in 3 lines, the likely reason for the gap, and one adjustment for next week. Flag anything you are unsure of so I can check it.
+try: Target: 700 MCQs and 3 subjects revised. Actual: 450 MCQs and 2 subjects.
+
+@@ Q | break-ideas | Study breaks that actually refresh
+aud: MBBS Student / PG Resident
+body: Act as a wellbeing coach for students. Suggest 8 study-break activities of 5–15 minutes that refresh attention (movement, outdoors, social, rest) and don't involve social-media scrolling, with the best time to use each during a long study day. Flag anything you are unsure of so I can check it.
+try: Long library study days of 8–10 hours.

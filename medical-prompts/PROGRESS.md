@@ -52,7 +52,7 @@ Commit and push after every section file.
 | Section | Target | Status |
 |---|---:|---|
 | 3.1 Learning any topic | 50 | done |
-| 3.2 Study planning & revision | 30 | pending |
+| 3.2 Study planning & revision | 30 | done |
 | 3.3 MCQ practice & exam strategy | 50 | pending |
 | 3.4 Long & short answer writing | 30 | pending |
 | 3.5 Viva, OSCE & practical exams | 50 | pending |
