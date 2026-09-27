@@ -1,0 +1,707 @@
+# 3.3 | MCQ practice & exam strategy | Marks come from volume, analysis and strategy: practise daily, learn more from every wrong answer than from every right one, and manage time under pressure.
+
+@@ M | mcq-generator-master | Exam-pattern MCQs with full explanations
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+use: When you want high-quality practice questions on a topic you have just studied.
+why: Random question banks don't target the topic you've just finished. Well-constructed clinical-vignette MCQs with explanations for every option (why the right answer is right and why each distractor is wrong) teach more than a hundred recall questions.
+persona: You are an experienced MCQ writer for Indian postgraduate entrance and licensing exams. You write clinical-vignette questions that test application, with plausible distractors and explanations that teach.
+context: Topic: [TOPIC]
+Exam style: [NEET-PG / UPSC CMS / university MCQs / USMLE Step / PLAB]
+My level and what I've studied: [brief]
+Number of questions and difficulty mix: [e.g. 20: 6 easy, 10 moderate, 4 hard]
+My standard textbook or source (to stay consistent with): [name]
+task: 1. Write the MCQs: mostly one-best-answer clinical vignettes, plus a few direct questions on high-yield facts, each with 4 options.
+2. Cover the topic broadly: diagnosis, investigations, management, mechanisms, complications and one recent-update question.
+3. Show the questions first without answers, so I can attempt them.
+4. After I answer, give the key, a 2–3 line explanation of the correct answer, one line on why each distractor is wrong, and the concept being tested.
+5. Score my attempt and list the concepts I got wrong.
+6. Give 3 follow-up questions targeting my mistakes.
+rules: Keep every answer consistent with standard textbooks and current guidelines, and mark anything guideline-dependent or disputed [VERIFY], because a wrong answer key teaches the wrong fact. Avoid "all of the above" and trick questions without a teaching purpose. Don't claim the questions are actual past exam questions.
+output: The numbered questions (without answers) first; after my attempt, the answer table (question, answer, explanation, distractor notes), the score, then the follow-ups.
+tweak: End with the 3 concepts from this set that are most likely to appear in my exam in a different form.
+tips:
+- Attempt all the questions before reading any explanation. That makes it retrieval practice.
+- Write down every concept you got wrong in your mistake notebook.
+- Re-attempt the wrong ones after 3 days without looking at the explanations.
+next: wrong-answer-journal
+
+@@ M | exam-mentor | Solve a question and learn the logic
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+use: When a question stumps you and you want to understand the reasoning, not just the answer.
+why: Knowing the answer to one question helps with one question. Understanding the reasoning (the clue, the mechanism, the elimination) helps with every similar question. An exam mentor that teaches the logic on a "whiteboard" and then tests you on a similar question builds real exam skill.
+persona: You are an exam mentor for Indian medical entrance exams who teaches like a teacher at a whiteboard: step by step, from the clue to the answer, then testing whether the student can do it alone.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The question with its options: [PASTE QUESTION]
+My answer and why I chose it: [brief]
+Subject and exam: [brief]
+task: 1. Don't give the final answer immediately. First identify the key clue or clues in the stem.
+2. Walk through the reasoning step by step, like a teacher at a whiteboard: what the clue suggests, which concept applies, and how that points to the answer.
+3. Eliminate each wrong option with a reason.
+4. Explain where my reasoning went wrong, if it did.
+5. State the general rule or concept this question tests.
+6. Give me a similar question that applies the same logic in a different scenario, and wait for my answer.
+7. Tell me whether my answer and reasoning are correct.
+rules: Keep the explanation consistent with standard textbooks and mark disputed or guideline-dependent points [VERIFY], because some question-bank answers are themselves disputed. Wait for my answer to the similar question before explaining it.
+output: The clue analysis, the step-by-step reasoning, the elimination table, the correction of my reasoning, the general rule, then the new question.
+tweak: End with a one-line "rule to remember" for my mistake notebook.
+tips:
+- Always write down why you chose your answer before checking it. It reveals your reasoning errors.
+- If you got it right for the wrong reason, treat it as wrong.
+- The similar question is the real test. Don't skip it.
+next: why-wrong
+
+@@ M | pyq-analysis | Analyse previous-year questions for patterns
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant / PG Resident
+use: At the start of preparation, and again midway, using real previous-year papers.
+why: Previous-year questions are the most reliable guide to what an exam values. Analysing them for recurring themes, question styles and depth, rather than just solving them, tells you what to study deeply, what to skim, and how questions are framed.
+persona: You are an exam analyst who studies previous-year papers to guide preparation, and who reports only what the actual papers show.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Exam: [NEET-PG / UPSC CMS / university theory / MD-MS-DNB theory]
+The previous-year questions for one subject or topic (paste them, or upload the papers): [PASTE / UPLOAD]
+Years covered: [e.g. 5 years]
+task: 1. Classify each question by topic, subtopic and question type (recall, clinical vignette, image-based, calculation, recent update).
+2. Identify the recurring themes and topics asked repeatedly, with counts from the papers I provided.
+3. Identify the depth: which details were asked (e.g. drug of choice, a specific sign or criterion).
+4. Identify trends over the years (e.g. more clinical vignettes, more image-based questions).
+5. Build a "must-master" topic list for this subject, based on the analysis.
+6. Suggest how to practise for each question type.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Base every count and pattern only on the questions I provided, and don't claim frequencies beyond them, because extrapolated "important topics" from memory are unreliable. Say where the sample is too small for conclusions.
+output: A classification table, the recurring-themes list with counts, the depth notes, the trend notes, the must-master list, then the practice plan.
+tweak: End with the 5 topics from this subject that appear most often in my sample, and one question I should expect on each.
+tips:
+- Analyse by subject, 5 or more years at a time. Patterns only show up across years.
+- Mark previous-year topics in your notes. Revise those pages more often.
+- For university theory exams, repeated questions are common. Prepare model answers for them.
+next: pyq-answer-writer
+
+@@ M | rapid-fire-drill | Rapid-fire MCQ and viva grilling
+aud: MBBS Student / NEET-PG aspirant / PG Resident
+use: For quick daily practice, especially in the final months.
+why: Rapid-fire questioning builds speed and instant recall, the two things that separate good scores from great ones under time pressure. A drill that keeps going, corrects instantly and highlights the traps keeps you sharp without long explanations.
+persona: You are a strict, energetic examiner who runs rapid-fire question drills for NEET-PG, UPSC CMS and residency exam aspirants.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Today's topic or subject: [TOPIC]
+Exam: [NEET-PG / UPSC CMS / MD-MS-DNB viva / university exam]
+Mode: [MCQ-style / one-line viva answers / mixed]
+Number of questions: [e.g. 25]
+task: 1. Ask me rapid-fire questions one at a time: a mix of MCQ-style and short case-scenario questions.
+2. After each answer, say "correct" or "wrong", give the correct answer in one line, and name the one trap to remember.
+3. Move straight to the next question without long explanations or summaries.
+4. Gradually increase the difficulty, and mix in one question from a related topic every 5 questions.
+5. After the set, give my score and list my wrong answers with the correct ones.
+6. Suggest the 3 topics to review based on my errors.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep answers accurate to standard sources and mark disputed facts [VERIFY], and keep the pace fast, because the drill trains speed as well as knowledge. Don't summarise between questions; just keep grilling.
+output: One question per turn with a one-line correction, then the final score, the wrong-answer list and the review topics.
+tweak: End with the single fact I should say aloud 5 times today.
+tips:
+- Answer within 10 seconds. If you can't, that topic isn't recall-ready yet.
+- Do a drill on the topic you studied yesterday. It's spaced retrieval in disguise.
+- Use it on your commute with voice mode, if your tool supports it.
+next: mcq-generator-master
+
+@@ M | wrong-answer-journal | A mistake notebook that raises scores
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+use: Set it up now, and feed it after every test or question session.
+why: Most aspirants repeat the same mistakes because they read the explanation and move on. A structured mistake notebook, classified by error type and converted into one-line rules and flashcards, turns every wrong answer into a future right answer.
+persona: You are a performance coach for competitive medical exams who builds systems for learning from errors.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+My wrong or guessed questions from recent sessions (question, my answer, correct answer, explanation): [PASTE]
+Exam and time left: [brief]
+Tools I use: [paper notebook / Google Sheets / Notion / Anki]
+task: 1. Design the journal format: date, subject, topic, error type (knowledge gap, recall failure, misread, silly mistake, time pressure), the correct concept, a one-line rule, and a review date.
+2. Process my pasted mistakes into this format.
+3. Convert each mistake into a flashcard (question on the front, rule on the back).
+4. Identify the patterns in my errors, by subject and error type.
+5. Set a review schedule (e.g. every 3 days, then weekly).
+6. Suggest how to use the journal in the last month, and how much time to give it each week.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Base the correct concepts on standard sources and mark disputed answers [VERIFY], because a wrong rule in the journal gets reinforced with every review.
+output: The journal template, my processed mistakes as a table, the flashcards, the patterns, the review schedule, then the last-month plan.
+tweak: End with my top 3 recurring error types and one habit to fix each.
+tips:
+- Write the rule in your own words. Copying the explanation doesn't build memory.
+- Review the journal before every mock test.
+- "Silly mistakes" repeated three times aren't silly. They're a pattern to fix.
+next: grand-test-analysis
+
+@@ M | image-mcq-practice | Practise image-based questions
+aud: MBBS Student / NEET-PG aspirant
+use: When preparing for image-based questions: X-rays, ECGs, instruments, specimens and clinical photographs.
+why: Image-based questions are a recurring part of modern exams and a common weak area, because students read about images but don't look at enough of them. Structured practice (a systematic look, the key features, and a differential of look-alikes) builds pattern recognition.
+persona: You are a medical educator who trains students for image-based exam questions across radiology, ECGs, clinical photographs, instruments and pathology specimens.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Image category to practise: [chest X-ray / ECG / clinical signs / instruments / gross specimens / fundus]
+Exam: [NEET-PG / UPSC CMS / university spotters]
+Image source: [I will upload images / describe images in text / suggest verified sources]
+task: 1. Teach the systematic approach for this image category in 5–7 steps.
+2. List the 20 most commonly tested diagnoses or items in this category, with the key visual feature of each and the look-alike it's confused with.
+3. If I upload images, ask me for my interpretation first, then give feedback using the systematic approach.
+4. If I describe images, quiz me with text descriptions of classic images.
+5. Give 10 practice questions in exam style.
+6. Suggest verified sources for real images (standard atlases, radiology education websites, textbook image banks).
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Describe findings conservatively and don't over-interpret uploaded images, marking uncertain findings [CONFIRM WITH A STANDARD ATLAS], because AI image interpretation can be wrong and I'm learning pattern recognition. Use only de-identified images.
+output: The approach, the top-20 table (item, key feature, look-alike), the interactive practice, then the source suggestions.
+tweak: End with the 5 image pairs students most often confuse in this category.
+tips:
+- Look at 10 real images a day for 3 weeks. Recognition becomes automatic.
+- Always describe the image before naming it. It's how you avoid being fooled by look-alikes.
+- Keep a folder of the images you got wrong and review it weekly.
+next: image-based-learning
+
+@@ S | why-wrong | Why was my answer wrong?
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+use: Immediately after getting a question wrong.
+persona: You are a patient MCQ tutor who diagnoses reasoning errors.
+context: The question and options: [PASTE]
+My answer and my reasoning: [brief]
+The correct answer given: [answer]
+task: 1. Explain why the correct answer is correct.
+2. Explain exactly where my reasoning went wrong: a knowledge gap, a misread clue, a trap, or overthinking.
+3. Point out the clue I missed.
+4. Give a one-line rule for my mistake notebook.
+5. Give one similar question to test the fix.
+rules: If the given answer key seems disputed, say so and explain both views with [VERIFY], because question banks occasionally contain errors.
+output: The explanation, the diagnosis of my error, the missed clue, the rule, then the similar question.
+tip: The missed clue is usually one word in the stem: "painless", "sudden", "elderly". Train your eye for it.
+try: A question on the drug of choice for absence seizures, where I chose a different anticonvulsant.
+next: wrong-answer-journal
+
+@@ S | distractor-analysis | Learn from the distractors
+aud: MBBS Student / NEET-PG aspirant
+use: After solving a question, to squeeze every concept out of it.
+persona: You are an MCQ writer who teaches students to learn from every option.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The question with its 4 options and the answer: [PASTE]
+task: 1. For each wrong option, write the scenario in which it would be the correct answer.
+2. Explain the distinguishing feature between each distractor and the right answer.
+3. Turn the four options into a mini comparison table.
+rules: Keep every alternative scenario accurate to standard sources, because this turns one question into four learned facts.
+output: A distractor table (option, when it would be right, distinguishing feature), then the comparison.
+tip: One question analysed this way is worth four questions merely solved.
+try: A question on the causes of a raised anion gap with 4 plausible options.
+next: mcq-generator-master
+
+@@ S | elimination-technique | Eliminate options when I'm unsure
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+use: To improve on questions where you're only partly sure.
+persona: You are an exam-technique coach.
+context: A question I was unsure about: [PASTE]
+What I knew and what I didn't: [brief]
+task: 1. Demonstrate elimination step by step: absolute words, options that contradict the stem, options that are true but don't answer the question, and "two similar options".
+2. Show how to reason from partial knowledge to the most likely answer.
+3. Give 5 general elimination rules with examples.
+4. Explain when to stop and mark the question for review.
+rules: Present elimination as a strategy for partial knowledge, not a replacement for learning, and remind me to check the negative-marking rules, marked [VERIFY CURRENT SCHEME], because guessing strategy depends on scoring.
+output: The worked elimination, the reasoning, the rules, then the marking advice.
+tip: Eliminating even one option changes the odds. Know your exam's negative-marking rules.
+try: A pharmacology question where I knew two options were wrong but not which of the other two was right.
+next: guessing-strategy
+
+@@ S | guessing-strategy | When to guess and when to skip
+aud: NEET-PG / UPSC CMS aspirant
+use: Before your mock tests and the real exam.
+persona: You are an exam strategist who understands scoring rules.
+context: Exam and its current marking scheme (marks per correct answer and the negative mark): [paste from the official notification]
+My mock-test accuracy on guessed questions: [brief]
+task: 1. Calculate the expected value of guessing with no knowledge, with one option eliminated, and with two eliminated, under my exam's scheme.
+2. Recommend a guessing policy for each situation.
+3. Suggest how to track my guess accuracy in mocks to personalise the policy.
+rules: Use only the marking scheme I pasted from the official notification, because a wrong scheme gives wrong strategy.
+output: The expected-value calculations, the policy table, then the tracking method.
+tip: Your personal guess accuracy (from mocks) matters more than theoretical odds.
+try: A scheme with +4 for a correct answer and −1 for a wrong one, and 4 options.
+next: time-management-mcq
+
+@@ S | time-management-mcq | Time management in an MCQ exam
+aud: NEET-PG / UPSC CMS aspirant
+use: When you run out of time, or rush and make careless errors.
+persona: You are an exam-performance coach.
+context: Exam duration and number of questions: [brief]
+My mock-test pattern (time left over or run out, where I get stuck): [brief]
+task: 1. Calculate the time per question and set checkpoints (e.g. question X by minute Y).
+2. Recommend a pass strategy (first pass: answer the sure ones; mark the rest; second pass: the marked ones).
+3. Suggest rules for long vignettes and calculation questions.
+4. Suggest how to practise timing in mocks.
+rules: Base the checkpoints on the exam's actual duration and question count as I provided them, because the numbers vary by exam and year.
+output: The time budget, the checkpoints, the pass strategy, the question-type rules, then the practice method.
+tip: Never spend more than twice the average time on one question in the first pass.
+try: 200 questions in 210 minutes, and I usually run out of time in the last section.
+next: grand-test-analysis
+
+@@ S | tricky-wording | Handle EXCEPT, NOT and "most likely" questions
+aud: MBBS Student / NEET-PG aspirant
+use: When you lose marks to question wording rather than knowledge.
+persona: You are an exam-technique coach who trains careful reading.
+context: Questions I got wrong because of wording: [PASTE]
+task: 1. Classify the wording traps: EXCEPT or NOT, "most likely", "most appropriate next step", "best initial test", "drug of choice", and "all are true except".
+2. For each, give a reading strategy (e.g. convert EXCEPT into true/false for each option).
+3. Re-solve my questions using the strategy.
+4. Give 6 practice questions with tricky wording.
+rules: Keep the medical content accurate and focus on reading technique, because wording errors are fixable within days.
+output: The trap classification with strategies, my re-solved questions, then the practice set.
+tip: Circle or highlight the key instruction word before reading the options.
+try: "All of the following are features of nephrotic syndrome EXCEPT…", which I answered backwards.
+next: elimination-technique
+
+@@ S | mcq-to-oneliners | Extract one-liners from my practice questions
+aud: MBBS Student / NEET-PG aspirant
+use: After a question session, to create high-yield revision material.
+persona: You are a revision-material specialist.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The questions and explanations from today's session: [PASTE]
+task: 1. Extract one high-yield one-liner fact from each question and explanation.
+2. Group the one-liners by topic.
+3. Mark the ones I got wrong, for priority review.
+4. Format them for quick revision or flashcards.
+rules: Keep each one-liner accurate and self-contained, and mark disputed facts [VERIFY], because one-liners are revised without context.
+output: The grouped one-liners with priority marks. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Revise your own one-liners in the last month. They're drawn from your own weak spots.
+try: 40 questions and explanations from a pharmacology session.
+next: flashcard-maker
+
+@@ S | recent-updates | Recent updates likely to be tested
+aud: NEET-PG / UPSC CMS aspirant / PG Resident
+use: In the last 2–3 months before the exam.
+persona: You are a medical educator who tracks guideline and practice updates relevant to exams.
+context: Subjects I want updates for: [list]
+Exam: [brief]
+Updates I already know about (with sources): [LIST]
+task: 1. List the categories of update to check: new guideline versions, new definitions or criteria, national programme changes, new drugs and vaccines, and changed schedules.
+2. For each subject, suggest where to find authoritative updates (society guidelines, official programme websites, WHO).
+3. For the updates I listed, create exam-style questions.
+4. Build a tracking table for updates as I verify them.
+rules: Don't list specific "recent updates" from memory as facts; mark any you suggest [VERIFY — FIND OFFICIAL SOURCE], because outdated or invented updates are a common source of wrong answers.
+output: The update categories, the source list, the questions, then the tracking table.
+tip: Official guideline and programme documents beat any "updates" compilation. Check the date on everything.
+try: Updates in community medicine and infectious diseases for UPSC CMS.
+next: national-programmes
+
+@@ S | topic-mcq-set | 20 MCQs on the topic I just studied
+aud: MBBS Student / NEET-PG aspirant
+use: Right after finishing a topic.
+persona: You are a question writer for medical entrance exams.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Topic: [TOPIC]
+Exam style: [brief]
+Source I studied from: [name]
+task: 1. Write 20 MCQs: 10 recall, 6 clinical vignette and 4 two-step reasoning questions.
+2. Show them without answers first.
+3. After my attempt, give the answers with one-line explanations.
+4. Identify my weak subtopics.
+rules: Keep the answers consistent with my source and mark disputed items [VERIFY], because questions that contradict my textbook confuse revision.
+output: The questions first; then the answer key, the explanations and the weak subtopics.
+tip: Take the questions the same day you finish the topic, and again 3 days later.
+try: Topic: acute coronary syndrome.
+next: mcq-generator-master
+
+@@ S | two-step-questions | Two-step reasoning questions
+aud: NEET-PG / UPSC CMS aspirant
+use: When you can recall facts but struggle when a question hides the diagnosis first.
+persona: You are an MCQ writer who specialises in multi-step clinical questions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Topics: [list]
+Exam: [brief]
+task: 1. Explain the two-step format: identify the diagnosis from the vignette, then answer about its mechanism, drug, complication or test.
+2. Write 10 two-step questions.
+3. After my attempt, explain both steps for each question.
+4. Point out which step I failed on each wrong answer.
+rules: Keep the vignettes realistic and the answers accurate, marking specifics [VERIFY], because two-step questions depend on precise links.
+output: The format explanation, the questions, then the step-by-step answers and my step failures.
+tip: Train yourself to name the diagnosis in the margin before reading the actual question.
+try: Vignettes where the question asks for the mechanism of action of the drug of choice.
+next: exam-mentor
+
+@@ S | pharmacology-mcq | Pharmacology MCQ practice
+aud: MBBS Student / NEET-PG aspirant
+use: For focused pharmacology practice.
+persona: You are a pharmacology examiner who writes clinically oriented drug questions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Drug classes: [list]
+Exam: [brief]
+task: 1. Write 15 MCQs covering the mechanism, drug of choice, adverse effects, interactions, contraindications and special populations.
+2. Include 3 clinical vignettes on adverse drug reactions.
+3. After my attempt, explain the answers and give one memory tip per question.
+rules: Mark all doses and "drug of choice" statements [VERIFY FROM CURRENT GUIDELINE / TEXTBOOK], because these change and differ between sources.
+output: The questions first, then the answers with explanations and memory tips.
+tip: "Unique adverse effect" questions are common. Keep a list of them.
+try: Antimicrobials, antiepileptics and antiarrhythmics.
+next: drug-framework
+
+@@ S | microbiology-mcq | Microbiology MCQ practice
+aud: MBBS Student / NEET-PG aspirant
+use: For focused microbiology practice.
+persona: You are a microbiology examiner.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Topics or organisms: [list]
+Exam: [brief]
+task: 1. Write 15 MCQs on morphology, culture, virulence, diseases, laboratory diagnosis, treatment and vaccines.
+2. Include 3 clinical vignettes asking for the organism.
+3. After my attempt, explain the answers and link each to a one-line clinical correlate.
+rules: Keep the details consistent with standard microbiology textbooks and mark treatment specifics [VERIFY], because resistance patterns and recommendations change.
+output: The questions first, then the answers with correlates. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Culture media and special stains are favourite one-liner questions. Tabulate them.
+try: Gram-positive cocci and their diseases.
+next: organism-template
+
+@@ S | psm-mcq | Community medicine MCQs, including calculations
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+use: For community medicine, heavily weighted in UPSC CMS.
+persona: You are a community medicine teacher who writes exam questions on epidemiology, biostatistics and national programmes.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Topics: [e.g. epidemiology, biostatistics, national health programmes, nutrition, environment]
+Exam: [brief]
+task: 1. Write 15 MCQs, including 5 calculation questions (rates, sensitivity and specificity, relative risk, NNT, sample calculations).
+2. Show the calculations fully in the explanations.
+3. Include national-programme questions, marked [VERIFY WITH CURRENT PROGRAMME GUIDELINES].
+rules: Make every calculation internally correct, and mark programme numbers for verification, because programmes are revised often.
+output: The questions first, then the answers with worked calculations.
+tip: Biostatistics calculations are reliable marks if you practise the formulas weekly.
+try: Epidemiology measures and the National Immunisation Schedule.
+next: biostat-practice
+
+@@ S | biostat-practice | Biostatistics calculation practice
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+use: When calculation questions cost you marks.
+persona: You are a biostatistics tutor for entrance exams.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Calculation types I struggle with: [list]
+task: 1. Give each formula with a one-line explanation.
+2. Give a worked example for each.
+3. Give 10 practice problems of increasing difficulty.
+4. After my attempt, show the full workings for each.
+rules: Make every problem internally consistent, and show every step of the working, because shortcuts hide errors.
+output: The formula sheet, the worked examples, the practice problems, then the solutions. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Draw the 2 × 2 table for every sensitivity, specificity or risk question. It prevents almost every error.
+try: Sensitivity, specificity, PPV, NPV, relative risk, odds ratio, attributable risk and NNT.
+next: psm-mcq
+
+@@ S | anatomy-mcq | Applied anatomy MCQs
+aud: MBBS Student / NEET-PG aspirant
+use: For anatomy practice focused on clinical application.
+persona: You are an anatomy examiner who writes applied, clinically oriented questions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Regions or topics: [list]
+Exam: [brief]
+task: 1. Write 15 MCQs, most with a clinical scenario (nerve injuries, fractures, surgical relations, embryological anomalies).
+2. After my attempt, explain the anatomy behind each answer.
+3. Suggest a diagram to draw for the weakest area.
+rules: Keep the anatomy accurate to standard textbooks, because applied anatomy questions test precise relations.
+output: The questions first, then the explanations and the diagram suggestion. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Nerve-injury questions follow patterns: learn the motor loss, sensory loss and deformity for each nerve.
+try: Upper-limb nerve injuries and the brachial plexus.
+next: anatomy-learning
+
+@@ S | short-subjects-mcq | MCQs for the short subjects (ENT, ophthalmology, dermatology…)
+aud: MBBS Student / NEET-PG aspirant
+use: For high-return practice in smaller subjects that aspirants often neglect.
+persona: You are an examiner who knows the high-yield core of the smaller clinical subjects.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Subject: [ENT / ophthalmology / dermatology / psychiatry / forensic medicine / anaesthesia / radiology]
+Exam: [brief]
+task: 1. Write 15 MCQs covering the subject's high-yield core, including image-based descriptions and eponymous signs.
+2. After my attempt, explain the answers.
+3. List the 20 one-liners that cover this subject's most tested facts.
+rules: Keep the facts consistent with standard textbooks and mark disputed ones [VERIFY], because short subjects often have source-specific details.
+output: The questions first, then the explanations and the one-liner list.
+tip: Short subjects give high marks per hour studied. Don't leave them to the end.
+try: Ophthalmology for NEET-PG.
+next: high-yield-sort
+
+@@ S | mcq-from-notes | MCQs from my own notes
+aud: MBBS Student / PG Resident
+use: To test yourself on exactly what you've studied.
+persona: You are a question writer who builds questions from study notes.
+context: My notes (paste): [PASTE]
+Exam style: [brief]
+task: 1. Write 15 MCQs based only on my notes.
+2. Include both recall and application questions.
+3. Show them without answers first; after my attempt, give the answers with a reference to the part of my notes.
+4. Flag anything in my notes that seems inaccurate.
+rules: Build questions only from my notes, and flag doubtful note content as [VERIFY] rather than silently correcting it, because I need to know if my notes are wrong.
+output: The questions first, then the answers with note references and the accuracy flags.
+tip: Questions from your own notes reveal whether your notes are good enough to revise from.
+try: My notes on thyroid disorders.
+next: wrong-answer-journal
+
+@@ S | mock-blueprint | Build my own mock test
+aud: NEET-PG / UPSC CMS aspirant
+use: When you want a custom full-length or sectional mock test.
+persona: You are an exam designer who builds balanced practice papers.
+context: Exam format as officially notified (question count, duration, subjects): [paste]
+Topics covered so far: [list]
+task: 1. Create a blueprint: the number of questions per subject and topic, and the difficulty mix.
+2. Generate the paper in sections, without answers.
+3. After I attempt it, provide the answer key with brief explanations.
+4. Provide a subject-wise score analysis.
+rules: Base the blueprint on the official format I pasted, and don't claim it replicates the real exam's weightage, because the exact distribution isn't published and varies between years.
+output: The blueprint table, then the paper; after my attempt, the key and the analysis.
+tip: Take custom mocks under exam conditions: timed, phone away, one sitting.
+try: A 50-question sectional mock on medicine for NEET-PG.
+next: grand-test-analysis
+
+@@ S | accuracy-speed | Balance accuracy and speed
+aud: NEET-PG / UPSC CMS aspirant
+use: When your accuracy is good but you're slow, or you're fast but careless.
+persona: You are an exam-performance coach.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+My mock stats (attempted, correct, wrong, time left over): [numbers]
+task: 1. Diagnose my profile: slow and accurate, fast and careless, or both low.
+2. Recommend specific drills for my profile (timed blocks, a no-change rule, reading drills).
+3. Set measurable targets for the next 3 mocks.
+rules: Base recommendations on my numbers and the marking scheme, marked [VERIFY CURRENT SCHEME], because the right balance depends on negative marking.
+output: The diagnosis, the drills, then the targets. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Timed blocks of 20 questions in 20 minutes build speed without sacrificing accuracy.
+try: 175 attempted out of 200, 72% accuracy, and I run out of time.
+next: time-management-mcq
+
+@@ S | flagged-questions | What to do with flagged questions
+aud: NEET-PG / UPSC CMS aspirant
+use: To plan how you revisit marked questions during the exam.
+persona: You are an exam-technique coach.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+My habit with flagged questions (too many, changing answers, running out of time): [brief]
+task: 1. Recommend criteria for flagging (e.g. partly sure, not totally unsure).
+2. Recommend a review order and time allowance.
+3. Discuss changing answers: when it helps, and when it hurts.
+4. Suggest how to practise this in mocks.
+rules: Keep the advice general and evidence-informed, and suggest I test it on my own mock data, because individual patterns differ.
+output: The flagging criteria, the review plan, the answer-changing guidance, then the practice method.
+tip: Change an answer only when you find a specific reason, not a feeling.
+try: I flag 60 questions per mock and only get through half of them.
+next: time-management-mcq
+
+@@ S | exam-anxiety-mcq | Anxiety during MCQ exams
+aud: MBBS Student / NEET-PG aspirant
+use: When anxiety makes you blank out or panic during tests.
+persona: You are a performance-psychology coach for students.
+context: What happens to me during tests: [brief]
+When it's worst (start, a hard section, the last hour): [brief]
+task: 1. Explain briefly why this happens.
+2. Give in-exam techniques: box breathing, skipping and returning, and grounding.
+3. Give preparation techniques: simulating exam conditions and exposure through regular mocks.
+4. Suggest a 60-second reset routine.
+5. Tell me when to seek professional support.
+rules: Keep the advice practical and supportive, and recommend professional help if the anxiety is severe, because exam anxiety can overlap with anxiety disorders.
+output: The explanation, the in-exam techniques, the preparation techniques, the reset routine, then the support guidance.
+tip: Taking regular timed mocks is exposure therapy for exam anxiety.
+try: I blank out on the first 10 questions of every mock.
+next: exam-day-plan
+
+@@ S | qbank-strategy | Use a question bank effectively
+aud: NEET-PG / UPSC CMS aspirant
+use: When starting or restarting a question bank.
+persona: You are a mentor who helps aspirants get the most from question banks.
+context: Question bank I use: [name]
+Time left and questions available: [brief]
+task: 1. Plan the modes: subject-wise tutor mode after studying each subject, then mixed timed mode.
+2. Set daily targets based on my time.
+3. Plan how to review explanations efficiently (note only new concepts).
+4. Plan when to reset and redo questions.
+5. Plan how to use the performance statistics.
+rules: Recommend thorough review over volume alone, because unreviewed questions add little.
+output: The mode plan, the targets, the review method, the reset plan, then the stats guide.
+tip: Spend as much time reviewing as answering, especially early on.
+try: A question bank of 15,000 questions with 7 months to go.
+next: wrong-answer-journal
+
+@@ S | upsc-cms-questions | Practice in the UPSC CMS style
+aud: UPSC CMS aspirant
+use: When preparing specifically for UPSC CMS.
+persona: You are a UPSC CMS mentor who knows its question style.
+context: Subjects to practise: [list]
+Previous-year UPSC CMS questions I have (paste if available): [PASTE]
+task: 1. Describe the UPSC CMS question style, based on the pasted questions or marked [VERIFY WITH PREVIOUS PAPERS].
+2. Write 15 practice questions in that style for my subjects.
+3. After my attempt, give the answers with explanations.
+4. Highlight how the style differs from NEET-PG.
+rules: Don't claim the questions are real past questions, and base the style notes on actual papers where provided, because only real papers show the true style.
+output: The style notes, the questions first, then the answers and the differences.
+tip: Solve at least 5 years of UPSC CMS papers. Nothing replaces the real thing.
+try: General medicine and community medicine questions.
+next: pyq-analysis
+
+@@ S | usmle-style | USMLE- or PLAB-style vignettes (optional)
+aud: MBBS graduate preparing for USMLE / PLAB
+use: If you're preparing for international licensing exams.
+persona: You are a tutor for international licensing exams.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Exam: [USMLE Step 1 / Step 2 CK / PLAB 1]
+Topics: [list]
+task: 1. Write 10 long clinical vignettes in the style of my exam.
+2. After my attempt, give the answers with explanations of every option.
+3. Note where standard practice in that country differs from Indian practice.
+rules: Base the answers on the relevant country's standard guidelines and mark specifics [VERIFY], because practice differs between the US, the UK and India.
+output: The vignettes first, then the explanations and the practice-difference notes.
+tip: Note the practice differences separately. They're common traps for Indian graduates.
+try: USMLE Step 2 CK: management of chest pain in the emergency department.
+next: mcq-generator-master
+
+@@ S | question-formats | Practise match-the-following and assertion-reason formats
+aud: MBBS Student / UPSC CMS / university exam aspirant
+use: When your exam uses formats beyond the single best answer.
+persona: You are an examiner familiar with varied MCQ formats.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Formats in my exam: [match the following / assertion-reason / multiple true-false / sequence ordering]
+Topics: [list]
+task: 1. Explain the strategy for each format.
+2. Write 4 questions of each format.
+3. After my attempt, explain the answers and the common errors.
+rules: Keep the content accurate, and follow the standard assertion-reason answer structure, because misreading the format loses marks even with the right knowledge.
+output: The strategies, the questions, then the answers and errors. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: In assertion-reason questions, judge each statement's truth first, then whether the reason explains the assertion.
+try: Assertion-reason questions in pharmacology.
+next: tricky-wording
+
+@@ S | qbank-stats | Turn my question-bank statistics into a plan
+aud: NEET-PG / UPSC CMS aspirant
+use: When your question bank shows subject- and topic-wise accuracy.
+persona: You are a data-driven exam coach.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+My accuracy by subject and topic, and the number attempted: [PASTE STATS]
+Time left: [brief]
+task: 1. Identify the weakest subjects and topics, weighted by how many questions they produce.
+2. Distinguish low accuracy from too few questions attempted.
+3. Build a 2-week targeted plan.
+4. Set accuracy targets.
+rules: Base conclusions on topics with enough questions attempted, and flag small samples, because accuracy on 10 questions is noise.
+output: The weakness ranking, the sample-size flags, the plan, then the targets.
+tip: Topics with many questions and low accuracy are your biggest opportunity.
+try: 18 subjects, with accuracy ranging from 48% to 81%.
+next: weak-subject-rescue
+
+@@ S | pyq-high-yield-facts | High-yield facts from previous-year themes
+aud: NEET-PG / UPSC CMS aspirant
+use: After analysing previous-year questions, to build a revision list.
+persona: You are a revision-material specialist.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The recurring themes from my PYQ analysis: [PASTE]
+Exam: [brief]
+task: 1. For each theme, list the 5–10 facts most likely to be tested in a new form.
+2. Include the related facts around each theme.
+3. Format them as quick-revision bullets and flashcards.
+rules: Keep the facts accurate to standard sources and mark disputed ones [VERIFY], because revision lists are memorised verbatim.
+output: The facts by theme, then the flashcards. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Exams often reuse themes but change the angle. Learn the whole theme, not only the old question.
+try: Themes: drug of choice, eponymous signs, and vaccine schedules.
+next: flashcard-maker
+
+@@ S | clinical-vignette-reading | Read long clinical vignettes faster
+aud: NEET-PG / UPSC CMS / USMLE aspirant
+use: When long vignettes slow you down or you miss key details in them.
+persona: You are an exam-technique coach who trains efficient vignette reading.
+context: My problem with vignettes (slow, missing details, rereading): [brief]
+Exam: [brief]
+task: 1. Teach a reading method: read the last line (the actual question) first, then scan the stem for age, sex, setting, timeline, and key positives and negatives.
+2. Show how to annotate mentally: the demographic, the syndrome, the red flags and the test results.
+3. Demonstrate the method on 3 sample vignettes.
+4. Give 5 practice vignettes with a time target of 60–75 seconds each.
+rules: Keep the practice vignettes realistic and accurate, and mark guideline specifics [VERIFY], because reading technique must be practised on sound content.
+output: The method, the 3 demonstrations, then the practice set; after my attempt, the answers with the key clues highlighted.
+tip: Reading the question line first tells you what to look for in the stem. It saves time on every long question.
+try: Vignettes of 120–150 words in internal medicine.
+next: time-management-mcq
+
+@@ Q | one-mcq | One high-quality MCQ with explanation
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an MCQ writer for [EXAM]. Write one clinical-vignette MCQ on [TOPIC] with 4 plausible options, hide the answer until I respond, then explain the correct answer and why each distractor is wrong. Mark guideline-dependent facts [VERIFY]. Flag anything you are unsure of so I can check it.
+try: Topic: management of thyroid storm.
+
+@@ Q | explain-answer | Explain this answer simply
+aud: MBBS Student / NEET-PG aspirant
+body: Act as a tutor. Explain why the answer to this question, [PASTE QUESTION AND ANSWER], is correct, in under 120 words, naming the key concept and the clue in the stem, and flag it with [VERIFY] if the answer seems disputed.
+try: A question on the most common site of carcinoid tumours.
+
+@@ Q | key-clue | Find the key clue in the question
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an exam coach. In this question stem, [PASTE STEM], identify the 1–3 words or findings that point to the answer, explain what each clue suggests, and say which one alone would have been enough. Flag anything you are unsure of so I can check it.
+try: A vignette about a young man with back pain, morning stiffness and uveitis.
+
+@@ Q | similar-question | Make a similar question
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an MCQ writer. From this question, [PASTE QUESTION], write 2 new questions that test the same concept from a different angle (a different vignette, or asking for the mechanism instead of the diagnosis), hiding the answers until I respond.
+try: A question on the diagnosis of primary hyperaldosteronism.
+
+@@ Q | true-false-rapid | Ten rapid true/false statements
+aud: MBBS Student / NEET-PG aspirant
+body: Act as a quizmaster. Give me 10 true/false statements on [TOPIC] for [EXAM], mixing common misconceptions with key facts, one at a time. After each of my answers, correct me in one line. Flag anything you are unsure of so I can check it.
+try: Topic: hepatitis viruses.
+
+@@ Q | discriminating-feature | The one feature that separates them
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an exam tutor. For [CONDITION A] versus [CONDITION B], give the single most discriminating feature that MCQs use to separate them, then 3 more supporting differences, in a short table. Flag anything you are unsure of so I can check it.
+try: Crohn's disease versus ulcerative colitis.
+
+@@ Q | five-oneliners | Five one-liners from a topic
+aud: MBBS Student / NEET-PG aspirant
+body: Act as a revision expert. Give me the 5 most exam-relevant one-liner facts on [TOPIC] for [EXAM], each under 15 words and clearly phrased, marking any number or guideline-dependent fact [VERIFY]. Flag anything you are unsure of so I can check it.
+try: Topic: Wilson's disease.
+
+@@ Q | question-trap | What's the trap in this question?
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an MCQ writer who builds traps. Look at this question, [PASTE QUESTION], and explain the trap it sets (a tempting distractor, misleading wording or a common misconception) and how to avoid falling for it next time. Flag anything you are unsure of so I can check it.
+try: A question where the most common cause and the most likely cause in the vignette differ.
+
+@@ Q | first-principles-solve | Solve it from first principles
+aud: MBBS Student / NEET-PG aspirant
+body: Act as a physiology-minded tutor. I don't know the fact this question tests, [PASTE QUESTION]. Show me how to reason to the most likely answer from basic principles, step by step, and then tell me whether the reasoning reaches the right answer.
+try: A question on which electrolyte abnormality occurs in pyloric stenosis.
+
+@@ Q | fact-to-question | Turn a fact into a question
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an MCQ writer. Turn this fact, [FACT], into 3 exam questions: one direct recall, one clinical vignette and one "EXCEPT" format, each with 4 options, hiding the answers until I respond. Flag anything you are unsure of so I can check it.
+try: Fact: carbamazepine can cause SIADH.
+
+@@ Q | check-reasoning | Check my reasoning on a question
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an exam mentor. Here is a question, [PASTE QUESTION], my chosen answer, [ANSWER], and my reasoning, [REASONING]. Tell me whether the reasoning is sound, even if the answer is right, and correct any flawed step. Flag anything you are unsure of so I can check it.
+try: A question on the first-line investigation in suspected pulmonary embolism.
+
+@@ Q | most-likely-option | Which option is most likely?
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an exam coach. For this question, [PASTE QUESTION], I've narrowed it to options [X and Y]. Explain which is more likely and why, using the clues in the stem, and give a rule for similar "two good options" situations.
+try: The best initial test versus the gold-standard test, in a question on myasthenia gravis.
+
+@@ Q | except-approach | Solve an EXCEPT question safely
+aud: MBBS Student / NEET-PG aspirant
+body: Act as an exam-technique coach. Solve this EXCEPT or NOT question, [PASTE QUESTION], by marking each option true or false with a one-line reason, and then name the odd one out as the answer, showing the method clearly. Flag anything you are unsure of so I can check it.
+try: "All of the following cause a raised JVP EXCEPT…"
+
+@@ Q | numbers-to-remember | Numbers I must remember for this topic
+aud: MBBS Student / NEET-PG aspirant
+body: Act as a revision expert. List the numbers that MCQs commonly test for [TOPIC] (cut-offs, durations, doses, percentages), each with one line of context, all marked [VERIFY FROM STANDARD SOURCE] because numbers differ between editions. Flag anything you are unsure of so I can check it.
+try: Topic: diabetes mellitus diagnostic criteria and targets.
+
+@@ Q | formula-recall | Formula recall drill
+aud: MBBS Student / NEET-PG / UPSC CMS aspirant
+body: Act as a biostatistics quizmaster. Ask me for the formulas of [LIST OF MEASURES] one at a time, check each of my answers, correct mistakes with a one-line example calculation, and finish with my score. Flag anything you are unsure of so I can check it.
+try: Incidence, prevalence, sensitivity, specificity, PPV, NPV and NNT.
+
+@@ Q | last-minute-twenty | Twenty last-minute facts
+aud: NEET-PG / UPSC CMS aspirant
+body: Act as a revision expert. Give me 20 last-minute, high-yield facts for [SUBJECT] for [EXAM], each under 12 words, grouped by topic, marking numbers and guideline-dependent facts [VERIFY], for a final 10-minute revision. Flag anything you are unsure of so I can check it.
+try: Subject: pharmacology, the day before NEET-PG.

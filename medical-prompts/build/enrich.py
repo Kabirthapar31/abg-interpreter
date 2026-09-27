@@ -19,6 +19,8 @@ M_CONTEXT = [("My specialty and year: [e.g. final-year MBBS / MD Medicine, year 
              ("Audience and time available: [brief]", "audience"),
              ("What I most want to get out of this: [one line]", "most want")]
 M_TASK = "Finish with a short list of anything you were unsure about, so I can verify it before use."
+S_OUTPUT_ADD = " Keep it concise, and list anything you were unsure about at the end so I can check it."
+M_CONTEXT_EXTRA = ("Deadline or time I have for this: [brief]", "deadline")
 
 
 def patch_block(text, slug, key, new_value):
@@ -56,6 +58,12 @@ def enrich(vol):
                     added.append(line)
                     p["context"] = "\n".join(added + [ctx])
                 text = patch_block(text, p["slug"], "context", p["context"])
+                if p["tier"] == "S" and words(p) < lo and "unsure about" not in p["output"]:
+                    p["output"] = p["output"] + S_OUTPUT_ADD
+                    text = patch_block(text, p["slug"], "output", p["output"])
+                if p["tier"] == "M" and words(p) < lo and M_CONTEXT_EXTRA[1] not in p["context"].lower():
+                    p["context"] = M_CONTEXT_EXTRA[0] + "\n" + p["context"]
+                    text = patch_block(text, p["slug"], "context", p["context"])
                 if p["tier"] == "M" and words(p) < lo and "unsure about" not in p["task"]:
                     n = len(re.findall(r"^\d+\.", p["task"], re.M)) + 1
                     p["task"] = p["task"] + f"\n{n}. {M_TASK}"
