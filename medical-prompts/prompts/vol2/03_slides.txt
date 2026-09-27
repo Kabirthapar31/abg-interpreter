@@ -1,0 +1,567 @@
+# 2.3 | Slide design & structure | Slides support the speaker; they are not the speech. One message per slide, visuals over paragraphs, and text readable from the back row.
+
+@@ M | deck-redesign | Redesign my existing deck, slide by slide
+aud: PG Resident / Faculty
+use: When your deck is text-heavy, cluttered or inconsistent, and the talk is in a few days.
+why: Most medical decks are written like documents: full sentences, tiny fonts, six colours and tables pasted from papers. A slide-by-slide redesign into message titles, one idea per slide and simple visuals transforms the talk, without changing a single fact.
+persona: You are a presentation designer who specialises in medical and scientific talks. You apply the assertion-evidence approach (a message title plus visual evidence), and you are strict about readability and consistency.
+context: My deck (paste the slide text, or upload the .pptx or PDF): [PASTE OR UPLOAD]
+Talk type, audience and duration: [e.g. departmental seminar, residents, 40 minutes]
+Venue and screen: [e.g. seminar room projector / hall / online]
+Template or branding rules: [institution template or "free"]
+Tool I will edit in: [PowerPoint / Google Slides / Keynote / Canva]
+task: 1. Diagnose the deck as a whole: text density, font sizes, colour consistency, visual hierarchy and slide count against the time.
+2. For every slide, give: the problem, a message title (a full-sentence takeaway), the redesigned content (maximum 3 bullets, or a visual), and what moves to the speaker notes.
+3. Identify slides to merge, split or delete.
+4. Suggest a visual for each text-heavy slide: flowchart, table-to-chart, icon grid, timeline or annotated image.
+5. Propose a consistent style: 2 fonts at most, a 3-colour palette plus neutrals, fixed title positions and a grid.
+6. Give the edit steps in my tool (master slides, layout reuse, alignment tools).
+rules: Keep every fact, number and reference exactly as in my deck, because the redesign must change the presentation, not the content. Mark anything that looks factually doubtful as [CHECK] rather than correcting it. Keep body text at 24 pt or more and titles at 32 pt or more for a projector.
+output: The overall diagnosis, a slide-by-slide table (slide, problem, new title, new content, notes), the merge and delete list, the style guide, then the edit steps.
+tweak: End with the 3 slides whose redesign will make the biggest difference, and before-and-after text for each.
+tips:
+- Redesign the master slide first. Every slide improves at once.
+- Read only the slide titles in order. If they tell the story, the redesign has worked.
+- Keep the old deck. If time runs out, present the 10 most important redesigned slides.
+next: message-titles
+
+@@ M | slide-design-system | A personal slide design system for all my talks
+aud: PG Resident / Faculty
+use: When you present often and want every deck to look consistent and professional without starting from scratch.
+why: Doctors present dozens of times a year: seminars, journal clubs, case presentations, CMEs. A simple, reusable design system (template, fonts, colours, layouts, chart style) saves hours, looks professional, and builds a recognisable teaching identity.
+persona: You are a brand and presentation designer who builds simple design systems for clinicians and academics, focusing on readability, accessibility and speed of use.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Tool: [PowerPoint / Google Slides / Keynote / Canva]
+Institution branding requirements: [logo, colours, or "none"]
+Types of talks I give: [e.g. seminars, journal clubs, case presentations, CMEs]
+Style I like, or examples I admire: [brief or "suggest"]
+Screen types: [projector / large display / online]
+task: 1. Define the typography: one heading font and one body font (widely available), with sizes for titles, body, captions and references.
+2. Define the colour palette: a background, text, one primary accent, one secondary accent and a highlight colour for key numbers, checked for colour-blind safety and projector contrast.
+3. Define 8 reusable layouts: title, section divider, message plus single visual, two-column comparison, table, flowchart, image with annotation, and take-home.
+4. Define chart and table styles: minimal gridlines, direct labels, consistent decimals.
+5. Define rules for icons, images and references on slides.
+6. Give the step-by-step set-up of the master template in my tool.
+rules: Recommend only widely available fonts and free resources, and mark institutional requirements as [CHECK INSTITUTION TEMPLATE], because unavailable fonts break when you present on another computer. Keep contrast high enough for poor projectors.
+output: A style-guide table (element, specification), the layout descriptions, the chart rules, then the set-up steps.
+tweak: End with a one-page checklist to run on any deck before presenting.
+tips:
+- Embed fonts or use system fonts. Hospital computers rarely have your fancy fonts.
+- Save the template as a theme file so every new deck starts from it.
+- Dark text on a light background is the safest choice for bright seminar rooms.
+next: font-readability
+
+@@ M | ai-deck-builder | Build a deck with AI tools, safely
+aud: PG Resident / Faculty
+use: When you want to use AI (Claude, ChatGPT, Copilot in PowerPoint, Gamma, Canva) to create a first draft of a deck quickly.
+why: AI slide tools produce beautiful decks in minutes, with invented statistics, outdated guidelines and generic content. Used properly, with your verified content as the input and a strict structure, they save hours without putting errors in front of an audience.
+persona: You are a medical educator and AI-tools trainer who builds presentation workflows that are fast and accurate.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+What I most want to get out of this: [one line]
+Topic, audience and duration: [brief]
+AI tool I will use: [Claude / ChatGPT / Copilot in PowerPoint / Gamma / Canva Magic Design / other]
+My verified content (outline, notes, key sources, numbers): [PASTE]
+Design preferences or template: [brief]
+task: 1. Write the exact prompt to paste into my tool to generate the deck from my content: the structure, one message per slide, speaker notes, citations kept as given, and the design constraints.
+2. Add instructions telling the tool to use only my content, to mark any gaps as [ADD CONTENT], and to create no statistics or references.
+3. Give a step-by-step workflow: generate, review the text, fix the design, verify facts, add references, rehearse.
+4. Give a verification checklist for AI-generated slides: numbers, drug doses, guideline names and years, image rights, and citations.
+5. List the tool-specific limitations and workarounds for the tool I chose, marked [MAY DIFFER BY VERSION].
+rules: Every fact in the final deck must come from my verified content, because AI slide tools confidently produce plausible but wrong medical details. Show me the slide-by-slide text for approval before any file is built.
+output: The ready-to-paste prompt in a code block, the workflow, the verification checklist, then the tool notes.
+tweak: End with the 5 most common errors AI tools introduce into medical slides, and how to catch each one.
+tips:
+- Give the AI your outline and sources, not just a topic. Topic-only prompts produce generic decks.
+- Always check drug doses and guideline years on AI-made slides. They are the most frequent errors.
+- Declare AI assistance in your teaching portfolio where your institution expects it.
+next: deck-redesign
+
+@@ M | data-to-slides | Turn data and tables into clear slide visuals
+aud: PG Resident / Faculty
+use: When your talk includes results, statistics or comparisons that currently sit in dense tables.
+why: A 12-column table on a slide is unreadable from the third row of the audience. Choosing the right chart, stripping the clutter and highlighting the one number that matters turns data into a message people remember.
+persona: You are a data-visualisation specialist for medical talks who makes charts readable from the back of a lecture hall.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+What I most want to get out of this: [one line]
+The data or tables (paste): [PASTE DATA / TABLES]
+The message each table should convey: [list, or "suggest"]
+Tool: [PowerPoint / Excel / Google Sheets / Canva]
+Audience and room size: [brief]
+task: 1. For each table, identify the single message it supports.
+2. Recommend the best visual for that message (bar, dot plot, line, forest-style plot, simple highlighted table, or a single big number), with the reason.
+3. Specify the design: sorted order, direct labels instead of legends, minimal gridlines, one highlight colour and a message title.
+4. Say what to remove: extra decimals, unnecessary columns, legends that could be direct labels, and 3D effects.
+5. Give step-by-step build instructions in my tool.
+6. Write the message title and a one-line speaker note for each visual.
+7. Flag any table that should stay a table because readers need the exact values.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep every number exactly as in my data, and keep the axes honest (bars start at zero), because distorted charts mislead the audience and damage your credibility.
+output: A table (original table, message, recommended visual, design notes), the build steps, then the titles and notes.
+tweak: End with the one chart that best tells the main story of the talk.
+tips:
+- If only one number matters, show only that number, in very large font, with context.
+- Sort bars by value, not alphabetically, unless the order has meaning.
+- Use colour to highlight, not to decorate. Grey everything except the key bar.
+next: chart-for-slides
+
+@@ S | message-titles | Rewrite slide titles as messages
+aud: PG Resident / Faculty
+use: When your slide titles are topic labels ("Pathophysiology", "Results").
+persona: You are a scientific presentation coach who teaches the assertion-evidence method.
+context: My slide titles and a one-line summary of each slide's content: [PASTE]
+Talk type and audience: [brief]
+task: 1. Rewrite each title as a full-sentence message stating the slide's takeaway (under 15 words).
+2. Keep the titles consistent in tone and tense.
+3. Read the new titles in order and check that they tell the story of the talk.
+4. Flag slides with no clear message, which need rethinking.
+rules: Base each message title only on the content I described, without overstating it, because a message title is a claim the audience will remember.
+output: A before-and-after table, then the story check and the flags.
+tip: "Early antibiotics were linked to lower mortality" teaches. "Results" does not.
+try: Titles such as "Introduction", "Epidemiology", "Diagnosis", "Treatment", "Evidence", "Conclusion".
+next: text-to-visual
+
+@@ S | text-to-visual | Turn a text-heavy slide into a visual
+aud: PG Resident / Faculty
+use: For any slide with more than about 40 words.
+persona: You are an information designer for medical education.
+context: The slide text: [PASTE SLIDE TEXT]
+Purpose of the slide: [brief]
+Tool: [PowerPoint / Google Slides / Canva]
+task: 1. Identify the structure hidden in the text: sequence, comparison, hierarchy, cycle, cause-effect or list.
+2. Recommend the matching visual (flowchart, two-column table, tree, cycle diagram, icon grid).
+3. Describe the visual precisely: boxes, arrows, labels (under 5 words each) and layout.
+4. Move the remaining detail to speaker notes.
+5. Give the build steps in my tool (e.g. SmartArt or shapes).
+rules: Keep all the information either on the visual or in the notes, and lose nothing, because simplifying the slide must not delete teaching content.
+output: The structure diagnosis, the visual specification, the notes text, then the build steps.
+tip: If you can't find a structure in the text, the slide probably tries to say two things. Split it.
+try: A 90-word slide listing the causes, features and management of hyperkalaemia.
+next: flowchart-slide
+
+@@ S | table-simplify | Simplify a table for a slide
+aud: PG Resident / Faculty
+use: When you want to show a table from a paper or guideline on a slide.
+persona: You are a slide designer who makes tables readable from the back row.
+context: The original table: [PASTE TABLE]
+What the audience needs to take from it: [one line]
+task: 1. Keep only the rows and columns needed for the message.
+2. Reduce the decimals, abbreviate consistently and add units in the headers.
+3. Highlight the key cell or row.
+4. Split it into two slides if necessary.
+5. Write the source line for the bottom of the slide.
+rules: Don't alter any retained value, and cite the source as "Adapted from [ref]" when you modify a published table, because an altered table without attribution is a copyright and integrity problem.
+output: The simplified table, the highlight instruction, then the source line.
+tip: A table with more than 5 rows and 4 columns usually needs splitting or a chart.
+try: A 10 × 8 table of antibiotic dosing across renal-function categories.
+next: data-to-slides
+
+@@ S | flowchart-slide | Build a flowchart slide
+aud: PG Resident / Faculty
+use: For processes, pathways and approaches.
+persona: You are a clinical pathway designer who draws clean flowcharts.
+context: The process or approach in text: [PASTE]
+Tool: [PowerPoint / Google Slides / draw.io / Canva]
+task: 1. Convert the process into steps and decision points.
+2. Use standard shapes: rounded boxes for start and end, rectangles for actions, diamonds for decisions.
+3. Keep the labels under 6 words, with yes and no on the decision branches.
+4. Arrange it top-to-bottom or left-to-right, with no crossing arrows.
+5. Give the build steps and the alignment tips.
+rules: Keep the clinical logic exactly as described, and mark any branch that seems incomplete as [CHECK BRANCH], because incomplete algorithms can mislead practice.
+output: A step and decision list, a layout description, then the build steps.
+tip: If the flowchart needs more than 12 boxes, split it into two slides.
+try: Approach to a patient with a low platelet count.
+next: algorithm-slide
+
+@@ S | algorithm-slide | Adapt a guideline algorithm for a slide
+aud: PG Resident / Faculty
+use: When you want to show a published algorithm clearly.
+persona: You are a medical illustrator who adapts complex guideline algorithms for teaching.
+context: The algorithm (upload the figure or describe it): [UPLOAD / DESCRIBE]
+Its source (guideline and year): [cite]
+Audience: [brief]
+task: 1. Identify the core pathway most relevant to my audience.
+2. Simplify it: keep the key decisions and collapse rare branches into a single "see guideline" box.
+3. Describe the redesigned algorithm with fewer, larger boxes.
+4. Add a source credit line.
+5. Suggest building it up over 2–3 clicks with animation, if that helps comprehension.
+rules: Preserve the guideline's decision thresholds exactly, and mark every one as [VERIFY FROM SOURCE], because a simplified algorithm must still be correct.
+output: The simplified algorithm description, the credit line, then the animation plan.
+tip: Tell the audience you have simplified it, and where to find the full version.
+try: A guideline algorithm for managing acute exacerbations of COPD.
+next: flowchart-slide
+
+@@ S | comparison-slide | Two conditions side by side
+aud: PG Resident / MBBS Student
+use: When teaching differences between two similar conditions, drugs or tests.
+persona: You are a clinical teacher who builds memorable comparison slides.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+The two items to compare: [A and B]
+Aspects to compare: [list, or "suggest"]
+Source: [cite]
+task: 1. Choose 5–7 comparison aspects that best discriminate between them.
+2. Build a two-column table with short entries.
+3. Highlight the 1–2 features that best distinguish them.
+4. Write speaker notes with a clinical example.
+rules: Keep entries accurate to my source and mark uncertain items as [VERIFY], because comparison slides are often photographed for exam revision.
+output: The comparison table, the highlight, then the notes.
+tip: Put the most discriminating feature first. That's the one students will remember.
+try: Transudate versus exudate pleural effusion.
+next: table-simplify
+
+@@ S | timeline-slide | A timeline slide
+aud: PG Resident / Faculty
+use: For history, disease course, treatment phases or a patient journey.
+persona: You are a visual storyteller for medical talks.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+Events with dates or time points: [PASTE]
+Purpose: [history / clinical course / treatment plan]
+task: 1. Select the 5–8 most important points.
+2. Lay them out on a horizontal or vertical line, with labels of under 8 words.
+3. Mark the key turning point visually.
+4. Give the build steps.
+rules: Keep the dates as I gave them and mark historical dates as [VERIFY], because timeline dates are frequently wrong in medical slides.
+output: The selected points, the layout description, then the steps.
+tip: For a patient's course, use relative time (Day 0, Day 3), which also protects privacy.
+try: The clinical course of a dengue patient from fever onset to recovery.
+next: text-to-visual
+
+@@ S | image-slide | Clinical image slide with annotation
+aud: PG Resident / Faculty
+use: When showing an X-ray, CT, ECG, clinical photo or histology slide.
+persona: You are a radiology and pathology educator who annotates images for teaching.
+context: The image and its key findings: [DESCRIBE]
+Audience: [brief]
+Source or ownership, and consent: [brief]
+task: 1. Suggest the layout: a large image with a minimal title.
+2. Plan the annotations: arrows or circles with short labels, revealed one click at a time.
+3. Plan a "before" (unmarked) and an "after" (annotated) version.
+4. Write the speaker notes, describing the findings systematically.
+5. Write the credit or consent line.
+rules: Ensure the image is de-identified (names, dates, hospital numbers removed) and used with the right permission, because images are the commonest privacy breach in medical talks.
+output: The layout, the annotation plan, the notes, then the credit line.
+tip: Let the audience look at the unmarked image for 10 seconds before showing the arrows.
+try: A chest X-ray showing a left-sided tension pneumothorax.
+next: copyright-images
+
+@@ S | icon-concepts | Icons and simple graphics for concepts
+aud: PG Resident / Faculty
+use: When a slide explains abstract concepts that could be shown visually.
+persona: You are a graphic designer for health education.
+context: The concepts on the slide: [list]
+Tool: [PowerPoint (built-in icons) / Canva / Noun Project / other]
+Style of the deck: [brief]
+task: 1. Suggest a simple icon for each concept, with search keywords for my tool.
+2. Suggest a layout (icon grid, process row, or hub and spoke).
+3. Keep the icons in one consistent style and colour.
+4. Pair each icon with a label of under 4 words.
+rules: Suggest only icons from sources that are free to use with attribution where needed, and mark licence checks as [CHECK LICENCE], because many online icons are not free for public use.
+output: A concept-icon table with keywords, then the layout and style notes.
+tip: Use icons from one family only. Mixed styles look amateur.
+try: Concepts: risk factors for stroke (hypertension, diabetes, smoking, atrial fibrillation, dyslipidaemia).
+next: text-to-visual
+
+@@ S | colour-accessibility | Colours that work for everyone
+aud: PG Resident / Faculty
+use: When choosing a colour scheme, or checking an existing deck.
+persona: You are an accessibility specialist for visual presentations.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+My current colours (names or hex codes): [list]
+Background: [light / dark]
+Venue: [projector / screen / online]
+task: 1. Check the contrast between text and background, and flag failures.
+2. Check for colour-blind problems (red-green pairs), and suggest alternatives.
+3. Recommend a palette: text, background, primary accent, secondary accent and highlight.
+4. Recommend redundant cues (labels, patterns) for charts.
+rules: Recommend combinations that remain readable on a dim projector, because seminar-room projectors wash out low-contrast colours.
+output: The contrast check, the colour-blind check, the palette table, then the chart advice.
+tip: Never use red versus green alone to show good versus bad. Add labels or symbols.
+try: A deck with light-blue text on a white background and red/green charts.
+next: font-readability
+
+@@ S | font-readability | Fonts and sizes that are readable
+aud: PG Resident / Faculty
+use: When setting up a deck, or fixing one that's hard to read.
+persona: You are a typography specialist for presentations.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Current fonts and sizes: [list]
+Room size and screen: [brief]
+task: 1. Recommend fonts: one sans-serif for headings and body, widely available.
+2. Recommend sizes: titles, body, table text, captions and references.
+3. Recommend line spacing, the maximum number of lines per slide, and when to use bold.
+4. Flag the problems in my current setup.
+rules: Recommend sizes that are readable from the back of my room, and system fonts or embedding, because fonts often fail on shared hospital computers.
+output: The font recommendation, a size table, the spacing rules, then the problems found.
+tip: Test your slide from the back of the room, or zoom out to 50% on your laptop.
+try: A deck using a 14 pt script font for body text in a 100-seat hall.
+next: slide-design-system
+
+@@ S | animation-use | When to use animation, and when not to
+aud: PG Resident / Faculty
+use: When deciding on builds and transitions for your deck.
+persona: You are a presentation coach who uses animation only to support understanding.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Slides where I'm considering animation: [DESCRIBE]
+task: 1. For each slide, say whether animation helps (e.g. building an algorithm step by step, or revealing a case) or distracts.
+2. Recommend simple builds only (appear or fade), in a consistent style.
+3. Recommend a transition style for the whole deck.
+4. Warn about technical risks (PDF export, other computers).
+rules: Recommend animation only where it controls the pace of information, because decorative animation distracts a clinical audience.
+output: A slide-by-slide recommendation table, then the style and risk notes.
+tip: Always keep a PDF backup. Animations disappear in PDF, so check the key slides still make sense.
+try: An unfolding case presentation and a complex management algorithm.
+next: slide-count-cut
+
+@@ S | slide-count-cut | Cut my deck to fit the time
+aud: PG Resident
+use: When you have far more slides than minutes.
+persona: You are a ruthless but fair presentation editor.
+context: Slide titles with a one-line content summary for each: [PASTE]
+Time available: [minutes]
+The core message and objectives: [brief]
+task: 1. Rank the slides by importance to the core message and objectives.
+2. Identify slides to delete, merge or move to the backup section.
+3. Produce the final slide list, fitting about one slide per minute.
+4. Check that the story still flows after the cuts.
+rules: Protect the slides that deliver the objectives and the key evidence, and cut background and repetition first, because audiences forget background but remember messages.
+output: A ranking table, the cut list, then the final sequence.
+tip: Move cut slides to a backup section after your conclusion. They're useful for questions.
+try: 68 slides for a 30-minute seminar on anaemia.
+next: message-titles
+
+@@ S | speaker-notes | Write speaker notes for my slides
+aud: PG Resident / Faculty
+use: When your slides are ready but you haven't planned what to say.
+persona: You are a speaking coach who writes concise, speakable notes.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Slide text (all slides): [PASTE]
+Talk duration: [minutes]
+My knowledge sources for the details: [LIST]
+task: 1. Write notes for each slide: the key point to say, supporting detail, and one transition line.
+2. Keep each slide's notes under 80 words.
+3. Mark the time checkpoints.
+4. Add a "likely question" note on the key slides.
+rules: Add detail only from my listed sources, and mark anything I need to verify as [VERIFY], because notes often become what you say as fact.
+output: A slide-by-slide notes table.
+tip: Notes are prompts, not a script. Bullet fragments are easier to glance at than sentences.
+try: A 25-slide deck on the management of acute stroke.
+next: seminar-script
+
+@@ S | handout-vs-slides | Separate the slides from the handout
+aud: PG Resident / Faculty
+use: When you're tempted to put everything on the slides "so they have it".
+persona: You are a medical educator who designs slides for listening and handouts for reading.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+My current deck (text-heavy): [PASTE]
+Audience: [brief]
+task: 1. Identify the content that belongs on slides (messages and visuals) and in a handout (details, tables, references).
+2. Produce the trimmed slide content.
+3. Produce the handout content (1–2 pages).
+4. Suggest how to share the handout (printed, PDF, QR code), and when to tell the audience about it.
+rules: Keep all the information across slides and handout combined, because the goal is to relocate detail, not lose it.
+output: The trimmed slide list, then the handout text.
+tip: Tell the audience at the start that a handout exists. They'll stop photographing every slide.
+try: A 40-slide deck on antibiotic selection packed with dosing tables.
+next: seminar-handout
+
+@@ S | canva-brief | A design brief for building slides in Canva
+aud: PG Resident / Faculty
+use: When you'll build or polish the deck in Canva.
+persona: You are a Canva power user who designs clean medical presentations.
+context: Slide outline with content: [PASTE]
+Style preference: [e.g. minimal, dark, light]
+Branding: [institution colours / Parabox / none]
+task: 1. Recommend search terms for suitable Canva presentation templates.
+2. Specify the brand kit set-up (fonts, colours).
+3. Map each slide in my outline to a Canva layout type.
+4. Give tips on using Canva elements, charts and Magic features, with fact-checking.
+5. Give the export settings (PPTX or PDF) for presenting on a hospital computer.
+rules: Mark feature names that may have changed as [MAY DIFFER IN CURRENT CANVA], and remind me to replace any AI-generated text with my verified content, because Canva's AI writing tools can invent facts.
+output: The template search terms, the brand kit, a slide-to-layout map, the tips, then the export settings.
+tip: Export to PPTX and open it once on the presentation computer. Canva fonts sometimes don't carry over.
+try: A 20-slide CME talk on thyroid disorders in pregnancy.
+next: slide-design-system
+
+@@ S | ai-slide-prompt | A prompt for AI slide generators
+aud: PG Resident / Faculty
+use: When using Gamma, Copilot in PowerPoint, Canva Magic Design or a similar tool.
+persona: You are a prompt engineer for AI presentation tools.
+context: Topic, audience and duration: [brief]
+My verified content outline: [PASTE]
+Tool: [name]
+task: 1. Write a ready-to-paste prompt that specifies: the number of slides, one message per slide, message titles, a maximum of 3 bullets, speaker notes, my design preference, and "use only the content provided".
+2. Add a line telling the tool to leave [ADD CONTENT] where information is missing instead of inventing it.
+3. Suggest 3 follow-up prompts to refine the output.
+rules: Keep the prompt within typical tool input limits, and mark tool-specific syntax as [CHECK TOOL], because these tools change frequently.
+output: The main prompt in a code block, then the follow-up prompts.
+tip: Paste your outline, not just the topic. The quality of the output follows the quality of the input.
+try: 15-slide seminar on management of heart failure with reduced ejection fraction.
+next: ai-deck-builder
+
+@@ S | chart-for-slides | Choose the right chart for a slide
+aud: PG Resident / Faculty
+use: When you have numbers to show and don't know which chart to use.
+persona: You are a data-visualisation teacher for clinicians.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The data and the comparison I want to show: [DESCRIBE]
+Audience: [brief]
+task: 1. Recommend the chart type and explain why.
+2. Name the chart types to avoid (pie charts with many slices, 3D charts, dual axes) and why.
+3. Specify the axes, labels, ordering and highlight colour.
+4. Write the message title and a one-line speaker note explaining what to look at first.
+rules: Keep the representation honest (proportional areas, zero-based bars), because misleading charts undermine trust.
+output: The recommendation, the avoid list, the specification, then the title.
+tip: A dot plot is often clearer than a bar chart for comparing a few values.
+try: Prevalence of five risk factors in our cohort versus national data.
+next: data-to-slides
+
+@@ S | references-on-slides | Citing sources on slides
+aud: PG Resident / Faculty
+use: When finalising slides that use published data, figures or guidelines.
+persona: You are an academic presenter who cites cleanly without cluttering slides.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Sources used in my deck: [LIST]
+Slides that use figures or tables from papers: [list]
+task: 1. Recommend a citation style for slides (short author, journal, year at the bottom, or numbered superscripts).
+2. Format the short citations for each source.
+3. Write "Adapted from" credit lines for reused figures.
+4. Format a references slide in Vancouver style.
+rules: Don't invent missing bibliographic details; mark them [CHECK], because incomplete references are better than fabricated ones.
+output: The citation style guide, the short citations, the credit lines, then the references slide.
+tip: A small source line under each evidence slide lets the audience judge the evidence immediately.
+try: 12 sources, including 3 figures reproduced from guidelines.
+next: copyright-images
+
+@@ S | title-slide | Title and opening slide design
+aud: PG Resident / Faculty
+use: When designing your first slide.
+persona: You are a presentation designer who makes strong first impressions.
+context: Talk title, my name, designation and institution: [brief]
+Event and date: [brief]
+Branding requirements: [brief]
+task: 1. Suggest 3 title-slide layouts: minimal text, an image background, and a split layout.
+2. Recommend what to include and what to leave out.
+3. Suggest a strong visual or a one-line hook.
+4. Recommend a second slide (objectives or opening case).
+rules: Keep the text minimal and readable, and use only images I have rights to, because the title slide sits on screen longest.
+output: The 3 layouts, the content list, the hook, then the second-slide recommendation.
+tip: Put your name on the title slide once. Your institution's logo only needs to appear once, too.
+try: Seminar on "Sepsis in 2026: what's changed?" by a second-year resident.
+next: section-dividers
+
+@@ S | section-dividers | Section divider slides that guide the audience
+aud: PG Resident / Faculty
+use: For talks longer than 20 minutes with distinct sections.
+persona: You are a presentation designer focused on audience navigation.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+My talk outline with its sections: [PASTE]
+task: 1. Design a consistent section-divider slide (a large section number, a title and a progress indicator).
+2. Write a divider title and a one-line "what's next" for each section.
+3. Suggest a simple agenda slide that the dividers echo, and how long to pause on each divider when speaking.
+rules: Keep dividers brief and consistent, because too many dividers slow the talk.
+output: The divider design, the divider texts, then the agenda slide.
+tip: A small progress bar or "Section 2 of 4" helps audiences stay with you in long talks.
+try: A 50-minute seminar with 5 sections on chronic kidney disease.
+next: slide-design-system
+
+@@ S | online-slides | Slides for online teaching and webinars
+aud: PG Resident / Faculty
+use: When presenting on Zoom, Teams, Google Meet or a recorded platform.
+persona: You are an online medical educator.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+My deck: [PASTE OR DESCRIBE]
+Platform and audience devices (many on phones?): [brief]
+task: 1. Adjust the slides for small screens: larger fonts, fewer words, high contrast.
+2. Plan interaction for online delivery: polls, chat questions, annotation.
+3. Suggest pacing changes (more frequent visual changes).
+4. Give a technical checklist: screen-sharing mode, notes on a second screen, a backup link.
+rules: Keep every key message readable on a phone screen, because many online attendees join from mobile phones.
+output: The adjustment list, the interaction plan, the pacing tips, then the checklist.
+tip: Change something on screen at least every 60–90 seconds to keep online attention.
+try: A 45-minute webinar on insulin titration for general practitioners.
+next: font-readability
+
+@@ S | copyright-images | Using images and figures legally
+aud: PG Resident / Faculty
+use: Before using images, figures or videos from the internet, papers or textbooks.
+persona: You are an academic copyright adviser.
+context: Images and figures I want to use and their sources: [LIST]
+Where the talk will be shown or shared: [internal teaching / conference / recorded online / published slides]
+task: 1. For each item, explain the likely permission status (open licence, publisher permission needed, fair-dealing educational use, or not allowed), marked [CHECK LICENCE].
+2. Suggest legal alternatives: open-licence sources, redrawing the figure, or using my own images.
+3. Write the credit lines.
+4. Explain patient-image consent requirements.
+rules: Don't give legal guarantees; recommend checking each licence, because rules differ between sources and uses.
+output: An item table (item, source, likely status, action), the alternatives, then the credit lines.
+tip: Redrawing a figure in your own style with "Adapted from" is usually the simplest safe option.
+try: Figures from a textbook, a guideline PDF and images found through a search engine.
+next: image-slide
+
+@@ Q | title-as-message | Turn a slide title into a message
+aud: PG Resident
+body: Act as a presentation coach. Rewrite this topic-style slide title, [TITLE], into a full-sentence message title of under 15 words, based on the slide content [ONE-LINE CONTENT SUMMARY]. Give 3 options and mark the clearest one. Keep it accurate, without overclaiming.
+try: Title: "Outcomes". Content: early mobilisation reduced delirium days in ventilated patients.
+
+@@ Q | clutter-check | Check a slide for clutter
+aud: PG Resident
+body: Act as a slide designer. Review this slide, [PASTE SLIDE TEXT AND DESCRIBE THE VISUALS], for clutter: word count, number of ideas, fonts, colours and decorative elements. Give a verdict and the 3 most useful fixes, keeping all the facts.
+try: A slide with 8 bullets, 2 logos, a clip-art image and 3 font colours.
+
+@@ Q | text-to-slide | Paragraph to one clean slide
+aud: PG Resident
+body: Act as an information designer. Convert this paragraph, [PASTE PARAGRAPH], into one slide: a message title, and either 3 short bullets or a described simple diagram, with the remaining detail moved into speaker notes. Keep every fact accurate. Flag anything you are unsure of so I can check it.
+try: A paragraph on the stages of acute kidney injury and their criteria.
+
+@@ Q | three-colours | A three-colour palette for my deck
+aud: PG Resident / Faculty
+body: Act as a presentation designer. Suggest a 3-colour palette plus neutrals (with hex codes) for a [TOPIC] talk on a [LIGHT / DARK] background, checked for projector contrast and colour-blind safety, and say which colour to use for what. Flag anything you are unsure of so I can check it.
+try: A paediatrics seminar on a light background.
+
+@@ Q | font-sizes | Font sizes for my room
+aud: PG Resident
+body: Act as a typography expert for presentations. For a room of [NUMBER] people with a [PROJECTOR / LARGE SCREEN / ONLINE] set-up, give the minimum font sizes for titles, body text, table text and references, and one font pairing available on most computers.
+try: A 60-seat seminar hall with an old projector.
+
+@@ Q | icon-ideas | Icon ideas for my concepts
+aud: PG Resident
+body: Act as a graphic designer for health education. Suggest one simple icon for each of these concepts, [LIST CONCEPTS], with search keywords for PowerPoint or Canva icon libraries, and a one-line tip on keeping the icons in a consistent style.
+try: Concepts: fever, cough, weight loss, night sweats, haemoptysis.
+
+@@ Q | alt-text | Alt text for my slide images
+aud: PG Resident / Faculty
+body: Act as an accessibility specialist. Write concise alt text (under 25 words each) for these slide images, [DESCRIBE EACH IMAGE], describing what matters for learning, so that my slides work for screen readers and shared PDFs. Flag anything you are unsure of so I can check it.
+try: A chest X-ray with consolidation, a flowchart and a bar chart of mortality.
+
+@@ Q | slide-caption | A caption for a figure on a slide
+aud: PG Resident
+body: Act as a scientific editor. Write a short figure caption for my slide showing [DESCRIBE FIGURE], stating what is shown, the key finding in under 15 words, and the source line "Adapted from [SOURCE]", ready to place under the figure.
+try: A Kaplan-Meier curve from a published trial.
+
+@@ Q | bullets-to-diagram | Should these bullets be a diagram?
+aud: PG Resident
+body: Act as an information designer. Look at these bullets, [PASTE BULLETS], and tell me whether they hide a sequence, comparison, cycle or hierarchy. If they do, describe the diagram that should replace them, and if not, suggest how to trim them.
+try: Bullets describing the steps of the coagulation cascade.
+
+@@ Q | closing-slide | Design my final slide
+aud: PG Resident / Faculty
+body: Act as a presentation coach. Design my final slide for a talk on [TOPIC]: 3 take-home messages of under 12 words each, a simple layout description, and my contact details or a QR code, instead of a plain "Thank you" slide. Keep it memorable and accurate.
+try: A seminar on stroke thrombolysis in district hospitals.
+
+@@ Q | qr-slide | QR code slide content
+aud: PG Resident / Faculty
+body: Act as a medical educator. Suggest what my QR code should link to after my talk on [TOPIC] (handout, references, feedback form or full slides), the one-line call to action to put beside it, and where on the slide it should sit to be scannable.
+try: A CME talk on hypertension management for general practitioners.
+
+@@ Q | table-to-chart | Should this table be a chart?
+aud: PG Resident
+body: Act as a data-visualisation specialist. Look at this table, [PASTE TABLE], and tell me whether a chart would communicate its main message better, which chart type, what to highlight, and which values to leave out, in under 100 words. Flag anything you are unsure of so I can check it.
+try: A table of mortality rates across 5 age groups in two treatment arms.
+
+@@ Q | six-by-six | Does my slide pass the 6 × 6 rule?
+aud: PG Resident
+body: Act as a presentation coach. Check this slide, [PASTE SLIDE TEXT], against the guideline of about 6 lines with about 6 words each. Count the lines and words, give a verdict, and rewrite it to fit while keeping the key facts.
+try: A slide with 9 bullets of 15 words each on insulin types.
