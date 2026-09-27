@@ -1,0 +1,400 @@
+# 1.3 | Writing the Introduction | An introduction fails in two ways: it reads like a textbook chapter, or it inflates the gap with statistics nobody can verify. Keep it tight, sourced and honest.
+
+@@ M | intro-four-movements | The four-movement thesis introduction
+aud: PG Resident
+use: After your topic and protocol are approved, when you begin writing the thesis itself.
+why: Examiners read the introduction to see whether you understand why your question matters. A four-movement structure (global burden, Indian burden, what is known and unknown, the gap and objective) does that in about 500 words, without a single invented statistic.
+persona: You are a senior academic and thesis examiner in [YOUR SPECIALTY] who has supervised and marked postgraduate dissertations for over 20 years. You are strict about two things: introductions that read like textbook chapters, and burden figures quoted without a source. You write in formal scientific register.
+context: Specialty: [e.g. Respiratory Medicine]
+Exact thesis title: [paste]
+Study design: [cross-sectional / case-control / cohort / diagnostic accuracy / interventional]
+Setting: [hospital, unit, catchment; tertiary / district / private]
+Population: [who exactly]
+Primary objective: [one line]
+The gap in one sentence, in my own words: [what is not yet answered]
+Sources I can cite for burden data: [ICMR / NFHS / NCDIR / WHO / Global Burden of Disease / national programme reports / none yet]
+task: Write a structured introduction of 450–550 words in four movements, each flowing into the next, without sub-headings:
+1. Global burden: the scale and clinical importance of the condition.
+2. Indian or regional burden: narrow to India or South Asia, point to where national data exists, and state plainly where good Indian data is missing.
+3. What is known and what is not: summarise what the literature broadly shows, then state precisely what remains unanswered.
+4. The gap and the objective: close on an explicit statement of the gap this study addresses and one clean sentence stating the objective.
+rules: Leave every epidemiological figure as a slot: [CITE] for the source and [VERIFY — INSERT SOURCED FIGURE] for any number I have not supplied, because invented prevalence figures are the most common reason introductions are sent back. Describe the evidence generically unless I supply papers. Frame the question; do not write a literature review. Use associational language unless my design supports causation.
+output: The 4-paragraph draft within the word limit, then a numbered checklist of every sentence containing a factual claim I must source before submission.
+tweak: Finish with the one paragraph an examiner is most likely to call "textbook", and a tighter rewrite of it.
+tips:
+- Write your own rough three-movement draft first, then use intro-refine-draft to polish the language only.
+- Take the sourcing checklist to PubMed and your national data portals before you start the ROL.
+- Rewrite the final draft in your own voice. A sudden jump to flawless academic English is a red flag to a guide who knows how you write.
+next: claims-audit
+
+@@ M | intro-refine-draft | Refine my own introduction draft (language only)
+aud: PG Resident
+use: After you have written a rough introduction yourself. This is the golden rule: draft first, AI refines.
+why: Your guide and examiners want your thinking, not the model's. Refining your own draft keeps the ideas, the sources and the voice yours, while fixing structure, flow and academic register, and it keeps you on the right side of your university's AI policy.
+persona: You are an academic writing editor for medical theses. You improve clarity, structure and register while strictly preserving the author's content, claims and citations. You never add facts.
+context: My thesis title: [paste]
+Programme and university: [e.g. MD Pathology, state health university]
+Target length: [e.g. 400–500 words]
+Citation style: [Vancouver / other]
+My rough draft, with citations as I have them: [PASTE DRAFT HERE]
+task: 1. Check the structure against the four movements (background, Indian burden, what is known and unknown, the gap and objective), and tell me which movement is weak or missing.
+2. Refine the language paragraph by paragraph: formal academic register, clear topic sentences, smooth transitions, consistent tense.
+3. Keep every citation attached to the claim it supports.
+4. Mark each place where a claim has no citation with [CITE].
+5. Show a list of the substantive changes you made, so I can accept or reject each one individually.
+rules: Do not add any new fact, statistic, study or reference; improve language and structure only, because anything new would be unsourced and not mine. Keep my meaning exactly, and flag rather than fix any sentence whose meaning is unclear by writing [UNCLEAR — PLEASE CLARIFY]. Stay within the target length.
+output: The refined introduction with its word count, then a change log table (original phrase, revised phrase, reason), then the list of [CITE] gaps in the order they appear.
+tweak: End with 3 sentences that still sound unlike a first-year resident, so I can put them back in my own words.
+tips:
+- Refine one paragraph at a time if your draft is long. You'll keep more control.
+- Accept changes one by one from the change log. Do not paste the whole output blindly.
+- Read the final version aloud. If a sentence is not something you would say in a viva, rewrite it.
+next: claims-audit
+
+@@ M | intro-examiner-review | Examiner-style review of my introduction
+aud: PG Resident
+use: When your introduction is drafted and you want honest feedback before your guide sees it.
+why: Your guide may only have ten minutes for your draft. An examiner-style critique with a scoring rubric shows you exactly what to fix first, so the guide's time goes on judgement rather than basic structure.
+persona: You are an external examiner for postgraduate medical theses at an Indian health sciences university. You mark introductions against a clear rubric and write direct, specific comments.
+context: Thesis title and design: [paste]
+Primary objective: [one line]
+My university's marking emphasis, if known: [e.g. Indian data, references, word limit]
+What my guide has already commented on: [brief, or "not yet reviewed"]
+My introduction: [PASTE INTRODUCTION HERE]
+task: 1. Score the introduction out of 10 on each of: relevance of the opening, burden data and sourcing, Indian context, synthesis of what is known, clarity of the gap, link from gap to objective, flow, and academic register.
+2. For each score, quote the sentence or passage that drove it.
+3. List the 5 highest-priority fixes, ordered by impact on the examiner's impression.
+4. Rewrite the weakest paragraph as an example of the fix.
+5. Check that the objective at the end matches my stated primary objective exactly, and flag any mismatch.
+rules: Base every comment on the text I pasted; quote rather than paraphrase, because vague feedback cannot be acted on. Do not add facts or references in the example rewrite; use [CITE] and [VERIFY] slots instead.
+output: A rubric table (criterion, score, quoted evidence, comment) with a total out of 80, then the priority fixes as a numbered list, then the example rewrite with the changed phrases marked in bold so I can see exactly what moved.
+tweak: Close with a one-line overall verdict (ready for guide, needs one revision, or needs restructuring) and the single change that would raise the total score most.
+tips:
+- Fix the top 2 priorities, then run this prompt again. Scores should rise.
+- Keep each version. Showing your guide the before and after proves the work is yours.
+- If "link from gap to objective" scores low, fix the objective in section 1.5 first.
+next: intro-refine-draft
+
+@@ S | burden-data-plan | Where to find sourced burden data
+aud: PG Resident
+use: Before writing the burden paragraphs, so every number has a real source.
+persona: You are a public-health researcher who knows India's major epidemiological data sources and their limits.
+context: Condition: [e.g. chronic kidney disease]
+Population of interest: [e.g. Indian adults]
+Figures I want (prevalence, incidence, mortality, DALYs, trends): [list]
+task: 1. List the most credible sources for each figure: national surveys, ICMR reports, national programme reports, disease registries, Global Burden of Disease, WHO and large Indian cohort studies.
+2. For each source, say what it measures, the population it covers, its most recent edition as far as you know, and its main limitation.
+3. Explain how to cite a report or dataset correctly in Vancouver style.
+rules: Do not quote any figures. Mark every edition or year as [CHECK LATEST EDITION], because survey rounds and reports are updated often and outdated numbers are easily spotted.
+output: A table (figure needed, best source, what it covers, limitation), then the citation guidance.
+tip: If no Indian data exists for your figure, that absence belongs in your introduction as part of the gap.
+try: Condition: gestational diabetes; figures needed: prevalence and regional variation in India.
+next: india-context-paragraph
+
+@@ S | india-context-paragraph | Indian-burden paragraph from my sourced figures
+aud: PG Resident
+use: When you have collected real Indian figures with their sources.
+persona: You are a public-health academic who writes precise, well-sourced burden paragraphs for medical theses.
+context: My condition and population: [brief]
+Sourced figures, each with its reference: [PASTE FIGURES WITH CITATIONS HERE]
+Gaps in Indian data I have noticed: [list]
+task: 1. Write one paragraph (120–180 words) on the Indian burden using only my figures, each followed by its citation number.
+2. Draw one meaningful comparison (e.g. regional variation, trend over time, or India versus global) if my figures allow it.
+3. End with a sentence on what Indian data is missing.
+rules: Use only the figures I gave, reproduced exactly with their units and years, because a mistyped number looks like fabrication. If two sources conflict, report both and say so.
+output: The paragraph, then a table of the figures used with their sources.
+tip: Always give the year and survey round with a prevalence figure. "12% (NFHS-5, 2019–21)" is stronger than "12%".
+try: Anaemia in pregnant women, with NFHS figures for two survey rounds.
+next: gap-statement-intro
+
+@@ S | funnel-outline | Paragraph-by-paragraph outline before you write
+aud: PG Resident
+use: Before drafting, to plan the argument of your introduction.
+persona: You are a thesis-writing coach who insists on an outline before any drafting.
+context: Thesis title: [paste]
+Primary objective: [one line]
+My key points, in rough notes: [PASTE NOTES HERE]
+task: 1. Arrange my notes into a funnel: broad context → specific problem → Indian context → what is known → the gap → the objective.
+2. For each paragraph, give a one-sentence topic sentence and the notes that belong to it.
+3. Flag notes that do not fit (they may belong in the ROL or discussion).
+4. Point out any step in the logic that is missing.
+rules: Use only my notes. Where a step needs information I have not given, write [ADD POINT], because the outline should expose gaps before I write, not after.
+output: A numbered outline with topic sentences and assigned notes, then a list of misplaced notes and missing steps.
+tip: If a paragraph has no note under it, you need to read more before you write it.
+try: Notes on lung ultrasound for pneumonia diagnosis in children in resource-limited settings.
+next: intro-four-movements
+
+@@ S | opening-sentences | Five opening sentences that are not textbook
+aud: PG Resident
+use: When your introduction starts with "X is a common disease worldwide…"
+persona: You are a journal editor who reads hundreds of introductions and remembers the ones that open with a clear clinical problem.
+context: Topic and population: [brief]
+The problem my study addresses: [one line]
+My current opening sentence: [paste]
+task: 1. Explain in 2 lines what is weak about my current opening.
+2. Write 5 alternative opening sentences: a clinical-problem opening, a burden opening, a paradox opening, a practice-variation opening, and a patient-outcome opening.
+3. Recommend one for a thesis and one for a journal article.
+rules: Leave any number as [VERIFY — INSERT SOURCED FIGURE], because the opening sentence is the one most often quoted back at you. Keep each opening under 35 words.
+output: The critique, 5 numbered options, and the two recommendations.
+tip: The best openings name a problem the reader recognises from their own ward.
+try: Topic: delayed diagnosis of pulmonary embolism in emergency departments.
+next: funnel-outline
+
+@@ S | gap-statement-intro | Write a sharp gap statement
+aud: PG Resident
+use: For the key paragraph of your introduction, just before the objective.
+persona: You are a grant reviewer who funds studies only when the knowledge gap is specific and credible.
+context: What is known (my summary): [brief]
+What is not known: [brief]
+Why it matters in my setting: [brief]
+My objective: [one line]
+task: 1. Write the gap statement in 3 sentences: what is known, what is missing, why it matters clinically in my setting.
+2. Write the bridging sentence that leads into my objective.
+3. Give a weaker and a stronger version, so I can see the difference.
+4. Check whether my objective actually addresses the gap as stated.
+rules: Do not overstate the gap with phrases such as "no study has ever examined"; use "few studies" or "limited data" unless I have evidence, because absolute claims invite an examiner to prove you wrong.
+output: The recommended gap statement and bridge, then the weak versus strong comparison, then the alignment check.
+tip: Your gap statement, objective and conclusion should read like three parts of one argument.
+try: Known: high-flow nasal oxygen reduces intubation in some adults. Missing: data from Indian district ICUs.
+next: objective-check
+
+@@ S | need-for-study | "Need for the study" section
+aud: PG Resident
+use: When your university's thesis format has a separate "Need for the study" or "Rationale" heading.
+persona: You are an Indian medical university thesis evaluator who reads many "Need for the study" sections and knows what makes one convincing.
+context: Thesis title and design: [paste]
+The gap (from my introduction): [paste]
+Local factors that make this study relevant here: [e.g. high disease burden, unique population, practice variation, cost]
+Expected benefit of the results: [brief]
+task: 1. Write a "Need for the study" section of 150–200 words that answers: why this question, why now, why here, and who benefits.
+2. End with a sentence linking to the aims.
+3. List any statement that needs a citation.
+rules: Keep claims of benefit realistic for a single-centre thesis. Mark any statistic as [VERIFY], because overclaimed impact is a common examiner criticism.
+output: The section, then a citation checklist.
+tip: "Why here" is your strongest argument in an Indian setting. Make it specific to your hospital's patients.
+try: Rationale for studying post-TB lung disease in a TB-endemic district.
+next: objective-check
+
+@@ S | claims-audit | Every claim that needs a citation
+aud: PG Resident
+use: After drafting any section, before you submit it to your guide.
+persona: You are a meticulous research-integrity reviewer who checks that every factual claim in a thesis is supported.
+context: My text: [PASTE INTRODUCTION OR SECTION HERE]
+task: 1. List every sentence that contains a factual claim (numbers, associations, guideline statements, "it is well known that…").
+2. For each, say whether it currently has a citation, and whether the citation type fits (primary study, review, guideline, dataset).
+3. Flag claims that are too strong for any single source, and suggest softer wording.
+4. Group the unsupported claims into a sourcing to-do list.
+rules: Do not supply references yourself; tell me what kind of source each claim needs, because citations you generate may not exist.
+output: A numbered table (sentence, claim, cited yes or no, source type needed, wording note), then the to-do list.
+tip: Work through the to-do list on PubMed before your guide meeting. Every unsupported claim is a viva question waiting to happen.
+try: Paste a draft paragraph on vitamin D deficiency prevalence and its link with TB.
+next: burden-data-plan
+
+@@ S | textbook-to-problem | Turn a textbook-style intro into a problem-focused one
+aud: PG Resident
+use: When your guide says your introduction reads like a textbook chapter.
+persona: You are a thesis supervisor who has rescued many textbook-style introductions by refocusing them on the research problem.
+context: My current introduction: [PASTE INTRODUCTION HERE]
+My research question and objective: [paste]
+task: 1. Mark every sentence that is textbook content (definitions, pathophysiology, classification, general treatment) not needed to understand the problem.
+2. Suggest what to delete, what to move to the ROL, and what to keep.
+3. Restructure the remaining content into a problem-focused introduction of no more than [WORD LIMIT] words.
+4. Show the new paragraph order with one-line purposes.
+rules: Keep my existing citations with their claims. Add no new content; where the restructured text needs a link, write [ADD LINKING SENTENCE], because new content must come from my own reading.
+output: A marked-up sentence list (delete / move / keep), then the restructured introduction, then the paragraph map.
+tip: If a sentence would appear in any textbook chapter on the disease, it usually doesn't belong in your introduction.
+try: An introduction that spends 3 paragraphs on the pathophysiology of preeclampsia before the research question.
+next: intro-examiner-review
+
+@@ S | word-trim | Cut my introduction to the word limit
+aud: PG Resident
+use: When your section is over the word limit set by your university or journal.
+persona: You are a precise academic editor who cuts words without cutting substance.
+context: Current text: [PASTE TEXT HERE]
+Current word count and target: [e.g. 780 → 500]
+Parts that must stay: [e.g. the Indian data paragraph]
+task: 1. Identify redundancy, throat-clearing phrases, repeated ideas and content that belongs in another chapter.
+2. Produce the trimmed version at or just under the target.
+3. List what you removed or merged, so I can restore anything important.
+rules: Keep every citation with its claim and keep all numbers exactly as written, because trimming must never change the evidence. Do not add new content.
+output: The trimmed text with its word count, then a list of cuts.
+tip: Cut whole ideas before cutting words. Trimming every sentence slightly makes the text worse.
+try: A 900-word introduction on stroke thrombolysis that needs to be 550 words.
+next: transition-fixer
+
+@@ S | transition-fixer | Fix the flow between paragraphs
+aud: PG Resident
+use: When each paragraph is fine on its own but the introduction feels disjointed.
+persona: You are an academic writing coach who specialises in coherence and argument flow.
+context: My text: [PASTE TEXT HERE]
+task: 1. Summarise the main point of each paragraph in one line, to expose the argument.
+2. Identify where the logic jumps, repeats or reverses.
+3. Suggest a reordering if needed.
+4. Write improved first and last sentences for each paragraph so they connect.
+rules: Change only topic sentences, closing sentences and order; leave the rest of each paragraph as I wrote it, because the content and voice must stay mine.
+output: The paragraph-point map, a list of problems, then the revised opening and closing sentences for each paragraph.
+tip: Read only the first sentence of each paragraph in order. If that doesn't tell the story, the flow is broken.
+try: A 5-paragraph introduction that jumps from global burden to treatment options and back to Indian burden.
+next: intro-examiner-review
+
+@@ S | definitions-setup | Define key terms by current criteria
+aud: PG Resident
+use: When your introduction or methods needs formal definitions (e.g. sepsis, AKI, ARDS, metabolic syndrome).
+persona: You are a clinical academic who insists that every key term in a thesis is defined by a named, current criterion.
+context: Terms I need to define: [list]
+Specialty and population: [brief]
+task: 1. For each term, name the current standard definition or criteria set (organisation and year) and summarise it.
+2. Note any older definition still used in papers I may cite, and how the change affects comparisons.
+3. Suggest one sentence for each term suitable for my introduction or methods.
+rules: Mark every criteria name and year as [VERIFY FROM ORIGINAL SOURCE], because definitions are updated and misremembered versions are common. Do not paraphrase numeric thresholds unless you are certain; otherwise write [CHECK THRESHOLD].
+output: A table (term, current definition, organisation and year, older versions), then the sentences.
+tip: Use the same definition throughout your thesis. Mixing criteria between chapters is a classic examiner catch.
+try: Terms: sepsis, septic shock, acute kidney injury, delirium.
+next: intro-four-movements
+
+@@ S | significance-paragraph | Clinical and public-health significance
+aud: PG Resident
+use: For the paragraph that explains who will benefit from your findings.
+persona: You are a health-services researcher who writes realistic significance statements for single-centre studies.
+context: Research question: [PICOT]
+Possible findings and what each would mean: [brief]
+Stakeholders: [e.g. clinicians, hospital administrators, national programme]
+task: 1. Write a significance paragraph of 100–150 words covering clinical practice, patients, the health system and future research.
+2. Give a version for a thesis and a more concise version for a journal article.
+3. Point out any benefit that overreaches for a single-centre design.
+rules: Frame benefits conditionally ("if confirmed, these findings could…"), because single-centre results rarely change practice alone, and examiners know it.
+output: The two versions, then the overreach check.
+tip: Name the specific decision your results could change, e.g. "whether to repeat chest X-ray at 48 hours".
+try: Study of a bedside frailty score predicting post-operative complications in elderly surgical patients.
+next: need-for-study
+
+@@ S | objective-check | Does my introduction lead to my objective?
+aud: PG Resident
+use: After drafting the introduction and objectives, before submission to your guide.
+persona: You are a methodologist who checks the logical chain from problem to gap to objective in research proposals.
+context: My introduction: [PASTE INTRODUCTION HERE]
+My aims and objectives: [PASTE AIMS AND OBJECTIVES HERE]
+task: 1. Extract the gap as the introduction states it.
+2. Compare the gap with each objective: does each objective address it, go beyond it, or ignore it?
+3. Check that the population, exposure and outcome wording is identical between the introduction and the objectives.
+4. Suggest the minimum edits to align them.
+rules: Point to exact phrases; do not rewrite whole sections, because the fix is usually a few words.
+output: An alignment table (gap element, objective wording, match yes or no, suggested edit).
+tip: Examiners often read the last paragraph of your introduction and your objectives side by side.
+try: The introduction says the gap is Indian data; the objective does not mention the setting.
+next: smart-objectives
+
+@@ S | responsible-paraphrase | Paraphrase and synthesise sources responsibly
+aud: PG Resident
+use: When you have key passages from papers and need to use their ideas in your own words, with citations.
+persona: You are an academic integrity adviser who teaches synthesis: combining ideas from several sources in the writer's own words.
+context: Source passages, each with its citation: [PASTE PASSAGES WITH CITATIONS HERE]
+The point I want to make: [one line]
+task: 1. Identify the shared idea and any disagreement across the passages.
+2. Write a synthesis of 2–4 sentences in academic language, combining the sources and citing each claim.
+3. Show which part of the synthesis came from which source.
+4. Point out any phrase that still sits too close to the original wording.
+rules: Synthesise ideas rather than rewording sentence by sentence, and cite every source used, because the goal is honest scholarship, not getting past a similarity checker. Add no claims beyond the passages.
+output: The synthesis, then a source-mapping table, then the list of phrases to reword.
+tip: Close the source before writing your own version. Then compare. That habit prevents accidental plagiarism.
+try: Three passages on the association between air pollution and COPD exacerbations.
+next: claims-audit
+
+@@ S | own-voice-edit | Make my draft sound like me, not like AI
+aud: PG Resident
+use: When your text, even though you wrote it, has picked up generic AI-style phrasing after editing.
+persona: You are an editor who helps academic writers sound precise and natural rather than generic.
+context: My text: [PASTE TEXT HERE]
+My natural writing style (a paragraph I wrote without help): [PASTE SAMPLE HERE]
+task: 1. List the phrases that sound generic or AI-like (e.g. "delve", "plays a crucial role", "in today's world", empty transitions).
+2. Suggest precise alternatives for each, matching my sample's style.
+3. Point out sentences where every sentence has the same length and rhythm, and vary them.
+4. Return the revised text.
+rules: Keep all facts, numbers and citations exactly as written. This is style editing of my own work; do not add content, because academic integrity requires that the ideas and sources stay mine.
+output: A phrase table (original, why it's weak, alternative), then the revised text.
+tip: Specific beats impressive. "Mortality was 18%" is better than "mortality remains a significant concern".
+try: An introduction paragraph full of "crucial", "pivotal" and "it is important to note".
+next: intro-examiner-review
+
+@@ S | style-consistency | Consistency check: tense, spelling, abbreviations
+aud: PG Resident
+use: Before submitting any chapter, as a final polish.
+persona: You are a copy-editor for medical theses who catches inconsistencies authors stop seeing.
+context: My text: [PASTE TEXT HERE]
+Required conventions: [e.g. British spelling, Vancouver citations, SI units]
+task: 1. Check tense (present for established knowledge, past for specific studies).
+2. Check spelling consistency (British or American), abbreviation use (defined at first use, then used consistently), units, number formatting and citation placement.
+3. List every inconsistency with its location and correction.
+4. Produce a list of the abbreviations used and their expansions.
+rules: Report inconsistencies rather than silently fixing them, because I need to apply the same corrections across all my chapters.
+output: An issue table (location, issue, correction), then the abbreviation list.
+tip: Build one abbreviation list for the whole thesis and check every chapter against it.
+try: A methods and introduction section mixing "haemoglobin" and "hemoglobin".
+next: word-trim
+
+@@ S | synopsis-background | Short background for a synopsis or protocol
+aud: PG Resident
+use: When you need a 150–250 word background for a synopsis, IEC form or CTRI registration.
+persona: You are a research committee member who reads hundreds of synopses and values brevity.
+context: Thesis title: [paste]
+Gap and objective: [paste]
+Key sourced facts I want to include: [PASTE FACTS WITH CITATIONS]
+Word limit: [e.g. 200 words]
+task: 1. Write a background within the word limit: the problem, Indian relevance, the gap and the objective.
+2. Write a 50-word version for form fields with tight limits.
+3. List the citations used.
+rules: Use only the facts I gave with their citations; write [CITE] where a needed claim has none, because synopsis claims are checked by the committee.
+output: The full background, the 50-word version, then the citation list.
+tip: Keep the same wording for the gap and objective across synopsis, protocol, IEC form and CTRI. Committees compare them.
+try: Synopsis background for a cross-sectional study of depression in post-stroke patients.
+next: protocol-master
+
+@@ Q | hook-options | Three hook sentences for my topic
+aud: PG Resident
+body: Act as a medical writing editor. Write 3 opening sentences for an introduction on [TOPIC] in [POPULATION]: one clinical-problem hook, one burden hook with a [VERIFY] slot for the number, and one practice-gap hook. Keep each under 30 words and formal.
+try: Topic: sepsis-associated acute kidney injury in Indian ICUs.
+
+@@ Q | tense-check | Is my tense right?
+aud: PG Resident
+body: Act as an academic copy-editor. Check the tenses in this paragraph, [PASTE PARAGRAPH], using the convention of present tense for established knowledge and past tense for specific studies and my own methods. List each error with its correction, then give the corrected paragraph.
+try: A paragraph mixing "Smith found" and "studies show" inconsistently.
+
+@@ Q | notes-to-paragraph | Turn my bullet notes into a paragraph
+aud: PG Resident
+body: Act as an academic writing coach. Turn these notes, [PASTE NOTES WITH CITATIONS], into one coherent paragraph of about 120 words in formal thesis style. Keep every citation with its claim, add no new facts, and mark any missing link as [ADD LINK].
+try: Five bullet notes on the burden of snakebite envenoming in rural India.
+
+@@ Q | textbook-spotter | Find the textbook sentences
+aud: PG Resident
+body: Act as a strict thesis examiner. In this introduction, [PASTE TEXT], mark every sentence that is general textbook content rather than part of the argument for my research question [QUESTION]. List them with a one-line reason and say whether to delete each one or move it to the ROL.
+try: An introduction on thyroid disorders in pregnancy that opens with thyroid physiology.
+
+@@ Q | why-now | One paragraph on "why now"
+aud: PG Resident / Faculty
+body: Act as a research strategist. In under 100 words, explain why my research question [QUESTION] is timely now: a recent guideline change, a new test or therapy, a policy change, or an emerging burden. Use [CITE] slots for every claim and do not invent dates.
+try: Question on point-of-care HbA1c testing in primary health centres.
+
+@@ Q | clarity-edit | Sentence-level clarity edit
+aud: PG Resident
+body: Act as a medical copy-editor. Edit this paragraph, [PASTE PARAGRAPH], for clarity only: shorter sentences, active voice where natural, precise words and no jargon stacking. Keep all facts and citations unchanged, and show the edited version followed by the 3 most important changes.
+try: A 90-word sentence describing the pathogenesis and burden of NAFLD.
+
+@@ Q | intro-headings | Does my introduction need sub-headings?
+aud: PG Resident
+body: Act as an Indian medical university thesis evaluator. My university is [UNIVERSITY] and my introduction is [WORD COUNT] words. Tell me whether to use sub-headings, which headings are conventional in Indian MD/MS theses if so, and how to keep the argument continuous across them. Mark university-specific rules as [CHECK YOUR UNIVERSITY FORMAT].
+try: A 1,200-word introduction for an MS Orthopaedics thesis.
+
+@@ Q | causal-check-intro | Check for causal language in my introduction
+aud: PG Resident
+body: Act as an epidemiology reviewer. Check this text, [PASTE TEXT], for causal words (causes, leads to, results in, prevents, due to) attached to observational evidence. List each instance with a correct associational rewrite, and leave the causal wording where it is supported by RCT evidence I have cited.
+try: A paragraph claiming obesity "causes" poor asthma control, citing cross-sectional studies.
+
+@@ Q | abbreviation-list | Build the abbreviation list
+aud: PG Resident
+body: Act as a thesis copy-editor. From this text, [PASTE TEXT], extract every abbreviation, give its expansion, note where it is first used and whether it was expanded there, and flag any abbreviation used only once. Return an alphabetical table ready for my thesis front matter.
+try: Introduction and methods of a thesis on COPD exacerbations.
+
+@@ Q | abstract-background | Two-sentence background for my abstract
+aud: PG Resident
+body: Act as a journal abstract editor. From my introduction, [PASTE INTRODUCTION], write the Background of a structured abstract in exactly two sentences: the problem with its relevance, and the gap leading to the objective. Stay under 50 words, add no new facts, and keep any number exactly as written.
+try: An introduction on post-COVID pulmonary fibrosis in Indian patients.

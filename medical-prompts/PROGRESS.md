@@ -17,7 +17,7 @@ Commit and push after every section file.
 |---|---:|---|
 | 1.1 Topic selection & research question | 35 | done |
 | 1.2 Literature search strategy | 30 | done |
-| 1.3 Writing the Introduction | 30 | pending |
+| 1.3 Writing the Introduction | 30 | done |
 | 1.4 Review of Literature | 40 | pending |
 | 1.5 Aims, objectives & hypotheses | 20 | pending |
 | 1.6 Study design & methodology | 40 | pending |
