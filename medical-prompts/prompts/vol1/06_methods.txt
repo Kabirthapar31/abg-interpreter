@@ -558,7 +558,7 @@ try: Selecting 150 households from a village list of 1,200.
 
 @@ Q | concealment-explain | Allocation concealment in my trial
 aud: PG Resident
-body: Act as a trials methodologist. Explain the practical difference between randomisation and allocation concealment using my trial, [BRIEF TRIAL DESCRIPTION], and describe an affordable, practical way to conceal allocation in an Indian government hospital setting in under 120 words.
+body: Act as a trials methodologist. Explain the practical difference between randomisation and allocation concealment using my trial, [BRIEF TRIAL DESCRIPTION], and describe an affordable, practical way to conceal allocation in an Indian government hospital setting in under 120 plain words.
 try: Two dressing types for diabetic foot ulcers in a surgery ward.
 
 @@ Q | criteria-testable | Can I apply this criterion at the bedside?
