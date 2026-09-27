@@ -32,9 +32,35 @@ Commit and push after every section file.
 **Volume 1 complete:** 400 prompts (48 Master / 229 Standard / 123 Quick), QA clean, rendered to
 `Vol1_Thesis_Research_Publication.pdf` (210 pages) and sent to the user for review.
 
-## Next
-After the user's review of Volume 1: Volume 2 (Seminars, Journal Clubs & Presentations, #401–700), then Volume 3
-(Study, Exam & Viva Prep, #701–1000), then the combined edition.
+## Volume 2: Seminars, Journal Clubs & Presentations (#401–700)
+
+| Section | Target | Status |
+|---|---:|---|
+| 2.1 Seminar preparation | 60 | pending |
+| 2.2 Journal club | 60 | pending |
+| 2.3 Slide design & structure | 40 | pending |
+| 2.4 Talks & oral presentations | 35 | pending |
+| 2.5 Posters & visual teaching aids | 35 | pending |
+| 2.6 Case presentations & grand rounds | 40 | pending |
+| 2.7 Delivery, Q&A & teaching | 30 | pending |
+
+## Volume 3: Study, Exam & Viva Prep (#701–1000)
+
+| Section | Target | Status |
+|---|---:|---|
+| 3.1 Learning any topic | 50 | pending |
+| 3.2 Study planning & revision | 30 | pending |
+| 3.3 MCQ practice & exam strategy | 50 | pending |
+| 3.4 Long & short answer writing | 30 | pending |
+| 3.5 Viva, OSCE & practical exams | 50 | pending |
+| 3.6 Clinical reasoning & differential diagnosis | 60 | pending |
+| 3.7 Memory aids & high-yield summaries | 30 | pending |
+
+## Sparse-page check (run after rendering)
+```
+python3 -c "import pymupdf; d=pymupdf.open('VolN_….pdf'); [print(i+1) for i,p in enumerate(d) if len(p.get_text().split())<60]"
+```
 
 ## If the session was interrupted
-Read this file, check `git log`, continue from the first `pending` section, then render and send the Volume 1 PDF.
+Read HANDOFF.md and this file, check `git log`, continue from the first `pending` section, render each finished volume
+and send the PDF to the user.
