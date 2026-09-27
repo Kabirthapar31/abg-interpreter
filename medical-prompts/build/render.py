@@ -6,7 +6,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from library import ROOT, TIERS, fmt, load_volume, qa, stats
+from library import ROOT, TIERS, fmt, load_volume, qa, stats, words
 
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 
@@ -90,7 +90,11 @@ tr { break-inside: avoid; }
 .toc .row span:last-child { text-align: right; color: var(--muted); font-size: 8pt; }
 
 /* section opener */
-.opener { break-before: page; padding-top: 55mm; }
+.opener { break-before: page; padding-top: 50mm; }
+.opener.long { padding-top: 14mm; }
+.opener.long .big { font-size: 48pt; }
+.opener.long h2 { font-size: 22pt; margin: 2mm 0 3mm; }
+.opener.long .meta { margin: 4mm 0 5mm; }
 .opener .big { font-size: 64pt; font-weight: 800; color: var(--or); line-height: 1; }
 .opener h2 { font-size: 26pt; margin: 3mm 0 5mm; }
 .opener .lead { font-size: 12pt; max-width: 150mm; }
@@ -121,7 +125,11 @@ tr { break-inside: avoid; }
 .duo .lab { display: block; margin-bottom: 1mm; }
 .copy { font-size: 6.4pt; letter-spacing: .22em; color: var(--or); font-weight: 600; margin-bottom: 1.5mm; }
 .prompt { background: var(--panel2); border-left: 2.5px solid var(--or); border-radius: 0 2mm 2mm 0; padding: 3mm 4mm; font-size: 7.9pt; line-height: 1.55; color: var(--body); }
-.master .prompt { font-size: 8pt; padding: 3.5mm 4.5mm; line-height: 1.5; }
+.master.dense .prompt { font-size: 7.3pt; line-height: 1.4; }
+.master.dense .duo { margin: 1mm 0 2mm; }
+.master.xdense .prompt { font-size: 7pt; }
+.master.xdense .prompt .row { padding: .9mm 0; }
+.master .prompt { font-size: 7.8pt; padding: 3.2mm 4.5mm; line-height: 1.45; }
 .prompt .row { display: grid; grid-template-columns: 17mm 1fr; gap: 2mm; padding: 1.3mm 0; border-top: 1px solid #2a211b; }
 .prompt .row:first-child { border-top: none; padding-top: 0; }
 .prompt .blk { font-size: 6.1pt; letter-spacing: .16em; font-weight: 600; color: var(--or); text-transform: uppercase; padding-top: .4mm; }
@@ -169,12 +177,13 @@ def card(p):
         return (f'<div class="card">{head}<div class="use"><span class="lab">Use it</span>{fmt(p["use"])}</div>'
                 f'<div class="prompt">{body}</div>{extra}</div>')
     tips = "".join(f"<li>{fmt(x.lstrip('- ').strip())}</li>" for x in p["tips"].splitlines() if x.strip())
-    return (f'<div class="card master">{head}'
+    dense = " dense xdense" if words(p) > 410 else " dense" if words(p) > 380 else ""
+    return (f'<div class="card master{dense}">{head}'
             f'<div class="duo"><div><span class="lab">Use it</span>{fmt(p["use"])}</div>'
             f'<div class="why" style="margin:0"><span class="lab" style="font-family:Poppins;font-style:normal">Why</span>{fmt(p["why"])}</div></div>'
             f'<div class="copy">COPY THE PROMPT BELOW</div><div class="prompt">{body}</div>'
-            f'<h3>How to get more out of it</h3><ul class="arrow small tips">{tips}</ul>'
-            + (f'<div class="tipline">{nxt}</div>' if nxt else "") + '</div>')
+            f'<h3>How to get more out of it</h3><ul class="arrow small tips">{tips}'
+            + (f'<li>{nxt}</li>' if nxt else "") + '</ul></div>')
 
 
 def front_matter(vol, cfg, secs, total, counts):
@@ -253,7 +262,8 @@ def front_matter(vol, cfg, secs, total, counts):
 def section_html(s):
     items = "".join(f'<li><span>#{p["n"]}</span>{fmt(p["title"])}</li>' for p in s["prompts"])
     c = {k: sum(1 for p in s["prompts"] if p["tier"] == k) for k in TIERS}
-    opener = f"""<div class="opener"><div class="kick">Section {s["num"]}</div><div class="big">{s["num"]}</div>
+    cls = "opener long" if len(s["prompts"]) > 28 else "opener"
+    opener = f"""<div class="{cls}"><div class="kick">Section {s["num"]}</div><div class="big">{s["num"]}</div>
 <h2>{fmt(s["title"])}</h2><p class="lead">{fmt(s["why"])}</p>
 <div class="meta"><div><b>{len(s["prompts"])}</b>prompts</div><div><b>{c["M"]}</b>Master</div><div><b>{c["S"]}</b>Standard</div><div><b>{c["Q"]}</b>Quick</div></div>
 <ol>{items}</ol></div>"""

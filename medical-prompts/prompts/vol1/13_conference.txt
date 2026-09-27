@@ -1,0 +1,300 @@
+# 1.13 | Conference abstracts, posters & oral papers | A conference presentation is often your research's first audience. Write to the exact limit, design for two metres away, and rehearse the questions.
+
+@@ M | conference-abstract-master | Conference abstract to the exact word limit
+aud: PG Resident / Faculty
+use: Before a conference abstract deadline, once your results (or interim results) are verified.
+why: Conference abstracts are judged in minutes by reviewers scoring dozens of submissions. A clear question, a stated design, real numbers and a proportionate conclusion, within the exact limit and format, is what gets accepted, and often what gets you into the award session.
+persona: You are a scientific committee member for national and international medical conferences who scores hundreds of abstracts each year. You know what reviewers reward and what gets rejected.
+context: Conference name and its abstract rules (word or character limit, headings, whether the title and authors count, category options): [PASTE RULES]
+Study design, setting and period: [brief]
+Sample size and participant flow: [numbers]
+Primary result with estimate, CI and p: [paste exactly]
+Key secondary results: [paste]
+Whether the data is final or interim: [final / interim with n so far]
+task: 1. Draft the abstract in the conference's exact format and headings, within the limit, stating the count used (words or characters, as the conference counts them).
+2. Background: the problem and the gap in 2 sentences. Methods: design, setting, participants, key measurements and analysis. Results: the numbers that answer the objective. Conclusion: proportionate, and linked to practice or research.
+3. Write 3 title options within any title limit.
+4. Recommend the best category, and whether to opt for oral, poster or award consideration.
+5. Score the draft against typical reviewer criteria (importance, methods, clarity of results, validity of the conclusion, presentation) and revise the weakest part.
+rules: Use only my numbers, reproduced exactly; label interim data as interim, because presenting interim results as final is misconduct. No references unless the conference allows them. No "results will be presented" placeholders, because reviewers reject abstracts without results.
+output: The final abstract with its count, the titles, the category advice, then the scoring table.
+tweak: End with the one sentence a reviewer is most likely to criticise, and a safer rewrite.
+tips:
+- Check how the conference counts: words or characters, and whether spaces, title and authors are included.
+- Submit a day early. Portals slow down or crash near deadlines.
+- Keep the abstract text. The journal version later must not contradict it.
+next: poster-master
+
+@@ M | poster-master | Research poster from my manuscript or thesis
+aud: PG Resident / Faculty
+use: After abstract acceptance as a poster, 2–3 weeks before the conference.
+why: Most posters are shrunken papers that nobody reads. A good poster is read from two metres away in under a minute: one clear question, one clear answer, figures instead of paragraphs. This prompt turns your paper into that.
+persona: You are a scientific poster designer and conference judge who has evaluated hundreds of posters. You design for visual hierarchy, brevity and a clear take-home message.
+context: Accepted abstract: [PASTE ABSTRACT]
+Key results, tables and figures available: [list]
+Poster specifications (size, orientation, print or e-poster, template requirements): [paste]
+Design tool: [PowerPoint / Canva / other]
+Institution logo and branding requirements: [brief]
+Whether I will stand by the poster or it will be viewed alone: [brief]
+task: 1. Write a one-line take-home message to feature prominently.
+2. Plan the panels: title, authors and affiliations, background (40 words), objective (1 line), methods (a small flow diagram or 4 bullets), results (2–3 figures or tables with one-line captions), conclusion (2–3 bullets), and references, acknowledgements and QR code.
+3. Write the text for every panel, 500–800 words in total.
+4. Specify the layout: columns, reading order, the central figure, font sizes (title, headings, body), colours and white space.
+5. Convert any results table into a figure where that would be clearer.
+6. Give step-by-step build instructions in my tool.
+7. Write a 90-second walk-through script for when judges stop by.
+rules: Use only content and numbers from my abstract and results, keeping them identical to the abstract, because judges compare the poster with the abstract. Keep text sizes readable from 2 metres (body about 24–32 pt on an A0 poster; mark exact sizes [CHECK TEMPLATE]).
+output: The take-home message, a panel table with text, the layout specification, the build steps, then the walk-through script.
+tweak: End with a checklist to run on the printed or displayed poster before the session.
+tips:
+- If your poster has more than 800 words, it has too many.
+- Put your main result graph in the centre, at eye level.
+- A QR code linking to the abstract or full paper lets interested readers go deeper.
+next: poster-pitch
+
+@@ M | oral-paper-master | Thesis → 8-minute oral paper, with slides and Q&A
+aud: PG Resident
+use: When your abstract is accepted for oral or award-paper presentation.
+why: Oral paper slots are short and strictly timed, and chairs cut off speakers who overrun. A timed slide plan, a spoken script and rehearsed answers turn a nervous 12-minute ramble into a confident 8-minute presentation that wins awards.
+persona: You are a conference presentation coach and award-session judge who has trained many residents for oral paper presentations.
+context: Abstract and key results: [PASTE]
+Time allowed for the talk and for discussion: [e.g. 8 + 2 minutes]
+Figures and tables available: [list]
+Award session?: [yes / no]
+My speaking pace and confidence: [brief]
+What the audience will mostly be: [specialists / mixed / students]
+Conference's slide requirements (template, aspect ratio, file format): [paste]
+task: 1. Plan 8–10 slides with a time budget per slide: title; background and gap; objective; methods (one visual); participant flow; primary result (one clear figure); secondary results; limitations; conclusion and take-home.
+2. For each slide, give the title as a message ("Early mobilisation halved delirium days"), the content (maximum 3 bullets or 1 figure), and speaker notes.
+3. Write a spoken script at about 130 words per minute that fits the time exactly.
+4. Prepare the 8 most likely audience and judge questions with 30-second answers.
+5. Give a rehearsal plan for the week before, including one rehearsal in front of colleagues who ask hard questions.
+6. List the technical checks for the day (file format, fonts embedded, videos, backup on a pen drive and email).
+rules: Keep every number identical to my abstract, and don't add results that aren't in it, because judges check. Keep slides visual: no paragraphs, and at least 24 pt text.
+output: A slide table (slide, title, content, time, notes), the script with its word count, the Q&A table, then the rehearsal plan.
+tweak: End with the opening 2 sentences and the closing 2 sentences to memorise word for word.
+tips:
+- Rehearse with a timer at least 5 times. Most residents overrun by 30–50%.
+- Write slide titles as messages, not topics. The audience should get the story from the titles alone.
+- Have 2–3 backup slides for predictable questions.
+next: conference-qa-prep
+
+@@ S | conference-selector | Choose the right conference for my work
+aud: PG Resident / Faculty
+use: When deciding where to submit your abstract.
+persona: You are an academic mentor who guides residents on conference strategy.
+context: Specialty and the topic of my work: [brief]
+Stage of the work: [final results / interim / case report]
+Budget and travel constraints: [brief]
+Goals: [award, networking, first presentation, international exposure]
+task: 1. Describe the options: national specialty conferences, state or zonal meetings, international conferences and virtual meetings, and what each offers.
+2. Explain how to find upcoming conferences and deadlines, and check that they are legitimate (predatory conferences exist too).
+3. Explain the categories typically available (oral, poster, e-poster, award paper, case report sessions) and eligibility, e.g. age or membership requirements for awards.
+4. Build a comparison table from the conferences I find.
+rules: Don't name specific conferences, dates or fees from memory; mark anything named as [VERIFY ON THE OFFICIAL SITE], because dates and rules change every year.
+output: The options overview, the finding and legitimacy steps, the categories note, then the comparison template.
+tip: Student and resident award sessions at national specialty conferences are among the best first stages for your work.
+try: MD Pulmonary Medicine resident with final thesis results, limited travel budget.
+next: conference-abstract-master
+
+@@ S | abstract-reviewer-score | Score my abstract like a conference reviewer
+aud: PG Resident
+use: Before you submit a conference abstract.
+persona: You are a conference abstract reviewer who scores submissions on a standard rubric.
+context: My abstract: [PASTE ABSTRACT]
+Conference and category: [brief]
+Limit: [words or characters]
+task: 1. Score it out of 5 on: importance of the question, clarity of the objective, appropriateness of the methods, completeness of the results (with numbers), validity of the conclusion, and clarity of writing.
+2. Quote the text behind each score.
+3. Say whether it would likely be accepted, and in which format (oral or poster).
+4. Give the 3 most important revisions.
+rules: Be honest about the likely outcome, and quote rather than paraphrase, because encouraging but vague feedback won't improve the abstract.
+output: A scoring table, the verdict, then the revisions.
+tip: Abstracts without numbers in the results are usually rejected. Check yours has them.
+try: A 250-word abstract on ultrasound-guided versus landmark-guided central line insertion.
+next: conference-abstract-master
+
+@@ S | eposter-adaptation | Adapt my poster into an e-poster
+aud: PG Resident
+use: When the conference uses screen-displayed e-posters.
+persona: You are a digital poster designer who adapts print posters for screens.
+context: My poster content or file description: [PASTE OR DESCRIBE]
+E-poster specification (aspect ratio, single or multiple slides, resolution, file type, interactivity allowed): [paste]
+task: 1. Restructure the content for the format: a single 16:9 slide or a short slide set.
+2. Reduce the text further for on-screen reading distance.
+3. Suggest a reading flow and the use of any allowed interactivity (e.g. clickable panels).
+4. Specify export settings.
+rules: Keep all numbers identical to the abstract; don't add new content, because e-posters are judged against the submitted abstract.
+output: The restructured layout plan, the reduced text, then the export settings.
+tip: Check your e-poster on a laptop from 1.5 metres before submitting. If you can't read it, neither can judges.
+try: An A0 portrait poster converted to one 16:9 e-poster slide.
+next: poster-pitch
+
+@@ S | poster-layout-brief | Layout brief for Canva or PowerPoint
+aud: PG Resident
+use: When building the poster yourself.
+persona: You are a graphic designer who specialises in clean scientific posters.
+context: Poster size and orientation: [e.g. A0 portrait, 841 × 1189 mm]
+Panels and approximate text length for each: [list]
+Figures: [list]
+Tool: [Canva / PowerPoint]
+task: 1. Give the page set-up for my tool (custom size, margins, grid).
+2. Suggest a 3-column grid and the placement of each panel.
+3. Give a font system (one sans-serif family, sizes for title, headings, body and captions) and a colour palette of 2–3 colours plus neutrals that is colour-blind safe.
+4. Describe alignment, spacing and how to place figures so they print sharply.
+5. Give print-export settings.
+rules: Recommend readable, conservative choices, and mark exact template or institutional branding rules as [CHECK TEMPLATE], because conferences often mandate them.
+output: Numbered set-up and design steps, a font and colour table, then export settings.
+tip: Leave about 25% of the poster as white space. Crowded posters are skipped.
+try: A0 landscape poster in PowerPoint with 3 figures and 1 table.
+next: poster-master
+
+@@ S | poster-pitch | 90-second poster walk-through for judges
+aud: PG Resident
+use: The week before your poster session.
+persona: You are a poster-session judge who knows what makes a presenter memorable.
+context: My poster content (panel text or summary): [PASTE]
+Time judges typically spend: [e.g. 2–3 minutes]
+task: 1. Write a 90-second script: the hook, the question, what I did, the key result (pointing to the figure), what it means, and one limitation.
+2. Write a 30-second version for passers-by.
+3. List 6 questions judges ask at posters, with short answers from my content.
+4. Give body-language and positioning tips.
+rules: Use only what is on my poster, with numbers identical to it, because judges look at the poster while you talk.
+output: The two scripts with timing, the Q&A table, then the tips.
+tip: Start with the question, not the background. "We asked whether…" gets attention.
+try: Poster on the prevalence of vitamin B12 deficiency in metformin-treated diabetics.
+next: poster-master
+
+@@ S | oral-slides-plan | Slide plan for a short oral presentation
+aud: PG Resident
+use: When you need slides quickly for a 5–10 minute talk.
+persona: You are a presentation designer for medical conferences.
+context: Abstract and results: [PASTE]
+Time limit: [minutes]
+Slide template requirements: [brief]
+Audience: [specialists / mixed]
+task: 1. Recommend the number of slides (about one per minute).
+2. For each slide, give a message title, a content suggestion (figure, table or a maximum of 3 bullets), and speaker notes.
+3. Suggest the design: font sizes, contrast and one accent colour.
+4. List slides to put in the backup section.
+rules: Keep numbers identical to the abstract and avoid text-heavy slides, because audiences read slides instead of listening.
+output: A slide table, the design notes, then the backup list.
+tip: One figure per results slide, with the key number called out in large text.
+try: 7-minute oral paper on anaemia prevalence among adolescent girls in a rural block.
+next: oral-paper-master
+
+@@ S | conference-qa-prep | Prepare for questions after my talk
+aud: PG Resident
+use: In the days before your oral or poster presentation.
+persona: You are a session chair who has asked and heard thousands of conference questions.
+context: My abstract and key slides: [PASTE]
+Known limitations: [list]
+Audience: [specialists / mixed / award judges]
+task: 1. List 12 likely questions: methodology, sample size, bias, generalisability, clinical relevance, "what next", and one hostile question.
+2. Write a 30-second answer for each, grounded in my study.
+3. Give a technique for questions I can't answer (acknowledge, offer a reasoned view, and follow up).
+4. Suggest 2 backup slides that answer the most likely questions.
+rules: Base answers on my data only; where I lack the information, script an honest "we didn't measure that", because bluffing in front of experts is obvious.
+output: A Q&A table, the technique, then the backup-slide suggestions.
+tip: Repeat the question before answering. It buys you thinking time and helps the audience hear it.
+try: Oral paper on a retrospective cohort of snakebite outcomes.
+next: oral-paper-master
+
+@@ S | award-session-prep | Prepare for an award-paper session
+aud: PG Resident
+use: When your paper is selected for a best-paper or young-investigator award session.
+persona: You are an award-session judge at national medical conferences.
+context: Abstract and presentation plan: [PASTE]
+Award rules and judging criteria, if published: [paste]
+Time limits: [brief]
+task: 1. Map the typical judging criteria (originality, methodological rigour, clinical relevance, clarity, time management and handling of questions) to my presentation, and identify gaps.
+2. Suggest changes to strengthen my weakest criterion.
+3. Prepare answers to the judges' likely tough questions.
+4. Give a checklist for the day: file formats, backup copies, arrival time, dress and timing.
+rules: Mark criteria that I haven't confirmed from the official rules as [CHECK AWARD RULES], because eligibility and criteria differ between conferences.
+output: A criteria-mapping table, the improvements, the Q&A, then the checklist.
+tip: Judges remember speakers who finish on time and answer questions honestly.
+try: Award session for a prospective cohort on high-flow nasal oxygen in COPD.
+next: conference-qa-prep
+
+@@ S | travel-grant | Application for a travel grant or bursary
+aud: PG Resident
+use: When applying for conference funding from your institution, a society or a foundation.
+persona: You are a grants officer who reviews travel-grant applications.
+context: Conference, dates and the type of presentation accepted: [brief]
+Estimated costs (registration, travel, stay): [amounts]
+Funding body and its criteria: [paste]
+My academic profile (programme, year, publications, presentations): [brief]
+task: 1. Write a concise application letter or statement: what I'm presenting, why it matters, what I'll gain, and how I'll share the learning.
+2. Build a cost table with justification.
+3. List the documents usually required (acceptance letter, abstract, guide's recommendation, CV).
+rules: Use only facts I provided and mark criteria I haven't confirmed as [CHECK FUNDER CRITERIA], because inaccurate applications are rejected.
+output: The statement, the cost table, then the document list.
+tip: Apply as soon as your abstract is accepted. Travel-grant deadlines are often earlier than you expect.
+try: Oral presentation at an international respiratory conference, first-time applicant.
+next: conference-selector
+
+@@ S | conference-to-paper | From conference presentation to published paper
+aud: PG Resident / Faculty
+use: After the conference, while feedback is fresh.
+persona: You are a publication mentor who helps residents turn presentations into papers.
+context: My abstract and presentation: [PASTE]
+Questions and feedback received at the conference: [brief]
+Whether the abstract was published in a journal supplement: [yes / no]
+task: 1. List the feedback that should shape the paper.
+2. Explain how a published conference abstract affects journal submission (it is usually acceptable, but must be disclosed), marked [CHECK TARGET JOURNAL POLICY].
+3. Make a plan for writing the full paper within 6 weeks.
+4. Draft the disclosure sentence about the prior presentation.
+rules: Keep results consistent with the presented abstract, or explain any differences (e.g. final versus interim data), because inconsistency raises questions about data integrity.
+output: The feedback list, the policy note, the 6-week plan, then the disclosure sentence.
+tip: Conference momentum fades in weeks. Start the paper the week you return.
+try: Poster on inhaler technique errors that received strong interest at a national meeting.
+next: manuscript-master
+
+@@ S | virtual-presentation | Record a presentation for a virtual or hybrid conference
+aud: PG Resident / Faculty
+use: When the conference asks for a pre-recorded talk or you present online.
+persona: You are a medical educator who produces clear, professional recorded talks on a modest budget.
+context: Talk length and format required (video file, live online, slide upload): [paste]
+Slides ready?: [yes / no]
+Equipment available: [laptop, phone, microphone, quiet room]
+task: 1. Give a set-up checklist: camera at eye level, lighting in front of me, a quiet room, microphone choice, and a plain background.
+2. Explain how to record in PowerPoint, Zoom or similar tools, including slide-by-slide recording to make editing easier.
+3. Adapt my script for the camera: shorter sentences, and a visual cue every 30 seconds.
+4. Give export settings and the file-naming convention the conference requires.
+5. Plan for live Q&A online: internet backup, and mute and unmute etiquette.
+rules: Mark platform-specific steps as [MAY DIFFER BY VERSION], because recording menus change often. Keep the talk within the time limit exactly, since recorded talks are often cut automatically.
+output: The set-up checklist, recording steps, script tips, export settings, then the Q&A plan.
+tip: Record one slide at a time. A mistake then costs 40 seconds, not the whole talk.
+try: 10-minute pre-recorded oral paper for an international virtual respiratory conference.
+next: oral-paper-master
+
+@@ Q | abstract-title | An accurate, catchy abstract title
+aud: PG Resident
+body: Act as a conference abstract reviewer. Write 4 titles for my abstract, [ONE-LINE SUMMARY WITH DESIGN], under [LIMIT] characters: two descriptive and two that state the finding. None should overclaim or use undefined abbreviations. Mark the one most likely to attract reviewers.
+try: Prospective cohort showing frailty predicts delirium after hip fracture surgery.
+
+@@ Q | programme-summary | 25-word summary for the conference programme
+aud: PG Resident
+body: Act as a conference programme editor. Summarise my accepted presentation, [PASTE ABSTRACT], in 25 words or fewer for delegates for the printed conference programme or app: what I studied, in whom, where, and the main finding, accurately, clearly and without jargon.
+try: Abstract on the diagnostic accuracy of lung ultrasound in paediatric pneumonia.
+
+@@ Q | poster-handout | One-page handout or QR page for my poster
+aud: PG Resident
+body: Act as a scientific communicator. Create the content for a one-page handout or QR-linked page for my poster, [PASTE POSTER TEXT]: title, key figure description, 3 key findings, the take-home message, contact email and the full abstract, in under 300 words.
+try: Poster on vitamin B12 deficiency in patients on long-term metformin.
+
+@@ Q | timing-check | Will my talk fit the time?
+aud: PG Resident
+body: Act as a presentation coach. Check my script, [PASTE SCRIPT], against a [N]-minute slot at about 130 spoken words per minute. Tell me how far over or under I am, and which sentences to cut or merge to fit, without losing the key result.
+try: A 1,450-word script for an 8-minute oral paper.
+
+@@ Q | take-home-slide | The closing take-home slide
+aud: PG Resident
+body: Act as a conference presentation coach. Write my closing slide for [ONE-LINE FINDING AND DESIGN]: a message title, 2–3 take-home bullets of under 12 words each, in plain language, and one line on what comes next, all proportionate to my design.
+try: Retrospective cohort linking delayed antibiotics with higher sepsis mortality.
+
+@@ Q | follow-up-email | Follow-up email after the conference
+aud: PG Resident / Faculty
+body: Act as an academic networking coach. Write a short, professional follow-up email to [NAME, ROLE], whom I met at [CONFERENCE] after my presentation on [TOPIC], thanking them and proposing [collaboration / sharing data / advice on the next study]. Keep it under 120 words.
+try: Following up with a senior researcher who asked about multicentre collaboration.

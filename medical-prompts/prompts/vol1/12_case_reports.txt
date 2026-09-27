@@ -153,6 +153,7 @@ persona: You are a case-reports editor who writes clear abstracts.
 context: Case report draft or summary: [PASTE]
 Journal's abstract format (structured or unstructured) and word limit: [paste]
 The single lesson the case teaches: [one line]
+Target readership: [e.g. general physicians]
 task: 1. Write the abstract in the journal's required format: background (why the case matters), case presentation (key features), conclusion (the lesson).
 2. Keep it within the limit.
 3. Suggest 3–5 keywords, preferring MeSH terms.

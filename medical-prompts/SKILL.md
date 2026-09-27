@@ -46,9 +46,11 @@ Two sources feed it:
    `[ASSUMPTION — VERIFY FROM PUBLISHED DATA]`, `[CITATION NEEDED — FIND SOURCE]`,
    `[UNVERIFIED BACKGROUND — CONFIRM INDEPENDENTLY]`, `[NOT REPORTED]`, `[ASK ME: …]`.
    A citation is allowed only if the user uploaded the paper or the model gives a verified PMID/DOI.
-5. **India-first realism:** government medical college, ICMR 2017, NFHS, CTRI, IEC, NEET-PG / INI-CET,
-   2-year MD timelines, limited lab infrastructure. International options go inside brackets:
-   `[NEET-PG / INI-CET / USMLE / PLAB / MRCP]`.
+5. **India-first realism:** government medical college, ICMR guidelines, NFHS, CTRI, IEC, 2-year MD
+   timelines, limited lab infrastructure. Exam defaults (approved by the user):
+   - MBBS students and graduates: **NEET-PG** and **UPSC CMS**.
+   - Residents: their **residency university examinations** (MD / MS / DNB theory, practical and viva).
+   - International exams are optional, offered inside brackets: `[NEET-PG / UPSC CMS / USMLE / PLAB / MRCP]`.
 6. **A self-critique ending:** hostile-reviewer sentences, "AVOID THESE", "act as the ethics
    committee reviewer", or a performance summary with weak areas.
 7. **A reader wrapper:** USE IT (when), WHY (in Lora italic, why this prompt exists), and

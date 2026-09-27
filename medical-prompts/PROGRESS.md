@@ -27,7 +27,14 @@ Commit and push after every section file.
 | 1.10 Protocol, ethics & synopsis | 20 | done |
 | 1.11 Thesis to manuscript & publication | 35 | done |
 | 1.12 Case reports & case series | 30 | done |
-| 1.13 Conference abstracts, posters & oral papers | 20 | pending |
+| 1.13 Conference abstracts, posters & oral papers | 20 | done |
+
+**Volume 1 complete:** 400 prompts (48 Master / 229 Standard / 123 Quick), QA clean, rendered to
+`Vol1_Thesis_Research_Publication.pdf` (210 pages) and sent to the user for review.
+
+## Next
+After the user's review of Volume 1: Volume 2 (Seminars, Journal Clubs & Presentations, #401–700), then Volume 3
+(Study, Exam & Viva Prep, #701–1000), then the combined edition.
 
 ## If the session was interrupted
 Read this file, check `git log`, continue from the first `pending` section, then render and send the Volume 1 PDF.
