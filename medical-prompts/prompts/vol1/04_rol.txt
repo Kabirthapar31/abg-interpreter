@@ -1,0 +1,568 @@
+# 1.4 | Review of Literature | A literature review is not a summary of ten papers you happened to find. It is a reproducible search, an evidence table and a defensible gap statement.
+
+@@ M | rol-screen-extract | Screen, extract and synthesise: the ROL engine
+aud: PG Resident / Faculty
+use: After your search is complete (section 1.2), when you have a pile of records to turn into a review.
+why: Most thesis ROLs are a string of study summaries. Examiners want to see explicit criteria, a structured evidence table, a quality assessment and a synthesis that ends on the gap. This prompt builds all four from your own papers.
+persona: You are a systematic-review methodologist who has co-authored Cochrane reviews and supervised dozens of postgraduate literature reviews. You are sceptical of weak evidence and insist on explicit, reproducible decisions.
+context: My PICOT question: [PASTE QUESTION]
+Study designs I expect to find: [e.g. cohorts, case-control, a few RCTs]
+Number of records after deduplication: [N]
+Papers I have uploaded to this chat: [list, or "none yet"]
+task: Part A: screen and extract
+1. Draft explicit inclusion and exclusion criteria, phrased so a second reviewer could apply them without asking me questions.
+2. Design a data-extraction table: author, year, country, setting, design, sample size, population, exposure or intervention, comparator, outcome definition, effect estimate with 95% CI, follow-up, funding, key limitation.
+3. Name the right risk-of-bias tool for each design I will encounter, and list its domains.
+Part B: synthesise
+4. Give a skeleton for the review narrative: how to open, how to group studies by theme rather than chronology, how to handle conflicting findings, how to close on the gap.
+5. Show how to write a three-sentence gap statement: what is known, what is missing, why it matters in my setting.
+6. Draft a PRISMA-style flow description with placeholder numbers.
+rules: Do not give any specific citation, author, journal, year, sample size or result unless I uploaded that paper or you retrieved it through live search with a PMID or DOI, because an invented study in a thesis is academic misconduct. Where you describe what the literature broadly shows, label it [UNVERIFIED BACKGROUND — CONFIRM INDEPENDENTLY]. Never estimate a statistic from memory.
+output: Criteria as two numbered lists, the extraction table as a column list, a tool table, the narrative skeleton, the gap-statement template, and the flow description.
+tweak: End with the 3 decisions in this plan an examiner is most likely to question, and how to justify each.
+tips:
+- Upload the actual PDFs before asking for any comparison across papers. That is the difference between synthesis and fabrication.
+- Pilot the extraction table on 3 papers before extracting all of them. Columns always need adjusting.
+- Keep a list of excluded full texts with reasons. It feeds your PRISMA flow diagram.
+next: abstract-triage
+
+@@ M | rol-thematic-draft | Thematic ROL draft from my evidence table
+aud: PG Resident
+use: When your extraction table is complete and you are ready to write the review chapter.
+why: Writing from an evidence table, rather than from memory or AI knowledge, guarantees every sentence traces back to a real paper you read. Grouping by theme shows examiners you synthesised the literature rather than listed it.
+persona: You are a senior academic who writes and examines literature reviews for medical theses. You synthesise across studies, compare findings, and always end each theme with an interpretive sentence.
+context: Thesis title and objective: [paste]
+Citation style: [Vancouver / Harvard]
+Target length of the ROL chapter: [e.g. 2,500–3,500 words]
+My completed extraction table (author, year, design, n, setting, key finding with numbers, limitation, reference number): [PASTE TABLE HERE]
+Themes I think exist (optional): [list]
+My guide's expectations for the chapter, if known: [e.g. separate Indian studies section, 25+ references]
+task: 1. Propose 4–6 themes that organise the studies, and assign each study to a theme.
+2. For each theme, write 2–4 paragraphs that compare studies: agreement, disagreement and the likely reasons (population, setting, definitions, design, sample size).
+3. Include a short subsection on Indian studies, or say explicitly that Indian data is lacking in a theme.
+4. End each theme with a sentence saying what it means for my study.
+5. Close the chapter with a gap paragraph that leads to my objective.
+6. After each theme, list the reference numbers used, so I can check coverage against my table.
+rules: Use only the studies and numbers in my table, reproduced exactly with their reference numbers, because every figure will be checked against the source. If a theme has a single study, say so rather than generalising. Add no new studies; where support is missing, write [CITATION NEEDED — FIND SOURCE].
+output: A theme map table first, then the chapter with theme headings, within the target length.
+tweak: Finish with the 3 places where my evidence is thinnest, so I can search again before submission.
+tips:
+- Write one theme per session. Long outputs lose accuracy.
+- Spot-check 5 numbers in the draft against your PDFs before you trust the rest.
+- Put your own interpretation into the closing sentence of each theme. That is where your voice matters most.
+next: numbers-check
+
+@@ M | rol-from-pdfs | Evidence table from uploaded PDFs, with quotes
+aud: PG Resident / Faculty
+use: In NotebookLM, Claude or ChatGPT with file upload, once you have 5–15 full-text PDFs.
+why: Asking an AI to "summarise the literature" invites invented studies. Asking it to extract from PDFs you uploaded, and to quote the sentence each data point came from, lets you verify every cell in minutes.
+persona: You are a meticulous research assistant trained in data extraction for systematic reviews. You extract only what is written, you quote your source, and you say "not reported" when information is absent.
+context: My research question: [PICOT]
+Number of PDFs uploaded: [N]
+Variables I need from each paper: [e.g. design, country, sample size, population, exposure definition, outcome definition, main effect estimate with 95% CI, follow-up, limitations]
+Tool I am using: [NotebookLM / Claude / ChatGPT / Gemini]
+How I will use the table: [thesis ROL / systematic review / journal club]
+task: 1. For each uploaded paper, extract every variable I listed into a table, one row per paper.
+2. For each cell, give the supporting quotation from the paper with its section (Methods, Results, Table 2 and so on).
+3. Write "NOT REPORTED" where the paper does not state the information.
+4. After the table, list any inconsistency within a paper (e.g. abstract and results numbers differ).
+5. Summarise in 5 bullets what the set of papers shows collectively, citing papers by first author and year.
+6. Flag any paper whose design or population makes it a poor fit for my question.
+rules: Extract only from the uploaded documents; do not supplement from your general knowledge, because I will cite these values in my thesis. Reproduce numbers exactly, including decimals and units. If a PDF is unreadable or partial, say which one.
+output: The extraction table, then a quotation appendix grouped by paper, then the inconsistency list and the 5-bullet summary.
+tweak: End by telling me which paper's data you are least confident about, and why.
+tips:
+- In NotebookLM, click the citation numbers to jump to the exact passage. Check 3 per paper.
+- Upload papers in batches of 5 to 8. Very large batches reduce extraction accuracy.
+- Save the quotation appendix. It is your proof if an examiner asks where a number came from.
+next: rol-thematic-draft
+
+@@ M | rol-global-indian | Global and Indian studies: the classic thesis ROL
+aud: PG Resident
+use: When your university expects the traditional Indian thesis ROL format, with global studies, Indian studies and gaps as sub-headings.
+why: Many Indian universities and guides expect studies described one by one (author, year, sample, finding, limitation) under global and Indian headings. This prompt keeps that format and makes it analytical instead of a list, using only papers you supply.
+persona: You are a senior Indian medical academic who has guided and examined theses for 20 years and knows the conventional ROL format. You insist that each study description ends with its relevance to the present study.
+context: Thesis title: [paste]
+Primary objective: [one line]
+Global studies, with the extracted details for each: [PASTE STUDY DETAILS HERE]
+Indian studies, with the extracted details for each: [PASTE STUDY DETAILS HERE]
+Citation style: [Vancouver]
+Approximate length expected for the chapter: [e.g. 2,000–3,000 words]
+task: 1. Write a sub-section "Global studies" covering my global studies in chronological order, one short paragraph each: author(s), year, setting, design, sample size, key finding with numbers, one limitation, and one sentence on relevance to my study.
+2. Write a sub-section "Indian studies" in the same format.
+3. After each sub-section, write a synthesis paragraph comparing the studies: agreement, disagreement and why.
+4. Write a sub-section "Gaps leading to the present study" in 3–5 sentences.
+5. Add a summary table of all studies.
+rules: Use only the study details I pasted, with numbers reproduced exactly. Where a detail is missing, write [NOT REPORTED] rather than filling it in, because examiners cross-check these paragraphs against the original papers. Write in paragraphs, not bullet points. Use associational language for observational studies, and keep the order of studies consistent between the text and the summary table.
+output: Three headed sub-sections in formal thesis prose, then the summary table (author, year, country, design, n, key finding, limitation).
+tweak: Close with a note on any study whose limitation seriously weakens its relevance to my question.
+tips:
+- Most universities expect 15 or more references in the ROL. Check your guide's expectation.
+- The synthesis paragraphs are what raise this from a list to a review. Don't skip them.
+- If your Indian studies are few, say so plainly. That scarcity supports your gap.
+next: rol-gap-closing
+
+@@ M | rol-examiner-review | Examiner-style critique of my ROL chapter
+aud: PG Resident
+use: When your ROL chapter is drafted and before it goes to your guide.
+why: An ROL is judged on coverage, synthesis, critical appraisal and how clearly it leads to the gap. An honest examiner-style critique tells you which of these is weak while there is still time to search and rewrite.
+persona: You are an external examiner for MD/MS theses who has marked hundreds of Review of Literature chapters. You are specific and fair, and you quote the text you are criticising.
+context: Thesis title and objective: [paste]
+Number of references in the chapter: [N]
+Date range of the included studies: [e.g. 2008–2025]
+Citation style used: [Vancouver / other]
+What my guide has already commented on: [brief, or "not yet reviewed"]
+My ROL chapter: [PASTE CHAPTER HERE]
+task: 1. Score the chapter out of 10 on each of: coverage, recency, inclusion of Indian evidence, synthesis versus listing, critical appraisal of study quality, handling of conflicting findings, logical flow towards the gap, and accuracy of reporting (numbers and designs described clearly).
+2. Quote the passage behind each score.
+3. List the 6 most important fixes, in priority order.
+4. Identify paragraphs that merely list studies, and rewrite one as a synthesis example.
+5. Flag any claim that is not attributed to a reference.
+6. Check that the studies emphasised at the end of the chapter are the ones that support my gap statement.
+rules: Base all comments on the text I pasted. In the example rewrite, add no new studies or numbers; use [CITE] slots, because the rewrite must stay within my evidence.
+output: A rubric table with a total out of 80, the priority fixes as a numbered list, the flagged claims, and the example rewrite.
+tweak: End with a one-line verdict (ready for guide, needs one revision, or needs restructuring) and the single fix with the biggest impact.
+tips:
+- Run this again after revising. Your synthesis score should rise the most.
+- If "recency" scores low, re-run your search for the last 2 years before rewriting.
+- Share the rubric with your guide along with the chapter. It speeds up their review.
+next: rol-thematic-draft
+
+@@ S | screening-criteria | Inclusion and exclusion criteria for screening
+aud: PG Resident
+use: Before screening titles and abstracts.
+persona: You are a systematic reviewer who writes screening criteria clear enough for two independent reviewers to agree.
+context: My question: [PICOT]
+Type of review: [thesis ROL / systematic review / scoping review]
+Designs, languages and dates I intend to include: [brief]
+task: 1. Write inclusion criteria for population, exposure or intervention, comparator, outcomes, study design, setting, language and date.
+2. Write exclusion criteria, each with a one-line reason.
+3. Give 3 borderline examples and how the criteria would decide each.
+4. Suggest a pilot: screen 50 records together and calculate agreement.
+rules: Make each criterion testable from a title and abstract where possible, because criteria that need full text slow screening down badly.
+output: Two numbered lists, a borderline-examples table, then the pilot plan.
+tip: Screen generously at title and abstract stage. Be strict at full text.
+try: Question: effect of pulmonary rehabilitation on quality of life in post-TB lung disease.
+next: abstract-triage
+
+@@ S | abstract-triage | Triage a batch of abstracts
+aud: PG Resident
+use: When screening titles and abstracts against your criteria.
+persona: You are a careful second reviewer on a systematic review team who applies criteria consistently and explains every decision.
+context: My inclusion and exclusion criteria: [PASTE CRITERIA HERE]
+A batch of 10–20 titles and abstracts, numbered: [PASTE ABSTRACTS HERE]
+task: 1. Classify each record as include, exclude or unsure.
+2. For each exclusion, name the criterion it failed.
+3. For each unsure record, state exactly what the full text needs to show.
+4. Summarise the counts.
+rules: When in doubt, mark unsure rather than exclude, because wrongly excluded studies cannot be recovered later. Decide only from the text given.
+output: A table (record number, decision, reason or criterion), then the counts.
+tip: You remain the first reviewer. Use this as a second opinion and resolve disagreements yourself.
+try: 15 abstracts retrieved on "procalcitonin antibiotic duration ICU".
+next: rol-from-pdfs
+
+@@ S | extraction-table-design | Design my data-extraction sheet
+aud: PG Resident
+use: Before extracting data from included papers.
+persona: You are a data-extraction lead for systematic reviews who designs sheets that capture everything needed and nothing more.
+context: My question: [PICOT]
+Designs included: [list]
+Planned analysis: [narrative synthesis / meta-analysis]
+Tool: [Excel / Google Sheets]
+task: 1. List the extraction columns grouped as study details, population, exposure or intervention, outcomes, results and quality.
+2. For each column, give a definition, format (text, number, drop-down) and example entry.
+3. Add columns needed if I later want a meta-analysis (e.g. events and totals per group, or means and SDs).
+4. Suggest how to pilot and version the sheet.
+rules: Keep outcome columns aligned with my primary and secondary outcomes, because unmatched columns lead to missing data at synthesis.
+output: A column table (group, column, definition, format, example), then the piloting steps.
+tip: Use drop-downs for design and country. They make later summary tables effortless.
+try: Diagnostic accuracy studies of lung ultrasound for pneumonia in children.
+next: rol-from-pdfs
+
+@@ S | single-paper-extract | Extract one paper into my evidence table
+aud: PG Resident
+use: While reading each included paper, to fill your table accurately.
+persona: You are a precise research assistant who extracts data only from the text provided and marks everything else as not reported.
+context: My extraction columns: [PASTE COLUMN LIST HERE]
+The paper (full text or relevant sections): [PASTE OR UPLOAD PAPER HERE]
+task: 1. Fill each column from the paper.
+2. Give the section or table each value came from.
+3. Mark missing items as NOT REPORTED.
+4. Note any discrepancy between the abstract and the results.
+5. Write a one-sentence limitation relevant to my question.
+rules: Reproduce numbers exactly, including confidence intervals and units, because a transcription error in the evidence table propagates through the whole ROL.
+output: A two-column table (column, value with source location), then the discrepancy notes and the limitation sentence.
+tip: Extract the primary outcome first. If the paper doesn't report it clearly, reconsider inclusion.
+try: A cohort study of NT-proBNP and mortality in acute heart failure.
+next: rob-apply
+
+@@ S | rob-tool-picker | Which risk-of-bias tool for which study?
+aud: PG Resident
+use: Before appraising the quality of your included studies.
+persona: You are an evidence-synthesis methodologist who knows the major quality-appraisal tools and their correct use.
+context: Designs in my review, with counts: [e.g. 3 RCTs, 8 cohorts, 2 diagnostic accuracy studies]
+Type of review: [thesis ROL / systematic review]
+task: 1. Match each design to the recommended tool (for example RoB 2 for RCTs, ROBINS-I or Newcastle-Ottawa for non-randomised studies, QUADAS-2 for diagnostic accuracy, AMSTAR 2 for systematic reviews, JBI checklists for others).
+2. List each tool's domains and the output (overall judgement).
+3. Explain how to present the results in a thesis (table or traffic-light plot).
+4. Mention simpler options if a full tool is too heavy for a narrative thesis ROL.
+rules: Name only established tools and describe their domains accurately; if unsure of a detail, write [CHECK TOOL MANUAL], because misapplying a tool is worse than not using one.
+output: A design-to-tool table with domains, then the presentation guidance.
+tip: robvis is a free tool that produces traffic-light plots from your judgements.
+try: 4 RCTs and 6 prospective cohorts on early mobilisation in the ICU.
+next: rob-apply
+
+@@ S | rob-apply | Apply a risk-of-bias tool to one paper
+aud: PG Resident
+use: When appraising each included study.
+persona: You are a trained risk-of-bias assessor who justifies every judgement with a quote from the paper.
+context: Tool: [RoB 2 / ROBINS-I / Newcastle-Ottawa / QUADAS-2 / JBI]
+The paper (methods and results): [PASTE OR UPLOAD PAPER HERE]
+My outcome of interest: [outcome]
+task: 1. Assess each domain of the tool for my outcome.
+2. Give the judgement for each domain (e.g. low, some concerns, high) with a supporting quote.
+3. Give the overall judgement using the tool's own algorithm.
+4. Write one sentence I can use in my ROL describing the study's quality.
+rules: Base judgements only on what the paper reports; where information is missing, say so and apply the tool's rule for missing information, because judgements without quotes cannot be defended.
+output: A domain table (domain, judgement, quote, reason), then the overall judgement and the ROL sentence.
+tip: Have a second person assess 2 or 3 papers independently. Report your agreement in the methods.
+try: RoB 2 for an RCT of dexamethasone in severe pneumonia, outcome 28-day mortality.
+next: theme-finder
+
+@@ S | theme-finder | Find the themes in my evidence table
+aud: PG Resident
+use: After extraction, before writing, to decide the structure of your ROL.
+persona: You are a qualitative synthesis expert who groups research findings into meaningful themes.
+context: My research question: [PICOT]
+My extraction table: [PASTE TABLE HERE]
+task: 1. Propose 4–6 themes, each with a one-line definition.
+2. Assign every study to one or more themes.
+3. For each theme, summarise in 2 lines what the evidence shows and how consistent it is.
+4. Identify studies that don't fit any theme, and what that means.
+5. Suggest the order of themes that best leads to my research gap.
+rules: Build themes from the studies in the table only; if a theme rests on a single study, flag it as thin evidence, because thin themes are easily challenged.
+output: A theme table (theme, definition, studies, consistency), then the suggested order.
+tip: Good themes are usually questions: "Does X predict Y?", "In whom?", "How is Y measured?"
+try: An extraction table of 18 studies on neutrophil-lymphocyte ratio in sepsis.
+next: rol-thematic-draft
+
+@@ S | conflicting-findings | Explain why studies disagree
+aud: PG Resident / Faculty
+use: When included studies report opposite or very different results.
+persona: You are a clinical epidemiologist skilled at explaining heterogeneity between studies.
+context: Studies that disagree, each with design, population, setting, definitions, sample size and result: [PASTE DETAILS HERE]
+task: 1. Compare the studies side by side on population, setting, exposure or intervention definition, outcome definition, measurement method, timing, design and sample size.
+2. Identify the most likely explanations for the disagreement, ranked.
+3. Say whether chance (small samples, wide confidence intervals) could explain it.
+4. Write a paragraph for my ROL that presents the disagreement and the likely reasons.
+5. Say what my study could add to resolve it.
+rules: Use only the details I gave; where a comparison needs missing information, write [NOT REPORTED], because speculation presented as fact weakens the ROL.
+output: A comparison table, the ranked explanations, then the ROL paragraph.
+tip: Differences in outcome definitions explain more disagreement than most residents expect.
+try: Two cohorts disagree on whether obesity increases mortality in ARDS (the "obesity paradox").
+next: rol-thematic-draft
+
+@@ S | study-paragraph | One study, one paragraph, done properly
+aud: PG Resident
+use: When writing individual study descriptions in the traditional ROL format.
+persona: You are a thesis-writing mentor who writes compact, informative study descriptions.
+context: Study details (author, year, country, design, sample size, population, key finding with numbers, limitation): [PASTE DETAILS HERE]
+My research question: [one line]
+task: 1. Write a 70–100 word paragraph: who, where, design, sample, key finding with its numbers, one limitation, and one sentence on relevance to my study.
+2. Write a 40-word version for a summary table or a shorter ROL.
+rules: Reproduce numbers and terms exactly as given, and use the design's correct language (associated with, not caused, for observational designs), because study paragraphs are cross-checked against the paper.
+output: The two versions, labelled.
+tip: The relevance sentence is what separates a review from a bibliography. Never skip it.
+try: A 2021 Indian cross-sectional study of 312 patients on vitamin D and COPD exacerbations.
+next: rol-global-indian
+
+@@ S | chrono-to-thematic | Convert a chronological ROL into a thematic one
+aud: PG Resident
+use: When your guide says your ROL is "just a list of studies by year".
+persona: You are an academic editor who restructures list-style literature reviews into synthesised, thematic ones.
+context: My current ROL: [PASTE ROL HERE]
+My research question: [one line]
+task: 1. Identify the themes present across the studies I have described.
+2. Reassign each study paragraph to a theme.
+3. Rewrite the ROL thematically: for each theme, an opening sentence, comparison across studies, and an interpretive closing sentence.
+4. Keep a short chronological note only where historical development matters.
+rules: Use only the studies and numbers already in my text, with their citations, because restructuring must not introduce new evidence.
+output: A theme map, then the restructured ROL.
+tip: Keep your old version. Some universities still want a brief chronological overview before the thematic review.
+try: A 15-paragraph ROL on hypothyroidism in pregnancy ordered from 1995 to 2024.
+next: rol-examiner-review
+
+@@ S | synthesis-matrix | Build a literature synthesis matrix
+aud: PG Resident
+use: When planning the ROL, to see which studies speak to which sub-questions.
+persona: You are a research-methods teacher who uses synthesis matrices to show residents how studies connect.
+context: Sub-questions or themes of my review: [list]
+Included studies with key findings: [PASTE LIST HERE]
+task: 1. Build a matrix with studies as rows and themes as columns, and a short finding in each relevant cell.
+2. Mark empty cells: these are evidence gaps.
+3. Summarise each column in one sentence.
+4. Identify the column with the least evidence, and relate it to my research gap.
+rules: Fill cells only from the findings I gave; leave the rest blank rather than inferring, because empty cells are the insight.
+output: The matrix table, column summaries, then the gap note.
+tip: Put the matrix in your thesis appendix. Examiners like to see the synthesis visually.
+try: 12 studies on AKI biomarkers across themes: diagnosis, prognosis, cost, Indian data.
+next: theme-finder
+
+@@ S | rol-outline | Heading structure for my ROL chapter
+aud: PG Resident
+use: Before you write, so the chapter has a logical architecture.
+persona: You are a senior thesis guide who has seen what structures examiners find clear.
+context: Thesis title and objectives: [paste]
+Themes or areas my reading covers: [list]
+University format requirements, if any: [e.g. must include a historical review]
+task: 1. Propose a heading and sub-heading structure for the chapter (for example: historical perspective, definitions, epidemiology, pathophysiology relevant to the question, themed evidence, Indian studies, gaps).
+2. Give a suggested length and number of references for each section.
+3. Mark which sections are essential and which are optional for my question.
+4. Explain the logic that links the sections.
+rules: Keep pathophysiology and textbook content only where it is needed to understand the research question, because examiners penalise padding.
+output: A numbered outline with lengths and reference counts, then the linking logic.
+tip: If a section cannot be linked to your objective in one sentence, drop it.
+try: Thesis: serum magnesium and outcomes in critically ill patients.
+next: rol-thematic-draft
+
+@@ S | rol-gap-closing | The closing paragraph that leads to my study
+aud: PG Resident
+use: For the final paragraph of your ROL.
+persona: You are a thesis examiner who reads the end of the ROL to judge whether the student understands their own study's purpose.
+context: Summary of what my ROL showed: [brief]
+Gaps identified: [list]
+My objectives: [paste]
+task: 1. Write a closing paragraph of 120–180 words that summarises the state of the evidence, names the specific gaps, and states how the present study addresses them.
+2. Check that the gaps named here match the gap in my introduction.
+3. Suggest one sentence that connects to my methodology chapter.
+rules: Keep the gap claims modest ("limited data", "few Indian studies") unless my ROL demonstrates absence, because absolute claims are easy to disprove.
+output: The paragraph, then the consistency check, then the connecting sentence.
+tip: This paragraph and your introduction's gap paragraph should say the same thing in different words.
+try: ROL on steroid use in tuberculous meningitis; gap: outcome data from Indian district hospitals.
+next: objective-check
+
+@@ S | quote-grounded-summary | Summarise a paper, grounded in quotes
+aud: PG Resident / MBBS Student
+use: When you need a reliable summary of a paper you will cite.
+persona: You are a critical reader who summarises papers faithfully and never overstates their findings.
+context: The paper: [PASTE OR UPLOAD PAPER HERE]
+Why I am reading it: [e.g. for my ROL on X]
+task: 1. First, extract 5–8 direct quotes that capture the aim, design, population, main results and the authors' stated limitations.
+2. Then write a 120-word summary based only on those quotes.
+3. Note what the authors concluded, and whether the results fully support that conclusion.
+rules: Base the summary only on the quotes you extracted, because quote-first summarising prevents misrepresentation of the paper.
+output: The quotes with section labels, then the summary, then the conclusion check.
+tip: If the conclusion claims more than the results show, note it. It's useful for your discussion chapter.
+try: A cohort paper on the association of sleep apnoea and resistant hypertension.
+next: single-paper-extract
+
+@@ S | rol-summary-table | Summary table of key studies
+aud: PG Resident
+use: For the table that closes or accompanies your ROL.
+persona: You are an academic editor who produces clear, journal-quality summary tables.
+context: Key studies with extracted details: [PASTE DETAILS HERE]
+Columns my guide wants (if specified): [list]
+Page orientation limit: [portrait / landscape]
+task: 1. Build a summary table: author and year, country, design, sample size, population, key finding with numbers, limitation.
+2. Order rows logically (by theme, then year).
+3. Write a table title and footnotes explaining abbreviations.
+4. Suggest how to split the table if it is too wide.
+rules: Reproduce numbers exactly and write NR where a value is not reported, because table errors are highly visible to examiners.
+output: The table in Markdown, then the title and footnotes.
+tip: Keep each "key finding" cell to one line with a number. Long text cells make tables unreadable.
+try: 10 studies on the diagnostic accuracy of GeneXpert for extrapulmonary TB.
+next: rol-thematic-draft
+
+@@ S | numbers-check | Check the numbers in my ROL against the sources
+aud: PG Resident
+use: Before submitting your ROL or discussion, to catch transcription errors.
+persona: You are a fact-checker for a medical journal who compares every number in a manuscript with its source.
+context: My ROL text: [PASTE TEXT HERE]
+The source passages or tables for each cited study: [PASTE SOURCE EXTRACTS HERE]
+task: 1. List every number in my text with its citation.
+2. Match each against the source passage.
+3. Mark each as correct, wrong (give the correct value) or not verifiable from the extracts provided.
+4. Flag any rounding, unit or percentage-versus-proportion error.
+rules: Compare only against the extracts I gave; do not "correct" numbers from memory, because the source document is the only authority.
+output: A table (number, citation, source value, status), then a count of errors.
+tip: Check the numbers you copied from abstracts. Abstracts sometimes differ from the results tables.
+try: A ROL paragraph quoting prevalence, odds ratios and sample sizes from 6 studies.
+next: vancouver-check
+
+@@ S | vancouver-check | Format and check my reference list
+aud: PG Resident
+use: Before submission, to get the reference list right.
+persona: You are a reference-list editor who applies Vancouver (ICMJE / NLM) style precisely.
+context: My reference list as it currently is: [PASTE REFERENCES HERE]
+Style required: [Vancouver / other]
+task: 1. Reformat every reference to the required style.
+2. Flag references missing essential elements (authors, title, journal abbreviation, year, volume, pages, DOI).
+3. Flag possible duplicates and numbering problems.
+4. List references that should be checked for existence and accuracy on PubMed.
+rules: Do not invent missing details such as volume, pages or DOI; write [MISSING — CHECK PUBMED], because made-up bibliographic details make a real reference look fake.
+output: The reformatted list, then a problem table (reference number, issue).
+tip: Export references from Zotero or Mendeley instead of formatting them by hand wherever possible.
+try: 25 references in mixed formats copied from Google Scholar.
+next: zotero-setup
+
+@@ S | notebooklm-questions | The questions to ask NotebookLM about my papers
+aud: PG Resident
+use: After uploading your included papers into a NotebookLM notebook.
+persona: You are a research-tools trainer who teaches residents to interrogate their own document collections.
+context: My research question: [PICOT]
+Number and type of papers uploaded: [e.g. 12 cohorts, 3 RCTs]
+Sections of my ROL: [list]
+task: 1. Write 15 questions to ask NotebookLM, grouped by: study characteristics, findings, disagreements, methods quality, gaps.
+2. For each group, say what a useful answer should contain.
+3. Suggest a prompt for NotebookLM's audio overview focused on my question.
+4. Explain how to verify answers using NotebookLM's inline citations.
+rules: Phrase every question so the answer must come from the uploaded sources, because NotebookLM is only reliable when it is grounded in them.
+output: A grouped question list, then the audio-overview prompt, then the verification steps.
+tip: Ask "Which papers disagree about X, and how?". It is the fastest way to find material for your synthesis.
+try: 15 papers on post-operative delirium in elderly hip fracture patients.
+next: rol-from-pdfs
+
+@@ S | paper-appraisal-quick | Quick critical appraisal of one paper
+aud: PG Resident / MBBS Student
+use: When deciding how much weight a single paper deserves in your review.
+persona: You are a journal-club moderator who appraises papers quickly and fairly.
+context: The paper: [PASTE OR UPLOAD PAPER HERE]
+My research question: [one line]
+task: 1. Identify the design and its natural strengths and weaknesses.
+2. Assess selection, measurement, confounding and attrition.
+3. Judge whether the results are precise (confidence intervals) and clinically meaningful.
+4. Judge applicability to Indian patients and to my question.
+5. Give an overall weight for my review: high, moderate or low, with one clear reason.
+rules: Quote the paper when judging a weakness, because unsupported criticism is easy to dismiss.
+output: Five short headed sections, then a one-line verdict.
+tip: Use the verdict line directly in your ROL table's "limitation" column.
+try: An observational study claiming statins reduce mortality in sepsis.
+next: rob-apply
+
+@@ S | meta-analysis-read | Read and summarise a meta-analysis
+aud: PG Resident
+use: When a key source in your ROL is a systematic review or meta-analysis.
+persona: You are a biostatistician who explains forest plots and heterogeneity clearly to clinicians.
+context: The meta-analysis (abstract, results and forest plots, or upload): [PASTE OR UPLOAD HERE]
+My question: [one line]
+task: 1. State the pooled estimate, its CI and what it means clinically.
+2. Explain the heterogeneity (I², tau², prediction interval if reported) and what it implies.
+3. Summarise the certainty of evidence (GRADE) if reported.
+4. Point out the main limitations (small-study effects, included study quality).
+5. Write a 100-word ROL paragraph summarising the meta-analysis accurately.
+rules: Use only the reported numbers; if a statistic is not reported, say so rather than computing it, because an invented pooled estimate misrepresents the review.
+output: Five short answers, then the paragraph.
+tip: A pooled estimate with high heterogeneity is an average of different things. Say so in your ROL.
+try: A meta-analysis of prone positioning in ARDS with I² of 62%.
+next: rol-thematic-draft
+
+@@ S | historical-review | Historical review sub-section without errors
+aud: PG Resident
+use: When your university's thesis format expects a historical review.
+persona: You are a medical historian and academic who insists that every historical claim is dated and sourced.
+context: Topic: [TOPIC]
+Milestones I have already sourced: [PASTE MILESTONES WITH REFERENCES]
+Word limit: [e.g. 300 words]
+task: 1. Arrange my milestones into a timeline table: date, milestone, significance.
+2. Suggest other milestones I may be missing, each marked [VERIFY DATE AND SOURCE].
+3. Write a historical review of the stated length from my sourced milestones only.
+4. End with one sentence linking history to the present research question.
+rules: The prose must use only milestones I sourced; suggested ones stay in the table until I verify them, because dates and "firsts" are frequently misattributed.
+output: The timeline table, the suggestion list, then the prose.
+tip: Keep history short. One well-sourced page beats five pages of unverified dates.
+try: Topic: evolution of mechanical ventilation.
+next: rol-outline
+
+@@ S | rol-update | Update my ROL before submission
+aud: PG Resident
+use: 2–3 months before thesis submission, to add papers published since your first search.
+persona: You are a systematic reviewer who updates reviews efficiently and transparently.
+context: Original search date and strings: [PASTE HERE]
+New records retrieved since then (titles and abstracts): [PASTE HERE]
+My current ROL themes: [list]
+task: 1. Screen the new records against my criteria.
+2. For each included record, say which theme it belongs to and whether it confirms, contradicts or extends existing findings.
+3. Suggest exactly where each fits in the text, with a one-sentence insertion.
+4. Draft the updated search-methods sentence with the new date.
+rules: Use only the new records I pasted; insertions must use [CITE] slots until I verify the full text, because abstracts alone can mislead.
+output: A screening table, then an insertion plan (theme, position, sentence), then the updated methods sentence.
+tip: If a major new study contradicts your findings, address it in your discussion too.
+try: 12 new PubMed records on tele-rehabilitation after stroke since your 2025 search.
+next: numbers-check
+
+@@ S | prospero-registration | Register a systematic review on PROSPERO
+aud: PG Resident / Faculty
+use: If your thesis or first paper is a systematic review, before you start screening.
+persona: You are a systematic-review methodologist who has registered and peer reviewed many PROSPERO records.
+context: Review question: [PICOT]
+Planned databases, dates and designs: [brief]
+Planned synthesis: [narrative / meta-analysis]
+Review team and roles: [brief]
+task: 1. Draft the main PROSPERO fields: review title, question, searches, condition, participants, intervention or exposure, comparator, outcomes (main and additional), data extraction, risk of bias, synthesis strategy and subgroup analyses.
+2. Flag fields where my plan is too vague to register.
+3. Explain what must be registered before screening starts and what counts as a deviation.
+rules: Mark field names or rules you are unsure of as [CHECK CURRENT PROSPERO FORM], because the registration form is revised periodically. Do not claim the review is novel; tell me to search PROSPERO first.
+output: A field-by-field draft, then the vagueness flags, then the rules on timing and deviations.
+tip: Registration before screening is what reviewers check. Register early, even if the protocol is short.
+try: Systematic review of vitamin D supplementation for TB treatment outcomes.
+next: screening-criteria
+
+@@ Q | abstract-pico | Pull the PICO out of an abstract
+aud: MBBS Student / PG Resident
+body: Act as an evidence-based medicine tutor. From this abstract, [PASTE ABSTRACT], extract the population, intervention or exposure, comparator, outcome, design and sample size into a 6-row table. Write NOT REPORTED where missing, and add one line on the main result with its numbers.
+try: Abstract of an RCT comparing two regimens for H. pylori eradication.
+
+@@ Q | one-line-takeaway | One-line takeaway of a paper
+aud: PG Resident
+body: Act as a senior academic. Read this abstract or paper, [PASTE TEXT], and give its takeaway in one sentence of no more than 30 words that states the design, population and main finding with its key number, without overstating causation.
+try: A cohort study on handgrip strength and mortality in cirrhosis.
+
+@@ Q | main-limitation | The limitation that matters most
+aud: PG Resident
+body: Act as a critical peer reviewer. For this study, [PASTE ABSTRACT OR METHODS], identify the single limitation that most threatens its conclusion, explain in 2 sentences which direction it likely biases the result, and write one sentence I can use in my ROL.
+try: A single-centre retrospective study of 80 patients on a new sepsis score.
+
+@@ Q | compare-two | Compare two studies in three sentences
+aud: PG Resident
+body: Act as a thesis mentor. Compare these two studies, [PASTE DETAILS OF STUDY A AND STUDY B], in exactly three sentences: what each found with numbers, whether they agree, and the most likely reason for any difference. Use associational language for observational designs.
+try: Two studies on HbA1c and surgical site infection with opposite results.
+
+@@ Q | identify-design | What design is this study really?
+aud: MBBS Student / PG Resident
+body: Act as an epidemiology examiner testing a postgraduate. From this methods section, [PASTE METHODS], identify the true study design (authors sometimes mislabel it), justify your answer in 3 short bullets citing the methods, and state what the design can and cannot conclude.
+try: A "prospective study" that actually analysed existing hospital records.
+
+@@ Q | interpret-effect | Interpret an effect size and its CI
+aud: MBBS Student / PG Resident
+body: Act as a biostatistics tutor. Interpret this result for a clinician: [PASTE RESULT, e.g. OR 1.8, 95% CI 1.1–2.9]. Explain what it means, whether it is statistically and clinically meaningful, and how to phrase it correctly in my ROL in one sentence.
+try: Adjusted hazard ratio 0.72 (95% CI 0.55–0.94) for mortality with early antibiotics.
+
+@@ Q | plain-results | Results in plain language
+aud: MBBS Student / PG Resident
+body: Act as a medical educator teaching interns on the ward. Translate this results passage, [PASTE PASSAGE], into plain language for a junior colleague in under 80 words. Keep every number accurate and explain each statistical term briefly in plain brackets.
+try: A results paragraph with sensitivity, specificity, AUC and likelihood ratios.
+
+@@ Q | citation-claim-match | Does this reference support my sentence?
+aud: PG Resident
+body: Act as a citation auditor. Here is my sentence, [SENTENCE], and the abstract or passage of the reference I cited, [PASTE SOURCE TEXT]. Tell me if the source fully supports, partly supports or does not support my sentence, and rewrite the sentence to match the source exactly.
+try: A sentence claiming a drug "reduces mortality", citing a study that reported length of stay only.
+
+@@ Q | one-reference | Format one reference in Vancouver style
+aud: PG Resident / MBBS Student
+body: Act as a reference editor for medical theses. Format this reference in Vancouver (ICMJE / NLM) style: [PASTE REFERENCE DETAILS]. List any element that is missing rather than inventing it, and show the in-text citation format my thesis should use.
+try: Details of a 2023 journal article with 8 authors, copied from Google Scholar.
+
+@@ Q | study-weight | How much should this study count?
+aud: PG Resident
+body: Act as a systematic reviewer. Given this study's design, size and quality, [PASTE BRIEF DETAILS], tell me how much weight it should carry in my ROL compared with a large RCT or a meta-analysis, and give me one hedged sentence to describe it.
+try: A 40-patient pilot study with a striking positive result.
+
+@@ Q | notebook-audio-prompt | Customise a NotebookLM audio overview
+aud: PG Resident / MBBS Student
+body: Act as a NotebookLM power user. Write a customisation instruction for an Audio Overview of my uploaded papers on [TOPIC] for a [PG resident / exam aspirant]. Focus it on findings, disagreements and gaps, skip history, and keep it under 80 words.
+try: 10 uploaded papers on non-invasive ventilation in COPD exacerbations.
+
+@@ Q | rol-paragraph-check | Is this ROL paragraph a list or a synthesis?
+aud: PG Resident
+body: Act as an ROL examiner. Read this paragraph, [PASTE PARAGRAPH], and tell me whether it synthesises or merely lists studies, in one line. Then give 3 specific edits that would make it compare and interpret the studies, without adding new evidence.
+try: A paragraph describing four studies one after another in date order.
