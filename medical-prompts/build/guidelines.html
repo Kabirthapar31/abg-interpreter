@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Medical Prompt Writing Guidelines</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 20mm 16mm; }
+  :root {
+    --ink: #1a1d24; --muted: #5b6270; --line: #e3e5ea; --accent: #e8590c; --accent-soft: #fff1e8;
+    --navy: #14213d; --card: #f7f8fa; --green: #2b8a3e;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif; color: var(--ink);
+         font-size: 10pt; line-height: 1.5; margin: 0; background: #fff; }
+  h1, h2, h3 { color: var(--navy); line-height: 1.2; }
+  h2 { font-size: 17pt; margin: 0 0 4mm; padding-bottom: 2mm; border-bottom: 2.5px solid var(--accent); }
+  h3 { font-size: 11.5pt; margin: 5mm 0 2mm; }
+  p { margin: 0 0 2.5mm; }
+  .section { page-break-before: always; }
+  .flow { page-break-before: auto; margin-top: 8mm; }
+  h2, h3, .kicker { page-break-after: avoid; break-after: avoid; }
+  table, .tiers, .rctsfq, .grid, ol, .check { page-break-inside: avoid; }
+  tr { page-break-inside: avoid; }
+  .kicker { color: var(--accent); font-weight: bold; font-size: 8.5pt; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1mm; }
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 4mm; font-size: 8.8pt; }
+  th { background: var(--navy); color: #fff; text-align: left; padding: 2mm 2.2mm; font-weight: bold; }
+  td { padding: 1.8mm 2.2mm; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:nth-child(even) td { background: #fafbfc; }
+  td.c, th.c { text-align: center; }
+  .tick { color: var(--green); font-weight: bold; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .part td { background: var(--accent-soft) !important; font-weight: bold; color: var(--navy); }
+  table.compact td { padding: 1mm 2.2mm; font-size: 8.4pt; }
+  table.compact th { padding: 1.4mm 2.2mm; }
+  pre { font-family: "DejaVu Sans Mono", monospace; font-size: 8.2pt; background: var(--card);
+        border-left: 3px solid var(--accent); padding: 3mm 3.5mm; white-space: pre-wrap; margin: 2mm 0 4mm;
+        line-height: 1.45; page-break-inside: avoid; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; margin: 3mm 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 2.5mm; padding: 3mm 3.5mm; page-break-inside: avoid; }
+  .card h4 { margin: 0 0 1.5mm; color: var(--navy); font-size: 10pt; }
+  .card p, .card li { font-size: 8.8pt; }
+  .card .tag { display: inline-block; background: var(--accent); color: #fff; font-size: 7.5pt; font-weight: bold;
+               border-radius: 1mm; padding: .4mm 1.6mm; margin-bottom: 1.5mm; }
+  ul, ol { margin: 0 0 3mm; padding-left: 5mm; }
+  li { margin-bottom: 1mm; }
+  .callout { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 3mm 4mm; margin: 3mm 0 4mm; page-break-inside: avoid; }
+  .callout b { color: var(--navy); }
+  .rctsfq { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2mm; margin: 3mm 0 4mm; }
+  .rctsfq div { background: var(--navy); color: #fff; border-radius: 2mm; padding: 3mm 2mm; text-align: center; }
+  .rctsfq div b { display: block; font-size: 18pt; color: var(--accent); line-height: 1; }
+  .rctsfq div span { display: block; font-size: 8pt; font-weight: bold; margin-top: 1mm; }
+  .rctsfq div small { display: block; font-size: 7pt; opacity: .8; margin-top: 1mm; line-height: 1.3; }
+  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin: 3mm 0; }
+  .tier { border: 1.5px solid var(--line); border-radius: 2.5mm; padding: 3mm; page-break-inside: avoid; }
+  .tier .w { font-size: 16pt; font-weight: bold; color: var(--accent); }
+  .tier h4 { margin: 0; color: var(--navy); }
+  .tier p { font-size: 8.5pt; margin: 1mm 0 0; color: var(--muted); }
+  .tier.default { border-color: var(--accent); background: var(--accent-soft); }
+  .check li { list-style: none; margin-left: -5mm; padding-left: 6mm; position: relative; }
+  .check li::before { content: "☐"; position: absolute; left: 0; color: var(--accent); }
+  .src li { font-size: 8.3pt; word-break: break-all; }
+  .src li b { word-break: normal; }
+  .muted { color: var(--muted); }
+
+  /* Cover */
+  .cover { height: 257mm; background: var(--navy); color: #fff; margin: 0; padding: 26mm 18mm; position: relative; border-radius: 3mm; }
+  .cover .kicker { color: var(--accent); font-size: 10pt; }
+  .cover h1 { color: #fff; font-size: 34pt; margin: 6mm 0 5mm; line-height: 1.08; }
+  .cover h1 em { color: var(--accent); font-style: normal; }
+  .cover p.lead { font-size: 12.5pt; opacity: .9; max-width: 150mm; }
+  .cover .labs { display: flex; gap: 3mm; margin-top: 12mm; flex-wrap: wrap; }
+  .cover .labs span { border: 1px solid rgba(255,255,255,.35); border-radius: 10mm; padding: 1.8mm 4.5mm; font-size: 9.5pt; }
+  .cover .stats { position: absolute; left: 18mm; right: 18mm; bottom: 24mm; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+  .cover .stats div { border-top: 2px solid var(--accent); padding-top: 3mm; }
+  .cover .stats b { font-size: 24pt; display: block; }
+  .cover .stats span { font-size: 9pt; opacity: .8; }
+  .toc { margin-top: 4mm; }
+  .toc div { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--line); padding: 2.2mm 0; font-size: 10.5pt; }
+  .toc div b { color: var(--accent); width: 9mm; display: inline-block; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="kicker">Step 1 of 3 · For approval</div>
+  <h1>How to Write a<br><em>Perfect Medical Prompt</em></h1>
+  <p class="lead">The prompt-writing guidelines behind the 1,000-prompt library for doctors, residents and medical students, built from the published prompting guidance of the four major AI labs.</p>
+  <div class="labs"><span>OpenAI · ChatGPT</span><span>Anthropic · Claude</span><span>Google · Gemini</span><span>Microsoft · Copilot</span></div>
+  <div class="stats">
+    <div><b>11</b><span>principles all four labs agree on</span></div>
+    <div><b>6</b><span>building blocks in every prompt (R-C-T-S-F-Q)</span></div>
+    <div><b>1,000</b><span>prompts across 3 parts and 27 sections</span></div>
+  </div>
+</div>
+
+<!-- CONTENTS -->
+<div class="section">
+  <div class="kicker">Contents</div>
+  <h2>What's inside</h2>
+  <div class="toc">
+    <div><span><b>01</b>What the four AI labs agree on</span></div>
+    <div><span><b>02</b>Each lab's framework in one line</span></div>
+    <div><span><b>03</b>The master structure: R-C-T-S-F-Q</span></div>
+    <div><span><b>04</b>Length and context rules: how many words, how much context</span></div>
+    <div><span><b>05</b>Format rules: how each prompt is written</span></div>
+    <div><span><b>06</b>Medical safety and accuracy rules</span></div>
+    <div><span><b>07</b>The prompt card template</span></div>
+    <div><span><b>08</b>Worked examples: one per library part</span></div>
+    <div><span><b>09</b>Quality checklist</span></div>
+    <div><span><b>10</b>The 1,000-prompt library plan</span></div>
+    <div><span><b>11</b>Sources</span></div>
+  </div>
+  <div class="callout" style="margin-top:8mm">
+    <b>How to read this document.</b> Sections 1–2 summarise the research. Sections 3–9 are the rules I will follow when writing every prompt. Section 10 is the proposed structure of the final 1,000-prompt PDF, which I'd like you to approve or change before I start.
+  </div>
+  <div class="callout">
+    <b>What happens next.</b> ① You approve these guidelines. ② I study the prompt PDFs already in your Google Drive and send a combined "how I'll write the prompts" PDF. ③ I write the 1,000 prompts.
+  </div>
+</div>
+
+<!-- 1 -->
+<div class="section">
+  <div class="kicker">01 · Research</div>
+  <h2>What the four AI labs agree on</h2>
+  <p>I read the official prompting guides from OpenAI, Anthropic, Google and Microsoft. Their vocabulary differs, but they agree on the core, and any prompt that follows these principles works well in any chatbot.</p>
+  <table>
+    <tr><th style="width:4%">#</th><th>Principle</th><th class="c">OpenAI</th><th class="c">Anthropic</th><th class="c">Google</th><th class="c">Microsoft</th></tr>
+    <tr><td>1</td><td>Be clear, specific and direct. Vague prompts get generic answers.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>2</td><td>Give the model a role or persona.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>3</td><td>Give context: who you are, the purpose, the audience and the constraints.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>4</td><td>State the output format: structure, length and tone.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>5</td><td>Separate the sections with delimiters (### or XML tags).</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>6</td><td>Use examples (few-shot) when format or style matters.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>7</td><td>Break complex tasks into ordered steps or a chain of prompts.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>8</td><td>Say what to do, not only what to avoid.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>9</td><td>Ground the answer in the source material and name the source.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>10</td><td>Iterate: test, refine, and use follow-up turns.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c tick">✔</td></tr>
+    <tr><td>11</td><td>Avoid contradictory instructions. New models follow instructions literally.</td><td class="c tick">✔</td><td class="c tick">✔</td><td class="c muted">–</td><td class="c muted">–</td></tr>
+  </table>
+
+  <div class="kicker" style="margin-top:6mm">02 · Frameworks</div>
+  <h2>Each lab's framework in one line</h2>
+  <div class="grid">
+    <div class="card"><span class="tag">GOOGLE GEMINI</span><h4>PTCF: Persona · Task · Context · Format</h4><p>Google reports that successful Workspace prompts average <b>about 21 words</b>, and that complex requests need longer, more detailed prompts. Its advice is to write in natural language, as if talking to a person.</p></div>
+    <div class="card"><span class="tag">MICROSOFT COPILOT</span><h4>GCES: Goal · Context · Expectations · Source</h4><p>A goal alone is enough to get an answer. Context, expectations (format, tone, length) and a named source make the answer more specific and better grounded.</p></div>
+    <div class="card"><span class="tag">OPENAI CHATGPT</span><h4>Identity → Instructions → Examples → Context</h4><p>Put instructions first and separate the sections with ### or XML. GPT-5 follows instructions "with surgical precision", so contradictions hurt more than they used to. Length and verbosity can be set in plain language.</p></div>
+    <div class="card"><span class="tag">ANTHROPIC CLAUDE</span><h4>Clear &amp; direct · explain why · XML · examples</h4><p>Treat the AI as "a brilliant but new employee who lacks context". Explain the <i>why</i> behind each instruction, give 3–5 diverse examples, put long documents first and the question last (<b>up to 30% better</b>), and ask it to quote the source before answering.</p></div>
+  </div>
+  <div class="card"><span class="tag">MEDICAL LITERATURE</span><h4>JMIR 2025 clinician tutorial · medical-education papers</h4><p>These describe the same four pillars (Role, Context, Task, Output), add "think step by step" for clinical reasoning, and warn about <b>phantom citations</b>: every AI-generated reference has to be checked in PubMed or another verified database.</p></div>
+</div>
+
+<!-- 3 -->
+<div class="section">
+  <div class="kicker">03 · The master structure</div>
+  <h2>R-C-T-S-F-Q: six blocks in every prompt</h2>
+  <p>To follow all four frameworks at once, every prompt in the library will use the same six labelled blocks:</p>
+  <div class="rctsfq">
+    <div><b>R</b><span>Role</span><small>Who the AI should be</small></div>
+    <div><b>C</b><span>Context</span><small>Who I am, my situation, why I need this</small></div>
+    <div><b>T</b><span>Task</span><small>The exact action, as numbered steps</small></div>
+    <div><b>S</b><span>Specifics</span><small>Guidelines, constraints, sources</small></div>
+    <div><b>F</b><span>Format</span><small>Structure, length, tone</small></div>
+    <div><b>Q</b><span>Quality</span><small>Accuracy guard + next step</small></div>
+  </div>
+  <h3>How it maps to each lab's framework</h3>
+  <table>
+    <tr><th>R-C-T-S-F-Q</th><th>Google PTCF</th><th>Microsoft GCES</th><th>OpenAI</th><th>Anthropic</th></tr>
+    <tr><td><b>Role</b></td><td>Persona</td><td class="muted">–</td><td>Identity</td><td>&lt;role&gt;</td></tr>
+    <tr><td><b>Context</b></td><td>Context</td><td>Context + Goal</td><td>Context</td><td>&lt;context&gt;</td></tr>
+    <tr><td><b>Task</b></td><td>Task</td><td>Goal</td><td>Instructions</td><td>&lt;task&gt; / &lt;instructions&gt;</td></tr>
+    <tr><td><b>Specifics</b></td><td>Context</td><td>Source</td><td>Instructions</td><td>&lt;constraints&gt;</td></tr>
+    <tr><td><b>Format</b></td><td>Format</td><td>Expectations</td><td>Output format</td><td>&lt;output_format&gt;</td></tr>
+    <tr><td><b>Quality</b></td><td class="muted">–</td><td class="muted">–</td><td>Self-check</td><td>"Quote first", "say if unsure"</td></tr>
+  </table>
+
+  <div class="kicker" style="margin-top:6mm">04 · Length &amp; context</div>
+  <h2>How many words, and how much context?</h2>
+  <p>None of the labs sets a single ideal word count. Google's ~21-word average describes quick everyday requests, and all four labs say complex tasks need more detail. The library therefore uses <b>three tiers</b>:</p>
+  <div class="tiers">
+    <div class="tier"><h4>Quick</h4><div class="w">30–60 words</div><p>One focused output: a mnemonic, 10 MCQs, one differential. Role + Task + Format in 2–4 sentences.</p></div>
+    <div class="tier default"><h4>Standard · default</h4><div class="w">80–150 words</div><p>Most prompts: a thesis section, a seminar outline, a study plan. All six blocks as short labelled lines.</p></div>
+    <div class="tier"><h4>Deep</h4><div class="w">150–300 words</div><p>Multi-step work: a full ROL framework, a protocol, a mock viva. Numbered steps and an optional example.</p></div>
+  </div>
+  <h3>Five rules for context</h3>
+  <ol>
+    <li><b>Enough to remove guesswork, and no more.</b> Give 2–5 facts the AI can't infer: your level (MBBS / PG year / consultant), specialty, topic, deadline or exam, audience, and the standard you need followed (ICMJE, CONSORT, STROBE, PRISMA, CARE, Vancouver).</li>
+    <li><b>Explain the why.</b> "…because this is for my MD thesis committee" gives a better result than "be formal". <span class="muted">(Anthropic)</span></li>
+    <li><b>Fill-in blanks go in [SQUARE BRACKETS]</b>, e.g. [SPECIALTY], [TOPIC], [STUDY DESIGN], [EXAM]. Keep it to 5 or fewer per prompt.</li>
+    <li><b>Pasted material goes first and the instruction goes last.</b> When the user pastes a paper or data, the paste slot sits above the final instruction. <span class="muted">(Anthropic long-context rule)</span></li>
+    <li><b>No contradictions.</b> Never "be concise" and "be exhaustive" in the same prompt. <span class="muted">(OpenAI GPT-5 guide)</span></li>
+  </ol>
+</div>
+
+<!-- 5 & 6 -->
+<div class="section flow">
+  <div class="kicker">05 · Format rules</div>
+  <h2>How each prompt is written</h2>
+  <div class="grid">
+    <div class="card"><h4>Start with an action verb</h4><p>Draft, Build, Critique, Convert, Simulate, Compare, Tabulate. It tells the AI exactly what kind of work to do.</p></div>
+    <div class="card"><h4>Phrase instructions positively</h4><p>"Write in formal academic prose" rather than "Don't be casual". All four labs recommend this.</p></div>
+    <div class="card"><h4>Number the steps</h4><p>Whenever order or completeness matters, list the steps 1), 2), 3) so none get skipped.</p></div>
+    <div class="card"><h4>Name the output shape</h4><p>"A table with columns X | Y | Z", "8–10 slides with speaker notes", "300 words", "5 viva questions with model answers".</p></div>
+    <div class="card"><h4>Plain labelled lines</h4><p>Role: / Context: / Task: … These paste cleanly into any chat app and every model parses them reliably. XML is optional for advanced users.</p></div>
+    <div class="card"><h4>One prompt, one job</h4><p>A big job becomes a chain (Prompt 1 → 2 → 3) rather than one giant prompt, as both Anthropic and OpenAI recommend.</p></div>
+  </div>
+  <div class="callout"><b>Interaction hook.</b> Where it helps, prompts end with "Ask me 3 clarifying questions before you start" or "End by suggesting the next step", so the chat keeps improving instead of stopping at a first draft.</div>
+
+  <div style="page-break-before:always"></div>
+  <div class="kicker">06 · Medical safety &amp; accuracy</div>
+  <h2>Mandatory guards for medical prompts</h2>
+  <p>Every research or clinical prompt includes at least one of these:</p>
+  <table>
+    <tr><th style="width:26%">Guard</th><th>Wording used in prompts</th></tr>
+    <tr><td><b>Citation guard</b></td><td>"Do not invent references. Only cite papers you are confident exist, give the DOI/PMID, and mark anything uncertain as [VERIFY]." Users are told to check every reference in PubMed.</td></tr>
+    <tr><td><b>Uncertainty permission</b></td><td>"If you are unsure or the evidence conflicts, say so explicitly."</td></tr>
+    <tr><td><b>Guideline anchoring</b></td><td>"As per the latest [ACC/AHA / NICE / WHO / ICMR] guideline…"</td></tr>
+    <tr><td><b>Reasoning request</b></td><td>"Reason step by step, showing how each finding changes the probability of each diagnosis."</td></tr>
+    <tr><td><b>Privacy</b></td><td>"Use de-identified details only." No patient names, IDs or dates.</td></tr>
+    <tr><td><b>Academic integrity</b></td><td>Thesis and manuscript prompts help users structure, critique and improve their own work. They never ask the AI to fabricate data or results, and they remind users to follow their institution's and journal's AI-disclosure policy.</td></tr>
+    <tr><td><b>Clinical disclaimer</b></td><td>Diagnostic prompts are for learning and decision support, not a substitute for clinical judgement.</td></tr>
+  </table>
+</div>
+
+<!-- 7 & 8 -->
+<div class="section flow">
+  <div class="kicker">07 · Template</div>
+  <h2>The prompt card: how every prompt will look</h2>
+<pre>#[NUMBER]  [SHORT TITLE]                          Tier: Quick | Standard | Deep
+Section › Subsection                              Best for: Student | Resident | Faculty
+
+Role:      You are a [expert persona with relevant credentials].
+Context:   I am a [level] in [SPECIALTY] working on [TOPIC/GOAL] for [PURPOSE/AUDIENCE].
+Task:      [Action verb] … 1) … 2) … 3) …
+Specifics: Follow [GUIDELINE/STANDARD]. [Constraints]. [Accuracy guard].
+Format:    [Structure], [length], [tone].
+Next:      [Clarifying-question hook or follow-up suggestion]
+
+Tip: [one-line pro tip on how to use or chain this prompt]</pre>
+
+  <div class="kicker" style="margin-top:5mm">08 · Worked examples</div>
+  <h2>One example from each part of the library</h2>
+  <h3>A · Thesis &amp; Research: methodology chapter <span class="muted">(Standard)</span></h3>
+<pre>Role: You are a senior medical research methodologist and thesis guide.
+Context: I am a PG resident in [SPECIALTY]. My thesis topic is [TOPIC], a [STUDY DESIGN] with
+[SAMPLE SIZE] patients. My committee wants a clear, well-justified methodology chapter.
+Task: Draft the methodology outline: 1) study design and setting, 2) inclusion/exclusion
+criteria, 3) sample size justification, 4) variables and definitions, 5) data collection,
+6) statistical plan, 7) ethics.
+Specifics: Align with the [STROBE/CONSORT] checklist. Flag any gap in my design. Do not
+invent references; mark uncertain ones [VERIFY].
+Format: Numbered headings with 2–4 bullet points each, formal academic tone, ~400 words.
+Next: Ask me for any missing details before finalising.</pre>
+
+  <h3>B · Seminars &amp; Journal Clubs: journal club presentation <span class="muted">(Standard)</span></h3>
+<pre>Role: You are an experienced journal-club moderator and critical-appraisal expert.
+Context: I am presenting the paper below at our [SPECIALTY] department journal club to
+residents and faculty.
+[PASTE ABSTRACT / FULL TEXT HERE]
+Task: 1) Summarise the PICO, 2) appraise it using the [CASP/JBI] checklist, 3) list 3
+strengths and 3 limitations, 4) state the clinical bottom line, 5) suggest 5 discussion
+questions.
+Format: 12–15 slide outline with slide titles, bullet content and one-line speaker notes.
+Next: End with the 3 questions faculty are most likely to ask me, with short answers.</pre>
+
+  <h3>C · Study &amp; Exam Prep: mock viva <span class="muted">(Deep)</span></h3>
+<pre>Role: You are a strict but fair [SPECIALTY] examiner for the [EXAM] viva.
+Context: I am a final-year PG preparing for my viva in [WEEKS] weeks. My weak area is [TOPIC].
+Task: Conduct a mock viva. Ask one question at a time, starting basic and escalating to
+examiner-level. After each of my answers: 1) score it /10, 2) give the ideal answer in 3–5
+points, 3) name the gap in my reasoning, then ask the next question.
+Specifics: Base standards on current guidelines ([GUIDELINE]). If a fact is
+guideline-dependent or debated, say so.
+Format: Conversational. Keep each question under 40 words.
+Next: After 10 questions, summarise my weak areas and give a 3-day revision plan.</pre>
+</div>
+
+<!-- 9 & 10 -->
+<div class="section">
+  <div class="kicker">09 · Quality control</div>
+  <h2>Checklist every prompt must pass</h2>
+  <ul class="check">
+    <li>Has a Role, Context, Task and Format (the four elements every lab agrees on)</li>
+    <li>Task starts with an action verb and is clear enough that a colleague could follow it (Anthropic's "golden rule")</li>
+    <li>Falls in the right word tier: Quick 30–60 / Standard 80–150 / Deep 150–300</li>
+    <li>Placeholders are in [BRACKETS], 5 or fewer</li>
+    <li>No contradictory instructions</li>
+    <li>Output shape is named (table, slides, word count, number of items)</li>
+    <li>Includes a medical accuracy guard where relevant (citations, guidelines, uncertainty)</li>
+    <li>Works unchanged in ChatGPT, Claude, Gemini and Copilot</li>
+    <li>Doesn't duplicate another prompt in the library</li>
+    <li>Positive phrasing: says what to do</li>
+  </ul>
+
+  <div class="kicker" style="margin-top:5mm">10 · The plan</div>
+  <h2>The 1,000-prompt library: proposed structure</h2>
+  <table class="compact">
+    <tr><th style="width:9%">#</th><th>Section</th><th class="num" style="width:13%">Prompts</th></tr>
+    <tr class="part"><td>1</td><td>Thesis, Research &amp; Publication</td><td class="num">400</td></tr>
+    <tr><td>1.1</td><td>Topic selection &amp; research question (PICO / FINER, gap finding)</td><td class="num">35</td></tr>
+    <tr><td>1.2</td><td>Literature search strategy (PubMed / MeSH, Boolean, databases)</td><td class="num">30</td></tr>
+    <tr><td>1.3</td><td>Writing the Introduction</td><td class="num">30</td></tr>
+    <tr><td>1.4</td><td>Review of Literature (ROL)</td><td class="num">40</td></tr>
+    <tr><td>1.5</td><td>Aims, objectives &amp; hypotheses</td><td class="num">20</td></tr>
+    <tr><td>1.6</td><td>Study design &amp; methodology</td><td class="num">40</td></tr>
+    <tr><td>1.7</td><td>Sample size &amp; statistical analysis</td><td class="num">45</td></tr>
+    <tr><td>1.8</td><td>Results, tables &amp; figures</td><td class="num">25</td></tr>
+    <tr><td>1.9</td><td>Discussion, conclusion &amp; limitations</td><td class="num">30</td></tr>
+    <tr><td>1.10</td><td>Protocol, ethics &amp; synopsis</td><td class="num">20</td></tr>
+    <tr><td>1.11</td><td>Thesis to manuscript &amp; journal publication</td><td class="num">35</td></tr>
+    <tr><td>1.12</td><td>Case reports &amp; case series</td><td class="num">30</td></tr>
+    <tr><td>1.13</td><td>Conference abstracts, posters &amp; oral papers</td><td class="num">20</td></tr>
+    <tr class="part"><td>2</td><td>Seminars, Journal Clubs &amp; Presentations</td><td class="num">300</td></tr>
+    <tr><td>2.1</td><td>Seminar preparation (any topic, any specialty)</td><td class="num">60</td></tr>
+    <tr><td>2.2</td><td>Journal club: selection, critical appraisal, presentation</td><td class="num">60</td></tr>
+    <tr><td>2.3</td><td>Slide design &amp; PowerPoint structure</td><td class="num">40</td></tr>
+    <tr><td>2.4</td><td>Conference oral presentations</td><td class="num">35</td></tr>
+    <tr><td>2.5</td><td>Conference posters (e-posters &amp; print)</td><td class="num">35</td></tr>
+    <tr><td>2.6</td><td>Case presentations &amp; grand rounds</td><td class="num">40</td></tr>
+    <tr><td>2.7</td><td>Delivery, Q&amp;A handling &amp; teaching sessions</td><td class="num">30</td></tr>
+    <tr class="part"><td>3</td><td>Study, Exam &amp; Viva Preparation</td><td class="num">300</td></tr>
+    <tr><td>3.1</td><td>Learning any topic (concept mastery, active recall)</td><td class="num">50</td></tr>
+    <tr><td>3.2</td><td>Study planning &amp; revision schedules</td><td class="num">30</td></tr>
+    <tr><td>3.3</td><td>MCQ practice &amp; exam strategy (NEET-PG, INI-CET, USMLE, PLAB, MRCP…)</td><td class="num">50</td></tr>
+    <tr><td>3.4</td><td>Long / short answer &amp; essay writing</td><td class="num">30</td></tr>
+    <tr><td>3.5</td><td>Viva &amp; OSCE preparation</td><td class="num">50</td></tr>
+    <tr><td>3.6</td><td>Clinical reasoning &amp; differential diagnosis</td><td class="num">60</td></tr>
+    <tr><td>3.7</td><td>Memory aids, flashcards &amp; high-yield summaries</td><td class="num">30</td></tr>
+    <tr class="part"><td></td><td>Total</td><td class="num">1,000</td></tr>
+  </table>
+</div>
+
+<!-- 11 -->
+<div class="section flow">
+  <div class="kicker">11 · Sources</div>
+  <h2>Sources</h2>
+  <ul class="src">
+    <li><b>Anthropic</b>, Prompting best practices (Claude Platform Docs): https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices</li>
+    <li><b>Anthropic</b>, Prompt engineering best practices for 2026: https://claude.com/blog/best-practices-for-prompt-engineering</li>
+    <li><b>OpenAI</b>, GPT-5 prompting guide (OpenAI Cookbook): https://github.com/openai/openai-cookbook/blob/main/examples/gpt-5/gpt-5_prompting_guide.ipynb</li>
+    <li><b>OpenAI</b>, Prompt engineering guide: https://developers.openai.com/api/docs/guides/prompt-engineering</li>
+    <li><b>OpenAI Help Center</b>, Best practices for prompt engineering with the OpenAI API: https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api</li>
+    <li><b>Google</b>, Prompt design strategies (Gemini API): https://ai.google.dev/gemini-api/docs/prompting-strategies</li>
+    <li><b>Google</b>, 5 ways to write better AI prompts for Gemini in Workspace: https://blog.google/products-and-platforms/products/workspace/google-gemini-workspace-ai-prompt-tips/</li>
+    <li><b>Microsoft</b>, Get started writing prompts in Microsoft 365 Copilot: https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot</li>
+    <li><b>Microsoft</b>, Prompt engineering techniques (Azure OpenAI / Foundry): https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering</li>
+    <li><b>JMIR (2025)</b>, Prompt Engineering in Clinical Practice: Tutorial for Clinicians: https://www.jmir.org/2025/1/e72644/PDF</li>
+    <li><b>PubMed</b>, Prompt engineering in medical education: digestive surgery: https://pubmed.ncbi.nlm.nih.gov/42417731/</li>
+  </ul>
+  <div class="callout" style="margin-top:8mm"><b>Companion file.</b> The same rules are packaged as <b>SKILL.md</b> (medical-prompt-writer), so every one of the 1,000 prompts is generated and checked against the same standard.</div>
+</div>
+
+</body>
+</html>
