@@ -1,0 +1,519 @@
+# 2.4 | Talks & oral presentations | CMEs, invited lectures, community talks and panel discussions: every talk needs one big idea, a story to carry it, and a close the audience remembers.
+
+@@ M | cme-talk-master | Invited CME talk or guest lecture, start to finish
+aud: Faculty / Senior Resident
+use: When you are invited to speak at a CME, society meeting or another institution.
+why: Invited talks are judged on relevance and clarity, not on how much you know. A talk built around the audience's real decisions, with current evidence, practical pearls and a memorable close, earns re-invitations. A textbook recital doesn't.
+persona: You are a sought-after CME speaker and senior clinician who designs practical, evidence-based talks for practising doctors. You are known for clarity, good pacing and useful take-home points.
+context: Talk title as given by the organisers: [paste]
+Audience (specialty, practice setting, experience): [e.g. general practitioners and physicians in private practice]
+Duration and format (talk plus Q&A, panel, workshop): [brief]
+Organiser's brief or expectations: [paste or "none"]
+My sources (guidelines, key trials, reviews): [UPLOAD / LIST]
+Venue and technology: [hall, projector, online streaming]
+task: 1. Identify the audience's 3–5 real clinical decisions on this topic and the common mistakes they make.
+2. Define the one big idea of the talk and 3 supporting messages.
+3. Build the structure: an opening hook (a case or striking question), a section per message with evidence and a practical pearl, a mini-case for application, and a close.
+4. Write a slide plan (about 1 slide per minute) with message titles and visuals.
+5. Include an evidence summary from my sources and a "what's new" slide.
+6. Write the first 90 seconds and the last 60 seconds word for word.
+7. Prepare 8 likely audience questions with short answers.
+8. Suggest a one-page take-home handout.
+rules: Base all recommendations on my sources and mark specifics such as doses and targets [VERIFY FROM CURRENT GUIDELINE], because practising doctors act on CME content the next day. Keep the talk free of brand promotion and declare any conflicts of interest on slide 2.
+output: The audience-decision analysis, the big idea and messages, the structure with timings, the slide plan, the scripted opening and close, the Q&A table, then the handout outline.
+tweak: End with the single practical change the audience should make on Monday morning, phrased as one sentence.
+tips:
+- Ask the organiser who attended last year and what they asked. It tells you the audience's real needs.
+- A 60-second case in the middle of the talk re-captures attention.
+- Finish 2–3 minutes early. Organisers remember speakers who respect time.
+next: talk-storyline
+
+@@ M | talk-storyline | Build any talk around a story
+aud: PG Resident / Faculty
+use: When your talk has good content but no shape.
+why: Audiences remember stories, not lists. A talk that follows a simple arc (a hook, a problem, a journey through the evidence, a resolution and a call to action) holds attention and is remembered long after the slides are forgotten.
+persona: You are a medical storyteller and speaking coach who helps clinicians turn information into memorable narratives, without sacrificing accuracy.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+What I most want to get out of this: [one line]
+Topic and audience: [brief]
+Duration: [minutes]
+My key content points (rough list): [PASTE]
+A patient story or clinical moment that inspired this talk (de-identified): [PASTE OR "none"]
+The one thing I want the audience to do or believe afterwards: [one line]
+task: 1. Write the one big idea in a single sentence.
+2. Build the arc: the hook (first 60 seconds), the problem (why it matters), the journey (3 evidence-backed messages, each with an example), the turning point (a surprising fact or case twist), the resolution (what to do), and the call to action.
+3. Map my content points onto the arc, and flag points that don't serve the story.
+4. Place the patient story strategically, opening with it and returning to it at the end.
+5. Suggest a recurring image, question or phrase that ties the talk together.
+6. Write the transitions between the sections.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep patient stories fully de-identified and respectful, and keep every fact accurate, because a story that distorts the evidence damages credibility. Cut content that doesn't serve the big idea, however interesting it is.
+output: The big idea, the arc table (section, content, minutes, story element), the cut list, then the transitions.
+tweak: End with 3 alternative opening lines and 3 alternative closing lines to choose from.
+tips:
+- If you can't state your big idea in one sentence, the audience won't be able to either.
+- Return to the opening story in your final minute. It closes the loop.
+- Rehearse the transitions. They are where talks lose their thread.
+next: opening-90-seconds
+
+@@ M | community-talk | Health talk for patients or the community
+aud: PG Resident / Faculty / MBBS Intern
+use: For health camps, patient-education sessions, school or community talks, radio or local TV.
+why: Talks to the public fail when doctors use jargon, lecture for too long or scare people without giving them clear actions. A community talk in simple language, with local examples, myths addressed respectfully and 3 clear actions, can change behaviour.
+persona: You are a public-health physician and experienced community educator who speaks to rural and urban Indian audiences in simple language, with warmth and respect.
+context: Topic: [e.g. recognising stroke early, TB treatment adherence, diabetes foot care]
+Audience: [e.g. rural women's self-help group / factory workers / school parents]
+Language: [Hindi / Marathi / Tamil / English / mixed]
+Duration and setting: [e.g. 20 minutes, open-air health camp, no projector]
+Local beliefs or myths I know of: [list or "suggest common ones"]
+Resources to hand out: [pamphlets / none]
+task: 1. Choose the 3 key messages the audience must remember.
+2. Write the talk in simple words in my chosen language, with local examples and analogies.
+3. Address 3–5 common myths respectfully, with a correct and simple explanation for each.
+4. Include a short demonstration or activity (e.g. FAST for stroke, a foot check).
+5. Give 3 clear actions: what to do, where to go, and when to seek help.
+6. Plan audience interaction: questions in their words, and repeating key messages aloud together.
+7. Write a pamphlet summary of 100 words or fewer.
+rules: Avoid medical jargon, fear-based messaging and blaming language, and keep advice consistent with national programme guidance, marking specifics as [VERIFY WITH PROGRAMME GUIDELINES], because trust and accuracy matter most with public audiences. Give local helpline or facility details as placeholders only.
+output: The 3 messages, the talk script in my language, the myth-fact table, the activity, the actions, then the pamphlet text.
+tweak: End with the 5 questions the audience is most likely to ask, with simple answers.
+tips:
+- Speak for no more than 15 minutes and leave the rest for questions. Community audiences learn most by asking.
+- Use objects and demonstrations. A glucometer or a real inhaler teaches more than a slide.
+- Ask a local health worker (ASHA or ANM) to co-present. It builds trust.
+next: bilingual-talk
+
+@@ M | panel-discussion | Prepare for a panel discussion (as panellist or moderator)
+aud: Faculty / Senior Resident
+use: When you are on a panel, or moderating one, at a conference or CME.
+why: Panels are either the liveliest session of a meeting or the dullest. Good panellists prepare crisp positions and evidence, and listen; good moderators prepare questions that create real exchange, keep time and bring in the audience.
+persona: You are an experienced conference moderator and panellist who has run lively, balanced medical panel discussions for years.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+What I most want to get out of this: [one line]
+Panel topic: [paste]
+My role: [panellist / moderator]
+Other panellists and their expertise: [list]
+Duration and format: [e.g. 45 minutes, 4 panellists, audience Q&A]
+My position or expertise on the topic: [brief]
+Sources: [UPLOAD / LIST]
+task: If I am a panellist:
+1. Define my 3 key positions, each with its best supporting evidence and a practical example.
+2. Prepare a 90-second opening statement.
+3. Anticipate the other panellists' views and prepare respectful responses.
+4. Prepare answers to 6 likely audience questions.
+If I am the moderator:
+5. Write the introduction of the topic and the panellists (60 seconds).
+6. Write 8–10 questions that create contrast between the panellists and are directed at specific people.
+7. Plan the time: openings, discussion, audience Q&A and a summary.
+8. Prepare how to handle a dominant panellist, an off-topic answer, a heated disagreement and silence.
+9. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep claims evidence-based and attribute positions fairly, marking evidence to confirm as [VERIFY], because panels are recorded and quoted. Declare any conflicts of interest.
+output: The section for my role: positions or questions, the scripts, the timing plan, then the handling strategies.
+tweak: End with a 60-second closing summary template that captures agreement and disagreement.
+tips:
+- As a panellist, answer in under 90 seconds. Short answers get follow-up questions; long ones get interrupted.
+- As a moderator, speak to the panellists before the session. It prevents surprises.
+- Invite audience questions early. Panels come alive when the room joins in.
+next: chairing-session
+
+@@ S | opening-90-seconds | The first 90 seconds of my talk
+aud: PG Resident / Faculty
+use: For any talk, when your current opening is "Good morning, today I will talk about…".
+persona: You are a speaking coach who specialises in strong openings for medical talks.
+context: Topic, audience and big idea: [brief]
+Material I could use (a case, a statistic with its source, a question, an image): [list]
+Duration of the whole talk: [minutes]
+task: 1. Write 3 alternative openings: a case story, a striking fact, and a direct question to the audience.
+2. For each, include the transition into the talk's roadmap.
+3. Recommend one for my audience, with the reason.
+4. Mark the words to deliver slowly and the pauses.
+rules: Use only facts I supplied, with [VERIFY] for any number, and keep cases de-identified, because the opening sets your credibility.
+output: The 3 scripted openings (about 90 seconds each), the recommendation, then the delivery marks.
+tip: Memorise your opening word for word. Nerves are highest in the first minute.
+try: A CME talk on deprescribing in elderly patients.
+next: closing-memorable
+
+@@ S | closing-memorable | A closing the audience remembers
+aud: PG Resident / Faculty
+use: For the last minute of any talk.
+persona: You are a speaking coach known for powerful, concise endings.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The big idea and 3 key messages: [paste]
+The opening I used: [paste]
+Audience: [brief]
+task: 1. Write a 60-second closing: a callback to the opening, the 3 messages in one sentence each, and a clear call to action.
+2. Write a final one-line sentence to end on (not "thank you, any questions?").
+3. Suggest what should be on screen during the closing.
+rules: Introduce no new information in the closing, because new content at the end confuses the audience.
+output: The scripted closing, the final line, then the screen suggestion.
+tip: End on your strongest sentence, pause, then say "thank you". The pause is where it lands.
+try: A talk on early recognition of sepsis in the wards.
+next: talk-storyline
+
+@@ S | lightning-talk | A 5-minute lightning talk
+aud: PG Resident / Faculty
+use: For short-format sessions: lightning talks, flash presentations and 5-minute updates.
+persona: You are a coach for short-format scientific talks.
+context: Topic and my key message: [brief]
+Supporting content: [PASTE]
+Time: [e.g. 5 minutes] · slide limit: [e.g. 5 slides]
+task: 1. Reduce the content to one message and 2 supporting points.
+2. Plan the slides (1 per minute), each with a message title and one visual.
+3. Write a script of about 650 words for 5 minutes.
+4. Mark where to cut if the time is shortened.
+rules: Keep one message only, and cut everything else, because a lightning talk with three messages delivers none.
+output: The message, the slide plan, the script with timing marks, then the cut points.
+tip: Rehearse with a strict timer. Lightning sessions often cut the microphone at the time limit.
+try: A 5-minute update on a new antimicrobial stewardship policy for residents.
+next: opening-90-seconds
+
+@@ S | pecha-kucha | A PechaKucha-style talk (20 slides × 20 seconds)
+aud: PG Resident / Faculty
+use: When a session uses auto-advancing slides.
+persona: You are an expert in constrained presentation formats.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+Topic and message: [brief]
+Content I want to include: [PASTE]
+task: 1. Plan 20 slides, each with one striking image or visual and at most 5 words.
+2. Write a 20-second script (about 45 words) for each slide.
+3. Group the slides into 4–5 story sections.
+4. Mark slides where timing is risky, and give simpler scripts for them.
+rules: Keep each slide's script within 20 seconds, because slides advance automatically.
+output: A 20-row table (slide, visual, words on slide, script), then the risk notes.
+tip: Rehearse with the slides on auto-advance. It's a completely different experience from clicking.
+try: "The life of an ICU nurse during a pandemic".
+next: lightning-talk
+
+@@ S | career-talk | Motivational or career talk for students
+aud: Faculty / Senior Resident
+use: When invited to speak to MBBS students or interns about careers, exams or life in medicine.
+persona: You are a mentor who gives honest, practical and inspiring talks to medical students.
+context: Audience and what they're worried about: [e.g. final-year MBBS, NEET-PG pressure]
+My own journey and lessons (brief): [PASTE]
+Duration: [minutes]
+task: 1. Identify 3 messages that would genuinely help this audience.
+2. Structure the talk with 2–3 personal stories that illustrate them.
+3. Include practical advice (specific actions, resources and habits).
+4. Address one uncomfortable truth honestly (e.g. burnout, failure, uncertainty).
+5. Plan a Q&A segment with likely questions.
+rules: Keep advice honest and balanced, avoid survivorship bias ("just work hard"), and mention mental-health support resources, because students need realism as well as inspiration.
+output: The messages, the structure with stories, the advice list, the uncomfortable-truth segment, then the Q&A.
+tip: One honest failure story is worth ten success stories.
+try: A talk for final-year MBBS students on choosing a specialty and preparing for NEET-PG.
+next: closing-memorable
+
+@@ S | bilingual-talk | Deliver a talk in Hindi or a regional language
+aud: PG Resident / Faculty
+use: When your audience is more comfortable in Hindi or a regional language than in English.
+persona: You are a bilingual medical educator who explains clinical topics fluently in Indian languages.
+context: Topic and audience: [brief]
+Language: [Hindi / Marathi / Bengali / Tamil / other]
+My English content or script: [PASTE]
+task: 1. Translate the key messages into natural spoken language, not literal translation.
+2. Decide which medical terms to keep in English (commonly understood) and which to translate, with simple explanations.
+3. Suggest local analogies and examples.
+4. Write the slide text in the language, or bilingually, with a readable script.
+rules: Keep the medical meaning exact and have a native speaker review the final text, because mistranslated health messages cause real harm.
+output: The spoken script, a term table (English, local term, explanation), then the slide text.
+tip: Mixed "Hinglish" is often the most natural register for urban audiences. Match how the audience actually speaks.
+try: A talk on diabetes and diet for a Hindi-speaking community audience.
+next: community-talk
+
+@@ S | patient-stories | Using patient stories ethically in talks
+aud: PG Resident / Faculty
+use: When you want to include real patient experiences in a talk.
+persona: You are a clinician-educator who uses patient stories powerfully and ethically.
+context: The story I want to use (brief, de-identified): [PASTE]
+Purpose in the talk: [brief]
+Audience and whether the talk will be recorded: [brief]
+task: 1. Check the story for identifiable details and suggest changes (age band, location, occupation, dates).
+2. Advise whether consent is needed for this use, marked [CHECK INSTITUTIONAL POLICY].
+3. Rewrite the story to be concise (under 150 words), respectful and focused on the teaching point.
+4. Suggest how to introduce it ("details have been changed to protect privacy").
+rules: Keep the patient's dignity central and never use stories for shock value, because audiences and patients deserve respect.
+output: The de-identification changes, the consent note, the rewritten story, then the introduction line.
+tip: Composite cases (merging details from several patients) are a safe option for teaching.
+try: A young patient's story of delayed TB diagnosis, for a public-health talk.
+next: talk-storyline
+
+@@ S | school-talk | Health talk for school students
+aud: PG Resident / MBBS Intern / Faculty
+use: For school health programmes and awareness events.
+persona: You are a paediatric health educator who engages children and teenagers.
+context: Topic: [e.g. hand hygiene, tobacco, menstrual health, road safety, mental health]
+Age group and school type: [brief]
+Language and duration: [brief]
+task: 1. Choose 3 age-appropriate key messages.
+2. Design the talk as an interactive session: a question, an activity, a story and a quiz.
+3. Use simple words and relatable examples.
+4. Include a take-home activity or pledge.
+5. Plan how to handle sensitive questions.
+rules: Keep the content age-appropriate and evidence-based, and coordinate sensitive topics with teachers, because schools and parents expect careful handling.
+output: The messages, the session plan with timings, the activity, then the guidance for sensitive questions.
+tip: Children remember what they do, not what they hear. Build in an activity every 5 minutes.
+try: Tobacco and vaping awareness for 13–15-year-olds, in English and Hindi.
+next: community-talk
+
+@@ S | chairing-session | Chairing a scientific session
+aud: Faculty / Senior Resident
+use: When you are invited to chair a conference or CME session.
+persona: You are an experienced session chair who runs sessions smoothly and fairly.
+context: The session format, speakers, their titles and time slots: [PASTE]
+Co-chair, if any: [name]
+Technical set-up: [brief]
+task: 1. Write short introductions for each speaker (name, designation, one line of relevance).
+2. Plan time-keeping: signals and how to stop an overrunning speaker politely.
+3. Prepare 1–2 questions per talk in case the audience is silent.
+4. Plan the Q&A: how to take and distribute questions fairly.
+5. Write a 60-second closing summary template.
+rules: Keep the introductions brief and accurate (check them with the speakers), and keep the session on time, because chairs are judged on time and fairness.
+output: The introductions, the time-keeping plan, the backup questions, the Q&A plan, then the closing template.
+tip: Meet the speakers 10 minutes before the session and agree the time signals.
+try: A session with 4 speakers on critical care nephrology, 15 minutes each.
+next: introduce-speaker
+
+@@ S | introduce-speaker | Introduce a guest speaker
+aud: PG Resident / Faculty
+use: When you have to introduce a speaker at a CME, conference or departmental event.
+persona: You are an event host who writes warm, concise speaker introductions.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The speaker's CV or bio (paste): [PASTE]
+Their talk title: [paste]
+Event and audience: [brief]
+task: 1. Write a 45–60 second introduction: the speaker's name, current role, 2–3 relevant achievements, and why they are the right person for this topic.
+2. End with the talk title and an invitation to the speaker.
+3. Mark names and terms to check pronunciation.
+rules: Use only facts from the bio and confirm them with the speaker, because inaccurate introductions embarrass both of you.
+output: The introduction script with pronunciation notes.
+tip: Don't read the whole CV. Choose what connects the speaker to the topic.
+try: Introducing a visiting professor speaking on interventional pulmonology.
+next: chairing-session
+
+@@ S | vote-of-thanks | A vote of thanks that isn't boring
+aud: PG Resident / Faculty
+use: At the end of a CME, conference or departmental event.
+persona: You are an event host known for gracious, crisp votes of thanks.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+The event, speakers, chief guests, organisers, sponsors (if any) and volunteers: [LIST]
+Duration allowed: [e.g. 2 minutes]
+task: 1. Write a 90–120 second vote of thanks in a logical order (chief guest, speakers, organisers, volunteers, participants).
+2. Include one specific line about each speaker's talk.
+3. End warmly and briefly.
+rules: Include everyone who should be thanked, and double-check names and titles, because omissions are remembered longer than the speech.
+output: The script with names marked [CHECK SPELLING / TITLE].
+tip: Mentioning one specific point from each talk shows that you actually listened.
+try: The vote of thanks at a state-level CME on diabetes with 5 speakers.
+next: introduce-speaker
+
+@@ S | webinar-hosting | Host a medical webinar
+aud: Faculty / Senior Resident
+use: When organising or hosting an online CME or teaching webinar.
+persona: You are an experienced online event host for medical education.
+context: Platform: [Zoom / Teams / YouTube Live / other]
+Topic, speakers and audience size: [brief]
+Duration: [minutes]
+task: 1. Give a pre-event checklist: tech rehearsal, roles (host, co-host, chat moderator), registration and reminders.
+2. Write the run-of-show with timings: welcome, housekeeping, speaker introductions, talks, Q&A and close.
+3. Write the host scripts for the welcome and housekeeping (mute, chat, polls, recording consent).
+4. Plan engagement: polls and chat prompts.
+5. Give a backup plan for technical failures.
+rules: Announce the recording and any certificate criteria clearly, and mark platform-specific steps [MAY DIFFER BY VERSION], because attendees need clarity and platforms change.
+output: The checklist, the run-of-show table, the scripts, the engagement plan, then the backup plan.
+tip: Assign a co-host to watch the chat. The host can't present and moderate at the same time.
+try: A 60-minute webinar on insulin pumps with 2 speakers and 300 attendees.
+next: online-slides
+
+@@ S | video-talk-script | Script for a short educational video
+aud: PG Resident / Faculty
+use: For YouTube, Instagram or institutional e-learning videos.
+persona: You are a medical educator who creates short, engaging educational videos.
+context: Topic and audience (students / doctors / public): [brief]
+Video length and platform: [e.g. 3 minutes, YouTube]
+Key content: [PASTE]
+task: 1. Write a hook in the first 5 seconds.
+2. Structure the video: the hook, 3 key points and a recap with a call to action.
+3. Write the spoken script at about 150 words per minute.
+4. Suggest a visual or on-screen text for each segment.
+5. Add a short disclaimer line appropriate to the audience.
+rules: Keep the medical content accurate and avoid sensational claims, marking specifics [VERIFY], because medical videos are shared widely and quoted as fact.
+output: The script with timestamps, a visual plan table, then the disclaimer.
+tip: Record in short segments. Editing is easier and mistakes cost seconds, not minutes.
+try: A 3-minute YouTube video on how to use an inhaler correctly, for patients.
+next: patient-stories
+
+@@ S | talk-rehearsal-plan | Rehearsal plan for an important talk
+aud: PG Resident / Faculty
+use: 5–7 days before a significant talk.
+persona: You are a speaking coach who prepares clinicians for high-stakes talks.
+context: The talk, its duration and its importance: [brief]
+Days available: [N]
+My main concerns (timing, nerves, questions, content gaps): [list]
+task: 1. Build a day-by-day rehearsal plan: a content run, a timed run, a recorded run, a run in front of colleagues, and a final light run.
+2. Build in specific work on my concerns.
+3. Give a checklist for the day before and the day of the talk.
+4. Suggest how to collect useful feedback from colleagues.
+rules: Include at least 3 full timed rehearsals aloud, because silent practice consistently underestimates the time needed.
+output: The day-by-day plan, the concern-specific exercises, the checklists, then the feedback questions.
+tip: Rehearse standing up, with the clicker, as you will on the day.
+try: A 20-minute invited talk at a national conference, 6 days away.
+next: stage-anxiety
+
+@@ S | stage-anxiety | Manage stage fright before a talk
+aud: PG Resident / MBBS Student
+use: When nerves are affecting your preparation or delivery.
+persona: You are a performance coach who helps doctors manage public-speaking anxiety.
+context: What happens to me when I speak (shaking, blanking, rushing): [brief]
+The upcoming talk: [brief]
+task: 1. Explain briefly why anxiety happens and why some of it helps.
+2. Give preparation strategies: over-preparing the opening, rehearsal and visualisation.
+3. Give strategies for the day: breathing techniques, arriving early, and speaking to audience members beforehand.
+4. Give in-the-moment recovery techniques for blanking or rushing.
+5. Give a debrief routine after the talk.
+rules: Keep the advice practical and evidence-informed, and suggest professional support if the anxiety is severe or persistent, because stage fright can overlap with anxiety disorders.
+output: Five headed sections of practical techniques.
+tip: If you blank, pause, look at your slide title and say it aloud. It restarts your memory.
+try: A first-year resident who freezes during departmental presentations.
+next: talk-rehearsal-plan
+
+@@ S | adapt-talk-length | Shrink or stretch a talk to a new time slot
+aud: PG Resident / Faculty
+use: When the organisers change your slot, or you reuse a talk for a different event.
+persona: You are a presentation editor who adapts talks to any time slot.
+context: My current talk outline with its timings: [PASTE]
+Original and new durations: [e.g. 45 → 20 minutes]
+New audience, if different: [brief]
+task: 1. Identify the core that must stay (the big idea, key messages and key evidence).
+2. For a shorter slot: specify the sections to cut, merge or summarise, with minutes saved.
+3. For a longer slot: suggest what to add (a case, interaction, Q&A, depth).
+4. Produce the revised outline with timings.
+rules: Protect the big idea and the closing, because shortened talks often lose their conclusion first.
+output: The core list, the changes with minutes, then the revised outline.
+tip: Cut whole sections rather than trimming every section. It keeps the pace natural.
+try: Reducing a 45-minute seminar on heart failure to a 15-minute CME talk.
+next: talk-storyline
+
+@@ S | paper-to-talk | Turn a key paper into a teaching talk
+aud: PG Resident / Faculty
+use: When you want to teach the lessons of an important paper, not appraise it formally.
+persona: You are a clinical teacher who makes landmark studies come alive.
+context: The paper (upload or paste the key sections): [UPLOAD / PASTE]
+Audience and duration: [brief]
+task: 1. Tell the story of the study: the question, why it mattered, what they did, what they found and what changed.
+2. Extract 3 teaching lessons (clinical and methodological).
+3. Build a 10–15 minute talk outline with visuals.
+4. Link it to current practice and guidelines, with [VERIFY].
+rules: Keep the study details accurate to the paper, because audiences may look it up afterwards.
+output: The story summary, the lessons, the outline, then the practice link.
+tip: Start with what doctors did before the study. It makes the result feel important.
+try: A landmark trial on low tidal volume ventilation in ARDS.
+next: talk-storyline
+
+@@ S | talk-proposal | Proposal and abstract for an invited talk
+aud: Faculty / Senior Resident
+use: When organisers ask for a talk abstract, title and learning objectives.
+persona: You are an experienced speaker who writes clear, attractive talk proposals.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Proposed topic and my angle: [brief]
+Audience: [brief]
+Required format (word limit, objectives, bio): [paste]
+task: 1. Write 3 talk titles.
+2. Write a talk abstract within the limit: the problem, what the talk covers, and what attendees will take away.
+3. Write 3 learning objectives with Bloom's verbs.
+4. Suggest the format (lecture, case-based, interactive), and the audience level it suits best.
+rules: Promise only what the talk will deliver, because organisers remember over-promising speakers.
+output: The titles, the abstract, the objectives, then the format note.
+tip: Organisers choose talks that solve their audience's problems. Lead with the problem.
+try: A proposal for a talk on AI tools in medical practice for a state medical association.
+next: speaker-bio
+
+@@ S | speaker-bio | A short speaker bio
+aud: PG Resident / Faculty
+use: When an event, journal or website asks for a speaker bio.
+persona: You are a professional bio writer for academic clinicians.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+My CV highlights (qualifications, current role, experience, interests, key achievements, social handles): [PASTE]
+Word limits needed: [e.g. 50 and 150 words]
+Tone: [formal / conversational]
+task: 1. Write a 50-word bio and a 150-word bio in the third person.
+2. Lead with my current role and the relevance to the event.
+3. Include 2–3 achievements, without listing everything.
+4. Write a one-line version for the host to read aloud.
+rules: Use only facts from my CV, without inflation, because inaccurate bios are easily checked online.
+output: The three versions.
+tip: Keep one bio document updated. You'll be asked for it far more often than you expect.
+try: A pulmonologist and co-founder of an AI health-education platform.
+next: introduce-speaker
+
+@@ S | talk-feedback-analysis | Learn from feedback on my talk
+aud: PG Resident / Faculty
+use: After a talk, when you have feedback forms, comments or a recording.
+persona: You are a speaking coach who turns feedback into specific improvements.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Feedback received (ratings and comments): [PASTE]
+My own impressions and the recording notes: [brief]
+task: 1. Summarise the feedback themes: content, clarity, delivery, slides and time.
+2. Identify 3 strengths to keep.
+3. Identify 3 specific improvements, with an exercise for each.
+4. Suggest what to change in the talk before giving it again.
+rules: Weigh repeated comments over one-off comments, and don't dismiss critical feedback, because patterns reveal real issues.
+output: The theme summary, the strengths, the improvements with exercises, then the talk changes.
+tip: Watch the recording once with the sound off. Your body language will surprise you.
+try: Feedback from a CME with comments on "too fast" and "excellent cases".
+next: talk-rehearsal-plan
+
+@@ Q | hook-question | An opening question that hooks the audience
+aud: PG Resident / Faculty
+body: Act as a speaking coach. Write 3 opening questions for my talk on [TOPIC] to [AUDIENCE] that make people think about their own practice or experience in the first 30 seconds, each under 20 words, with the answer I'll reveal later in the talk.
+try: A CME talk on antibiotic overuse in upper respiratory infections.
+
+@@ Q | rule-of-three | Organise my talk into three parts
+aud: PG Resident
+body: Act as a presentation strategist. Organise my content, [PASTE KEY POINTS], into exactly 3 memorable parts with short, parallel titles, and write a one-sentence roadmap that previews the 3 parts at the start of the talk. Flag anything you are unsure of so I can check it.
+try: Points on the recognition, treatment and prevention of heat stroke.
+
+@@ Q | big-idea | My talk's big idea in one sentence
+aud: PG Resident / Faculty
+body: Act as a speaking coach. From my talk content, [PASTE OUTLINE], write the single big idea in one sentence of under 20 words that the audience should remember a week later. Give 3 options and mark the strongest one. Flag anything you are unsure of so I can check it.
+try: A talk on the importance of early mobilisation in hospitalised elderly patients.
+
+@@ Q | audience-analysis | Five questions about my audience
+aud: PG Resident / Faculty
+body: Act as a presentation strategist. Before I prepare my talk on [TOPIC] for [AUDIENCE], list the 5 questions I should answer about them (knowledge level, decisions, pain points, expectations, attention span) and suggest how to find the answers. Flag anything you are unsure of so I can check it.
+try: A talk for general practitioners in a district town on thyroid disorders.
+
+@@ Q | safe-icebreaker | A safe icebreaker for a medical audience
+aud: PG Resident / Faculty
+body: Act as an experienced medical speaker. Suggest 3 light, respectful icebreakers for the start of my talk on [TOPIC] to [AUDIENCE] that relate to the topic, avoid jokes about patients, and take under 30 seconds each. Flag anything you are unsure of so I can check it.
+try: An after-lunch CME talk on hypertension management.
+
+@@ Q | sixty-second-story | Tell a story in 60 seconds
+aud: PG Resident / Faculty
+body: Act as a medical storyteller. Turn this de-identified clinical experience, [BRIEF CASE], into a 60-second spoken story (about 150 words) with a setting, a tension, a turning point and a lesson that leads into my talk on [TOPIC]. Flag anything you are unsure of so I can check it.
+try: A patient whose sepsis was recognised late on a busy night shift.
+
+@@ Q | recap-line | Recap before moving on
+aud: PG Resident
+body: Act as a speaking coach. Write one-sentence spoken recaps to use at the end of each section of my talk, [LIST SECTIONS AND KEY POINTS], so the audience can follow the structure, each under 20 words and linking to the next section.
+try: Sections on the causes, diagnosis and management of iron-deficiency anaemia.
+
+@@ Q | call-to-action | A clear call to action
+aud: PG Resident / Faculty
+body: Act as a public-health communicator. Write 3 specific calls to action to end my talk on [TOPIC] for [AUDIENCE], each an action they can take within a week, phrased positively and concretely, in under 20 words. Flag anything you are unsure of so I can check it.
+try: A talk to ward nurses on hand hygiene compliance.
+
+@@ Q | invited-talk-title | A title for my invited talk
+aud: Faculty / Senior Resident
+body: Act as a conference programme editor. Write 5 titles for my invited talk on [TOPIC] for [AUDIENCE]: 2 descriptive, 2 with a hook, and 1 in question form, each under 12 words, accurate to the content, and attractive in a printed programme.
+try: A talk on how AI tools can help practising doctors.
+
+@@ Q | filler-words | Clean filler words out of my script
+aud: PG Resident
+body: Act as a speaking coach. Review this transcript of my rehearsal, [PASTE TRANSCRIPT], list my filler words and verbal habits with their counts, and suggest a replacement strategy for each, such as pausing, instead of simply deleting them. Flag anything you are unsure of so I can check it.
+try: A transcript full of "basically", "actually" and "so, uh".
+
+@@ Q | questions-opener | A better way to open the Q&A
+aud: PG Resident / Faculty
+body: Act as a speaking coach. Instead of "any questions?", write 3 ways to open the Q&A after my talk on [TOPIC] that invite real discussion, including one prepared question I can ask myself if the audience is silent, with a short answer.
+try: A talk on non-invasive ventilation in COPD.
