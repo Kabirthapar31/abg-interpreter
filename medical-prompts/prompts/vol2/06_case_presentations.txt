@@ -1,0 +1,587 @@
+# 2.6 | Case presentations & grand rounds | A good case presentation tells a clinical story in the order the evidence arrived, reasons aloud, and ends with what everyone in the room should learn.
+
+@@ M | case-presentation-master | Departmental case presentation, start to finish
+aud: PG Resident / MBBS Intern
+use: When you present a case at a departmental case discussion or clinical meeting.
+why: Case presentations are where residents show clinical reasoning. A structured presentation (a crisp history, focused examination, a summary, a justified differential, a rational work-up and a clear plan) shows your thinking and invites useful discussion. A disorganised one invites interruption.
+persona: You are a senior physician and clinical teacher who has trained generations of residents in case presentation. You value clinical reasoning over exhaustive lists, and you expect every statement to be justified.
+context: Specialty and my level: [e.g. MD Medicine, year 1]
+De-identified case notes (history, examination, investigations with results and dates as Day 0, Day 2…, treatment and course): [PASTE NOTES]
+Time allowed: [e.g. 15 minutes + 15 minutes discussion]
+Format: [bedside / slides / verbal]
+The discussion point my unit wants: [diagnostic dilemma / management decision / teaching]
+task: 1. Write the opening one-liner (age band, sex, key background, presenting problem and duration).
+2. Structure the history: presenting complaint, history of present illness in chronological order with pertinent positives and negatives, and relevant past, drug, family, social and personal history.
+3. Present the examination findings: general, vitals and systemic, relevant findings first, with pertinent negatives.
+4. Write a 3–4 line summary that frames the problem.
+5. Give a provisional diagnosis and a ranked differential, each with supporting and opposing features.
+6. Present investigations in a logical order, with results interpreted and trends shown.
+7. Present the management and course, with the reasoning behind key decisions.
+8. End with the discussion points or questions for the audience, and 3 learning points.
+rules: Use only facts from my notes, keep everything de-identified, and write [NOT DOCUMENTED] where a key detail is missing rather than inventing it, because the audience will ask about it. Reason step by step when justifying the differential. This is for learning, not a substitute for the treating team's judgement.
+output: The full presentation in sections, suitable to speak or to put on 10–12 slides, then the discussion points and learning points.
+tweak: End with the 5 questions the chairperson is most likely to ask, and short, evidence-aware answers marked [VERIFY] where guideline-dependent.
+tips:
+- Present in the order the information became available. It lets the audience reason along with you.
+- Pertinent negatives are as important as positives. They show you considered the differential.
+- Rehearse the summary until you can say it without notes. It's the part everyone remembers.
+next: case-summary
+
+@@ M | grand-rounds-master | Grand rounds presentation
+aud: Senior Resident / Faculty
+use: When you present at hospital or departmental grand rounds.
+why: Grand rounds combine a case with a broader teaching review for a mixed, often senior audience. The best ones use the case as a doorway into current evidence, practical controversies and system lessons, and they keep time.
+persona: You are an academic physician who has presented and chaired grand rounds for many years. You design sessions that are clinically grounded, evidence-rich and relevant to the whole hospital.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+What I most want to get out of this: [one line]
+The case (de-identified summary): [PASTE]
+The broader topic the case illustrates: [e.g. drug-induced liver injury]
+Audience (departments, seniority): [brief]
+Duration: [e.g. 45 minutes]
+Sources for the review part (guidelines, key papers): [UPLOAD / LIST]
+Guest discussants, if any: [brief]
+task: 1. Plan the structure: case presentation (10 minutes), case discussion or discussant (10 minutes), topic review (15 minutes), take-home points and system lessons (5 minutes), and Q&A.
+2. Condense the case into a presentation with a clear clinical question.
+3. Build the topic review from my sources: epidemiology, mechanisms relevant to the case, diagnosis, management and current evidence, with slide titles.
+4. Identify system or quality lessons for the hospital, if any.
+5. Write briefing questions for the discussant.
+6. Write the take-home points.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Base the review on my sources and mark guideline or trial specifics [VERIFY], because grand-rounds audiences include experts in the topic. Keep the case de-identified and blame-free.
+output: The session plan with timings, the case slides, the review slide outline, the system lessons, the discussant questions, then the take-home points.
+tweak: End with the question the most senior person in the room is most likely to ask, and how to handle it.
+tips:
+- Invite a discussant from another department. It broadens the discussion and the audience.
+- Keep the review focused on what the case raised. Grand rounds aren't a textbook chapter.
+- Circulate the take-home points afterwards. They extend the reach beyond the room.
+next: case-slides
+
+@@ M | mm-meeting | Morbidity and mortality (M&M) presentation
+aud: PG Resident / Faculty
+use: When presenting an adverse outcome, complication or death at an M&M or death-audit meeting.
+why: M&M meetings exist to learn and prevent recurrence, not to blame. A structured presentation (the facts, a timeline, the analysis of contributing factors using a systems lens, the evidence, and concrete actions) makes the meeting productive and psychologically safe.
+persona: You are a patient-safety physician who runs M&M meetings using a systems approach and a just culture. You are factual, balanced and focused on learning.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The case, de-identified, with a timeline of events: [PASTE]
+The outcome (complication or death): [brief]
+Local protocols relevant to the case: [list]
+Institutional M&M format, if any: [paste]
+task: 1. Present the case factually as a timeline, without judgemental language.
+2. Identify the key decision points and what information was available at each one.
+3. Analyse the contributing factors with a structured framework: patient factors, task and technology, individual, team, environment and organisation.
+4. Classify the event (e.g. known complication, possible error, system failure, unavoidable) as a discussion point, not a verdict.
+5. Summarise the relevant evidence or guideline standards, marked [VERIFY].
+6. Propose 3–5 specific, actionable system improvements with owners and timelines (as suggestions).
+7. Write discussion questions for the meeting, including one on how a similar event could be detected earlier.
+8. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Use neutral, non-blaming language and no names or identifiers, because psychological safety is what makes M&M work. Use only facts from my timeline, and mark unknowns [NOT KNOWN].
+output: The timeline, the decision-point table, the contributing-factor analysis, the classification, the evidence summary, the improvement proposals, then the discussion questions.
+tweak: End with one-line "learning messages" suitable for circulating to the department.
+tips:
+- Ask "what made sense to the team at that time?" rather than "who made the mistake?".
+- Track your action items. An M&M without follow-up changes nothing.
+- Keep the presentation confidential according to your institution's rules for quality-improvement meetings.
+next: mm-root-cause
+
+@@ M | interesting-case-meeting | Short "interesting case" presentation with teaching
+aud: PG Resident
+use: For 10-minute "interesting case" or "case of the week" slots.
+why: Short case slots succeed when they are tightly structured: the hook, the key findings, the reasoning to diagnosis, and one or two strong teaching points. Presenters who try to include everything run over and teach nothing.
+persona: You are a clinical teacher who coaches residents to present interesting cases in 10 minutes with maximum teaching value.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+What I most want to get out of this: [one line]
+The case (de-identified notes): [PASTE]
+What makes it interesting: [rare diagnosis / atypical presentation / diagnostic twist / management lesson]
+Time: [e.g. 10 minutes]
+Audience: [brief]
+The key image or result that cracked the case: [describe]
+What the treating team would do differently next time: [brief]
+task: 1. Write a hook for the first 30 seconds.
+2. Select only the history, examination and investigation findings that drive the reasoning.
+3. Present the case as an unfolding puzzle: reveal the information in stages and pause for audience guesses.
+4. Reveal the diagnosis and exactly how it was confirmed (the test, finding or response to treatment).
+5. Deliver 2 teaching points with brief evidence, marked [VERIFY].
+6. Add a 30-second "what we would do differently" reflection.
+7. Write 3 audience questions to use at the pauses, with the expected answers.
+8. Plan 6–8 slides with timings that fit the slot exactly.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep it fully de-identified and include only facts from my notes, because interesting cases are often recognisable to colleagues.
+output: The hook, the selected findings, the staged reveal plan, the diagnosis reveal, the teaching points, then the slide plan.
+tweak: End with one "take-home pearl" for the audience to remember.
+tips:
+- The pause before revealing the diagnosis is where the audience learns. Don't rush it.
+- Show one key image or result, large, at the turning point.
+- Finish with what you would do differently next time. It's the most useful sentence in the talk.
+next: case-teaching-points
+
+@@ M | mdt-presentation | Presenting at a multidisciplinary team meeting or tumour board
+aud: PG Resident / Senior Resident
+use: When presenting a patient at an MDT, tumour board, or joint medical-surgical meeting.
+why: MDTs make major decisions in minutes. A crisp, standardised presentation with the right information for each specialty (radiology, pathology, oncology, surgery) leads to better decisions and saves everyone's time.
+persona: You are an MDT coordinator and senior clinician who has run tumour boards and multidisciplinary meetings for years.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Meeting type: [tumour board / ILD MDT / complex-case MDT]
+Patient summary (de-identified): age band, sex, performance status, comorbidities: [PASTE]
+Relevant history, imaging, pathology and prior treatment: [PASTE]
+The specific question for the MDT: [e.g. surgery versus chemoradiotherapy?]
+Patient's preferences, if known: [brief]
+task: 1. Write a 60-second standardised presentation: the one-liner, the key history, performance status, and the question.
+2. Organise the data by specialty: imaging findings for radiology, pathology findings and markers, and staging if applicable.
+3. List the options to be discussed, with the relevant considerations for each.
+4. Prepare a template for documenting the MDT outcome.
+5. Flag missing information needed for a decision, and who should obtain it before the meeting.
+6. Note any patient-specific factors (frailty, social support, finances) the MDT should weigh.
+6. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: State staging and markers exactly as in the reports, marking any staging version as [VERIFY EDITION], and include the patient's preferences where known, because MDT decisions must be accurate and patient-centred.
+output: The spoken presentation, the specialty data sections, the options table, the missing-information list, then the documentation template.
+tweak: End with the 3 questions the MDT is most likely to ask the presenter.
+tips:
+- State the question for the MDT first, not last. It focuses everyone's attention.
+- Have the images and pathology slides ready to display. MDTs stall while people search for them.
+- Document the decision and the rationale before leaving the room.
+next: case-summary
+
+@@ S | case-summary | A three-line case summary
+aud: PG Resident / MBBS Intern
+use: For the summary statement after history and examination, or at the start of rounds.
+persona: You are a clinical teacher who values concise, reasoning-rich summaries.
+context: Audience or purpose: [brief]
+Case details (de-identified): [PASTE]
+Specialty: [brief]
+task: 1. Write a 3-line summary: the one-liner (age band, sex, key background), the key clinical syndrome using semantic qualifiers (acute or chronic, unilateral or bilateral, progressive), and the key positive and negative findings.
+2. Write an alternative 1-line version for handovers.
+3. Explain which words carry the diagnostic reasoning.
+rules: Use only facts from the case, and don't insert a diagnosis into the summary unless it is confirmed, because summaries shape everyone's thinking.
+output: The 3-line summary, the 1-line version, then the reasoning note.
+tip: Semantic qualifiers ("acute, painful, unilateral") turn a summary into a diagnostic tool.
+try: Notes on a 45-year-old man with 3 weeks of fever, weight loss and a right-sided pleural effusion.
+next: ddx-case
+
+@@ S | history-structure | Organise a messy history for presentation
+aud: MBBS Student / PG Resident
+use: When your clerking notes are complete but disorganised.
+persona: You are a clinical examiner who knows what a well-presented history sounds like.
+context: My clerking notes (de-identified): [PASTE]
+Specialty and presenting problem: [brief]
+task: 1. Reorganise the notes into the standard format: presenting complaint, HPI (chronological), past, drug, allergy, family, personal and social history, and review of systems.
+2. Move the pertinent positives and negatives into the HPI.
+3. Flag the gaps in the history that the audience will ask about.
+4. Write the spoken version (about 2 minutes).
+rules: Use only information in my notes, and list the gaps rather than filling them in, because invented history is a serious error.
+output: The organised history, the gap list, then the spoken version.
+tip: For each symptom, cover onset, duration, progression and associated features. Examiners listen for them.
+try: Notes on an elderly woman with breathlessness, leg swelling and reduced urine output.
+next: exam-findings
+
+@@ S | exam-findings | Present examination findings clearly
+aud: MBBS Student / PG Resident
+use: When presenting examination findings on rounds or in a case discussion.
+persona: You are a clinical examiner who values focused, organised findings.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+Examination findings (de-identified): [PASTE]
+Presenting problem: [brief]
+task: 1. Order the findings: general appearance, vitals, general examination, then the relevant system first and other systems briefly.
+2. Highlight the findings that support or oppose the leading diagnoses.
+3. Include pertinent negatives.
+4. Write the spoken version (about 90 seconds).
+rules: Report the findings as documented, and don't add findings that weren't examined, because examiners test what you actually elicited.
+output: The organised findings, the highlight list, then the spoken version.
+tip: Say the relevant negatives aloud: "no clubbing, no lymphadenopathy". They show a targeted examination.
+try: Findings in a patient with suspected infective endocarditis.
+next: case-summary
+
+@@ S | ddx-case | Justify a differential diagnosis for a case
+aud: PG Resident / MBBS Student
+use: For the differential-diagnosis part of a case presentation.
+persona: You are a diagnostician who teaches structured differential reasoning.
+context: Case summary with key findings: [PASTE]
+My provisional diagnosis and differentials: [list]
+task: 1. Rank the differentials by likelihood, with points for and against each from the case.
+2. Identify the can't-miss diagnoses and whether they have been excluded.
+3. Suggest the discriminating investigation for the top 2.
+4. Write the spoken justification (about 2 minutes).
+rules: Reason step by step and use only the case facts, marking guideline-based criteria [VERIFY], because the audience will challenge each point. This supports learning, not the treating team's decisions.
+output: A differential table (diagnosis, for, against, next test), the can't-miss check, then the spoken version.
+tip: A short, well-justified differential beats a long, unranked list.
+try: A young woman with fever, arthralgia, rash and pancytopenia.
+next: investigation-plan
+
+@@ S | investigation-plan | Present and justify the investigations
+aud: PG Resident
+use: When presenting what tests were done and why.
+persona: You are a senior clinician who expects every test to answer a question.
+context: Investigations done with results and dates: [PASTE]
+Differential diagnosis: [list]
+task: 1. Group the tests: confirming the diagnosis, excluding differentials, assessing severity, and baseline for treatment.
+2. For each important test, state the question it answered.
+3. Present the abnormal results with trends in a compact table.
+4. Identify any test that wasn't needed, or one that is still pending.
+rules: Report the values with units and reference ranges as in my data, because the audience interprets the numbers.
+output: The grouped test table, the trend table, then the needed and pending notes.
+tip: Present trends, not single values: "creatinine 1.2 → 2.8 → 1.6 over 5 days".
+try: Investigations in a patient with suspected tuberculous meningitis.
+next: management-plan
+
+@@ S | management-plan | Present the management plan and its reasoning
+aud: PG Resident
+use: For the management part of a case presentation or rounds.
+persona: You are a senior clinician who teaches management reasoning.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Diagnosis, current status and management given: [PASTE]
+Guidelines or protocols followed: [list]
+task: 1. Present the management by problem (a problem-based list).
+2. For each key decision, state the reasoning and the evidence or guideline behind it, marked [VERIFY].
+3. State the monitoring plan and the escalation criteria.
+4. State the discharge or follow-up plan.
+rules: Describe the management as documented and don't recommend changes to real patient care, because this is a teaching presentation.
+output: The problem-based plan, the reasoning notes, the monitoring and escalation, then the follow-up.
+tip: A problem list (e.g. "1. Septic shock 2. AKI 3. Hyperglycaemia") keeps management presentations organised.
+try: Management of a patient with diabetic ketoacidosis and pneumonia.
+next: case-slides
+
+@@ S | isbar-handover | ISBAR handover for a patient
+aud: PG Resident / MBBS Intern / Nurse
+use: For shift handovers and inter-team transfers.
+persona: You are a patient-safety educator who teaches structured handover.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+Patient details (de-identified), current status and pending issues: [PASTE]
+Receiving team: [brief]
+task: 1. Write the handover in ISBAR format: Identify, Situation, Background, Assessment, Recommendation.
+2. Highlight pending results, tasks and "watch for" items.
+3. Include escalation criteria (if X, then do Y).
+4. Keep it speakable in 60–90 seconds, and add a one-line code-status or goals-of-care note if relevant.
+rules: Include only verified information, and state uncertainty explicitly, because handover errors are a major cause of patient harm.
+output: The ISBAR handover, then the pending-task checklist.
+tip: Ask the receiving doctor to read back the key tasks. Read-back catches errors.
+try: Night handover of a post-operative patient with falling urine output.
+next: phone-referral
+
+@@ S | soap-rounds | Ward-round presentation (SOAP)
+aud: MBBS Intern / PG Resident
+use: For presenting your patients on daily ward rounds.
+persona: You are a consultant who likes concise, organised ward-round presentations.
+context: Patient's data for today (de-identified): overnight events, symptoms, vitals, examination, new results and current treatment: [PASTE]
+task: 1. Write the presentation in SOAP format: Subjective, Objective (vitals, examination, results with trends), Assessment by problem, and Plan by problem.
+2. Keep it to about 60 seconds for a stable patient and 2 minutes for a complex one.
+3. Put the questions for the consultant at the end.
+rules: Present the data exactly and flag any abnormal result that needs a decision, because rounds are where decisions happen.
+output: The SOAP presentation, then the questions for the consultant.
+tip: Start with overnight events and anything urgent. Consultants want to know what's changed first.
+try: Day 3 of admission for community-acquired pneumonia with new-onset atrial fibrillation.
+next: icu-rounds
+
+@@ S | icu-rounds | Systems-based ICU rounds presentation
+aud: PG Resident (Critical care, Anaesthesia, Medicine)
+use: For presenting critically ill patients on ICU rounds.
+persona: You are an intensivist who expects systematic, concise ICU presentations.
+context: Patient's ICU data (de-identified), system by system: [PASTE]
+Day of ICU stay and the admitting diagnosis: [brief]
+task: 1. Present in a systems format: neurological (sedation), respiratory (ventilator settings, ABG), cardiovascular (haemodynamics, vasopressors), renal (fluid balance), GI and nutrition, haematology, infection (cultures, antibiotic day), lines and tubes, and prophylaxis.
+2. Close with a problem list and today's goals.
+3. Include a daily checklist (e.g. sedation hold, ventilator weaning, lines, DVT and ulcer prophylaxis, feeding).
+rules: Report numbers and settings exactly as recorded, because ICU decisions depend on precise values.
+output: The systems presentation, the problem list with goals, then the checklist.
+tip: Always state the antibiotic day and the culture results. It's the most frequently asked ICU rounds question.
+try: Day 4 of septic shock from a urinary source, ventilated, on noradrenaline.
+next: soap-rounds
+
+@@ S | phone-referral | Present a case to a senior on the phone
+aud: MBBS Intern / PG Resident
+use: When calling a senior or another department about a patient, especially at night.
+persona: You are a senior resident who receives dozens of phone referrals and knows what a good one sounds like.
+context: Patient details (de-identified), the concern and the relevant data: [PASTE]
+Who I'm calling and what I need: [advice / review / transfer]
+task: 1. Write the call in SBAR: Situation (who I am, the patient, the concern), Background, Assessment (vitals and key findings, and my impression), Recommendation or Request (exactly what I need).
+2. Keep it under 60 seconds.
+3. List the data to have ready before dialling (vitals, recent results, current drugs, allergies).
+rules: State my specific request clearly, and include the most worrying finding early, because vague calls lead to vague responses.
+output: The SBAR script, then the "have ready" checklist.
+tip: Start with the request if it's urgent: "I need you to see a patient with a falling GCS now."
+try: Calling a surgical resident about a ward patient with suspected acute abdomen.
+next: isbar-handover
+
+@@ S | image-rich-case | Case presentation built around images
+aud: PG Resident
+use: When your case hinges on imaging, ECGs, fundoscopy, skin findings or histology.
+persona: You are a clinician-educator who uses images to teach reasoning.
+context: The case summary and the key images (described or uploaded, de-identified): [PASTE / UPLOAD]
+Audience: [brief]
+task: 1. Place each image at the point in the story where it changed thinking.
+2. For each, write "what do you see?" prompts and the systematic description.
+3. Plan annotated versions with arrows and labels.
+4. Link the image findings to the differential.
+rules: De-identify all images (names, dates, hospital numbers) and describe the findings conservatively, marking uncertain ones [CONFIRM WITH REPORT], because images carry hidden identifiers and over-reading misleads.
+output: An image placement table, the prompts and descriptions, the annotation plan, then the reasoning links.
+tip: Show the image first without comment. Let the audience look before you speak.
+try: A case of miliary tuberculosis with serial chest X-rays and a CT.
+next: case-slides
+
+@@ S | case-teaching-points | Teaching points from a case
+aud: PG Resident / Faculty
+use: To close any case presentation.
+persona: You are a clinical educator who distils cases into memorable lessons.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Case summary and outcome: [PASTE]
+What went well, and what was difficult: [brief]
+task: 1. Write 3–5 teaching points, each one sentence, specific and actionable.
+2. Classify them: diagnostic, management, systems or communication.
+3. Link each to evidence or a guideline where relevant, marked [VERIFY].
+4. Suggest one question to test the audience on each point.
+rules: Make every point follow from this case, not general textbook facts, because case-specific lessons stick.
+output: The teaching points with classification, the evidence links, then the test questions.
+tip: The best teaching point is often "what I would do differently".
+try: A case of hyponatraemia that worsened with normal saline (SIADH).
+next: case-slides
+
+@@ S | case-lit-review | A brief literature review for my case
+aud: PG Resident
+use: When your case discussion needs 2–3 slides on what the literature says.
+persona: You are an academic clinician who summarises literature quickly and accurately.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The case's key question (diagnosis, management or rarity): [brief]
+Sources I found (uploaded or with details): [UPLOAD / LIST]
+task: 1. Summarise what the sources say about the key question.
+2. Compare the case with published cases or series, if available.
+3. Summarise the current guideline position, marked [VERIFY].
+4. Write 2–3 slides with speaker notes.
+rules: Use only the sources I provided, and mark anything else [FIND SOURCE], because invented citations in case presentations are easily exposed.
+output: The summary, the comparison, the guideline note, then the slides.
+tip: A search limited to case reports in PubMed often finds similar cases quickly.
+try: A case of isoniazid-induced pellagra.
+next: case-teaching-points
+
+@@ S | case-slides | A 10–12 slide case-presentation deck
+aud: PG Resident
+use: When your case presentation needs slides.
+persona: You are a presentation coach for clinical meetings.
+context: My structured case presentation: [PASTE]
+Time: [minutes]
+Images and tables available: [list]
+task: 1. Plan 10–12 slides: title and one-liner; history; examination; summary; differential; investigations (with a trend table); imaging; diagnosis; management and course; discussion; teaching points.
+2. Write a message title and brief content for each slide.
+3. Suggest where the reveals and pauses should be.
+4. Check that the timing fits.
+rules: Keep the slides de-identified, with no names, dates or hospital numbers, including in image metadata, because slides get shared.
+output: The slide table (slide, title, content, visual, time), then the reveal plan.
+tip: Use a lab-trend table rather than pasting lab reports. It's readable and shows the trajectory.
+try: A case of severe falciparum malaria with AKI.
+next: case-presentation-master
+
+@@ S | management-controversy-case | Case discussion on a management controversy
+aud: PG Resident / Faculty
+use: When a case raises a genuine management dilemma worth debating.
+persona: You are a senior clinician who moderates balanced case-based debates.
+context: The case and the decision point: [PASTE]
+The options considered, and what was chosen: [brief]
+Sources for each option: [UPLOAD / LIST]
+task: 1. Frame the dilemma as a clear question.
+2. Present the evidence for each option, with its strengths and weaknesses, marked [VERIFY].
+3. Consider patient factors, preferences and resources.
+4. Explain what was done and why, and the outcome.
+5. Write the discussion questions for the audience.
+rules: Present both sides fairly and don't judge the treating team with hindsight, because outcome bias distorts learning.
+output: The dilemma, the evidence table, the patient factors, the decision explanation, then the questions.
+tip: Ask the audience to vote before and after the discussion. Changed votes show learning.
+try: Anticoagulation in a patient with a recent GI bleed and new pulmonary embolism.
+next: case-lit-review
+
+@@ S | ethical-dilemma-case | Present a case with an ethical dilemma
+aud: PG Resident / Faculty
+use: For cases involving consent, capacity, end-of-life care, resource allocation or confidentiality.
+persona: You are a clinical ethicist who facilitates case discussions using principled frameworks.
+context: The case (de-identified) and the ethical question: [PASTE]
+Relevant Indian law or guidelines I'm aware of: [list]
+task: 1. State the ethical question clearly.
+2. Analyse it using a framework (e.g. the four principles, or the four-box method: medical indications, patient preferences, quality of life, contextual features).
+3. Identify the stakeholders and their perspectives.
+4. Outline the options with their ethical and legal considerations, marked [VERIFY LEGAL POSITION].
+5. Write the discussion questions.
+rules: Present the perspectives respectfully and don't give legal advice, and mark legal points for verification, because ethics cases involve real legal and emotional stakes.
+output: The question, the framework analysis, the stakeholders, the options table, then the questions.
+tip: Invite a nurse, social worker or ethicist to the discussion. Ethics cases benefit from several perspectives.
+try: A family requesting withdrawal of ventilation for an elderly patient without a documented advance directive.
+next: case-teaching-points
+
+@@ S | rare-case-presentation | Present a rare diagnosis without losing the audience
+aud: PG Resident
+use: When your case is a rare disease that most of the audience hasn't seen.
+persona: You are a clinical teacher who makes rare cases relevant to everyday practice.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The case (de-identified) and the rare diagnosis: [PASTE]
+Audience: [brief]
+task: 1. Frame the case around the common presentation that hid the rare diagnosis.
+2. Explain the diagnostic clues that pointed to it.
+3. Give a brief overview of the condition (5 bullets), marked [VERIFY].
+4. Draw lessons that apply to common practice (e.g. when to think beyond the common).
+rules: Keep the overview accurate and brief, because rare-disease details are easily misremembered.
+output: The framing, the clues, the overview, then the lessons.
+tip: "When the common diagnosis doesn't fit, look again" is the universal lesson of rare cases.
+try: Adult-onset Still's disease presenting as fever of unknown origin.
+next: interesting-case-meeting
+
+@@ S | missed-diagnosis-learning | Learning from a delayed or missed diagnosis
+aud: PG Resident / Faculty
+use: For teaching sessions on diagnostic error, using a de-identified case.
+persona: You are a diagnostic-reasoning expert who teaches cognitive bias without blame.
+context: The case timeline and the eventual diagnosis: [PASTE]
+The points where the diagnosis could have been made: [brief]
+task: 1. Map the diagnostic journey on a timeline.
+2. Identify the cognitive biases likely at play (anchoring, premature closure, availability, framing) at each point.
+3. Identify the system factors (workload, handover, test delays).
+4. Suggest de-biasing strategies and system fixes.
+5. Write the teaching points.
+rules: Frame the analysis around thinking processes and systems, not individuals, and keep it de-identified, because blame shuts down learning.
+output: The timeline, the bias table, the system factors, the strategies, then the teaching points.
+tip: A "diagnostic time-out" (asking "what else could this be?") is a simple, teachable de-biasing tool.
+try: A pulmonary embolism initially treated as pneumonia for 3 days.
+next: mm-meeting
+
+@@ S | anticipate-hod-questions | The questions the head of department will ask
+aud: PG Resident
+use: The day before presenting a case to your unit head or at a departmental meeting.
+persona: You are a senior professor known for incisive case-discussion questions.
+context: My case presentation: [PASTE]
+My specialty and year: [brief]
+task: 1. List 12 likely questions: on the history, examination technique, differential, investigations, management choices, recent evidence, and "what would you do if…".
+2. Give a model answer for each, grounded in the case, with [VERIFY] for guideline facts.
+3. Mark the 3 hardest questions and suggest how to prepare for them.
+rules: Base questions on the actual case and my level, and admit uncertainty in the model answers where appropriate, because bluffing is easily detected.
+output: A question-and-answer table, then the preparation plan for the hardest three.
+tip: "I don't know, but I would find out by…" is a respectable answer. Guessing isn't.
+try: A presentation of a young patient with a first episode of status epilepticus.
+next: case-presentation-master
+
+@@ S | mm-root-cause | Root-cause analysis for an M&M case
+aud: PG Resident / Faculty
+use: When preparing the analysis part of an M&M or quality-improvement meeting.
+persona: You are a patient-safety specialist trained in root-cause analysis.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The event timeline (de-identified): [PASTE]
+Initial thoughts on contributing factors: [brief]
+task: 1. Build a fishbone (Ishikawa) diagram description with categories: people, processes, equipment, environment, communication and policies.
+2. Apply "5 whys" to the 2 most important contributing factors.
+3. Distinguish root causes from contributing factors.
+4. Propose SMART corrective actions.
+rules: Focus on systems and processes, not individual blame, and base the analysis on the facts in the timeline, because RCA aims at prevention, not punishment.
+output: The fishbone description, the 5-whys chains, the root-cause list, then the actions table.
+tip: If your "root cause" is "human error", ask "why" at least twice more.
+try: A delayed administration of antibiotics to a septic patient in the emergency department.
+next: mm-meeting
+
+@@ S | case-follow-up-update | Present a follow-up update on a previous case
+aud: PG Resident
+use: When the department wants to hear how a previously presented patient did.
+persona: You are a clinical teacher who closes the loop on cases.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The original presentation summary: [PASTE]
+The follow-up course and outcome: [PASTE]
+task: 1. Remind the audience of the case in 2 lines.
+2. Summarise the course since then: treatment response, complications and the current status.
+3. Say whether the outcome confirms or changes the original diagnosis or plan.
+4. Draw updated lessons.
+rules: Keep it de-identified and factual, and acknowledge it plainly if the original reasoning was wrong, because honest follow-up is powerful teaching.
+output: The reminder, the course summary, the diagnostic check, then the updated lessons.
+tip: Follow-up presentations teach humility and the natural history of disease. Do more of them.
+try: A 6-month follow-up of a patient with autoimmune encephalitis.
+next: case-teaching-points
+
+@@ S | case-for-students | Turn a case into a teaching session for MBBS students
+aud: PG Resident / Faculty
+use: When teaching undergraduates using a real ward case.
+persona: You are a clinical tutor for MBBS students.
+context: The case (de-identified): [PASTE]
+Students' year and what they have learned so far: [brief]
+Time: [minutes]
+task: 1. Choose 3 learning objectives appropriate for the students' level.
+2. Plan a Socratic session: questions at each stage of the case.
+3. Include one clinical skill to practise (e.g. eliciting a sign) if possible.
+4. Link the case to their exam topics (e.g. NEET-PG and university exams).
+5. Write 5 check questions.
+rules: Keep the questions at the students' level and correct misconceptions gently, and obtain the patient's consent for bedside teaching, because respect for patients is itself a lesson.
+output: The objectives, the Socratic question plan, the skill station, the exam links, then the check questions.
+tip: Ask students to commit to an answer before you reveal it. Commitment drives learning.
+try: A patient with mitral stenosis for third-year MBBS students.
+next: case-teaching-points
+
+@@ S | journal-case-link | Link a case to a recent paper
+aud: PG Resident / Faculty
+use: When a case presentation would be stronger with one recent, relevant study.
+persona: You are an academic clinician who connects bedside cases to current evidence.
+context: The case summary and its key clinical question: [PASTE]
+The recent paper I found (upload or paste the abstract): [UPLOAD / PASTE]
+Audience: [brief]
+task: 1. Summarise the paper in 3 lines (design, population, key result).
+2. Explain how it applies, or doesn't apply, to this patient.
+3. Note the paper's main limitation for this context.
+4. Write one slide connecting the case and the paper.
+rules: Use only the paper I provided, and don't overstate how directly it applies to one patient, because case-to-trial reasoning is easy to overstretch.
+output: The summary, the applicability note, the limitation, then the slide text.
+tip: One well-chosen recent paper makes a case discussion feel current and evidence-based.
+try: A patient with severe community-acquired pneumonia and a recent trial of corticosteroids.
+next: case-lit-review
+
+@@ Q | case-one-liner | Opening one-liner for my case
+aud: MBBS Intern / PG Resident
+body: Act as a clinical teacher. Write the opening one-liner for my case presentation from these details, [PASTE KEY DETAILS], stating the age band, sex, the key relevant background and the presenting problem with its duration, in under 30 words and without giving away the diagnosis.
+try: A 58-year-old diabetic woman with 5 days of fever and right upper-quadrant pain.
+
+@@ Q | three-line-summary | Summarise my case in three lines
+aud: MBBS Intern / PG Resident
+body: Act as a senior physician. Summarise this case, [PASTE CASE NOTES], in 3 lines using semantic qualifiers (acute or chronic, unilateral or bilateral, progressive) and the key positives and negatives, without naming an unconfirmed diagnosis. Flag anything you are unsure of so I can check it.
+try: Notes on a teenager with fever, sore throat, rash and joint pains.
+
+@@ Q | pertinent-negatives | Which negatives matter?
+aud: MBBS Student / PG Resident
+body: Act as a clinical examiner. For a patient presenting with [PRESENTATION] and a leading diagnosis of [DIAGNOSIS], list the 6–8 pertinent negatives I should mention in history and examination, explaining in one line which differential each one argues against. Flag anything you are unsure of so I can check it.
+try: Presentation: acute chest pain. Leading diagnosis: aortic dissection.
+
+@@ Q | why-interesting | Why is this case worth presenting?
+aud: PG Resident
+body: Act as a case-meeting coordinator. From this case summary, [PASTE SUMMARY], tell me in 3 sentences what makes the case worth presenting (a rare diagnosis, an atypical presentation, a diagnostic twist or a management lesson) and what the audience should take away.
+try: A patient with hypokalaemic paralysis who turned out to have thyrotoxicosis.
+
+@@ Q | problem-list | Build the problem list
+aud: MBBS Intern / PG Resident
+body: Act as a physician on rounds. From this case, [PASTE NOTES], create a prioritised, numbered problem list (active problems first, then chronic and background issues), with one line on the current status of each, and without adding problems not supported by the notes.
+try: An elderly patient with pneumonia, AKI, hyponatraemia, diabetes and delirium.
+
+@@ Q | vitals-trend | Describe the vitals trend
+aud: MBBS Intern / PG Resident
+body: Act as a clinical teacher. Describe the trend in these vital signs, [PASTE VITALS WITH TIMES], in 2–3 spoken sentences for a case presentation, highlighting clinically important changes and any that should trigger escalation. Flag anything you are unsure of so I can check it.
+try: HR 88 → 104 → 118, BP 124/80 → 106/68 → 92/58, and RR 18 → 24 over 12 hours.
+
+@@ Q | labs-concise | Present the lab results concisely
+aud: MBBS Intern / PG Resident
+body: Act as a senior resident. Convert these lab results, [PASTE RESULTS WITH DATES], into a compact trend table with units, highlight the abnormal values, and write one spoken sentence summarising what the labs show overall. Flag anything you are unsure of so I can check it.
+try: Five days of creatinine, potassium, sodium, haemoglobin and platelet counts.
+
+@@ Q | hospital-course | Hospital course as a timeline
+aud: PG Resident
+body: Act as a clinical documentation expert. Turn this hospital course, [PASTE NOTES], into a day-by-day timeline of key events, investigations, treatment changes and responses, using relative days (Day 0, Day 1…) and removing identifiers, for one slide. Flag anything you are unsure of so I can check it.
+try: A 10-day admission for dengue with warning signs and plasma leakage.
+
+@@ Q | final-diagnosis-statement | The final diagnosis statement
+aud: PG Resident
+body: Act as a senior physician. Write the complete final-diagnosis statement for this case, [PASTE DETAILS], in standard format: the primary diagnosis with its aetiology and severity, then its complications, then the comorbidities, as used in discharge summaries and case presentations.
+try: A patient with community-acquired pneumonia complicated by septic shock and AKI, with diabetes.
+
+@@ Q | learning-point | One learning point from my case
+aud: PG Resident
+body: Act as a clinical educator. From this case, [PASTE BRIEF CASE], write the single most valuable learning point in one sentence of under 25 words, specific and actionable, and one question to test the audience on it. Flag anything you are unsure of so I can check it.
+try: A patient whose hypoglycaemia was caused by a sulphonylurea in renal failure.
+
+@@ Q | sbar-call | SBAR script for a phone call
+aud: MBBS Intern / PG Resident / Nurse
+body: Act as a patient-safety trainer. Write an SBAR phone script of under 60 seconds for calling [WHO] about this patient, [PASTE DETAILS], putting the most worrying finding early and ending with a specific request. Flag anything you are unsure of so I can check it.
+try: Calling the ICU resident about a ward patient with a falling GCS and rising respiratory rate.
+
+@@ Q | case-title-slide | A title for my case presentation
+aud: PG Resident
+body: Act as a case-meeting coordinator. Write 4 titles for my case presentation, [ONE-LINE SUMMARY], that intrigue without giving away the diagnosis, such as "Fever that wouldn't settle", each under 10 words, plus one descriptive subtitle. Flag anything you are unsure of so I can check it.
+try: A case of infective endocarditis presenting as a stroke in a young adult.
