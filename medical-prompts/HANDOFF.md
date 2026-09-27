@@ -80,7 +80,8 @@ Within each section file, order the prompts Masters first, then Standards, then 
 
 ## Workflow per section
 1. Write `prompts/volN/NN_name.txt`.
-2. Run `python3 build/library.py N` and fix every issue until it prints `QA clean` (the section count must match
+2. Run `python3 build/enrich.py N` (tops up prompts a few words short with standard fields), then
+   `python3 build/library.py N`, and fix every remaining issue by hand until it prints `QA clean` (the section count must match
    the target in PROGRESS.md).
 3. Update PROGRESS.md (mark the section done), then `git add -A && git commit && git push -u origin
    claude/medical-prompts-pdf-qsg4x1`.

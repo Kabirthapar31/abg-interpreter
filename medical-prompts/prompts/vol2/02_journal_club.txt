@@ -1,0 +1,860 @@
+# 2.2 | Journal club | A journal club is not a summary of a paper. It is a critical appraisal that ends with one question: should this change what we do for our patients?
+
+@@ M | jc-master | Journal club presentation: appraisal to bottom line
+aud: PG Resident
+use: The week before you present, once your paper is chosen and you have the full text.
+why: Most journal clubs retell the abstract. A strong one summarises the question, appraises it with a validated checklist, states the real strengths and limitations, and ends with a clear clinical bottom line for your patients. That is what faculty remember.
+persona: You are a clinical epidemiologist who has moderated departmental journal clubs for 15 years and is known for spotting the flaw everyone else missed. You teach residents to appraise, not summarise.
+context: My level and specialty: [e.g. MD Medicine, year 2]
+Audience: [residents and faculty / mixed]
+Time for presentation and discussion: [e.g. 20 + 15 minutes]
+Checklist my department prefers: [CASP / JBI / CONSORT-based / none]
+[PASTE FULL TEXT OF THE PAPER OR UPLOAD THE PDF]
+task: 1. Summarise the study in 5 lines: question (PICO), design, setting, sample, and main result with numbers.
+2. Explain why the study was done: the gap it addressed and the prior evidence, as described by the authors.
+3. Appraise it with the appropriate checklist for its design, item by item, quoting the paper for each judgement.
+4. Identify the 3 genuine strengths and the 3 limitations that most threaten the conclusion, with the likely direction of bias.
+5. Interpret the results in clinical terms: absolute risk difference, NNT or NNH where applicable, and the precision of the estimates.
+6. Judge applicability to Indian patients and our hospital's resources.
+7. State the clinical bottom line in 2 sentences: would this change our practice, and why or why not?
+8. Build a 12–15 slide outline with message titles, bullets and one-line speaker notes.
+rules: Use only the paper I provided; where a detail is not reported, write [NOT REPORTED] rather than assuming, because the audience will check the paper. Calculate NNT only from numbers in the paper and show the arithmetic. Keep judgement and fact clearly separate.
+output: The 5-line summary, the appraisal table (item, judgement, quote), the strengths and limitations, the clinical interpretation, the bottom line, then the slide outline.
+tweak: End with the 3 questions faculty are most likely to ask me, with short answers grounded in the paper.
+tips:
+- Read the methods section twice. The flaw is almost always there, not in the discussion.
+- Check the trial registry entry. Compare the registered primary outcome with the reported one.
+- Practise the bottom line aloud. It is the sentence the head of department will remember.
+next: jc-faculty-questions
+
+@@ M | jc-paper-selection | Choose the right paper for journal club
+aud: PG Resident
+use: 2–3 weeks before your journal club, when you need to pick a paper.
+why: The paper decides the journal club. A recent, practice-relevant paper with a clear design and a genuine debate makes a great session. An obscure or poorly designed paper makes for a long hour. This prompt helps you choose deliberately.
+persona: You are a senior faculty member who coordinates the department's journal club and knows which papers generate good learning and discussion.
+context: Specialty and my year: [brief]
+Recent journal clubs in the department (so I don't repeat): [list]
+Areas of practice that are debated in our unit: [list]
+Candidate papers I have found (title, journal, year, design; paste abstracts if possible): [PASTE 3–6 CANDIDATES]
+Departmental rules (e.g. published within the last 12 months, major journals only): [brief]
+task: 1. Score each candidate on: relevance to our practice, recency, design quality, clarity of the question, potential for discussion, and teaching value for appraisal skills.
+2. Flag any candidate that is a secondary analysis, a small pilot, or has an obvious fatal flaw that would make the session one-sided.
+3. Recommend one paper and a backup, with reasons.
+4. Suggest what to read alongside it: the accompanying editorial, the protocol, the trial registration and key prior studies (described by type, marked [FIND]).
+5. Suggest the central debate question the journal club should resolve.
+6. Explain how to confirm the paper's status (published version, corrections, retractions).
+rules: Judge only from the abstracts and details I pasted, and don't claim facts about papers I didn't provide, because a wrong claim about a paper's findings will surface during the session. Prefer papers whose full text I can access legally.
+output: A scoring table (paper, criterion scores, total, flags), the recommendation with a backup, the companion-reading list, then the debate question.
+tweak: End with a one-line pitch I can send to the coordinator to get the paper approved.
+tips:
+- High-impact trials that challenge current practice make the best journal clubs.
+- Check whether the paper has an accompanying editorial. It is a free second opinion.
+- Avoid papers you can't obtain in full text. You can't appraise an abstract.
+next: jc-master
+
+@@ M | jc-rct-appraisal | Deep appraisal of a randomised controlled trial
+aud: PG Resident / Faculty
+use: When your journal-club paper is an RCT and you want to go beyond the checklist.
+why: RCTs look robust, but their flaws are subtle: inadequate concealment, unblinded outcome assessment, outcome switching, post-hoc subgroups and inappropriate analysis populations. A structured deep appraisal finds what a quick read misses.
+persona: You are a trial methodologist who appraises RCTs for guideline panels. You apply the Cochrane RoB 2 domains and the CONSORT checklist, and you explain statistics in clinical language.
+context: The trial (upload the full text, and supplementary material if available): [UPLOAD]
+Trial registration number and protocol, if available: [PASTE OR "not found"]
+Clinical question I care about: [one line]
+My comfort level with statistics: [beginner / intermediate / advanced]
+task: 1. Randomisation and allocation concealment: how they were done, and whether they were adequate (quote the methods).
+2. Blinding: who was blinded, and whether the primary outcome could be influenced by knowing the allocation.
+3. Baseline balance and any imbalances that matter clinically.
+4. Deviations and missing data: losses, crossovers, and ITT versus per-protocol analysis.
+5. Outcomes: primary outcome definition, whether it is patient-important or surrogate, composite components, and whether it matches the registration.
+6. Statistics: sample-size assumptions versus observed rates, the effect estimate with CI, NNT, and multiplicity.
+7. Subgroups: pre-specified or not, interaction tests, and credibility.
+8. An overall RoB 2 judgement per domain, and the certainty of the conclusion.
+rules: Quote the paper for every judgement, and mark anything not reported as [NOT REPORTED], because unsupported criticism is easily dismissed in a journal club. Show the arithmetic for NNT and absolute differences. If I haven't provided the registry entry, say what to check there rather than assuming.
+output: Eight headed sections, a RoB 2 domain table (domain, judgement, quote), then a one-paragraph verdict.
+tweak: End with the single methodological issue most likely to change how the results should be interpreted.
+tips:
+- Look for the CONSORT flow diagram first. Losses and exclusions tell you a lot.
+- A "significant" result on a surrogate outcome is not the same as a patient-important benefit.
+- Compare the event rate in the control group with the one assumed in the sample-size calculation. If it's lower, the trial was probably underpowered.
+next: jc-nnt-calc
+
+@@ M | jc-observational-appraisal | Appraise a cohort or case-control study
+aud: PG Resident / Faculty
+use: When your journal-club paper is observational.
+why: Observational studies drive many practice changes, and many false beliefs. Confounding, selection and measurement bias can create associations that vanish in trials. Appraising them properly is one of the most important skills a clinician can have.
+persona: You are an epidemiologist who teaches the appraisal of observational research, with STROBE for reporting and ROBINS-I or Newcastle-Ottawa for bias.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+The study (upload the full text): [UPLOAD]
+Design as stated by the authors: [cohort / case-control / cross-sectional]
+Clinical question I care about: [one line]
+task: 1. Confirm the real design and the direction of inquiry, and whether the authors' label is correct.
+2. Selection: source population, how participants were identified, and whether selection could relate to both exposure and outcome.
+3. Measurement: how the exposure and outcome were measured, and whether misclassification is differential.
+4. Confounding: which confounders were measured and adjusted for, which important ones are missing, and whether the adjustment set is sensible (no mediators or colliders).
+5. Analysis: model choice, events per variable, handling of missing data, and sensitivity analyses.
+6. Causality: apply the Bradford Hill considerations briefly to the main association.
+7. Interpretation: whether the authors' language matches the design (association versus causation).
+8. An overall risk-of-bias judgement and a bottom line for practice.
+rules: Quote the paper for each judgement and mark anything missing as [NOT REPORTED], because journal-club audiences check claims against the text. Don't dismiss the study merely for being observational; judge how well it handled its own biases.
+output: Eight headed sections, a bias table (domain, concern, likely direction), then a one-paragraph verdict.
+tweak: End with the unmeasured confounder most likely to explain the result, and how a future study could address it.
+tips:
+- Draw the causal diagram for the main association. Missing confounders become obvious.
+- Large effect sizes, dose-response relationships and consistency across studies strengthen a causal reading.
+- Watch for "healthy user" effects in drug studies. They are a classic trap.
+next: jc-confounding
+
+@@ M | jc-diagnostic-appraisal | Appraise a diagnostic accuracy study
+aud: PG Resident / Faculty
+use: When your journal-club paper evaluates a test, score or imaging method.
+why: Diagnostic studies are easily biased, through the wrong spectrum of patients, partial verification or unblinded reading, and the resulting accuracy figures often collapse in real practice. QUADAS-2 thinking protects you from adopting a test that won't perform.
+persona: You are a diagnostic-research methodologist who applies QUADAS-2 and STARD, and who explains sensitivity, specificity and likelihood ratios in bedside terms.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+The study (upload the full text): [UPLOAD]
+The clinical role I would use this test for: [replacement / triage / add-on]
+Prevalence of the condition in my setting, if known: [estimate or "unknown"]
+task: 1. Patient selection: consecutive or random, the case-control ("two-gate") design risk, and whether the spectrum matches my practice.
+2. Index test: conduct, threshold (pre-specified or data-driven), and blinding to the reference standard.
+3. Reference standard: whether it correctly classifies the condition, and blinding to the index test.
+4. Flow and timing: the interval between tests, whether all patients received the same reference standard, and exclusions and indeterminate results.
+5. Results: reconstruct the 2 × 2 table, then check the sensitivity, specificity, predictive values and likelihood ratios with 95% CIs.
+6. Apply the results to my setting's prevalence: the post-test probabilities for a positive and a negative result.
+7. A QUADAS-2 judgement per domain, with applicability concerns.
+8. A bottom line: should we use this test, and for what role?
+rules: Quote the paper for judgements, and show the arithmetic for recalculated values and post-test probabilities, because the audience may check them. Mark any numbers not reported as [NOT REPORTED] instead of inferring them.
+output: Eight headed sections, the 2 × 2 table, the QUADAS-2 table, then the bottom line.
+tweak: End with the patient group in whom this test would most likely mislead, and why.
+tips:
+- Likelihood ratios are more useful at the bedside than sensitivity and specificity. Teach them.
+- If the threshold was chosen after seeing the data, the accuracy is optimistic.
+- A test is only useful if it changes management. Ask what you would do differently with the result.
+next: jc-master
+
+@@ M | jc-sr-appraisal | Appraise a systematic review or meta-analysis
+aud: PG Resident / Faculty
+use: When your journal-club paper is a systematic review or meta-analysis.
+why: Meta-analyses sit at the top of the evidence pyramid, but only if they are done well. Poor searches, mixing of incompatible studies, low-quality inputs and ignored heterogeneity can produce confident, wrong answers. AMSTAR 2 and GRADE thinking separate robust reviews from misleading ones.
+persona: You are a systematic-review methodologist and GRADE-trained guideline developer who appraises reviews using AMSTAR 2 and explains forest plots clearly.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The review (upload the full text and supplements if available): [UPLOAD]
+Clinical question I care about: [one line]
+My comfort level with meta-analysis statistics: [beginner / intermediate / advanced]
+task: 1. Question and protocol: a clear PICO, and whether it was registered (e.g. PROSPERO) before the review.
+2. Search: databases, dates, grey literature, language limits, and whether it was comprehensive.
+3. Selection and extraction: duplicate screening and extraction, and the list of excluded studies with reasons.
+4. Risk of bias of the included studies: the tool used, and how the results were incorporated.
+5. Synthesis: appropriateness of pooling, fixed versus random effects, heterogeneity (I², prediction interval), sensitivity and subgroup analyses.
+6. Publication bias: funnel plot or tests, where appropriate.
+7. Certainty of evidence: GRADE for the main outcomes, whether reported or as my estimate.
+8. An AMSTAR 2 critical-domain judgement and a bottom line.
+rules: Quote the paper for each judgement, and mark missing items as [NOT REPORTED], because reporting gaps are themselves findings. Explain the forest plot using the review's own numbers, without recomputing the pooled estimates.
+output: Eight headed sections, the AMSTAR 2 table, a plain-language forest-plot explanation, then the bottom line.
+tweak: End with whether a new trial is still needed on this question, and why.
+tips:
+- A meta-analysis of small, biased trials is still biased. Check the inputs before admiring the pooled result.
+- High I² means "these studies disagree". Find out why before trusting the average.
+- Look for the prediction interval. It shows the range of effects to expect in a new setting.
+next: jc-forest-plot
+
+@@ M | jc-stats-decoder | Decode the statistics in my paper
+aud: PG Resident
+use: When the paper's statistics are beyond your comfort level and the journal club is soon.
+why: Faculty often ask "what does this hazard ratio mean?" or "why this test?". Understanding the statistics in your own paper, in plain language, is the difference between a confident presenter and one who reads the numbers aloud.
+persona: You are a biostatistician who teaches clinicians to read the statistics in published papers, in plain language first and technical language second.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The paper (upload, or paste the methods and results): [UPLOAD / PASTE]
+Statistical terms I don't understand in it: [list]
+My statistics background: [beginner / intermediate]
+task: 1. List every statistical method used, and explain in one line why it was chosen for this data.
+2. Explain each key result in plain language: the effect measure, its CI, the p value, and what they mean together.
+3. Explain the terms I listed with an example from this paper.
+4. Convert relative measures to absolute ones where the data allows (ARR, NNT), showing the arithmetic.
+5. Point out any statistical choice a reviewer might question (e.g. multiplicity, per-protocol analysis, stepwise selection).
+6. Write 3 "if asked, say this" sentences about the statistics for my journal club.
+7. Suggest one simple visual to explain the main result.
+8. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Use only the numbers in the paper, and if something can't be calculated from the reported data, say so rather than estimating, because recalculated numbers will be checked by the audience.
+output: A methods table (method, purpose), the plain-language results, the glossary, the absolute measures, the questionable choices, then the scripted sentences.
+tweak: End with the one statistics question I'm most likely to be asked, and the ideal answer.
+tips:
+- Always convert relative risk reductions into absolute numbers. It changes how impressive a result looks.
+- If a CI crosses the line of no effect, say "inconclusive", not "no effect".
+- Ask a statistician colleague to check your NNT arithmetic before the session.
+next: jc-master
+
+@@ S | jc-pico-summary | Five-line PICO summary of the paper
+aud: PG Resident / MBBS Student
+use: As your first step with any paper, and for the opening slide.
+persona: You are an evidence-based medicine tutor who summarises studies precisely.
+context: The paper or its abstract and methods: [PASTE OR UPLOAD]
+My specialty: [brief]
+Audience: [brief]
+task: 1. Write the PICO(T): population with key inclusion features, intervention or exposure, comparator, primary outcome and time frame.
+2. Add the design, the setting (country and number of centres) and the sample size.
+3. State the main result with its effect estimate and CI.
+4. Write the whole summary in 5 lines for a slide.
+rules: Use the paper's own definitions and numbers exactly, and write [NOT REPORTED] if something is missing, because the opening summary sets the audience's understanding of everything that follows.
+output: The PICO table, then the 5-line slide text.
+tip: If you can't write the PICO clearly, re-read the methods before going further.
+try: A multicentre RCT of early versus delayed anticoagulation after ischaemic stroke with atrial fibrillation.
+next: jc-background-slide
+
+@@ S | jc-abstract-vs-paper | Does the abstract match the paper?
+aud: PG Resident
+use: Early in your preparation, to detect spin and selective reporting.
+persona: You are a research-integrity reviewer who compares abstracts with full texts.
+context: The abstract: [PASTE ABSTRACT]
+The results section and tables: [PASTE OR UPLOAD]
+Trial registration details, if available: [PASTE]
+task: 1. Compare every number in the abstract with the results section and tables.
+2. Check whether the abstract highlights secondary outcomes or subgroups over a non-significant primary outcome.
+3. Check whether the abstract's conclusion matches the primary result.
+4. Check whether harms reported in the paper appear in the abstract.
+5. Summarise any spin found, with examples.
+rules: Quote both texts for every discrepancy, because accusations of spin must be demonstrated, not asserted.
+output: A comparison table (item, abstract, full text, match), then the spin summary.
+tip: Spin in abstracts is common. Finding it makes a memorable journal-club point.
+try: A trial with a neutral primary outcome but an abstract emphasising a positive subgroup.
+next: jc-spin-detector
+
+@@ S | jc-background-slide | "Why was this study done?" slide
+aud: PG Resident
+use: For the introduction section of your journal club.
+persona: You are a journal-club presenter who sets the context in 2 slides.
+context: The paper's introduction: [PASTE]
+What I know about prior evidence and guidelines (with sources): [LIST]
+Audience: [brief]
+task: 1. Summarise the clinical problem and the knowledge gap as the authors describe it.
+2. Summarise the key prior evidence the study builds on, citing the paper's references.
+3. State the hypothesis the study tested.
+4. Write 1–2 slides with speaker notes.
+rules: Represent the authors' rationale accurately, and mark any claim of mine that isn't from the paper or my sources as [VERIFY], because context slides are often where misquotation happens.
+output: The summary, then the slide text and notes.
+tip: One slide on "what we believed before this study" makes the results slide far more meaningful.
+try: A trial testing conservative oxygen targets in mechanically ventilated patients.
+next: jc-methods-slide
+
+@@ S | jc-methods-slide | Methods on two slides
+aud: PG Resident
+use: For the methods section of your journal-club presentation.
+persona: You are an experienced presenter who condenses methods without losing the critical details.
+context: The paper's methods section: [PASTE OR UPLOAD]
+Design: [design]
+task: 1. Extract the critical methods: design, setting, participants (key inclusion and exclusion criteria), intervention and comparator details, outcomes and their measurement, sample size, randomisation and blinding (for trials), and the analysis population.
+2. Organise them into 2 slides, one with a flow diagram description.
+3. Mark the details that matter for the appraisal, for me to emphasise.
+rules: Report the methods exactly as the paper states them, and flag missing essentials as [NOT REPORTED], because methods slides are where the audience looks for flaws.
+output: The extracted methods table, the 2-slide text, then the emphasis list.
+tip: Show the CONSORT or STROBE flow diagram from the paper. It answers half the methods questions.
+try: A pragmatic cluster-randomised trial of a sepsis protocol in emergency departments.
+next: jc-results-slide
+
+@@ S | jc-results-slide | Key results, clearly presented
+aud: PG Resident
+use: For the results section of your journal-club presentation.
+persona: You are a data presenter who shows results honestly and clearly.
+context: The paper's results section, tables and figures: [PASTE OR UPLOAD]
+Primary outcome: [state]
+task: 1. Present the primary outcome with the event rates in each group, the effect estimate, the CI and the p value.
+2. Present the 2–3 most important secondary outcomes and the main harms.
+3. Calculate absolute risk differences and NNT or NNH where possible, showing the arithmetic.
+4. Suggest which figure from the paper to show, and how to annotate it.
+5. Write 2–3 results slides with speaker notes.
+rules: Reproduce numbers exactly, and keep the primary outcome first even if it is non-significant, because leading with a secondary outcome is spin.
+output: A results table, the absolute measures with arithmetic, then the slides and notes.
+tip: Put the primary result in large font on its own slide. It's the most important slide you'll show.
+try: A trial reporting 28-day mortality, ventilator-free days and adverse events.
+next: jc-nnt-calc
+
+@@ S | jc-forest-plot | Explain a forest plot to the audience
+aud: PG Resident
+use: When your paper has a forest plot (meta-analysis or subgroups).
+persona: You are a statistics teacher who explains forest plots in plain language.
+context: A description of the forest plot, or the numbers in it: [PASTE OR UPLOAD]
+Outcome and effect measure: [e.g. risk ratio for mortality]
+task: 1. Explain the anatomy: study rows, squares (weight), lines (CIs), the diamond (pooled estimate) and the line of no effect.
+2. Interpret this specific plot: the direction, size and precision of the pooled effect, and the consistency across studies.
+3. Explain the heterogeneity statistics shown.
+4. Write a 1-minute spoken explanation for the journal club.
+rules: Use only the plot's reported numbers and don't recompute the pooled estimate, because recalculations from a figure are unreliable.
+output: The anatomy explanation, the interpretation, then the spoken script.
+tip: Point at the diamond first, then at the studies that disagree with it.
+try: A forest plot of 9 RCTs of corticosteroids in community-acquired pneumonia.
+next: jc-sr-appraisal
+
+@@ S | jc-kaplan-meier | Explain the survival curves
+aud: PG Resident
+use: When your paper reports Kaplan-Meier curves and hazard ratios.
+persona: You are a biostatistician who explains time-to-event results clearly.
+context: A description of the Kaplan-Meier figure, and the reported HR, CI, p value and numbers at risk: [PASTE]
+task: 1. Explain the axes, the censoring marks and the numbers at risk.
+2. Explain when the curves separate, and what that implies clinically.
+3. Explain the hazard ratio in plain language, and whether proportional hazards seem reasonable from the curves.
+4. Point out the uncertainty in the tail of the curves, where few patients remain at risk.
+5. Write a 1-minute spoken explanation.
+rules: Base the interpretation only on the reported figure and numbers, because survival figures are easy to over-read.
+output: The explanation points, then the script.
+tip: Crossing curves are a warning sign that a single hazard ratio may mislead.
+try: Overall survival curves in an oncology trial with an HR of 0.78.
+next: jc-stats-decoder
+
+@@ S | jc-nnt-calc | Absolute effects: ARR, RRR, NNT and NNH
+aud: PG Resident / MBBS Student
+use: For every trial or cohort result you present.
+persona: You are an EBM tutor who converts relative results into absolute terms clinicians can use.
+context: Event counts or rates in each group, for benefits and harms: [PASTE NUMBERS FROM THE PAPER]
+Follow-up duration: [time]
+task: 1. Calculate the control event rate, the experimental event rate, ARR, RRR and NNT, with a CI for the NNT where possible.
+2. Do the same for the main harm (ARI and NNH).
+3. Interpret the benefit-harm balance in plain language.
+4. Show how the NNT changes for a patient with a higher or lower baseline risk.
+rules: Show every formula and step, state the time frame of the NNT, and use only the paper's numbers, because NNT without a time frame is meaningless.
+output: A calculation table, then the plain-language interpretation.
+tip: "Treat 25 patients for one year to prevent one death" lands better than "a 20% relative risk reduction".
+try: Mortality 18% vs 22% over 90 days; major bleeding 4% vs 2%.
+next: jc-clinical-bottom-line
+
+@@ S | jc-internal-validity | Can we trust these results?
+aud: PG Resident
+use: For the core appraisal section of your journal club.
+persona: You are a methodologist who judges internal validity systematically.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The paper (methods and results): [PASTE OR UPLOAD]
+Design: [design]
+task: 1. Assess selection bias, performance bias, detection bias, attrition bias and reporting bias.
+2. For each, give a judgement (low, some concern, high) and a quote from the paper.
+3. Say whether any bias could plausibly explain the entire result.
+4. Summarise the overall internal validity in 3 sentences.
+rules: Quote the paper for each judgement, and mark unreported items [NOT REPORTED], because judgements without evidence won't survive faculty questioning.
+output: A bias table (bias, judgement, quote), then the summary.
+tip: Attrition above 20%, or unequal between groups, is a common and underrated threat.
+try: An open-label RCT with a subjective primary outcome and 18% loss to follow-up.
+next: jc-external-validity
+
+@@ S | jc-external-validity | Does this apply to our patients?
+aud: PG Resident / Faculty
+use: For the applicability section of your journal club.
+persona: You are a clinician-researcher who asks whether trial results transfer to real Indian practice.
+context: The paper's population, setting, intervention delivery and exclusions: [PASTE]
+Our patients and setting: [e.g. tertiary government hospital, high TB and malnutrition burden, limited ICU beds]
+task: 1. Compare the study population with our patients: age, severity, comorbidities, ethnicity and socio-economic factors.
+2. Compare the setting and resources: staffing, monitoring, drug and device availability, and cost.
+3. Identify exclusions that remove patients we commonly see.
+4. Judge whether the effect would likely be larger, smaller or similar here.
+5. Write the applicability slide.
+rules: Base the comparison on the paper's reported characteristics and my description, and mark assumptions as [ASSUMPTION], because applicability judgements are opinion and should be labelled as such.
+output: A comparison table (factor, study, our setting, impact), the judgement, then the slide.
+tip: The exclusion criteria often reveal who the results don't apply to. Read them carefully.
+try: A European ICU trial applied to a busy Indian government ICU.
+next: jc-clinical-bottom-line
+
+@@ S | jc-bias-hunt | Hunt for the hidden bias
+aud: PG Resident
+use: When the paper looks clean and you want to find what others will miss.
+persona: You are a sceptical peer reviewer with a gift for spotting subtle bias.
+context: The full paper: [PASTE OR UPLOAD]
+task: 1. Look for subtle issues: run-in periods, enrichment, early stopping for benefit, composite outcomes driven by soft components, per-protocol-only analyses, changes to outcomes or sample size, imbalance in co-interventions, and industry involvement in analysis.
+2. For each issue found, quote the paper and explain its likely effect.
+3. Rank the issues by how much they could change the interpretation.
+4. Suggest how to present the key issue in the journal club without being unfair.
+rules: Report only issues supported by the text, and say "none found" for categories that are clean, because inventing problems is as bad as missing them.
+output: An issue table (issue, quote, likely effect, rank), then the presentation suggestion.
+tip: Trials stopped early for benefit often overestimate the effect. Check the stopping rule.
+try: An industry-funded trial stopped early after an interim analysis showed benefit.
+next: jc-internal-validity
+
+@@ S | jc-confounding | Confounding in an observational paper
+aud: PG Resident
+use: When appraising a cohort or case-control study's adjustment strategy.
+persona: You are an epidemiologist who evaluates confounding control critically.
+context: Exposure, outcome and the variables adjusted for (from the methods and tables): [PASTE]
+task: 1. List the important confounders for this association from clinical reasoning.
+2. Check which were measured and adjusted for, and which are missing.
+3. Check for adjustment for mediators or colliders.
+4. Judge whether residual confounding could explain the result, considering the effect size.
+5. Suggest what a future study should measure.
+rules: Explain each confounder's link to both exposure and outcome, because a variable is only a confounder if it relates to both.
+output: A confounder table (variable, link to exposure, link to outcome, adjusted yes or no), then the judgement.
+tip: An E-value (if you know it) quickly shows how strong an unmeasured confounder would need to be.
+try: A cohort linking proton-pump inhibitor use with dementia.
+next: jc-observational-appraisal
+
+@@ S | jc-outcomes-check | Are these the right outcomes?
+aud: PG Resident
+use: When appraising any trial or cohort study.
+persona: You are a patient-centred outcomes researcher.
+context: The primary and secondary outcomes, with their definitions: [PASTE]
+The registered outcomes, if available: [PASTE]
+task: 1. Classify each outcome as patient-important or surrogate, and hard or soft.
+2. For composite outcomes, check whether the components have similar importance and frequency, and which component drives the result.
+3. Compare the reported outcomes with the registered ones and note any switching.
+4. Judge whether the outcomes justify the authors' conclusion.
+rules: Base conclusions on the definitions in the paper, because outcome definitions often differ from their labels.
+output: An outcome table (outcome, type, importance, registered yes or no), then the composite analysis and judgement.
+tip: A composite driven by "hospitalisation" rather than "death" deserves a closer look.
+try: A heart-failure trial with a composite of cardiovascular death and heart-failure hospitalisation.
+next: jc-trial-registry-check
+
+@@ S | jc-noninferiority | Appraise a non-inferiority trial
+aud: PG Resident / Faculty
+use: When your paper claims a new treatment is "not worse" than the standard.
+persona: You are a trial statistician who specialises in non-inferiority and equivalence designs.
+context: The margin, its justification, the analysis populations (ITT and per-protocol) and the results with CIs: [PASTE]
+task: 1. Explain the non-inferiority logic and the margin in plain language.
+2. Judge whether the margin is clinically acceptable and justified by prior evidence.
+3. Check the results in both the ITT and per-protocol populations against the margin.
+4. Assess whether the trial's conduct (adherence, cross-over) could bias towards non-inferiority.
+5. Draw a simple CI-versus-margin diagram description for a slide.
+rules: Use the reported margin and CIs exactly, because the conclusion depends entirely on where the CI sits relative to the margin.
+output: The explanation, the margin judgement, the results check, then the diagram description.
+tip: Poor adherence makes treatments look similar, which favours a false non-inferiority result.
+try: A trial showing oral antibiotics are non-inferior to IV antibiotics for bone infection.
+next: jc-rct-appraisal
+
+@@ S | jc-subgroup-claims | Should we believe the subgroup finding?
+aud: PG Resident
+use: When a paper highlights a subgroup effect.
+persona: You are a methodologist who applies established credibility criteria to subgroup claims.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The subgroup analyses (forest plot or table) and how the authors describe them: [PASTE]
+task: 1. Check whether the subgroup was pre-specified, with a hypothesised direction.
+2. Check the test for interaction, not separate p values.
+3. Check the number of subgroups tested and the plausibility of the effect.
+4. Check consistency with other studies.
+5. Give an overall credibility judgement.
+rules: Treat subgroup findings as hypothesis-generating unless the credibility criteria are met, because most subgroup "effects" do not replicate.
+output: A credibility checklist table, then the judgement.
+tip: "The effect was significant in men but not in women" is not evidence of a difference. Ask for the interaction test.
+try: A trial claiming benefit only in patients under 65 years.
+next: jc-spin-detector
+
+@@ S | jc-spin-detector | Detect spin in the discussion and conclusion
+aud: PG Resident
+use: When the authors' conclusion seems more positive than their results.
+persona: You are a research-integrity researcher who studies spin in medical publications.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+The primary result: [paste]
+The abstract conclusion, the discussion and the conclusion: [PASTE]
+task: 1. Identify spin strategies: focusing on secondary outcomes, emphasising within-group changes, using "trend" language, claiming equivalence from a non-significant result, and extrapolating beyond the population.
+2. Quote each example.
+3. Rewrite the conclusion to match the primary result.
+4. Suggest one slide showing the original and the rewritten conclusion side by side.
+rules: Quote the text exactly for each instance, because spin must be shown, not asserted.
+output: A spin table (strategy, quote), then the rewritten conclusion.
+tip: The rewritten, spin-free conclusion makes an excellent final journal-club slide.
+try: A trial with a non-significant primary outcome whose conclusion says the drug "shows promise".
+next: jc-clinical-bottom-line
+
+@@ S | jc-funding-coi | Funding and conflicts: do they matter here?
+aud: PG Resident
+use: When appraising who funded the study and who controlled it.
+persona: You are a research-ethics specialist who assesses the impact of funding and conflicts on research.
+context: The funding and conflict-of-interest statements and the role of the sponsor: [PASTE]
+task: 1. Summarise the funding and the sponsor's role in design, conduct, analysis and writing.
+2. Summarise the authors' declared conflicts.
+3. Identify aspects of the study where sponsor influence could matter (comparator choice, dose, outcomes, early stopping).
+4. Give a balanced judgement: a concern to note, not a reason to dismiss good methods.
+rules: Base the assessment only on the declarations, and avoid implying misconduct, because industry funding alone does not invalidate a study.
+output: A summary table, the areas of potential influence, then the balanced judgement.
+tip: Check whether the comparator was given at an optimal dose. Weak comparators are a classic issue.
+try: A pharmaceutical-sponsored trial comparing a new drug with a low dose of the standard drug.
+next: jc-bias-hunt
+
+@@ S | jc-editorial-compare | Compare the paper with its editorial and letters
+aud: PG Resident / Faculty
+use: When the paper has an accompanying editorial or published correspondence.
+persona: You are an academic who synthesises expert commentary on major papers.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The editorial and any letters or author replies: [PASTE OR UPLOAD]
+My own appraisal points: [LIST]
+task: 1. Summarise the editorialist's main points of praise and concern.
+2. Summarise the key criticisms in the letters and the authors' responses.
+3. Compare them with my own appraisal: agreements and new points.
+4. Write one slide summarising expert commentary.
+rules: Attribute every point to its source accurately, and quote where possible, because misattributing expert opinion is embarrassing in front of faculty.
+output: The summaries, the comparison, then the slide.
+tip: Letters to the editor often contain the sharpest critique of a paper, and they are free to read.
+try: A landmark trial published with an editorial and 6 letters of correspondence.
+next: jc-master
+
+@@ S | jc-previous-evidence | How does this fit with previous evidence?
+aud: PG Resident / Faculty
+use: For the "context" part of your appraisal.
+persona: You are an evidence synthesiser who places new studies within the existing body of evidence.
+context: The paper's main finding: [paste]
+Prior key studies or reviews (uploaded or with details): [UPLOAD / LIST]
+Current guideline position: [paste with source]
+task: 1. Compare the new finding with the prior evidence: consistent, conflicting or new territory.
+2. Explain any differences (population, design, intervention, outcome).
+3. Judge whether this study should shift the weight of evidence.
+4. Write one "where this fits" slide.
+rules: Use only the studies and guidelines I provided, marking others [VERIFY], because comparisons with misremembered studies undermine the appraisal.
+output: A comparison table, the judgement, then the slide.
+tip: A single trial rarely overturns a body of evidence. Say so if that's the case.
+try: A new trial finding no benefit of a therapy that earlier small trials supported.
+next: jc-clinical-bottom-line
+
+@@ S | jc-clinical-bottom-line | The clinical bottom line
+aud: PG Resident / Faculty
+use: For the final slide of your journal club.
+persona: You are a senior clinician who turns appraisals into clear, honest practice decisions.
+context: My appraisal summary (validity, results, applicability): [PASTE]
+Current practice in our unit: [brief]
+task: 1. State whether the results are valid, important and applicable, in one line each.
+2. State the bottom line in 2 sentences: change practice, consider in selected patients, or don't change practice.
+3. Name the patients in whom it would or wouldn't apply.
+4. Suggest what would need to happen before a local change (protocol, cost, training).
+rules: Match the strength of the recommendation to the strength of the evidence, because the bottom line is what the department will act on.
+output: The three one-liners, the bottom line, the patient groups, then the next steps.
+tip: End with a question to the head of department: "Should we change our protocol?". It starts the real discussion.
+try: Appraisal of a trial of restrictive versus liberal transfusion in upper gastrointestinal bleeding.
+next: jc-discussion-questions
+
+@@ S | jc-discussion-questions | Questions to drive the discussion
+aud: PG Resident
+use: To prepare the discussion part of your journal club.
+persona: You are a journal-club moderator who knows how to start productive debates.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The paper and my appraisal summary: [PASTE]
+Audience: [brief]
+task: 1. Write 6 discussion questions: 2 on methodology, 2 on interpretation, and 2 on local practice.
+2. For each, write the key points a good answer would contain.
+3. Suggest the order to ask them in, and when to invite senior faculty.
+4. Suggest a closing question that brings the discussion back to our own patients.
+rules: Make the questions open-ended, not yes or no, because closed questions end discussions.
+output: The questions with answer points, then the facilitation order.
+tip: Ask the most junior person first. It keeps seniors from closing the discussion early.
+try: A trial on early versus delayed laparoscopic cholecystectomy.
+next: jc-faculty-questions
+
+@@ S | jc-faculty-questions | The faculty questions I'll face
+aud: PG Resident
+use: 2–3 days before your journal club.
+persona: You are a senior professor famous for difficult journal-club questions.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The paper: [PASTE OR UPLOAD]
+My slides or appraisal summary: [PASTE]
+task: 1. List 12 questions faculty are likely to ask, from basic design questions to deep methodology and practice implications.
+2. For each, give a model answer grounded in the paper.
+3. Mark the 3 hardest questions and suggest backup slides for them.
+rules: Ground every answer in the paper, and where the paper doesn't say, write "the paper does not report this" as the honest answer, because bluffing is obvious to faculty.
+output: A question-and-answer table, then the backup-slide suggestions.
+tip: "The paper doesn't report that, but I would expect…" is a perfectly good answer.
+try: An RCT on tranexamic acid in gastrointestinal bleeding.
+next: jc-master
+
+@@ S | jc-one-page-summary | One-page appraisal handout
+aud: PG Resident
+use: To circulate before or after the journal club.
+persona: You are a medical educator who designs compact evidence summaries.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+My appraisal: [PASTE]
+The paper's citation: [paste]
+task: 1. Create a one-page summary: citation, PICO, design, key results with absolute measures, key strengths, key limitations, applicability and the bottom line.
+2. Keep it under 300 words, laid out in boxes.
+3. Add 2 questions for the reader to consider.
+4. Add a one-line verdict and the date of the journal club, for the department archive.
+rules: Keep every number identical to the paper, because handouts are kept and quoted later.
+output: The handout text with layout guidance.
+tip: A folder of these one-pagers becomes your department's evidence library over time.
+try: Appraisal of a trial of balanced crystalloids versus saline in critically ill adults.
+next: jc-clinical-bottom-line
+
+@@ S | jc-casp-worksheet | Fill the CASP checklist for my paper
+aud: PG Resident / MBBS Student
+use: When your department requires a completed appraisal checklist.
+persona: You are an EBM tutor familiar with the CASP checklists for each study design.
+context: Study design: [RCT / cohort / case-control / diagnostic / systematic review / qualitative]
+The paper: [PASTE OR UPLOAD]
+task: 1. Identify the correct CASP checklist for the design.
+2. Answer each checklist question with yes, no or can't tell, and a quote from the paper.
+3. Summarise the overall appraisal in 3 sentences.
+rules: Base every answer on the paper's text and mark "can't tell" where it isn't reported, because the checklist is only valuable if it is honest.
+output: The checklist table (question, answer, quote), then the summary.
+tip: Check the current CASP checklist wording on the CASP website, as the questions are occasionally revised.
+try: A prospective cohort on air pollution and childhood asthma exacerbations.
+next: jc-master
+
+@@ S | jc-grade | Certainty of evidence using GRADE
+aud: PG Resident / Faculty
+use: When you want to rate how confident we can be in the paper's main finding.
+persona: You are a GRADE-trained guideline methodologist.
+context: The paper's design and main outcome result: [PASTE]
+Its main limitations from my appraisal: [LIST]
+task: 1. Start from the design's baseline certainty.
+2. Assess each downgrading domain: risk of bias, inconsistency, indirectness, imprecision and publication bias.
+3. Assess the upgrading domains for observational studies (large effect, dose-response, plausible confounding).
+4. Give the final certainty (high, moderate, low or very low) with reasoning.
+5. Write a GRADE-style sentence ("…probably reduces…").
+rules: Apply GRADE to a single study cautiously, and state that GRADE is designed for bodies of evidence, because rating one study alone overstates precision.
+output: A GRADE table (domain, judgement, reason), then the final rating and the sentence.
+tip: GRADE-style wording, such as "probably" or "may", is an excellent way to phrase your bottom line.
+try: A single large RCT with some risk of bias and a wide CI.
+next: jc-clinical-bottom-line
+
+@@ S | jc-qualitative-appraisal | Appraise a qualitative study
+aud: PG Resident / Faculty
+use: When your journal-club paper uses interviews or focus groups.
+persona: You are a qualitative health researcher familiar with COREQ and the CASP qualitative checklist.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The paper: [PASTE OR UPLOAD]
+task: 1. Assess the fit of a qualitative approach for the question.
+2. Assess sampling, data collection, the researchers' reflexivity, analysis method, saturation and rigour (e.g. member checking, triangulation).
+3. Assess whether the findings are supported by quotes.
+4. Discuss transferability to our setting.
+5. Summarise the value of the findings for practice.
+rules: Judge qualitative research by its own standards of rigour, not by sample size or statistics, because applying quantitative criteria misjudges it.
+output: Headed appraisal sections, then the summary.
+tip: Qualitative studies explain the "why" behind poor adherence and patient behaviour. They make excellent journal clubs.
+try: Interviews with patients about reasons for stopping TB treatment.
+next: jc-master
+
+@@ S | jc-economic-appraisal | Appraise an economic evaluation
+aud: Faculty / Senior Resident
+use: When your paper is a cost-effectiveness or cost-utility analysis.
+persona: You are a health economist who explains economic evaluations to clinicians.
+context: The paper: [PASTE OR UPLOAD]
+Our health system context: [e.g. Indian public sector, PMJAY]
+task: 1. Identify the type of evaluation, the perspective, the comparators and the time horizon.
+2. Check the cost and outcome sources, discounting, and QALY or DALY calculations.
+3. Explain the ICER and whether it is below the stated threshold.
+4. Assess the sensitivity analyses and the uncertainty.
+5. Judge transferability to Indian costs and willingness-to-pay thresholds.
+rules: Report the paper's own numbers and thresholds, and mark any Indian threshold as [VERIFY], because thresholds vary and are debated.
+output: Headed sections, then a transferability judgement.
+tip: An intervention can be cost-effective in one country and unaffordable in another. Emphasise that.
+try: Cost-effectiveness of a new diagnostic test for TB in a high-burden setting.
+next: jc-external-validity
+
+@@ S | jc-prognostic-appraisal | Appraise a prognostic or prediction-model study
+aud: PG Resident / Faculty
+use: When your paper develops or validates a risk score or prediction model.
+persona: You are a clinical prediction-model methodologist familiar with TRIPOD and PROBAST.
+context: The paper: [PASTE OR UPLOAD]
+Intended use of the model: [brief]
+task: 1. Assess the participants, predictors, outcome definition and timing.
+2. Assess the sample size and events per variable, the handling of missing data and continuous predictors, and the variable-selection method.
+3. Assess performance: discrimination (C-statistic), calibration and clinical utility.
+4. Check for internal and external validation.
+5. Judge readiness for clinical use.
+rules: Distinguish development from validation clearly, because a model tested only on its own development data will look better than it is.
+output: A PROBAST-style table by domain, then the readiness judgement.
+tip: Calibration matters as much as the C-statistic, and it is often not reported. Look for it.
+try: A new score predicting in-hospital mortality in dengue.
+next: jc-master
+
+@@ S | jc-guideline-appraisal | Appraise a clinical guideline (AGREE II)
+aud: Faculty / Senior Resident
+use: When the journal-club document is a clinical practice guideline.
+persona: You are a guideline appraiser trained in AGREE II.
+context: The guideline (upload or paste the methods and recommendations): [UPLOAD]
+task: 1. Appraise the AGREE II domains: scope and purpose, stakeholder involvement, rigour of development, clarity of presentation, applicability and editorial independence.
+2. Give a domain score or judgement with evidence from the document.
+3. Highlight the recommendations with weak evidence but strong wording.
+4. Give an overall recommendation for use.
+rules: Base scores on what the document reports, and mark missing methodological details as [NOT REPORTED], because good guidelines document their methods transparently.
+output: An AGREE II domain table, the flagged recommendations, then the overall judgement.
+tip: Look for how conflicts of interest among panel members were managed. It's often revealing.
+try: A national guideline on management of hypertension.
+next: jc-master
+
+@@ S | jc-trial-registry-check | Check the trial registry for outcome switching
+aud: PG Resident
+use: For any RCT, before you present it.
+persona: You are a research-transparency analyst.
+context: Registration number and the registered primary and secondary outcomes, sample size and dates: [PASTE FROM THE REGISTRY]
+What the paper reports: [PASTE]
+task: 1. Compare the registered and reported primary outcomes: definition, measure and time point.
+2. Compare the secondary outcomes, and note any added or dropped.
+3. Compare the planned and actual sample sizes and dates (was it registered prospectively?).
+4. Check whether the paper explains any changes.
+5. Judge the impact on credibility.
+rules: Report only differences that are verifiable from the two sources, because an outcome switch is a serious accusation.
+output: A comparison table (item, registered, reported, explained yes or no), then the judgement.
+tip: Many trials change outcomes legitimately with an explanation. Note whether one is given.
+try: A trial registered on ClinicalTrials.gov whose paper reports a different primary time point.
+next: jc-outcomes-check
+
+@@ S | jc-fast-read | Read a paper properly in 30 minutes
+aud: PG Resident / MBBS Student
+use: When you are short of time but must appraise a paper.
+persona: You are an efficient academic reader who teaches a structured reading method.
+context: The paper: [PASTE OR UPLOAD]
+My purpose: [journal club / clinical question / thesis]
+task: 1. Give a 30-minute reading plan: title and abstract (2 min), figures and tables (5 min), methods (10 min), results (8 min), discussion and limitations (5 min).
+2. Give the 3 questions to answer at each stage.
+3. Walk through the paper with me using this plan, answering those questions.
+4. Summarise the key appraisal points found.
+rules: Answer the stage questions only from the paper, and note what is missing, because a fast read must still be accurate.
+output: The plan, the stage-by-stage answers, then the key points.
+tip: Look at the figures and tables before reading the text. They show you what the paper really found.
+try: A 12-page cohort study on vitamin D and mortality.
+next: jc-master
+
+@@ S | jc-teach-back | Explain the paper to MBBS students
+aud: PG Resident / Faculty
+use: When you want to use a journal-club paper to teach undergraduates.
+persona: You are an EBM teacher for medical students.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+The paper and my appraisal: [PASTE]
+Student level: [e.g. final-year MBBS]
+Time: [minutes]
+task: 1. Explain the study's question and why it matters in simple terms.
+2. Teach 2–3 EBM concepts using this paper (e.g. randomisation, NNT, bias).
+3. Create 5 questions to check understanding.
+4. Write a 10-minute teaching plan.
+rules: Keep the numbers accurate and the concepts simple but correct, because students will remember what you say as fact.
+output: The explanation, the concept list with examples, the questions, then the plan.
+tip: One real paper teaches EBM better than any lecture on EBM.
+try: A trial of azithromycin for COPD exacerbations, for final-year MBBS students.
+next: jc-mcq
+
+@@ S | jc-mcq | Quiz questions from the journal club
+aud: PG Resident / Faculty
+use: At the end of the journal club, or for department learning records.
+persona: You are an assessment writer who creates EBM-focused MCQs.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+The paper, my appraisal and the key teaching points: [PASTE]
+task: 1. Write 6 MCQs testing appraisal skills and results interpretation using this paper.
+2. Include one question on NNT, one on bias and one on applicability.
+3. Include one clinical-vignette question that asks how the result applies to a specific patient.
+4. Give the answers with brief explanations, citing the relevant part of the paper.
+rules: Base every question on the paper's actual numbers and methods, because inaccurate questions teach the wrong lesson.
+output: The numbered MCQs, then the answer key.
+tip: Run the quiz through a live poll. It shows immediately what the group has understood.
+try: A trial comparing two insulin regimens in hospitalised patients.
+next: jc-master
+
+@@ S | jc-to-letter | Turn my critique into a letter to the editor
+aud: PG Resident / Faculty
+use: When your appraisal found a significant issue that hasn't been raised.
+persona: You are an experienced correspondent who writes publishable letters to journals.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+The paper's citation and publication date: [paste]
+My main critique point and the supporting evidence: [PASTE]
+The journal's letter limits and time window: [paste]
+task: 1. Check whether the issue has already been raised in published correspondence (tell me how to check).
+2. Draft a concise, collegial letter within the limits.
+3. Suggest a title.
+rules: Keep the tone constructive and cite only the paper and sources I provide, because letters that attack authors are rarely published.
+output: The checking steps, the title, then the letter with its word count.
+tip: Submit quickly. Most journals accept letters only within a few weeks of publication.
+try: A trial whose exclusion criteria removed most patients with CKD, the majority in Indian practice.
+next: jc-editorial-compare
+
+@@ S | jc-moderator-guide | Moderating a journal club well
+aud: Faculty / Senior Resident
+use: When you are the faculty moderator or coordinator of a journal club.
+persona: You are a medical educator who has run a successful journal-club programme for years and trains new moderators.
+context: Format of our journal club (frequency, duration, presenters): [brief]
+The paper for this session and the presenter's level: [brief]
+Common problems in our sessions: [e.g. silence, seniors dominating, abstract-reading presentations]
+task: 1. Give a pre-session checklist: paper approval, the appraisal checklist, and the presenter's rehearsal.
+2. Give a moderation script: opening, time-keeping, drawing out quieter participants, and managing dominant voices.
+3. List 5 teaching points to weave in about appraisal methods.
+4. Suggest how to close with a bottom line and an action item.
+5. Suggest how to give the presenter constructive feedback afterwards.
+rules: Keep the focus on learning appraisal skills rather than catching the presenter out, because a psychologically safe session produces far better discussion.
+output: The checklist, the script, the teaching points, the closing, then the feedback structure.
+tip: Keep a log of each journal club's bottom line. Over a year it becomes the department's own evidence summary.
+try: Monthly journal club for 15 residents where the discussion usually goes silent.
+next: jc-discussion-questions
+
+@@ Q | jc-design-line | This study's design in one line
+aud: MBBS Student / PG Resident
+body: Act as an epidemiology tutor. From this methods section, [PASTE METHODS], state the study's true design in one line (e.g. "a multicentre, double-blind, placebo-controlled RCT"), and flag it if the authors' own label differs. Add one line on what this design can conclude.
+try: A "prospective study" that analysed an existing registry.
+
+@@ Q | jc-primary-outcome | Find the real primary outcome
+aud: PG Resident
+body: Act as a trial methodologist. From this paper, [PASTE METHODS AND RESULTS], identify the pre-specified primary outcome, its exact definition and time point, and whether the result for it was positive, negative or inconclusive. Answer in 4 lines, quoting the paper.
+try: A trial reporting many outcomes in its abstract.
+
+@@ Q | jc-quick-nnt | Quick ARR and NNT
+aud: MBBS Student / PG Resident
+body: Act as an EBM tutor. With control event rate [CER] and experimental event rate [EER] over [TIME], calculate the ARR, RRR and NNT, showing the formulas and arithmetic step by step, and write one plain-language sentence I can say at journal club.
+try: Mortality 24% in the control group vs 19% in the treatment group at 28 days.
+
+@@ Q | jc-hr-meaning | What does this hazard ratio mean?
+aud: PG Resident
+body: Act as a biostatistician explaining to clinicians. Explain the hazard ratio [HR, 95% CI, p] for [OUTCOME] in this paper in plain language, including what the CI tells us, how an HR differs from a relative risk, and how to phrase it on a slide.
+try: HR 0.82 (95% CI 0.70–0.96) for death from any cause.
+
+@@ Q | jc-itt-pp | Intention-to-treat or per-protocol?
+aud: PG Resident
+body: Act as a trial methodologist. Explain whether this trial's main analysis, [DESCRIBE ANALYSIS POPULATION], is intention-to-treat, modified ITT or per-protocol, why it matters for bias, and which analysis should drive the conclusion here. Keep it under 120 words. Flag anything you are unsure of so I can check it.
+try: A trial that excluded patients who never received the study drug.
+
+@@ Q | jc-concealment | Was allocation really concealed?
+aud: PG Resident
+body: Act as a risk-of-bias assessor. From this description, [PASTE RANDOMISATION TEXT], judge whether allocation concealment was adequate, inadequate or unclear under RoB 2 thinking, quote the key phrase, and explain in 2 lines why it matters for the result. Flag anything you are unsure of so I can check it.
+try: "Patients were randomised using sealed envelopes."
+
+@@ Q | jc-blinding-check | Who was blinded, and does it matter?
+aud: PG Resident
+body: Act as a trial appraiser. From this methods text, [PASTE TEXT], list who was blinded (participants, clinicians, outcome assessors, analysts), and judge whether the lack of blinding could have influenced the primary outcome [OUTCOME], given how subjective it is. Flag anything you are unsure of so I can check it.
+try: An open-label trial with a pain-score primary outcome.
+
+@@ Q | jc-attrition | Is this loss to follow-up a problem?
+aud: PG Resident
+body: Act as a clinical epidemiologist. Losses to follow-up were [NUMBERS PER GROUP] out of [TOTALS]. Tell me whether this threatens validity, considering the size, the difference between groups and the event rate, and what sensitivity analysis the authors should have done.
+try: 12% lost in the intervention arm vs 5% in the control arm.
+
+@@ Q | jc-one-sentence | The whole paper in one sentence
+aud: PG Resident / MBBS Student
+body: Act as a senior academic. Summarise this paper, [PASTE ABSTRACT], in one sentence of under 35 words stating the design, population, intervention or exposure, and the main result with its key number, using associational language if the study is observational.
+try: A cohort study of statin use and outcomes in sepsis.
+
+@@ Q | jc-powered | Was this study adequately powered?
+aud: PG Resident
+body: Act as a biostatistician. Compare this trial's sample-size assumptions, [ASSUMED EVENT RATES AND EFFECT], with the observed results, [OBSERVED RATES]. Tell me whether the study was likely underpowered, and how that affects the interpretation of a non-significant result. Flag anything you are unsure of so I can check it.
+try: Assumed control mortality 30%, observed 18%, with a non-significant result.
+
+@@ Q | jc-surrogate | Is this outcome a surrogate?
+aud: PG Resident
+body: Act as an outcomes researcher. Tell me whether [OUTCOME] in this study is a surrogate or a patient-important outcome, whether it has been validated as a surrogate for [HARD OUTCOME], and what a clinician should conclude from a benefit on it. Keep it under 120 words.
+try: HbA1c reduction as the primary outcome in a diabetes drug trial.
+
+@@ Q | jc-change-practice | Would this change my practice?
+aud: PG Resident / Faculty
+body: Act as a pragmatic senior clinician. Given this paper's result, [RESULT], quality, [APPRAISAL SUMMARY], and our setting, [SETTING], tell me in 4 lines whether this should change our practice now, in selected patients, or not yet, and why. Flag anything you are unsure of so I can check it.
+try: A single-centre RCT showing benefit of a new sedation protocol.
+
+@@ Q | jc-jargon | Explain a methods term from my paper
+aud: MBBS Student / PG Resident
+body: Act as an EBM tutor. Explain the term [TERM], as used in my paper [CONTEXT], in plain language in under 80 words, with an example from the paper, and say why it matters for judging the study's reliability. Flag anything you are unsure of so I can check it.
+try: Term: "fragility index" in a trial of tranexamic acid.
+
+@@ Q | jc-title-claim | Does the title overclaim?
+aud: PG Resident
+body: Act as a research-integrity reviewer. Compare this paper's title, [TITLE], with its design [DESIGN] and primary result [RESULT], tell me whether the title overclaims or implies causation inappropriately, and suggest an accurate alternative title. Flag anything you are unsure of so I can check it.
+try: A cross-sectional study titled "Vitamin D deficiency causes severe COVID-19".
+
+@@ Q | jc-absolute-relative | Relative versus absolute risk for the audience
+aud: MBBS Student / PG Resident
+body: Act as a medical educator. Using this paper's numbers, [EVENT RATES], explain the difference between relative and absolute risk reduction to a mixed audience in 3 sentences, and show why the relative figure sounds more impressive. Flag anything you are unsure of so I can check it.
+try: A drug that reduces stroke from 2% to 1% over 5 years.
+
+@@ Q | jc-figure-explain | Explain the key figure in three lines
+aud: PG Resident
+body: Act as a data-presentation coach. From this description of the paper's key figure, [DESCRIBE FIGURE], write 3 spoken lines explaining what the axes show, what the main pattern is, and what it means clinically, without overstating certainty. Flag anything you are unsure of so I can check it.
+try: A figure showing cumulative incidence of infection in two groups over 90 days.
+
+@@ Q | jc-audience-question | A sharp question to ask the presenter
+aud: PG Resident / Faculty
+body: Act as an experienced journal-club participant. From this paper summary, [PASTE SUMMARY], suggest 3 sharp but fair questions to ask the presenter that test understanding of the methods and applicability, each under 25 words. Flag anything you are unsure of so I can check it.
+try: Summary of a trial of early goal-directed therapy.
+
+@@ Q | jc-social-post | Summarise the paper for colleagues
+aud: PG Resident / Faculty
+body: Act as a medical science communicator. Summarise this paper, [TITLE, DESIGN, KEY RESULT, APPRAISAL VERDICT], in a 4-line message for the department WhatsApp group: what was studied, what was found (with the absolute effect), the main limitation and our bottom line.
+try: A trial of balanced crystalloids versus saline in the ICU.
