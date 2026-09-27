@@ -25,7 +25,7 @@ Commit and push after every section file.
 | 1.8 Results, tables & figures | 25 | done |
 | 1.9 Discussion, conclusion & limitations | 30 | done |
 | 1.10 Protocol, ethics & synopsis | 20 | done |
-| 1.11 Thesis to manuscript & publication | 35 | pending |
+| 1.11 Thesis to manuscript & publication | 35 | done |
 | 1.12 Case reports & case series | 30 | pending |
 | 1.13 Conference abstracts, posters & oral papers | 20 | pending |
 

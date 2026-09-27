@@ -1,0 +1,513 @@
+# 1.11 | Thesis to manuscript & publication | A thesis and a paper are different documents. Convert by cutting, comply with the journal's rules, and prepare for peer review before you submit.
+
+@@ M | manuscript-master | Write the full manuscript for journal submission
+aud: PG Resident / Faculty
+use: When the thesis is done and you are converting it into a paper you can submit.
+why: A thesis and a paper are different documents. This prompt handles the conversion, reporting-guideline compliance and the submission package in one structured pass, using only your real numbers.
+persona: You are a senior academic author and manuscript editor who has published extensively in clinical journals and has served as a peer reviewer. You know reporting guidelines thoroughly and you write in clear, economical scientific English for an international readership.
+context: Design: [state] · Current full title: [paste]
+Setting and period: [state]
+Sample size and participant flow: [screened, eligible, enrolled, completed, analysed]
+Methods summary: [paste from protocol]
+All results with exact numbers, effect estimates and CIs: [paste]
+Tables and figures I already have: [list with titles]
+Target journal: [name] · Word, abstract, reference, table and figure limits: [paste from author guidelines]
+Reporting guideline that applies: [CONSORT / STROBE / STARD / PRISMA / CARE / SQUIRE / other]
+task: 1. Journal fit: assess scope, design and novelty; if it is a poor fit, say so and suggest what type of journal fits better. Do not quote impact factors or acceptance rates from memory.
+2. Title: five options (descriptive, finding-stating, PICO-style, short, conservative), with the best one for this journal.
+3. Structured abstract within the limit, with my actual numbers.
+4. Six keywords, preferring MeSH terms.
+5. Introduction: three paragraphs (known, unknown and why it matters, objective), with [CITE] slots.
+6. Methods: past tense, replicable, following my reporting guideline, noting which checklist item each subsection satisfies, with ethics, consent and registration placeholders.
+7. Results: past tense, no interpretation; flow, baseline (Table 1), primary, then secondary outcomes, each with its effect estimate and CI.
+8. Discussion: principal finding, comparison, explanation, implications, strengths, ranked limitations, future research, conclusion.
+9. Conclusion, funding, conflicts of interest, CRediT author contributions, acknowledgements and data-availability statement.
+10. A reporting-guideline checklist table, flagging unaddressed items.
+11. A cover letter under 300 words.
+12. A pre-submission critical review: major and minor comments in journal format, and which to fix before submitting.
+rules: Every citation slot stays [CITE] unless I uploaded the paper or you verified it with a PMID or DOI, because fabricated references end in retraction. Don't alter, round differently or recompute any number I give you. Add no findings, comparisons or claims beyond my data. Flag any claim my design cannot support. Note that AI cannot be an author and remind me to check the journal's AI-disclosure policy.
+output: Twelve numbered parts, with the manuscript sections in submission order.
+tweak: If time is short, do step 12 first and tell me the 3 fixes that most improve my chance of acceptance.
+tips:
+- Do step 12 first if you are short on time. A pre-submission critical review saves months of revision.
+- Paste the actual author guidelines. Generic manuscript advice produces desk rejections.
+- Convert thesis to paper by cutting, not rewriting. Most theses contain two papers hiding inside one document.
+next: thesis-to-paper
+
+@@ M | thesis-to-paper | Thesis → paper cut plan (and the second paper inside it)
+aud: PG Resident
+use: Right after thesis submission, while the details are fresh.
+why: Theses are long, comprehensive and repetitive; papers are short and focused. Most residents never publish because they try to shrink the whole thesis. This prompt finds the one or two papers inside it and tells you exactly what to cut.
+persona: You are a senior clinical researcher who has turned dozens of MD/MS theses into published papers. You think in terms of "one paper, one message" and you cut ruthlessly.
+context: Thesis title and design: [paste]
+Objectives and key results for each: [PASTE OBJECTIVES AND RESULTS]
+Chapter word counts: [introduction, ROL, methods, results, discussion]
+Number of tables and figures in the thesis: [numbers]
+Target journal type and its word limit: [e.g. national indexed journal, 3,000 words]
+Co-authors and who will lead each paper: [brief]
+task: 1. Identify the main paper (primary objective) and any second paper (a distinct secondary objective, a substudy or a methodological finding), each with a one-line message.
+2. For the main paper, map what to keep, condense or drop from each thesis chapter, with target word counts.
+3. Select the 3–5 tables or figures that carry the main message.
+4. Explain what the ROL becomes (usually two sentences in the introduction and comparisons in the discussion).
+5. Draft the paper's single-sentence message and a working title.
+6. Flag duplicate-publication risks if two papers share data, and how to avoid salami slicing.
+7. List any additional analysis the paper needs that the thesis didn't include, marked [NEW ANALYSIS — CONFIRM WITH GUIDE].
+rules: Each proposed paper must stand on its own question, because splitting one result into several papers is salami publication. Use only results I gave; don't invent new analyses.
+output: A papers table (paper, question, message, key tables), then a chapter-by-chapter cut plan with word targets, then the salami-slicing check.
+tweak: End with a 4-week writing schedule to get the main paper to submission.
+tips:
+- Write the paper's abstract first. If it doesn't hold together, the paper won't either.
+- Keep the thesis methods chapter open. You'll compress it, not rewrite it.
+- Discuss authorship with your guide before you start writing, not after.
+next: manuscript-master
+
+@@ M | reviewer-response | Point-by-point response to peer reviewers
+aud: PG Resident / Faculty
+use: When you receive a "major" or "minor revision" decision.
+why: A revision is an invitation, not a rejection. Most revisions are accepted when every comment is answered respectfully and specifically, with changes clearly located. Defensive or vague responses are how revisions become rejections.
+persona: You are a senior author who has responded to hundreds of peer reviews and sits on editorial boards. You are gracious, precise and firm where the science warrants it.
+context: Editor's decision letter: [PASTE LETTER]
+Reviewer comments, verbatim: [PASTE ALL COMMENTS]
+My manuscript (relevant sections): [PASTE OR UPLOAD]
+Comments I disagree with, and why: [brief]
+Revision deadline: [date]
+Analyses or data I can realistically add in that time: [brief]
+task: 1. Number every comment and classify it: requires new analysis, requires text change, requires clarification, or respectful disagreement.
+2. For each, draft a response: thank the reviewer where appropriate, answer the point directly, and state exactly what changed and where (page and line).
+3. Draft the revised manuscript text for each change.
+4. For disagreements, write a courteous, evidence-based rebuttal, and suggest a partial concession where reasonable, such as adding a limitation sentence.
+5. Flag comments that need new data or analysis I may not have, and how to handle each honestly (e.g. acknowledging it as a limitation).
+6. Draft the cover letter to the editor summarising the main changes.
+rules: Answer every comment, including the minor ones, because an unanswered comment is the commonest reason for a second revision round. Don't promise analyses I cannot do, and don't invent new results or references; use [CITE] or [NEW ANALYSIS NEEDED] slots.
+output: A response table (comment number, verbatim comment, response, change and location), the revised text blocks, then the cover letter.
+tweak: End with the 2 responses most likely to decide acceptance, and whether they are strong enough.
+tips:
+- Reply in a table. Editors find it far easier to check.
+- Highlight changes in a tracked or coloured version of the manuscript, and submit a clean copy too.
+- If a reviewer misunderstood something, the text was probably unclear. Fix the text, not just the reply.
+next: cover-letter
+
+@@ M | presubmission-review | Pre-submission peer review of my manuscript
+aud: PG Resident / Faculty
+use: One week before submission, when you think the manuscript is finished.
+why: The fastest way to get published is to be your own harshest reviewer before the journal is. A structured pre-review, in journal format, catches the fatal flaws, the reporting gaps and the desk-rejection triggers while you can still fix them.
+persona: You are an experienced peer reviewer and associate editor for clinical journals. You write structured reviews with major and minor comments, and you think about desk-rejection risk as an editor would.
+context: Target journal and its scope: [name, brief scope]
+Article type and word limit: [e.g. original article, 3,000 words]
+Reporting guideline: [e.g. STROBE]
+What I believe is the paper's main contribution: [one line]
+My biggest worry about the paper: [one line]
+My manuscript: [PASTE OR UPLOAD MANUSCRIPT]
+task: 1. Give an editor's first-read verdict: desk reject, send for review, or likely to be sent back for formatting, with reasons based on the title, abstract and cover-letter logic.
+2. Write major comments on the question, design, analysis, interpretation and novelty, quoting the text.
+3. Write minor comments on clarity, tables and figures, references and language.
+4. Run a reporting-guideline check and list the items that are missing, with where each should go.
+5. Check compliance with the author guidelines (word counts, abstract structure, reference style, declarations, figure formats).
+6. Prioritise all issues: fix before submission, or can wait.
+7. Say whether my stated main contribution comes across clearly in the title, abstract and conclusion.
+rules: Quote the manuscript for every comment, because specific comments can be acted on and vague ones can't. Don't rewrite the paper; identify and prioritise. Don't invent references or data.
+output: The verdict, major comments, minor comments, the guideline check, the compliance check, then a priority list.
+tweak: End with the single weakness most likely to cause rejection, and the most efficient fix.
+tips:
+- Ask a colleague outside your department to read the abstract and tell you the main finding. If they can't, rewrite it.
+- Fix every "before submission" item. Editors notice sloppy formatting within seconds.
+- Keep this review. Compare it with the real reviews when they arrive.
+next: journal-selector
+
+@@ S | abstract-writer | Structured abstract within the word limit
+aud: PG Resident
+use: For journal submission, conference abstracts and the thesis abstract.
+persona: You are a journal abstract editor who writes precise, complete structured abstracts.
+context: Target journal or conference and its abstract format (headings, word limit): [paste]
+Design, setting and period: [brief]
+Participants and sample size: [brief]
+Primary outcome result with estimate, CI and p: [paste]
+Key secondary results: [paste]
+Conclusion: [paste]
+task: 1. Write the abstract with the required headings, within the limit.
+2. Include the design in the Methods, the primary result with numbers in the Results, and a proportionate Conclusion.
+3. Give the word count.
+4. Check that every number matches the full text.
+rules: Use only the numbers I gave, and make sure the conclusion follows from the primary result, because abstracts are read far more than papers and spin there misleads the most readers.
+output: The abstract, its word count, then the number check.
+tip: Many readers only read the abstract. Make sure it states your primary result even if it was null.
+try: 250-word structured abstract for a prospective cohort of 210 patients on AKI after cardiac surgery.
+next: title-options
+
+@@ S | title-options | Five manuscript titles for my paper
+aud: PG Resident
+use: Before submission, or when your title feels flat.
+persona: You are a journal editor who knows which titles get read and cited.
+context: Main finding: [one line]
+Design and population: [brief]
+Target journal and any title limit: [name, characters]
+My current working title: [paste]
+task: 1. Write 5 titles: descriptive, finding-stating, question-form, short and punchy, and design-explicit (e.g. "…: a prospective cohort study").
+2. Check each for overclaiming, jargon, abbreviations and length.
+3. Recommend one for my journal and explain why.
+4. Suggest a running title.
+rules: Don't state causation in a title for an observational design, because editors flag it immediately.
+output: The 5 titles with character counts, the checks, the recommendation, then the running title.
+tip: Put the most important words at the start. Many databases truncate long titles.
+try: Finding: frailty predicts 90-day mortality after emergency laparotomy in older Indian adults.
+next: abstract-writer
+
+@@ S | journal-selector | Choose the right journal (and avoid predatory ones)
+aud: PG Resident / Faculty
+use: Before writing the final version, so you write for a specific journal.
+persona: You are a publication adviser who matches manuscripts to journals and protects authors from predatory publishers.
+context: Main finding and design: [brief]
+Specialty: [specialty]
+Priorities: [indexing needed (e.g. PubMed, Scopus), speed, cost, open access, national or international readership]
+Budget for article processing charges: [amount or "none"]
+task: 1. Describe the types of journals that fit my paper (specialty or general, national or international).
+2. Explain how to find candidate journals: the reference list of my own paper, journal-finder tools, and indexing databases.
+3. Give a checklist for verifying legitimacy: indexing claims checked at the source, a real editorial board, transparent peer review and charges, DOAJ listing for open-access journals.
+4. List red flags of predatory journals.
+5. Help me build a shortlist table from the journals I find.
+rules: Don't recommend specific journals, impact factors or acceptance rates from memory; mark any journal named as [VERIFY INDEXING AND SCOPE], because journal metrics and indexing change and predatory journals mimic real ones.
+output: Journal types, finding methods, the legitimacy checklist, red flags, then a shortlist template.
+tip: If a journal emails you inviting a submission with rapid publication, treat it as a red flag until proven otherwise.
+try: Prospective observational study in pulmonology from an Indian medical college, no APC budget.
+next: guidelines-compliance
+
+@@ S | guidelines-compliance | Check my manuscript against the author guidelines
+aud: PG Resident
+use: Just before submission.
+persona: You are a journal's editorial assistant who checks submissions against the instructions for authors.
+context: The journal's author guidelines (relevant parts): [PASTE GUIDELINES]
+My manuscript: [PASTE OR UPLOAD]
+task: 1. Check article type, word counts (abstract and main text), heading structure, reference style and number, and table and figure limits and formats.
+2. Check the required declarations: ethics, consent, registration, funding, conflicts of interest, data availability, AI disclosure and author contributions.
+3. Check file requirements (title page, blinded manuscript, figures, checklist).
+4. List every non-compliance with its fix.
+rules: Base every check on the guidelines I pasted, not on general assumptions, because journals differ in small details that cause technical returns.
+output: A compliance table (requirement, status, fix).
+tip: Technical returns cost weeks. Five minutes with this checklist saves them.
+try: Original article for a national pulmonology journal with a 250-word abstract limit.
+next: cover-letter
+
+@@ S | cover-letter | Cover letter to the editor
+aud: PG Resident / Faculty
+use: For every journal submission.
+persona: You are a senior author whose cover letters get manuscripts sent out for review.
+context: Journal and editor's name: [name]
+Title and article type: [paste]
+Main question and finding: [brief]
+Why it matters to this journal's readers: [brief]
+Required declarations (original work, not under consideration elsewhere, ethics, conflicts): [brief]
+task: 1. Write a cover letter of 300 words or fewer: the question, the finding, why it matters to this journal's readership, and the standard declarations.
+2. Add a line on any related prior publication or preprint, if applicable.
+3. Keep the tone professional and specific.
+rules: Don't exaggerate novelty or impact, because editors discount inflated letters. Don't name suggested reviewers without checking their independence.
+output: The letter.
+tip: Name the editor and the journal correctly. Generic "Dear Sir/Madam" letters signal mass submission.
+try: Cover letter for a diagnostic accuracy study of lung ultrasound in paediatric pneumonia.
+next: presubmission-review
+
+@@ S | keywords-mesh | Keywords that help my paper get found
+aud: PG Resident
+use: At submission, when the journal asks for keywords.
+persona: You are a medical librarian who chooses keywords for discoverability.
+context: Title and abstract: [PASTE]
+Number of keywords allowed: [e.g. 6]
+Target journal: [name]
+task: 1. Suggest keywords, preferring MeSH terms where they exist, plus 1–2 free-text terms readers would search.
+2. Avoid words already in the title where the journal recommends that, and avoid overly broad terms.
+3. Explain each choice in one line.
+4. Suggest 2 alternative keywords for indexing services and search engines that don't use MeSH.
+rules: Mark any MeSH term you are unsure of as [CHECK IN MeSH BROWSER], because invalid terms reduce discoverability.
+output: A keyword list with the reason for each.
+tip: Think about how a clinician would search for your paper, not how you would describe it.
+try: Abstract of a study on sarcopenia and outcomes in elderly COPD patients.
+next: abstract-writer
+
+@@ S | authorship-credit | Authorship order and CRediT contributions
+aud: PG Resident / Faculty
+use: Before writing the paper, and again at submission.
+persona: You are a research-integrity adviser who applies ICMJE authorship criteria fairly.
+context: People involved and what each did (conception, data collection, analysis, writing, supervision, funding): [list]
+Department customs about authorship order: [brief]
+task: 1. Apply the ICMJE criteria to each person: author, or acknowledgement.
+2. Suggest an order based on contribution, with reasoning.
+3. Write the CRediT contribution statement.
+4. Draft the acknowledgements for contributors who don't qualify as authors.
+5. Suggest how to discuss disagreements respectfully.
+rules: Apply the criteria as written, and flag gift or ghost authorship if my list suggests it, because authorship disputes and misconduct findings can follow a paper for years.
+output: An authorship table, the order, the CRediT statement, then the acknowledgements.
+tip: Agree authorship in writing before you start writing. It prevents the most painful disputes.
+try: Resident, guide, co-guide, statistician, a colleague who helped recruit, and the head of department.
+next: declarations
+
+@@ S | ai-disclosure | Disclose AI use in my manuscript
+aud: PG Resident / Faculty
+use: When you used any AI tool while preparing the thesis or manuscript.
+persona: You are a publication-ethics editor familiar with ICMJE, COPE and journal policies on generative AI.
+context: AI tools used and for what (language editing, literature search, code, drafting): [list]
+Target journal's AI policy (paste if available): [PASTE]
+task: 1. Classify my uses by whether journals typically require disclosure.
+2. Draft the disclosure statement in the journal's preferred location (methods, acknowledgements or a declaration).
+3. Confirm the responsibilities that remain mine (accuracy, originality, citations).
+4. Flag any use that may breach the journal's policy (e.g. AI-generated images or data).
+rules: Recommend full, honest disclosure of substantive AI use, and state that AI tools cannot be authors, because undisclosed AI use is increasingly treated as misconduct.
+output: The classification, the statement, the responsibilities, then the flags.
+tip: Keep a simple log of which AI tool you used for what and when. It makes disclosure easy.
+try: Used Claude for language editing and ChatGPT for R code during the analysis.
+next: declarations
+
+@@ S | declarations | Ethics, consent, funding, COI and data statements
+aud: PG Resident
+use: For the declarations section at submission.
+persona: You are an editorial assistant who drafts complete, journal-ready declarations.
+context: IEC name, approval number and date: [details]
+Consent type: [written informed / waiver]
+Registration: [CTRI number or not applicable]
+Funding: [details or none]
+Conflicts of interest: [details or none]
+Data availability plan: [on request / repository / not shareable, with reason]
+task: 1. Draft each declaration: ethics approval, consent to participate, consent for publication (if applicable), registration, funding, competing interests, data availability and author contributions.
+2. Flag anything missing that the journal is likely to require.
+rules: Use only the details I gave; mark missing essentials as [ADD DETAIL], because incomplete declarations cause technical returns.
+output: Headed declarations, then the missing-items list.
+tip: Keep a copy of your IEC approval letter handy. Many journals ask for it at submission.
+try: IEC approval dated March 2025, CTRI registration, no funding, no conflicts.
+next: guidelines-compliance
+
+@@ S | methods-for-journal | Compress my thesis methods for a journal
+aud: PG Resident
+use: When turning the thesis methodology chapter into a 700–900 word methods section.
+persona: You are a manuscript editor who condenses methods without losing reproducibility.
+context: Thesis methodology chapter: [PASTE CHAPTER]
+Target word count: [e.g. 800]
+Reporting guideline: [e.g. STROBE]
+task: 1. Keep everything needed for replication and the reporting checklist.
+2. Cut textbook explanations, repeated definitions and procedural detail that can go into a supplement.
+3. Suggest what goes into supplementary material, and how to refer to it in the main text.
+4. Return the compressed methods with the word count.
+rules: Don't change any definition, number or procedure, because the paper must describe exactly what the thesis did.
+output: The compressed methods, then the supplement list.
+tip: Cite your protocol or CTRI record for full details. It saves words legitimately.
+try: A 4,000-word methods chapter from an MD thesis on AKI after cardiac surgery.
+next: manuscript-master
+
+@@ S | intro-for-journal | Three-paragraph journal introduction
+aud: PG Resident
+use: When converting your thesis introduction and ROL into a journal introduction.
+persona: You are a journal editor who expects introductions of about 400 words that lead straight to the question.
+context: Thesis introduction and gap statement: [PASTE]
+Key references I will cite (with numbers): [list]
+Objective: [one line]
+task: 1. Write paragraph 1: the problem and why it matters, with burden figures from my sources.
+2. Write paragraph 2: what is known and what is not, with the specific gap.
+3. Write paragraph 3: the objective, stated precisely.
+4. Keep it to about 350–450 words.
+rules: Use only my references and figures, keeping [CITE] slots where they are missing, because journal introductions are checked against the reference list.
+output: The three paragraphs with the word count.
+tip: The last sentence of the introduction should read like the question your abstract answers.
+try: Converting a 2,500-word thesis introduction and ROL on dengue shock predictors.
+next: manuscript-master
+
+@@ S | discussion-for-journal | Condense my thesis discussion for a journal
+aud: PG Resident
+use: When your thesis discussion is far longer than the journal allows.
+persona: You are a journal editor who condenses discussions to the essential argument.
+context: Thesis discussion: [PASTE DISCUSSION]
+Target word count: [e.g. 1,000]
+The single main message of the paper: [one line]
+task: 1. Keep the structure: principal findings, key comparisons, explanation, implications, strengths and limitations, and conclusion.
+2. Keep only the comparisons that matter for the main message.
+3. Remove repetition of results and background.
+4. Return the condensed discussion with the word count.
+rules: Keep citations with their claims and all numbers unchanged, and don't add new comparisons, because the paper must stay faithful to the thesis findings.
+output: The condensed discussion, then a list of the removed material.
+tip: A journal discussion usually cites 10–20 references, not the 60 in your thesis ROL.
+try: A 3,500-word thesis discussion condensed to 1,100 words.
+next: presubmission-review
+
+@@ S | rejection-next-steps | Rejected: what now?
+aud: PG Resident / Faculty
+use: When a journal rejects your manuscript.
+persona: You are a mentor who has turned many rejections into publications.
+context: Rejection type: [desk rejection / after review]
+The editor's and reviewers' comments: [PASTE]
+My next-choice journals: [list]
+task: 1. Interpret the rejection: scope, quality or priority?
+2. Identify the comments worth addressing before resubmitting elsewhere.
+3. Make a revision plan in order of priority.
+4. List the reformatting needed for the next journal.
+5. Advise whether an appeal is reasonable (rarely), with reasons.
+rules: Be honest about fundamental flaws if the reviews identify them, because resubmitting an unchanged flawed manuscript wastes months.
+output: The interpretation, a prioritised revision plan, the reformatting list, then the appeal advice.
+tip: Take reviewers' comments seriously even after rejection. The next journal may send it to the same reviewer.
+try: Rejected after review for "limited novelty and single-centre design".
+next: journal-selector
+
+@@ S | reviewer-suggestions | Suggest reviewers properly
+aud: PG Resident / Faculty
+use: When the journal asks you to suggest reviewers.
+persona: You are an editor who knows how journals use and check suggested reviewers.
+context: Topic and methods of my paper: [brief]
+Authors of key papers I cited (from my reference list): [list]
+My co-authors' institutions and recent collaborators: [list]
+task: 1. Explain the criteria for a good suggested reviewer: expertise, independence and no recent collaboration.
+2. Explain how to identify candidates from my reference list and PubMed.
+3. Explain how to verify contact details from institutional pages.
+4. Build a table of candidates from the authors I listed, with conflict checks.
+rules: Don't invent reviewer names or email addresses; work only from the authors I listed and tell me how to verify them, because fake or conflicted reviewer suggestions are treated as misconduct.
+output: The criteria, the method, then the candidate table.
+tip: Suggest reviewers from different countries and institutions. Editors trust diverse suggestions more.
+try: Paper on high-flow nasal oxygen in COPD exacerbations.
+next: cover-letter
+
+@@ S | key-points-box | Key points, highlights and "what this study adds"
+aud: PG Resident
+use: When the journal asks for highlights, key messages or a "what is known / what this adds" box.
+persona: You are a journal editor who writes crisp summary boxes.
+context: Journal's required format (number of points, character limits): [paste]
+Main findings with numbers: [paste]
+Gap addressed: [brief]
+Design and setting: [brief]
+task: 1. Write the box in the journal's required format: what is already known, what this study adds, and how it might affect practice or research.
+2. Keep each point within the character limit and in plain language.
+3. Check that nothing overclaims beyond the results, and that every number matches the abstract.
+rules: Keep claims proportionate to the design, because highlights are often quoted out of context.
+output: The box, then the character counts.
+tip: "What this adds" should be something a reader couldn't have said before your paper.
+try: Findings: 1 in 3 elderly surgical patients developed delirium, and frailty predicted it.
+next: abstract-writer
+
+@@ S | graphical-abstract | Brief for a graphical abstract
+aud: PG Resident
+use: When the journal requests or encourages a graphical abstract.
+persona: You are a scientific illustrator who designs clear graphical abstracts.
+context: Question, design, population, main finding and conclusion: [brief]
+Journal's graphical-abstract specifications: [size, format]
+Tool I will use: [PowerPoint / Canva / BioRender]
+task: 1. Propose a left-to-right layout: population → method → key result → take-home.
+2. Specify the icons, the text for each panel (under 15 words each) and the key numbers.
+3. Suggest colours and fonts for readability.
+4. List common mistakes to avoid.
+rules: Show the main result with its numbers accurately, and avoid visual exaggeration, because graphical abstracts are shared widely out of context.
+output: The panel-by-panel brief, then design notes and mistakes.
+tip: If it can't be understood in 10 seconds on a phone screen, simplify it.
+try: RCT: early mobilisation vs usual care in ICU; outcome: delirium days.
+next: key-points-box
+
+@@ S | preprint-decision | Should I post a preprint?
+aud: PG Resident / Faculty
+use: Before submission, if you are considering medRxiv or a similar server.
+persona: You are a publication strategist who knows preprint servers and journal policies.
+context: Type of study and any clinical implications: [brief]
+Target journals: [list]
+My reasons for considering a preprint: [brief]
+task: 1. Explain the benefits and risks of a preprint for my study.
+2. Explain how to check whether my target journals accept preprinted manuscripts.
+3. Explain the screening that medical preprint servers apply and what is required (e.g. ethics and registration statements).
+4. Explain how to link the preprint to the final paper.
+rules: Mark journal-specific policies as [CHECK JOURNAL POLICY], because preprint policies vary and change.
+output: Benefits and risks, the policy check, the requirements, then the linking step.
+tip: Clinical findings in preprints can be misreported by the media. Word the conclusion carefully.
+try: A diagnostic accuracy study of a new point-of-care test for TB.
+next: journal-selector
+
+@@ S | letter-to-editor | Write a letter to the editor about a published paper
+aud: PG Resident / Faculty
+use: When you want to comment on a recently published article; it's often a first publication.
+persona: You are an experienced correspondent who writes concise, constructive letters that journals publish.
+context: The article I'm responding to (citation and key points): [PASTE]
+My comment: a methodological concern, an alternative interpretation, or relevant local data: [brief]
+Journal's letter limits (words, references, time window): [paste]
+task: 1. Structure the letter: reference to the article, the main point, supporting reasoning or data, and a constructive conclusion.
+2. Write it within the limits.
+3. Suggest a title.
+rules: Keep the tone collegial and evidence-based, and cite only sources I supply or [CITE], because letters that attack authors are rarely published.
+output: The title and the letter with its word count.
+tip: Submit quickly. Many journals only accept letters within a few weeks of publication.
+try: Commenting on a trial that excluded patients with CKD, the majority in Indian practice.
+next: cover-letter
+
+@@ S | proofs-check | Check the galley proofs properly
+aud: PG Resident / Faculty
+use: When the journal sends proofs, usually with 48–72 hours to respond.
+persona: You are a meticulous production editor who knows what goes wrong at the proof stage.
+context: Proof PDF text or sections to check: [PASTE OR UPLOAD]
+My accepted manuscript for comparison: [PASTE OR UPLOAD]
+task: 1. Give a checklist: author names, affiliations and order; corresponding author details; title; abstract numbers; tables and figures (correct versions, legends, symbols); units and special characters; references; and declarations.
+2. Compare the proof text with my accepted manuscript and list the differences.
+3. Answer each typesetter's query clearly.
+rules: Request only corrections of errors, not new content, because journals refuse substantive changes at proof stage.
+output: The checklist, a difference list, then responses to the queries.
+tip: Check symbols (±, ≥, µ) and minus signs in tables. Typesetting often breaks them.
+try: Proofs for an original article with 4 tables and a Kaplan-Meier figure.
+next: presubmission-review
+
+@@ S | similarity-report | Read and fix a similarity (plagiarism) report honestly
+aud: PG Resident
+use: When your university or journal returns a Turnitin, iThenticate or similar report.
+persona: You are a research-integrity officer who helps authors interpret similarity reports and fix genuine problems.
+context: Overall similarity percentage and the top matching sources: [PASTE SUMMARY]
+Highlighted passages with their matches: [PASTE PASSAGES]
+My university's or journal's threshold, if known: [e.g. 10%]
+task: 1. Separate acceptable matches (references, standard methods phrases, quotations with citation, my own registered protocol) from problematic ones (copied sentences without citation, close paraphrase).
+2. For each problematic passage, explain the issue and how to rewrite it in my own words with the correct citation.
+3. Advise how to report acceptable overlap, e.g. with my own thesis or preprint, and how to request exclusions properly.
+rules: Fix plagiarism by genuine rewriting and correct citation, never by tricks that hide text from the checker, because those are themselves misconduct. Mark institutional thresholds and rules as [CHECK YOUR UNIVERSITY / JOURNAL POLICY].
+output: A passage table (passage, match type, acceptable or not, fix), then the reporting advice.
+tip: Write methods and introduction in your own words from the start. Fixing overlap later takes far longer.
+try: A 24% similarity report where most matches are from the methods and introduction.
+next: responsible-paraphrase
+
+@@ Q | running-title | Running title under the limit
+aud: PG Resident
+body: Act as a journal editor. Write 3 running titles for my paper, [FULL TITLE], each under [e.g. 50] characters including spaces, keeping the core topic and population recognisable and avoiding abbreviations the journal hasn't defined. Show the character count for each.
+try: Frailty and 90-day mortality after emergency laparotomy in older Indian adults.
+
+@@ Q | word-budget | Word budget for each section
+aud: PG Resident
+body: Act as a manuscript editor. For a [ARTICLE TYPE] with a [WORD LIMIT] word limit, give a word budget for the introduction, methods, results and discussion, adjusted to my design, [DESIGN], and tell me which section usually runs over and how to control it.
+try: Original article, 3,000 words, prospective cohort.
+
+@@ Q | abstract-trim | Cut my abstract to the limit
+aud: PG Resident
+body: Act as an abstract editor. Cut this abstract, [PASTE ABSTRACT], from [CURRENT] to [TARGET] words without removing the design, setting, sample size, primary result with its numbers, or conclusion. Show the new word count and list the phrases you removed.
+try: A 310-word abstract that must fit a 250-word limit.
+
+@@ Q | social-summary | Summarise my paper for social media
+aud: PG Resident / Faculty
+body: Act as a science communicator for doctors. Write a 3-post thread (each under 280 characters) summarising my published paper, [TITLE, KEY FINDING, DOI], accurately and without overclaiming, ending with the DOI link. Add one plain-language version for patients and families.
+try: Paper on lung ultrasound for diagnosing pneumonia in children.
+
+@@ Q | reference-trim | Cut my references to the journal's limit
+aud: PG Resident
+body: Act as a manuscript editor. My paper has [N] references and the limit is [LIMIT]. From this list with the claims each supports, [PASTE LIST], recommend which to remove or combine, keeping primary sources for key claims and the most recent evidence.
+try: 62 references for a journal with a 40-reference limit.
+
+@@ Q | acknowledgements | Write the acknowledgements
+aud: PG Resident
+body: Act as an academic editor. Write a concise, professional acknowledgements paragraph thanking [LIST PEOPLE AND ROLES] who don't meet authorship criteria, plus all participants and any funding body, in under 80 words, warmly but formally, without claiming their endorsement of the conclusions.
+try: Nursing staff, the lab technician, the statistician and all participants.
+
+@@ Q | status-enquiry | Polite status enquiry to the editor
+aud: PG Resident / Faculty
+body: Act as a senior author. Write a short, polite email to the editorial office of [JOURNAL] asking about the status of my manuscript [ID, TITLE], submitted on [DATE], which has been "under review" for [DURATION]. Keep it under 80 words.
+try: Manuscript under review for 4 months with no update.
+
+@@ Q | data-availability | Data-availability statement
+aud: PG Resident
+body: Act as a research-data editor. Write a data-availability statement for my study, [BRIEF DESCRIPTION], that reflects my plan, [SHARING PLAN], respects participant confidentiality and IEC conditions, and meets typical journal requirements. Give one short and one detailed version, and say which the journal likely prefers.
+try: De-identified data available on reasonable request, subject to IEC approval.
+
+@@ Q | plain-summary | Plain-language summary of my paper
+aud: PG Resident / Faculty
+body: Act as a patient-education writer. Write a 150-word plain-language summary of my paper, [PASTE ABSTRACT], for patients and the public: why the study was done, what was done, what was found and what it means, with no jargon and no overstatement.
+try: Abstract of a study on inhaler technique errors in asthma patients.
+
+@@ Q | one-reviewer-reply | Reply to one tough reviewer comment
+aud: PG Resident / Faculty
+body: Act as a senior author. Draft a courteous, specific reply to this reviewer comment, [PASTE COMMENT], given my position, [AGREE / PARTLY AGREE / DISAGREE AND WHY], stating exactly what I changed and where, or why I respectfully did not. Keep it under 150 words.
+try: "The single-centre design severely limits generalisability; the conclusions should be tempered."
+
+@@ Q | salami-check | Is splitting my thesis into two papers acceptable?
+aud: PG Resident / Faculty
+body: Act as a publication-ethics adviser. I plan two papers from one dataset: [PAPER 1 QUESTION] and [PAPER 2 QUESTION]. Tell me whether this is legitimate or salami slicing, why, and how to cross-reference the papers and disclose the shared dataset.
+try: Paper 1 on mortality predictors; paper 2 on the same predictors for ICU length of stay.
