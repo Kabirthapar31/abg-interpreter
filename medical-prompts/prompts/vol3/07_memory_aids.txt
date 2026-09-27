@@ -1,0 +1,443 @@
+# 3.7 | Memory aids & high-yield summaries | What you can recall on exam day matters more than what you once read. Turn every topic into flashcards, mnemonics and one-page sheets, and review them on a schedule.
+
+@@ M | flashcard-maker | High-yield flashcards for Anki or Notion
+aud: MBBS Student / PG Resident
+use: After finishing a chapter or topic, to turn it into cards you can review for months.
+why: Active recall and spaced repetition are the two best-evidenced study techniques. Well-made flashcards (one fact each, short, testing understanding, not recognition) make both easy. Poor cards (long, vague, copied paragraphs) waste review time and are soon abandoned.
+persona: You are a medical educator and spaced-repetition expert who writes crisp, exam-focused flashcards for [SUBJECT], in the style of the best Anki decks.
+context: My specialty and year: [e.g. final-year MBBS / MD Ophthalmology, year 1]
+Subject and topic: [e.g. ophthalmology: glaucoma]
+Exam I am preparing for: [NEET-PG / UPSC CMS / MD-MS-DNB university exam / (optional) USMLE, PLAB, MRCP]
+My notes or textbook section, if I want cards from them: [PASTE, or "use standard textbooks"]
+The app I will use: [Anki / Notion / RemNote / paper]
+Number of cards: [e.g. 20]
+task: 1. Write [20] high-yield flashcards on the topic in the format "Q: … | A: …", each answer 2 lines at most.
+2. Cover a mix of eponymous signs, drug doses, landmark studies, grading and staging scales, mnemonics, and "what would you do next?" clinical questions.
+3. Keep one fact per card; split any card that tests two things.
+4. Add 5 cards on the most commonly confused facts in this topic (look-alike drugs, signs, grades or values), each contrasting the two.
+5. Tag each card with a difficulty (easy, medium, hard) and a sub-topic, so I can filter them in my app.
+6. Format the whole set so I can paste or import it directly into [Anki / Notion] (one card per line, with a separator the app accepts).
+7. Mark any dose, cut-off or statistic [VERIFY], and give the source textbook or guideline where it matters [CITE].
+rules: Write questions that make me recall, not recognise; do not write "true or false" or yes/no cards, because they test recognition. Keep the answers short, because long answers get skipped in review. Do not invent landmark trials or numbers; write [NOT REPORTED] if you are unsure, because a wrong card is memorised for years.
+output: The cards as an importable list ("Q: … | A: … | tags"), then the 5 confused-facts cards, then a one-line note on anything I should verify.
+tweak: End with 3 cloze-deletion versions of the hardest cards ("The drug of choice for {{c1::…}} is …").
+tips:
+- Make cards the same day you study the topic. Memory is freshest then.
+- Review daily in small sessions; 15 minutes of reviews beats a 3-hour weekend cram.
+- Delete or rewrite any card you keep failing. It is usually badly written.
+- Suspend cards that are no longer exam-relevant rather than letting them clog your queue.
+next: anki-deck-setup
+
+@@ M | high-yield-sheet | One-page high-yield summary of any topic
+aud: MBBS Student / PG Resident
+use: For final revision, when you need a whole topic on one page.
+why: In the last weeks before an exam, you cannot re-read textbooks. A single page that holds the definitions, classification, key numbers, drugs of choice, investigations of choice and classic exam traps lets you revise a topic in 10 minutes and many topics in a day.
+persona: You are a top NEET-PG and university-exam faculty member who writes famously concise, high-yield revision sheets.
+context: Audience and time available: [brief]
+What I most want to get out of this: [one line]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Subject and topic: [e.g. medicine: rheumatic fever]
+Exam: [NEET-PG / UPSC CMS / MD-MS-DNB university exam / (optional) USMLE, PLAB, MRCP]
+My notes or previous-year questions on this topic, if any: [PASTE, or "none"]
+What I keep forgetting in this topic: [brief, or "not sure"]
+task: 1. Write a one-page summary in bullets under fixed headings: definition, epidemiology (Indian data where relevant), aetiology and risk factors, classification or criteria, clinical features, investigations (first and best), management (drug of choice, doses [VERIFY]), complications, and prognosis.
+2. Put all key numbers (cut-offs, doses, percentages) in bold.
+3. Add a "most-asked in exams" box of 5 facts, drawn from typical previous-year patterns.
+4. Add a "classic traps" box: 3 facts that students commonly get wrong in MCQs.
+5. Add one mnemonic for the list that is hardest to remember.
+6. Keep it to one printed page (about 400–500 words).
+rules: Keep every fact consistent with standard Indian textbooks and current guidelines, marking thresholds and doses [VERIFY] and guideline-specific facts [CITE], because revision sheets are trusted without re-checking. Use bullets and bold, not paragraphs, because the page must be scanned quickly.
+output: The one-page sheet with the headings, the two boxes and the mnemonic.
+tweak: End with 5 rapid-fire questions I should be able to answer after reading this sheet.
+tips:
+- Print it and add your own margin notes. Writing fixes memory.
+- Make a sheet for each topic after the first reading, not the night before the exam.
+- Keep all sheets for a subject in one folder, in textbook order, for fast final revision.
+next: rapid-revision-pack
+
+@@ M | mnemonic-builder | Custom mnemonics that actually stick
+aud: MBBS Student / PG Resident
+use: For long lists you must recall in order: causes, criteria, classifications, drug side effects.
+why: Mnemonics work when they are vivid, meaningful and yours. Generic mnemonics are often forgotten because they carry no personal meaning. Building your own, with an image and a story, and testing them straight away, makes lists retrievable under exam pressure.
+persona: You are a memory coach and medical educator who builds vivid, memorable mnemonics for medical lists.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+The list I need to remember: [PASTE the list, e.g. causes of clubbing]
+Whether order matters: [yes/no]
+My language preferences (English, Hindi or regional words, pop culture I know): [brief]
+Mnemonics I already know for this list, if any: [brief, or "none"]
+task: 1. Check the list for accuracy and completeness against standard textbooks; flag anything missing or doubtful [VERIFY].
+2. Offer 3 different mnemonics: an acronym, a sentence mnemonic, and a visual story or image.
+3. Use words and images that fit my language preferences and are vivid or funny, because odd images are remembered.
+4. For each mnemonic, show exactly which letter or image maps to which item.
+5. Say which mnemonic suits this list best and why.
+6. Test me: after I choose one, ask me to recall the list from the mnemonic and correct my attempt.
+7. Suggest when to review the mnemonic (for example, after 1 day, 3 days and 1 week).
+rules: Map every letter or image to exactly one item, because ambiguous mnemonics cause errors in the exam. Keep the content accurate and mark doubtful items [VERIFY]. Keep it respectful: no offensive or crude humour, because I may share these with classmates.
+output: The checked list, three mnemonics with their mappings, the recommendation, then the recall test after I choose.
+tweak: End with a single line I can write on a sticky note to trigger the whole mnemonic.
+tips:
+- The sillier and more personal the image, the better it sticks.
+- Say the mnemonic aloud and draw it once. Two senses beat one.
+- Do not make mnemonics for short lists you can simply understand. Save them for arbitrary ones.
+next: memory-palace
+
+@@ M | rapid-revision-pack | Final-week rapid revision pack for a subject
+aud: MBBS Student / PG Resident
+use: In the last 7–10 days before an exam, to revise a whole subject quickly.
+why: The last week is for retrieval, not new learning. A pack that condenses a subject into its highest-yield facts, confusable pairs, one-liners and a quick self-test gives you maximal marks per hour and exposes the gaps you still have time to fix.
+persona: You are an experienced exam coach who builds last-week revision packs for NEET-PG, UPSC CMS and university exams.
+context: Audience and time available: [brief]
+What I most want to get out of this: [one line]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Subject: [e.g. pharmacology]
+Exam and date: [brief]
+Topics I am weakest in: [list]
+Hours per day I have for this subject: [brief]
+task: 1. List the 15 highest-yield topics in this subject for my exam, ranked by how often they appear in previous-year questions [VERIFY].
+2. For each topic, give 3–5 one-liners I must know.
+3. Add a table of the 10 most confusable pairs in the subject (for example, look-alike drugs or signs) with the one distinguishing feature.
+4. Add a list of the key numbers and values in the subject (doses, cut-offs, normal values) marked [VERIFY].
+5. Add a 20-question self-test covering the pack, with answers at the end.
+6. Give a day-wise plan to cover the pack, prioritising my weak topics.
+rules: Rank the topics by exam yield, not textbook length, because the last week is about marks per hour. Keep the facts accurate and mark every number [VERIFY]. Do not introduce rare topics, because new material in the last week displaces what I already know.
+output: The ranked topic list with one-liners, the confusable-pairs table, the numbers list, the self-test with answers, then the day plan.
+tweak: End with the 5 facts in this subject I should read on the morning of the exam.
+tips:
+- Take the self-test first; revise what you get wrong, then retake it.
+- Sleep before the exam. Memory consolidation happens during sleep.
+- Stop adding new sources in the final week. Trust your pack.
+next: high-yield-sheet
+
+@@ S | anki-deck-setup | Set up an Anki deck and review routine
+aud: MBBS Student / PG Resident
+use: When starting spaced repetition, or when your Anki reviews have become overwhelming.
+persona: You are a spaced-repetition coach who helps medical students use Anki efficiently.
+context: My exam and date: [brief]
+Hours per day I can give to reviews: [brief]
+My current situation: [new to Anki / have a deck / reviews piled up]
+task: 1. Recommend a deck structure (by subject, with tags for systems and topics).
+2. Recommend daily new-card and review limits that fit my time.
+3. Explain the key settings in plain language, marked [VERIFY] since app versions change.
+4. Give a plan to clear a review backlog without burning out.
+rules: Keep the advice practical and sustainable, because consistency beats volume in spaced repetition.
+output: The deck structure, the limits, the settings, then the backlog plan.
+tip: Never skip a day of reviews; missed days make the next day's pile heavier.
+try: NEET-PG in 8 months, 1 hour a day, 3,000 overdue cards.
+next: flashcard-maker
+
+@@ S | cloze-cards | Convert notes into cloze-deletion cards
+aud: MBBS Student / PG Resident
+use: When you have dense notes and want to turn them into cards quickly.
+persona: You are a medical educator who writes clean cloze-deletion flashcards.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+My notes: [PASTE]
+Exam: [brief]
+task: 1. Convert the key facts into cloze cards in the format "text {{c1::hidden}} text".
+2. Hide only one key fact per cloze, the one worth recalling.
+3. Skip trivial or obvious facts.
+4. Mark any number or dose [VERIFY].
+rules: Keep each cloze short and unambiguous, because a cloze with several possible answers teaches nothing.
+output: The cloze cards, one per line, ready to import. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: If a cloze could be guessed from the sentence, rewrite it.
+try: Paste your notes on the Jones criteria for rheumatic fever.
+next: flashcard-maker
+
+@@ S | image-occlusion | Plan image-occlusion cards for diagrams
+aud: MBBS Student / PG Resident
+use: For anatomy, histology, radiology, fundus photos and flowcharts.
+persona: You are an anatomy and imaging teacher who makes image-occlusion flashcards.
+context: The image or diagram (describe it or name it): [brief]
+Subject and exam: [brief]
+task: 1. List the structures or labels worth hiding, in order of exam importance.
+2. For each, give the question to ask and the answer.
+3. Add one clinical correlation card for the most important structure.
+4. Suggest whether to hide one label at a time or all together.
+rules: Keep the anatomy and labels accurate to standard atlases [VERIFY], because a mislabelled card teaches the wrong structure.
+output: A table (label, question, answer), the clinical correlation card, then the occlusion advice.
+tip: Use your own textbook's diagrams so the exam figure looks familiar.
+try: A labelled diagram of the brachial plexus.
+next: flashcard-maker
+
+@@ S | comparison-table | Comparison table of confusable conditions
+aud: MBBS Student / PG Resident
+use: For look-alike diseases, drugs, signs or investigations.
+persona: You are an exam-focused teacher who makes clear comparison tables.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+The items to compare: [e.g. Crohn's disease vs ulcerative colitis]
+Exam: [brief]
+task: 1. Build a comparison table on the features examiners test (epidemiology, pathology, clinical features, investigations, management, complications).
+2. Bold the single most discriminating feature in each row.
+3. Add the 3 features most often confused in MCQs.
+4. Mark numbers and guideline facts [VERIFY].
+rules: Keep the table accurate and balanced, because comparison questions reward precise differences.
+output: The table, then the 3 most-confused features.
+tip: Draw the table from memory the next day and check it.
+try: Nephritic vs nephrotic syndrome.
+next: high-yield-sheet
+
+@@ S | mind-map | Mind map of a topic
+aud: MBBS Student / PG Resident
+use: When a topic feels scattered and you need to see how it connects.
+persona: You are a visual-learning teacher who builds clear medical mind maps.
+context: Topic: [brief]
+Level and exam: [brief]
+task: 1. Put the topic at the centre and create 5–7 main branches (such as causes, pathology, features, investigations, treatment, complications).
+2. Add 2–4 sub-branches to each with key words only.
+3. Draw links between branches where one explains another (for example, pathology to clinical features).
+4. Present it as an indented outline I can redraw on paper or in a mind-mapping app.
+rules: Use key words, not sentences, because mind maps work by showing structure at a glance.
+output: The indented outline, then a list of the cross-links.
+tip: Redraw it by hand from memory. The redrawing is the learning.
+try: Topic: diabetes mellitus complications.
+next: memory-palace
+
+@@ S | memory-palace | Build a memory palace for a long list
+aud: MBBS Student / PG Resident
+use: For long ordered lists: cranial nerve nuclei, drug classes, staging systems.
+persona: You are a memory coach who teaches the method of loci to medical students.
+context: The list: [PASTE]
+A familiar place I know well (home, hostel, hospital route): [brief]
+task: 1. Choose a route through my place with one location per item.
+2. Place a vivid image for each item at each location, linking the image to the item.
+3. Walk me through the route once.
+4. Test me by asking me to walk it back and name each item.
+rules: Keep the images vivid and clearly linked to each item, and check the list's accuracy [VERIFY], because the palace preserves errors as faithfully as facts.
+output: The route with the locations and images, then the recall test.
+tip: Reuse the same palace for one subject only, to avoid mixing lists.
+try: The 12 cranial nerves, placed along the route from your hostel room to the canteen.
+next: mnemonic-builder
+
+@@ S | visual-mnemonic | Visual mnemonic or sketch for a concept
+aud: MBBS Student / PG Resident
+use: For mechanisms, pathways and signs that are easier to see than to read.
+persona: You are a medical illustrator and teacher who creates simple visual mnemonics.
+context: Concept: [e.g. the coagulation cascade / the brachial plexus / the renin-angiotensin system]
+Exam: [brief]
+task: 1. Describe a simple sketch or visual metaphor that captures the concept.
+2. Label the parts and explain how each maps to the concept.
+3. Give step-by-step instructions so I can draw it in 2 minutes.
+4. Point out the parts examiners most often test.
+rules: Keep the metaphor faithful to the real physiology or anatomy, and say where it oversimplifies, because a misleading picture is hard to unlearn.
+output: The sketch description, the label key, the drawing steps, then the exam points.
+tip: Draw it in the exam too; a diagram often earns marks on its own.
+try: The coagulation cascade as a waterfall.
+next: mind-map
+
+@@ S | one-liner-bank | Bank of one-liners for a subject
+aud: MBBS Student / PG Resident
+use: For NEET-PG and UPSC CMS preparation, where one-line facts win MCQs.
+persona: You are a NEET-PG faculty member who writes high-yield one-liners.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Subject and topic: [brief]
+Exam: [NEET-PG / UPSC CMS / other]
+task: 1. Write 30 one-liners on the topic, each a single testable fact.
+2. Group them by sub-topic.
+3. Star the 10 most frequently tested [VERIFY].
+4. Mark numbers and doses [VERIFY].
+rules: Keep each one-liner to one fact and one line, because one-liners are for fast repeated reading.
+output: The grouped one-liners with stars. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Read them aloud on the way to college; short repeated exposures add up.
+try: Topic: microbiology, gram-positive cocci.
+next: flashcard-maker
+
+@@ S | numbers-sheet | Key numbers and values sheet
+aud: MBBS Student / PG Resident
+use: For the numbers every exam tests: normal values, cut-offs, doses, scores.
+persona: You are a clinical teacher who makes precise reference sheets.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Subject or system: [e.g. nephrology]
+Exam: [brief]
+task: 1. List the key numbers: normal values, diagnostic cut-offs, doses, scoring thresholds.
+2. Give the unit for each and the source guideline or textbook [CITE].
+3. Add a memory trick for the hardest 5.
+4. Mark every number [VERIFY].
+rules: Keep units explicit and flag where Indian and international values differ, because unit and guideline errors cost marks.
+output: A table (item, value, unit, source), then the memory tricks.
+tip: Check this sheet against your textbook once; numbers are where AI slips most.
+try: Subject: diabetes and thyroid values.
+next: high-yield-sheet
+
+@@ S | drug-card | Drug summary card
+aud: MBBS Student / PG Resident / Intern
+use: For pharmacology revision and for drugs you prescribe often.
+persona: You are a clinical pharmacologist who writes compact drug cards.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Drug or drug class: [brief]
+Level and exam: [brief]
+task: 1. Give the class, mechanism, key uses, dose [VERIFY], route, adverse effects, contraindications and key interactions.
+2. Add the one fact examiners love about this drug.
+3. Add one mnemonic for the adverse effects.
+rules: Keep doses and interactions accurate to standard references and mark them [VERIFY], because drug errors harm patients.
+output: A compact card under the headings, then the exam fact and the mnemonic. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Make cards for classes, then note only the exceptions for individual drugs.
+try: Amiodarone.
+next: numbers-sheet
+
+@@ S | classification-memory | Remember a classification
+aud: MBBS Student / PG Resident
+use: For classifications and staging systems examiners love to ask.
+persona: You are a teacher who makes classifications easy to remember.
+context: The classification: [e.g. WHO classification of tuberculosis / Lown grading / TNM for breast cancer]
+Exam: [brief]
+task: 1. Give the classification accurately, with its source [CITE].
+2. Explain the logic behind it, so it makes sense rather than being memorised blindly.
+3. Give a mnemonic or pattern to remember it.
+4. Give one clinical use of the classification.
+rules: Reproduce the classification exactly and mark the version or year [VERIFY], because classifications are updated and examiners know which version they expect.
+output: The classification, the logic, the memory aid, then the clinical use.
+tip: Write the classification from memory once a week until it is automatic.
+try: The Child-Pugh score.
+next: mnemonic-builder
+
+@@ S | revision-schedule | Spaced revision schedule for my topics
+aud: MBBS Student / PG Resident
+use: After finishing a first reading, to plan when to revise each topic.
+persona: You are a study coach who designs spaced-repetition revision schedules.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Topics I have finished and when: [list with dates]
+Exam date: [brief]
+Hours per day for revision: [brief]
+task: 1. Schedule each topic for revision at expanding intervals (for example, 1, 3, 7, 21 days).
+2. Balance the daily load within my hours.
+3. Put weaker topics on shorter intervals.
+4. Present it as a calendar table.
+rules: Keep the plan realistic for my hours, because an overloaded schedule gets abandoned.
+output: The calendar table, then a one-line rule to adjust it when I fall behind.
+tip: Revise from your sheets and cards, not the full textbook.
+try: 12 topics finished over the last month; exam in 90 days; 2 hours a day.
+next: rapid-revision-pack
+
+@@ S | notes-condenser | Condense long notes into revision notes
+aud: MBBS Student / PG Resident
+use: When your notes are too long to revise.
+persona: You are an exam coach who condenses notes without losing high-yield facts.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+My notes: [PASTE]
+Exam: [brief]
+Target length: [e.g. one third]
+task: 1. Condense the notes to the target length, keeping all high-yield facts.
+2. Convert paragraphs into bullets and tables.
+3. Bold the key words and numbers.
+4. List anything I removed that might still be worth keeping.
+rules: Do not add new facts that are not in my notes, and flag any fact that looks wrong [VERIFY], because condensed notes must stay faithful to my sources.
+output: The condensed notes, then the list of removed items.
+tip: Condense again before the final month; each pass sharpens recall.
+try: Paste 3 pages of notes on anaemia.
+next: high-yield-sheet
+
+@@ S | story-method | Turn a topic into a memorable story
+aud: MBBS Student / PG Resident
+use: For pathways, sequences and disease courses.
+persona: You are a teacher who explains medicine through memorable stories.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Topic or sequence: [brief]
+Level: [brief]
+task: 1. Turn the sequence into a short story with characters and events that map to the steps.
+2. Keep the story under 200 words.
+3. Add a key showing which character or event maps to which step.
+rules: Keep the mapping accurate and complete, and say where the story oversimplifies, because stories stick, including their errors.
+output: The story, then the key. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Retell the story to a friend; teaching it locks it in.
+try: The steps of the urea cycle.
+next: memory-palace
+
+@@ S | pyq-pattern-sheet | Previous-year question patterns into a sheet
+aud: MBBS Student / PG Resident
+use: When you have previous-year questions and want to know what to memorise.
+persona: You are an exam analyst who finds patterns in previous-year questions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Previous-year questions on a topic or subject: [PASTE]
+Exam: [brief]
+task: 1. Group the questions by sub-topic and count them.
+2. Identify the facts that are repeatedly tested.
+3. Turn those facts into a one-page memory sheet.
+4. Suggest 5 likely future questions on the same facts.
+rules: Base the patterns only on the pasted questions and say how many you analysed, because patterns from a few questions can mislead.
+output: The count table, the repeated facts, the memory sheet, then the likely questions.
+tip: Repeated facts are repeated for a reason. Learn them first.
+try: Paste 40 previous NEET-PG questions on ophthalmology.
+next: rapid-revision-pack
+
+@@ S | concept-map-links | Link a topic across subjects
+aud: MBBS Student / PG Resident
+use: For integrated questions that join anatomy, physiology, pathology, pharmacology and medicine.
+persona: You are a teacher of integrated medical education who links topics across subjects.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Topic: [e.g. the thyroid gland]
+Exam: [brief]
+task: 1. Link the topic across subjects: anatomy, physiology, biochemistry, pathology, microbiology, pharmacology, medicine and surgery, as relevant.
+2. Give 2 high-yield facts per subject.
+3. Show how one subject explains another (for example, how the physiology explains the drug action).
+4. Write 3 integrated MCQs that cross subjects, with answers.
+rules: Keep the facts accurate and mark numbers [VERIFY], because integrated questions punish half-remembered links.
+output: A table (subject, facts, link to the next subject), then the integrated MCQs.
+tip: Integrated links make each fact easier to recall, because it is stored in more than one place.
+try: Topic: vitamin B12.
+next: mind-map
+
+@@ S | error-log-cards | Turn my mistakes into cards
+aud: MBBS Student / PG Resident
+use: After a mock test or MCQ session, to stop repeating the same mistakes.
+persona: You are an exam coach who turns errors into targeted revision.
+context: Questions I got wrong, with my answer and the correct answer: [PASTE]
+Exam: [brief]
+task: 1. For each mistake, identify the missing fact or the misconception.
+2. Write one flashcard per mistake that targets exactly that gap.
+3. Group the mistakes by pattern (knowledge gap, misreading, confusable facts).
+4. Suggest one habit to reduce the commonest pattern.
+rules: Target the specific gap, not the whole topic, and mark facts [VERIFY], because error cards work only when they fix the exact misconception.
+output: The error table (question, gap, card), the pattern groups, then the habit.
+tip: Your own mistakes make the highest-yield cards you will ever write.
+try: Paste 10 wrong answers from your last grand test.
+next: flashcard-maker
+
+@@ Q | quick-mnemonic | One mnemonic for a list
+aud: MBBS Student / PG Resident
+body: Act as a medical memory coach. Give me one memorable mnemonic for [LIST]. Show which letter maps to which item, check the list is accurate and complete [VERIFY], and keep it respectful. Flag anything you are unsure of so I can check it.
+try: Causes of pancreatitis.
+
+@@ Q | ten-flashcards | 10 quick flashcards
+aud: MBBS Student / PG Resident
+body: Act as a medical educator. Write 10 high-yield flashcards on [TOPIC] for [EXAM], in the format "Q: … | A: …", with one fact per card and answers of 2 lines at most. Mark numbers [VERIFY]. Flag anything you are unsure of so I can check it.
+try: Topic: thyroid disorders, for NEET-PG.
+
+@@ Q | five-must-knows | 5 must-know facts
+aud: MBBS Student / PG Resident
+body: Act as an exam coach. Give me the 5 facts about [TOPIC] most often tested in [EXAM], one line each, with any numbers marked [VERIFY]. Add one common trap students fall into. Flag anything you are unsure of so I can check it.
+try: Topic: tetralogy of Fallot, for NEET-PG.
+
+@@ Q | two-way-compare | Two-item quick comparison
+aud: MBBS Student / PG Resident
+body: Act as a medical teacher. Compare [A] and [B] in a 5-row table on the features examiners test, and bold the single most discriminating feature. Mark numbers [VERIFY] so I can check them. Flag anything you are unsure of so I can check it.
+try: Type 1 vs type 2 respiratory failure.
+
+@@ Q | explain-like-five | Explain simply, then technically
+aud: MBBS Student
+body: Act as a teacher. Explain [CONCEPT] first in simple words a school student would understand, then in exam-ready technical language in 5 bullets. End with one analogy I can remember it by. Flag anything you are unsure of so I can check it.
+try: Concept: the Frank-Starling law.
+
+@@ Q | morning-recall | Morning recall test
+aud: MBBS Student / PG Resident
+body: Act as an examiner. Ask me 10 rapid recall questions on [TOPIC] I studied yesterday, one at a time, and wait for my answer each time. At the end, list the ones I missed so I can make cards for them.
+try: Topic: antitubercular drugs.
+
+@@ Q | fix-my-card | Improve a flashcard
+aud: MBBS Student / PG Resident
+body: Act as a spaced-repetition expert. Rewrite this flashcard so it tests one fact, prompts recall rather than recognition and has a short answer: [PASTE CARD]. Explain what was wrong in one line. Flag anything you are unsure of so I can check it.
+try: "Q: Tell me everything about digoxin | A: [a long paragraph]"
+
+@@ Q | last-night-list | Night-before-exam list
+aud: MBBS Student / PG Resident
+body: Act as an exam coach. Give me the 15 highest-yield facts in [SUBJECT] to glance at the night before [EXAM], one line each, numbers marked [VERIFY]. No new topics, only the most tested facts. Flag anything you are unsure of so I can check it.
+try: Subject: forensic medicine, for the MBBS university exam.
+
+@@ Q | acronym-decoder | Decode an acronym or eponym
+aud: MBBS Student / PG Resident
+body: Act as a medical teacher. Expand and explain [ACRONYM OR EPONYM], give its clinical significance in 2 lines, and add one way to remember it. Flag if the term has more than one meaning in medicine. Flag anything you are unsure of so I can check it.
+try: "CURB-65."
