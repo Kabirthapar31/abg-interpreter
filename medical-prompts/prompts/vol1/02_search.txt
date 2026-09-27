@@ -1,0 +1,410 @@
+# 1.2 | Literature search strategy | A literature review is only as good as the search behind it. A reproducible search string is something examiners and journals now ask to see.
+
+@@ M | search-builder | Build a reproducible, multi-database search
+aud: PG Resident / Faculty
+use: After your topic is provisionally approved, before you read a single paper in depth.
+why: "I searched PubMed" is not a method. A reproducible search, with concept blocks, controlled vocabulary and exact strings, is what separates a review from a reading list, and it is what examiners and journals ask to see.
+persona: You are a medical librarian and systematic-review methodologist who has co-authored Cochrane reviews and trained postgraduates in reproducible searching. You are precise about search syntax and sceptical of shortcuts.
+context: My full PICOT question: [PASTE QUESTION]
+Study design I intend to use: [e.g. prospective observational cohort]
+Databases I can access: [PubMed / Embase / Scopus / Cochrane Library / Web of Science / Google Scholar]
+Language limits: [English only / English plus others]
+Date range: [e.g. 2010 to present, and tell me if I should widen it]
+Reference manager: [Zotero / Mendeley / EndNote / none]
+task: 1. Break my question into concept blocks. For each block, list controlled vocabulary (MeSH for PubMed, Emtree for Embase) and free-text synonyms, including spelling variants, abbreviations and older terms.
+2. Write a complete, copy-paste-ready PubMed string with correct field tags, Boolean operators, truncation and explosion.
+3. Translate it into Embase and Cochrane Library syntax.
+4. Give one deliberately broad and one deliberately narrow version, and say what each will miss.
+5. List the steps beyond databases: citation chasing, reference lists, grey literature, trial registries (CTRI, ClinicalTrials.gov) and preprint servers relevant to my field.
+6. Give me a search log template: database, date searched, exact string, filters, hits.
+rules: Build strings only from real MeSH and Emtree headings; if you are not certain a heading exists, mark it [CHECK IN MeSH BROWSER], because one invalid heading silently breaks the whole search. Do not report any studies or hit counts from memory.
+output: Concept-block table, then each string in its own code block, then the broad and narrow versions, the extra steps as a checklist, and the log template.
+tweak: End by telling me the one concept block most likely to be missing synonyms, and how to test it.
+tips:
+- Run the PubMed string and check the hit count. Under 50 is usually too narrow; over 3,000 is usually too broad.
+- Save the exact string and the date you ran it. Examiners and journals ask for both.
+- Test the string: pick 3 papers you already know are relevant. If any is missing from the results, add its keywords.
+next: hit-count-fix
+
+@@ M | search-log | Search documentation that survives the viva
+aud: PG Resident
+use: After you have run your searches, while every string, date and count is still in front of you.
+why: Examiners and journal reviewers increasingly ask "how exactly did you search?". A documented search (strings, dates, hits, deduplication) turns your ROL from a narrative into a method, and saves you from redoing it months later.
+persona: You are a systematic-review methodologist who reviews search reporting for journals and applies the PRISMA 2020 and PRISMA-S reporting standards.
+context: Databases searched, with date of each search: [list]
+Exact strings used: [PASTE STRINGS HERE]
+Hits per database: [numbers]
+Duplicates removed (and how): [number, tool]
+Records screened, full texts assessed, studies included: [numbers]
+Reasons for full-text exclusion with counts: [list]
+Other sources (registries, citation chasing, experts): [list with counts]
+task: 1. Write the search-methods paragraph for my thesis methodology chapter.
+2. Produce a PRISMA 2020 flow diagram description with my numbers slotted in, box by box.
+3. Check my numbers for internal consistency (screened minus excluded must equal full texts assessed, and so on) and flag any mismatch.
+4. List the PRISMA-S items my documentation covers and the ones it is missing.
+5. Draft a one-page search appendix table: database, platform, date, string, limits, hits.
+rules: Use only the numbers I gave. Where a number is missing, write [MISSING — FILL IN] rather than estimating, because an inconsistent flow diagram is the first thing a reviewer checks. Keep my exact strings unchanged.
+output: The methods paragraph (about 150 words), the flow-diagram box list, a consistency check table, the PRISMA-S gap list, and the appendix table.
+tweak: Finish with the two questions an examiner is most likely to ask about my search, and model answers based only on my documentation. Then tell me which single piece of documentation I should create today because it cannot be reconstructed later (for example, the original hit counts or the date of the first search).
+tips:
+- Draw the final flow diagram in PowerPoint or draw.io from the box list. Don't ask the AI to draw it.
+- Keep screenshots of each database's results page with the date visible.
+- Re-run the search just before submission and report the update date.
+next: search-methods-para
+
+@@ M | search-rescue | Search rescue: iterate until the results are right
+aud: PG Resident
+use: When your search returns far too many, far too few, or irrelevant results, and you have already tried tweaking it.
+why: Searching is iterative. Most residents give up after one bad result, or keep reading 4,000 irrelevant titles. This prompt makes the AI diagnose what went wrong and fix it one change at a time.
+persona: You are an expert search consultant at a medical library who debugs failed searches daily. You change one thing at a time and explain the effect of each change.
+context: My research question: [PICOT]
+Database and current search string: [PASTE STRING HERE]
+Hit count: [N]
+What is wrong: [too many / too few / irrelevant results]
+Five titles from the results that are irrelevant (if any): [PASTE TITLES]
+Two or three papers I know should appear but do not: [titles or PMIDs]
+task: 1. Diagnose the problem: which concept block, operator, field tag or truncation is causing it.
+2. Propose a revised string with one change, and explain what the change should do to the hit count.
+3. Ask me to run it and report back the new count and 5 sample titles.
+4. Repeat for up to 4 rounds until the known papers appear and the irrelevant titles drop out.
+5. Then give the final string with a one-line rationale for each block.
+rules: Change one thing per round, because changing several at once makes it impossible to tell what worked. Do not invent MeSH terms; mark uncertain ones [CHECK IN MeSH BROWSER]. Wait for my results before the next round.
+output: One round per turn: a short diagnosis, the revised string in a code block, the expected effect on the hit count and the known papers, and exactly what I should report back to you. Keep each round under 200 words so I can act on it quickly.
+tweak: At the end, summarise the search in 3 sentences suitable for my methods chapter.
+tips:
+- Known papers are the best test of a search. Keep 3 "must-find" papers handy.
+- Irrelevant titles tell you which synonym is too loose. Paste them rather than describing them.
+- If the tweaks never converge, your question is probably too broad. Go back to section 1.1.
+next: search-log
+
+@@ S | mesh-finder | MeSH terms and synonyms for one concept
+aud: PG Resident / MBBS Student
+use: When you are building a search and stuck on one concept.
+persona: You are a medical librarian who knows the MeSH hierarchy well and teaches residents to search systematically.
+context: The concept I need to search: [e.g. acute kidney injury]
+My wider question for context: [one line]
+task: 1. Give the most relevant MeSH heading(s), where each sits in the hierarchy, and whether to explode it.
+2. List entry terms and free-text synonyms, including abbreviations, spelling variants (British / American) and outdated terms used in older papers.
+3. Combine them into one PubMed block using [MeSH] and [tiab] tags with OR.
+rules: Only give MeSH headings you are confident exist; mark others [CHECK IN MeSH BROWSER], because an invalid heading returns nothing without warning.
+output: A short table (term, type, tag), then the combined block in a code block.
+tip: Check the MeSH introduction year. Papers older than that are indexed under a different term.
+try: Concept: ventilator-associated pneumonia.
+next: pico-to-search
+
+@@ S | pico-to-search | PICO → concept blocks table
+aud: PG Resident
+use: The first step of any search, straight after your question is fixed.
+persona: You are a search-methods tutor who teaches residents to turn clinical questions into structured searches.
+context: My PICOT question: [PASTE QUESTION]
+Database I will start with: [PubMed / Embase / Google Scholar]
+task: 1. Split the question into concept blocks and say which PICO elements to search and which to leave out (usually comparator and outcome), with the reason.
+2. For each block, give controlled vocabulary and free-text terms.
+3. Show how the blocks combine: OR within blocks, AND between blocks.
+4. Suggest a validated study-design filter if one fits my question.
+rules: Explain every exclusion decision in one line, because searching every PICO element is the most common reason searches miss relevant papers.
+output: A concept-block table, then the combined string, then a one-paragraph explanation.
+tip: Most good searches use 2 or 3 blocks, not 5.
+try: In adults with community-acquired pneumonia, does procalcitonin-guided therapy reduce antibiotic duration compared with standard care?
+next: search-builder
+
+@@ S | boolean-debug | Fix the syntax of my search string
+aud: PG Resident
+use: When PubMed gives an error, a strange translation, or zero results.
+persona: You are a meticulous search-syntax checker who spots misplaced brackets and wrong field tags at a glance.
+context: My search string: [PASTE STRING HERE]
+Database: [PubMed / Embase / Scopus / Google Scholar]
+What PubMed shows under "Details" or "Search translation": [PASTE IF AVAILABLE]
+task: 1. Check brackets, Boolean operators (upper case), field tags, quotation marks, truncation and proximity operators.
+2. List every error with its correction.
+3. Give the corrected string.
+4. Explain how PubMed's automatic term mapping will treat any untagged terms.
+rules: Keep my intended logic unless it is clearly wrong; if you change the logic, say so explicitly, because a silent change alters which papers I find.
+output: An error table (error, why it matters, fix), then the corrected string in a code block.
+tip: Always read PubMed's search translation. It shows what PubMed actually searched, not what you typed.
+try: (asthma OR wheez*) AND inhaler adherance AND (child* OR paediatric
+next: hit-count-fix
+
+@@ S | hit-count-fix | Too many or too few hits: fix my search
+aud: PG Resident
+use: When your search returns thousands of results, or almost none.
+persona: You are a search consultant who balances sensitivity and precision for postgraduate literature reviews.
+context: Research question: [PICOT]
+Current string: [PASTE STRING HERE]
+Database and hit count: [PubMed, N]
+Is this for a narrative ROL or a systematic review?: [narrative / systematic]
+task: 1. Diagnose why the count is too high or too low.
+2. Suggest 3 targeted changes (e.g. major-topic MeSH, title-only terms, removing a block, adding synonyms, a design filter), ranked by likely effect.
+3. Give the revised string for the best option.
+4. Say what relevant papers each change risks losing.
+rules: For a systematic review, prefer sensitivity and never restrict by abstract availability or free full text, because those filters introduce bias.
+output: Diagnosis in 2–3 lines, a ranked table of changes, then the revised string.
+tip: For a thesis ROL, 150 to 800 well-targeted hits is a workable range.
+try: "sepsis AND lactate" returning 9,000 PubMed results.
+next: search-rescue
+
+@@ S | database-translate | Translate my PubMed string for other databases
+aud: PG Resident / Faculty
+use: When your PubMed search is final and you need Embase, Scopus, Cochrane or Web of Science versions.
+persona: You are a medical librarian fluent in the syntax of PubMed, Embase (Ovid and Elsevier), Scopus, Cochrane Library and Web of Science.
+context: Final PubMed string: [PASTE STRING HERE]
+Target databases and platforms: [e.g. Embase.com, Scopus, Cochrane Library]
+task: 1. Translate the string for each target database, mapping MeSH to Emtree where relevant and converting field tags, truncation and proximity operators.
+2. Note any concept that has no equivalent heading, and how you handled it.
+3. List any syntax difference that could change the results.
+rules: Mark any Emtree term you are unsure of as [CHECK IN EMTREE], because MeSH and Emtree headings often differ in name and scope.
+output: One code block per database, with a short notes list under each.
+tip: Scopus has no controlled vocabulary. Strengthen the free-text terms there.
+try: PubMed string for "high-flow nasal oxygen in acute hypoxaemic respiratory failure".
+next: search-log
+
+@@ S | filters-guide | Use PubMed filters without biasing the review
+aud: PG Resident
+use: Before applying filters such as date, language, age group, species or article type.
+persona: You are a systematic-review methodologist who warns residents about filters that silently exclude relevant evidence.
+context: My question: [PICOT]
+Filters I plan to use: [e.g. last 10 years, English, humans, adults, RCT only]
+Purpose of my search: [thesis ROL / systematic review / quick clinical question]
+task: 1. For each filter, explain what it actually does in PubMed, including how it treats recently added, not-yet-indexed records.
+2. Say whether each is appropriate for my purpose, and the bias it could introduce.
+3. Suggest safer alternatives (e.g. search-term blocks instead of the "Humans" filter).
+4. Give my final string with the recommended filters applied.
+rules: Be explicit about which filters depend on MeSH indexing, because the newest papers are not yet indexed and would be excluded.
+output: A filter table (filter, what it does, keep or drop, reason), then the final string.
+tip: Justify every filter in your methods section. Unexplained filters look like cherry-picking.
+try: Filters: humans, English, last 5 years, free full text.
+next: search-builder
+
+@@ S | indian-literature | Find studies from Indian centres
+aud: PG Resident
+use: When you need the Indian evidence for your introduction and ROL, beyond global studies.
+persona: You are a research librarian at an Indian medical college who specialises in finding Indian and South Asian clinical studies.
+context: Topic: [TOPIC]
+Main PubMed string so far: [PASTE STRING HERE]
+task: 1. Show how to add an India block using the [Affiliation] and [tiab] fields (India, Indian, state and major city names, major institutions).
+2. Suggest regional and Indian sources to search beyond PubMed, including Indian journals and thesis repositories, and say what each is useful for.
+3. Explain how to handle Indian journals that are not indexed in PubMed.
+4. Give Google Scholar search tips for Indian studies.
+rules: Name only sources you are confident exist and are currently accessible; mark uncertain ones [VERIFY ACCESS], because Indian indexing services change often.
+output: The India block in a code block, then a source table (source, what it covers, access), then 4 tips.
+tip: Affiliation searches miss studies whose authors list only the city. Add major city names as free text.
+try: Topic: scrub typhus in children.
+next: grey-literature
+
+@@ S | grey-literature | Grey literature and trial-registry search plan
+aud: PG Resident / Faculty
+use: For any systematic review, and for a thesis ROL where unpublished or ongoing work may matter.
+persona: You are an evidence-synthesis specialist who knows that missing grey literature leads to publication bias.
+context: Topic and question: [PICOT]
+Type of review: [thesis ROL / systematic review / scoping review]
+task: 1. List the grey-literature sources to search: trial registries (CTRI, ClinicalTrials.gov, WHO ICTRP), preprint servers, conference abstracts, theses repositories (including Indian ones), and government or WHO reports.
+2. For each, give a simple search approach and what to record.
+3. Explain how to handle registry entries with no published results.
+4. Give a documentation table template.
+rules: Keep the list relevant to my topic and field, not generic. Mark any source whose current search interface you are unsure of as [CHECK SITE], because registries change their search tools.
+output: A source table, then the handling notes, then the documentation template.
+tip: A trial registered in CTRI years ago with no publication is itself a finding. Note it in your discussion.
+try: Systematic review of yoga interventions for hypertension in Indian adults.
+next: citation-chasing
+
+@@ S | citation-chasing | Backward and forward citation chasing plan
+aud: PG Resident
+use: After screening, when you have 3–10 key included papers.
+persona: You are a systematic reviewer who uses citation chasing to find the studies that keyword searches miss.
+context: My key papers (title, year, DOI or PMID): [PASTE LIST HERE]
+Tools I can use: [Google Scholar / Scopus / Web of Science / PubMed "cited by" / Semantic Scholar]
+task: 1. Explain backward chasing (the reference lists) and forward chasing (papers that cite these), and when each adds most.
+2. Give step-by-step instructions for each tool I can use.
+3. Suggest screening rules to keep chasing manageable.
+4. Give a log template to record what each round found.
+rules: Do not list papers that cite mine from memory; tell me how to retrieve them, because any list you produce without live search may be fabricated.
+output: A numbered method, tool-specific steps, and a log table.
+tip: Forward chasing from a landmark paper is the fastest way to find the newest work on your topic.
+try: Key paper: a well-known RCT on corticosteroids in severe community-acquired pneumonia.
+next: search-log
+
+@@ S | perplexity-landscape | Map the research landscape in Perplexity
+aud: PG Resident
+use: At the very start of a new topic, in Perplexity with Academic mode switched on.
+persona: You are a research-landscape analyst who summarises a field in minutes using cited, current sources.
+context: Topic: [TOPIC]
+Population and setting of interest: [e.g. Indian adults in tertiary care]
+Time window: [e.g. last 5 years]
+task: 1. Summarise what is well established, with citations.
+2. Summarise what is contested or uncertain, and why.
+3. Summarise what is unstudied or under-studied in my population and setting.
+4. List the 5 most important recent studies or reviews, with year and journal, and a clickable source.
+5. Suggest 5 search terms I should use in PubMed next.
+rules: Cite a source for every claim. If you cannot find a source for a statement, leave the statement out, because I will verify every citation before using it.
+output: Headed sections with short bullets and numbered citations.
+tip: Follow up with: "What has NOT been studied in Indian patients specifically?" It surfaces the most useful gaps.
+try: Topic: long-term outcomes after dengue shock syndrome.
+next: india-follow-up
+
+@@ S | reviews-first | Find the systematic reviews before anything else
+aud: PG Resident / Faculty
+use: At the start of any ROL or research question, to avoid reinventing existing syntheses.
+persona: You are an evidence-based medicine tutor who always starts with the highest level of existing evidence.
+context: My question: [PICOT]
+My main search string: [PASTE STRING HERE]
+task: 1. Show how to find systematic reviews and meta-analyses: the PubMed systematic-review filter, the Cochrane Library, and PROSPERO for registered reviews in progress.
+2. Give the modified strings for each.
+3. Explain how to judge whether an existing review already answers my question (scope, date, quality, population).
+4. Tell me what to do if a recent high-quality review exists: update it, narrow the angle, or change the question.
+rules: Do not name specific reviews from memory; show me how to retrieve them, because an invented review would mislead my whole plan.
+output: Numbered steps, the strings in code blocks, and a short decision guide.
+tip: A registered PROSPERO review on your exact question means someone is already doing it. Check before you start.
+try: Question: effect of early tracheostomy on mortality in mechanically ventilated adults.
+next: saturation-check
+
+@@ S | landmark-finder | Identify the landmark papers in my field
+aud: PG Resident
+use: When you need the must-cite trials and studies for your introduction, ROL or seminar.
+persona: You are a senior academic who knows how to identify landmark literature systematically rather than by memory.
+context: Topic: [TOPIC]
+Current guidelines I can access: [name them or "none yet"]
+task: 1. Explain 4 reliable ways to identify landmark papers: guideline reference lists, highly cited papers in Scopus or Google Scholar, reviews' "key studies" sections, and editorials.
+2. Give the search steps for each.
+3. Suggest a table for recording each landmark paper: design, population, intervention, key finding, why it changed practice.
+4. List candidate landmark studies you believe are relevant, each marked [VERIFY PMID].
+rules: Every paper you name must carry the [VERIFY PMID] tag, because trial names and years are frequently misremembered by AI. Name fewer papers rather than guessing.
+output: The 4 methods as a numbered list, the recording table, then the candidate list.
+tip: If a paper appears in the reference list of every major guideline, it is a landmark.
+try: Topic: fluid resuscitation in septic shock.
+next: search-builder
+
+@@ S | search-alerts | Set up alerts so new papers find you
+aud: PG Resident / Faculty
+use: Once your search is final, so you do not miss papers published during your thesis.
+persona: You are a research productivity coach who sets up literature alerts for busy clinicians.
+context: Final search string: [PASTE STRING HERE]
+Tools I use: [PubMed with My NCBI / Google Scholar / journal alerts / RSS]
+How often I want updates: [weekly / monthly]
+task: 1. Give step-by-step instructions to save the search and create an email alert in each tool I use.
+2. Suggest a tighter version of the string so alerts are not flooded.
+3. Suggest 5 key journals in my field for table-of-contents alerts.
+4. Describe a 15-minute monthly routine to process alerts into my reference manager.
+rules: Keep instructions tool-specific. Where an interface may have changed, say [CHECK CURRENT MENU], because step-by-step menus go out of date.
+output: Numbered steps per tool, the alert string, the journal list, and the monthly routine.
+tip: Re-run your full search before submission anyway. Alerts can miss papers indexed late.
+try: Search on "prone positioning in non-intubated COVID-19" with weekly PubMed alerts.
+next: zotero-setup
+
+@@ S | zotero-setup | Reference manager set-up and deduplication
+aud: PG Resident
+use: Before you import your first search results.
+persona: You are a research-skills trainer who has set up Zotero and Mendeley for hundreds of thesis students.
+context: Reference manager: [Zotero / Mendeley / EndNote]
+Word processor: [MS Word / Google Docs]
+Citation style required by my university: [e.g. Vancouver]
+Expected number of records: [N]
+task: 1. Give set-up steps: install, browser connector, word-processor plug-in, and the citation style.
+2. Explain how to import results from PubMed and other databases.
+3. Give a deduplication workflow, including records the tool will miss.
+4. Suggest a folder or tag structure for screening (to screen, included, excluded with reason).
+5. List the 5 mistakes that corrupt thesis references, and how to avoid each.
+rules: Keep steps specific to my tool. Where menus may have changed, write [CHECK CURRENT VERSION], because outdated steps waste hours.
+output: Numbered sections, each with short steps.
+tip: Never type a reference by hand into your thesis. Insert every citation through the plug-in.
+try: Zotero with MS Word, Vancouver style, about 600 records.
+next: search-log
+
+@@ S | search-methods-para | Write the search-methods paragraph
+aud: PG Resident
+use: When writing the methodology or ROL chapter, after your search is complete.
+persona: You are an academic editor who writes concise, reproducible search-methods sections for theses and journals.
+context: Databases and platforms: [list]
+Dates of search: [dates]
+Search terms and full strings: [PASTE HERE]
+Limits applied and why: [list]
+Additional sources: [registries, reference lists, experts]
+Screening process: [who screened, how disagreements were resolved]
+task: 1. Write a 120–180 word search-methods paragraph in past tense.
+2. Write a one-line pointer to the appendix containing the full strings.
+3. List anything a reviewer would say is missing.
+rules: Use only the details I gave. Where something standard is missing (e.g. the date of the last search), insert [ADD DETAIL] instead of inventing it, because search methods must be exactly reproducible.
+output: The paragraph, the pointer line, and a short missing-items list.
+tip: Name the platform as well as the database, e.g. "Embase via Ovid". The results differ.
+try: PubMed and Cochrane searched 10 March 2026, English only, two reviewers screening independently.
+next: search-log
+
+@@ S | full-text-access | Legal ways to get the full text of a paper
+aud: PG Resident / MBBS Student
+use: When a key paper is behind a paywall.
+persona: You are a medical college librarian who helps students and residents access literature legally.
+context: Paper details: [title, journal, year, DOI]
+My institution's access, if known: [e.g. institutional subscription, national consortium, none]
+task: 1. List the legal routes in order of speed: institutional access and library, national or consortium access schemes in India, open-access versions (PubMed Central, Unpaywall, author repositories), interlibrary loan, and contacting the author.
+2. For each, give the steps.
+3. Draft a short, polite email to the corresponding author requesting the PDF for thesis use.
+rules: Recommend only legal routes. Mark any national scheme whose current coverage you are unsure of as [CHECK WITH LIBRARY], because access programmes change.
+output: A numbered list of routes with steps, then the email (under 100 words).
+tip: Authors almost always reply. Most are happy to share their paper with a student.
+try: A 2024 RCT in a paywalled critical-care journal.
+next: citation-chasing
+
+@@ S | search-peer-review | Peer review my search strategy (PRESS checklist)
+aud: PG Resident / Faculty
+use: Before you run the final search for a systematic review or a thesis ROL your examiners will scrutinise.
+persona: You are an information specialist who peer reviews search strategies using the PRESS (Peer Review of Electronic Search Strategies) checklist.
+context: My research question: [PICOT]
+My full search string and database: [PASTE STRING HERE]
+Limits applied: [list]
+task: 1. Review the strategy against the PRESS elements: translation of the question, Boolean and proximity operators, subject headings, text-word searching (spelling, synonyms, truncation), spelling and syntax, and limits and filters.
+2. For each element, rate it as no revision, revision suggested, or revision required, with a reason.
+3. Give the revised string with all required changes applied.
+rules: Explain every required change in one line, because I must be able to justify the final strategy myself. Do not add concepts that are not in my question.
+output: A PRESS review table, then the revised string in a code block.
+tip: Ask a colleague or librarian to run the same review. Two reviews catch more errors than one.
+try: A PubMed search on anticoagulation in cancer-associated venous thromboembolism.
+next: search-log
+
+@@ Q | boolean-basics | Boolean operators explained with my topic
+aud: MBBS Student / PG Resident
+body: Act as a medical librarian teaching a first-time searcher. Explain AND, OR, NOT, brackets, quotation marks and truncation in under 150 words, using my topic [TOPIC] for every example. End with one complete example search string built from my topic.
+try: Topic: iron-deficiency anaemia in adolescent girls.
+
+@@ Q | synonym-burst | Every synonym for my concept
+aud: PG Resident
+body: Act as a medical terminology expert. For the concept [CONCEPT], list all synonyms, abbreviations, British and American spellings, older terms and common misspellings used in paper titles and abstracts. Group them in a table and mark the 5 most important for a search.
+try: Concept: chronic obstructive pulmonary disease.
+
+@@ Q | explode-explain | Explode, major topic, subheadings: explained
+aud: PG Resident
+body: Act as a PubMed trainer. Using the MeSH term [MeSH TERM], explain in plain language what "explode", "major topic" and subheadings do, and when each helps or hurts a search. Give one example string for each. Keep it under 150 words.
+try: MeSH term: Diabetes Mellitus.
+
+@@ Q | scholar-string | Adapt my search for Google Scholar
+aud: PG Resident
+body: Act as a search specialist. Rewrite my PubMed string [PASTE STRING] for Google Scholar, which has no MeSH and limited Boolean support. Give the adapted query, explain the 3 main limitations of Google Scholar for a thesis search, and say how to use it as a supplementary source.
+try: A PubMed string on tuberculosis preventive therapy in household contacts.
+
+@@ Q | which-databases | Which databases for my specialty?
+aud: PG Resident
+body: Act as a medical librarian. For a thesis in [SPECIALTY] on [TOPIC], tell me which databases to search (core and supplementary), what each adds, and which I can reasonably skip. Present it as a table and mark anything with uncertain access as [CHECK ACCESS].
+try: Specialty: Psychiatry. Topic: depression in caregivers of dialysis patients.
+
+@@ Q | author-email | Email an author for their paper or data
+aud: PG Resident
+body: Act as an academic communication coach. Write a short, polite email to [AUTHOR NAME], author of [PAPER TITLE], asking for [the full text / clarification of a method / supplementary data] for my MD thesis on [TOPIC]. Keep it under 100 words, with a clear subject line.
+try: Asking for the supplementary table of a cohort study on sepsis biomarkers.
+
+@@ Q | retraction-check | Has this paper been retracted or corrected?
+aud: PG Resident / Faculty
+body: Act as a research-integrity officer. Tell me step by step how to check whether a paper [TITLE / DOI] has been retracted, corrected or flagged, using the journal page, PubMed and the Retraction Watch database. Explain how to cite or handle it if it has.
+try: A 2020 COVID-19 treatment paper you plan to cite.
+
+@@ Q | evidence-level | Where does this study sit in the evidence hierarchy?
+aud: MBBS Student / PG Resident
+body: Act as an evidence-based medicine tutor. For the study I describe, [PASTE ABSTRACT], identify the design, its level in the evidence hierarchy, the 2 biggest threats to validity, and how much weight it should carry in my review. Answer in 5 bullet points.
+try: A single-centre retrospective study of 60 patients on a new antifibrotic.
+
+@@ Q | ai-search-query | Turn my question into Perplexity and Consensus queries
+aud: PG Resident
+body: Act as an AI research-tools trainer for doctors. Convert my PICOT question [PASTE QUESTION] into 3 Perplexity Academic queries (broad, focused, India-specific) and 3 Consensus yes/no questions. Explain in one line what I should look for in each tool's results, and how to verify its citations.
+try: Does pulmonary rehabilitation reduce readmissions in COPD patients in India?
+
+@@ Q | search-date-range | How far back should my search go?
+aud: PG Resident
+body: Act as a systematic-review methodologist. For my topic [TOPIC], help me choose a search date range. Consider when key definitions, diagnostic criteria, guidelines or treatments changed. Give a recommended start year, the reason, and one sentence I can use to justify it in my methods.
+try: Topic: sepsis outcomes (definitions changed in 2016).
