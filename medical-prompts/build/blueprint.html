@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>1,000 Prompts Blueprint</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --bg: #0a0808; --panel: #141010; --panel2: #1a1413; --line: #33291f;
+    --ink: #fbf4ec; --body: #e9ded2; --muted: #b8aba0; --dim: #8a7f75;
+    --or: #ff641e; --or-soft: rgba(255,100,30,.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body { font-family: 'Poppins', 'DejaVu Sans', sans-serif; color: var(--body); font-size: 8.6pt; line-height: 1.55; }
+  .page { width: 210mm; height: 297mm; padding: 17mm 17mm 16mm; position: relative; overflow: hidden; page-break-after: always; background: var(--bg); }
+  .page:last-child { page-break-after: auto; }
+  .foot { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 6.8pt; color: var(--dim); letter-spacing: .08em; text-transform: uppercase; border-top: 1px solid var(--line); padding-top: 2.5mm; }
+  .foot b { color: var(--or); font-weight: 500; text-transform: none; letter-spacing: 0; }
+  .kick { font-size: 7pt; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--or); margin-bottom: 2mm; }
+  h1 { font-family: 'Poppins'; font-weight: 800; color: var(--ink); letter-spacing: -.01em; }
+  h2 { font-weight: 700; color: var(--ink); font-size: 19pt; line-height: 1.15; margin-bottom: 4mm; }
+  h2 em, h1 em { font-style: normal; color: var(--or); }
+  h3 { font-weight: 600; color: var(--ink); font-size: 10.5pt; margin: 5mm 0 2mm; }
+  .lead { font-family: 'Lora'; font-style: italic; color: var(--muted); font-size: 10.5pt; line-height: 1.55; margin-bottom: 5mm; }
+  p { margin-bottom: 2.5mm; }
+  b, strong { color: var(--ink); font-weight: 600; }
+  .or { color: var(--or); }
+  table { width: 100%; border-collapse: collapse; font-size: 7.8pt; margin: 2mm 0 4mm; }
+  th { text-align: left; font-size: 6.8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--or); font-weight: 600; padding: 2mm 2mm; border-bottom: 1px solid var(--or); }
+  td { padding: 1.9mm 2mm; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--body); }
+  td b { color: var(--ink); }
+  td.n { text-align: right; color: var(--ink); font-weight: 600; white-space: nowrap; }
+  tr.part td { background: var(--or-soft); color: var(--ink); font-weight: 600; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 2.2mm; padding: 3.5mm 4mm; }
+  .card .kick { margin-bottom: 1.2mm; font-size: 6.4pt; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; }
+  ul.arrow { list-style: none; }
+  ul.arrow li { padding-left: 4.5mm; position: relative; margin-bottom: 1.4mm; }
+  ul.arrow li::before { content: "›"; position: absolute; left: 0; color: var(--or); font-weight: 700; }
+  .num-list .it { display: grid; grid-template-columns: 9mm 1fr; margin-bottom: 3mm; }
+  .num-list .it .k { color: var(--or); font-weight: 700; font-size: 11pt; line-height: 1.2; }
+  .num-list .it b { display: block; font-size: 9.2pt; }
+  .prompt { background: var(--panel2); border-left: 2.5px solid var(--or); border-radius: 0 2mm 2mm 0; padding: 3mm 4mm; font-size: 7.7pt; line-height: 1.5; color: var(--body); }
+  .prompt .lbl { display: block; font-size: 6.3pt; letter-spacing: .2em; font-weight: 600; color: var(--or); text-transform: uppercase; margin: 2mm 0 .6mm; }
+  .prompt .lbl:first-child { margin-top: 0; }
+  .prompt .ph { color: var(--or); }
+  .badge { display: inline-block; font-size: 6.2pt; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; border: 1px solid var(--or); color: var(--or); border-radius: 5mm; padding: .3mm 2.2mm; }
+  .badge.fill { background: var(--or); color: #1a0d05; }
+  .pc-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.5mm; }
+  .pc-num { font-size: 16pt; font-weight: 800; color: var(--or); line-height: 1; margin-right: 2.5mm; }
+  .pc-title { font-size: 10.5pt; font-weight: 700; color: var(--ink); }
+  .pc-meta { font-size: 6.8pt; color: var(--dim); letter-spacing: .06em; margin-bottom: 2mm; }
+  .use { font-size: 7.6pt; color: var(--muted); margin-bottom: 2mm; }
+  .use b { color: var(--or); font-size: 6.4pt; letter-spacing: .18em; font-weight: 600; margin-right: 1.5mm; }
+  .tip { font-size: 7.4pt; color: var(--muted); margin-top: 2mm; }
+  .tip b { color: var(--or); font-size: 6.4pt; letter-spacing: .18em; font-weight: 600; margin-right: 1.5mm; }
+  .promptbig { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2.2mm; margin: 3mm 0 4mm; }
+  .promptbig > div { background: var(--panel); border: 1px solid var(--line); border-top: 2.5px solid var(--or); border-radius: 0 0 2mm 2mm; padding: 3mm 2.4mm; }
+  .promptbig div .L { font-size: 22pt; font-weight: 800; color: var(--or); line-height: 1; }
+  .promptbig div .w { font-weight: 600; color: var(--ink); font-size: 8.4pt; margin-top: 1mm; }
+  .promptbig div .d { font-size: 6.8pt; color: var(--muted); line-height: 1.4; margin-top: 1mm; }
+  .promptbig div .m { font-size: 6.2pt; color: var(--dim); margin-top: 1.5mm; border-top: 1px solid var(--line); padding-top: 1.2mm; line-height: 1.35; }
+  .tiers { display: grid; grid-template-columns: repeat(3,1fr); gap: 3mm; margin: 3mm 0; }
+  .tier { background: var(--panel); border: 1px solid var(--line); border-radius: 2.2mm; padding: 3.5mm; }
+  .tier.hot { border-color: var(--or); background: var(--or-soft); }
+  .tier .big { font-size: 15pt; font-weight: 800; color: var(--or); line-height: 1.1; }
+  .tier .t { font-weight: 700; color: var(--ink); font-size: 9.5pt; }
+  .tier .s { font-size: 7.2pt; color: var(--muted); margin-top: 1.5mm; }
+  .tier .c { font-size: 7pt; color: var(--ink); margin-top: 2mm; border-top: 1px solid var(--line); padding-top: 1.5mm; }
+  .callout { border: 1px solid var(--or); background: var(--or-soft); border-radius: 2.2mm; padding: 3.5mm 4mm; margin: 3mm 0; }
+  .callout .kick { margin-bottom: 1mm; }
+  .q { display: grid; grid-template-columns: 8mm 1fr; gap: 1mm; padding: 3mm 0; border-bottom: 1px solid var(--line); }
+  .q .k { font-weight: 800; color: var(--or); font-size: 12pt; line-height: 1.1; }
+  .q b { display: block; font-size: 9.2pt; margin-bottom: .8mm; }
+  .q .rec { color: var(--or); font-weight: 600; font-size: 7.4pt; }
+  .small { font-size: 7.3pt; color: var(--muted); }
+  .src td { font-size: 7.3pt; }
+  .src td:first-child { color: var(--ink); font-weight: 500; width: 36%; }
+
+  /* cover */
+  .cover { padding: 0; display: flex; flex-direction: column; }
+  .cover .top { padding: 22mm 20mm 0; flex: 1; }
+  .brand { font-size: 7.5pt; font-weight: 600; letter-spacing: .45em; color: var(--ink); display: flex; align-items: center; gap: 2.5mm; }
+  .brand::before { content: ""; width: 2.3mm; height: 2.3mm; border-radius: 50%; background: var(--or); display: inline-block; }
+  .cover .kick { margin-top: 38mm; font-size: 7.6pt; }
+  .cover h1 { font-size: 46pt; line-height: .98; margin: 5mm 0 6mm; }
+  .cover .lead { font-size: 12pt; max-width: 150mm; }
+  .cover .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 4mm; margin-top: 12mm; border-top: 1px solid var(--line); padding-top: 4mm; }
+  .cover .steps div { font-size: 7.6pt; color: var(--muted); }
+  .cover .steps div b { display: block; color: var(--or); font-size: 7pt; letter-spacing: .15em; }
+  .cover .steps div.on { color: var(--ink); }
+  .cover .band { background: var(--or); color: #1a0d05; padding: 10mm 20mm; display: flex; justify-content: space-between; align-items: flex-end; }
+  .cover .band .nm { font-weight: 700; font-size: 13pt; }
+  .cover .band .cr { font-size: 7.4pt; margin-top: 1mm; }
+  .cover .band .h { font-weight: 700; font-size: 10pt; text-align: right; }
+  .cover .band .h span { display: block; font-weight: 400; font-size: 7.4pt; }
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<div class="page cover">
+  <div class="top">
+    <div class="brand">PARABOX AI</div>
+    <div class="kick">Step 2 of 3 · The blueprint · For approval</div>
+    <h1>1,000 MEDICAL<br><em>PROMPTS.</em></h1>
+    <p class="lead">How I'm going to write your 1,000-prompt library. It combines the prompting guidelines of OpenAI, Anthropic, Google and Microsoft with the house style of the 12 Parabox prompt packs already in your Drive.</p>
+    <div class="steps">
+      <div><b>STEP 1 · DONE</b>Research the lab guidelines and build the SKILL.md</div>
+      <div class="on"><b>STEP 2 · THIS PDF</b>Study your Drive packs, merge both, lock the format</div>
+      <div><b>STEP 3 · NEXT</b>Write and QA the 1,000 prompts, part by part</div>
+    </div>
+  </div>
+  <div class="band">
+    <div><div class="nm">Dr. Abhishek J. Benur</div><div class="cr">MD Respiratory Medicine, AIIMS Rishikesh · Co-Founder, Parabox AI</div></div>
+    <div class="h">@abhishekjbenur<span>paraboxai.com</span></div>
+  </div>
+</div>
+
+<!-- 2 WHAT I STUDIED -->
+<div class="page">
+  <div class="kick">01 · What I studied</div>
+  <h2>12 of your packs, <em>read end to end.</em></h2>
+  <p class="lead">I searched your Drive for every prompt PDF you've published and read the medical and study ones in full. Here's what each one contributed to the blueprint.</p>
+  <table>
+    <tr><th style="width:34%">Your PDF</th><th>What I'm taking from it</th></tr>
+    <tr><td><b>The Complete Thesis Prompts</b><br><span class="small">Topic to Manuscript · 6 prompts</span></td><td>The flagship format: USE IT / WHY / COPY THE PROMPT / RULES / HOW TO GET MORE OUT OF IT. Senior persona with a personality trait. MY CONTEXT fill-in block. [CITE] / [VERIFY] tags. The "hostile reviewer" and "AVOID THESE" endings.</td></tr>
+    <tr><td><b>The Research Prompt Pack</b><br><span class="small">6 prompts incl. protocol</span></td><td>The protocol master prompt (ICMR, CTRI, IEC, consent form, Gantt timeline). The five non-negotiables page. "Run each stage in a fresh chat."</td></tr>
+    <tr><td><b>AI Research Prompts (3-prompt)</b></td><td>The phased prompt (Phase 1 → 2 → 3) inside one prompt, a tool-per-phase table, and an ethics-of-AI box.</td></tr>
+    <tr><td><b>AI in PG Thesis Parts 1–3</b><br><span class="small">Topic Finder · Writing Guide · Methodology</span></td><td>Tool chains (Perplexity → Consensus → Semantic Scholar → Claude). Follow-up prompts. The "draft first, AI refines" golden rule. OpenEpi verification for sample size.</td></tr>
+    <tr><td><b>Thesis Stats Toolkit</b></td><td>Short in-tool prompts for Sheets, Julius AI and ChatGPT. "Check the assumption, name the test, report the exact p."</td></tr>
+    <tr><td><b>The Prompt Cheatcode</b></td><td>Your own <b>P-R-O-M-P-T</b> framework (Persona · Request · Output · Material · Parameters · Tweak), plus the Bad → Good → Better demo.</td></tr>
+    <tr><td><b>Ophthalmology Claude Prompts</b></td><td>The five exam archetypes: Topic Master, Viva Simulator, Comparison Table, PYQ Answer Writer, Flashcards. They work for any specialty.</td></tr>
+    <tr><td><b>Parabox Study Guide (NEET-PG / INI-CET)</b></td><td>NotebookLM audio, Custom GPT "answer only from my files" and a rapid-fire viva drill.</td></tr>
+    <tr><td><b>3 ChatGPT Prompts to Learn Any Topic</b></td><td>The tutor that checks understanding before moving on, the study-coach plan, and the whiteboard-logic exam mentor.</td></tr>
+    <tr><td><b>Medical Presentation Builder</b></td><td>The mixed-audience seminar deck: foundation recap, evidence corner, controversies, speaker notes and Vancouver references.</td></tr>
+    <tr><td><b>15 AI Cheat Codes</b></td><td>Format-driven prompts (flowchart, layers, decision matrix, roadmap, tree…) with a text fallback and a <b>TRY IT WITH</b> example line.</td></tr>
+    <tr><td><b>7 Prompts to Humanize AI · Consensus Workflow · Comic Flashcards · Handwritten Notes</b></td><td>Style-editing prompts, grounded search with verifiable citations, and visual study formats (for image tools).</td></tr>
+  </table>
+  <div class="callout"><div class="kick">Not used</div><span class="small">Reel kits, image-conversion prompts, course and tool round-ups, and other people's PDFs shared with you. These aren't medical prompt packs, and some of them aren't your work.</span></div>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 3 HOUSE STYLE DNA -->
+<div class="page">
+  <div class="kick">02 · Your house style</div>
+  <h2>The Parabox prompt DNA: <em>8 traits</em> I'll keep in all 1,000.</h2>
+  <p class="lead">Across every pack, your prompts share a signature. Your own line puts it best: "written the way a research supervisor thinks, not the way a chatbot answers."</p>
+  <div class="num-list">
+    <div class="it"><div class="k">01</div><div><b>A senior persona with credentials and a personality.</b>"A biostatistician with two decades of experience… openly critical of common misuse." "A strict but fair examiner." It's never just "You are an expert."</div></div>
+    <div class="it"><div class="k">02</div><div><b>A MY CONTEXT block of labelled fill-in fields.</b>Specialty, programme and year, institution type, patient volume, resources you do and don't have. "The AI does not know your patients."</div></div>
+    <div class="it"><div class="k">03</div><div><b>A numbered TASK that names exactly what comes out.</b>"Generate 8 candidate research questions… for each, give me exactly this: 1… 10."</div></div>
+    <div class="it"><div class="k">04</div><div><b>A RULES block against fabrication, with named tags.</b>[CITE], [VERIFY], [ASSUMPTION — VERIFY FROM PUBLISHED DATA], [CITATION NEEDED — FIND SOURCE], [UNVERIFIED BACKGROUND].</div></div>
+    <div class="it"><div class="k">05</div><div><b>India-first realism.</b>Government medical college, ICMR 2017, NFHS, CTRI, IEC, NEET-PG / INI-CET, 2-year MD timelines, limited lab infrastructure.</div></div>
+    <div class="it"><div class="k">06</div><div><b>A self-critique ending.</b>"The three sentences a hostile reviewer would attack first", "AVOID THESE", "act as the ethics committee reviewer", "performance summary".</div></div>
+    <div class="it"><div class="k">07</div><div><b>Wrapped in USE IT · WHY · HOW TO GET MORE OUT OF IT.</b>You tell the doctor when to use each prompt, why it exists, and how to push the output further.</div></div>
+    <div class="it"><div class="k">08</div><div><b>An honest, direct voice.</b>"The AI drafts. You decide." "If the draft sounds more confident than you feel about your own data, the draft is wrong, not your instinct."</div></div>
+  </div>
+  <h3>Design system (from your Thesis Prompts PDF)</h3>
+  <div class="grid3">
+    <div class="card"><div class="kick">Colour</div>Near-black <b>#0A0808</b> background · Parabox orange <b>#FF641E</b> · cream text <b>#FBF4EC</b></div>
+    <div class="card"><div class="kick">Type</div><b>Poppins</b> for headings and body · <i style="font-family:Lora">Lora italic</i> for intros and the WHY line</div>
+    <div class="card"><div class="kick">Elements</div>Spaced-caps orange kickers, big orange numbers, orange left rule on prompt boxes, orange cover band</div>
+  </div>
+  <p class="small" style="margin-top:3mm">This blueprint is set in that same system, so it doubles as a preview of how the final book will look.</p>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 4 MERGE -->
+<div class="page">
+  <div class="kick">03 · Merging the two</div>
+  <h2>Lab guidelines × your style: <em>what changes.</em></h2>
+  <p class="lead">Your packs already follow most of what OpenAI, Anthropic, Google and Microsoft recommend. Where they differ, here's what I'll do across all 1,000 prompts.</p>
+  <table>
+    <tr><th style="width:27%">Lab guideline</th><th style="width:33%">Your packs today</th><th>What I'll do in the 1,000</th></tr>
+    <tr><td><b>Role / persona</b><br><span class="small">all four labs</span></td><td>✔ Already stronger than the labs' examples: seniority plus a personality trait.</td><td>Keep as is. Every prompt opens with a credentialed persona.</td></tr>
+    <tr><td><b>Give context &amp; explain why</b><br><span class="small">Anthropic, Google, Microsoft</span></td><td>✔ The MY CONTEXT block. The WHY is written for the reader, not the model.</td><td>Keep the block, and add a short reason to key rules ("…because examiners check every number") so the model generalises.</td></tr>
+    <tr><td><b>Say what to do, not only what to avoid</b><br><span class="small">all four labs</span></td><td>Partly. Rules lean on "Do not…", though most already give the fix ([CITE]).</td><td>Every "Do not" gets paired with the action to take instead. The critical bans stay.</td></tr>
+    <tr><td><b>Long pasted material first, question last</b><br><span class="small">Anthropic: up to 30% better</span></td><td>Mixed. Some paste slots come after the task.</td><td>The [PASTE …] slot always sits above the TASK block.</td></tr>
+    <tr><td><b>Name the output format</b><br><span class="small">all four labs</span></td><td>✔ Word counts, tables, "exactly this".</td><td>Keep. Every prompt names its shape, length and tone.</td></tr>
+    <tr><td><b>Examples (few-shot)</b><br><span class="small">OpenAI, Anthropic</span></td><td>Only in some packs (the variable list in Stats, TRY IT WITH in Cheat Codes).</td><td>Add a TRY IT WITH line to every Quick and Standard prompt, and a worked example to each Master prompt where it helps.</td></tr>
+    <tr><td><b>No contradictory instructions</b><br><span class="small">OpenAI GPT-5 guide</span></td><td>✔ None found.</td><td>An automated check during QA.</td></tr>
+    <tr><td><b>One job per prompt; chain big work</b><br><span class="small">Anthropic, OpenAI</span></td><td>Master prompts do 10–13 jobs, with a tip to run each stage in a fresh chat.</td><td>Keep a few Master prompts for full workflows. Most of the 1,000 do one job, with <b>→ NEXT</b> pointers that chain them.</td></tr>
+    <tr><td><b>Iterate / follow-up turns</b><br><span class="small">all four labs</span></td><td>✔ The HOW TO GET MORE tips and the Tweak layer.</td><td>Keep, as a single PRO TIP line per prompt to save space.</td></tr>
+    <tr><td><b>Ideal length</b><br><span class="small">Google ~21 words for simple asks; longer for complex</span></td><td>Flagship prompts run 300–600 words. Ophthalmology / ChatGPT ones run 60–120.</td><td>Three tiers (next page). The Step 1 "Deep 150–300" tier is replaced by a longer Master tier to match your flagship prompts.</td></tr>
+  </table>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 5 FRAMEWORK + TIERS -->
+<div class="page">
+  <div class="kick">04 · The framework</div>
+  <h2>Built on your own <em>P-R-O-M-P-T.</em></h2>
+  <p class="lead">Your Prompt Cheatcode already covers every element the four labs require. Rather than bring in a new acronym, the 1,000 prompts are built on your framework, and every block maps to the lab guidance.</p>
+  <div class="promptbig">
+    <div><div class="L">P</div><div class="w">Persona</div><div class="d">A senior expert with credentials and a trait</div><div class="m">Google Persona · OpenAI Identity · Claude role</div></div>
+    <div><div class="L">R</div><div class="w">Request</div><div class="d">One clear task, as numbered steps</div><div class="m">Google Task · Microsoft Goal · OpenAI Instructions</div></div>
+    <div><div class="L">O</div><div class="w">Output</div><div class="d">Shape, length, tone, tables, slides</div><div class="m">Google Format · Microsoft Expectations</div></div>
+    <div><div class="L">M</div><div class="w">Material</div><div class="d">MY CONTEXT block + [PASTE] slot (first)</div><div class="m">Google Context · Microsoft Context + Source</div></div>
+    <div><div class="L">P</div><div class="w">Parameters</div><div class="d">Rules, guidelines, [CITE] / [VERIFY] guards</div><div class="m">OpenAI constraints · Claude "say if unsure"</div></div>
+    <div><div class="L">T</div><div class="w">Tweak</div><div class="d">Self-critique ending + PRO TIP + → NEXT</div><div class="m">All four labs: iterate</div></div>
+  </div>
+  <p class="small">In each prompt, the blocks appear in the order the labs recommend (Persona → Material → Request → Parameters → Output → Tweak), with your labels: <b>MY CONTEXT · TASK · RULES · OUTPUT</b>.</p>
+
+  <div class="kick" style="margin-top:6mm">05 · Length &amp; mix</div>
+  <h2>Three tiers, <em>matched to the job.</em></h2>
+  <div class="tiers">
+    <div class="tier"><div class="t">Quick</div><div class="big">40–80 words</div><div class="s">One focused output: a differential, 20 flashcards, a mnemonic, one slide rewrite. Persona + Request + Output in 2–4 sentences, like your ChatGPT and Ophthalmology prompts.</div><div class="c">≈ 300 prompts · 4 per page</div></div>
+    <div class="tier hot"><div class="t">Standard · default</div><div class="big">100–200 words</div><div class="s">One real task done properly: a mini MY CONTEXT, a numbered TASK, one or two RULES, OUTPUT and a PRO TIP. Most of the library.</div><div class="c">≈ 580 prompts · 2 per page</div></div>
+    <div class="tier"><div class="t">Master</div><div class="big">250–450 words</div><div class="s">Your flagship format for full workflows: protocol, SAP, full ROL, full manuscript, full mock viva. The full USE IT / WHY / TIPS wrapper.</div><div class="c">≈ 120 prompts · 1 per page</div></div>
+  </div>
+  <div class="callout"><div class="kick">Context rules (from Step 1, now in your style)</div>
+    <ul class="arrow" style="margin-top:1mm">
+      <li>2–5 context fields the AI can't guess: level, specialty, setting, exam or journal, resources.</li>
+      <li>Placeholders in <b>[SQUARE BRACKETS]</b> with a hint, like [e.g. Respiratory Medicine]. Five or fewer in Quick prompts; more are fine in the Master MY CONTEXT block.</li>
+      <li>Anything pasted goes above the TASK. No contradictions. Say what to do, and name the output.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 6 SAMPLE CARDS: QUICK + STANDARD -->
+<div class="page">
+  <div class="kick">06 · What the prompts will look like</div>
+  <h2>Sample cards: <em>Quick &amp; Standard.</em></h2>
+  <p class="lead">These are real prompts that will go in the book, laid out as they'll appear.</p>
+
+  <div class="card" style="margin-bottom:3.5mm">
+    <div class="pc-head"><div><span class="pc-num">921</span><span class="pc-title">Prioritised differential with can't-miss diagnoses</span></div><span class="badge">Quick</span></div>
+    <div class="pc-meta">PART 3 › 3.6 CLINICAL REASONING &amp; DIFFERENTIAL DIAGNOSIS · STUDENT / RESIDENT</div>
+    <div class="prompt">Act as a senior <span class="ph">[SPECIALTY]</span> consultant teaching on ward rounds. For this de-identified case, <span class="ph">[PASTE AGE, SEX, COMPLAINT, KEY FINDINGS]</span>, list the 5 most likely diagnoses and the 2 can't-miss diagnoses. For each, give the one finding for and the one against, then the single next investigation that best separates the top two. Reason step by step. Say if the case lacks data to decide.</div>
+    <div class="tip"><b>TRY IT WITH</b>58M, sudden breathlessness, pleuritic pain, HR 118, SpO2 89%, recent knee surgery.</div>
+  </div>
+
+  <div class="card">
+    <div class="pc-head"><div><span class="pc-num">512</span><span class="pc-title">Journal club: critical appraisal &amp; presentation</span></div><span class="badge fill">Standard</span></div>
+    <div class="pc-meta">PART 2 › 2.2 JOURNAL CLUB · RESIDENT</div>
+    <div class="use"><b>USE IT</b>The week before you present, after you've chosen the paper.</div>
+    <div class="prompt">
+      <span class="lbl">Persona</span>You are a clinical epidemiologist who moderates a departmental journal club and is known for spotting the flaw everyone else missed.
+      <span class="lbl">My context</span>I am a <span class="ph">[PG year]</span> resident in <span class="ph">[SPECIALTY]</span>, presenting to residents and faculty in <span class="ph">[N]</span> minutes.<br><span class="ph">[PASTE FULL TEXT OR ABSTRACT HERE]</span>
+      <span class="lbl">Task</span>1. Summarise the PICO and the study design in 4 lines. 2. Appraise it with the <span class="ph">[CASP / JBI]</span> checklist for this design, item by item. 3. Give 3 real strengths and the 3 limitations that most threaten the conclusion. 4. State the clinical bottom line for an Indian setting. 5. Give 5 discussion questions for the audience.
+      <span class="lbl">Rules</span>Use only the paper I pasted. If a detail isn't reported, write [NOT REPORTED] rather than assuming it, because the audience will check.
+      <span class="lbl">Output</span>A 12–15 slide outline: slide title, 3–5 bullets, one-line speaker note. End with the 3 questions faculty are most likely to ask me, with short answers.
+    </div>
+    <div class="tip"><b>PRO TIP</b>Run it a second time with "act as the harshest faculty member". Those answers become your backup slides. <b style="margin-left:2mm">→ NEXT</b>#548 Turn this outline into slides.</div>
+  </div>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 7 SAMPLE MASTER -->
+<div class="page">
+  <div class="kick">06 · What the prompts will look like</div>
+  <h2>Sample card: <em>Master.</em></h2>
+  <div class="card">
+    <div class="pc-head"><div><span class="pc-num">361</span><span class="pc-title">From interesting case to CARE-compliant case report</span></div><span class="badge">Master</span></div>
+    <div class="pc-meta">PART 1 › 1.12 CASE REPORTS &amp; CASE SERIES · RESIDENT / FACULTY</div>
+    <div class="grid2" style="margin-bottom:2.5mm">
+      <div class="use" style="margin:0"><b>USE IT</b>As soon as you suspect a case is unusual, while the notes, images and consent are still easy to get.</div>
+      <div class="use" style="margin:0;font-family:Lora;font-style:italic"><b style="font-family:Poppins;font-style:normal">WHY</b>Most case reports are rejected because they aren't novel or the timeline is unclear, not because the writing is weak. This prompt checks publishability first.</div>
+    </div>
+    <div class="prompt">
+      <span class="lbl">Persona</span>You are the case-reports editor of an indexed <span class="ph">[SPECIALTY]</span> journal. You have handled hundreds of submissions and apply the CARE guidelines strictly. You are blunt about whether a case is actually publishable.
+      <span class="lbl">My context</span>Specialty and my level: <span class="ph">[e.g. MD Respiratory Medicine, PG year 2]</span><br>Setting: <span class="ph">[tertiary / district / private]</span><br>De-identified case summary (age band, sex, presentation, key investigations with dates as Day 0, Day 3…, treatment, outcome, follow-up): <span class="ph">[PASTE]</span><br>Why I think it is unusual: <span class="ph">[state]</span><br>Target journal and its case-report word limit: <span class="ph">[name / limit]</span><br>Patient consent for publication: <span class="ph">[obtained / pending]</span>
+      <span class="lbl">Task</span>1. Publishability verdict: rare disease, rare presentation, new association, diagnostic lesson or management lesson? Score novelty out of 5 and justify it against my case.<br>2. Five title options that each contain the words "case report".<br>3. A CARE-structured draft: abstract (≤150 words), introduction, patient information, clinical findings, timeline table, diagnostic assessment (including the differential you excluded and how), therapeutic intervention, follow-up and outcome, discussion, patient perspective placeholder and learning points.<br>4. A CARE checklist table showing where each item appears and flagging anything missing.<br>5. The consent and de-identification checklist I need before submission.
+      <span class="lbl">Rules</span>Use only the clinical details I gave. Where something is missing, write [ASK ME: …] instead of filling it in. Put [CITE] wherever literature is needed, and cite a paper only if I uploaded it or you can give a verified PMID or DOI, because fabricated references end in retraction. Keep every date relative (Day 0…) and remove anything identifying.
+      <span class="lbl">Output</span>Formal case-report register within my journal's word limit, then the two checklist tables.
+      <span class="lbl">Tweak</span>Finish with the 3 comments a reviewer is most likely to make, and how to pre-empt each.
+    </div>
+    <div class="tip"><b>HOW TO GET MORE OUT OF IT</b></div>
+    <ul class="arrow small" style="margin-top:1mm">
+      <li>If the verdict says "not novel", reframe the case as a teaching image or a letter instead of forcing a full report.</li>
+      <li>Build the timeline table first. Reviewers read it before the text.</li>
+      <li>Upload 3–5 similar published cases so the discussion compares against real papers. <b class="or">→ NEXT</b> #366 Case report to conference poster.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 8 STRUCTURE PART 1 -->
+<div class="page">
+  <div class="kick">07 · The library</div>
+  <h2>Part 1 · Thesis, Research <em>&amp; Publication</em> <span class="or" style="font-size:13pt">400</span></h2>
+  <table>
+    <tr><th style="width:7%">#</th><th style="width:25%">Section</th><th style="width:6%">N</th><th>Sample prompts</th></tr>
+    <tr><td>1.1</td><td><b>Topic selection &amp; research question</b></td><td class="n">35</td><td>8 feasible topics from my context · FINER stress-test of my question · Clinical hunch → PICOT</td></tr>
+    <tr><td>1.2</td><td><b>Literature search strategy</b></td><td class="n">30</td><td>PubMed MeSH search string · Broad vs narrow versions · Grey literature &amp; CTRI checklist</td></tr>
+    <tr><td>1.3</td><td><b>Writing the Introduction</b></td><td class="n">30</td><td>Four-movement introduction · Refine my draft (language only) · Burden-data sourcing checklist</td></tr>
+    <tr><td>1.4</td><td><b>Review of Literature</b></td><td class="n">40</td><td>Thematic ROL skeleton · Extraction table from uploaded PDFs · Three-sentence gap statement</td></tr>
+    <tr><td>1.5</td><td><b>Aims, objectives &amp; hypotheses</b></td><td class="n">20</td><td>SMART objectives · Null and alternate hypotheses · Objective ↔ outcome alignment check</td></tr>
+    <tr><td>1.6</td><td><b>Study design &amp; methodology</b></td><td class="n">40</td><td>Choose the right design · Operational definitions for every variable · Criteria a second reviewer can apply</td></tr>
+    <tr><td>1.7</td><td><b>Sample size &amp; statistics</b></td><td class="n">45</td><td>Pre-specified SAP · "Which test?" decision table · Sample size with every assumption shown</td></tr>
+    <tr><td>1.8</td><td><b>Results, tables &amp; figures</b></td><td class="n">25</td><td>Table 1 layout · Results without interpretation · Best figure for my primary outcome</td></tr>
+    <tr><td>1.9</td><td><b>Discussion, conclusion &amp; limitations</b></td><td class="n">30</td><td>10-paragraph discussion · Limitations ranked by threat · Hostile-reviewer rewrite</td></tr>
+    <tr><td>1.10</td><td><b>Protocol, ethics &amp; synopsis</b></td><td class="n">20</td><td>IEC-ready ethics section (ICMR 2017) · Plain-language consent form · CTRI registration walk-through</td></tr>
+    <tr><td>1.11</td><td><b>Thesis → manuscript &amp; publication</b></td><td class="n">35</td><td>Thesis-to-paper cut plan · Journal fit check · Cover letter under 300 words · Response to reviewers</td></tr>
+    <tr><td>1.12</td><td><b>Case reports &amp; case series</b></td><td class="n">30</td><td>Is my case publishable? · CARE-compliant draft · Case series pattern and table builder</td></tr>
+    <tr><td>1.13</td><td><b>Conference abstracts, posters &amp; oral papers</b></td><td class="n">20</td><td>Abstract to the exact word limit · Thesis → 10-minute oral paper · Poster from my manuscript</td></tr>
+  </table>
+  <div class="callout"><div class="kick">Where your existing prompts fit</div><span class="small">Your 6 flagship thesis prompts and the protocol prompt become the <b>Master</b> anchors for sections 1.1, 1.3, 1.4, 1.7, 1.9, 1.10 and 1.11. They'll be refreshed to the merged rules above (paired "Do not"s, paste slot first, TRY IT WITH line). The Standard and Quick prompts around each one break its work into single steps.</span></div>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 9 STRUCTURE PART 2 & 3 -->
+<div class="page">
+  <div class="kick">07 · The library</div>
+  <h2>Part 2 · Seminars, Journal Clubs <em>&amp; Presentations</em> <span class="or" style="font-size:13pt">300</span></h2>
+  <table>
+    <tr><th style="width:7%">#</th><th style="width:25%">Section</th><th style="width:6%">N</th><th>Sample prompts</th></tr>
+    <tr><td>2.1</td><td><b>Seminar preparation</b></td><td class="n">60</td><td>Seminar outline for any topic · Mixed-audience depth layering · Evidence corner: landmark trials</td></tr>
+    <tr><td>2.2</td><td><b>Journal club</b></td><td class="n">60</td><td>Paper selection shortlist · CASP / JBI appraisal · Faculty questions I'll be asked</td></tr>
+    <tr><td>2.3</td><td><b>Slide design &amp; structure</b></td><td class="n">40</td><td>One idea per slide rewrite · Text → table or flowchart · Speaker notes for every slide</td></tr>
+    <tr><td>2.4</td><td><b>Conference oral presentations</b></td><td class="n">35</td><td>8-minute timing plan · Opening hook · Rehearsal Q&amp;A drill</td></tr>
+    <tr><td>2.5</td><td><b>Conference posters</b></td><td class="n">35</td><td>Cut content to 800 words · Visual hierarchy brief for Canva · E-poster version</td></tr>
+    <tr><td>2.6</td><td><b>Case presentations &amp; grand rounds</b></td><td class="n">40</td><td>Grand-rounds case narrative · Case → teaching points · Questions the HOD will ask</td></tr>
+    <tr><td>2.7</td><td><b>Delivery, Q&amp;A &amp; teaching</b></td><td class="n">30</td><td>Handling a question I can't answer · Teaching session for interns · Script feedback</td></tr>
+  </table>
+  <h2 style="margin-top:6mm">Part 3 · Study, Exam <em>&amp; Viva Prep</em> <span class="or" style="font-size:13pt">300</span></h2>
+  <table>
+    <tr><th style="width:7%">#</th><th style="width:25%">Section</th><th style="width:6%">N</th><th>Sample prompts</th></tr>
+    <tr><td>3.1</td><td><b>Learning any topic</b></td><td class="n">50</td><td>Teach me in four layers · Structured topic master · Tutor that checks my understanding</td></tr>
+    <tr><td>3.2</td><td><b>Study planning &amp; revision</b></td><td class="n">30</td><td>Day-by-day plan weighted to weak areas · Last-30-days plan · Recover a broken schedule</td></tr>
+    <tr><td>3.3</td><td><b>MCQ practice &amp; exam strategy</b></td><td class="n">50</td><td>20 exam-pattern MCQs · "Why was my answer wrong?" · PYQ trap analysis (NEET-PG, INI-CET, USMLE, PLAB, MRCP)</td></tr>
+    <tr><td>3.4</td><td><b>Long / short answer writing</b></td><td class="n">30</td><td>Model long answer + examiner key points · 250-word short note · Diagram description</td></tr>
+    <tr><td>3.5</td><td><b>Viva &amp; OSCE</b></td><td class="n">50</td><td>Mock viva, one question at a time · OSCE station simulation · Spotter and instrument viva</td></tr>
+    <tr><td>3.6</td><td><b>Clinical reasoning &amp; differentials</b></td><td class="n">60</td><td>Prioritised DDx with can't-miss diagnoses · Next best investigation · Illness-script builder</td></tr>
+    <tr><td>3.7</td><td><b>Memory aids &amp; high-yield</b></td><td class="n">30</td><td>20 Anki-ready flashcards · Mnemonics · One-page high-yield sheet · Comparison table</td></tr>
+  </table>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 10 BOOK ANATOMY + QA -->
+<div class="page">
+  <div class="kick">08 · The book</div>
+  <h2>How the final PDF <em>is built.</em></h2>
+  <div class="grid2">
+    <div>
+      <h3 style="margin-top:0">Front matter</h3>
+      <ul class="arrow">
+        <li>Cover in the Parabox style</li>
+        <li><b>Read this first</b>: your 5 non-negotiables</li>
+        <li><b>How to use each prompt</b>: brackets, fresh chat per stage, push back</li>
+        <li><b>The P-R-O-M-P-T framework</b> with the Bad → Good → Better demo</li>
+        <li><b>Quick-find index</b>: "I need to…" → prompt number</li>
+      </ul>
+      <h3>Body</h3>
+      <ul class="arrow">
+        <li>3 part openers with section lists</li>
+        <li>27 section openers, each with a one-line WHY</li>
+        <li>1,000 numbered prompt cards, with tier badges and → NEXT chains</li>
+      </ul>
+      <h3>Back matter</h3>
+      <ul class="arrow">
+        <li>Tool-per-task table (Perplexity, Consensus, NotebookLM, Claude, ChatGPT, Julius…)</li>
+        <li>Ethics of AI in research box · closing note · disclaimer</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="margin-top:0">Every prompt passes this QA check</h3>
+      <ul class="arrow">
+        <li>Has all six P-R-O-M-P-T blocks (Quick prompts may merge them)</li>
+        <li>The persona has seniority and a trait</li>
+        <li>Word count is inside its tier</li>
+        <li>Paste slot sits above the TASK</li>
+        <li>Output shape and length are named</li>
+        <li>Every "Do not" comes with the action to take instead</li>
+        <li>Has an accuracy guard where facts matter: [CITE], [VERIFY], PMID/DOI rule</li>
+        <li>No patient identifiers, and the de-identification line is present on case prompts</li>
+        <li>No contradictions, and no near-duplicate of another prompt</li>
+        <li>Works unchanged in ChatGPT, Claude, Gemini and Copilot</li>
+      </ul>
+      <div class="callout" style="margin-top:4mm"><div class="kick">Size estimate</div>≈ 300 Quick (4/page) + 580 Standard (2/page) + 120 Master (1/page) ≈ <b>480–520 pages</b> with openers. See decision 01.</div>
+    </div>
+  </div>
+  <h3>Production plan</h3>
+  <table>
+    <tr><th style="width:18%">Batch</th><th>What you get</th></tr>
+    <tr><td><b>Batch 1</b></td><td>Part 1 · Thesis, Research &amp; Publication (400 prompts) as a PDF for review</td></tr>
+    <tr><td><b>Batch 2</b></td><td>Part 2 · Seminars, Journal Clubs &amp; Presentations (300)</td></tr>
+    <tr><td><b>Batch 3</b></td><td>Part 3 · Study, Exam &amp; Viva Prep (300), then the combined 1,000-prompt book with index</td></tr>
+  </table>
+  <p class="small">Each batch goes through automated checks (word counts, bracket counts, duplicates, required blocks), then a read-through before you see it.</p>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+<!-- 11 DECISIONS -->
+<div class="page">
+  <div class="kick">09 · Your call</div>
+  <h2>Four decisions <em>before I start.</em></h2>
+  <p class="lead">Each one has a recommendation. Reply "go with the recommendations" or change any of them.</p>
+  <div class="q"><div class="k">01</div><div><b>One book or three volumes?</b>At about 500 pages, a single PDF is heavy to share on WhatsApp or through DMs. Three volumes (one per part) plus a combined edition are easier to share and let you release one at a time.<div class="rec">Recommended: three volumes plus a combined edition.</div></div></div>
+  <div class="q"><div class="k">02</div><div><b>Reuse your existing prompts?</b>About 40 of your published prompts (thesis, protocol, ophthalmology exam set, study guide) could become refreshed anchors inside the 1,000, or the library could be 100% new.<div class="rec">Recommended: reuse and refresh them as Master anchors, clearly the upgraded versions (about 4% of the library).</div></div></div>
+  <div class="q"><div class="k">03</div><div><b>Audience scope and exam list</b>Your packs are India-first (ICMR, CTRI, NEET-PG / INI-CET). Should prompts also carry international variants such as USMLE, PLAB, MRCP and FCPS?<div class="rec">Recommended: India-first defaults, with international exams offered as options inside the brackets, e.g. [NEET-PG / INI-CET / USMLE / PLAB / MRCP].</div></div></div>
+  <div class="q"><div class="k">04</div><div><b>Tier mix and split</b>300 Quick / 580 Standard / 120 Master, split 400 Thesis / 300 Seminars / 300 Study.<div class="rec">Recommended: keep as proposed.</div></div></div>
+
+  <h3>Sources</h3>
+  <table class="src">
+    <tr><td>Your Drive (12 PDFs)</td><td>The Complete Thesis Prompts · Research Prompt Pack · AI Research Prompts · AI PG Thesis Parts 1–3 · Thesis Stats Toolkit · Prompt Cheatcode · Ophthalmology Claude Prompts · Parabox Study Guide · 3 ChatGPT Prompts · Medical Presentation Builder · 15 AI Cheat Codes · 7 Humanize Prompts · Consensus Workflow</td></tr>
+    <tr><td>Anthropic</td><td>platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices</td></tr>
+    <tr><td>OpenAI</td><td>GPT-5 prompting guide (OpenAI Cookbook) · developers.openai.com/api/docs/guides/prompt-engineering</td></tr>
+    <tr><td>Google</td><td>ai.google.dev/gemini-api/docs/prompting-strategies · Gemini for Workspace prompt tips</td></tr>
+    <tr><td>Microsoft</td><td>Microsoft 365 Copilot: writing prompts · Azure OpenAI / Foundry prompt engineering techniques</td></tr>
+    <tr><td>Medical</td><td>JMIR 2025, Prompt Engineering in Clinical Practice: Tutorial for Clinicians</td></tr>
+  </table>
+  <div class="foot"><span>1,000 Medical Prompts · Blueprint</span><b>@abhishekjbenur</b></div>
+</div>
+
+</body>
+</html>
