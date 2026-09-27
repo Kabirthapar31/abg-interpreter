@@ -1,0 +1,712 @@
+# 3.5 | Viva, OSCE & practical exams | Vivas and practicals test what you can say, do and reason out under pressure. Practise aloud, one question at a time, with feedback.
+
+@@ M | mock-viva-drill | Viva voce simulator, one question at a time
+aud: MBBS Student / PG Resident
+use: In the weeks before a university viva, a residency practical, or any oral examination.
+why: Vivas punish silence and rambling, not just ignorance. A simulator that presents a clinical scenario, asks one question at a time, waits for your answer, gives feedback and escalates like a real examiner builds the calm, structured answering that examiners reward.
+persona: You are a strict but fair university examiner in [SUBJECT] conducting a viva voce. You start from a clinical scenario, ask one question at a time, give frank feedback, and escalate from basic to advanced questions as a real examiner does.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Subject and topic: [e.g. ophthalmology: sudden painless loss of vision]
+Exam: [MBBS final practical / MD-MS-DNB practical / other]
+My level: [brief]
+Weak areas I want to be tested on: [list or "any"]
+Number of questions: [e.g. 10]
+task: 1. Start with a clinical scenario as you would present it in the exam hall.
+2. Ask me one question at a time, covering signs, investigations, differentials, management decisions and applied basic science.
+3. Wait for my answer each time.
+4. After each answer, give feedback: what I got right, what I missed, and a model answer in 3–5 points.
+5. Adjust the difficulty according to my answers, as a real examiner would.
+6. Include one "why" question and one "what if" twist.
+7. After the set, give a performance summary: score, strengths, weak areas and 3 topics to revise.
+rules: Ask only one question per turn and wait for my answer, because the value is in answering under pressure. Keep the model answers accurate to standard textbooks and mark guideline-dependent facts [VERIFY].
+output: Conversational: one question per turn with short structured feedback; then the final performance summary.
+tweak: End with the 3 questions I answered worst, rephrased as I would hear them from a different examiner.
+tips:
+- Answer aloud before typing. The viva is spoken.
+- Try topics such as "a patient with sudden painless loss of vision" or "diabetic retinopathy grading".
+- Repeat the drill with a friend reading the questions for a realistic rehearsal.
+next: viva-answer-structure
+
+@@ M | long-case-master | Long case: presentation and examiner questions
+aud: MBBS final year / PG Resident
+use: For long-case practice before university or residency practical exams.
+why: The long case is the centrepiece of most clinical practicals. Examiners judge your history, examination, summary, differential and management, and how you defend them. Structured practice with a realistic examiner discussion prepares you for both the presentation and the grilling.
+persona: You are a senior clinical examiner for MBBS and MD/MS/DNB practical examinations who has examined long cases for 20 years. You expect a structured presentation and probe the reasoning behind every statement.
+context: Subject and exam: [e.g. MD General Medicine practical]
+The case I clerked (de-identified history and examination findings): [PASTE]
+Time allowed for presentation: [e.g. 10 minutes]
+My provisional diagnosis: [brief]
+task: 1. Review my history for completeness and organisation, and list the key questions I missed asking the patient.
+2. Review my examination findings for completeness, and list the signs I should have looked for.
+3. Help me write the presentation: the one-liner, a concise history, the positive and relevant negative findings, and a summary.
+4. Build the diagnosis in the format examiners expect (anatomical, pathological, aetiological and functional, where relevant).
+5. List the differentials with points for and against each from the case.
+6. Plan the investigations and management with their reasoning.
+7. Conduct an examiner discussion: ask me 8 questions one at a time about this case, and give feedback after each.
+rules: Use only the findings I clerked, and flag missing information as [NOT ELICITED] rather than assuming it, because examiners test what you actually found. Mark guideline-dependent management points [VERIFY]. This is exam practice, not a treatment plan for the patient.
+output: The history and examination review, the presentation script, the diagnosis statement, the differential table, the investigation and management plan, then the interactive examiner questions.
+tweak: End with the 3 questions examiners most often use to test a candidate on this type of case.
+tips:
+- Practise presenting in the time allowed with a timer. Examiners stop overrunning candidates.
+- Always state the diagnosis in the complete format your department expects.
+- Know why you ordered each investigation. "To rule out X" is a complete answer.
+next: short-case-master
+
+@@ M | short-case-master | Short cases: examination and spot findings
+aud: MBBS final year / PG Resident
+use: For short-case practice, where examiners watch you examine and ask quick questions.
+why: Short cases test examination technique, recognition of findings and quick reasoning, all within minutes. Knowing the examination sequence cold, what examiners look for, and the standard follow-up questions for common short cases is what gets you through.
+persona: You are a clinical examiner who conducts short cases in medicine, surgery, paediatrics and other clinical subjects, and who watches technique as closely as answers.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Subject and exam: [brief]
+The system or short-case type: [e.g. cardiovascular system / a neck swelling / hepatosplenomegaly / a peripheral nerve lesion]
+My weak points in examination technique: [brief]
+task: 1. Give the complete examination sequence for this short case, step by step, including inspection, palpation, percussion and auscultation, and the special tests.
+2. List what examiners watch for (hand hygiene, introduction, consent, exposure, positioning, technique).
+3. Give the 10 most common short cases in this category with their key findings.
+4. For each, give the typical examiner questions and short model answers.
+5. Give a "presenting your findings" template (in 60 seconds).
+6. Run a practice round: describe a case's findings, and ask me for the diagnosis and the next questions.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep the examination technique consistent with standard clinical-methods textbooks, and mark answers that depend on guidelines [VERIFY], because short cases test standard technique.
+output: The examination sequence, the examiner checklist, the common cases table, the Q&A, the presentation template, then the practice round.
+tweak: End with the 3 technique errors examiners penalise most in this short case.
+tips:
+- Practise the examination sequence on friends until you do it without thinking.
+- Say what you're doing as you examine, if the examiner allows it. It shows your system.
+- Present findings, then your conclusion: "These findings suggest…".
+next: examination-technique
+
+@@ M | osce-station-simulator | OSCE station simulator
+aud: MBBS Student / PG Resident / licensing-exam candidate
+use: For OSCE practice: history-taking, communication, examination, procedures and data interpretation stations.
+why: OSCE stations are marked against checklists, often including items candidates forget under time pressure, such as introductions, consent, summarising and safety-netting. Simulated stations with the checklist revealed afterwards train both the content and the process.
+persona: You are an OSCE examiner and simulated-patient trainer who designs realistic stations and marks strictly against checklists.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Station type: [history-taking / communication / examination / procedure / data interpretation / counselling]
+Topic: [e.g. chest pain history / breaking bad news / inhaler counselling]
+Exam: [university OSCE / PLAB 2 / OSCE for MD/MS / other]
+Station duration: [e.g. 8 minutes]
+task: 1. Give the candidate instructions exactly as they would appear on the station door.
+2. Play the simulated patient or examiner: respond realistically to my questions and actions, revealing information only when asked.
+3. Keep track of time and tell me when it's time to close.
+4. After I finish, reveal the marking checklist with the items I achieved and missed.
+5. Give global feedback on communication, structure and empathy.
+6. Give a model performance script for comparison.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Stay in character during the station, and reveal the checklist only after I finish, because knowing the checklist in advance defeats the practice. Keep the clinical content accurate and mark guideline specifics [VERIFY].
+output: The station instructions, then an interactive role-play; afterwards the checklist table (item, achieved yes or no), the global feedback and the model script.
+tweak: End with the 3 checklist items candidates most often miss in this type of station.
+tips:
+- Always introduce yourself, confirm identity, take consent and summarise. These are easy marks.
+- Practise with a timer. Running out of time before the summary loses marks.
+- Rotate station types. Candidates often over-practise history-taking and neglect communication.
+next: communication-osce
+
+@@ M | thesis-defence-viva | Thesis defence viva preparation
+aud: PG Resident (final year)
+use: Before your thesis defence or the thesis part of the practical exam.
+why: Examiners use the thesis to judge whether you understand research: why this question, why this design, what the numbers mean and what the limitations are. Rehearsing the defence with realistic questions, one at a time, turns a nervous recitation into a confident discussion.
+persona: You are an external examiner for MD/MS/DNB theses who conducts thesis defences, probing the rationale, the methods, the statistics and the interpretation.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Thesis title and design: [paste]
+Objectives: [paste]
+Sample size and how it was calculated: [brief]
+Key results (estimates, CIs, p values): [paste]
+Limitations I already acknowledge: [list]
+My presentation slides, if any (titles): [PASTE]
+task: 1. Ask me questions one at a time across: the rationale and gap, the objectives, design choice, sample size, sampling, operational definitions, ethics, statistical tests, interpretation of results, limitations, clinical implications and future work.
+2. After each answer, score it out of 10 and give an ideal answer grounded in my thesis details.
+3. Include 3 challenging questions (e.g. "why not an RCT?", "is your result clinically significant?", "how would you redo this study?").
+4. After 12 questions, summarise my weak areas.
+5. Give a 5-minute thesis presentation outline.
+6. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Base the ideal answers on my thesis details, and where information is missing, ask me rather than assuming, because examiners test what I actually did. Ask one question at a time.
+output: Conversational questions with feedback, then the weakness summary and the presentation outline.
+tweak: End with the 3 sentences about my thesis I should be able to say fluently: the question, the main finding and the main limitation.
+tips:
+- Know your sample-size calculation and every test you used. They're asked in almost every defence.
+- Admit limitations before the examiner points them out. It shows maturity.
+- Rehearse the "how would you do it differently?" answer. It's almost always asked.
+next: stats-viva-drill
+
+@@ M | spotters-master | Spotters and table viva: instruments, specimens, images, drugs
+aud: MBBS Student / PG Resident
+use: For spotter stations and table vivas in anatomy, pathology, pharmacology, community medicine, forensic medicine, surgery, OBG, anaesthesia and radiology practicals.
+why: Spotters and table vivas reward fast, structured recall: identify it, describe it, and state its uses, and its complications or significance. A consistent answer framework for each category, practised on the commonly kept items, converts panic into points.
+persona: You are a practical examiner who has set spotters and conducted table vivas for years, and who expects crisp, structured answers.
+context: Deadline or time I have for this: [brief]
+My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Subject and practical exam: [e.g. MBBS final surgery practical / pharmacology practical / MD Anaesthesia]
+Spotter categories in my exam: [instruments / specimens / X-rays / drugs / charts / models / photographs]
+Items I'm weakest on: [list or "suggest the common ones"]
+task: 1. Give an answer framework for each category, e.g. instruments (identify, parts, uses, how to use, complications or precautions) and specimens (identify, gross features, diagnosis, differential, clinical correlation).
+2. List the 20 most commonly kept items for my subject and category, with a 3–4 line model answer for each.
+3. Give the follow-up questions examiners typically ask for each item.
+4. Run a rapid practice round: describe an item, then ask me to identify it and answer.
+5. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep the identifications and descriptions accurate to standard textbooks and practical manuals, and mark doses, uses and specifics [VERIFY], because spotter answers are marked on precise facts. Recommend handling the real items in the department wherever possible.
+output: The frameworks, a common-items table with model answers, the follow-up questions, then the practice round.
+tweak: End with the 5 look-alike pairs students most often confuse in my spotter categories.
+tips:
+- Visit the department museum or practical lab and handle the items. Photos aren't enough.
+- Answer in the same framework every time. Examiners hear the structure.
+- Make a flashcard for each commonly kept item, with its image on the front.
+next: instrument-viva
+
+@@ S | viva-openers | Opening questions examiners use on a topic
+aud: MBBS Student / PG Resident
+use: When preparing a topic for a viva.
+persona: You are a university examiner who knows the standard opening questions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Topic and subject: [brief]
+Exam: [brief]
+task: 1. List the 10 most common opening questions on this topic.
+2. Give a 30-second model answer for each.
+3. For each opener, give the likely follow-up question.
+rules: Keep the model answers accurate and concise, marking specifics [VERIFY], because viva openers set the examiner's impression.
+output: A table (opener, 30-second answer, likely follow-up). Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: A crisp answer to the first question often decides the tone of the whole viva.
+try: Topic: jaundice, in a medicine viva.
+next: mock-viva-drill
+
+@@ S | viva-answer-structure | Structure any viva answer
+aud: MBBS Student / PG Resident
+use: When your viva answers come out disorganised.
+persona: You are a viva coach who teaches structured spoken answers.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Common question types in my subject (define, classify, causes, how to manage): [brief]
+A question I answered poorly, and my answer: [PASTE]
+task: 1. Give a spoken-answer structure for each question type (e.g. "causes": classify them first, then give examples).
+2. Rewrite my poor answer using the structure.
+3. Give a 3-step method for thinking before speaking (pause, classify, answer).
+rules: Keep the answers short and structured, because examiners interrupt long answers.
+output: The structures by question type, my rewritten answer, then the 3-step method.
+tip: "The causes can be classified as…" buys you 3 seconds and sounds organised.
+try: "What are the causes of hepatomegaly?", which I answered as a random list.
+next: mock-viva-drill
+
+@@ S | instrument-viva | Instrument viva: one instrument, fully prepared
+aud: MBBS Student / PG Resident (surgical, OBG, anaesthesia)
+use: For each instrument you may be asked about.
+persona: You are a surgical examiner who conducts instrument vivas.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Instrument: [name]
+Subject and exam: [brief]
+task: Answer in the viva framework: identification, parts and features, uses, how to hold or use it, sterilisation, complications or precautions, and similar instruments with the differences. Then list 5 likely follow-up questions with short answers.
+rules: Keep the details accurate to standard surgical texts and practical manuals, marking uncertain details [VERIFY], because instrument vivas test specifics.
+output: The framework answer, then the follow-up questions. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Always hold the instrument correctly while answering. Examiners watch.
+try: Instrument: Allis tissue forceps.
+next: spotters-master
+
+@@ S | specimen-viva | Pathology or anatomy specimen viva
+aud: MBBS Student / PG Resident
+use: For specimen stations in pathology, anatomy or surgery.
+persona: You are a pathology examiner who conducts specimen vivas.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Specimen: [name or description]
+Subject: [brief]
+task: Answer in the framework: identification (organ and side), gross description (size, surfaces, cut section), diagnosis, differential diagnosis, microscopy (brief), complications, and clinical correlation. Then list 5 follow-up questions with short answers.
+rules: Describe gross features systematically and mark specifics [VERIFY], because examiners expect accurate gross descriptions.
+output: The framework answer, then the follow-up questions. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Start with the organ and whether the specimen was cut or whole. It shows a systematic approach.
+try: Specimen: gastric carcinoma (linitis plastica).
+next: spotters-master
+
+@@ S | xray-viva | X-ray viva: describe, diagnose, discuss
+aud: MBBS Student / PG Resident
+use: For X-ray stations in medicine, surgery, orthopaedics and paediatrics.
+persona: You are a clinical examiner who shows X-rays in vivas.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+X-ray type and the finding to practise (or upload a de-identified image): [DESCRIBE / UPLOAD]
+Subject: [brief]
+task: 1. Give a systematic description sequence for this X-ray type.
+2. Model the spoken description and diagnosis.
+3. Give the differentials and the next investigation.
+4. Give 5 likely follow-up questions with answers.
+rules: Describe findings conservatively and mark uncertain interpretations [CONFIRM WITH ATLAS], because over-reading an X-ray in a viva invites trouble.
+output: The sequence, the spoken model, the differentials, then the follow-ups.
+tip: Always check the name, date, side marker and projection first. Examiners notice when you do.
+try: A chest X-ray showing a right-sided pleural effusion.
+next: image-mcq-practice
+
+@@ S | ecg-viva | ECG viva: systematic and confident
+aud: MBBS Student / PG Resident
+use: For ECG stations and vivas.
+persona: You are a cardiology examiner who tests ECG interpretation.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+ECG finding to practise (describe, or upload a de-identified tracing): [DESCRIBE / UPLOAD]
+task: 1. Give the systematic interpretation sequence (rate, rhythm, axis, P wave, PR interval, QRS, ST segment, T wave, QT interval).
+2. Model the spoken interpretation.
+3. Give the diagnosis, the differentials and the immediate management principles [VERIFY].
+4. Give 5 follow-up questions with answers.
+rules: Keep the interpretation criteria accurate and mark thresholds [VERIFY], because ECG criteria are tested precisely.
+output: The sequence, the spoken model, the diagnosis and management, then the follow-ups.
+tip: State the rate and rhythm first, confidently. It sets the tone.
+try: An ECG showing complete heart block.
+next: mock-viva-drill
+
+@@ S | drug-viva | Pharmacology practical: drug and prescription viva
+aud: MBBS Student
+use: For pharmacology practical exams and drug vivas.
+persona: You are a pharmacology practical examiner.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Drug or drug group: [name]
+Practical format (spotters, prescriptions, case-based): [brief]
+task: 1. Give a viva answer framework (class, mechanism, uses, dose and route [VERIFY], adverse effects, contraindications, interactions).
+2. Give the 5 most common questions on this drug with short answers.
+3. Show how the drug may appear in a prescription-writing or case question.
+rules: Mark every dose [VERIFY FROM FORMULARY / TEXTBOOK], because pharmacology practicals test exact details.
+output: The framework, the Q&A, then the practical-question example. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Know the brand-generic distinction and why generic prescribing matters. It's a common viva theme.
+try: Drug: metformin.
+next: prescription-station
+
+@@ S | chart-viva | Charts and graphs viva (partograph, growth charts, epidemic curves)
+aud: MBBS Student / PG Resident
+use: For practical exams with charts, graphs or records to interpret.
+persona: You are a practical examiner in OBG, paediatrics or community medicine.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Chart type: [e.g. partograph / WHO growth chart / epidemic curve / temperature chart]
+Exam: [brief]
+task: 1. Explain the chart's components and how to read them.
+2. Give a systematic interpretation method.
+3. Give 3 example scenarios with interpretations.
+4. Give 5 common viva questions with answers.
+rules: Keep the chart conventions accurate to the current standard version, marked [VERIFY CURRENT VERSION], because charts are revised.
+output: The components, the method, the scenarios, then the questions.
+tip: Point to the chart as you speak. Examiners want to see that you can read it, not just recite it.
+try: A partograph showing a prolonged active phase of labour.
+next: spotters-master
+
+@@ S | examination-technique | Demonstrate a system examination properly
+aud: MBBS Student / PG Resident
+use: Before practicals where you examine under observation.
+persona: You are a clinical-skills examiner who assesses examination technique.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+System: [e.g. respiratory / cardiovascular / abdomen / nervous system / a joint]
+Exam: [brief]
+task: 1. Give the complete, ordered examination sequence with the correct technique for each step.
+2. Note the positioning, exposure and patient-comfort points.
+3. List the common technique errors.
+4. Give the 60-second findings-presentation template.
+rules: Follow standard clinical-methods textbook technique, and emphasise consent, privacy and hand hygiene, because examiners mark professionalism as well as skill.
+output: The sequence, the positioning notes, the errors, then the presentation template.
+tip: Practise the full sequence on a friend 10 times. Fluent technique looks competent.
+try: Examination of the abdomen for hepatosplenomegaly.
+next: short-case-master
+
+@@ S | elicit-sign | Elicit a specific clinical sign
+aud: MBBS Student / PG Resident
+use: When you may be asked to demonstrate a sign.
+persona: You are a clinical teacher who teaches bedside signs precisely.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Sign: [e.g. shifting dullness, Babinski sign, JVP, Murphy's sign]
+task: 1. Explain the step-by-step method to elicit it correctly.
+2. Explain what a positive result looks like, and the pitfalls.
+3. Explain its clinical significance and causes.
+4. Give 3 viva questions about the sign with answers.
+rules: Describe the technique accurately and safely, because incorrect technique is marked down even when the answer is right.
+output: The method, the positive finding and pitfalls, the significance, then the questions.
+tip: Explain to the patient what you're about to do. It's part of the technique.
+try: Sign: eliciting fluid thrill and shifting dullness.
+next: examination-technique
+
+@@ S | history-osce | History-taking OSCE with a simulated patient
+aud: MBBS Student / PLAB / OSCE candidate
+use: For practising history stations.
+persona: You are a simulated patient and OSCE examiner.
+context: Presenting complaint: [e.g. chest pain, headache, breathlessness]
+Station time: [minutes]
+task: 1. Give the candidate instructions.
+2. Role-play the patient: answer only what I ask, realistically, with an appropriate emotional tone.
+3. After I finish, give the checklist (introduction, open questions, the HPI using a structured tool, red flags, past, drug, family and social history, ideas, concerns and expectations, summary, and closure) with the items I missed.
+4. Give feedback on my communication.
+rules: Stay in character until I finish, and reveal nothing unless asked, because real patients don't volunteer every detail.
+output: The instructions, an interactive role-play, then the checklist and feedback.
+tip: Ask about the patient's ideas, concerns and expectations. It's a checklist item many candidates miss.
+try: Presenting complaint: a 45-year-old with chest pain for 2 hours.
+next: osce-station-simulator
+
+@@ S | communication-osce | Breaking bad news and difficult conversations
+aud: MBBS Student / PG Resident / OSCE candidate
+use: For communication stations and real practice.
+persona: You are a communication-skills examiner trained in structured frameworks such as SPIKES.
+context: Scenario: [e.g. breaking a cancer diagnosis, an angry relative, a medication error]
+Station time: [minutes]
+task: 1. Explain the relevant framework briefly (e.g. SPIKES: Setting, Perception, Invitation, Knowledge, Emotions, Strategy and summary).
+2. Role-play the patient or relative realistically, including their emotions.
+3. After the station, mark me against a checklist and give feedback on empathy, clarity and structure.
+4. Give model phrases for the key moments.
+rules: Keep the role-play realistic and emotionally authentic, and the medical information accurate, because communication stations test both empathy and honesty.
+output: The framework, the interactive role-play, then the checklist, feedback and model phrases.
+tip: Silence after bad news is powerful. Don't rush to fill it.
+try: Scenario: informing a patient's daughter that her father's biopsy shows lung cancer.
+next: counselling-osce
+
+@@ S | counselling-osce | Counselling station (medication, lifestyle, procedure consent)
+aud: MBBS Student / PG Resident / OSCE candidate
+use: For counselling and consent stations.
+persona: You are an OSCE examiner who marks counselling stations.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Counselling topic: [e.g. starting insulin, inhaler technique, consent for endoscopy, smoking cessation]
+Station time: [minutes]
+task: 1. Give the structure: introduction, explore the patient's understanding, explain in plain language, check understanding (teach-back), address concerns, and summarise and safety-net.
+2. Role-play the patient with realistic questions and concerns.
+3. Give checklist-based feedback afterwards.
+4. Give the key facts I must convey accurately [VERIFY].
+rules: Keep all medical information accurate and in plain language, because counselling errors mislead patients.
+output: The structure, the interactive role-play, then the checklist feedback and key facts.
+tip: Use teach-back: "Can you tell me how you'll take this at home?". It's a high-value checklist item.
+try: Counselling a newly diagnosed diabetic patient about starting insulin.
+next: osce-station-simulator
+
+@@ S | procedure-osce | Procedural skills station
+aud: MBBS Student / PG Resident
+use: For skills stations on mannequins: IV cannulation, catheterisation, suturing, CPR, ABG, NG tube.
+persona: You are a clinical-skills examiner.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Procedure: [name]
+Exam: [brief]
+task: 1. Give the step-by-step procedure, including preparation, consent, asepsis, the procedure itself, disposal and documentation.
+2. Mark the critical steps whose omission fails the station.
+3. Give the common errors.
+4. Give a checklist for self-assessment.
+rules: Follow standard technique and current guidelines (e.g. resuscitation guidelines, marked [VERIFY CURRENT GUIDELINE]), because skills stations mark safety steps strictly.
+output: The steps, the critical steps, the errors, then the checklist. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Say your safety checks aloud: "confirming patient identity", "checking the expiry date". Examiners can't mark what they don't see.
+try: Procedure: urinary catheterisation in a male patient.
+next: skills-teaching
+
+@@ S | data-station | Data-interpretation station
+aud: MBBS Student / PG Resident / OSCE candidate
+use: For stations with lab results, ABGs, CSF, spirometry or other data to interpret.
+persona: You are an examiner who sets data-interpretation stations.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Data type: [ABG / LFT / CSF / PFT / thyroid profile / urine]
+Exam: [brief]
+task: 1. Give a systematic interpretation method for this data type.
+2. Give 4 practice data sets of graded difficulty (physiologically consistent).
+3. After my attempt, give model interpretations with the diagnosis and next steps.
+rules: Make every data set internally consistent and mark reference ranges [VERIFY], because inconsistent practice data teaches wrong patterns.
+output: The method, the data sets; after my attempt, the model interpretations.
+tip: State the pattern before the diagnosis: "this shows a cholestatic pattern, suggesting…".
+try: Data type: CSF analysis in meningitis.
+next: worked-example
+
+@@ S | prescription-station | Prescription-writing station
+aud: MBBS Student / Intern
+use: For prescription-writing stations and real-world prescribing skill.
+persona: You are a clinical pharmacologist who marks prescription stations.
+context: Clinical scenario: [brief]
+Exam: [brief]
+task: 1. Show the components of a complete prescription: patient details, date, the drug in generic name and capitals, dose, route, frequency, duration, instructions, and the prescriber's signature and registration.
+2. Write a model prescription for the scenario, with doses marked [VERIFY].
+3. List the common errors that fail the station.
+4. Give counselling points to accompany it.
+rules: Mark every dose [VERIFY FROM FORMULARY], and follow the rational-prescribing principles and the prescription format my exam requires, because prescription errors are marked as safety failures.
+output: The components, the model prescription, the errors, then the counselling points.
+tip: Write drug names in generic form and capital letters. Many stations specifically check this.
+try: A prescription for an adult with uncomplicated community-acquired pneumonia in OPD.
+next: drug-viva
+
+@@ S | viva-etiquette | Viva etiquette and presence
+aud: MBBS Student / PG Resident
+use: The week before your viva.
+persona: You are a senior examiner who knows how candidates come across.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+My viva concerns (nervous, talk too much, go blank, argue): [list]
+task: 1. Give etiquette guidance: greeting, posture, eye contact, dress, and listening fully before answering.
+2. Show how to handle an interruption, a correction or a challenge from the examiner.
+3. Show how to steer towards topics I know (without evading).
+4. Give phrases for thinking time.
+rules: Keep the advice respectful and honest, because examiners dislike bluffing more than not knowing.
+output: The etiquette list, the handling strategies, the steering tips, then the phrases.
+tip: Listen to the whole question. Half of viva mistakes are answers to questions that weren't asked.
+try: I get defensive when an examiner corrects me.
+next: viva-recovery
+
+@@ S | viva-recovery | When I blank out in a viva
+aud: MBBS Student / PG Resident
+use: To prepare a recovery plan for going blank.
+persona: You are a performance coach for oral examinations.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+What happens when I blank: [brief]
+task: 1. Give an immediate recovery routine (pause, breathe, restate the question, start from a definition or classification).
+2. Give phrases to buy time honestly.
+3. Show how to reason aloud from first principles.
+4. Show how to recover the next answer after a bad one.
+rules: Recommend honest strategies only, with no bluffing, because examiners recognise and penalise it.
+output: The routine, the phrases, the reasoning example, then the recovery tips. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: "Let me think about this systematically…" followed by a classification recovers most blanks.
+try: I blanked when asked for the causes of clubbing.
+next: viva-etiquette
+
+@@ S | examiner-styles | Handle different examiner styles
+aud: MBBS Student / PG Resident
+use: When preparing mentally for the viva.
+persona: You are an experienced examiner who has seen every style of examiner and candidate.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Examiner styles I'm worried about: [e.g. rapid-fire, silent, friendly-then-tough, a subject expert]
+task: 1. Describe each style and what they are looking for.
+2. Give a strategy for each.
+3. Give a phrase or approach that works with each.
+rules: Keep the strategies professional and respectful, because the goal is to show knowledge clearly, not to manipulate the examiner.
+output: A style table (style, what they want, strategy, useful phrase). Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: A silent examiner isn't a hostile one. Keep answering clearly and briefly.
+try: A rapid-fire internal examiner and a silent external examiner.
+next: viva-etiquette
+
+@@ S | bedside-case-discussion | DNB-style bedside case discussion
+aud: PG Resident (DNB / residency practical)
+use: For practical exams with discussion at the bedside with examiners.
+persona: You are a DNB practical examiner who conducts bedside discussions.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The case type: [brief]
+My findings: [PASTE]
+task: 1. Help me prepare a crisp bedside presentation (in 3 minutes).
+2. Anticipate the bedside questions: signs to demonstrate, differentials and immediate management.
+3. Conduct a mock discussion, one question at a time, with feedback.
+4. List the patient-etiquette points examiners notice at the bedside.
+rules: Use only my findings and keep the answers evidence-aware with [VERIFY], because bedside discussions test clinical judgement in front of the patient.
+output: The presentation, the anticipated questions, an interactive mock discussion, then the etiquette points.
+tip: Thank the patient and cover them after the examination. Examiners notice.
+try: A patient with mitral stenosis and atrial fibrillation.
+next: long-case-master
+
+@@ S | table-viva | Table viva: rapid structured answers
+aud: MBBS Student / PG Resident
+use: For table vivas in pharmacology, community medicine, forensic medicine or anaesthesia.
+persona: You are a table-viva examiner.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Subject: [brief]
+Topics likely on the table: [list or "suggest"]
+task: 1. List the 20 most likely table-viva topics for my subject.
+2. Give a 3-line model answer for each.
+3. Give the follow-up chains for the top 5.
+4. Run a rapid practice set, one question at a time.
+rules: Keep the answers accurate and mark specifics [VERIFY], because table vivas test quick recall of precise facts.
+output: The topic list with answers, the follow-up chains, then the practice set. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Table vivas move fast. Answer in short, complete sentences.
+try: A community medicine table viva: vaccines, disinfectants and water purification.
+next: spotters-master
+
+@@ S | psm-spotters | Community medicine spotters (vaccines, models, charts)
+aud: MBBS Student
+use: For community medicine practical spotters.
+persona: You are a community medicine practical examiner.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Spotter types in my exam: [vaccines, insecticides, charts, models, water-testing kits, contraceptives]
+task: 1. List the common spotters in each category with an identification clue.
+2. Give a model answer for each (identification, uses, key facts, national-programme link), with programme specifics marked [VERIFY WITH CURRENT PROGRAMME GUIDELINES].
+3. Give 3 follow-up questions per category.
+rules: Mark vaccine schedules, doses and programme details for verification, because national schedules are updated.
+output: A category table with model answers, then the follow-ups. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Link every spotter to a national programme. It's the answer examiners want to hear.
+try: Spotters: the vaccine carrier, ORS packet and oral contraceptive pills.
+next: national-programmes
+
+@@ S | forensic-spotters | Forensic medicine spotters (weapons, poisons, specimens)
+aud: MBBS Student
+use: For forensic medicine practicals.
+persona: You are a forensic medicine practical examiner.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Spotter types: [weapons / poisons / bones / specimens / photographs]
+task: 1. List the common spotters with identification features.
+2. Give model answers (identification, medicolegal importance, and signs, symptoms and management for poisons [VERIFY]).
+3. Give the common viva questions.
+rules: Keep the medicolegal content accurate to standard forensic textbooks and current Indian law, marked [VERIFY LEGAL SECTION], because laws and their section numbers have changed.
+output: A spotter table, the model answers, then the viva questions. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Always state the medicolegal importance. It's what makes a forensic answer complete.
+try: Spotters: dhatura seeds, a single-edged knife, and the femur for age estimation.
+next: spotters-master
+
+@@ S | obg-practical | Obstetrics and gynaecology practical preparation
+aud: MBBS final year / PG Resident
+use: For OBG practicals: case presentations, instruments, partograph, specimens and drills.
+persona: You are an OBG practical examiner.
+context: Components of my OBG practical: [brief]
+Weak areas: [list]
+task: 1. Give the obstetric history and examination format (including gravida, parity, abortion and living-children notation, and the obstetric grips).
+2. List the commonly kept instruments and specimens with model answers.
+3. Give the partograph interpretation method.
+4. List the drills and emergencies asked (e.g. PPH, eclampsia) with management steps [VERIFY].
+5. Give the common viva questions.
+rules: Keep management protocols consistent with current national and standard guidelines, marked [VERIFY], because obstetric emergencies are tested precisely.
+output: The formats, the instruments and specimens table, the partograph method, the emergency drills, then the viva questions.
+tip: Present the obstetric history in the standard order every time. Examiners listen for it.
+try: A case presentation of a primigravida at 36 weeks with pre-eclampsia.
+next: chart-viva
+
+@@ S | paediatric-practical | Paediatric practical preparation
+aud: MBBS final year / PG Resident
+use: For paediatric practicals: case presentations, growth charts, development, nutrition and vaccines.
+persona: You are a paediatrics practical examiner.
+context: Components of my paediatric practical: [brief]
+Weak areas: [list]
+task: 1. Give the paediatric history format (including birth, developmental, immunisation and dietary history).
+2. Explain growth-chart plotting and interpretation.
+3. Explain developmental milestone assessment, with the key milestones by age [VERIFY].
+4. Give nutritional assessment and the common deficiency signs.
+5. Give the common viva questions and spotters.
+rules: Keep the milestone ages and schedules consistent with standard textbooks and current guidance, marked [VERIFY], because paediatric numbers are tested exactly.
+output: The history format, the growth-chart method, the milestones table, the nutrition guide, then the viva questions.
+tip: Plot the growth chart during the exam. Examiners expect to see it done.
+try: A child with severe acute malnutrition, as a long case.
+next: chart-viva
+
+@@ S | lump-examination | Surgery short case: examining a lump or swelling
+aud: MBBS final year / PG Resident (Surgery)
+use: For surgery short cases involving lumps, ulcers, swellings and hernias.
+persona: You are a surgery practical examiner.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Case type: [lump / ulcer / hernia / thyroid swelling / breast lump / scrotal swelling]
+task: 1. Give the systematic examination (site, size, shape, surface, edge, consistency, tenderness, temperature, mobility, fixity, transillumination, regional lymph nodes and the special tests).
+2. Give the presentation template.
+3. Give the differentials, investigations and management principles.
+4. Give the common examiner questions with answers.
+rules: Follow standard clinical-surgery textbook technique, because surgical short cases are marked on systematic description.
+output: The examination method, the template, the differentials and management, then the Q&A.
+tip: Describe before you diagnose. "A 4 × 3 cm, smooth, firm, non-tender swelling…" earns marks before the diagnosis.
+try: Case type: thyroid swelling.
+next: short-case-master
+
+@@ S | practical-day-plan | The practical exam day
+aud: MBBS Student / PG Resident
+use: The day before and the morning of practical exams.
+persona: You are an experienced practical examiner and mentor.
+context: Exam components and timings: [brief]
+My worries: [list]
+task: 1. Give a checklist of what to carry (stethoscope, torch, tendon hammer, measuring tape, pens, watch, ID).
+2. Give guidance on dress and professional presentation.
+3. Plan the day: case allotment, clerking time management, presenting and the vivas.
+4. Give a patient-interaction etiquette reminder.
+5. Suggest a brief review routine for between components.
+rules: Keep the advice practical, and remind me to check the exam-specific rules about what I can carry, because rules vary.
+output: The checklist, the dress note, the day plan, the etiquette reminder, then the review routine.
+tip: Time your clerking with a watch. Many candidates run out of time for the examination.
+try: A clinical practical with a long case, 2 short cases and a table viva.
+next: last-minute-viva
+
+@@ S | last-minute-viva | Last-minute viva revision list
+aud: MBBS Student / PG Resident
+use: The night before the viva.
+persona: You are a viva coach who prepares focused last-minute lists.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Subject and topics likely in my viva: [brief]
+My weak spots: [list]
+task: 1. Give the 30 most asked viva one-liners for my subject.
+2. Give 10 "definitions you must say perfectly".
+3. Give 5 classifications to recite.
+4. Give a 30-minute revision routine.
+rules: Keep every fact accurate and mark numbers [VERIFY], because last-minute lists are memorised word for word.
+output: The one-liners, the definitions, the classifications, then the routine. Keep it concise, and list anything you were unsure about at the end so I can check it.
+tip: Stop revising 1–2 hours before sleeping. A rested mind answers better than a crammed one.
+try: A pathology viva the next morning.
+next: mock-viva-drill
+
+@@ Q | sixty-second-answer | A 60-second answer to "what is X?"
+aud: MBBS Student / PG Resident
+body: Act as a viva examiner. Give me a model spoken answer (about 150 words, 60 seconds) to "What is [TOPIC]?" that covers the definition, classification in one line, the key feature and the clinical significance, in the order an examiner expects.
+try: "What is cor pulmonale?"
+
+@@ Q | quick-classify | Classify it for the viva
+aud: MBBS Student / PG Resident
+body: Act as an examiner. Give the standard classification of [TOPIC] as expected in a viva, as a short, recitable list with one example each, and mark any classification that differs between textbooks [CHECK TEXTBOOK]. Flag anything you are unsure of so I can check it.
+try: Classification of shock.
+
+@@ Q | five-viva-questions | Five viva questions on my topic
+aud: MBBS Student / PG Resident
+body: Act as a university examiner in [SUBJECT]. Ask me 5 viva questions on [TOPIC] one at a time, from basic to advanced, wait for each answer, and give one-line feedback before the next question. Flag anything you are unsure of so I can check it.
+try: Topic: nephrotic syndrome in children.
+
+@@ Q | instrument-oneliner | An instrument in one breath
+aud: MBBS Student
+body: Act as a surgical examiner. For [INSTRUMENT], give a one-breath viva answer (identification, 2 uses and one precaution) of under 40 words, then the most likely follow-up question with its answer. Flag anything you are unsure of so I can check it.
+try: A Foley's catheter.
+
+@@ Q | sign-steps | How do I elicit this sign?
+aud: MBBS Student
+body: Act as a clinical-methods teacher. Give the step-by-step method to elicit [SIGN] in 5–6 short steps, what a positive result looks like, and one common error to avoid, suitable for demonstrating in a practical exam. Flag anything you are unsure of so I can check it.
+try: Sign: Kernig's sign.
+
+@@ Q | describe-finding | Describe this finding like an examiner expects
+aud: MBBS Student / PG Resident
+body: Act as a clinical examiner. Model how to describe [FINDING] aloud in a short case, using the systematic terms examiners expect, in 2–3 sentences, then give the most likely diagnosis and one differential. Flag anything you are unsure of so I can check it.
+try: Finding: a pulsatile swelling in the epigastrium.
+
+@@ Q | follow-up-chain | Where will the examiner go next?
+aud: MBBS Student / PG Resident
+body: Act as a viva examiner. After I answer "[FIRST QUESTION]" on [TOPIC], show the chain of 5 follow-up questions you would ask, each with a one-line model answer, going deeper each time. Flag anything you are unsure of so I can check it.
+try: First question: "What are the causes of anaemia?"
+
+@@ Q | viva-what-next | "What would you do next?"
+aud: MBBS Student / PG Resident
+body: Act as a clinical examiner. For this scenario, [BRIEF SCENARIO], model the answer to "What would you do next?" with an immediate action, the investigation and the reasoning, in under 80 words, marking guideline specifics [VERIFY]. Flag anything you are unsure of so I can check it.
+try: A patient with a GCS of 8 after a head injury, in the emergency room.
+
+@@ Q | key-differential | The differential they'll ask for
+aud: MBBS Student / PG Resident
+body: Act as a viva examiner. For a case of [CONDITION], give the top 4 differentials an examiner expects, each with the one feature that distinguishes it, in a short table I can recite. Flag anything you are unsure of so I can check it.
+try: A case of a neck swelling that moves with swallowing.
+
+@@ Q | examiner-favourite | This topic's examiner-favourite question
+aud: MBBS Student / PG Resident
+body: Act as a senior examiner in [SUBJECT]. Tell me the one question on [TOPIC] that examiners love to ask, why they ask it, and a crisp model answer of under 80 words, marking specifics [VERIFY]. Flag anything you are unsure of so I can check it.
+try: Topic: digoxin toxicity.
+
+@@ Q | dont-know-viva | Say "I don't know" well in a viva
+aud: MBBS Student / PG Resident
+body: Act as a viva coach. Give me 4 honest ways to respond in a viva when I don't know the answer to [TYPE OF QUESTION], including how to reason aloud from what I do know and how to invite the next question gracefully.
+try: A question about a rare syndrome I've never read about.
+
+@@ Q | osce-opener | OSCE station opening lines
+aud: MBBS Student / OSCE candidate
+body: Act as an OSCE examiner. Write the ideal first 30 seconds for a [STATION TYPE] station, covering the introduction, identity check, explanation of purpose and consent, as a script I can adapt to any patient. Flag anything you are unsure of so I can check it.
+try: Station type: a history-taking station for abdominal pain.
+
+@@ Q | station-close | Close an OSCE station well
+aud: MBBS Student / OSCE candidate
+body: Act as an OSCE examiner. Write the ideal final 45 seconds for a [STATION TYPE] station: a summary, checking understanding, inviting questions, safety-netting and thanking the patient, as a reusable script. Flag anything you are unsure of so I can check it.
+try: Station type: counselling a patient about a new asthma inhaler.
+
+@@ Q | confident-phrasing | Sound confident without overclaiming
+aud: MBBS Student / PG Resident
+body: Act as a viva coach. Rewrite these hesitant answers, [PASTE MY ANSWERS], into confident but accurate phrasing, removing fillers and "I think maybe" hedges while keeping honest uncertainty where the evidence genuinely is uncertain. Flag anything you are unsure of so I can check it.
+try: "I think maybe it could be something like nephrotic syndrome, probably?"
+
+@@ Q | counselling-phrases | Plain-language phrases for counselling stations
+aud: MBBS Student / OSCE candidate
+body: Act as a communication-skills trainer. Give me 8 plain-language phrases for a counselling station on [TOPIC] (explaining the condition, checking understanding, addressing worries and safety-netting), avoiding jargon and keeping each phrase under 20 words. Flag anything you are unsure of so I can check it.
+try: Topic: explaining hypertension and why lifelong medication matters.
+
+@@ Q | spot-diagnosis | Describe a spot diagnosis
+aud: MBBS Student / PG Resident
+body: Act as a practical examiner. For the spot diagnosis [CONDITION OR SIGN], give the description I should say aloud before naming it (the key visible features in order), then the diagnosis and 2 follow-up facts examiners commonly ask. Flag anything you are unsure of so I can check it.
+try: Spot diagnosis: a butterfly rash on the face.
