@@ -22,7 +22,7 @@ Commit and push after every section file.
 | 1.5 Aims, objectives & hypotheses | 20 | done |
 | 1.6 Study design & methodology | 40 | done |
 | 1.7 Sample size & statistics | 45 | done |
-| 1.8 Results, tables & figures | 25 | pending |
+| 1.8 Results, tables & figures | 25 | done |
 | 1.9 Discussion, conclusion & limitations | 30 | pending |
 | 1.10 Protocol, ethics & synopsis | 20 | pending |
 | 1.11 Thesis to manuscript & publication | 35 | pending |

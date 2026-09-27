@@ -1,0 +1,357 @@
+# 1.8 | Results, tables & figures | Results report what you found, in past tense, with no interpretation. Every number must match the output, and every table must earn its place.
+
+@@ M | results-writer | Write the Results chapter from my analysis output
+aud: PG Resident
+use: After your analysis is complete and verified, before writing the discussion.
+why: The results chapter is where transcription errors, interpretation creep and text that repeats the tables creep in. Writing it from your verified numbers in a fixed order (flow, baseline, primary, secondary) keeps it accurate, readable and defensible.
+persona: You are a medical journal editor who writes and edits results sections. You report findings in past tense, in a logical order, with effect estimates and confidence intervals, and you never interpret in the results.
+context: Design and reporting guideline: [e.g. prospective cohort, STROBE]
+Participant flow numbers (screened, eligible, enrolled, lost, analysed): [numbers]
+Table 1 baseline characteristics (paste the table): [PASTE TABLE]
+Primary outcome result with effect estimate, 95% CI and p: [paste exactly]
+Secondary outcome results: [paste exactly]
+Tables and figures I have, with numbers and titles: [list]
+Target length: [e.g. 800–1,200 words for a thesis; 500–700 for a journal]
+task: 1. Open with participant flow, referring to the flow diagram.
+2. Describe baseline characteristics briefly, highlighting only clinically important features and referring to Table 1.
+3. Report the primary outcome with its effect estimate, 95% CI and exact p value.
+4. Report secondary outcomes in the order of the objectives.
+5. Report any pre-specified subgroup or sensitivity analyses, labelled as such.
+6. Refer to each table and figure at the right point, and highlight rather than repeat their contents.
+7. After the draft, list every number used with its source (table or output), for cross-checking.
+rules: Use only the numbers I pasted, reproduced exactly, because a single mistyped number undermines the credibility of the whole chapter. No interpretation, no comparison with literature and no causal words. Report non-significant results with their estimates and CIs, never as "no effect". Qualify "significant" as statistically significant.
+output: The results text with sub-headings by objective, then the number-source table.
+tweak: End with the 3 results an examiner will look at first, and whether my text presents each one clearly.
+tips:
+- Write results before the discussion. It stops you writing results to fit your story.
+- Check every number in the text against its table. Mismatches are the commonest results error.
+- If the text simply repeats a table, cut the text to the key finding and refer to the table.
+next: results-audit
+
+@@ M | tables-figures-master | Plan every table and figure in my results
+aud: PG Resident
+use: After analysis and before writing, to decide how your results will be displayed.
+why: Examiners and reviewers read tables and figures first. A planned set, where each item answers an objective and nothing is duplicated, makes results easy to follow. A random pile of SPSS outputs and pie charts makes them hard work.
+persona: You are a scientific data-visualisation editor for a medical journal. You match each result to the display that shows it most honestly and clearly, and you follow journal conventions for tables and figures.
+context: Objectives: [PASTE OBJECTIVES]
+Results for each objective (brief, with the variable types): [PASTE SUMMARY]
+Number of tables and figures allowed (thesis or journal): [e.g. no limit / 4 tables + 2 figures]
+Software I'll use for figures: [Excel / GraphPad / R / SPSS]
+My university's or journal's figure requirements, if any: [e.g. 300 dpi, grayscale, maximum width]
+task: 1. Propose the complete set: which results go in tables, which in figures, and which only in text.
+2. For each table: title, rows, columns, summary format, footnotes and abbreviations.
+3. For each figure: chart type and why (bar with error bars, box plot, forest plot, Kaplan-Meier, ROC, scatter with fit line, flow diagram), axes, units, labels and legend.
+4. Flag displays to avoid for my data (pie charts, 3D charts, dynamite plots for skewed data, dual axes).
+5. Give step-by-step instructions to create each figure in my software.
+6. Number everything in order of mention in the text.
+7. Say which displays could go in an appendix instead of the main chapter.
+rules: Choose displays that show the distribution or uncertainty (CIs, IQRs) rather than hiding it, because misleading displays are a frequent examiner criticism. Use placeholders instead of values.
+output: A display plan table (number, type, objective served, content), then table templates, figure specifications, the "avoid" list and the software steps.
+tweak: End with the single figure that best tells the story of my thesis, and why.
+tips:
+- One figure that shows your primary result clearly is worth more than ten decorative charts.
+- Keep fonts, colours and decimal places consistent across all tables and figures.
+- Make every table understandable on its own, with a full title and footnotes.
+next: chart-spec
+
+@@ M | results-audit | Consistency audit: text, tables, figures and abstract
+aud: PG Resident / Faculty
+use: When the thesis or manuscript is drafted, before submission.
+why: Inconsistent numbers between the abstract, text, tables and figures are among the most common reasons reviewers lose trust in a paper, and examiners spot them fast. A systematic audit catches them all at once.
+persona: You are a meticulous statistical reviewer for a medical journal who cross-checks every number in a manuscript for consistency and plausibility.
+context: Abstract: [PASTE ABSTRACT]
+Results text: [PASTE RESULTS TEXT]
+Tables (as text): [PASTE TABLES]
+Figure legends and any numbers shown in figures: [PASTE LEGENDS]
+Total N and group sizes: [numbers]
+Missing data per key variable: [brief]
+Version of the document and date: [e.g. draft 3, 12 May]
+task: 1. Extract every number from each section and match it across sections.
+2. Flag any number that differs between sections.
+3. Check internal arithmetic: percentages match their numerators and denominators, subgroup counts sum to totals, means lie within their ranges, and CIs contain their point estimates.
+4. Check that p values are consistent with the CIs (a 95% CI excluding the null should go with p < 0.05).
+5. Check that the denominators change sensibly where there is missing data, and that the missing data is reported somewhere.
+6. Check that every table and figure is cited in the text, in order.
+7. Check that the abstract's conclusion matches the primary result as reported in the results text.
+rules: Report discrepancies without deciding which value is right, because only the original source output can settle that. Do not alter any numbers yourself.
+output: A discrepancy table (number, location A, location B, issue), then the arithmetic and consistency check results, then the citation-order check and the abstract check.
+tweak: Finish with the 3 discrepancies most likely to be noticed by an examiner or reviewer, to fix first.
+tips:
+- Fix discrepancies from the original output, never by adjusting the text to match a table.
+- Re-run this audit after every major revision. New inconsistencies appear with each edit.
+- Ask a colleague to check 10 random numbers against the raw output as an independent check.
+next: results-writer
+
+@@ S | table1-narrative | Describe Table 1 in two short paragraphs
+aud: PG Resident
+use: When writing the baseline characteristics paragraph of your results.
+persona: You are a journal editor who keeps baseline descriptions short and informative.
+context: Table 1 (paste as text): [PASTE TABLE]
+Design (randomised or observational): [brief]
+Groups: [brief]
+Target: [thesis / journal]
+task: 1. Write 2 short paragraphs describing the study population: key demographics, key clinical features, and notable differences between groups.
+2. Highlight only clinically important features, not every row.
+3. For an RCT, describe balance without p values; for observational studies, note the differences that may confound results.
+rules: Reproduce numbers exactly and refer to Table 1 rather than repeating it, because text that repeats a table wastes the reader's time.
+output: The two paragraphs.
+tip: Readers use Table 1 to judge whether your results apply to their patients. Make the setting and severity clear.
+try: Table 1 of a 200-patient sepsis cohort comparing survivors and non-survivors.
+next: primary-outcome-para
+
+@@ S | primary-outcome-para | Report the primary outcome properly
+aud: PG Resident
+use: For the most important paragraph of your results.
+persona: You are a medical statistician who writes primary-outcome paragraphs that are accurate and complete.
+context: Primary objective: [paste]
+Result: event counts or group summaries, the effect estimate with 95% CI, and exact p value: [paste exactly]
+Adjusted result, if any: [paste]
+task: 1. Write the primary-outcome paragraph: summaries in each group, the effect estimate with 95% CI and p value, and the adjusted estimate if applicable.
+2. Refer to the relevant table or figure.
+3. Write a one-sentence version for the abstract.
+rules: Report the estimate and CI before the p value, and use past tense without interpretation, because readers need the size and precision of the effect, not just significance.
+output: The paragraph, then the abstract sentence.
+tip: Give absolute numbers as well as relative measures, e.g. "18/100 vs 30/100 (RR 0.60, 95% CI …)".
+try: 28-day mortality 22% vs 31%, RR 0.71 (95% CI 0.50–0.99), p = 0.04.
+next: secondary-outcomes-para
+
+@@ S | secondary-outcomes-para | Report secondary outcomes without clutter
+aud: PG Resident
+use: When you have several secondary outcomes to report.
+persona: You are an editor who reports multiple outcomes clearly and briefly.
+context: Secondary objectives: [list]
+Results for each (estimates, CIs, p values): [PASTE RESULTS]
+Table where they are shown: [e.g. Table 3]
+Which analyses were pre-specified and which were added later: [brief]
+task: 1. Report each secondary outcome in the order of the objectives, in 1–2 sentences each.
+2. Group related outcomes where sensible.
+3. Refer to the table rather than repeating every number.
+4. Label exploratory analyses clearly, and keep them after the pre-specified ones.
+rules: Report non-significant secondary outcomes as fully as significant ones, because selective reporting is a form of bias that examiners recognise.
+output: The paragraphs.
+tip: If a secondary outcome surprised you, report it plainly here. The interpretation belongs in the discussion.
+try: Secondary outcomes: ICU stay, ventilator days, AKI incidence, and 90-day mortality.
+next: results-writer
+
+@@ S | participant-flow | Participant flow diagram and paragraph
+aud: PG Resident
+use: For the first figure and paragraph of your results.
+persona: You are a reporting-guideline expert who builds CONSORT and STROBE flow diagrams.
+context: Numbers: assessed for eligibility, excluded (with reasons and counts), enrolled, allocated (if applicable), lost to follow-up (with reasons), analysed: [numbers]
+Design: [RCT / cohort / cross-sectional / diagnostic]
+task: 1. Describe the flow diagram box by box with my numbers, following CONSORT or STROBE conventions.
+2. Check that the numbers add up at every step.
+3. Write the participant-flow paragraph for the results.
+rules: Flag any step where the numbers don't add up instead of adjusting them, because flow-diagram arithmetic errors are easy to spot.
+output: The box list with arrows, the arithmetic check, then the paragraph.
+tip: Draw the diagram in PowerPoint or draw.io from the box list. It's quicker than fixing an AI-drawn one.
+try: 312 screened, 94 excluded (not meeting criteria 61, declined 33), 218 enrolled, 12 lost, 206 analysed.
+next: tables-figures-master
+
+@@ S | figure-choice | The best figure for this result
+aud: PG Resident / MBBS Student
+use: When you are unsure how to display a particular result.
+persona: You are a data-visualisation specialist for medical research.
+context: The result to display: [brief]
+Variable types and groups: [brief]
+Where it will appear: [thesis / journal / poster / slide]
+Sample size per group: [n]
+task: 1. Recommend the best chart type and explain why.
+2. Name 2 alternatives and when they would be better.
+3. Name the chart types to avoid for this result.
+4. Specify the axes, labels, error bars or intervals, and legend.
+rules: Prefer displays that show individual data or uncertainty for small samples, because bar charts of means hide the distribution.
+output: The recommendation, alternatives, avoid list, then the specification.
+tip: For skewed data in small groups, a box plot with the individual points overlaid is usually best.
+try: CRP levels (skewed) in three groups of 25 patients each.
+next: chart-spec
+
+@@ S | chart-spec | Build the chart step by step in my software
+aud: PG Resident
+use: When you know which figure you want and need to make it.
+persona: You are a practical graphics trainer who creates publication-quality charts in common software.
+context: Chart type and data: [brief]
+Software: [Excel / Google Sheets / GraphPad / R ggplot2 / SPSS]
+Output target: [thesis print / journal / slide]
+task: 1. Give step-by-step instructions (or code) to create the chart.
+2. Specify formatting: font sizes, axis titles with units, removing chart junk, colour-blind-safe colours, and error bars or CIs.
+3. Explain how to export at the right resolution (e.g. 300 dpi for print).
+4. Write the figure title and legend.
+rules: Keep the axes honest: start bar charts at zero, and use the same scale when figures are compared, because distorted axes mislead readers.
+output: Numbered steps or a code block, formatting rules, export settings, then the legend.
+tip: Make the chart in grayscale first. If it still works, colour will only improve it.
+try: Kaplan-Meier curves for two groups with the number at risk, in R.
+next: caption-writer
+
+@@ S | table-formatting | Format my table to journal standard
+aud: PG Resident
+use: When your tables are copied from software output and look messy.
+persona: You are a journal production editor who formats tables to house style.
+context: My table (as text): [PASTE TABLE]
+Target: [thesis / journal name]
+What the table is meant to show: [one line]
+task: 1. Restructure the table: a clear title, logical row order, grouped variables, units in the row labels, and consistent decimals.
+2. Remove software clutter (test statistics columns readers don't need, redundant rows).
+3. Add footnotes: abbreviations, the tests used, and symbols.
+4. Return the formatted table.
+rules: Keep every value exactly as given; only restructure and format, because tables must still match the software output.
+output: The formatted table, then a list of the changes made.
+tip: Use horizontal lines only (top, below the header, bottom). Journals rarely accept vertical lines.
+try: An SPSS crosstab output pasted with all its default columns.
+next: caption-writer
+
+@@ S | caption-writer | Titles, legends and footnotes for my tables and figures
+aud: PG Resident
+use: When finalising tables and figures.
+persona: You are a scientific editor who writes self-explanatory table titles and figure legends.
+context: Table or figure content and purpose: [brief or PASTE]
+Abbreviations used: [list]
+Tests used: [list]
+Target: [thesis / journal / poster]
+task: 1. Write a title that states what, who, where and when.
+2. Write a legend or footnotes: abbreviations, statistical tests, what the error bars represent, and sample sizes.
+3. Check that the item can be understood without reading the text.
+rules: State exactly what error bars or ranges represent (SD, SE or 95% CI), because unlabelled error bars are uninterpretable.
+output: The title, then the legend or footnotes.
+tip: A good title tells the reader the finding's context. A great one lets them skip the text.
+try: A bar chart of mean ventilator days by group, with error bars.
+next: tables-figures-master
+
+@@ S | strip-interpretation | Remove interpretation from my results
+aud: PG Resident
+use: When your guide says your results read like a discussion.
+persona: You are a strict methods editor who keeps results and discussion separate.
+context: My results text: [PASTE TEXT]
+My objectives, so you can check the order: [PASTE OBJECTIVES]
+Target: [thesis / journal]
+task: 1. Mark every sentence that interprets, explains, compares with literature or speculates.
+2. Suggest moving each to the discussion or deleting it.
+3. Return the cleaned results text in neutral past tense, ordered by objective.
+4. Collect the removed interpretive sentences in a separate list for my discussion.
+rules: Keep all numbers and factual findings unchanged, because the cleaning must remove only interpretation, not results.
+output: A table of flagged sentences (sentence, problem, move or delete), then the cleaned text.
+tip: Words such as "interestingly", "surprisingly", "suggesting", "due to" and "because" usually signal interpretation.
+try: A results paragraph saying "mortality was lower, probably due to earlier antibiotics".
+next: results-writer
+
+@@ S | text-table-duplication | Stop repeating my tables in the text
+aud: PG Resident
+use: When your results text restates every row of the tables.
+persona: You are a journal editor who cuts results sections to their essential points.
+context: Results text: [PASTE TEXT]
+Tables it refers to: [PASTE TABLES]
+Target length: [words]
+task: 1. Identify the text that duplicates table contents.
+2. Rewrite the text to highlight only the key findings (the primary result, important differences, surprises) with a pointer to the table.
+3. Give the word count before and after.
+4. List any table row that should be moved to an appendix.
+rules: Keep the primary outcome's numbers in the text even if they are in a table, because readers expect the key result stated in full.
+output: The rewritten text, then the word counts.
+tip: A useful rule: the text tells the story, the tables hold the evidence.
+try: 600 words describing every row of a 20-row Table 2.
+next: results-writer
+
+@@ S | negative-results | Report a non-significant result honestly
+aud: PG Resident
+use: When your primary or key result is not statistically significant.
+persona: You are a research-integrity-minded statistician who reports null results clearly and without spin.
+context: The result (estimate, 95% CI, p): [paste]
+Sample size and whether the study was powered for this outcome: [brief]
+task: 1. Write the result sentence neutrally with the estimate and CI.
+2. Explain what the CI does and does not rule out.
+3. List spin phrases to avoid (e.g. "trend towards", "marginally significant", "no effect").
+4. Suggest how the discussion should handle it (and point to that section).
+rules: Do not suggest any re-analysis to reach significance, because that is p-hacking.
+output: The result sentence, the CI explanation, the avoid list, then the discussion pointer.
+tip: A well-reported null result from a well-conducted study is publishable. Spin is what gets it rejected.
+try: OR 1.35 (95% CI 0.88–2.07), p = 0.17 for diabetes and wound dehiscence.
+next: discussion-master
+
+@@ S | diagnostic-results | Report diagnostic accuracy results (STARD)
+aud: PG Resident
+use: When your thesis evaluates a test.
+persona: You are a diagnostic-research editor who applies STARD reporting.
+context: 2 × 2 table (true positives, false positives, false negatives, true negatives): [numbers]
+Indeterminate results and how they were handled: [brief]
+Pre-specified threshold: [value]
+task: 1. Calculate sensitivity, specificity, PPV, NPV, LR+ and LR− with 95% CIs, showing the formulas.
+2. Write the results paragraph in STARD style.
+3. Present the 2 × 2 table cleanly.
+4. Remind me which measures depend on prevalence.
+rules: Show the formulas and arithmetic so I can check them, and recommend confirming the CIs in MedCalc or OpenEpi, because hand-calculated CIs are error-prone.
+output: The calculations, the table, then the paragraph.
+tip: Report the prevalence in your sample. PPV and NPV mean nothing without it.
+try: TP 72, FP 14, FN 8, TN 106 for lung ultrasound versus CT.
+next: roc-analysis
+
+@@ S | regression-table | Present regression results clearly
+aud: PG Resident
+use: When reporting a multivariable model in your results.
+persona: You are a biostatistical editor who formats regression tables for clinical journals.
+context: Model type and outcome: [brief]
+Output with crude and adjusted estimates and CIs for each variable: [PASTE OUTPUT]
+Number of observations and events: [numbers]
+task: 1. Build a table: variable, category or reference, crude estimate (95% CI), adjusted estimate (95% CI), p value.
+2. Add footnotes: model type, variables adjusted for, n and events, and fit statistics if relevant.
+3. Write a results paragraph describing the key adjusted associations.
+rules: Mark reference categories clearly and report estimates exactly as in the output, because reversed or missing reference categories flip the meaning.
+output: The table, the footnotes, then the paragraph.
+tip: Put the exposure of interest in the first row. Readers look for it first.
+try: Logistic regression for 30-day mortality with age, lactate, SOFA and diabetes.
+next: output-interpretation
+
+@@ S | results-condense | Condense results for an abstract or poster
+aud: PG Resident
+use: When you need the key results in 80–150 words.
+persona: You are an abstract editor for a medical conference who picks the numbers that matter.
+context: Full results text or key numbers: [PASTE HERE]
+Word limit: [e.g. 100 words]
+Format: [structured abstract results / poster panel / slide]
+task: 1. Select the key results: sample, primary outcome with its estimate and CI, and one or two important secondary results.
+2. Write them within the limit.
+3. List what was left out.
+rules: Keep numbers exactly as in the source, and include the primary outcome even if it is non-significant, because selective abstract reporting is a form of spin.
+output: The condensed results with word count, then the left-out list.
+tip: One primary result stated clearly beats five results crammed in.
+try: A 900-word results chapter condensed to 120 words for a conference abstract.
+next: abstract-writer
+
+@@ Q | one-result-sentence | One result, one sentence
+aud: MBBS Student / PG Resident
+body: Act as a medical journal editor. Turn this result, [PASTE RESULT WITH NUMBERS], into one correctly reported sentence in past tense for my thesis results: group values, effect estimate with 95% CI and exact p value, no interpretation and no causal words.
+try: Mean LOS 6.2 vs 8.1 days, difference −1.9 (95% CI −3.4 to −0.4), p = 0.01.
+
+@@ Q | percentage-check | Check my percentages and denominators
+aud: PG Resident
+body: Act as a numbers checker for a thesis. Check these counts and percentages, [PASTE TABLE OR TEXT], for arithmetic errors, wrong denominators (especially with missing data) and inconsistent rounding. List each error with its correct value and the denominator used.
+try: "Diabetes 42 (35%), hypertension 51 (41%)" with a total of 120 patients.
+
+@@ Q | decimal-rules | How many decimal places?
+aud: PG Resident / MBBS Student
+body: Act as a statistical editor. Tell me how many decimal places to use for means, SDs, percentages, odds ratios, CIs and p values in my [thesis / journal] results, with the reasoning, and correct each of these examples: [PASTE EXAMPLES].
+try: "Mean age 45.2367 years, 33.33333% male, OR 2.5, p = 0.0001."
+
+@@ Q | table-or-figure | Table or figure for this result?
+aud: PG Resident
+body: Act as a data-presentation editor. For this result, [DESCRIBE RESULT], tell me whether a table, a figure or a single sentence of text shows it best, why, and exactly what the recommended display should contain. Answer in under 100 words.
+try: Prevalence of 6 comorbidities in 150 patients.
+
+@@ Q | axis-check | Check my chart for common errors
+aud: PG Resident
+body: Act as a figure reviewer for a medical journal. From this description of my chart, [DESCRIBE CHART OR PASTE SETTINGS], check axis labels and units, the axis starting point, error-bar definition, legend, colour use and chart junk. List each problem with its fix.
+try: A 3D pie chart of the distribution of blood groups.
+
+@@ Q | describe-figure | Describe a figure in the text
+aud: PG Resident
+body: Act as a results editor. Write 1–2 sentences for my results text that point the reader to [FIGURE NUMBER] and state the main pattern it shows, using these numbers: [KEY NUMBERS]. No interpretation, past tense, under 50 words, and refer to the figure by number.
+try: Figure 2 shows Kaplan-Meier curves; median time to event 14 vs 22 days.
+
+@@ Q | exploratory-label | Label an exploratory analysis correctly
+aud: PG Resident
+body: Act as a trial statistician. Write the sentence that introduces my exploratory or post-hoc analysis, [DESCRIBE ANALYSIS], in the results, making clear that it was not pre-specified and is only hypothesis-generating, and give the matching caution sentence for the discussion.
+try: A subgroup analysis by diabetes status that was added after seeing the data.
+
+@@ Q | results-tense | Fix the tense in my results
+aud: PG Resident
+body: Act as a copy-editor for medical theses. Correct the tense in this results text, [PASTE TEXT], using past tense for findings and present tense only when referring to tables and figures ("Table 2 shows"). Return the corrected text and list the changes.
+try: "The mortality is lower in group A and Figure 3 showed the trend."
