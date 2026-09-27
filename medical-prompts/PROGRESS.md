@@ -42,7 +42,10 @@ Commit and push after every section file.
 | 2.4 Talks & oral presentations | 35 | done |
 | 2.5 Posters & visual teaching aids | 35 | done |
 | 2.6 Case presentations & grand rounds | 40 | done |
-| 2.7 Delivery, Q&A & teaching | 30 | pending |
+| 2.7 Delivery, Q&A & teaching | 30 | done |
+
+**Volume 2 complete:** 300 prompts (35 Master / 173 Standard / 92 Quick), QA clean, rendered to
+`Vol2_Seminars_JournalClubs_Presentations.pdf` (154 pages) and sent to the user.
 
 ## Volume 3: Study, Exam & Viva Prep (#701–1000)
 

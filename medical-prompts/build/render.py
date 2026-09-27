@@ -22,6 +22,58 @@ VOLUMES = {
         "lead": "300 prompts to learn any topic, plan revision, practise MCQs for NEET-PG and UPSC CMS, write university answers, face the viva and reason through a differential diagnosis."},
 }
 
+
+BACK = {
+    1: {"tools": [
+            ("Mapping research gaps, current literature", "Perplexity (Academic), Consensus", "Live search with clickable citations"),
+            ("Reading and comparing your own PDFs", "NotebookLM, Claude, ChatGPT (upload)", "Answers grounded in the documents you give it"),
+            ("Finding recent Indian papers", "Semantic Scholar, PubMed", "Filters by year and field; TLDR summaries"),
+            ("Drafting and structuring long text", "Claude, ChatGPT, Gemini", "Strong long-form structure and formatting control"),
+            ("Running statistics on your data", "ChatGPT data analysis, Julius AI, Gemini in Sheets", "Reads CSV/XLSX and runs code, but verify every number"),
+            ("Sample size cross-check", "OpenEpi, G*Power", "Validated calculators to confirm AI arithmetic"),
+            ("Posters and figures", "Canva, PowerPoint, ChatGPT images", "Layout and custom visuals")],
+        "ethics_title": "The ethics of AI in research",
+        "ethics": ["Disclose AI use as your institution and target journal require.",
+                   "Don't submit AI text verbatim. Rewrite it in your own academic voice.",
+                   "Verify every statistic, reference and data point against the primary source.",
+                   "AI cannot replace your guide's approval, your IEC clearance or your clinical judgement."],
+        "closing": "These prompts will not make you a researcher. They will make you a faster one, and only if the judgement behind them is yours. The clinicians who do well in the next decade will not be the ones who use AI the most. They will be the ones who know exactly when to stop trusting it.",
+        "slogan": "Use them. Check everything. Publish work you can defend.",
+        "disclaimer": "This resource is for educational purposes. It does not replace your institutional research guidelines, ethics committee requirements, university thesis regulations or the advice of your supervisor and statistician. Verify all AI-generated content independently before using it in any submitted work. AI cannot be an author; disclose AI use per ICMJE and your target journal's policy."},
+    2: {"tools": [
+            ("Studying sources for a seminar", "NotebookLM, Claude, ChatGPT (upload)", "Answers and audio overviews grounded in your PDFs"),
+            ("Current evidence and recent trials", "Perplexity (Academic), Consensus", "Live search with clickable citations"),
+            ("Outlines, scripts and speaker notes", "Claude, ChatGPT, Gemini", "Strong structure and plain-language rewriting"),
+            ("Slide decks", "PowerPoint (Copilot), Gamma, Canva", "Fast first drafts from your verified outline"),
+            ("Posters, infographics and leaflets", "Canva, ChatGPT images, Gemini images", "Layouts and illustrations; proofread every word"),
+            ("Polls and live quizzes", "Mentimeter, Slido, Google Forms", "Turn a lecture into an interactive session"),
+            ("Rehearsal feedback", "Phone recording + AI transcript review", "See your pace, filler words and timing")],
+        "ethics_title": "Teaching with AI, responsibly",
+        "ethics": ["Verify every drug dose, guideline year and trial detail before it goes on a slide.",
+                   "Never put identifiable patient data or images into AI tools or slides.",
+                   "Credit figures you adapt, and use only images you have the right to use.",
+                   "AI drafts the deck. You own the content, the delivery and the answers."],
+        "closing": "These prompts will not make you a great teacher. They will give you more time to become one: time to rehearse, to listen to your audience and to answer the question behind the question. The best presenters use AI to prepare and themselves to connect.",
+        "slogan": "Prepare with AI. Teach with judgement. Leave the room better informed.",
+        "disclaimer": "This resource is for educational purposes. Clinical content in any seminar, poster or protocol must be verified against current guidelines and your institution's approved protocols. It does not replace the advice of your moderator, department or hospital policy. Verify all AI-generated content independently before presenting or distributing it."},
+    3: {"tools": [
+            ("Learning a topic from your own books and notes", "NotebookLM, Claude, ChatGPT (upload)", "Explanations grounded in your sources"),
+            ("Tutoring, active recall and self-testing", "ChatGPT Study mode, Claude, Gemini", "Socratic questioning and instant feedback"),
+            ("Custom exam tutor from your notes", "Custom GPTs, Claude Projects, Gemini Gems", "Answers only from your uploaded material"),
+            ("Flashcards and spaced repetition", "Anki, Quizlet", "Proven spaced-repetition scheduling"),
+            ("Audio revision on the move", "NotebookLM Audio Overview", "Turns chapters into listenable discussions"),
+            ("Visual notes and mind maps", "Canva, Napkin AI, ChatGPT images", "Diagrams and summary sheets"),
+            ("Checking facts and recent guidelines", "Perplexity, Consensus, the guideline itself", "Cited sources you can verify")],
+        "ethics_title": "Studying with AI, safely",
+        "ethics": ["Verify every fact, number and drug dose against a standard textbook or current guideline.",
+                   "Use AI to test yourself, not to avoid thinking. Answer first, then check.",
+                   "Never use AI during an exam or assessment where it isn't allowed.",
+                   "Clinical reasoning prompts are for learning, not for decisions about real patients."],
+        "closing": "These prompts will not pass your exam for you. They will make every hour of study count: more recall, more practice and more feedback. The doctors who do best will be the ones who use AI to think harder, not less.",
+        "slogan": "Test yourself. Check everything. Walk into the exam hall ready.",
+        "disclaimer": "This resource is for educational purposes. It does not replace standard textbooks, current clinical guidelines, your university curriculum or your teachers. AI-generated content may contain errors: verify all facts independently. Clinical reasoning prompts are learning aids and are not a substitute for clinical judgement or supervision in patient care."},
+}
+
 CSS = """
 @page { size: A4; margin: 15mm 16mm 17mm 16mm; background: #0a0808;
   @bottom-left { content: "THE 1,000 MEDICAL PROMPTS · VOL %(vol)s"; font-family: Poppins; font-size: 6.5pt; letter-spacing: .1em; color: #8a7f75; }
@@ -95,6 +147,10 @@ tr { break-inside: avoid; }
 .opener.long .big { font-size: 48pt; }
 .opener.long h2 { font-size: 22pt; margin: 2mm 0 3mm; }
 .opener.long .meta { margin: 4mm 0 5mm; }
+.opener.xlong { padding-top: 8mm; }
+.opener.xlong .lead { margin-bottom: 3mm; font-size: 10.5pt; }
+.opener.xlong ol { columns: 3; column-gap: 5mm; font-size: 6.6pt; }
+.opener.xlong ol li { padding: .8mm 0; grid-template-columns: 8mm 1fr; }
 .opener .big { font-size: 64pt; font-weight: 800; color: var(--or); line-height: 1; }
 .opener h2 { font-size: 26pt; margin: 3mm 0 5mm; }
 .opener .lead { font-size: 12pt; max-width: 150mm; }
@@ -136,7 +192,8 @@ tr { break-inside: avoid; }
 .tipline { font-size: 7.6pt; color: var(--muted); margin-top: 2.2mm; }
 .nx { color: var(--or); font-weight: 600; }
 .tips { margin-top: 3mm; }
-.qgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4mm; }
+.qgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm 4mm; }
+.qgrid .card { margin-bottom: 0; }
 .qgrid .card { padding: 3mm 3.5mm; }
 .qgrid .pc-title { font-size: 9pt; }
 .qgrid .pc-num { font-size: 12pt; }
@@ -262,7 +319,8 @@ def front_matter(vol, cfg, secs, total, counts):
 def section_html(s):
     items = "".join(f'<li><span>#{p["n"]}</span>{fmt(p["title"])}</li>' for p in s["prompts"])
     c = {k: sum(1 for p in s["prompts"] if p["tier"] == k) for k in TIERS}
-    cls = "opener long" if len(s["prompts"]) > 28 else "opener"
+    n_p = len(s["prompts"])
+    cls = "opener long xlong" if n_p > 48 else "opener long" if n_p > 28 else "opener"
     opener = f"""<div class="{cls}"><div class="kick">Section {s["num"]}</div><div class="big">{s["num"]}</div>
 <h2>{fmt(s["title"])}</h2><p class="lead">{fmt(s["why"])}</p>
 <div class="meta"><div><b>{len(s["prompts"])}</b>prompts</div><div><b>{c["M"]}</b>Master</div><div><b>{c["S"]}</b>Standard</div><div><b>{c["Q"]}</b>Quick</div></div>
@@ -278,7 +336,7 @@ def section_html(s):
     return opener + masters + std_block + qhtml
 
 
-def back_matter(secs):
+def back_matter(vol, secs):
     rows = []
     for s in secs:
         rows.append(f'<div class="s">{s["num"]} · {fmt(s["title"])}</div>')
@@ -286,26 +344,17 @@ def back_matter(secs):
                  for p in s["prompts"]]
     index = f"""<div class="brk"><div class="kick">Index</div><h2>Every prompt <em>at a glance.</em></h2>
 <p class="small">Q = Quick · S = Standard · M = Master</p><div class="idx">{"".join(rows)}</div></div>"""
-    tools = """<div class="brk"><div class="kick">Tools</div><h2>Which AI tool <em>for which job.</em></h2>
-<table><tr><th style="width:32%">Job</th><th style="width:28%">Best tool</th><th>Why</th></tr>
-<tr><td>Mapping research gaps, current literature</td><td>Perplexity (Academic), Consensus</td><td>Live search with clickable citations</td></tr>
-<tr><td>Reading and comparing your own PDFs</td><td>NotebookLM, Claude, ChatGPT (upload)</td><td>Answers grounded in the documents you give it</td></tr>
-<tr><td>Finding recent Indian papers</td><td>Semantic Scholar, PubMed</td><td>Filters by year and field; TLDR summaries</td></tr>
-<tr><td>Drafting and structuring long text</td><td>Claude, ChatGPT, Gemini</td><td>Strong long-form structure and formatting control</td></tr>
-<tr><td>Running statistics on your data</td><td>ChatGPT data analysis, Julius AI, Gemini in Sheets</td><td>Reads CSV/XLSX and runs code, but verify every number</td></tr>
-<tr><td>Sample size cross-check</td><td>OpenEpi, G*Power</td><td>Validated calculators to confirm AI arithmetic</td></tr>
-<tr><td>Posters and figures</td><td>Canva, PowerPoint, ChatGPT images</td><td>Layout and custom visuals</td></tr>
-</table>
-<div class="callout"><div class="kick">The ethics of AI in research</div>
-<ul class="arrow" style="margin-top:1mm"><li>Disclose AI use as your institution and target journal require.</li>
-<li>Don't submit AI text verbatim. Rewrite it in your own academic voice.</li>
-<li>Verify every statistic, reference and data point against the primary source.</li>
-<li>AI cannot replace your guide's approval, your IEC clearance or your clinical judgement.</li></ul></div>
+    b = BACK[vol]
+    rows_html = "".join(f"<tr><td>{a}</td><td>{t}</td><td>{w}</td></tr>" for a, t, w in b["tools"])
+    ethics = "".join(f"<li>{x}</li>" for x in b["ethics"])
+    tools = f"""<div class="brk"><div class="kick">Tools</div><h2>Which AI tool <em>for which job.</em></h2>
+<table><tr><th style="width:32%">Job</th><th style="width:28%">Best tool</th><th>Why</th></tr>{rows_html}</table>
+<div class="callout"><div class="kick">{b["ethics_title"]}</div><ul class="arrow" style="margin-top:1mm">{ethics}</ul></div>
 <h3 style="margin-top:8mm">One last thing.</h3>
-<p class="lead">These prompts will not make you a researcher. They will make you a faster one, and only if the judgement behind them is yours. The clinicians who do well in the next decade will not be the ones who use AI the most. They will be the ones who know exactly when to stop trusting it.</p>
-<p><b>Use them. Check everything. Publish work you can defend.</b></p>
+<p class="lead">{b["closing"]}</p>
+<p><b>{b["slogan"]}</b></p>
 <p class="small" style="margin-top:6mm">More AI in medicine every week: Instagram <span class="ph">@abhishekjbenur</span> · paraboxai.com</p>
-<p class="small" style="margin-top:4mm">This resource is for educational purposes. It does not replace your institutional research guidelines, ethics committee requirements, university thesis regulations or the advice of your supervisor and statistician. Verify all AI-generated content independently before using it in any submitted work. AI cannot be an author; disclose AI use per ICMJE and your target journal's policy.</p></div>"""
+<p class="small" style="margin-top:4mm">{b["disclaimer"]}</p></div>"""
     return index + tools
 
 
@@ -321,7 +370,7 @@ def render(vol):
                 p["next_n"] = slugs[p["next"]]["n"]
                 p["next_title"] = slugs[p["next"]]["title"]
     total, counts = stats(secs)
-    body = front_matter(vol, cfg, secs, total, counts) + "".join(section_html(s) for s in secs) + back_matter(secs)
+    body = front_matter(vol, cfg, secs, total, counts) + "".join(section_html(s) for s in secs) + back_matter(vol, secs)
     out_html = ROOT / "build" / f"vol{vol}.html"
     out_html.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <title>The 1,000 Medical Prompts · Vol {vol}</title><link rel="stylesheet" href="fonts/fonts.css">

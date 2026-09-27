@@ -1,0 +1,444 @@
+# 2.7 | Delivery, Q&A & teaching | Content earns attention; delivery keeps it. Handle questions with honesty, teach with methods that work, and give feedback that helps people grow.
+
+@@ M | teaching-session-master | Plan a small-group teaching session
+aud: PG Resident / Faculty
+use: When you teach interns, students or juniors in a tutorial, skills lab or classroom.
+why: Most clinical teaching is a mini-lecture with no plan. A structured session (clear objectives, activation of prior knowledge, active learning, practice with feedback and a quick check of learning) teaches far more in the same time, and it gives you evidence for your teaching portfolio.
+persona: You are a medical educator trained in instructional design who designs short, active small-group sessions for clinical learners, and you are known for making every minute count.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Topic: [TOPIC]
+Learners: [e.g. 8 final-year MBBS students / interns / first-year residents]
+What they already know: [brief]
+Time and setting: [e.g. 45 minutes, seminar room with a whiteboard]
+Resources available: [projector, mannequin, cases, handouts]
+task: 1. Write 3 learning objectives with Bloom's verbs.
+2. Plan a warm-up that activates prior knowledge (a question, a case or a quick quiz).
+3. Plan the core content as active learning: case-based discussion, think-pair-share, or worked examples, not a lecture.
+4. Plan a practice activity with feedback (applying the concept to a new case or skill).
+5. Plan a closing check of learning (an exit question or mini-quiz) and a summary.
+6. Build a minute-by-minute lesson plan with the teacher's actions and the learners' actions.
+7. Suggest adaptations for a stronger and a weaker group.
+8. Suggest how to collect feedback on the session.
+rules: Keep teacher talk to under a third of the session time, because learners retain far more from doing than from listening. Keep all clinical content accurate and mark guideline specifics [VERIFY].
+output: The objectives, a lesson-plan table (time, activity, teacher, learners, materials), the adaptations, then the feedback method.
+tweak: End with the single question that best tests whether the session achieved its main objective.
+tips:
+- Start with a question, not a slide. It shows you what the group already knows.
+- Plan less content than you think. Active learning takes more time, and teaches more.
+- Keep your lesson plans. Over a year they become a reusable teaching library.
+next: one-minute-preceptor
+
+@@ M | bedside-teaching | Structured bedside teaching session
+aud: PG Resident / Faculty
+use: When teaching at the bedside on rounds or in a dedicated teaching session.
+why: The bedside is the richest place to teach clinical skills and reasoning, and the easiest place to embarrass a patient or bore a learner. A plan covering patient consent, learner roles, focused skills and a debrief away from the bed makes bedside teaching safe, respectful and effective.
+persona: You are a senior clinical teacher known for respectful, high-yield bedside teaching, who uses frameworks such as SNAPPS and the one-minute preceptor.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The patient's condition and key signs (de-identified): [brief]
+Learners and their level: [brief]
+Time: [e.g. 20 minutes]
+Skill or concept to teach: [e.g. examining for a pleural effusion]
+task: 1. Plan the pre-briefing away from the bed: objectives, roles and etiquette.
+2. Plan patient consent and involvement, and how to talk about findings in front of the patient.
+3. Plan the bedside part: a focused history or examination by one learner, others observing with a checklist, and the teacher demonstrating key signs.
+4. Plan questions that develop reasoning without grilling learners in front of the patient.
+5. Plan the debrief away from the bed: findings, reasoning, differential and teaching points.
+6. Plan how to thank and reassure the patient.
+7. Plan a follow-up learning task.
+8. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Obtain the patient's consent, protect their dignity and privacy, and discuss sensitive matters away from the bed, because patients' trust in the teaching hospital depends on it. Keep the learners' mistakes for the debrief, not the bedside.
+output: A session plan with phases and timings, the question list, the observation checklist, then the follow-up task.
+tweak: End with 3 phrases to use at the bedside that teach without frightening the patient.
+tips:
+- Ask the patient's permission in front of the learners. It models respect.
+- Let one learner examine while others watch for specific things. Everyone stays engaged.
+- Five minutes of focused bedside teaching beats thirty minutes of standing around.
+next: snapps
+
+@@ M | qa-mastery | Handle any question after my talk
+aud: PG Resident / Faculty
+use: Before any talk, presentation or viva-style discussion where questions will come.
+why: The Q&A is where credibility is won or lost. Speakers who listen fully, clarify, answer briefly, admit uncertainty honestly and handle hostile or off-topic questions calmly are remembered as experts. Preparation makes that possible.
+persona: You are a communication coach who trains doctors to handle audience questions with confidence and honesty.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+What I most want to get out of this: [one line]
+My talk topic and key content: [PASTE SUMMARY]
+Audience and the likely tough questioners: [brief]
+Known weaknesses or controversies in my content: [list]
+task: 1. Teach a response framework: listen fully, pause, rephrase or clarify, answer briefly (under 60 seconds), and check that the question was answered.
+2. Prepare answers to 10 likely questions, including 3 difficult ones.
+3. Script responses for special situations: a question I can't answer, a hostile or aggressive question, an off-topic question, a long statement disguised as a question, and a question that exposes a real error in my talk.
+4. Plan how to manage time when many people want to ask.
+5. Plan how to end the Q&A gracefully, including a final sentence that restates my key message.
+6. Suggest 2 backup slides that would answer the most likely difficult questions.
+6. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Model honesty: admitting "I don't know" and offering to follow up, and acknowledging real errors, because audiences forgive uncertainty but not bluffing. Ground the answers in my content, marking facts to verify as [VERIFY].
+output: The framework, the Q&A table, the special-situation scripts, the time-management plan, then the closing line.
+tweak: End with the 3 questions I most fear, and a calm 30-second answer to each.
+tips:
+- Repeat or rephrase the question before answering. It helps the audience and buys you thinking time.
+- Answer the question asked, not the one you prepared.
+- A short answer followed by "does that answer your question?" is better than a long one.
+next: hostile-question
+
+@@ M | delivery-coaching | Improve my voice, pace and presence
+aud: PG Resident / Faculty
+use: When feedback says you speak too fast, too softly, or read your slides, or when you want to present with more authority.
+why: Delivery determines whether good content lands. Pace, pauses, vocal variety, eye contact and movement are skills that improve quickly with specific practice and feedback, and they transfer to rounds, vivas and patient communication.
+persona: You are a speech and presentation coach who works with clinicians and uses recordings and targeted exercises.
+context: My specialty and year: [e.g. MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+My delivery issues as I see them, and feedback I've received: [list]
+A transcript or description of a recent talk (optional): [PASTE]
+Upcoming talks: [brief]
+Time I can spend practising per week: [e.g. 2 hours]
+task: 1. Diagnose the likely causes of my issues (nerves, over-preparation of content, under-rehearsal, habits).
+2. Give specific exercises for pace (target words per minute, marked pauses), voice (projection, variety), filler words, eye contact and gestures.
+3. Give a practice plan over 2–3 weeks, with measurable targets.
+4. Explain how to self-assess with recordings (what to watch for).
+5. Give a 5-minute warm-up routine before a talk.
+6. Give tips for specific settings: a large hall, a small room, online.
+7. Suggest how to get useful feedback from one trusted colleague after each talk.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep the exercises practical and achievable within my time, and focus on 2–3 issues at a time, because trying to fix everything at once fixes nothing.
+output: The diagnosis, an exercises table (issue, exercise, target), the practice plan, the self-assessment guide, the warm-up, then the setting tips.
+tweak: End with one change I can make in my very next talk that will have the biggest effect.
+tips:
+- Record yourself on your phone. It's uncomfortable, and it's the fastest way to improve.
+- Mark pauses in your notes with a "/" symbol. Planned pauses slow you down naturally.
+- Speak to one person at a time for a sentence or two. It fixes wandering eye contact.
+next: talk-feedback-analysis
+
+@@ S | one-minute-preceptor | The one-minute preceptor, applied
+aud: PG Resident / Faculty
+use: When a learner presents a case to you in a busy OPD or ward.
+persona: You are a clinical teacher who uses the one-minute preceptor model efficiently.
+context: A case a learner might present to me (de-identified): [PASTE]
+The learner's level: [brief]
+task: 1. Walk through the 5 microskills with scripts for this case: get a commitment, probe for supporting evidence, teach a general rule, reinforce what was done well, and correct mistakes.
+2. Write the likely learner responses and my follow-ups.
+3. Keep the whole interaction to about 2 minutes.
+rules: Keep the teaching rule accurate and generalisable, and give the correction privately and constructively, because the learner's confidence matters in busy clinics.
+output: A 5-step script table (microskill, my words, learner's likely answer, follow-up).
+tip: "What do you think is going on?" is the most powerful teaching question in a busy clinic.
+try: An intern presenting a patient with a first episode of seizure in the OPD.
+next: snapps
+
+@@ S | snapps | Teach learners to present with SNAPPS
+aud: PG Resident / Faculty
+use: When you want learners to drive their own case presentations and reasoning.
+persona: You are a clinical educator who uses the learner-centred SNAPPS model.
+context: The learner's level and a sample case (de-identified): [brief]
+task: 1. Explain the SNAPPS steps briefly: Summarise, Narrow the differential, Analyse it, Probe the preceptor, Plan management, Select a learning issue.
+2. Model a SNAPPS presentation of the case.
+3. Write the preceptor's responses at each step.
+4. Give a pocket card for learners to use.
+rules: Keep the clinical content of the example accurate, and emphasise that probing the preceptor is encouraged, because SNAPPS works only when learners feel safe to ask.
+output: The explanation, the modelled presentation, the preceptor responses, then the pocket card.
+tip: The "select a learning issue" step turns every case into self-directed learning.
+try: A second-year MBBS student presenting a child with fever and a rash.
+next: one-minute-preceptor
+
+@@ S | flipped-classroom | Design a flipped-classroom session
+aud: Faculty / Senior Resident
+use: When learners can prepare in advance and you want class time for application.
+persona: You are a medical educator experienced in flipped and blended learning.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Topic and learners: [brief]
+Class time: [minutes]
+Resources for pre-work (videos, readings, notes): [list or "suggest"]
+task: 1. Design the pre-work: 20–30 minutes, with a short check quiz.
+2. Design the class: a quick quiz review, application activities (cases, problem-solving), and a wrap-up.
+3. Plan for learners who didn't do the pre-work.
+4. Plan the assessment and feedback.
+rules: Keep the pre-work short and clearly linked to the class activity, because long pre-work doesn't get done.
+output: The pre-work plan, the class plan with timings, the contingency, then the assessment.
+tip: Start the class with a question that only makes sense if people did the pre-work.
+try: A flipped session on ABG interpretation for interns.
+next: teaching-session-master
+
+@@ S | simulation-scenario | Write a simulation scenario
+aud: Faculty / Senior Resident
+use: For skills-lab or in-situ simulation training.
+persona: You are a simulation educator who writes realistic, safe scenarios with structured debriefs.
+context: Learning objectives: [list]
+Learners and their team composition: [brief]
+Equipment or mannequin available: [brief]
+Duration: [e.g. 10-minute scenario + 20-minute debrief]
+task: 1. Write the scenario: a patient brief, the initial state (vitals, findings) and the expected actions.
+2. Build the progression: how vitals change with the right and wrong actions.
+3. Specify the confederate roles and cues.
+4. Write the debrief plan (e.g. reactions, analysis, summary) with key questions.
+5. Add a checklist of critical actions.
+rules: Base the expected actions on current guidelines marked [VERIFY], and maintain psychological safety during the debrief, because simulation should build confidence, not fear.
+output: The scenario sheet, the progression table, the roles, the debrief guide, then the checklist.
+tip: The debrief is where the learning happens. Plan twice as much time for it as for the scenario.
+try: Anaphylaxis in a ward patient after an IV antibiotic, for interns and nurses.
+next: feedback-giving
+
+@@ S | skills-teaching | Teach a clinical skill step by step
+aud: PG Resident / Faculty
+use: When teaching a procedure or examination skill to juniors.
+persona: You are a clinical skills tutor who uses Peyton's four-step approach.
+context: The skill: [e.g. arterial blood gas sampling, lumbar puncture, CPR]
+Learners and their level: [brief]
+Equipment: [brief]
+task: 1. Break the skill into steps with the key safety points.
+2. Plan Peyton's 4 steps: demonstrate at normal speed, deconstruct (demonstrate with explanation), comprehension (the learner talks you through it while you perform), and performance (the learner performs).
+3. Write the common errors and how to correct them.
+4. Create a competency checklist for assessment.
+rules: Follow the standard technique and local protocols, marking any variation [CHECK LOCAL SOP], because skills are learned as they are first taught.
+output: The step list, the 4-step plan, the error list, then the checklist.
+tip: Step 3, where the learner explains while you do, is the step most teachers skip, and it's the most powerful.
+try: Teaching arterial blood gas sampling to interns on a mannequin arm.
+next: feedback-giving
+
+@@ S | feedback-giving | Give feedback that helps
+aud: PG Resident / Faculty
+use: After observing a learner's presentation, procedure or patient interaction.
+persona: You are a medical educator trained in constructive feedback models (Pendleton, ask-tell-ask, the feedback sandwich done well).
+context: What I observed (behaviours, not personality): [brief]
+The learner's level and goals: [brief]
+Setting (private or public): [brief]
+task: 1. Choose the feedback model best suited to the situation.
+2. Write a feedback script: start by asking for self-assessment, reinforce specific strengths, name 1–2 specific improvements with examples, and agree an action plan.
+3. Suggest phrasing that is specific and behavioural.
+4. Plan a follow-up.
+rules: Keep the feedback specific, behavioural and private, focus on 1–2 improvements, and avoid vague praise or criticism, because vague or public feedback doesn't change behaviour.
+output: The chosen model, the script, the phrasing examples, then the follow-up plan.
+tip: "Your summary was clear because you used semantic qualifiers" teaches. "Good job" doesn't.
+try: Feedback to an intern whose case presentation was disorganised but whose examination was thorough.
+next: one-minute-preceptor
+
+@@ S | intern-orientation | Orientation teaching for new interns
+aud: PG Resident / Faculty
+use: When a new batch of interns joins your department.
+persona: You are a department educator who designs practical orientation sessions.
+context: Department and the interns' roles: [brief]
+Time available: [e.g. 2 hours]
+Common problems new interns face here: [list]
+task: 1. Plan the session: introductions, roles and expectations, key protocols, documentation standards, escalation pathways and common pitfalls.
+2. Include hands-on elements (e.g. writing a note, an SBAR call).
+3. Create a one-page survival guide.
+4. Plan a check-in after one week.
+rules: Keep protocols consistent with the department's approved versions, marking them [VERIFY WITH DEPARTMENT], and emphasise when to call for help, because new interns are most at risk of not escalating.
+output: The session plan, the hands-on activities, the survival guide, then the check-in plan.
+tip: "When in doubt, call" should be said more than once. New interns worry about disturbing seniors.
+try: Orientation for 20 interns joining the medicine department.
+next: teaching-session-master
+
+@@ S | large-lecture | Engage a large lecture of 100+ students
+aud: Faculty / Senior Resident
+use: When you must lecture to a large MBBS batch.
+persona: You are an award-winning lecturer who keeps large classes engaged.
+context: Topic and duration: [brief]
+Batch size and year: [brief]
+Technology available: [projector, microphone, poll app, none]
+task: 1. Chunk the lecture into 10–15 minute segments, with an activity between segments.
+2. Suggest activities that work with large groups: polls, think-pair-share, a show of hands, one-minute papers.
+3. Plan a clinical hook for each segment.
+4. Plan the end-of-lecture summary and a check of learning.
+rules: Keep each segment focused on one objective, because attention drops sharply after about 15 minutes of continuous lecturing.
+output: A segment plan with activities and timings, then the summary and check.
+tip: A 2-minute "turn to your neighbour and explain…" resets attention in any size of room.
+try: A 60-minute lecture on the pharmacology of antihypertensives for 150 second-year students.
+next: teaching-session-master
+
+@@ S | small-group-dynamics | Handle difficult small-group dynamics
+aud: Faculty / Senior Resident
+use: When a tutorial group has a dominant talker, a silent group or disengaged learners.
+persona: You are an experienced small-group facilitator.
+context: The group problem: [e.g. one learner dominates; others are silent; phones out]
+Group size and level: [brief]
+task: 1. Diagnose the likely causes.
+2. Suggest facilitation techniques: structured turn-taking, directed questions, pair work, roles and ground rules.
+3. Script how to redirect a dominant learner respectfully.
+4. Script how to draw in quiet learners without putting them on the spot.
+5. Suggest how to set ground rules at the next session.
+rules: Keep the strategies respectful of every learner, because humiliation damages the whole group's learning.
+output: The diagnosis, the techniques, the scripts, then the ground rules.
+tip: "Let's hear from someone who hasn't spoken yet" works better than naming the quiet person.
+try: A group of 10 residents where one senior answers every question.
+next: teaching-session-master
+
+@@ S | online-teaching | Keep an online class engaged
+aud: Faculty / Senior Resident
+use: When teaching over Zoom, Teams or Google Meet.
+persona: You are an online medical educator who keeps virtual learners active.
+context: Topic, duration and number of learners: [brief]
+Platform features available: [polls, breakout rooms, chat, whiteboard]
+task: 1. Plan interaction every 5–10 minutes: polls, chat questions, breakout cases and annotation.
+2. Plan the camera and presence strategy (encouraging cameras, using names).
+3. Plan breakout-room activities with clear instructions.
+4. Plan a check of learning at the end.
+5. Plan for technical problems.
+rules: Keep instructions for activities very clear and posted in the chat, because online learners can't ask neighbours what to do.
+output: An interaction plan with timings, the breakout design, the check, then the tech backup.
+tip: Open with a chat question everyone can answer in 10 seconds. It gets people participating from minute one.
+try: A 60-minute online tutorial on ECG basics for 40 MBBS students.
+next: online-slides
+
+@@ S | formative-check | Check learning during teaching
+aud: PG Resident / Faculty
+use: To know whether learners are following, before the end of the session.
+persona: You are an assessment-for-learning specialist.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Topic and objectives: [PASTE]
+Session format and group size: [brief]
+task: 1. Suggest 5 quick formative checks: hinge questions, a show of fingers (confidence 1–5), mini-whiteboards, polls and one-minute papers.
+2. Write 3 hinge questions for my topic, with the misconception each wrong option reveals.
+3. Explain how to adapt the teaching based on the responses.
+rules: Design the questions so that the wrong answers reveal specific misconceptions, because that is what makes a check useful.
+output: The checks list, the hinge questions with their distractor analysis, then the adaptation guide.
+tip: If more than a third of the group gets a hinge question wrong, re-teach before moving on.
+try: Teaching acid-base disorders to interns.
+next: exit-ticket
+
+@@ S | teaching-portfolio | Build a teaching portfolio
+aud: PG Resident / Faculty
+use: For academic promotion, job applications, or to track your growth as a teacher.
+persona: You are an academic development mentor for clinician-educators.
+context: My teaching activities so far (seminars, lectures, bedside, simulation, mentoring): [list]
+Feedback or evaluations I have: [brief]
+Purpose of the portfolio: [promotion / application / personal growth]
+task: 1. Suggest the portfolio structure: teaching philosophy, activities log, evidence of effectiveness (feedback, learner outcomes), materials developed, and reflections.
+2. Draft a 250-word teaching philosophy from my activities.
+3. Create a teaching-activity log template.
+4. Suggest how to collect better evidence going forward.
+rules: Include only activities and feedback I actually have, because portfolios are verified during academic review.
+output: The structure, the philosophy draft, the log template, then the evidence plan.
+tip: Save feedback forms and a copy of every teaching material. Evidence is the hardest part to reconstruct.
+try: A second-year resident with 10 seminars, weekly intern teaching and one simulation session.
+next: teaching-evaluation
+
+@@ S | hostile-question | Respond to a hostile or aggressive question
+aud: PG Resident / Faculty
+use: When preparing for a talk where someone may challenge you aggressively.
+persona: You are a communication coach experienced in high-pressure academic settings.
+context: The likely hostile question or challenge: [paste]
+The relevant facts from my work: [brief]
+task: 1. Separate the emotion from the content of the question.
+2. Write a calm response: acknowledge, clarify the substance, answer with evidence, and offer to continue afterwards.
+3. Write what not to say.
+4. Plan how to handle persistence (a second challenge).
+rules: Keep the response respectful and factual, and concede valid points, because the audience judges how you respond more than who is right.
+output: The analysis, the response script, the avoid list, then the persistence plan.
+tip: "That's a fair challenge" defuses most hostility, and it costs nothing.
+try: "Your sample is tiny and your conclusions are meaningless. Why present this at all?"
+next: qa-mastery
+
+@@ S | dont-know-answer | Answer "I don't know" with confidence
+aud: PG Resident / MBBS Student
+use: When preparing for Q&A, rounds or vivas where you may not know an answer.
+persona: You are a senior clinician-teacher who models intellectual honesty.
+context: The setting (talk, rounds, viva, patient conversation): [brief]
+Examples of questions I might not know: [list]
+task: 1. Write 4 honest responses for not knowing, adapted to each setting.
+2. Show how to reason aloud from first principles when partly unsure.
+3. Show how to offer to follow up, and actually do it.
+4. Explain when a guess is acceptable and how to label it.
+rules: Never recommend bluffing, especially about patient care, because a confident wrong answer is dangerous in medicine.
+output: The responses by setting, a reasoning-aloud example, then the follow-up guidance.
+tip: "I'm not sure. Let me reason it through…" often earns more respect than a quick right answer.
+try: A viva question about a rare drug interaction.
+next: qa-mastery
+
+@@ S | voice-pace | Exercises for voice and pace
+aud: PG Resident / MBBS Student
+use: When you speak too fast, too softly or in a monotone.
+persona: You are a voice coach for professional speakers.
+context: My main voice issue: [fast / soft / monotone / accent clarity]
+Time available to practise daily: [minutes]
+task: 1. Give 5 daily exercises (breathing, projection, articulation, pausing and vocal variety).
+2. Set a target pace (e.g. 130–150 words per minute) and explain how to measure it.
+3. Explain how to mark scripts for pauses and emphasis.
+4. Give a 2-week practice plan.
+rules: Keep the exercises safe for the voice (no strain) and practical in a small space, because busy residents practise in hostels and call rooms.
+output: The exercises table, the pace method, the script-marking guide, then the plan.
+tip: Record a 1-minute reading daily and time it. Pace problems become obvious and fixable.
+try: A resident who speaks at over 180 words per minute when nervous.
+next: delivery-coaching
+
+@@ S | body-language | Body language and stage presence
+aud: PG Resident / Faculty
+use: When you want to look more confident while presenting.
+persona: You are a presentation coach specialising in non-verbal communication.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+My habits (e.g. pacing, hands in pockets, facing the screen, fidgeting): [list]
+Venue: [podium / open stage / small room / online]
+task: 1. Explain the effect of each habit on the audience.
+2. Give a replacement behaviour for each.
+3. Give guidance on stance, gestures, movement with purpose and using the pointer.
+4. Give online-specific guidance (camera framing, eye contact with the lens).
+rules: Keep the advice natural rather than theatrical, because forced body language looks less confident than none.
+output: A habit-to-fix table, the general guidance, then the online tips.
+tip: Face the audience, not the screen. Glance at your laptop instead of turning to the projector.
+try: A presenter who reads from the screen with their back to the audience.
+next: delivery-coaching
+
+@@ S | teaching-evaluation | Peer observation of teaching
+aud: Faculty / Senior Resident
+use: When a colleague observes your teaching, or you observe theirs.
+persona: You are a faculty-development specialist who runs peer-observation programmes.
+context: My specialty and level: [e.g. MD Medicine, year 2]
+Audience or purpose: [brief]
+The session type and the teacher's goals for feedback: [brief]
+task: 1. Create an observation form: objectives clarity, structure, engagement, questioning, use of time, clinical accuracy and learner participation.
+2. Suggest how to agree the focus before the session.
+3. Suggest how to record specific observations (time-stamped, behavioural).
+4. Plan a supportive post-observation conversation.
+rules: Focus on observable behaviours and the teacher's chosen goals, because peer observation fails when it becomes judgemental.
+output: The observation form, the pre-meeting guide, then the conversation plan.
+tip: Observe for what the teacher asked you to look at. Unrequested critique rarely helps.
+try: Peer observation of a resident's 30-minute bedside teaching session.
+next: feedback-giving
+
+@@ Q | rephrase-question | Rephrase an audience question
+aud: PG Resident
+body: Act as a speaking coach. Show me how to rephrase this audience question, [PASTE QUESTION], in one neutral sentence that confirms I understood it, buys thinking time and helps the rest of the audience hear it, before I answer. Flag anything you are unsure of so I can check it.
+try: "Isn't this whole approach outdated now that the new guidelines have come out?"
+
+@@ Q | bridge-off-topic | Handle an off-topic question
+aud: PG Resident / Faculty
+body: Act as a session chair. Write a polite 2-sentence response to this off-topic question, [PASTE QUESTION], after my talk on [TOPIC], that acknowledges it, bridges back to the talk if possible, and offers to discuss it afterwards. Flag anything you are unsure of so I can check it.
+try: A question about hospital salaries after a talk on sepsis management.
+
+@@ Q | pause-technique | Use pauses to sound confident
+aud: PG Resident / MBBS Student
+body: Act as a speaking coach. Mark where to pause in this script, [PASTE SCRIPT], using "/" for a short pause and "//" for a long pause, before key numbers, after questions and before the conclusion, and explain in 2 lines why each long pause is there.
+try: The opening and closing paragraphs of a seminar on stroke.
+
+@@ Q | eye-contact | Fix wandering eye contact
+aud: PG Resident
+body: Act as a presentation coach. Give me 5 practical techniques for better eye contact when presenting to [AUDIENCE SIZE] people in a [ROOM TYPE], including what to do when using notes and slides, and one exercise to practise before my next talk.
+try: A 40-seat seminar room with the slides projected behind me.
+
+@@ Q | slow-down-cues | Remind myself to slow down
+aud: PG Resident / MBBS Student
+body: Act as a speaking coach. I speak too fast when nervous. Suggest 5 cues I can build into my slides, notes and routine for a [DURATION]-minute talk that will naturally slow me down, such as breathing points and planned audience questions.
+try: A 15-minute case presentation.
+
+@@ Q | teaching-icebreaker | Opening activity for a teaching session
+aud: PG Resident / Faculty
+body: Act as a medical educator. Suggest 3 quick opening activities (under 3 minutes each) for a teaching session on [TOPIC] with [LEARNERS] that activate prior knowledge and show me what they already know. Flag anything you are unsure of so I can check it.
+try: A tutorial on heart failure for final-year MBBS students.
+
+@@ Q | exit-ticket | An exit-ticket question
+aud: PG Resident / Faculty
+body: Act as an assessment-for-learning specialist. Write 3 exit-ticket questions for the end of my session on [TOPIC], each answerable in 1–2 minutes, that test the main objective [OBJECTIVE] and reveal the most common misconception. Flag anything you are unsure of so I can check it.
+try: A session on interpreting chest X-rays for interns.
+
+@@ Q | one-line-feedback | One sentence of specific feedback
+aud: PG Resident / Faculty
+body: Act as a clinical teacher. Turn this vague feedback, [VAGUE FEEDBACK], into one specific, behavioural sentence that names what the learner did, its effect, and exactly what to do next time, in a supportive tone. Flag anything you are unsure of so I can check it.
+try: "Your presentation was a bit confusing."
+
+@@ Q | specific-praise | Praise that reinforces the right behaviour
+aud: PG Resident / Faculty
+body: Act as a medical educator. Rewrite this generic praise, [GENERIC PRAISE], into specific praise for [LEARNER ACTION] that names the behaviour and why it mattered for the patient or the team, in one or two sentences. Flag anything you are unsure of so I can check it.
+try: "Good job with that patient" after an intern calmly explained a diagnosis to a family.
