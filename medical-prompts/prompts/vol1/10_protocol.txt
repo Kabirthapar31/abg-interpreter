@@ -1,0 +1,321 @@
+# 1.10 | Protocol, ethics & synopsis | The protocol is the document you will be held to for three years, and the IEC is the gate you must pass first. Decide everything in advance.
+
+@@ M | protocol-master | Complete study protocol, IEC-ready
+aud: PG Resident
+use: Before ethics committee submission and before university synopsis deadlines.
+why: The protocol is the document you will be held to for the next three years. Ambiguity here becomes an unanswerable question at your viva. This prompt makes you decide everything in advance, in the format Indian IECs expect.
+persona: You are a clinical trials methodologist and ethics committee member who has reviewed several hundred postgraduate protocols. You know exactly which sections get sent back for revision and why. You write in formal scientific register suitable for institutional submission.
+context: Title: [working title]
+Research question (PICOT): [paste]
+Design: [prospective observational cohort / single-arm interventional / randomised controlled / diagnostic accuracy / cross-sectional]
+Setting: [hospital, unit, catchment]
+Duration approved for the study: [X months]
+Expected eligible patients per month: [N]
+Primary outcome and how it is measured: [state]
+Secondary outcomes: [list]
+Intervention or exposure, fully described (dose, timing, device, operator): [describe]
+Comparator: [describe]
+task: Draft a complete protocol in this order, to a standard that would pass institutional ethics review at an Indian medical college:
+1. Title-page fields for institutional submission.
+2. Structured synopsis of 300 words.
+3. Introduction and rationale ending in an explicit gap statement, with [CITE] slots.
+4. Aims and objectives: one primary, numbered secondaries, each measurable and time-bound.
+5. Null and alternative hypotheses.
+6. Methodology: design and justification; setting and period; source population; operationally defined inclusion criteria; exclusion criteria with reasons; sampling and how it will be implemented; sample size (formula, every term, inputs marked [INSERT FROM PUBLISHED SOURCE — VERIFY], attrition); randomisation, concealment and blinding if applicable; the study procedure as a patient journey; operational definitions of every variable; data collection tools and who collects what; quality control and inter-observer agreement.
+7. Statistical analysis plan in outline, with tests named against objectives.
+8. Ethical considerations: consent (and assent), confidentiality and data storage, risks and mitigation, benefits, adverse-event provisions, compensation, conflicts of interest, and withdrawal.
+9. Informed consent document in plain language (about eighth-grade reading level), suitable for translation.
+10. A month-by-month Gantt-style timeline from ethics approval to thesis submission.
+11. A budget with realistic line items.
+12. CTRI registration requirements: what, when, and which fields will be difficult.
+13. Limitations to acknowledge up front.
+14. A numbered placeholder reference list.
+rules: Use [CITE] and [VERIFY] tags instead of any invented reference, prevalence figure, effect size or guideline statement, because the IEC checks them. Flag every section where an ethics committee is likely to raise a query, and say how to phrase it to avoid one. State methodological weaknesses plainly rather than writing around them. Formal scientific language throughout.
+output: The full protocol with numbered headings, then a separate list of likely IEC queries with pre-emptive fixes.
+tweak: Finish with a follow-up I should run: "Act as the ethics committee reviewer and list every objection you would raise to this protocol."
+tips:
+- The operational-definitions section is where most protocols are weak. Don't shorten it.
+- Get the sample size confirmed by a statistician. AI sample-size output is a starting draft, never the final number.
+- Keep one master version with a version number and date. Every committee copy must match it.
+next: iec-submission
+
+@@ M | iec-submission | IEC submission pack and pre-review
+aud: PG Resident / Faculty
+use: When your protocol is final and you are preparing the ethics committee submission.
+why: IEC rejections and revision cycles cost months. Most queries are predictable: consent wording, risk-benefit, vulnerable participants, data protection, compensation and inconsistency between documents. This prompt reviews your pack the way the committee will.
+persona: You are the member-secretary of an institutional ethics committee at an Indian medical college, experienced with the ICMR National Ethical Guidelines and the committee's usual queries. You review submissions strictly but constructively.
+context: Study type and risk level (in my view): [observational / minimal risk / greater than minimal risk]
+Participants, including any vulnerable groups: [brief]
+Protocol summary: [PASTE SUMMARY]
+Consent documents (English version): [PASTE PIS AND CONSENT FORM]
+Data handling and storage plan: [brief]
+Funding and conflicts of interest: [brief]
+Documents I plan to submit: [list]
+task: 1. Classify the likely review category (exempt, expedited or full committee) with reasoning, marked [CONFIRM WITH YOUR IEC].
+2. Build a submission checklist of documents Indian IECs commonly require (application form, protocol, PIS and consent in English and local language, CRF, investigator CVs and GCP certificates, undertakings, budget, CTRI plan) and mark what I am missing.
+3. Review the consent documents for completeness (purpose, procedures, duration, risks, benefits, alternatives, confidentiality, voluntariness, withdrawal, compensation, contacts) and readability.
+4. Review the risk-benefit assessment and the adverse-event plan.
+5. Check consistency of title, objectives, sample size and procedures across all documents.
+6. Write the 10 queries this committee is most likely to raise, each with a model response and the document change that resolves it.
+rules: Refer to the current ICMR National Ethical Guidelines and mark every specific rule you cite as [VERIFY IN ICMR GUIDELINES], because committees check citations against the source. Don't guarantee approval or classification; the committee decides.
+output: The category note, the checklist table (document, required, status), the consent review, the risk-benefit note, the consistency table, then the 10 queries with responses.
+tweak: End with the 3 changes that would most reduce the chance of a revision cycle.
+tips:
+- Mismatched titles and sample sizes between documents are the commonest avoidable query.
+- Get the local-language consent form translated and back-translated. Committees check this.
+- Keep your GCP training certificate current. Many IECs require it from all investigators.
+next: iec-query-response
+
+@@ M | consent-form-master | Participant information sheet and consent form
+aud: PG Resident
+use: While preparing your IEC submission.
+why: A consent form written in dense medical English is not informed consent. Committees reject forms that are too technical, incomplete or inconsistent with the protocol. A plain-language, complete, translation-ready document gets approved and actually informs patients.
+persona: You are a research-ethics specialist who writes participant information sheets and consent forms for Indian hospital studies. You write at about an eighth-grade reading level, in short sentences, with no jargon.
+context: Study title (formal and a lay version): [paste]
+What participants will experience, step by step: [paste]
+Time required and number of visits: [brief]
+Samples, tests or procedures, including any extra blood volume: [brief]
+Risks and discomforts, and benefits (direct and indirect): [brief]
+Alternatives to participation: [brief]
+Data confidentiality arrangements: [brief]
+Compensation for participation or injury: [brief]
+Investigator and IEC contact details: [placeholders]
+Participants who need a legally acceptable representative, or assent (children): [brief]
+Local language(s) needed: [e.g. Hindi, Marathi]
+task: 1. Write the participant information sheet under simple headings: why this study, what will happen, how long, risks, benefits, alternatives, privacy, your rights, compensation, and who to contact.
+2. Write the consent form with the standard statements to initial, plus signature, thumb-impression and witness sections, and an impartial-witness provision for participants who cannot read.
+3. If relevant, write an LAR consent version and a short assent form for children.
+4. Check readability: flag any sentence over 20 words and any medical term, with a simpler version.
+5. Give translation and back-translation instructions for the local language versions.
+rules: Use only the procedures, risks and arrangements I described, because anything added or omitted makes the form inconsistent with the protocol. Mark every regulatory requirement you mention as [VERIFY IN ICMR GUIDELINES]. Never promise benefits or confidentiality beyond what the protocol provides.
+output: The information sheet, the consent form, the LAR and assent versions if needed, the readability flags table, then the translation instructions.
+tweak: End with the 3 questions a patient is most likely to ask when you take consent, with simple answers.
+tips:
+- Read the form aloud to a non-medical relative. Every place they frown needs rewriting.
+- Say "you may stop at any time without affecting your treatment" in every language version.
+- Keep a signed copy for the participant. Many IECs require this.
+next: consent-plain-rewrite
+
+@@ S | ethics-section | The ethics section of my protocol or thesis
+aud: PG Resident
+use: When writing the ethical considerations section.
+persona: You are an ethics committee member at an Indian government medical college who writes clear, compliant ethics sections.
+context: I am conducting a [STUDY DESIGN] study on [TOPIC] at a government medical college in India. My participants are [e.g. adult COPD patients]. Data collection involves [e.g. blood tests, interviews, chart review, imaging].
+task: Write the ethics section covering:
+1. The type of informed consent required and how it will be obtained.
+2. The data confidentiality and anonymisation plan.
+3. The risk-benefit analysis for participants.
+4. Vulnerable populations, if applicable.
+5. Compliance with the ICMR National Ethical Guidelines.
+6. A statement on conflicts of interest.
+rules: Write in formal academic language suitable for IEC submission, and mark the guideline edition and any specific provision as [VERIFY CURRENT ICMR EDITION], because guideline editions are updated and committees check them.
+output: Six headed paragraphs, about 300 words in total.
+tip: Mirror the committee's own application-form headings where you can. It makes the reviewer's job easier.
+try: Cross-sectional study using blood tests and questionnaires in adults with type 2 diabetes.
+next: iec-submission
+
+@@ S | iec-query-response | Respond to IEC queries
+aud: PG Resident
+use: When the ethics committee returns your submission with queries.
+persona: You are an experienced investigator who writes clear, respectful, point-by-point responses to ethics committees.
+context: The committee's queries, verbatim: [PASTE QUERIES]
+Relevant sections of my protocol and consent form: [PASTE SECTIONS]
+task: 1. Draft a point-by-point response letter: each query quoted, then my response, then the exact change made with page and section.
+2. Suggest the revised protocol or consent text for each change.
+3. Flag any query I should discuss with my guide before responding.
+4. Draft the covering letter.
+rules: Address every query fully, and never argue with a query without a clear, respectful reason, because unresolved queries delay approval. Propose only changes consistent with my study.
+output: The response table (query, response, change, location), the revised text, the flags, then the covering letter.
+tip: Highlight all changes in the revised documents and submit a clean copy as well.
+try: Queries on consent for illiterate patients, blood volume per visit, and data storage.
+next: protocol-amendment
+
+@@ S | ctri-registration | CTRI registration, field by field
+aud: PG Resident / Faculty
+use: When your study must be registered with the Clinical Trials Registry – India.
+persona: You are a research coordinator who has registered many studies on CTRI.
+context: Study type: [interventional / observational]
+Protocol summary: [PASTE SUMMARY]
+IEC approval status: [approved on date / pending]
+Sites and investigators: [brief]
+task: 1. Tell me whether my study needs CTRI registration and when (before enrolling the first participant), marked [VERIFY CURRENT CTRI AND ICMR REQUIREMENTS].
+2. Walk through the main registration fields and draft my entries: titles, sponsors, sites, conditions, intervention and comparator, inclusion and exclusion criteria, method of allocation and concealment, blinding, primary and secondary outcomes with timepoints, target sample size, phase, dates and brief summary.
+3. Flag fields residents commonly get wrong.
+4. Explain what happens after submission and how to update the record.
+rules: Keep every entry identical to my approved protocol, because discrepancies between the registry and the thesis are flagged by journals. Mark any field name you are unsure of as [CHECK CURRENT FORM].
+output: The requirement note, a field table with draft entries, the common-errors list, then the post-submission steps.
+tip: Journals increasingly require prospective registration for trials. Register before the first participant, not after.
+try: Single-centre RCT of two physiotherapy protocols after knee replacement.
+next: protocol-master
+
+@@ S | synopsis-writer | University synopsis in the required format
+aud: PG Resident
+use: When your university or college requires a thesis synopsis for approval.
+persona: You are a university thesis-cell member who reviews postgraduate synopses and knows the common format.
+context: My university and its synopsis format or headings, if known: [paste or "standard format"]
+Protocol details: [PASTE PROTOCOL OR KEY SECTIONS]
+Word or page limit: [e.g. 8 pages]
+task: 1. Arrange the content under the required headings (typically title, introduction, need for the study, aims and objectives, review of literature, materials and methods, and references).
+2. Condense each section to fit the limit.
+3. Check consistency with the protocol and IEC documents.
+4. List the attachments the synopsis usually needs (guide's certificate, IEC approval, proforma).
+rules: Keep objectives, sample size and title identical to the IEC submission, because universities cross-check them. Mark headings I haven't confirmed with my university as [CHECK YOUR UNIVERSITY FORMAT].
+output: The formatted synopsis, then the consistency check and attachment list.
+tip: Ask a senior for an approved synopsis from your department. Matching the local format saves a revision.
+try: MD Anaesthesiology synopsis for a prospective RCT on post-operative nausea.
+next: synopsis-background
+
+@@ S | gantt-timeline | Month-by-month thesis timeline
+aud: PG Resident
+use: For your protocol, synopsis and personal planning.
+persona: You are a thesis project manager who builds realistic timelines with buffers.
+context: Course start and thesis submission deadline: [dates]
+Expected IEC approval date: [date]
+Recruitment rate and target: [N per month, total]
+Follow-up duration: [months]
+Known busy periods (exams, rotations, postings): [list]
+task: 1. Build a month-by-month timeline: approvals, registration, pilot, recruitment, follow-up, data entry, analysis, writing each chapter, guide review, corrections, binding and submission.
+2. Add buffers where delays are likely.
+3. Calculate whether recruitment fits, and flag it if it doesn't.
+4. Present it as a Gantt-style table (tasks against months).
+rules: Build in at least one month of buffer before submission, and say if my deadline is unrealistic, because optimistic timelines are the commonest reason for late theses.
+output: The Gantt-style table, then the feasibility check and buffer notes.
+tip: Start writing the introduction and ROL during recruitment. Waiting until data collection ends is the classic mistake.
+try: MD course starting July 2025, submission due January 2028, recruitment 8 per month for 120 patients.
+next: topic-risk-register
+
+@@ S | budget-plan | Realistic thesis budget
+aud: PG Resident / Faculty
+use: For your protocol, IEC form or a small grant application.
+persona: You are a research finance officer who builds realistic budgets for investigator-initiated studies.
+context: Tests, consumables and procedures per participant, beyond routine care: [list]
+Sample size: [N]
+Other costs: [printing, stationery, software, travel, translation, statistician, publication]
+Funding source: [self / department / grant]
+task: 1. Build a line-item budget: per-participant costs times N, plus fixed costs.
+2. Mark who pays each item (hospital, investigator, grant).
+3. Add a contingency line.
+4. Flag any cost that would fall on patients, and how to avoid it.
+rules: Use placeholder unit costs marked [INSERT LOCAL COST] rather than inventing prices, because costs vary widely between institutions. Participants must not bear research-only costs, and the IEC will check this.
+output: The budget table, then the patient-cost flags.
+tip: Many state and national bodies offer small grants for postgraduate theses. Check your university's research cell.
+try: 100 patients, each needing one extra serum biomarker test and a 6-month follow-up phone call.
+next: protocol-master
+
+@@ S | risk-benefit-ae | Risk-benefit assessment and adverse-event plan
+aud: PG Resident
+use: When your study involves any procedure or intervention beyond routine care.
+persona: You are a clinical research safety officer who writes proportionate risk-benefit and adverse-event sections.
+context: Study procedures beyond routine care: [list]
+Participant population: [brief]
+Intervention, if any, and its known side effects: [brief]
+task: 1. List the risks of each study-specific procedure, with likelihood and severity.
+2. Describe mitigation for each.
+3. Describe direct and indirect benefits realistically.
+4. Write the adverse-event plan: definitions, recording, grading, reporting timelines to the IEC, and management.
+5. Summarise the overall risk category with justification.
+rules: Mark reporting timelines and definitions as [VERIFY IN ICMR / IEC SOP], because reporting requirements differ by study type and institution. Don't list routine-care risks as study risks.
+output: A risk table, the benefits paragraph, the AE plan, then the summary.
+tip: If a procedure is part of routine care anyway, say so clearly. It lowers the perceived risk accurately.
+try: Study adding one extra 5 mL blood draw and a 6-minute walk test for COPD patients.
+next: iec-submission
+
+@@ S | data-protection | Confidentiality and data-protection plan
+aud: PG Resident
+use: For the confidentiality section of your IEC submission and protocol.
+persona: You are a health-data governance adviser familiar with Indian research-ethics requirements and data-protection principles.
+context: Data collected (identifiable and study data): [list]
+Where and how it will be stored: [brief]
+Who has access: [brief]
+Any data leaving the institution (cloud, AI tools, collaborators): [brief]
+task: 1. Describe de-identification: study IDs, a separate linking log, and restricted access.
+2. Describe secure storage, backup, encryption and retention.
+3. Describe the rules for using AI tools and cloud services with study data.
+4. Describe what happens at study end (retention period, destruction).
+5. Write the confidentiality paragraph for my protocol.
+rules: Recommend that no identifiable data ever be entered into consumer AI tools, and mark any legal requirement you mention (e.g. the Digital Personal Data Protection Act) as [VERIFY CURRENT LAW AND RULES], because legal obligations are specific and evolving.
+output: A 4-part plan, then the paragraph.
+tip: Keep the linking log (study ID → patient identity) on a different device from your study data.
+try: Cohort of 150 patients with phone follow-up, data in Excel on a department laptop.
+next: data-management-plan
+
+@@ S | waiver-of-consent | Request a waiver of consent
+aud: PG Resident
+use: For retrospective record-based studies or other minimal-risk research where consent is impracticable.
+persona: You are an IEC member who reviews waiver requests and knows what justifications committees accept.
+context: Study design and data source: [brief]
+Why obtaining consent is impracticable: [brief]
+Risk to participants: [brief]
+Confidentiality measures: [brief]
+task: 1. Assess whether my study plausibly qualifies for a waiver, with reasoning.
+2. Write the waiver request: study description, justification of impracticability, minimal-risk argument, confidentiality safeguards, and how rights and welfare are protected.
+3. List conditions the committee may impose.
+rules: Present the request honestly and mark the criteria you cite as [VERIFY IN ICMR GUIDELINES], because the committee alone decides eligibility for a waiver.
+output: The assessment, the request text, then the likely conditions.
+tip: Committees are far more comfortable granting waivers when data are anonymised at extraction.
+try: Retrospective review of 5 years of ICU records on ventilator-associated pneumonia.
+next: retrospective-design
+
+@@ S | protocol-amendment | Protocol amendment request to the IEC
+aud: PG Resident
+use: When you need to change the approved protocol (sample size, criteria, outcomes, procedures).
+persona: You are an experienced investigator who writes clear, well-justified amendment requests.
+context: Current approved protocol version and date: [version]
+Proposed changes and reasons: [list]
+Effect on participants, risks and consent: [brief]
+task: 1. Classify each change as minor or major, with reasoning, marked [CONFIRM WITH IEC SOP].
+2. Write the amendment request: a table of old text, new text and justification.
+3. Identify documents that must be updated (protocol, consent form, CRF, CTRI record).
+4. Note whether already-enrolled participants need re-consent.
+rules: Don't implement any change before approval unless it is needed to eliminate an immediate hazard, and say so, because unapproved changes are protocol violations.
+output: The classification, the amendment table, the documents list, then the re-consent note.
+tip: Update your CTRI record after approval. Journals compare the registry with the paper.
+try: Increasing the sample size from 100 to 130 and adding a secondary outcome.
+next: iec-query-response
+
+@@ S | coi-funding | Funding and conflict-of-interest declarations
+aud: PG Resident / Faculty
+use: When your study receives any funding, free materials or support, or when you have any industry relationship.
+persona: You are a research-integrity officer who drafts transparent declarations.
+context: Funding sources and amounts: [brief]
+Free equipment, kits or drugs received: [brief]
+Any personal or institutional relationships with relevant companies: [brief]
+Role of funders in design, analysis or publication: [brief]
+task: 1. Identify everything that must be declared, including non-financial interests.
+2. Draft the declarations for the protocol, IEC form, thesis and future manuscript.
+3. Recommend safeguards if a sponsor provides materials (e.g. no sponsor role in analysis or publication decisions).
+rules: Err on the side of disclosure, because an undeclared interest discovered later damages credibility far more than a declared one.
+output: The list of interests, the declarations for each document, then the safeguards.
+tip: Free diagnostic kits from a manufacturer count as support. Declare them.
+try: A company provided free point-of-care test cartridges for my diagnostic accuracy study.
+next: iec-submission
+
+@@ Q | consent-plain-rewrite | Rewrite a consent paragraph in plain language
+aud: PG Resident
+body: Act as a patient-communication specialist. Rewrite this consent-form paragraph, [PASTE PARAGRAPH], at about an eighth-grade reading level for Indian patients, with sentences under 20 words, no jargon and no added promises. Keep every fact exactly, then list the medical terms you replaced.
+try: A paragraph describing venepuncture risks and the storage of serum samples.
+
+@@ Q | iec-document-checklist | What documents does my IEC need?
+aud: PG Resident
+body: Act as an IEC office coordinator at an Indian medical college. List the documents typically required for a [STUDY TYPE] postgraduate thesis submission, what each must contain, and which are most often missing. Mark anything institution-specific as [CHECK YOUR IEC SOP].
+try: Prospective observational thesis with blood sampling.
+
+@@ Q | vulnerable-check | Does my study involve vulnerable participants?
+aud: PG Resident
+body: Act as an ethics committee member. For my study population, [DESCRIBE POPULATION], identify any vulnerable groups under research-ethics principles, the extra protections each needs, and how to describe them in my protocol. Mark specific requirements as [VERIFY IN ICMR GUIDELINES].
+try: ICU patients, some unconscious, including pregnant women and adolescents.
+
+@@ Q | compensation-question | Compensation and insurance: what do I write?
+aud: PG Resident
+body: Act as a research-ethics adviser. For my [observational / interventional] thesis on [TOPIC], explain what I should state about compensation for research-related injury and about payment for participation, and draft the wording for my protocol. Mark regulatory specifics as [VERIFY WITH IEC].
+try: Interventional thesis testing a physiotherapy protocol after abdominal surgery.
+
+@@ Q | assent-form | Assent form for children
+aud: PG Resident (Paediatrics)
+body: Act as a paediatric research-ethics specialist. Write a short assent form for children aged [AGE RANGE] in my study, [BRIEF DESCRIPTION], using simple words, short sentences and a clear statement that they can say no. Mark age-band requirements as [VERIFY IN ICMR GUIDELINES].
+try: Children aged 7–12 in a study requiring one finger-prick blood test.
+
+@@ Q | version-control | Version control for my study documents
+aud: PG Resident
+body: Act as a research-documentation coordinator. Give me a simple version-control system for my protocol, consent forms, CRF and approvals: file naming, version numbers, dates, a change log and footer text, so every document the IEC sees matches my master copy.
+try: Protocol v1.0, consent form v1.1, CRF v2.0 after an amendment.
