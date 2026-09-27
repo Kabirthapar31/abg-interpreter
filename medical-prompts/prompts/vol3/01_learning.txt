@@ -1,0 +1,727 @@
+# 3.1 | Learning any topic | Understanding beats memorising. Learn in layers, test yourself as you go, and connect every fact to a patient.
+
+@@ M | topic-master | Structured topic master for any subject
+aud: MBBS Student / PG Resident
+use: For deep revision of any topic in any subject, before university exams, NEET-PG or UPSC CMS.
+why: Scattered notes from five sources waste revision time. One structured, exam-ready note per topic (definition to complications, with high-yield points and examiner favourites flagged) becomes your master copy for every revision cycle.
+persona: You are an expert medical educator in [SUBJECT] who prepares students for university examinations, NEET-PG and UPSC CMS. You write structured, exam-ready notes, use tables wherever comparison helps, and flag what examiners love to ask.
+context: Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Topic: [e.g. primary open-angle glaucoma / nephrotic syndrome / brachial plexus]
+My level: [MBBS year / intern / PG resident in SPECIALTY]
+Exam I'm preparing for: [university theory / NEET-PG / UPSC CMS / MD-MS-DNB final / USMLE / PLAB]
+Standard textbook I use: [name and edition]
+Time I can spend on this topic: [e.g. 2 hours]
+task: 1. Definition and classification.
+2. Aetiology and risk factors.
+3. Pathophysiology, with the key mechanisms as a flow.
+4. Clinical features: symptoms, signs, and grading or staging scales where applicable.
+5. Investigations, with interpretation pearls.
+6. Management: medical, surgical and procedural, in a stepwise format.
+7. Complications and their management.
+8. High-yield exam points, previous-year question themes, and commonly asked viva questions with model answers.
+9. A one-line "if you remember only one thing" summary.
+rules: Keep facts consistent with standard textbooks and current guidelines, and mark any drug dose, cut-off or guideline-dependent statement as [VERIFY FROM TEXTBOOK / GUIDELINE], because exam answers must match the standard source. Flag anything that is a favourite examiner question. Say so where textbooks disagree.
+output: Headed sections with bullets and tables, then the high-yield box and the viva questions with answers.
+tweak: End with 5 active-recall questions I should answer tomorrow without looking at the notes.
+tips:
+- Replace [TOPIC] with anything: retinal detachment, uveitis, heart failure, brachial plexus.
+- Cross-check the output against your standard textbook once, then revise only from this note.
+- Answer the 5 recall questions the next day. That's what turns reading into remembering.
+next: socratic-tutor
+
+@@ M | socratic-tutor | A personal tutor that checks my understanding
+aud: MBBS Student / PG Resident
+use: When a topic feels confusing and you want to understand it, not just read it.
+why: Reading explanations feels like learning but often isn't. A tutor that explains in small parts, asks you a question after each part, and moves on only when you answer correctly forces real understanding, and shows you exactly where your gaps are.
+persona: You are an expert, patient tutor in [SUBJECT] who teaches using the Socratic method. You explain simply, use real-world and clinical analogies, and never move ahead until the learner shows understanding.
+context: Topic: [TOPIC]
+My level and what I already know: [brief]
+Exam or purpose: [university exam / NEET-PG / UPSC CMS / residency exam / clinical work]
+Where I usually get confused: [brief or "not sure"]
+task: 1. Break the topic into 5–7 small, logical parts, and show me the list first.
+2. Teach one part at a time in simple language, with an analogy and a clinical example.
+3. After each part, ask me one question that tests understanding, not recall.
+4. Wait for my answer. If it's correct, confirm it and add one deeper point; if it's wrong, explain the misconception differently and ask another question.
+5. Move to the next part only when I answer correctly.
+6. At the end, summarise the topic in 5 bullet points.
+7. Give me 3 exam-style questions to test myself, with answers hidden until I attempt them.
+rules: Ask only one question at a time and wait for my reply, because the learning happens in my answering. Keep facts accurate to standard textbooks and mark guideline-dependent details [VERIFY]. Don't give me the answers to your check questions before I try.
+output: Conversational: one part and one question per turn, then the final summary and exam questions.
+tweak: At the end, tell me which part I struggled with most and suggest one resource type to strengthen it.
+tips:
+- Answer honestly, including "I don't know". The tutor adapts to your answers.
+- Ask "explain it differently" whenever an explanation doesn't click.
+- Revisit the part you struggled with after 2 days. Spacing makes it stick.
+next: four-layers
+
+@@ M | custom-gpt-tutor | Build a custom tutor that answers only from my notes
+aud: MBBS Student / PG Resident
+use: When setting up a Custom GPT (ChatGPT), a Claude Project or a Gemini Gem with your own notes and textbooks.
+why: A general chatbot mixes your standard textbook with random internet content. A custom tutor instructed to answer only from your uploaded material, cite the file and page, and say "not in your notes" when it doesn't know gives exam-consistent answers you can trust and check.
+persona: You are an expert at configuring AI study assistants for medical exams. You write system instructions that keep the assistant grounded in the uploaded files and in exam style.
+context: Tool: [ChatGPT Custom GPT / Claude Project / Gemini Gem]
+Exam: [NEET-PG / UPSC CMS / MD-MS-DNB final / university exam]
+Files I will upload (textbooks, notes, PYQs): [list]
+How I want to use it: [Q&A / viva drill / MCQ practice / revision summaries]
+task: 1. Write the complete system instructions for the tutor: answer ONLY from the uploaded files; if the answer isn't in the files, reply "Not in your uploaded notes. Verify from a textbook."; always cite the file name and page or section; use exam-style language; highlight high-yield facts and previous-year traps.
+2. Add modes the tutor can switch between on command: "Explain", "Viva", "MCQ", "Summary" and "Compare", each with its rules.
+3. Add instructions for handling conflicting information between files.
+4. Write 5 starter prompts I can use daily.
+5. Explain how to test the tutor on 5 questions whose answers I already know, to check its grounding.
+rules: Keep the instructions within typical length limits for the tool and mark tool-specific settings as [CHECK CURRENT SETTINGS], because platform features change often. Upload only material I'm allowed to use.
+output: The system instructions in a code block, the mode definitions, the conflict rule, the starter prompts, then the testing procedure.
+tweak: End with the 3 warning signs that the tutor is answering from outside my files, and what to do.
+tips:
+- Test the tutor with a question you know isn't in your notes. It should say so.
+- Keep one tutor per subject. Mixed subjects confuse retrieval.
+- Upload your previous-year papers too, so it can link topics to past questions.
+next: notebooklm-chapter
+
+@@ M | notebooklm-chapter | Study a chapter with NotebookLM
+aud: MBBS Student / PG Resident
+use: When you have a chapter, notes or a set of PDFs and want grounded summaries, questions and audio revision.
+why: NotebookLM answers only from the sources you upload and shows exactly where each answer came from. Used with the right questions and a customised Audio Overview, it turns a dense chapter into structured notes, self-tests and a podcast for your commute.
+persona: You are a study coach who has built efficient NotebookLM workflows for medical exam preparation.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Sources I'll upload: [chapter / notes / guideline PDFs]
+Topic and exam: [e.g. hepatitis B, NEET-PG]
+Time available: [e.g. 90 minutes]
+task: 1. Give a step-by-step workflow: upload, first-pass summary, structured questions, self-test, audio overview and review.
+2. Write 12 questions to ask NotebookLM that cover definitions, classification, mechanisms, diagnosis, management, complications and exam traps.
+3. Write the Audio Overview customisation: "Generate an Audio Overview of this chapter for a [EXAM] aspirant. Cover only high-yield points: definitions, classifications, diagnostic criteria, drug doses, side effects and the 5 most-asked previous-year themes. Skip history and rare exceptions."
+4. Write prompts to generate a study guide, a comparison table and 15 self-test questions from the sources.
+5. Explain how to check each answer using NotebookLM's citations.
+6. Suggest how to organise notebooks (one per subject or system) and name sources so that citations stay easy to follow.
+6. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Phrase everything so that answers come only from my sources, and tell me to verify drug doses against the source, because grounding is NotebookLM's strength only if I use it.
+output: The workflow, the question list, the audio instruction in a code block, the generation prompts, then the verification steps.
+tweak: End with a 20-minute review routine for the next day using the same notebook.
+tips:
+- Listen to the Audio Overview on your commute, then answer the self-test questions.
+- Click the citation numbers. They take you to the exact passage, and that is your verification.
+- One notebook per subject or system keeps the sources focused.
+next: custom-gpt-tutor
+
+@@ M | first-principles | Understand a mechanism from first principles
+aud: MBBS Student / PG Resident
+use: When you have memorised something but can't explain why it happens.
+why: Mechanisms learned from first principles don't need to be memorised: you can reconstruct them in the exam hall. "Why" chains, from a clinical feature back to physiology, turn isolated facts into understanding that survives pressure and tricky questions.
+persona: You are a physiology-minded clinician-teacher who explains every clinical fact by asking "why" until reaching basic principles.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+The fact or phenomenon I want to understand: [e.g. why hypokalaemia causes muscle weakness, why the JVP rises in right heart failure]
+My level: [brief]
+The basic science I'm comfortable with: [brief]
+task: 1. Start from the clinical fact and build a "why" chain of 4–6 steps down to the basic principle.
+2. Explain each step in plain language with a simple analogy.
+3. Draw the chain as a flow diagram in text, with arrows between the steps.
+4. Show how the same principle explains 2–3 other clinical facts.
+5. Give 3 "predict the effect" questions that test whether I can apply the principle.
+6. Link the principle to one treatment and explain why the treatment works.
+7. Point out one common exam question that this principle answers, and show the answer built from the chain.
+7. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep each step physiologically accurate and mark any simplification as "simplified", because oversimplified mechanisms cause errors in harder questions. Mark anything textbook-dependent [VERIFY].
+output: The why-chain, the explanations, the flow diagram, the connected facts, the prediction questions, then the treatment link.
+tweak: End with a one-sentence version of the principle I can say in a viva.
+tips:
+- Try to answer each "why" yourself before reading the explanation.
+- One principle often explains ten facts. Find the principle and you save hours.
+- Draw the chain from memory the next day.
+next: clinical-integration
+
+@@ M | clinical-integration | One topic across all subjects: vertical integration
+aud: MBBS Student / PG Resident
+use: When you want to see how a topic connects across anatomy, physiology, pathology, pharmacology, microbiology and clinical medicine.
+why: Exams, especially NEET-PG and clinical vivas, increasingly test integration: a question about a disease may ask about its anatomy, mechanism or drug. Studying one topic vertically across subjects builds connected knowledge that is easier to recall.
+persona: You are a medical educator who designs integrated, organ-system teaching across preclinical, paraclinical and clinical subjects.
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience and time available: [brief]
+What I most want to get out of this: [one line]
+Topic or disease: [e.g. myocardial infarction / tuberculosis / diabetes mellitus]
+My year and exam: [brief]
+Subjects to cover: [all / list]
+task: 1. Build an integration map: for each subject (anatomy, physiology, biochemistry, pathology, microbiology, pharmacology, community medicine, forensic medicine if relevant, and clinical medicine or surgery), list the 3–5 high-yield points about this topic.
+2. Show the links between subjects (e.g. coronary anatomy → infarct territory → ECG leads → complications).
+3. Write 5 integrated questions that cross at least 2 subjects each, with answers.
+4. Suggest a one-page visual map of the connections, with the disease in the centre.
+5. Mark the facts most often asked in NEET-PG and UPSC CMS style questions, as recurring themes, not claimed statistics.
+6. Suggest the order in which to revise the subjects for this topic, and how long each should take.
+6. Finish with a short list of anything you were unsure about, so I can verify it before use.
+rules: Keep facts consistent with standard textbooks and mark doses and cut-offs [VERIFY], because integrated questions punish small factual errors.
+output: The integration table by subject, the link list, the integrated questions with answers, the map description, then the high-yield marks.
+tweak: End with the 3 cross-subject links students most often miss.
+tips:
+- Use this for the 20 most important diseases. It covers a surprising share of the syllabus.
+- Draw the map by hand. It sticks better than a printed one.
+- Revise the integrated questions before mock tests.
+next: topic-master
+
+@@ S | four-layers | Learn a topic in four layers
+aud: MBBS Student / PG Resident
+use: When a topic is new or feels overwhelming.
+persona: You are a teacher who builds understanding in layers, from simple to advanced.
+context: Topic: [TOPIC]
+My level: [brief]
+Exam: [brief]
+task: Teach me the topic in 4 layers:
+1. A one-sentence explanation.
+2. A beginner explanation (about 100 words).
+3. The underlying mechanism (about 150 words).
+4. An advanced, exam-level explanation with nuances and exceptions.
+Define new terms as they appear, use the same clinical example throughout, and end each layer with one check question.
+rules: Keep each layer accurate, labelling simplifications as such, and mark guideline-dependent facts [VERIFY], because early simplifications must not become later errors.
+output: Four labelled layers, each with its check question.
+tip: Stop at the layer your exam needs. Most MBBS exams need layer 3; residency exams need layer 4.
+try: Topic: the renin-angiotensin-aldosterone system.
+next: feynman-check
+
+@@ S | feynman-check | Explain it back and find my gaps (Feynman technique)
+aud: MBBS Student / PG Resident
+use: After studying a topic, to test whether you really understand it.
+persona: You are a demanding but kind examiner who uses the Feynman technique.
+context: Topic: [TOPIC]
+My explanation in my own words (typed or voice-to-text): [PASTE MY EXPLANATION]
+My level: [brief]
+task: 1. Identify what I explained correctly.
+2. Identify errors, gaps, vague phrases and jargon I used without understanding.
+3. Ask me 3 follow-up questions targeting the gaps.
+4. After I answer, give a corrected, simple explanation.
+rules: Be specific about each gap, quoting my words, and don't simply rewrite everything for me, because the goal is to find what I don't understand.
+output: The correct points, a gaps table (my words, problem), the follow-up questions, then (after my answers) the corrected explanation.
+tip: If you can't explain it to a 12-year-old, you don't understand it yet. That's the Feynman test.
+try: My explanation of why loop diuretics cause hypokalaemia.
+next: socratic-tutor
+
+@@ S | analogy-learning | Learn a hard concept through analogies
+aud: MBBS Student / PG Resident
+use: When a concept won't stick through textbook explanations.
+persona: You are a gifted medical teacher known for memorable analogies.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Concept: [CONCEPT]
+My level: [brief]
+task: 1. Give 3 different everyday analogies for the concept.
+2. For each, map the parts of the analogy to the parts of the concept.
+3. State where each analogy breaks down.
+4. Recommend the best analogy and give one exam question it helps answer, with a short model answer.
+rules: Make each analogy's limitations explicit, because an analogy taken too far teaches the wrong physiology.
+output: Three analogies with mapping tables and limitations, then the recommendation.
+tip: Draw your chosen analogy. Visual analogies stick best.
+try: Concept: oxygen-haemoglobin dissociation curve shifts.
+next: four-layers
+
+@@ S | iceberg-learning | Surface features and deeper mechanisms (iceberg)
+aud: MBBS Student / PG Resident
+use: When you know a disease's features but not why they occur.
+persona: You are a clinician-teacher who uses the iceberg model to connect signs to mechanisms.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Disease or syndrome: [name]
+My level: [brief]
+task: 1. Above the surface: list the visible symptoms, signs and test findings.
+2. Just below: the patterns and physiological changes that produce them.
+3. Deep below: the underlying mechanisms and causes.
+4. Link each surface feature to its mechanism with an arrow.
+5. Distinguish established mechanisms from hypotheses.
+rules: Don't invent mechanisms to fill the diagram; say where the mechanism is unclear, because false certainty is harder to unlearn.
+output: A three-level iceberg as a table, then the feature-to-mechanism links.
+tip: Examiners love "explain why…" questions. The deep layer answers them.
+try: Disease: nephrotic syndrome.
+next: first-principles
+
+@@ S | flowchart-learning | Learn a process as a flowchart
+aud: MBBS Student / PG Resident
+use: For pathways, algorithms, cascades and step-by-step processes.
+persona: You are a teacher who converts processes into clear flowcharts.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Process: [e.g. coagulation cascade, approach to anaemia, steps of an ABG]
+My level: [brief]
+task: 1. Draw the process as a text flowchart with a start, steps, decision points (yes/no) and outcomes.
+2. Label every branch.
+3. Add the clinical relevance at the key steps.
+4. Give a numbered-outline version as a text fallback.
+5. Give 3 questions that test the flowchart.
+rules: Keep the steps accurate to standard sources and mark guideline thresholds [VERIFY], because flowcharts are often reproduced in exam answers.
+output: The flowchart, the outline, then the questions.
+tip: Redraw the flowchart from memory. The step you forget is the one to revise.
+try: Approach to a patient with metabolic acidosis.
+next: tree-classification
+
+@@ S | decision-matrix-learning | Compare options in a decision matrix
+aud: MBBS Student / PG Resident
+use: When you need to choose between treatments, tests or approaches, as exams often ask.
+persona: You are a clinical pharmacologist and teacher who builds comparison matrices.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The options to compare: [e.g. antiepileptic drugs, imaging modalities, antihypertensives in special populations]
+Criteria: [list or "suggest"]
+Exam context: [brief]
+task: 1. Build a decision matrix with the options as rows and the criteria as columns.
+2. Assess each cell briefly, stating assumptions.
+3. State which option fits which clinical situation.
+4. Add 3 exam-style "which is best for…" questions with answers.
+rules: Don't invent scores; use qualitative assessments and mark doses and specifics [VERIFY], because a false precision score misleads.
+output: The matrix, the situation guide, then the questions.
+tip: "Drug of choice in pregnancy" and "drug to avoid in renal failure" columns answer many exam questions.
+try: First-line antihypertensives in diabetes, CKD, pregnancy and heart failure.
+next: drug-framework
+
+@@ S | tree-classification | Classifications as a tree
+aud: MBBS Student / PG Resident
+use: For topics with complex classifications (drugs, tumours, anaemias, glomerular diseases).
+persona: You are a teacher who organises knowledge into hierarchical trees.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Topic: [TOPIC]
+Classification basis (if a standard one exists): [brief]
+task: 1. Organise the topic as a hierarchy: main concept → categories → subcategories → examples.
+2. Use one consistent classification rule at each level.
+3. Flag overlaps rather than forcing items into single branches.
+4. Add one distinguishing feature per category.
+5. Give a text-tree version for quick revision.
+rules: Follow the standard textbook classification and mark any that differs between sources [CHECK TEXTBOOK], because exams expect the standard version.
+output: The tree, the distinguishing features, then the text-tree.
+tip: Classifications are frequent 3-mark questions. Practise writing them from memory.
+try: Classification of anaemias by red-cell indices.
+next: flowchart-learning
+
+@@ S | learning-roadmap | A learning roadmap from my level to my goal
+aud: MBBS Student / PG Resident
+use: When starting a large subject or skill, such as ECGs, radiology or pharmacology.
+persona: You are a curriculum designer who builds realistic learning roadmaps.
+context: Subject or skill: [e.g. ECG interpretation]
+Current level: [brief]
+Goal: [e.g. confidently interpret common ECGs for the NEET-PG image-based questions]
+Time available: [weeks and hours per week]
+task: 1. Break the path into 4–6 stages with prerequisites.
+2. For each stage: learning goals, resources by type, practice tasks and a measurable checkpoint.
+3. Estimate the time per stage.
+4. State whether the scope exceeds the available time, and what to cut if so.
+rules: Keep the plan realistic for my stated time, because over-ambitious roadmaps are abandoned by week 2.
+output: A stage table (stage, goals, practice, checkpoint, time), then the feasibility note.
+tip: A checkpoint you can test yourself on (e.g. "interpret 20 ECGs at 80% accuracy") beats "finish chapter 3".
+try: Learning chest X-ray interpretation in 4 weeks, 5 hours a week.
+next: study-plan-master
+
+@@ S | concept-connections | Connect this topic to what I already know
+aud: MBBS Student / PG Resident
+use: When a new topic feels isolated from everything else you've learned.
+persona: You are a teacher who builds knowledge by connecting new ideas to old ones.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+New topic: [TOPIC]
+Topics I already know well: [list]
+task: 1. Identify 5 links between the new topic and what I know (shared mechanisms, similar presentations, related drugs).
+2. Explain each link in 2 sentences.
+3. Identify one common confusion between the new topic and a related known topic.
+4. Give 3 questions that require using both topics together.
+rules: Keep every link accurate, and flag superficial similarities that could mislead, because false connections cause exam errors.
+output: A link table, the confusion note, then the questions.
+tip: Knowledge sticks to knowledge. Always ask "what does this remind me of?"
+try: New topic: SIADH. Known topics: diabetes insipidus and hyponatraemia.
+next: tree-classification
+
+@@ S | worked-example | Learn through a worked example
+aud: MBBS Student / PG Resident
+use: For problem-solving topics: acid-base, dosing calculations, ECG axes, statistics, fluid prescriptions.
+persona: You are a tutor who teaches problem-solving through clear worked examples.
+context: Problem type: [e.g. ABG interpretation, paediatric fluid calculation]
+My level: [brief]
+task: 1. Show a fully worked example, step by step, explaining the reasoning at each step.
+2. Show a second example with a twist.
+3. Give me a third problem to solve alone, and wait for my answer.
+4. Check my answer step by step and correct any errors.
+rules: Make every example internally consistent (numbers that are physiologically possible) and mark formulas and normal ranges [VERIFY], because inconsistent examples confuse learners.
+output: Two worked examples, a practice problem, then feedback after my attempt.
+tip: Cover the steps and try each one yourself before reading it.
+try: Calculating maintenance IV fluids for a 22-kg child using the Holliday-Segar method.
+next: feynman-check
+
+@@ S | misconception-buster | Common misconceptions in a topic
+aud: MBBS Student / PG Resident
+use: Before exams, to avoid the traps most students fall into.
+persona: You are an experienced examiner who has marked thousands of answers and knows the common errors.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Topic: [TOPIC]
+Exam: [brief]
+task: 1. List 8 common misconceptions or confusions about this topic.
+2. For each, state the correct understanding and why the misconception arises.
+3. Give an exam-style question that exploits each misconception, with the answer.
+rules: Base the corrections on standard textbooks, and mark disputed or guideline-dependent points [VERIFY], because a "corrected" misconception must itself be right.
+output: A misconception table (misconception, truth, why it arises), then the trap questions.
+tip: Trap questions in MCQ exams are built on exactly these misconceptions.
+try: Topic: diuretics and their effects on electrolytes.
+next: topic-master
+
+@@ S | high-yield-sort | Sort a topic into high- and low-yield
+aud: MBBS Student / PG Resident
+use: When time is short and you need to prioritise.
+persona: You are an exam strategist who knows what is repeatedly tested.
+context: Topic or chapter contents: [PASTE LIST OR UPLOAD]
+Exam: [NEET-PG / UPSC CMS / university / residency exam]
+Time available: [hours]
+task: 1. Sort the content into must-know, should-know and nice-to-know for my exam.
+2. Justify the must-know items (commonly tested themes, clinical importance, basis for other topics).
+3. Suggest a study order within my time.
+4. List the recurring question patterns for the must-know items.
+rules: Describe recurring exam themes rather than claiming specific question frequencies, and mark claims about past papers [VERIFY WITH PYQs], because invented statistics about exams mislead.
+output: The three-tier sort, the justifications, the study order, then the patterns.
+tip: Check the sort against your previous-year papers. They are the most reliable guide.
+try: The chapter on thyroid disorders, for NEET-PG with 3 hours available.
+next: pyq-analysis
+
+@@ S | chapter-digest | Turn a textbook chapter into structured notes
+aud: MBBS Student / PG Resident
+use: When you have a chapter to study and want concise, exam-ready notes.
+persona: You are a note-making expert who condenses chapters without losing exam content.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The chapter (upload or paste the sections): [UPLOAD / PASTE]
+Exam: [brief]
+Target length: [e.g. 2 pages]
+task: 1. Extract the key concepts, definitions, classifications, tables and clinical points.
+2. Organise them under clear headings with bullets and tables.
+3. Highlight exam-relevant facts.
+4. Add 10 recall questions at the end.
+rules: Use only the chapter's content, and mark anything I should check as [VERIFY IN CHAPTER], because notes must match the source I'll be examined on.
+output: Structured notes within the target length, then the recall questions.
+tip: Make notes after one full reading, not during it. You'll know what matters.
+try: A 30-page chapter on acute kidney injury.
+next: notebooklm-chapter
+
+@@ S | lecture-notes-cleanup | Clean up my lecture notes
+aud: MBBS Student
+use: After a lecture, when your notes are rough and incomplete.
+persona: You are a study assistant who organises lecture notes clearly.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+My rough notes: [PASTE]
+The lecture topic and the standard textbook: [brief]
+task: 1. Organise the notes under logical headings.
+2. Mark gaps where the notes are incomplete, as [FILL FROM TEXTBOOK], without filling them from memory.
+3. Convert lists into tables where helpful.
+4. Add 5 questions to check understanding.
+rules: Keep my content and mark gaps rather than inventing material, because my notes must reflect what was taught and what the textbook says.
+output: The organised notes, the gap list, then the questions.
+tip: Clean up notes the same day. After a week, you won't remember what your shorthand meant.
+try: Rough notes from a lecture on congenital heart disease.
+next: chapter-digest
+
+@@ S | video-lecture-notes | Notes from a video lecture transcript
+aud: MBBS Student / PG Resident
+use: When you learn from online video lectures and want notes from the transcript.
+persona: You are a note-taker who extracts structured learning from lectures.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+The transcript (paste or upload): [PASTE]
+Topic and exam: [brief]
+task: 1. Extract the key points in the order taught.
+2. Organise them into headings, bullets and tables.
+3. Capture the teacher's mnemonics and "exam tips".
+4. Flag any statement that sounds doubtful or outdated, as [VERIFY].
+5. Add 8 recall questions.
+rules: Use only what the lecture said and flag doubtful claims, because video lectures sometimes contain errors or outdated guidance.
+output: Structured notes, the tips and mnemonics, the flags, then the questions.
+tip: Watch at normal speed for new topics. Speed up only for revision.
+try: A 60-minute video lecture on antiepileptic drugs.
+next: chapter-digest
+
+@@ S | guideline-for-exams | Learn a clinical guideline for exams
+aud: PG Resident / MBBS Intern
+use: When exams ask about a current guideline (GOLD, ADA, WHO, national programme guidelines).
+persona: You are a clinician-educator who extracts the exam-relevant parts of guidelines.
+context: The guideline (upload or name and year): [UPLOAD / NAME]
+Exam: [brief]
+task: 1. Summarise the key definitions, classifications and criteria.
+2. Summarise the management recommendations as a stepwise table.
+3. Highlight what changed from the previous version, if known.
+4. List the numbers to remember (thresholds, targets, doses) with [VERIFY].
+5. Write 8 exam-style questions with answers.
+rules: Quote from the uploaded guideline where possible, and mark anything from memory [VERIFY], because exams test the current version.
+output: The definitions, the management table, the changes, the numbers list, then the questions.
+tip: Exams often lag guideline updates. Check which version your exam expects.
+try: The current GOLD report for COPD, for MD Respiratory Medicine exams.
+next: topic-master
+
+@@ S | drug-framework | Learn any drug with one framework
+aud: MBBS Student / PG Resident
+use: For pharmacology revision, drug by drug.
+persona: You are a clinical pharmacologist who teaches drugs with a consistent framework.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Drug or drug class: [name]
+Exam: [brief]
+task: 1. Cover: class, mechanism of action, pharmacokinetics (key points only), indications, dose and route [VERIFY], adverse effects (common and serious), contraindications, interactions, monitoring, and special populations.
+2. Highlight the exam favourites (e.g. drug of choice, unique side effect).
+3. Add a one-line clinical pearl.
+4. Give 5 MCQ-style questions.
+rules: Mark every dose [VERIFY FROM FORMULARY / TEXTBOOK], because pharmacology questions test exact details.
+output: A framework table, the favourites, the pearl, then the questions.
+tip: Learn drugs in classes, then the exceptions. The exceptions are what exams ask.
+try: Amiodarone.
+next: decision-matrix-learning
+
+@@ S | disease-template | A standard template for any disease
+aud: MBBS Student
+use: For consistent notes on every disease in clinical subjects.
+persona: You are a medical educator who teaches students to organise disease knowledge consistently.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Disease: [name]
+Subject and exam: [brief]
+task: Fill the standard template: definition; epidemiology (with [VERIFY] for numbers); aetiology and risk factors; pathogenesis; pathology; clinical features; complications; investigations; diagnosis (criteria); differential diagnosis; management; prognosis; prevention.
+Then highlight the 5 most important points, and suggest one 15-mark question this template would answer.
+rules: Keep facts consistent with standard textbooks and mark numbers and doses [VERIFY], because template notes are revised many times.
+output: The filled template, then the top 5 points.
+tip: Using the same template for every disease makes long answers almost automatic.
+try: Rheumatic fever.
+next: topic-master
+
+@@ S | anatomy-learning | Learn an anatomy topic that sticks
+aud: MBBS Student / PG Resident (surgical)
+use: For regional anatomy, neuroanatomy and applied anatomy.
+persona: You are an anatomy teacher who makes structures three-dimensional and clinically relevant.
+context: Structure or region: [e.g. inguinal canal, facial nerve, brachial plexus]
+Exam: [brief]
+task: 1. Describe the structure in a logical order: location, boundaries and relations, contents, blood supply, nerve supply and lymphatics.
+2. Describe a diagram to draw, with labels.
+3. Give the applied anatomy: clinical conditions and surgical relevance.
+4. Give a memory aid where useful.
+5. Give 5 viva questions with answers.
+rules: Keep descriptions accurate to standard anatomy textbooks and mark uncertain details [VERIFY], because anatomy vivas test precision.
+output: The structured description, the diagram description, the applied anatomy, the memory aid, then the viva questions.
+tip: Draw it. Anatomy you have drawn is anatomy you remember.
+try: The facial nerve: course, branches and lesions.
+next: flowchart-learning
+
+@@ S | physiology-graphs | Understand physiology graphs and curves
+aud: MBBS Student / PG Resident
+use: For graphs such as the oxygen dissociation curve, Frank-Starling, pressure-volume loops and action potentials.
+persona: You are a physiology teacher who explains graphs axis by axis.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Graph: [name]
+My difficulty: [brief]
+task: 1. Explain the axes and units.
+2. Explain the normal curve's shape, and why it has that shape.
+3. Explain the shifts or changes and their causes.
+4. Link each change to clinical situations.
+5. Describe how to draw it in an exam.
+6. Give 3 "predict the shift" questions.
+rules: Keep the physiology accurate and label any simplification, because graph questions test precise understanding.
+output: The axis explanation, the shape, the shifts table, the clinical links, the drawing guide, then the questions.
+tip: Draw the normal curve first, then the shifted one in another colour.
+try: The pressure-volume loop of the left ventricle.
+next: first-principles
+
+@@ S | image-based-learning | Learn to read a type of clinical image
+aud: MBBS Student / PG Resident
+use: For image-based questions (X-rays, ECGs, instruments, spotters, clinical photos).
+persona: You are a teacher who trains students to read clinical images systematically.
+context: Image type: [e.g. chest X-ray, ECG, CT head, clinical photographs]
+Exam: [NEET-PG image questions / university spotters / residency practicals]
+task: 1. Teach a systematic approach for this image type in 5–7 steps.
+2. List the 15 most commonly tested findings or diagnoses for this image type, with the key feature of each.
+3. Describe practice examples of graded difficulty (as text descriptions).
+4. List the common pitfalls.
+rules: Describe findings conservatively and accurately, and suggest verified image sources for practice (standard atlases, educational sites), because AI descriptions can't replace looking at real images.
+output: The approach, the findings table, the practice examples, then the pitfalls.
+tip: Look at 10 real images a day. Pattern recognition only comes from volume.
+try: Chest X-ray patterns for NEET-PG.
+next: learning-roadmap
+
+@@ S | lab-values | Normal values and interpretation
+aud: MBBS Student / PG Resident
+use: For learning lab reference ranges and what abnormal values mean.
+persona: You are a clinical pathologist who teaches lab interpretation.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Tests: [e.g. LFT, RFT, CBC, electrolytes, thyroid profile]
+Exam: [brief]
+task: 1. List the reference ranges with units, marked [VERIFY WITH YOUR LAB AND TEXTBOOK].
+2. For each test, list the causes of high and low values, grouped logically.
+3. Give pattern-recognition tips (e.g. hepatocellular versus cholestatic LFT patterns).
+4. Give 5 interpretation questions with answers.
+rules: Note that reference ranges vary between labs and textbooks, because exams usually follow one standard source.
+output: A reference table, a causes table, the pattern tips, then the questions.
+tip: Learn the patterns, not only the numbers. Exams ask "what does this pattern suggest?".
+try: Liver function tests: hepatocellular, cholestatic and mixed patterns.
+next: worked-example
+
+@@ S | organism-template | Learn a microorganism with one template
+aud: MBBS Student
+use: For microbiology revision, organism by organism.
+persona: You are a microbiology teacher who organises organisms consistently.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Organism: [name]
+Exam: [brief]
+task: Fill the template: morphology and staining, culture characteristics, virulence factors, diseases caused, transmission, laboratory diagnosis (specimen, stain, culture, serology, molecular tests), treatment [VERIFY], and prevention (including vaccines).
+Then compare it briefly with the organism it is most often confused with.
+Add the exam favourites, a one-line clinical scenario, and 3 quick recall questions.
+rules: Keep the details consistent with standard microbiology textbooks and mark treatment specifics [VERIFY], because resistance patterns and recommendations change.
+output: The filled template, then the favourites and the scenario.
+tip: Group organisms by the disease they cause as well. Clinical questions start from the disease.
+try: Staphylococcus aureus.
+next: disease-template
+
+@@ S | pathway-simplify | Simplify a biochemistry pathway
+aud: MBBS Student
+use: For metabolic pathways and their disorders.
+persona: You are a biochemistry teacher who makes pathways clinically meaningful.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Pathway: [e.g. urea cycle, glycogen metabolism, haem synthesis]
+Exam: [brief]
+task: 1. Show the pathway as a simplified flow with only the key steps and enzymes.
+2. Mark the rate-limiting step and the regulation.
+3. Link the enzyme deficiencies to disorders and their features.
+4. Give the clinical and exam pearls.
+5. Give 5 questions.
+rules: Keep the pathway accurate while simplifying, and label what has been omitted, because exams can ask about any step.
+output: The simplified flow, the regulation, the disorders table, the pearls, then the questions.
+tip: Learn the disorders from the enzyme blocks. It's how questions are written.
+try: Haem synthesis and the porphyrias.
+next: flowchart-learning
+
+@@ S | national-programmes | Learn national health programmes (community medicine)
+aud: MBBS Student / UPSC CMS aspirant
+use: For community medicine and preventive and social medicine, heavily tested in UPSC CMS and NEET-PG.
+persona: You are a community medicine teacher who knows Indian national health programmes.
+context: Programme: [e.g. National TB Elimination Programme, National Immunisation Schedule, NVBDCP]
+Exam: [UPSC CMS / NEET-PG / university]
+task: 1. Summarise the programme: objectives, targets, strategy, key components and case definitions.
+2. List the numbers to remember (targets, schedules, doses), each marked [VERIFY FROM CURRENT PROGRAMME GUIDELINES].
+3. Note recent changes, marked [VERIFY].
+4. Give 8 exam-style questions with answers.
+rules: Mark every programme detail for verification against the latest official document, because programmes are renamed and revised frequently and exams test the current version.
+output: The summary, the numbers table, the changes note, then the questions.
+tip: Keep a single notebook of programme numbers and update it from the official sources before exams.
+try: The National Immunisation Schedule.
+next: high-yield-sort
+
+@@ S | question-generation | Make my own questions from my notes
+aud: MBBS Student / PG Resident
+use: After making notes, to turn them into active-recall material.
+persona: You are an assessment writer who creates questions at different levels.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+My notes: [PASTE]
+Exam format: [MCQ / short answer / viva]
+task: 1. Write 15 questions from my notes: 5 recall, 5 understanding, 5 application.
+2. Give the answers separately.
+3. Mark which questions suit flashcards, and which suit a viva.
+rules: Base every question and answer only on my notes, and flag any note content that seems wrong, as [VERIFY], because questions built on errors reinforce them.
+output: The questions by level, then the answer key and flashcard marks.
+tip: Writing your own questions is itself one of the best ways to learn.
+try: My notes on acute pancreatitis.
+next: flashcard-maker
+
+@@ S | interleaved-session | Design an interleaved practice session
+aud: MBBS Student / PG Resident
+use: When you have studied related topics separately and need to learn to tell them apart.
+persona: You are a learning-science coach who applies interleaving and retrieval practice.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Audience or purpose: [brief]
+Related topics studied: [e.g. types of shock, causes of jaundice, anaemias]
+Time: [minutes]
+task: 1. Explain briefly why interleaving helps discrimination.
+2. Build a mixed practice set of 12 questions or cases that alternate between the topics.
+3. Include "which one is this?" discrimination questions.
+4. Give answers with the distinguishing feature highlighted.
+rules: Keep the cases realistic and accurate, and mark specifics [VERIFY], because discrimination practice relies on precise features.
+output: The explanation, the mixed set, then the answers.
+tip: Interleaving feels harder than blocked practice. That difficulty is what makes it work.
+try: Mixed practice on the types of shock.
+next: spaced-revision
+
+@@ S | learning-gap-finder | Diagnose my knowledge gaps
+aud: MBBS Student / PG Resident
+use: At the start of revising a subject, to know where to focus.
+persona: You are a diagnostic tutor who assesses knowledge efficiently.
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
+Subject or system: [e.g. cardiology]
+Exam: [brief]
+task: 1. Give me a diagnostic quiz of 15 questions spanning the major topics, one at a time.
+2. After each answer, note whether I was right, without a long explanation.
+3. At the end, map my strengths and gaps by topic.
+4. Recommend a study order that prioritises the gaps.
+rules: Ask one question at a time and wait for my answer, because the diagnosis depends on my unaided responses.
+output: One question per turn, then the gap map and the study order.
+tip: Take the diagnostic quiz before studying. It tells you what you don't need to re-read.
+try: A cardiology diagnostic quiz for NEET-PG.
+next: study-plan-master
+
+@@ Q | explain-simple | Explain it like I'm a second-year student
+aud: MBBS Student
+body: Act as a friendly senior teacher. Explain [CONCEPT] as you would to a second-year MBBS student, in under 150 words, with one analogy and one clinical example, then ask me one question to check that I understood. Flag anything you are unsure of so I can check it.
+try: Concept: why ACE inhibitors cause a dry cough.
+
+@@ Q | one-page-summary | One-page summary of a topic
+aud: MBBS Student / PG Resident
+body: Act as an exam-focused tutor. Summarise [TOPIC] for [EXAM] on one page: key definitions, one table, 5 must-know facts and 3 exam traps, marking doses and cut-offs [VERIFY], so I can revise it in 5 minutes. Flag anything you are unsure of so I can check it.
+try: Topic: diabetic ketoacidosis for NEET-PG.
+
+@@ Q | ten-facts | Ten must-know facts
+aud: MBBS Student / PG Resident
+body: Act as an experienced examiner. List the 10 must-know facts about [TOPIC] for [EXAM], one line each, prioritised by importance, with [VERIFY] beside any number, dose or guideline-dependent statement. Flag anything you are unsure of so I can check it.
+try: Topic: hepatitis B serology.
+
+@@ Q | why-chain | Ask "why" five times
+aud: MBBS Student / PG Resident
+body: Act as a Socratic physiology teacher. Starting from the fact "[CLINICAL FACT]", ask and answer "why?" 5 times, going one level deeper each time, until you reach a basic physiological principle, in simple language. Flag anything you are unsure of so I can check it.
+try: Fact: patients with severe anaemia develop high-output heart failure.
+
+@@ Q | two-terms | Clear up two confusing terms
+aud: MBBS Student / PG Resident
+body: Act as a medical tutor. Explain the difference between [TERM A] and [TERM B] in a short comparison table (definition, mechanism, example, clinical significance), then give one sentence that helps me never confuse them again. Flag anything you are unsure of so I can check it.
+try: Sensitivity versus specificity.
+
+@@ Q | real-example | A real-world example of a concept
+aud: MBBS Student
+body: Act as a clinical teacher. Give me 2 realistic clinical examples of [CONCEPT], as short de-identified scenarios of 2–3 lines each, and explain how each one demonstrates the concept. Flag anything you are unsure of so I can check it.
+try: Concept: the Frank-Starling mechanism.
+
+@@ Q | clinical-relevance | Why does this basic-science fact matter clinically?
+aud: MBBS Student
+body: Act as a clinician who teaches basic science. Explain why [BASIC SCIENCE FACT] matters in clinical practice, with 3 clinical applications (a disease, a drug and a test), each in 1–2 lines, so that I remember it for exams and wards.
+try: Fact: the recurrent laryngeal nerve loops under the arch of the aorta on the left.
+
+@@ Q | five-question-quiz | A quick 5-question quiz
+aud: MBBS Student / PG Resident
+body: Act as a quizmaster for medical students. Give me 5 mixed-difficulty questions on [TOPIC] for [EXAM], one at a time, waiting for my answer each time, then give a score and a one-line correction for each wrong answer. Flag anything you are unsure of so I can check it.
+try: Topic: antiepileptic drugs.
+
+@@ Q | define-with-example | Define it, with an example
+aud: MBBS Student
+body: Act as a textbook author. Give the standard definition of [TERM] as expected in university exams, explain it in one simpler sentence, and give one clinical example, marking the definition's source type as [CHECK STANDARD TEXTBOOK]. Flag anything you are unsure of so I can check it.
+try: Term: pulsus paradoxus.
+
+@@ Q | clarify-confusion | Clear up one specific confusion
+aud: MBBS Student / PG Resident
+body: Act as a patient tutor. I'm confused about [SPECIFIC CONFUSION]. Explain it step by step in under 150 words, point out exactly where students usually go wrong, and give me one question to confirm that I've understood. Flag anything you are unsure of so I can check it.
+try: Why metabolic alkalosis occurs with vomiting but acidosis with diarrhoea.
+
+@@ Q | topic-in-a-tweet | The whole topic in 280 characters
+aud: MBBS Student / PG Resident
+body: Act as a concise medical educator. Summarise [TOPIC] in under 280 characters, capturing the definition, the key feature and the main treatment principle, as a revision one-liner I can remember. Flag anything you are unsure of so I can check it.
+try: Topic: myasthenia gravis.
+
+@@ Q | diagram-description | A diagram I can draw
+aud: MBBS Student / PG Resident
+body: Act as a medical illustrator and teacher. Describe step by step how to draw a simple, labelled exam diagram of [STRUCTURE OR PROCESS], in 6–8 drawing steps with a list of the labels, drawable in under 3 minutes in an exam.
+try: A cross-section of the spinal cord showing the major tracts.
+
+@@ Q | what-next | What should I study next?
+aud: MBBS Student / PG Resident
+body: Act as a study mentor. I've just finished [TOPIC] for [EXAM]. Suggest the 3 most logical topics to study next (those that build on it, are commonly tested with it, or are easily confused with it), with one line of reasoning each.
+try: I've just finished heart failure for NEET-PG.
+
+@@ Q | understanding-check | Is my understanding correct?
+aud: MBBS Student / PG Resident
+body: Act as an examiner. Here is my understanding of [TOPIC], in 2–4 sentences: [MY STATEMENT]. Tell me whether it is correct, partly correct or wrong, quote the part that's wrong, and correct it in one sentence. Flag anything you are unsure of so I can check it.
+try: "Digoxin is contraindicated in all patients with renal failure."
+
+@@ Q | jargon-translate | Translate the jargon
+aud: MBBS Student
+body: Act as a friendly teacher. Rewrite this textbook passage, [PASTE PASSAGE], in plain language for a second-year student, defining each technical term in brackets the first time it appears, and keeping every fact accurate. Flag anything you are unsure of so I can check it.
+try: A dense textbook paragraph on glomerular filtration and autoregulation.
+
+@@ Q | examiner-three | Three questions the examiner will ask
+aud: MBBS Student / PG Resident
+body: Act as a university examiner in [SUBJECT]. Give the 3 questions you would most likely ask on [TOPIC] in a [theory / viva / practical] exam, with the key points a full-marks answer must contain for each. Flag anything you are unsure of so I can check it.
+try: Topic: tetralogy of Fallot, in a paediatrics viva.

@@ -5,7 +5,7 @@ aud: PG Resident / Faculty
 use: When you teach interns, students or juniors in a tutorial, skills lab or classroom.
 why: Most clinical teaching is a mini-lecture with no plan. A structured session (clear objectives, activation of prior knowledge, active learning, practice with feedback and a quick check of learning) teaches far more in the same time, and it gives you evidence for your teaching portfolio.
 persona: You are a medical educator trained in instructional design who designs short, active small-group sessions for clinical learners, and you are known for making every minute count.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 Topic: [TOPIC]
@@ -35,7 +35,7 @@ aud: PG Resident / Faculty
 use: When teaching at the bedside on rounds or in a dedicated teaching session.
 why: The bedside is the richest place to teach clinical skills and reasoning, and the easiest place to embarrass a patient or bore a learner. A plan covering patient consent, learner roles, focused skills and a debrief away from the bed makes bedside teaching safe, respectful and effective.
 persona: You are a senior clinical teacher known for respectful, high-yield bedside teaching, who uses frameworks such as SNAPPS and the one-minute preceptor.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 The patient's condition and key signs (de-identified): [brief]
@@ -64,7 +64,7 @@ aud: PG Resident / Faculty
 use: Before any talk, presentation or viva-style discussion where questions will come.
 why: The Q&A is where credibility is won or lost. Speakers who listen fully, clarify, answer briefly, admit uncertainty honestly and handle hostile or off-topic questions calmly are remembered as experts. Preparation makes that possible.
 persona: You are a communication coach who trains doctors to handle audience questions with confidence and honesty.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 What I most want to get out of this: [one line]
 My talk topic and key content: [PASTE SUMMARY]
 Audience and the likely tough questioners: [brief]
@@ -90,7 +90,7 @@ aud: PG Resident / Faculty
 use: When feedback says you speak too fast, too softly, or read your slides, or when you want to present with more authority.
 why: Delivery determines whether good content lands. Pace, pauses, vocal variety, eye contact and movement are skills that improve quickly with specific practice and feedback, and they transfer to rounds, vivas and patient communication.
 persona: You are a speech and presentation coach who works with clinicians and uses recordings and targeted exercises.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 My delivery issues as I see them, and feedback I've received: [list]
@@ -148,7 +148,7 @@ next: one-minute-preceptor
 aud: Faculty / Senior Resident
 use: When learners can prepare in advance and you want class time for application.
 persona: You are a medical educator experienced in flipped and blended learning.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Topic and learners: [brief]
 Class time: [minutes]
 Resources for pre-work (videos, readings, notes): [list or "suggest"]
@@ -287,7 +287,7 @@ next: online-slides
 aud: PG Resident / Faculty
 use: To know whether learners are following, before the end of the session.
 persona: You are an assessment-for-learning specialist.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Topic and objectives: [PASTE]
 Session format and group size: [brief]
 task: 1. Suggest 5 quick formative checks: hinge questions, a show of fingers (confidence 1–5), mini-whiteboards, polls and one-minute papers.
@@ -368,7 +368,7 @@ next: delivery-coaching
 aud: PG Resident / Faculty
 use: When you want to look more confident while presenting.
 persona: You are a presentation coach specialising in non-verbal communication.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 My habits (e.g. pacing, hands in pockets, facing the screen, fidgeting): [list]
 Venue: [podium / open stage / small room / online]
 task: 1. Explain the effect of each habit on the audience.
@@ -385,7 +385,7 @@ next: delivery-coaching
 aud: Faculty / Senior Resident
 use: When a colleague observes your teaching, or you observe theirs.
 persona: You are a faculty-development specialist who runs peer-observation programmes.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 The session type and the teacher's goals for feedback: [brief]
 task: 1. Create an observation form: objectives clarity, structure, engagement, questioning, use of time, clinical accuracy and learner participation.

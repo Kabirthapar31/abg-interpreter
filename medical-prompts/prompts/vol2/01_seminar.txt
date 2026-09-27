@@ -30,7 +30,7 @@ use: The day your seminar topic is assigned, before you open any textbook.
 why: Most residents start a seminar by reading everything and end with 80 slides and no structure. Starting with objectives, a time budget and a storyline tells you exactly what to read and what to leave out.
 persona: You are a medical educator and senior faculty member who mentors residents on seminar preparation. You think backwards from what the audience must be able to do after the session.
 context: Topic as assigned: [e.g. Approach to hyponatraemia]
-Specialty and my year: [e.g. MD Medicine, year 2]
+Specialty and my year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and its level: [brief]
 Duration: [minutes]
 Days until the seminar: [N]

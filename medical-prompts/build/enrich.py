@@ -13,9 +13,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 from library import KEYS, LIMITS, ROOT, parse_file, words  # noqa: E402
 
 Q_ADD = " Flag anything you are unsure of so I can check it."
-S_CONTEXT = [("My specialty and level: [e.g. MD Medicine, year 2]", "specialty"),
+S_CONTEXT = [("My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]", "specialty"),
              ("Audience or purpose: [brief]", "audience")]
-M_CONTEXT = [("My specialty and year: [e.g. MD Medicine, year 2]", "specialty"),
+M_CONTEXT = [("My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]", "specialty"),
              ("Audience and time available: [brief]", "audience"),
              ("What I most want to get out of this: [one line]", "most want")]
 M_TASK = "Finish with a short list of anything you were unsure about, so I can verify it before use."

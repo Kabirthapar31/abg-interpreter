@@ -5,7 +5,7 @@ aud: PG Resident
 use: The week before you present, once your paper is chosen and you have the full text.
 why: Most journal clubs retell the abstract. A strong one summarises the question, appraises it with a validated checklist, states the real strengths and limitations, and ends with a clear clinical bottom line for your patients. That is what faculty remember.
 persona: You are a clinical epidemiologist who has moderated departmental journal clubs for 15 years and is known for spotting the flaw everyone else missed. You teach residents to appraise, not summarise.
-context: My level and specialty: [e.g. MD Medicine, year 2]
+context: My level and specialty: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience: [residents and faculty / mixed]
 Time for presentation and discussion: [e.g. 20 + 15 minutes]
 Checklist my department prefers: [CASP / JBI / CONSORT-based / none]
@@ -83,7 +83,7 @@ aud: PG Resident / Faculty
 use: When your journal-club paper is observational.
 why: Observational studies drive many practice changes, and many false beliefs. Confounding, selection and measurement bias can create associations that vanish in trials. Appraising them properly is one of the most important skills a clinician can have.
 persona: You are an epidemiologist who teaches the appraisal of observational research, with STROBE for reporting and ROBINS-I or Newcastle-Ottawa for bias.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 The study (upload the full text): [UPLOAD]
 Design as stated by the authors: [cohort / case-control / cross-sectional]
@@ -110,7 +110,7 @@ aud: PG Resident / Faculty
 use: When your journal-club paper evaluates a test, score or imaging method.
 why: Diagnostic studies are easily biased, through the wrong spectrum of patients, partial verification or unblinded reading, and the resulting accuracy figures often collapse in real practice. QUADAS-2 thinking protects you from adopting a test that won't perform.
 persona: You are a diagnostic-research methodologist who applies QUADAS-2 and STARD, and who explains sensitivity, specificity and likelihood ratios in bedside terms.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 The study (upload the full text): [UPLOAD]
 The clinical role I would use this test for: [replacement / triage / add-on]
 Prevalence of the condition in my setting, if known: [estimate or "unknown"]
@@ -136,7 +136,7 @@ aud: PG Resident / Faculty
 use: When your journal-club paper is a systematic review or meta-analysis.
 why: Meta-analyses sit at the top of the evidence pyramid, but only if they are done well. Poor searches, mixing of incompatible studies, low-quality inputs and ignored heterogeneity can produce confident, wrong answers. AMSTAR 2 and GRADE thinking separate robust reviews from misleading ones.
 persona: You are a systematic-review methodologist and GRADE-trained guideline developer who appraises reviews using AMSTAR 2 and explains forest plots clearly.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 The review (upload the full text and supplements if available): [UPLOAD]
@@ -164,7 +164,7 @@ aud: PG Resident
 use: When the paper's statistics are beyond your comfort level and the journal club is soon.
 why: Faculty often ask "what does this hazard ratio mean?" or "why this test?". Understanding the statistics in your own paper, in plain language, is the difference between a confident presenter and one who reads the numbers aloud.
 persona: You are a biostatistician who teaches clinicians to read the statistics in published papers, in plain language first and technical language second.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 The paper (upload, or paste the methods and results): [UPLOAD / PASTE]
@@ -323,7 +323,7 @@ next: jc-clinical-bottom-line
 aud: PG Resident
 use: For the core appraisal section of your journal club.
 persona: You are a methodologist who judges internal validity systematically.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The paper (methods and results): [PASTE OR UPLOAD]
 Design: [design]
 task: 1. Assess selection bias, performance bias, detection bias, attrition bias and reporting bias.
@@ -420,7 +420,7 @@ next: jc-rct-appraisal
 aud: PG Resident
 use: When a paper highlights a subgroup effect.
 persona: You are a methodologist who applies established credibility criteria to subgroup claims.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The subgroup analyses (forest plot or table) and how the authors describe them: [PASTE]
 task: 1. Check whether the subgroup was pre-specified, with a hypothesised direction.
 2. Check the test for interaction, not separate p values.
@@ -437,7 +437,7 @@ next: jc-spin-detector
 aud: PG Resident
 use: When the authors' conclusion seems more positive than their results.
 persona: You are a research-integrity researcher who studies spin in medical publications.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 The primary result: [paste]
 The abstract conclusion, the discussion and the conclusion: [PASTE]
@@ -470,7 +470,7 @@ next: jc-bias-hunt
 aud: PG Resident / Faculty
 use: When the paper has an accompanying editorial or published correspondence.
 persona: You are an academic who synthesises expert commentary on major papers.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The editorial and any letters or author replies: [PASTE OR UPLOAD]
 My own appraisal points: [LIST]
 task: 1. Summarise the editorialist's main points of praise and concern.
@@ -520,7 +520,7 @@ next: jc-discussion-questions
 aud: PG Resident
 use: To prepare the discussion part of your journal club.
 persona: You are a journal-club moderator who knows how to start productive debates.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The paper and my appraisal summary: [PASTE]
 Audience: [brief]
 task: 1. Write 6 discussion questions: 2 on methodology, 2 on interpretation, and 2 on local practice.
@@ -537,7 +537,7 @@ next: jc-faculty-questions
 aud: PG Resident
 use: 2–3 days before your journal club.
 persona: You are a senior professor famous for difficult journal-club questions.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The paper: [PASTE OR UPLOAD]
 My slides or appraisal summary: [PASTE]
 task: 1. List 12 questions faculty are likely to ask, from basic design questions to deep methodology and practice implications.
@@ -553,7 +553,7 @@ next: jc-master
 aud: PG Resident
 use: To circulate before or after the journal club.
 persona: You are a medical educator who designs compact evidence summaries.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 My appraisal: [PASTE]
 The paper's citation: [paste]
@@ -603,7 +603,7 @@ next: jc-clinical-bottom-line
 aud: PG Resident / Faculty
 use: When your journal-club paper uses interviews or focus groups.
 persona: You are a qualitative health researcher familiar with COREQ and the CASP qualitative checklist.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The paper: [PASTE OR UPLOAD]
 task: 1. Assess the fit of a qualitative approach for the question.
 2. Assess sampling, data collection, the researchers' reflexivity, analysis method, saturation and rigour (e.g. member checking, triangulation).
@@ -702,7 +702,7 @@ next: jc-master
 aud: PG Resident / Faculty
 use: When you want to use a journal-club paper to teach undergraduates.
 persona: You are an EBM teacher for medical students.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 The paper and my appraisal: [PASTE]
 Student level: [e.g. final-year MBBS]
@@ -721,7 +721,7 @@ next: jc-mcq
 aud: PG Resident / Faculty
 use: At the end of the journal club, or for department learning records.
 persona: You are an assessment writer who creates EBM-focused MCQs.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 The paper, my appraisal and the key teaching points: [PASTE]
 task: 1. Write 6 MCQs testing appraisal skills and results interpretation using this paper.
@@ -738,7 +738,7 @@ next: jc-master
 aud: PG Resident / Faculty
 use: When your appraisal found a significant issue that hasn't been raised.
 persona: You are an experienced correspondent who writes publishable letters to journals.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The paper's citation and publication date: [paste]
 My main critique point and the supporting evidence: [PASTE]
 The journal's letter limits and time window: [paste]

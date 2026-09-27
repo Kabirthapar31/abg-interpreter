@@ -30,7 +30,7 @@ aud: PG Resident / Faculty
 use: When you present often and want every deck to look consistent and professional without starting from scratch.
 why: Doctors present dozens of times a year: seminars, journal clubs, case presentations, CMEs. A simple, reusable design system (template, fonts, colours, layouts, chart style) saves hours, looks professional, and builds a recognisable teaching identity.
 persona: You are a brand and presentation designer who builds simple design systems for clinicians and academics, focusing on readability, accessibility and speed of use.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 Tool: [PowerPoint / Google Slides / Keynote / Canva]
@@ -58,7 +58,7 @@ aud: PG Resident / Faculty
 use: When you want to use AI (Claude, ChatGPT, Copilot in PowerPoint, Gamma, Canva) to create a first draft of a deck quickly.
 why: AI slide tools produce beautiful decks in minutes, with invented statistics, outdated guidelines and generic content. Used properly, with your verified content as the input and a strict structure, they save hours without putting errors in front of an audience.
 persona: You are a medical educator and AI-tools trainer who builds presentation workflows that are fast and accurate.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 What I most want to get out of this: [one line]
 Topic, audience and duration: [brief]
 AI tool I will use: [Claude / ChatGPT / Copilot in PowerPoint / Gamma / Canva Magic Design / other]
@@ -83,7 +83,7 @@ aud: PG Resident / Faculty
 use: When your talk includes results, statistics or comparisons that currently sit in dense tables.
 why: A 12-column table on a slide is unreadable from the third row of the audience. Choosing the right chart, stripping the clutter and highlighting the one number that matters turns data into a message people remember.
 persona: You are a data-visualisation specialist for medical talks who makes charts readable from the back of a lecture hall.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 What I most want to get out of this: [one line]
 The data or tables (paste): [PASTE DATA / TABLES]
 The message each table should convey: [list, or "suggest"]
@@ -196,7 +196,7 @@ next: flowchart-slide
 aud: PG Resident / MBBS Student
 use: When teaching differences between two similar conditions, drugs or tests.
 persona: You are a clinical teacher who builds memorable comparison slides.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 The two items to compare: [A and B]
 Aspects to compare: [list, or "suggest"]
@@ -215,7 +215,7 @@ next: table-simplify
 aud: PG Resident / Faculty
 use: For history, disease course, treatment phases or a patient journey.
 persona: You are a visual storyteller for medical talks.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 Events with dates or time points: [PASTE]
 Purpose: [history / clinical course / treatment plan]
@@ -268,7 +268,7 @@ next: text-to-visual
 aud: PG Resident / Faculty
 use: When choosing a colour scheme, or checking an existing deck.
 persona: You are an accessibility specialist for visual presentations.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 My current colours (names or hex codes): [list]
 Background: [light / dark]
 Venue: [projector / screen / online]
@@ -286,7 +286,7 @@ next: font-readability
 aud: PG Resident / Faculty
 use: When setting up a deck, or fixing one that's hard to read.
 persona: You are a typography specialist for presentations.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Current fonts and sizes: [list]
 Room size and screen: [brief]
 task: 1. Recommend fonts: one sans-serif for headings and body, widely available.
@@ -303,7 +303,7 @@ next: slide-design-system
 aud: PG Resident / Faculty
 use: When deciding on builds and transitions for your deck.
 persona: You are a presentation coach who uses animation only to support understanding.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Slides where I'm considering animation: [DESCRIBE]
 task: 1. For each slide, say whether animation helps (e.g. building an algorithm step by step, or revealing a case) or distracts.
 2. Recommend simple builds only (appear or fade), in a consistent style.
@@ -336,7 +336,7 @@ next: message-titles
 aud: PG Resident / Faculty
 use: When your slides are ready but you haven't planned what to say.
 persona: You are a speaking coach who writes concise, speakable notes.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Slide text (all slides): [PASTE]
 Talk duration: [minutes]
 My knowledge sources for the details: [LIST]
@@ -354,7 +354,7 @@ next: seminar-script
 aud: PG Resident / Faculty
 use: When you're tempted to put everything on the slides "so they have it".
 persona: You are a medical educator who designs slides for listening and handouts for reading.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 My current deck (text-heavy): [PASTE]
 Audience: [brief]
 task: 1. Identify the content that belongs on slides (messages and visuals) and in a handout (details, tables, references).
@@ -405,7 +405,7 @@ next: ai-deck-builder
 aud: PG Resident / Faculty
 use: When you have numbers to show and don't know which chart to use.
 persona: You are a data-visualisation teacher for clinicians.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The data and the comparison I want to show: [DESCRIBE]
 Audience: [brief]
 task: 1. Recommend the chart type and explain why.
@@ -422,7 +422,7 @@ next: data-to-slides
 aud: PG Resident / Faculty
 use: When finalising slides that use published data, figures or guidelines.
 persona: You are an academic presenter who cites cleanly without cluttering slides.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Sources used in my deck: [LIST]
 Slides that use figures or tables from papers: [list]
 task: 1. Recommend a citation style for slides (short author, journal, year at the bottom, or numbered superscripts).
@@ -456,7 +456,7 @@ next: section-dividers
 aud: PG Resident / Faculty
 use: For talks longer than 20 minutes with distinct sections.
 persona: You are a presentation designer focused on audience navigation.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 My talk outline with its sections: [PASTE]
 task: 1. Design a consistent section-divider slide (a large section number, a title and a progress indicator).
@@ -472,7 +472,7 @@ next: slide-design-system
 aud: PG Resident / Faculty
 use: When presenting on Zoom, Teams, Google Meet or a recorded platform.
 persona: You are an online medical educator.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 My deck: [PASTE OR DESCRIBE]
 Platform and audience devices (many on phones?): [brief]
 task: 1. Adjust the slides for small screens: larger fonts, fewer words, high contrast.

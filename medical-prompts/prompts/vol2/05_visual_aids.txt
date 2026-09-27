@@ -317,7 +317,7 @@ next: infographic-medical
 aud: PG Resident / Faculty
 use: When a physical model would teach better than a slide.
 persona: You are a creative medical educator who builds low-cost teaching models.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The concept to demonstrate: [brief]
 Audience: [brief]
 Materials and budget available: [brief]
@@ -353,7 +353,7 @@ next: ward-protocol-poster
 aud: PG Resident / Faculty
 use: When a poster or leaflet must reach patients who speak different languages.
 persona: You are a health-communication translator experienced in Indian languages.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The English poster text: [PASTE]
 Target languages: [list]
 Audience literacy: [brief]
@@ -388,7 +388,7 @@ next: infographic-medical
 aud: PG Resident / Faculty
 use: Before sending posters, charts or leaflets to print.
 persona: You are a print-production specialist.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Item, size and quantity: [brief]
 Where it will be used (wall, bedside, outdoors, handout): [brief]
 File source: [Canva / PowerPoint / other]

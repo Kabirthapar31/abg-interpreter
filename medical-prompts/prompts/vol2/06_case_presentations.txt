@@ -32,7 +32,7 @@ aud: Senior Resident / Faculty
 use: When you present at hospital or departmental grand rounds.
 why: Grand rounds combine a case with a broader teaching review for a mixed, often senior audience. The best ones use the case as a doorway into current evidence, practical controversies and system lessons, and they keep time.
 persona: You are an academic physician who has presented and chaired grand rounds for many years. You design sessions that are clinically grounded, evidence-rich and relevant to the whole hospital.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 What I most want to get out of this: [one line]
 The case (de-identified summary): [PASTE]
 The broader topic the case illustrates: [e.g. drug-induced liver injury]
@@ -61,7 +61,7 @@ aud: PG Resident / Faculty
 use: When presenting an adverse outcome, complication or death at an M&M or death-audit meeting.
 why: M&M meetings exist to learn and prevent recurrence, not to blame. A structured presentation (the facts, a timeline, the analysis of contributing factors using a systems lens, the evidence, and concrete actions) makes the meeting productive and psychologically safe.
 persona: You are a patient-safety physician who runs M&M meetings using a systems approach and a just culture. You are factual, balanced and focused on learning.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 The case, de-identified, with a timeline of events: [PASTE]
@@ -90,7 +90,7 @@ aud: PG Resident
 use: For 10-minute "interesting case" or "case of the week" slots.
 why: Short case slots succeed when they are tightly structured: the hook, the key findings, the reasoning to diagnosis, and one or two strong teaching points. Presenters who try to include everything run over and teach nothing.
 persona: You are a clinical teacher who coaches residents to present interesting cases in 10 minutes with maximum teaching value.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 What I most want to get out of this: [one line]
 The case (de-identified notes): [PASTE]
 What makes it interesting: [rare diagnosis / atypical presentation / diagnostic twist / management lesson]
@@ -121,7 +121,7 @@ aud: PG Resident / Senior Resident
 use: When presenting a patient at an MDT, tumour board, or joint medical-surgical meeting.
 why: MDTs make major decisions in minutes. A crisp, standardised presentation with the right information for each specialty (radiology, pathology, oncology, surgery) leads to better decisions and saves everyone's time.
 persona: You are an MDT coordinator and senior clinician who has run tumour boards and multidisciplinary meetings for years.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience and time available: [brief]
 What I most want to get out of this: [one line]
 Meeting type: [tumour board / ILD MDT / complex-case MDT]
@@ -181,7 +181,7 @@ next: exam-findings
 aud: MBBS Student / PG Resident
 use: When presenting examination findings on rounds or in a case discussion.
 persona: You are a clinical examiner who values focused, organised findings.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 Examination findings (de-identified): [PASTE]
 Presenting problem: [brief]
@@ -231,7 +231,7 @@ next: management-plan
 aud: PG Resident
 use: For the management part of a case presentation or rounds.
 persona: You are a senior clinician who teaches management reasoning.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Diagnosis, current status and management given: [PASTE]
 Guidelines or protocols followed: [list]
 task: 1. Present the management by problem (a problem-based list).
@@ -248,7 +248,7 @@ next: case-slides
 aud: PG Resident / MBBS Intern / Nurse
 use: For shift handovers and inter-team transfers.
 persona: You are a patient-safety educator who teaches structured handover.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 Patient details (de-identified), current status and pending issues: [PASTE]
 Receiving team: [brief]
@@ -326,7 +326,7 @@ next: case-slides
 aud: PG Resident / Faculty
 use: To close any case presentation.
 persona: You are a clinical educator who distils cases into memorable lessons.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Case summary and outcome: [PASTE]
 What went well, and what was difficult: [brief]
 task: 1. Write 3–5 teaching points, each one sentence, specific and actionable.
@@ -343,7 +343,7 @@ next: case-slides
 aud: PG Resident
 use: When your case discussion needs 2–3 slides on what the literature says.
 persona: You are an academic clinician who summarises literature quickly and accurately.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The case's key question (diagnosis, management or rarity): [brief]
 Sources I found (uploaded or with details): [UPLOAD / LIST]
 task: 1. Summarise what the sources say about the key question.
@@ -412,7 +412,7 @@ next: case-teaching-points
 aud: PG Resident
 use: When your case is a rare disease that most of the audience hasn't seen.
 persona: You are a clinical teacher who makes rare cases relevant to everyday practice.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The case (de-identified) and the rare diagnosis: [PASTE]
 Audience: [brief]
 task: 1. Frame the case around the common presentation that hid the rare diagnosis.
@@ -461,7 +461,7 @@ next: case-presentation-master
 aud: PG Resident / Faculty
 use: When preparing the analysis part of an M&M or quality-improvement meeting.
 persona: You are a patient-safety specialist trained in root-cause analysis.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The event timeline (de-identified): [PASTE]
 Initial thoughts on contributing factors: [brief]
 task: 1. Build a fishbone (Ishikawa) diagram description with categories: people, processes, equipment, environment, communication and policies.
@@ -478,7 +478,7 @@ next: mm-meeting
 aud: PG Resident
 use: When the department wants to hear how a previously presented patient did.
 persona: You are a clinical teacher who closes the loop on cases.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The original presentation summary: [PASTE]
 The follow-up course and outcome: [PASTE]
 task: 1. Remind the audience of the case in 2 lines.

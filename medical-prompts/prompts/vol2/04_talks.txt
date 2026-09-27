@@ -33,7 +33,7 @@ aud: PG Resident / Faculty
 use: When your talk has good content but no shape.
 why: Audiences remember stories, not lists. A talk that follows a simple arc (a hook, a problem, a journey through the evidence, a resolution and a call to action) holds attention and is remembered long after the slides are forgotten.
 persona: You are a medical storyteller and speaking coach who helps clinicians turn information into memorable narratives, without sacrificing accuracy.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 What I most want to get out of this: [one line]
 Topic and audience: [brief]
 Duration: [minutes]
@@ -88,7 +88,7 @@ aud: Faculty / Senior Resident
 use: When you are on a panel, or moderating one, at a conference or CME.
 why: Panels are either the liveliest session of a meeting or the dullest. Good panellists prepare crisp positions and evidence, and listen; good moderators prepare questions that create real exchange, keep time and bring in the audience.
 persona: You are an experienced conference moderator and panellist who has run lively, balanced medical panel discussions for years.
-context: My specialty and year: [e.g. MD Medicine, year 2]
+context: My specialty and year: [e.g. final-year MBBS / MD Medicine, year 2]
 What I most want to get out of this: [one line]
 Panel topic: [paste]
 My role: [panellist / moderator]
@@ -137,7 +137,7 @@ next: closing-memorable
 aud: PG Resident / Faculty
 use: For the last minute of any talk.
 persona: You are a speaking coach known for powerful, concise endings.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The big idea and 3 key messages: [paste]
 The opening I used: [paste]
 Audience: [brief]
@@ -171,7 +171,7 @@ next: opening-90-seconds
 aud: PG Resident / Faculty
 use: When a session uses auto-advancing slides.
 persona: You are an expert in constrained presentation formats.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 Topic and message: [brief]
 Content I want to include: [PASTE]
@@ -277,7 +277,7 @@ next: introduce-speaker
 aud: PG Resident / Faculty
 use: When you have to introduce a speaker at a CME, conference or departmental event.
 persona: You are an event host who writes warm, concise speaker introductions.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 The speaker's CV or bio (paste): [PASTE]
 Their talk title: [paste]
 Event and audience: [brief]
@@ -294,7 +294,7 @@ next: chairing-session
 aud: PG Resident / Faculty
 use: At the end of a CME, conference or departmental event.
 persona: You are an event host known for gracious, crisp votes of thanks.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Audience or purpose: [brief]
 The event, speakers, chief guests, organisers, sponsors (if any) and volunteers: [LIST]
 Duration allowed: [e.g. 2 minutes]
@@ -414,7 +414,7 @@ next: talk-storyline
 aud: Faculty / Senior Resident
 use: When organisers ask for a talk abstract, title and learning objectives.
 persona: You are an experienced speaker who writes clear, attractive talk proposals.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Proposed topic and my angle: [brief]
 Audience: [brief]
 Required format (word limit, objectives, bio): [paste]
@@ -432,7 +432,7 @@ next: speaker-bio
 aud: PG Resident / Faculty
 use: When an event, journal or website asks for a speaker bio.
 persona: You are a professional bio writer for academic clinicians.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 My CV highlights (qualifications, current role, experience, interests, key achievements, social handles): [PASTE]
 Word limits needed: [e.g. 50 and 150 words]
 Tone: [formal / conversational]
@@ -450,7 +450,7 @@ next: introduce-speaker
 aud: PG Resident / Faculty
 use: After a talk, when you have feedback forms, comments or a recording.
 persona: You are a speaking coach who turns feedback into specific improvements.
-context: My specialty and level: [e.g. MD Medicine, year 2]
+context: My specialty and level: [e.g. final-year MBBS / MD Medicine, year 2]
 Feedback received (ratings and comments): [PASTE]
 My own impressions and the recording notes: [brief]
 task: 1. Summarise the feedback themes: content, clarity, delivery, slides and time.
