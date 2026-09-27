@@ -1,0 +1,287 @@
+# 1.5 | Aims, objectives & hypotheses | Your objectives are the contract for the whole thesis: every method, every table and every conclusion must trace back to them. Get them precise now.
+
+@@ M | aims-master | Aims, objectives and hypotheses, fully aligned
+aud: PG Resident
+use: After your topic is approved and before you write the protocol or synopsis.
+why: Vague objectives ("to study", "to see") produce vague methods and unanswerable viva questions. Precise objectives, each mapped to an outcome, a measurement and an analysis, make the rest of the thesis almost write itself.
+persona: You are a research methodologist and thesis committee member at an Indian medical university who has reviewed hundreds of synopses. You insist that every objective is measurable, feasible and linked to a specific analysis.
+context: Programme and specialty: [e.g. MD Community Medicine]
+Thesis title: [paste]
+Research question (PICOT): [paste]
+Study design: [cross-sectional / case-control / cohort / diagnostic accuracy / interventional]
+Sample size planned and time available: [N, months]
+Variables I plan to collect: [list]
+task: 1. Write one overall aim in a single sentence.
+2. Write one primary objective and up to 3 secondary objectives in SMART form, each starting with a precise verb (to estimate, to compare, to determine the association between…).
+3. Write the null and alternative hypotheses for the primary objective (and for secondary objectives where a comparison is made), and say whether the test is one-sided or two-sided, with the reason.
+4. Build an alignment table: objective → outcome variable → how and when it is measured → statistical analysis.
+5. Flag any objective my design or sample size cannot support.
+rules: Use my design's language: descriptive designs estimate, analytical designs compare or associate, and only randomised designs test effects, because objectives that claim more than the design can deliver are the most common synopsis rejection. Keep each objective to one sentence and one outcome. Where a timing or measurement detail is missing, write [SPECIFY] instead of assuming it.
+output: Aim, numbered objectives, hypotheses, then the alignment table, then the flags.
+tweak: Finish with the 3 questions a synopsis committee is most likely to ask about these objectives, and short answers.
+tips:
+- Your conclusion will answer the primary objective in one sentence. Write that sentence now as a test.
+- Keep secondary objectives few. Every extra objective adds variables, time and multiple-testing problems.
+- Paste the alignment table into your protocol. It shows the committee your thinking in one glance.
+next: objective-outcome-map
+
+@@ M | objectives-committee-review | Committee review of my objectives
+aud: PG Resident
+use: When your objectives are drafted, before synopsis submission.
+why: Synopsis committees return objectives for the same reasons every term: vague verbs, unmeasurable outcomes, too many objectives and a mismatch with the design. This prompt runs that review before the committee does.
+persona: You are the member-secretary of a postgraduate research committee at an Indian medical college. You review objectives strictly against the design and feasibility, and you write clear, actionable comments.
+context: Thesis title and design: [paste]
+Sample size and duration: [brief]
+My aims, objectives and hypotheses as drafted: [PASTE HERE]
+My introduction's gap statement: [paste]
+Comments already received from my guide: [brief, or "none yet"]
+My university's synopsis format, if it prescribes one: [brief]
+task: 1. Review each objective for: a precise verb, a single measurable outcome, a defined population and time frame, fit with the design, and feasibility with my sample size.
+2. Mark each as approved, minor revision or major revision, with a reason.
+3. Check that the primary objective directly answers the gap statement.
+4. Check the hypotheses: correctly stated, matched to the primary objective, testable with my design.
+5. Rewrite every objective that needs revision, keeping as much of my original wording as possible.
+6. Recommend whether to cut, merge or demote any objective to "exploratory", and explain the effect on my workload and analysis.
+rules: Comment only on what I wrote, and quote the words you object to, because vague committee feedback is useless to a resident. Do not change my research question; if the objectives cannot be fixed without changing it, say so plainly.
+output: A review table (objective, verdict, issue, rewrite), then the hypothesis check, then the cut, merge or demote advice.
+tweak: End with the revised full set of aims, objectives and hypotheses, ready to paste into my synopsis.
+tips:
+- Take the revised set to your guide with the review table. It shows why each change was made.
+- If a secondary objective needs an extra test or visit, weigh it against your timeline before keeping it.
+- Keep the objective wording identical across synopsis, protocol, IEC form and thesis.
+next: smart-objectives
+
+@@ S | smart-objectives | Primary and secondary objectives in SMART form
+aud: PG Resident
+use: When drafting objectives for your synopsis or protocol.
+persona: You are a thesis guide who writes objectives that are specific, measurable, achievable, relevant and time-bound.
+context: I am doing [MD / MS / DNB] in [SPECIALTY] in India. My thesis topic is [TOPIC] and my design is [cross-sectional / case-control / cohort / interventional]. Setting: [hospital]. Duration: [months].
+task: 1. Write one primary aim.
+2. Write 3 specific secondary objectives.
+3. Write one null and one alternative hypothesis for the primary objective.
+4. After each objective, name the outcome variable it measures in brackets.
+rules: One sentence each, formal academic language, and a verb that matches my design (estimate, compare, determine the association), because the verb tells the committee what analysis to expect.
+output: A numbered list: aim, objectives, hypotheses.
+tip: If you can't name the outcome variable for an objective, the objective is not ready.
+try: MD Paediatrics; topic: vitamin D levels and recurrent wheeze in children aged 1–5; cross-sectional.
+next: hypotheses-writer
+
+@@ S | hypotheses-writer | Null and alternative hypotheses, correctly stated
+aud: PG Resident
+use: When your protocol or synopsis needs formal hypotheses.
+persona: You are a biostatistician who teaches residents to state hypotheses that match their analysis.
+context: Primary objective: [paste]
+Design and comparison groups: [brief]
+Primary outcome and its type (continuous / binary / time-to-event): [brief]
+task: 1. Write the null (H0) and alternative (H1) hypotheses in words and in parameter form (e.g. μ1 = μ2).
+2. Recommend a one-sided or two-sided test, with the reason.
+3. Name the test that will evaluate the hypothesis.
+4. Say whether a hypothesis is needed at all (purely descriptive objectives may not need one).
+rules: State hypotheses about population parameters, not sample results, because that is the most common error examiners catch. Default to two-sided unless there is a strong, pre-specified reason.
+output: The hypotheses, the sidedness decision, the test, then the "is it needed" note.
+tip: A non-inferiority or equivalence study needs a different hypothesis structure and a margin. Ask separately if yours is one.
+try: Comparing mean HbA1c reduction between two oral regimens over 12 weeks.
+next: objective-outcome-map
+
+@@ S | aim-vs-objective | Aim versus objective: fix the confusion
+aud: MBBS Student / PG Resident
+use: When your aims and objectives say the same thing twice, or mix levels.
+persona: You are a research-methods teacher who explains the hierarchy from aim to objectives to hypotheses clearly.
+context: My current aims and objectives: [PASTE HERE]
+My research question: [paste]
+My programme: [MD / MS / DNB / MBBS project]
+task: 1. Explain the difference between an aim, an objective and a hypothesis in 3 lines.
+2. Classify each of my statements as aim, objective, hypothesis or none.
+3. Rewrite them into a clean hierarchy: one aim, then objectives, then hypotheses.
+rules: Keep my research intent unchanged; only restructure and reword, because the content must still match my approved topic.
+output: The 3-line explanation, a classification table, then the rewritten set.
+tip: An aim is the "why"; objectives are the "what exactly"; hypotheses are the "what I expect".
+try: Aims: "to study thyroid function in CKD" and "to see if thyroid is affected in CKD patients".
+next: smart-objectives
+
+@@ S | objective-outcome-map | Map each objective to outcome, measurement and analysis
+aud: PG Resident
+use: After finalising objectives, before designing the proforma and the analysis plan.
+persona: You are a methodologist who builds the traceability table linking objectives to data and analysis.
+context: My objectives: [PASTE OBJECTIVES HERE]
+Variables I plan to collect: [list]
+Software: [SPSS / R / Stata / Jamovi]
+task: 1. For each objective, give the outcome variable, its type, the measurement tool, the time point, and the statistical test or effect measure.
+2. Flag any objective with no matching variable, and any variable with no matching objective.
+3. Suggest what to add or drop.
+rules: Choose tests that fit the variable type and design, and mark any uncertain choice as [CONFIRM WITH STATISTICIAN], because this table will become part of your analysis plan.
+output: A mapping table, then the orphan objectives and variables, then the recommendations.
+tip: Variables with no objective should usually leave your proforma. They cost time and add nothing.
+try: Objectives on prevalence of depression in dialysis patients and its association with serum albumin.
+next: sap-master
+
+@@ S | descriptive-objectives | Objectives for a descriptive study
+aud: PG Resident / MBBS Student
+use: When your study describes prevalence, patterns or characteristics rather than testing a comparison.
+persona: You are an epidemiologist who writes objectives for cross-sectional and descriptive studies without forcing hypotheses on them.
+context: Topic and population: [brief]
+What I want to describe: [prevalence / pattern / distribution / characteristics]
+Any associations I also want to explore: [list]
+task: 1. Write objectives that estimate (with precision) rather than test.
+2. Write any exploratory association objectives, labelled as such.
+3. Say whether formal hypotheses are needed for each.
+4. Suggest how sample size should be based on precision (margin of error) rather than power.
+rules: Use "to estimate" and "to describe" for descriptive aims, because "to prove" or "to test" signals a design error to the committee.
+output: A numbered list of objectives with their type, then the hypothesis and sample-size notes.
+tip: A descriptive study with a clear prevalence estimate and confidence interval is a perfectly good thesis.
+try: Prevalence and pattern of dermatological adverse drug reactions in a tertiary hospital.
+next: sample-size-proportion
+
+@@ S | diagnostic-objectives | Objectives for a diagnostic accuracy study
+aud: PG Resident
+use: When your thesis evaluates a test against a reference standard.
+persona: You are a diagnostic-research methodologist familiar with the STARD reporting guideline.
+context: Index test: [e.g. bedside lung ultrasound]
+Reference standard: [e.g. CT chest]
+Target condition and population: [brief]
+Clinical role of the test: [replacement / triage / add-on]
+task: 1. Write the primary objective in terms of sensitivity and specificity (with 95% CI) of the index test against the reference standard.
+2. Write secondary objectives (predictive values, likelihood ratios, AUC for continuous tests, inter-observer agreement, time or cost).
+3. Explain which measures depend on prevalence and how to phrase them.
+4. Note what "role of the test" means for the objectives.
+rules: Make the reference standard explicit in every accuracy objective, because accuracy without a named reference standard is meaningless.
+output: A numbered objective list, then the prevalence note, then the role note.
+tip: If your reference standard is imperfect, say so in your objectives' limitation note, not only in the discussion.
+try: Point-of-care ultrasound versus chest X-ray for pneumothorax in trauma patients.
+next: sample-size-diagnostic
+
+@@ S | trim-objectives | Too many objectives: trim to what is feasible
+aud: PG Resident
+use: When your list of objectives is long and your guide says "focus".
+persona: You are a pragmatic thesis supervisor who protects residents from over-ambitious protocols.
+context: My objectives: [PASTE OBJECTIVES HERE]
+Sample size and duration: [brief]
+Tests or visits each objective requires: [brief]
+Who pays for each test: [hospital / patient / project]
+task: 1. Estimate the workload, cost and statistical burden of each objective.
+2. Rank the objectives by importance to the research question.
+3. Recommend which to keep, merge, demote to exploratory, or drop.
+4. Present the trimmed set.
+rules: Keep the primary objective unchanged; explain every cut in one line, because I'll need to justify it to my guide.
+output: A ranking table (objective, burden, importance, recommendation), then the trimmed set.
+tip: Three objectives done well beat eight done badly.
+try: Eight objectives for a 2-year study of 100 patients with liver cirrhosis.
+next: aims-master
+
+@@ S | value-added-secondary | Secondary objectives that add value at no extra cost
+aud: PG Resident
+use: When your primary objective is set and you want useful secondary questions from data you already collect.
+persona: You are an efficient clinical researcher who makes every data point count.
+context: Primary objective: [paste]
+Data I will already collect: [list]
+Design and sample size: [brief]
+Specialty and setting: [brief]
+task: 1. Suggest 5 secondary objectives answerable with the data I already collect.
+2. For each, give the outcome, the analysis and what it adds clinically.
+3. Warn which would be underpowered, and how to label them in my protocol.
+rules: Suggest no objective that needs new tests, visits or consent changes, because the point is zero extra cost. Label underpowered analyses exploratory.
+output: A table (objective, data used, analysis, added value, power warning).
+tip: Subgroup objectives are almost always underpowered. Call them exploratory from the start.
+try: Primary: 30-day mortality in sepsis; data: vitals, CBC, lactate, SOFA, comorbidities.
+next: objective-outcome-map
+
+@@ S | objective-wording | Fix vague verbs in my objectives
+aud: PG Resident / MBBS Student
+use: When your objectives use verbs such as "to study", "to see", "to know" or "to evaluate".
+persona: You are an academic editor for research proposals who replaces vague verbs with precise ones.
+context: My objectives: [PASTE OBJECTIVES HERE]
+Design: [design]
+Primary outcome: [outcome]
+task: 1. Mark each vague verb.
+2. Replace it with a precise verb that matches the design and the intended analysis (estimate, compare, determine the association, assess the accuracy, evaluate the effect).
+3. Add any missing population, outcome, setting or time frame.
+4. Give the final wording for each objective.
+rules: Match the verb to the design, because "to evaluate the effect" in an observational study promises causation you cannot deliver.
+output: A before-and-after table, then the final list.
+tip: Read each objective and ask, "What single number will answer this?". If you can't say, it's still vague.
+try: "To study the role of CRP in appendicitis."
+next: smart-objectives
+
+@@ S | picot-to-objectives | From PICOT question to a full set of objectives
+aud: PG Resident
+use: When your question is fixed and you need everything that follows from it.
+persona: You are a research mentor who derives objectives systematically from the research question.
+context: My PICOT question: [PASTE QUESTION]
+Design: [design]
+Sample size and follow-up I can manage: [brief]
+task: 1. Derive the primary objective directly from the PICOT elements.
+2. Suggest 2–3 secondary objectives that follow naturally (other outcomes, time points or subgroups).
+3. Write the hypotheses.
+4. Check that the population, comparison and outcome wording is identical across question, objectives and hypotheses.
+rules: Do not introduce new populations or outcomes absent from my PICOT without flagging them as additions, because the objectives must stay within my approved question.
+output: The derived set, then the consistency check.
+tip: Copy exact phrases from your PICOT. Paraphrasing the population in the objectives creates confusion later.
+try: In adults with COPD exacerbation (P), does NIV started in the ward (I) versus in the ICU (C) change 30-day mortality (O) over 30 days (T)?
+next: hypotheses-writer
+
+@@ S | interventional-objectives | Objectives for an interventional study or RCT
+aud: PG Resident
+use: When your thesis compares an intervention with a control, randomised or not.
+persona: You are a clinical trials methodologist who writes trial objectives that follow CONSORT and SPIRIT conventions.
+context: Intervention and comparator: [brief]
+Population and setting: [brief]
+Primary endpoint and time point: [e.g. treatment failure at day 7]
+Randomised?: [yes / no]
+Is the aim superiority, non-inferiority or equivalence?: [state or "unsure"]
+task: 1. Write the primary objective with the endpoint, time point and comparison.
+2. Write secondary objectives, including safety and adverse events.
+3. Write hypotheses matching the aim (superiority, non-inferiority with margin, or equivalence).
+4. Explain what changes if the study is not randomised.
+rules: For a non-inferiority or equivalence aim, include a margin slot marked [JUSTIFY MARGIN FROM LITERATURE], because an unjustified margin is the first thing reviewers attack.
+output: Objectives, hypotheses, then the notes on randomisation and aim type.
+tip: Always include a safety objective in an interventional thesis. The IEC will ask for it.
+try: Nebulised hypertonic saline versus normal saline in infants with bronchiolitis, length of stay.
+next: hypotheses-writer
+
+@@ S | mixed-methods-objectives | Objectives for qualitative or mixed-methods studies
+aud: PG Resident / Faculty
+use: When part or all of your study uses interviews, focus groups or open-ended data.
+persona: You are a mixed-methods researcher in health services who writes objectives fit for qualitative inquiry.
+context: Topic: [TOPIC]
+Quantitative component (if any): [brief]
+Qualitative component: [e.g. in-depth interviews with 20 caregivers]
+Sequence of the components: [parallel / quantitative first / qualitative first]
+task: 1. Write the overall aim.
+2. Write quantitative objectives in measurable form.
+3. Write qualitative objectives using exploratory verbs (to explore, to understand, to describe experiences of).
+4. Explain how the two components integrate (explanatory, exploratory or convergent design).
+rules: Don't give qualitative objectives numeric targets or hypotheses, because that misunderstands qualitative research and reviewers notice.
+output: Aim, quantitative objectives, qualitative objectives, then the integration note.
+tip: Name your mixed-methods design explicitly. Reviewers look for it.
+try: Adherence to antiretroviral therapy: a survey of 200 patients plus interviews with 15 non-adherent patients.
+next: aims-master
+
+@@ Q | one-line-aim | Write my aim in one sentence
+aud: PG Resident / MBBS Student
+body: Act as a research-methods tutor for postgraduates. From my topic [TOPIC] and design [DESIGN], write a single-sentence study aim that names the population, the main variable and the setting. Give 3 versions and mark the most precise one, with a one-line reason.
+try: Topic: sleep quality in resident doctors; design: cross-sectional survey.
+
+@@ Q | rewrite-vague-objective | Rewrite one vague objective
+aud: PG Resident
+body: Act as a strict thesis committee reviewer. Rewrite this objective, [OBJECTIVE], so it is specific, measurable and matched to my design [DESIGN]. Give the rewrite, name the outcome variable and its unit, and explain the change in one short line.
+try: "To assess the outcome of patients with dengue."
+
+@@ Q | testable-hypothesis | Is my hypothesis testable?
+aud: PG Resident
+body: Act as a biostatistician who reviews thesis synopses. Tell me whether this hypothesis, [HYPOTHESIS], is testable with my design [DESIGN] and data [PRIMARY OUTCOME TYPE]. If not, explain why in 2 lines and give a testable version with its null hypothesis.
+try: "Yoga improves the quality of life of asthmatic patients."
+
+@@ Q | one-or-two-sided | One-sided or two-sided test?
+aud: PG Resident
+body: Act as a biostatistics examiner. For my hypothesis, [HYPOTHESIS], tell me whether a one-sided or two-sided test is appropriate, justify it in 3 lines, and explain how the choice affects my sample size and how examiners usually view one-sided tests.
+try: A new dressing is expected to reduce wound infection rates compared with standard dressing.
+
+@@ Q | which-is-primary | Which of my objectives should be primary?
+aud: PG Resident
+body: Act as a thesis guide. From these objectives, [PASTE OBJECTIVES], tell me which should be the primary objective and why (clinical importance, measurability, feasibility, sample size basis). Rank the rest as secondary objectives in order of importance, with one line each.
+try: Three objectives on mortality, ICU stay and ventilator days in ARDS.
+
+@@ Q | objectives-for-form | Objectives squeezed into a form field
+aud: PG Resident
+body: Act as a research-forms expert. Condense my objectives, [PASTE OBJECTIVES], to fit a [WORD OR CHARACTER LIMIT] field on the IEC or CTRI form, keeping the primary objective complete and the secondary objectives recognisable. Show the character count of the final text.
+try: Four objectives condensed to 500 characters for a CTRI registration.
