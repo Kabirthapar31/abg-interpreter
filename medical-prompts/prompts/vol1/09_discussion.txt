@@ -1,0 +1,438 @@
+# 1.9 | Discussion, conclusion & limitations | The discussion is where good data gets ruined by overclaiming, and it is the only section where your scientific judgement is visible. Structure it deliberately.
+
+@@ M | discussion-master | Write the discussion: ten paragraphs, no overclaiming
+aud: PG Resident
+use: After results are final. This is the section examiners and reviewers read most closely.
+why: The discussion is where good data gets ruined by overclaiming, and it is the only section where your scientific judgement is visible. A fixed structure (answer, compare, explain, implications, strengths, limitations, future, conclusion) keeps it honest and complete.
+persona: You are a journal editor and senior academic who has written and revised hundreds of discussion sections and rejected many more. You are ruthless about overinterpretation, unsupported causal language, and limitation sections that hide the real weaknesses.
+context: Design: [state] · Sample size: [state]
+Primary objective: [state]
+Primary result with effect estimate and CI: [paste exactly as computed]
+Secondary results: [paste, with numbers]
+Findings that surprised me or contradicted my hypothesis: [state]
+Findings that were not significant: [state]
+Known limitations: [list]
+Setting: [Indian tertiary / rural / private, etc.] · Target: [thesis / journal name]
+I have uploaded the [N] most relevant published papers. Use only these, plus anything you retrieve through live search with a verifiable PMID or DOI.
+task: Draft a discussion of about [800–1,200] words:
+1. Paragraph 1: answer the research question in 1–3 sentences with the principal finding and its numbers. No literature.
+2. Paragraphs 2–4: for each key comparison, state what the prior study found, whether mine agrees or differs, and the likely reason (population, setting, definitions, measurement, sample size, follow-up). End every comparison with an interpretive sentence.
+3. Paragraph 5: the most plausible mechanism, marked clearly where speculative.
+4. Paragraph 6: clinical implications: who could act on this and how; say plainly if it is not yet practice-changing.
+5. Paragraph 7: strengths, without inflation.
+6. Paragraph 8: limitations in order of threat to the conclusion, each with the likely direction of bias.
+7. Paragraph 9: specific, doable future research, not "further studies are needed".
+8. Paragraph 10: a 2–3 sentence conclusion that does not exceed the data.
+rules: Use associational language unless my design is randomised; "caused", "led to", "resulted in" and "prevented" are banned otherwise, because causal overreach is the most common reviewer criticism. Qualify every "significant" as statistical or clinical. Never call a non-significant result a "trend". Where a comparison needs a source I have not supplied, write [CITATION NEEDED — FIND SOURCE]. Introduce no result that is not in my results section.
+output: The discussion in paragraphs with no sub-headings unless my target requires them, within the word range.
+tweak: Then list separately the three sentences a hostile reviewer would attack first, and how to rewrite each one defensively.
+tips:
+- Give the model your actual numbers. A discussion written around vague findings reads exactly as vague as it was written.
+- The hostile-reviewer list is worth more than the draft. Act on it before submission.
+- If the draft sounds more confident than you feel about your own data, the draft is wrong, not your instinct.
+next: limitations-master
+
+@@ M | limitations-master | Limitations that are honest, ranked and specific
+aud: PG Resident
+use: When writing the limitations paragraph, and before your viva.
+why: Examiners judge your scientific maturity by your limitations. A generic list ("small sample, single centre") signals you didn't think. Limitations ranked by threat, each with the direction of bias and what you did to reduce it, signal that you did.
+persona: You are a clinical epidemiologist and journal reviewer who evaluates limitation sections for honesty and insight. You expect each limitation to state how it could have changed the result.
+context: Design and setting: [paste]
+How participants were selected and how many declined or were lost: [brief with numbers]
+How the exposure and outcome were measured, and by whom: [brief]
+Confounders measured and not measured: [lists]
+Sample size, and whether the study was powered for each reported outcome: [brief]
+Primary result: [estimate with CI]
+Limitations I have thought of: [list]
+task: 1. Identify all important limitations under selection, information (measurement), confounding, sample size or precision, and generalisability.
+2. Rank them by how much they threaten my main conclusion.
+3. For each, state the likely direction of bias (towards or away from the null, or unpredictable) and whether it could explain my result entirely.
+4. For each, state what I did in the design or analysis to reduce it, if anything.
+5. Write the limitations paragraph (180–250 words) in ranked order, honest but not self-defeating.
+6. Separately, list 2 limitations I should acknowledge in the viva even if they are not in the thesis text.
+rules: Be specific to my study, because generic limitations suggest you haven't understood your own design. Don't invent limitations my design doesn't have, and don't hide real ones behind softer wording. Keep numbers exactly as I gave them.
+output: A ranked limitation table (limitation, type, direction of bias, mitigation, impact), then the paragraph, then the viva list.
+tweak: End with a one-line statement of how confident a reader should be in my primary conclusion, given these limitations.
+tips:
+- Start with the limitation that matters most, not the most comfortable one.
+- "Single-centre" is only a limitation if you explain why your centre might differ from others.
+- Pair each limitation with what the next study should do differently. It leads naturally into future research.
+next: hostile-reviewer
+
+@@ M | hostile-reviewer | Hostile-reviewer attack on my discussion
+aud: PG Resident / Faculty
+use: When your discussion is drafted, before your guide or a journal sees it.
+why: The kindest thing you can do for your discussion is let someone attack it first. A structured hostile review finds overclaims, missing comparisons and weak logic, and it hands you defensive rewrites you can use on paper and at the viva.
+persona: You are Reviewer 2: a senior, sceptical peer reviewer for a high-impact clinical journal. You are fair but relentless, and you target overinterpretation, selective comparisons and conclusions that outrun the data.
+context: Design, sample size and primary result: [brief with numbers]
+Target: [thesis / journal name and its readership]
+My results section: [PASTE RESULTS]
+My discussion: [PASTE DISCUSSION]
+task: 1. Write a reviewer report on the discussion with major comments (threats to validity or interpretation) and minor comments (wording, clarity, missing references), each quoting the text it refers to.
+2. Identify every sentence that claims more than the results show, and every causal claim unsupported by the design.
+3. Identify comparisons with literature that seem selective, where only agreeing studies are cited, and say what kind of study is missing.
+4. Identify results reported in the discussion that do not appear in the results.
+5. Identify important limitations the discussion leaves out or understates.
+6. For each major comment, write a defensive rewrite of the relevant text and a one-line response I could use in a reply to reviewers or at the viva.
+rules: Quote the exact text for every criticism, because unquoted criticism cannot be acted on. Rewrites must not add new data or references; use [CITE] slots where a reference is needed. Keep my numbers unchanged.
+output: The reviewer report (major, then minor), then a table (quoted sentence, problem, rewrite, one-line response).
+tweak: End with an overall verdict (accept, minor revision, major revision) with the single change that would most improve the discussion.
+tips:
+- Run this before your guide reads the draft. Their time is better spent on judgement than on catching overclaims.
+- Keep the responses. They are ready-made answers for viva questions about your interpretation.
+- Run it again after revising. The major comments should turn into minor ones.
+next: overclaim-check
+
+@@ M | conclusion-master | Conclusion, recommendations and summary chapter
+aud: PG Resident
+use: For the final chapters of your thesis: summary, conclusion and recommendations.
+why: Many Indian theses end with separate summary, conclusion and recommendations chapters, and examiners read them first when time is short. They must match the objectives exactly and claim no more than the data shows.
+persona: You are a senior examiner for MD/MS theses who reads the summary and conclusion first to judge whether the student understood their study. You insist that every conclusion maps to an objective and every recommendation is proportionate to the evidence.
+context: Thesis title: [paste]
+Objectives (numbered): [PASTE OBJECTIVES]
+Key results for each objective (with numbers): [PASTE RESULTS]
+Main limitations: [list]
+My university's required end chapters and word limits: [e.g. Summary 500 words, Conclusion, Recommendations]
+Design and setting: [brief]
+task: 1. Write the summary chapter: background (2 lines), aims, methods (design, setting, sample, key measurements), key results by objective with numbers, and the conclusion, within the word limit.
+2. Write the conclusion: one numbered statement per objective, each answering it directly and in associational terms where appropriate.
+3. Write recommendations in 3 groups: for clinical practice (only if justified), for the department or health system, and for future research, each specific and feasible.
+4. Build a check table showing each objective, its conclusion statement and the result that supports it.
+5. Flag any result that is important but not captured by any conclusion.
+rules: Every conclusion must answer an objective using a result I gave, because conclusions without matching results are a classic examiner criticism. Recommendations for practice must be proportionate: a single-centre observational study can suggest or support, not establish. Keep numbers exactly as supplied.
+output: The summary, the numbered conclusions, the grouped recommendations, then the check table.
+tweak: End with the one conclusion statement most likely to be challenged at the viva, and a safer wording for it.
+tips:
+- Read your conclusion and your objectives side by side. They should mirror each other.
+- Future-research recommendations should name the design, population and outcome.
+- Keep the summary free of any number that doesn't appear in your results chapter.
+next: summary-chapter
+
+@@ S | principal-findings | The first paragraph of the discussion
+aud: PG Resident
+use: To open your discussion.
+persona: You are a journal editor who wants the discussion to open with the answer, not with background.
+context: Primary objective: [paste]
+Primary result with numbers: [paste]
+Most important secondary result: [paste]
+Design: [brief]
+task: 1. Write the opening paragraph (60–100 words) stating the answer to the research question with the key numbers.
+2. Add one sentence on the most important secondary finding.
+3. Give an alternative version for a journal article of 50 words or fewer.
+rules: No literature, no background and no interpretation in this paragraph, and use associational language for observational designs, because the first sentence is read as your main claim.
+output: The two versions.
+tip: If you can't state your main finding in one sentence, your results section needs work first.
+try: Primary: in-hospital mortality 18% vs 27% between early and late mobilisation groups (RR 0.67, 95% CI 0.45–0.99).
+next: compare-literature
+
+@@ S | compare-literature | Compare one finding with the literature
+aud: PG Resident
+use: For each key comparison paragraph in your discussion.
+persona: You are a clinical academic who writes comparison paragraphs that interpret rather than list.
+context: My finding with numbers: [paste]
+Comparable studies I have read, with design, setting, population and result: [PASTE DETAILS OR UPLOAD PAPERS]
+task: 1. Compare my finding with each study: agree, partly agree or differ.
+2. For differences, give the most likely explanations (population, setting, definitions, measurement, timing, sample size).
+3. Write a paragraph of 120–180 words that compares and interprets, ending with what the comparison means.
+rules: Use only the studies I supplied, citing each with its reference number, because comparisons with unseen or invented studies are academic misconduct. Present disagreeing studies too, not only supporting ones.
+output: A comparison table, then the paragraph.
+tip: One paragraph per key finding is a good discipline. Don't mix three findings in one paragraph.
+try: My finding: prevalence of sarcopenia 38% in COPD; three studies reported 15%, 25% and 40%.
+next: explain-difference
+
+@@ S | explain-difference | Why my result differs from previous studies
+aud: PG Resident
+use: When your result disagrees with published findings and you must explain it.
+persona: You are an epidemiologist skilled at explaining discrepancies between studies without special pleading.
+context: My study: design, population, setting, definitions, sample size and result: [brief]
+The study or studies I differ from, with the same details: [brief]
+task: 1. Compare the studies systematically on each methodological dimension.
+2. Rank the plausible explanations for the difference.
+3. Consider chance (sample size, CI overlap) explicitly.
+4. Write a discussion paragraph presenting the difference and the most likely explanations, without dismissing either result.
+rules: Don't claim my study is "better" without a specific methodological reason, and consider that my own study might be the outlier, because examiners respect balanced reasoning.
+output: The comparison table, the ranked explanations, then the paragraph.
+tip: Overlapping confidence intervals often mean the "difference" isn't really a difference. Check that first.
+try: My study found no association between vitamin D and TB outcome; two earlier studies found one.
+next: compare-literature
+
+@@ S | mechanism-para | The mechanism paragraph, clearly labelled as speculation
+aud: PG Resident
+use: When your discussion needs a biological or clinical explanation for your finding.
+persona: You are a clinician-scientist who explains mechanisms carefully and labels speculation clearly.
+context: My finding: [paste]
+Relevant physiology or mechanisms I know of, with sources: [PASTE NOTES WITH CITATIONS]
+task: 1. Suggest the 2–3 most plausible mechanisms for my finding.
+2. For each, say how strong the supporting evidence is (established, plausible, speculative).
+3. Write a paragraph of 100–150 words presenting them with hedged language.
+4. Suggest what study could test the leading mechanism.
+rules: Mark every mechanistic claim needing support as [CITE], and phrase speculation as speculation ("may", "could", "one possible explanation"), because mechanisms presented as fact are a common overreach.
+output: The mechanism list with evidence strength, then the paragraph, then the testing suggestion.
+tip: Keep this paragraph short. Examiners value an honest "the mechanism is unclear" over a confident guess.
+try: Finding: low serum magnesium associated with higher ICU mortality.
+next: clinical-implications
+
+@@ S | clinical-implications | Clinical implications without overreach
+aud: PG Resident
+use: For the implications paragraph of your discussion.
+persona: You are a guideline-panel member who judges how far a single study can change practice.
+context: Main findings: [paste]
+Design, sample size and setting: [brief]
+Who could use the findings (clinicians, administrators, programmes): [list]
+task: 1. State what the findings could mean for practice, and for whom.
+2. Distinguish what can be acted on now, what needs confirmation, and what is hypothesis-generating.
+3. Write the implications paragraph (100–150 words).
+4. Flag any implication that overreaches the design.
+rules: Use proportionate verbs (suggests, supports, may inform) for single-centre observational results, because "should be adopted" claims are rarely justified by one study.
+output: The three-level classification, the paragraph, then the overreach flags.
+tip: Name the specific clinical decision your findings touch, e.g. "whether to repeat lactate at 6 hours".
+try: Finding: a bedside frailty score predicted post-operative delirium in elderly surgical patients.
+next: strengths-para
+
+@@ S | strengths-para | Strengths without inflation
+aud: PG Resident
+use: For the strengths paragraph of your discussion.
+persona: You are a sceptical reviewer who dislikes inflated strength statements.
+context: Design features: [e.g. prospective, consecutive recruitment, blinded outcome assessment, validated tools, low loss to follow-up]
+Anything unique about my setting or population: [brief]
+task: 1. Identify genuine methodological strengths and explain why each matters for validity.
+2. Remove claims that are not real strengths (e.g. "first study in India" unless verified, or "large sample" when it isn't).
+3. Write the strengths paragraph (80–120 words).
+rules: Tie each strength to a bias it reduces, because a strength without a reason is just a claim. Do not claim novelty unless I confirm it has been checked; write [VERIFY NOVELTY] instead.
+output: A strengths table (feature, bias reduced), the removed claims, then the paragraph.
+tip: "Prospective, consecutive recruitment with complete follow-up" is a real strength. Say it plainly.
+try: A prospective cohort of 180 patients with 97% follow-up and blinded outcome assessment.
+next: limitations-master
+
+@@ S | future-research | Future research that someone could actually do
+aud: PG Resident
+use: Instead of writing "further studies are needed".
+persona: You are a research funder who only backs specific, feasible next studies.
+context: My findings and limitations: [brief]
+Open questions my study raised: [list]
+My setting and the resources a follow-up study could realistically use: [brief]
+task: 1. Propose 3–4 specific future studies, each with design, population, setting, outcome and why it follows from my findings.
+2. Rank them by importance and feasibility, and say which one could be a thesis for a junior resident in my department.
+3. Write the future-research paragraph (80–120 words).
+rules: Make each proposal specific enough to become someone's thesis topic, because vague calls for research add nothing.
+output: A proposal table, then the paragraph.
+tip: Link each future study to one of your limitations. It shows you understand what your study couldn't answer.
+try: My cross-sectional study found an association between sleep apnoea and poor asthma control.
+next: conclusion-writer
+
+@@ S | conclusion-writer | A conclusion that doesn't exceed the data
+aud: PG Resident
+use: For the final paragraph of your discussion or abstract.
+persona: You are a journal editor who rewrites overreaching conclusions every day.
+context: Primary objective: [paste]
+Primary result: [paste]
+Design and setting: [brief]
+My current conclusion: [paste]
+Target: [thesis / journal abstract / poster]
+task: 1. Check my conclusion against the result and design, and list every overreach.
+2. Rewrite it in 2–3 sentences: what was found, in whom, and what it suggests.
+3. Write a one-sentence version for the abstract.
+rules: Match the strength of language to the design and precision of the result, because the conclusion is the most-quoted sentence of any study.
+output: The overreach list, the rewritten conclusion, then the abstract sentence.
+tip: Your conclusion should answer your primary objective in the same words the objective used.
+try: Current: "Early antibiotics save lives in sepsis." Design: retrospective cohort.
+next: conclusion-master
+
+@@ S | overclaim-check | Scan my discussion for overclaiming
+aud: PG Resident
+use: As a final check on any discussion or conclusion.
+persona: You are a research-integrity editor who scans manuscripts for spin.
+context: My design: [design]
+My primary result: [estimate, CI, p]
+My discussion text: [PASTE DISCUSSION]
+task: 1. Flag causal language used with an observational design.
+2. Flag spin: "trend towards", "marginally significant", emphasis on secondary results over a null primary result, and extrapolation beyond the population.
+3. Flag unqualified "significant".
+4. Give a corrected version of each flagged sentence.
+rules: Keep the meaning where it is justified and change only the overreaching wording, because the goal is accuracy, not timidity.
+output: A table (sentence, type of spin, corrected sentence), then a count by type.
+tip: Search your text for "caus", "effect", "impact", "prevent", "led to", "due to". Most overclaims hide there.
+try: A discussion claiming a supplement "improved outcomes" based on a before-after study.
+next: hostile-reviewer
+
+@@ S | generalisability | Who do my results apply to?
+aud: PG Resident
+use: For the generalisability part of your limitations or implications.
+persona: You are an epidemiologist who thinks carefully about external validity.
+context: Setting and how patients reached my hospital: [brief]
+Population characteristics (severity, age, comorbidity, socio-economic profile): [brief]
+Exclusions: [list]
+Proportion of screened patients who were enrolled: [numbers]
+task: 1. Describe the population my results apply to most directly.
+2. Identify populations to whom they may not apply, and why.
+3. Discuss referral bias for a tertiary centre, if relevant, and the likely direction of its effect on my estimates.
+4. Write a generalisability paragraph (80–120 words).
+rules: Base the assessment on my actual setting and exclusions, because generic statements about "single-centre studies" add nothing.
+output: Headed notes, then the paragraph.
+tip: Tertiary-centre patients are usually sicker. Say whether that makes your estimates higher or lower than in district practice.
+try: ICU cohort at a referral hospital receiving transfers from 6 districts.
+next: limitations-master
+
+@@ S | unexpected-finding | Discuss a surprising result
+aud: PG Resident
+use: When a result contradicts your hypothesis or expectations.
+persona: You are a thoughtful senior researcher who treats surprising results as information, not embarrassment.
+context: What I expected, and why: [brief]
+What I found, with numbers: [paste]
+Possible issues with my data or methods: [brief]
+task: 1. List the explanations in order: chance, bias, confounding, measurement error, and a genuine effect.
+2. Evaluate each against my study details.
+3. Suggest a check I can still run (e.g. a sensitivity analysis) if appropriate.
+4. Write a paragraph (100–150 words) presenting the finding honestly.
+rules: Don't explain away the finding, and don't overstate it, because examiners respect a balanced treatment of surprises.
+output: The explanations table, the check, then the paragraph.
+tip: Surprising findings often make the best future-research questions. Say so.
+try: Expected obesity to worsen ARDS outcomes; found lower mortality in obese patients.
+next: discussion-master
+
+@@ S | null-discussion | Discuss a non-significant primary result
+aud: PG Resident
+use: When your primary outcome was not statistically significant.
+persona: You are a statistician-editor who helps authors write honest, publishable null-result discussions.
+context: Primary result (estimate, 95% CI, p): [paste]
+Sample size and whether it met the calculated target: [brief]
+Expected effect used for the sample size: [brief]
+task: 1. Interpret the CI: what effect sizes are ruled out, and what remain plausible.
+2. Discuss power: whether the study could have detected a clinically important effect.
+3. Compare with the literature honestly.
+4. Write the opening paragraph of the discussion for this result.
+rules: Don't call the result a trend or imply a hidden effect, and don't call it proof of no effect, because both misrepresent a null result.
+output: The CI interpretation, the power note, then the paragraph.
+tip: "Our study was unable to demonstrate…" is better than "there was no difference".
+try: RR 0.85 (95% CI 0.62–1.17), p = 0.32, sample of 180 against a target of 200.
+next: discussion-master
+
+@@ S | discussion-structure-check | Check the structure of my discussion
+aud: PG Resident
+use: When your discussion is drafted and feels disorganised.
+persona: You are a thesis-writing coach who maps discussions against a standard structure.
+context: My discussion: [PASTE DISCUSSION]
+My primary result: [paste]
+Target structure, if my guide or journal prescribes one: [brief]
+task: 1. Map each paragraph to a structural element: principal findings, comparison, explanation, mechanism, implications, strengths, limitations, future research or conclusion.
+2. Identify missing, repeated or misplaced elements.
+3. Suggest a reordering.
+4. Check that the first paragraph states the principal finding and the last states a proportionate conclusion.
+rules: Suggest structural changes only, keeping my text as it is, because the content and voice must remain mine.
+output: A paragraph map table, the problems, then the suggested order.
+tip: If your discussion opens with background, move it. The first paragraph must answer the question.
+try: A discussion that opens with 2 paragraphs of epidemiology before mentioning the results.
+next: discussion-master
+
+@@ S | summary-chapter | The "Summary" chapter of an Indian thesis
+aud: PG Resident
+use: When your university requires a separate summary chapter.
+persona: You are an MD/MS thesis examiner who reads the summary first.
+context: Title and objectives: [paste]
+Methods in brief: [paste]
+Key results by objective, with numbers: [paste]
+Conclusion: [paste]
+Word or page limit: [e.g. 500 words]
+task: 1. Write the summary within the limit, with short paragraphs for background, aims, methods, results and conclusion.
+2. Keep results in the order of the objectives, with the key numbers.
+3. Check that every number appears in my results chapter.
+rules: Add no information that isn't elsewhere in the thesis, because the summary must be a faithful miniature of it.
+output: The summary with its word count, then the number check.
+tip: Write the summary last and read it aloud. If it doesn't flow, your thesis argument doesn't either.
+try: Summary for a thesis on thyroid dysfunction in chronic kidney disease, 500 words.
+next: conclusion-master
+
+@@ S | indian-practice-context | What my findings mean for Indian practice
+aud: PG Resident / Faculty
+use: For a paragraph relating your results to Indian clinical practice, programmes or policy.
+persona: You are a public-health physician familiar with Indian health programmes and resource settings.
+context: My findings: [brief]
+Relevant national programmes, guidelines or practices I know of: [list with sources]
+Resource context of typical Indian hospitals for this condition: [brief]
+task: 1. Relate the findings to current Indian practice and resource realities.
+2. Identify which national programme or guideline, if any, the findings are relevant to.
+3. Discuss feasibility of acting on the findings in district and primary settings.
+4. Write the paragraph (100–150 words).
+rules: Mention a programme or guideline only if I listed it or you mark it [VERIFY PROGRAMME / GUIDELINE], because misnamed programmes undermine credibility.
+output: Headed notes, then the paragraph.
+tip: Examiners in India value this paragraph. It shows you thought beyond your own hospital.
+try: Finding: low-cost bedside ultrasound detected pneumonia as accurately as X-ray in children.
+next: clinical-implications
+
+@@ S | discussion-trim | Cut my discussion to the word limit
+aud: PG Resident
+use: When your discussion is over the limit for your thesis or target journal.
+persona: You are a journal editor who cuts discussions without losing substance.
+context: My discussion: [PASTE DISCUSSION]
+Current and target word count: [e.g. 1,900 → 1,200]
+Parts I must keep: [list]
+task: 1. Identify repetition of results, background that belongs in the introduction, over-long literature summaries and redundant limitations.
+2. Produce the trimmed discussion at or under the target.
+3. List what was cut, so I can restore anything essential.
+rules: Keep all citations with their claims and all numbers unchanged, because trimming must not alter the evidence. Keep the standard structure intact.
+output: The trimmed discussion with its word count, then the cut list.
+tip: Repeated results are the easiest cut. The discussion should interpret results, not restate them.
+try: A 2,000-word thesis discussion needing to become a 1,100-word journal discussion.
+next: hostile-reviewer
+
+@@ S | recommendations | Practical recommendations from my thesis
+aud: PG Resident
+use: When your thesis format requires a recommendations section.
+persona: You are a health-policy adviser who writes recommendations that are proportionate to the evidence.
+context: Key findings: [brief]
+Design strength and limitations: [brief]
+Stakeholders: [clinicians, hospital, programme, researchers]
+My university's format for this section, if any: [brief]
+task: 1. Write 4–6 recommendations grouped by stakeholder.
+2. Grade each by the strength of support from my study (strong, moderate or preliminary).
+3. Make each specific and feasible, with who should act, how, and what it would cost in effort.
+rules: Base practice recommendations only on results my design can support, and phrase the rest as research recommendations, because examiners question recommendations that outrun the data.
+output: The grouped, graded recommendations.
+tip: One specific, feasible recommendation is worth more than five generic ones.
+try: Thesis finding: 40% of diabetic patients had undiagnosed peripheral neuropathy in OPD screening.
+next: conclusion-master
+
+@@ Q | further-studies-rewrite | Rewrite "further studies are needed"
+aud: PG Resident
+body: Act as a journal editor. Replace the phrase "further studies are needed" in my discussion with one specific sentence naming the design, population, outcome and reason, based on my study's main limitation, [LIMITATION], and main finding, [FINDING]. Give 2 alternatives.
+try: Limitation: single-centre, 6-week follow-up. Finding: early mobilisation reduced delirium.
+
+@@ Q | hedge-calibrate | Calibrate my hedging
+aud: PG Resident
+body: Act as an academic editor. For each of these sentences, [PASTE SENTENCES], tell me whether the hedging is too strong, too weak or right for my design [DESIGN], and rewrite it at the right level. Keep claims supported and avoid both overclaiming and excessive qualifiers.
+try: "It is possible that this may perhaps suggest…" and "This proves that…".
+
+@@ Q | take-home | One take-home message
+aud: PG Resident / MBBS Student
+body: Act as a senior clinician giving a grand-rounds summary. From my findings, [PASTE KEY FINDINGS], write the single take-home message a busy clinician on the ward should remember, in one sentence of under 25 words, accurate to my design and not overstated.
+try: Findings on the association between delayed antibiotic administration and mortality in sepsis.
+
+@@ Q | significant-qualifier | Qualify every "significant"
+aud: PG Resident
+body: Act as a statistical copy-editor. In this text, [PASTE TEXT], find every use of "significant" or "significantly" and rewrite each to say whether it means statistically significant (with the p value or CI) or clinically important. Return the corrected text with changes highlighted.
+try: A discussion with "significantly higher", "a significant finding" and "significant patients".
+
+@@ Q | bias-direction | Which way does this bias push my result?
+aud: PG Resident
+body: Act as an epidemiologist examining my thesis. For this limitation, [LIMITATION], in my study of [EXPOSURE] and [OUTCOME], tell me whether it likely biases my estimate towards or away from the null, why, and give one sentence I can use in my limitations paragraph.
+try: Limitation: non-differential misclassification of smoking status by self-report.
+
+@@ Q | causal-swap | Swap causal words for correct ones
+aud: PG Resident
+body: Act as an epidemiology editor. Rewrite these sentences, [PASTE SENTENCES], replacing causal words (causes, leads to, results in, prevents, due to) with accurate associational language suited to my [observational] design, while keeping the meaning as strong as the evidence allows.
+try: "Anaemia leads to poor wound healing" from a cross-sectional study.
+
+@@ Q | literature-sentence | One comparison sentence with a study
+aud: PG Resident
+body: Act as a thesis writing coach. Write one discussion sentence comparing my result, [MY RESULT WITH NUMBERS], with this study's result, [THEIR RESULT, DESIGN, SETTING, CITATION NUMBER], noting agreement or difference and one likely methodological reason. Keep it under 45 words.
+try: My prevalence 34% vs their 22% in a community sample.
+
+@@ Q | strength-reality | Is this really a strength?
+aud: PG Resident
+body: Act as a sceptical reviewer. For each strength I plan to claim, [PASTE LIST], tell me whether it is a genuine methodological strength, what bias it reduces, or why it isn't really a strength. Suggest an accurate wording for each one worth keeping.
+try: "First study of its kind", "large sample of 90 patients", "prospective design".
+
+@@ Q | conclusion-objective-match | Do my conclusions match my objectives?
+aud: PG Resident
+body: Act as a thesis examiner. Compare my objectives, [PASTE OBJECTIVES], with my conclusions, [PASTE CONCLUSIONS]. For each objective, say whether a conclusion answers it directly, partly or not at all, and suggest the missing or corrected conclusion statement for each gap.
+try: Three objectives but only two conclusions, one of which introduces a new claim.
