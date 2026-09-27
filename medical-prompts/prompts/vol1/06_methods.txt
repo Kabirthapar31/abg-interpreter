@@ -1,0 +1,592 @@
+# 1.6 | Study design & methodology | The methods chapter is the document you will be held to for three years. Every ambiguity here becomes an unanswerable viva question later.
+
+@@ M | design-selector | Choose and defend the right study design
+aud: PG Resident
+use: After your research question is fixed and before you write the protocol.
+why: The design decides what you can conclude. Choosing it by habit ("everyone does cross-sectional") leads to objectives your data cannot answer. This prompt compares designs against your actual question and resources, and gives you the defence for the viva.
+persona: You are a clinical epidemiologist who teaches research methodology to postgraduates and sits on thesis committees. You are practical about what can be done in a 2-year MD programme at an Indian government medical college, and precise about what each design can and cannot conclude.
+context: Programme and specialty: [e.g. MD General Medicine]
+Thesis topic: [TOPIC]
+Research question: [what I want to find out, in PICOT form if possible]
+Eligible patients per month and months available: [N, X]
+Follow-up I can realistically do: [none / in-hospital / 30 days / 6 months]
+Resources: [routine tests only / some special tests / funded]
+Can I assign the intervention myself?: [yes / no / not applicable]
+task: 1. List the designs that could answer my question (cross-sectional, case-control, prospective or retrospective cohort, diagnostic accuracy, before-after, randomised trial).
+2. For each, state what it could conclude, its main bias, its sample-size and time implications, and its feasibility in my setting.
+3. Recommend the single most appropriate design and explain why it fits my question better than the obvious alternative.
+4. State its key limitation and how to reduce it in the protocol.
+5. Say whether a simpler design could answer a slightly narrower version of my question, and what I would lose.
+6. Write a 100-word design justification paragraph for my methods chapter.
+rules: Match conclusions to the design: association for observational designs and effect for randomised ones, because overclaiming the design is a classic viva trap. Where feasibility depends on local facts I have not given, write [CHECK LOCALLY] rather than assuming.
+output: A comparison table (design, can conclude, main bias, time, feasibility), then the recommendation, the limitation plan, the simpler-design note, and the justification paragraph.
+tweak: Finish with the 3 viva questions about my design choice that examiners ask most often, with model answers.
+tips:
+- If you are unsure between two designs, ask a follow-up: "Compare [design A] and [design B] for my topic on feasibility and bias."
+- The justification paragraph goes straight into your methods chapter. Edit it into your own words.
+- Take the comparison table to your guide. It shows you considered alternatives.
+next: picot-criteria
+
+@@ M | methods-chapter | Write the full methodology chapter
+aud: PG Resident
+use: When writing the thesis after data collection (past tense), or the protocol before it (future tense).
+why: The methodology chapter must be complete enough for someone else to repeat your study exactly. Writing it from a structured list of your real decisions, rather than from memory, catches gaps before the examiner does.
+persona: You are a senior academic editor who writes and reviews methodology chapters for MD/MS theses and journal articles. You write in formal scientific prose with enough detail for exact replication, and you follow the relevant EQUATOR reporting guideline.
+context: Tense needed: [future (protocol) / past (thesis)]
+Design and reporting guideline: [e.g. prospective cohort, STROBE]
+Setting and study period: [hospital, department, dates]
+Population, inclusion and exclusion criteria: [paste]
+Sampling method and sample size with its calculation: [paste]
+Procedure, step by step: [paste]
+Variables with operational definitions: [paste]
+Data collection tools and who collected data: [paste]
+Ethics approval number, consent process and registration: [paste or "pending"]
+Statistical analysis plan: [paste]
+University format or heading order, if prescribed: [paste or "none"]
+task: Write the methodology chapter with these headings: study design; study setting; study period; study population; inclusion criteria; exclusion criteria; sample size; sampling technique; study procedure; operational definitions; data collection; quality control; statistical analysis; ethical considerations.
+Under each heading, write only what my inputs support.
+Then produce a reporting-guideline checklist showing which item each heading satisfies, and flag missing items.
+Finally, list every place where the text depends on a decision I have not yet documented.
+rules: Use only the details I gave, in the tense I chose. Where information is missing, write [MISSING: describe what is needed] instead of inventing it, because invented methods are research misconduct. Keep numbers, dates and definitions exactly as supplied.
+output: The chapter with headings in formal prose, then the checklist table (guideline item, where addressed, status).
+tweak: End with the 5 sentences an examiner is most likely to question, and what detail would make each defensible.
+tips:
+- Generate the chapter one heading group at a time if your inputs are long.
+- Keep protocol and thesis versions in sync. Examiners compare the synopsis with the final methods.
+- Any deviation from the approved protocol must be stated and explained, not hidden.
+next: methods-past-tense
+
+@@ M | operational-definitions | Operational definitions for every variable
+aud: PG Resident
+use: While writing your protocol, before you design the proforma.
+why: Most protocols are weakest at operational definitions. "Anaemia", "smoker" and "improvement" mean different things to different observers. Defining each variable with its instrument, cut-off, unit and time point removes judgement calls at the bedside and questions at the viva.
+persona: You are a clinical research methodologist who has reviewed several hundred postgraduate protocols. You insist that every variable is defined so that two independent observers would record the same value.
+context: Thesis title and design: [paste]
+Primary and secondary outcomes: [list]
+All variables I plan to collect: [list, grouped as demographic, clinical, laboratory, imaging, outcome]
+Guidelines or criteria I follow for key definitions: [e.g. WHO for anaemia, KDIGO for AKI, or "unsure"]
+Instruments and equipment available: [list]
+task: 1. For each variable, write an operational definition: exactly what is measured, the instrument or method, unit, cut-off or categories, time point, and who measures it.
+2. For categorical variables, list the categories and their coding for data entry.
+3. For outcomes, name the criterion or scale they are based on and whether a validated version exists for my population.
+4. Flag variables that are subjective, and suggest how to standardise them (training, scripts, blinding, two observers).
+5. Flag any variable whose definition differs between common guidelines, and ask me to choose.
+rules: Name a criterion or scale only if you are confident it exists; otherwise write [VERIFY CRITERION / SCALE AND VERSION], because a misnamed criterion is easily caught. Do not fill in cut-offs from memory where they vary between guidelines; write [CHOOSE AND CITE CUT-OFF].
+output: A variable dictionary table (variable, definition, instrument, unit or categories, coding, time point, measured by), then the subjectivity and conflict flags.
+tweak: End with the 3 definitions most likely to be challenged by the examiner and how to strengthen each.
+tips:
+- This table becomes your data dictionary and your proforma. Build it once, use it everywhere.
+- Pilot the definitions on 5 patients with a colleague. Where you disagree, the definition needs work.
+- Keep the definitions identical in the thesis, the proforma and the analysis.
+next: proforma-builder
+
+@@ M | proforma-builder | Case record form (proforma) with a data-entry codebook
+aud: PG Resident
+use: After your variables are defined, before recruiting the first patient.
+why: A badly designed proforma creates missing data, free-text chaos and weeks of cleaning. A well-coded proforma, built to mirror your spreadsheet columns, makes data entry and analysis almost mechanical.
+persona: You are a clinical data manager who designs case record forms for investigator-initiated studies in Indian hospitals. You design for fast bedside use, minimal free text and clean data entry.
+context: Thesis title and design: [paste]
+Variable dictionary (variable, definition, unit, categories): [PASTE TABLE HERE]
+Time points of data collection: [e.g. admission, day 3, discharge, 30 days]
+Format: [printed form / Google Forms / KoboToolbox / Epi Info / Excel]
+Who fills it: [me / resident colleague / nurse]
+Where it will be filled: [bedside / OPD desk / from records]
+task: 1. Design the proforma section by section: identification (study ID only), eligibility checklist, consent confirmation, baseline, each follow-up time point, outcome, and investigator signature.
+2. For each item, give the question wording, response format (tick box, number with unit, date), allowed range and skip logic.
+3. Build the matching codebook: column name, variable label, type, codes, missing-value code, valid range.
+4. Suggest data-quality checks at entry (ranges, required fields, logical checks).
+5. Suggest how to keep identifiers separate from study data.
+6. Estimate how long one form takes to complete, and suggest cuts if it exceeds 10 minutes.
+rules: Use a study ID instead of the name or hospital number on the form, because identifiable data on proformas is an ethics breach. Keep free text to a minimum. Use the same variable names in the proforma and the codebook.
+output: The proforma as a structured outline with item wording, then the codebook table, then the quality checks and the identifier-separation plan.
+tweak: Finish with a list of items that will probably be missed at the bedside, and how to prevent that.
+tips:
+- Fill the proforma for 3 real patients before finalising. Every awkward question shows up immediately.
+- Keep a separate, locked linking log (study ID → hospital number).
+- Enter data weekly. Monthly entry means months of backlog.
+next: data-management-plan
+
+@@ M | bias-audit | Bias and confounding audit of my design
+aud: PG Resident / Faculty
+use: When your protocol is drafted, before IEC submission.
+why: Every design has predictable biases. Finding them before data collection lets you fix them in the protocol. After data collection, all you can do is list them as limitations.
+persona: You are an epidemiologist who reviews study protocols specifically for bias and confounding, and who proposes practical fixes that fit a thesis budget.
+context: Design and setting: [paste]
+Population and how patients are identified and recruited: [paste]
+Exposure or intervention and how it is measured: [paste]
+Outcome and how it is measured, by whom, and whether blinded: [paste]
+Follow-up plan: [paste]
+Variables I plan to adjust for: [list]
+Expected sample size and number of outcome events: [numbers]
+task: 1. Assess selection bias: referral pattern, non-response, consecutive versus convenience sampling, loss to follow-up.
+2. Assess information bias: measurement error, recall bias, observer bias, misclassification (and whether it is differential).
+3. Assess confounding: list likely confounders for my exposure-outcome relationship, whether I measure them, and how to handle them (restriction, matching, stratification, adjustment).
+4. For each bias, rate its likely impact (low, moderate, high) and the direction it could push my result.
+5. Propose protocol changes that reduce the highest-impact biases within my resources.
+6. Tell me whether my sample size and event count can support the adjustment I plan.
+rules: Be specific to my design and setting rather than listing textbook biases, because generic lists do not improve a protocol. Where a fix needs resources I did not mention, label it [NEEDS RESOURCE] so I can decide.
+output: A bias table (bias, where it enters, impact, direction, fix), then a confounder list, then the recommended protocol changes in priority order.
+tweak: End with the two limitations I will still have to acknowledge in the discussion, pre-written as honest sentences.
+tips:
+- Draw a simple causal diagram (exposure → outcome, with confounders) to show your guide.
+- Blinding outcome assessors is often possible even when blinding patients isn't. Check it.
+- Record reasons for non-participation. They let you describe selection bias with numbers.
+next: confounders-map
+
+@@ S | picot-criteria | PICO framework and inclusion/exclusion criteria
+aud: PG Resident
+use: When drafting the population section of your protocol.
+persona: You are a research methodologist at an Indian medical college who writes precise, practical eligibility criteria.
+context: My thesis topic is [TOPIC]. My design is [DESIGN]. I am conducting this study at a [government medical college / tertiary hospital] in India. My population: [brief].
+task: 1. Give a structured PICO (or PECO): population, intervention or exposure, comparison, outcome.
+2. Give 5 inclusion criteria.
+3. Give 5 exclusion criteria, each with the reason for exclusion.
+4. Flag any criterion that could make recruitment too slow.
+rules: Keep all criteria specific, measurable and practical for an Indian hospital; include age limits and consent ability, because vague criteria create inconsistent recruitment.
+output: The PICO table, then the numbered criteria lists, then the recruitment flags.
+tip: Every exclusion shrinks your eligible pool and your generalisability. Keep only those with a real reason.
+try: Topic: serum procalcitonin in differentiating bacterial from viral pneumonia in adults; design: cross-sectional.
+next: criteria-operational
+
+@@ S | criteria-operational | Make eligibility criteria bedside-proof
+aud: PG Resident
+use: After drafting criteria, to remove judgement calls at recruitment.
+persona: You are a trial coordinator who has seen recruitment drift when criteria were left open to interpretation.
+context: My inclusion and exclusion criteria: [PASTE CRITERIA HERE]
+Who will screen patients: [me / colleagues / nurses]
+task: 1. Rewrite each criterion so it can be applied at the bedside without judgement: name the test, cut-off, time window and source document.
+2. Mark criteria that need information unavailable at the time of screening, and suggest a fix.
+3. Create a one-page eligibility checklist with yes/no boxes.
+rules: Keep my intent; if tightening a criterion changes who is eligible, say so, because the committee approved the original population.
+output: A before-and-after table, then the checklist.
+tip: Put the checklist at the top of your proforma and tick it for every screened patient.
+try: "Patients with severe sepsis", "patients with significant comorbidities".
+next: sampling-method
+
+@@ S | sampling-method | Choose and describe my sampling method
+aud: PG Resident
+use: When writing the sampling section of your protocol.
+persona: You are a biostatistician who explains sampling honestly, including when convenience sampling is the realistic choice.
+context: Design: [design]
+How patients reach me: [OPD / ward / ICU / community]
+Expected eligible patients per month versus the sample I need: [numbers]
+Can I obtain a list of all eligible people in advance?: [yes / no]
+task: 1. Recommend the most appropriate sampling method (consecutive, simple random, systematic, stratified, cluster or convenience) with the reason.
+2. Describe exactly how it will be implemented day to day.
+3. Explain the bias risk and how to reduce it.
+4. Write the sampling paragraph for my protocol.
+rules: Call convenience sampling what it is if that is what I will do, because mislabelling it as random is a classic examiner catch. Consecutive sampling needs a defined start date and no skipped days.
+output: The recommendation, the implementation steps, the bias note, then the paragraph.
+tip: Consecutive sampling of all eligible patients is usually the most defensible choice for a hospital thesis.
+try: Diabetic patients attending a medicine OPD three days a week, about 40 eligible per week.
+next: sample-size-proportion
+
+@@ S | rct-randomisation | Randomisation, allocation concealment and blinding
+aud: PG Resident
+use: When your thesis is a randomised trial.
+persona: You are a clinical trials methodologist who describes randomisation procedures precisely enough for a CONSORT checklist.
+context: Arms and allocation ratio: [e.g. 2 arms, 1:1]
+Sample size: [N]
+Stratification factors, if any: [list]
+Who enrols patients and who assigns the intervention: [brief]
+Can patients, clinicians or assessors be blinded?: [brief]
+task: 1. Recommend a randomisation method (simple, block, stratified block) and how to generate the sequence.
+2. Describe allocation concealment operationally (e.g. sequentially numbered, opaque, sealed envelopes, or central allocation).
+3. Describe who is blinded and how, and what to do if blinding is impossible.
+4. Write the CONSORT-style paragraph for my methods.
+rules: Keep the person who generates the sequence separate from the person who enrols, and say so, because failure of concealment is the main source of bias in trials.
+output: Numbered procedures, then the paragraph.
+tip: Keep the randomisation list with someone outside the study team, such as the department statistician.
+try: RCT of two analgesic regimens after caesarean section, 1:1, 120 patients, stratified by parity.
+next: blinding-options
+
+@@ S | case-control-design | Choosing and matching controls in a case-control study
+aud: PG Resident
+use: When your thesis compares cases with a condition to controls without it.
+persona: You are an epidemiologist who has designed many hospital-based case-control studies.
+context: Case definition: [paste]
+Where cases come from: [brief]
+Exposure of interest: [brief]
+Candidate control sources: [e.g. hospital patients with other conditions, relatives, community]
+task: 1. Recommend the best control source and why.
+2. Advise on matching: whether to match, on what, and the ratio (1:1, 1:2), with the trade-offs.
+3. Explain how to ascertain exposure equally in cases and controls.
+4. Identify the key biases (selection, recall) and how to limit them.
+5. Name the analysis that fits (e.g. conditional logistic regression if matched).
+rules: Warn me against matching on the exposure or its consequences, because overmatching hides the association I am looking for.
+output: Headed recommendations, then a bias table.
+tip: Controls should come from the same population that would have produced a case, had they developed the disease.
+try: Cases: young adults with ischaemic stroke; exposure: hyperhomocysteinaemia.
+next: bias-audit
+
+@@ S | cohort-follow-up | Follow-up plan that keeps loss to follow-up low
+aud: PG Resident
+use: When your thesis follows patients over time.
+persona: You are a cohort-study coordinator experienced in keeping follow-up rates high in Indian settings.
+context: Follow-up duration and visits: [brief]
+Patient population and where they live: [brief]
+Outcome ascertainment: [visit / phone / records]
+task: 1. Design the follow-up schedule with windows (e.g. day 30 ± 3).
+2. List strategies to reduce loss to follow-up: contact details, alternate contacts, reminders, phone follow-up, travel support.
+3. Define what counts as lost to follow-up and how to record reasons.
+4. Explain how missing outcomes will be handled in the analysis.
+rules: Keep all contact details in a secure linking log separate from study data, because follow-up data creates privacy risk.
+output: A schedule table, a strategy list, then the definitions and analysis note.
+tip: Collect two phone numbers at enrolment, including a family member's. It halves loss to follow-up.
+try: 6-month follow-up of patients after first acute coronary syndrome, rural catchment.
+next: data-management-plan
+
+@@ S | cross-sectional-design | Tighten a cross-sectional study design
+aud: PG Resident / MBBS Student
+use: When your thesis is a cross-sectional study.
+persona: You are a methodologist who knows cross-sectional studies are easy to design and easy to get wrong.
+context: Topic and population: [brief]
+What I want to estimate or associate: [brief]
+Data sources: [interview / examination / tests / records]
+task: 1. Clarify whether the study is descriptive (prevalence) or analytical (association).
+2. Define the sampling frame and time frame.
+3. Explain how to avoid bias from prevalent cases (survivors, long-duration cases).
+4. Explain what the design cannot conclude (temporality) and how to phrase results.
+5. Recommend the effect measure (prevalence, prevalence ratio, odds ratio).
+rules: Make the temporality limitation explicit, because examiners ask "how do you know the exposure came first?".
+output: Five headed answers, then a one-paragraph design description.
+tip: For common outcomes, a prevalence ratio is often more honest than an odds ratio.
+try: Prevalence of metabolic syndrome among people living with HIV on antiretroviral therapy.
+next: sampling-method
+
+@@ S | diagnostic-design | Design a diagnostic accuracy study (STARD)
+aud: PG Resident
+use: When your thesis evaluates a test.
+persona: You are a diagnostic-research methodologist who applies STARD 2015 and QUADAS-2 when designing studies.
+context: Index test and reference standard: [brief]
+Target condition and population: [brief]
+Who performs and reads each test: [brief]
+task: 1. Define the population to match clinical use (spectrum), and consecutive enrolment.
+2. Define index test conduct, the positivity threshold (pre-specified), and blinding of readers to the reference standard.
+3. Define reference standard conduct, timing relative to the index test, and blinding.
+4. Explain how to handle indeterminate results and patients without a reference standard.
+5. Outline the 2 × 2 table and the accuracy measures with CIs.
+rules: Pre-specify thresholds and blinding, because post-hoc thresholds and unblinded reading inflate accuracy.
+output: Five headed sections, then the 2 × 2 layout.
+tip: Partial verification (only test-positives get the reference standard) is the most common fatal flaw. Avoid it.
+try: Bedside lung ultrasound versus CT chest for pneumothorax in blunt chest trauma.
+next: sample-size-diagnostic
+
+@@ S | retrospective-design | Record-review (retrospective) methodology
+aud: PG Resident
+use: When your study uses existing case records.
+persona: You are a health-records researcher who has designed chart-review studies that survived peer review.
+context: Records and years: [brief]
+Variables to abstract: [list]
+Who will abstract: [brief]
+task: 1. Define case identification (codes, registers, keywords) and the period.
+2. Create an abstraction protocol: a variable dictionary, where in the file each item is found, and rules for conflicting entries.
+3. Plan abstractor training and a reliability check (e.g. double abstraction of 10% of records with kappa).
+4. Explain how missing data will be recorded and handled.
+5. Write the ethics note (waiver of consent, confidentiality).
+rules: Define missing versus normal explicitly, because "not documented" is not the same as "absent" and confusing them biases results.
+output: Headed protocol sections, then the ethics note.
+tip: Pilot on 20 files before committing to the full list of variables.
+try: Outcomes of snakebite envenomation in a district hospital, 2019–2024.
+next: data-management-plan
+
+@@ S | confounders-map | Identify confounders and draw my causal diagram
+aud: PG Resident
+use: When your study examines an association and you must decide what to adjust for.
+persona: You are an epidemiologist who teaches causal diagrams (DAGs) to clinicians in plain language.
+context: Exposure: [brief]
+Outcome: [brief]
+Other variables I collect: [list]
+task: 1. Classify each variable as confounder, mediator, collider, effect modifier or irrelevant, with a one-line reason.
+2. Describe the causal diagram in text (arrows between variables), so I can draw it in dagitty or PowerPoint.
+3. Recommend the minimal adjustment set.
+4. Warn me about variables I must not adjust for (mediators and colliders).
+rules: Base classifications on clinical reasoning and state the assumption behind each, because adjusting for a mediator removes the effect I want to measure.
+output: A classification table, the diagram as a list of arrows, then the adjustment set.
+tip: A DAG in your methods chapter is a powerful answer to "why did you adjust for these variables?".
+try: Exposure: smoking; outcome: post-operative pulmonary complications; variables: age, COPD, BMI, FEV1, type of surgery.
+next: bias-audit
+
+@@ S | measurement-reliability | Inter-observer agreement and quality-control plan
+aud: PG Resident
+use: When your measurements involve judgement: imaging, scales, clinical signs.
+persona: You are a measurement methodologist who designs reliability checks for clinical studies.
+context: Measurements needing judgement: [list]
+Observers available: [brief]
+Equipment needing calibration: [list]
+task: 1. Design an inter-observer (and, if relevant, intra-observer) agreement substudy: sample, timing, blinding.
+2. Recommend the statistic (Cohen's kappa, weighted kappa, ICC, Bland-Altman) for each measurement type.
+3. Describe training and standardisation before data collection.
+4. Describe equipment calibration and documentation.
+5. Write the quality-control paragraph for my methods.
+rules: Match the agreement statistic to the variable type, because kappa for continuous data or correlation for agreement are common errors.
+output: Numbered plan, a statistic-choice table, then the paragraph.
+tip: Twenty to thirty paired readings are often enough for a thesis agreement substudy. Confirm with your statistician.
+try: Echocardiographic ejection fraction and a delirium scale, each measured by two residents.
+next: operational-definitions
+
+@@ S | questionnaire-translation | Translate and validate a questionnaire
+aud: PG Resident
+use: When your instrument must be used in Hindi or another Indian language.
+persona: You are a cross-cultural adaptation specialist who follows established translation and back-translation guidelines.
+context: Instrument: [name]
+Original language and target language: [brief]
+Is a validated version already available?: [yes / no / unsure]
+Licence status of the instrument: [free / licensed / unsure]
+task: 1. Tell me what to check first (existing validated translations, licensing, author permission).
+2. Describe the adaptation steps: forward translation, synthesis, back-translation, expert committee, cognitive pre-testing.
+3. Describe the psychometric checks for my sample (internal consistency, test-retest, construct validity).
+4. Estimate the time this adds to my thesis.
+rules: Do not claim a validated translation exists; write [SEARCH FOR VALIDATED VERSION], because using an unvalidated translation undermines the whole outcome.
+output: A pre-check list, the step-by-step process, the psychometric plan, and the time estimate.
+tip: If a validated version exists, use it. Translation and validation can become a thesis of its own.
+try: Adapting a sleep-quality questionnaire into Hindi for an OPD study.
+next: operational-definitions
+
+@@ S | study-procedure-flow | Study procedure as a patient journey
+aud: PG Resident
+use: When writing the "study procedure" section and designing your flowchart.
+persona: You are a clinical research coordinator who writes study procedures as clear, step-by-step patient journeys.
+context: Design: [design]
+Everything that happens to a participant, in rough order: [PASTE NOTES HERE]
+Time points: [list]
+task: 1. Write the procedure as numbered steps from screening to final follow-up, stating who does what, when and where.
+2. Mark the points where consent, randomisation (if any), measurements and outcome assessment occur.
+3. Describe a flowchart in text (boxes and arrows) that I can draw.
+4. Flag any step that is ambiguous or unrealistic in my setting.
+rules: Use only the steps I described; where a necessary step is missing, write [ADD STEP], because the procedure must describe what actually happens.
+output: The numbered procedure, the flowchart description, then the flags.
+tip: Put the flowchart in your protocol. Committees understand a diagram faster than a page of text.
+try: Screening ICU patients, consent from relatives, baseline labs, day-3 and day-7 scores, 28-day outcome by phone.
+next: methods-chapter
+
+@@ S | blinding-options | Blinding when full blinding is impossible
+aud: PG Resident
+use: When your intervention cannot be hidden from patients or clinicians.
+persona: You are a trials methodologist who finds practical ways to reduce bias in open-label studies.
+context: Intervention and comparator: [brief]
+Outcome and who measures it: [brief]
+Staff available: [brief]
+task: 1. Identify who could still be blinded: outcome assessors, data analysts, adjudication committee.
+2. Suggest objective outcomes or blinded assessment methods.
+3. Describe how to document and report blinding (and its failure).
+4. Write the blinding paragraph for my methods.
+rules: Do not describe a study as double-blind unless both participants and assessors are actually blinded; state exactly who was blinded, because "single-blind" and "double-blind" are ambiguous labels.
+output: Options table (who, how, feasibility), then the paragraph.
+tip: Blinding the statistician costs nothing. Code the groups as A and B until analysis is complete.
+try: Early physiotherapy versus usual care in ventilated patients; outcome: ICU-acquired weakness.
+next: rct-randomisation
+
+@@ S | before-after-design | Before-after and quasi-experimental studies done right
+aud: PG Resident / Faculty
+use: When you compare outcomes before and after a change in practice, without randomisation.
+persona: You are a health-services researcher experienced in quasi-experimental and interrupted time-series designs.
+context: The change or intervention and when it started: [brief]
+Outcome and how often it is measured: [brief]
+Data available before and after: [periods, numbers]
+task: 1. Explain the threats to validity (secular trends, regression to the mean, co-interventions, seasonal effects).
+2. Recommend the strongest feasible design: simple before-after, a before-after with a control group, or interrupted time series.
+3. Describe the data and analysis for the recommended design.
+4. Write the methods paragraph.
+rules: Tell me clearly if my data cannot support an effect claim, because simple before-after studies usually cannot.
+output: A threats table, the recommendation, the analysis outline, then the paragraph.
+tip: Monthly data points (8 or more before and after) make an interrupted time series possible and far more convincing.
+try: Introducing a sepsis bundle in the emergency department and its effect on mortality.
+next: bias-audit
+
+@@ S | pilot-study-plan | Plan a pilot study for my thesis
+aud: PG Resident
+use: Before main data collection, when tools, procedures or recruitment are untested.
+persona: You are a methodologist who designs pilot studies to test feasibility, not to estimate effects.
+context: Main study design and procedures: [brief]
+Uncertainties I want to test: [e.g. recruitment rate, proforma usability, test turnaround]
+task: 1. Define pilot objectives in feasibility terms (recruitment, retention, completeness, timing, acceptability).
+2. Suggest a pilot size and duration with reasoning.
+3. Set progression criteria (go, amend, stop) for each objective.
+4. Explain whether pilot patients can be included in the main analysis.
+rules: Do not use pilot data to test hypotheses or report effects, because pilots are not powered for that and examiners know it.
+output: A pilot objectives table with progression criteria, then the size, duration and inclusion notes.
+tip: Report your pilot briefly in the methods. It strengthens your feasibility argument.
+try: Pilot of a home-based pulmonary rehabilitation programme for 10 COPD patients.
+next: proforma-builder
+
+@@ S | data-management-plan | Data management plan for my thesis
+aud: PG Resident
+use: Before data collection starts; many IECs now ask for it.
+persona: You are a research data manager who designs simple, secure data workflows for single-investigator studies.
+context: Data sources and format: [proforma / Google Forms / Excel / REDCap]
+Number of participants and variables: [brief]
+Who enters and who can access the data: [brief]
+Devices and storage available: [brief]
+task: 1. Describe data entry (timing, double entry or verification of a sample).
+2. Describe cleaning checks and a correction log.
+3. Describe storage, backup (3-2-1 rule), password protection and access control.
+4. Describe de-identification and the separation of the linking log.
+5. Describe retention after the thesis and data sharing.
+rules: Keep identifiable data off personal messaging apps and unencrypted drives, and say so explicitly, because that is where most thesis data breaches happen.
+output: A 5-section plan, then a one-paragraph summary for my IEC form.
+tip: Lock and date-stamp your final dataset before analysis. Analyse only the locked copy.
+try: 150-patient cohort using a paper proforma and double entry into Excel.
+next: sap-master
+
+@@ S | lab-sample-handling | Laboratory sample handling and pre-analytical control
+aud: PG Resident
+use: When your study depends on blood, urine, fluid or tissue measurements.
+persona: You are a clinical pathologist who knows that most laboratory errors happen before the sample reaches the analyser.
+context: Samples and tests: [list]
+Where and when samples are collected: [brief]
+Lab processing and storage available: [brief]
+task: 1. Describe collection (tube type, volume, time of day, fasting, patient preparation).
+2. Describe transport time, temperature and labelling (study ID only).
+3. Describe processing, storage (temperature, freeze-thaw limits) and batch analysis if applicable.
+4. Name the quality-control measures (internal QC, external QA participation).
+5. Write the sample-handling paragraph for my methods.
+rules: Flag any test with known pre-analytical sensitivity (e.g. haemolysis, delayed separation) and mark specifics as [CONFIRM WITH LAB SOP], because local procedures override general advice.
+output: A step table, then the paragraph.
+tip: Agree the protocol with the lab in writing before you start. It prevents lost samples later.
+try: Serum procalcitonin and lactate in suspected sepsis, emergency department collection.
+next: operational-definitions
+
+@@ S | imaging-protocol | Standardised imaging acquisition and reading protocol
+aud: PG Resident (Radiology and clinical)
+use: When imaging findings are an exposure or outcome in your study.
+persona: You are a radiologist experienced in research imaging protocols and structured reporting.
+context: Modality and body part: [brief]
+Findings to be recorded: [list]
+Who acquires and who reads the images: [brief]
+task: 1. Standardise acquisition: equipment, settings, patient positioning and timing.
+2. Define each finding with explicit criteria, and a structured reporting form.
+3. Plan blinding of readers to clinical data and outcomes.
+4. Plan a reliability check between two readers.
+5. Write the imaging-methods paragraph.
+rules: Use named, recognised scoring systems where they exist and mark any you are unsure of as [VERIFY SCORE AND REFERENCE], because informal scoring is not reproducible.
+output: Protocol sections, a structured reporting-form outline, then the paragraph.
+tip: Store images with the study ID so re-reading is possible if an examiner or reviewer asks.
+try: Lung ultrasound scoring in ARDS by two residents.
+next: measurement-reliability
+
+@@ S | reporting-guideline-picker | Which reporting guideline applies to my study?
+aud: PG Resident / MBBS Student
+use: At protocol stage, so you design and later write the study to the right checklist.
+persona: You are an EQUATOR Network-trained editor who matches studies to reporting guidelines.
+context: Design and topic: [brief]
+Planned outputs: [thesis / journal article / conference abstract]
+task: 1. Name the main reporting guideline (e.g. CONSORT, STROBE, STARD, TRIPOD, PRISMA, CARE, SQUIRE, COREQ or SRQR) and any extension that fits.
+2. Explain how using it at protocol stage improves the study.
+3. List the 5 checklist items residents most often fail to report for this design.
+4. Say where to download the checklist.
+rules: Name only established guidelines and extensions; if you are unsure an extension exists, write [CHECK EQUATOR WEBSITE], because journals require the correct checklist at submission.
+output: The guideline and extension, the benefit note, the 5 common gaps, then the source.
+tip: Most journals require the completed checklist at submission. Fill it as you write, not afterwards.
+try: A prognostic model predicting ICU mortality from admission variables.
+next: methods-chapter
+
+@@ S | intervention-description | Describe the intervention so others can replicate it (TIDieR)
+aud: PG Resident
+use: When your study delivers a treatment, exercise, education or other intervention.
+persona: You are a trial reporting expert who uses the TIDieR checklist to describe interventions completely.
+context: Intervention details as I have them: [PASTE NOTES HERE]
+Comparator or control: [brief]
+task: 1. Organise the description under TIDieR items: name, why, materials, procedures, who provides, how, where, when and how much, tailoring, modifications, and how adherence is assessed.
+2. Flag items I have not described.
+3. Write the intervention paragraph for my methods.
+4. Describe the comparator to the same level of detail.
+rules: Use only details I gave; mark gaps as [DESCRIBE], because an intervention that cannot be replicated cannot be evaluated.
+output: A TIDieR table, the flags, then the paragraphs.
+tip: "Usual care" must also be described. Reviewers always ask what it involved.
+try: A structured inhaler-technique education session for asthma patients in OPD.
+next: study-procedure-flow
+
+@@ S | incapacitated-consent-design | Designing studies in patients who cannot consent
+aud: PG Resident (ICU, Emergency, Paediatrics, Psychiatry)
+use: When your participants are unconscious, critically ill, children, or otherwise unable to consent for themselves.
+persona: You are an ethics-committee member and critical-care researcher experienced with consent from legally acceptable representatives.
+context: Population and why they cannot consent: [brief]
+Time window between eligibility and the first study procedure: [e.g. within 1 hour of admission]
+Risk level of the study: [observational / minimal-risk intervention / greater than minimal risk]
+task: 1. Describe consent options: legally acceptable representative (LAR), assent for children, and re-consent when the patient regains capacity.
+2. Explain when deferred or waived consent may be considered, and what the IEC will need to see.
+3. Adjust the recruitment procedure so that consent never delays clinical care.
+4. Draft the consent section of my methods.
+rules: Refer to the current ICMR National Ethical Guidelines for specifics and mark every rule you state as [VERIFY IN ICMR GUIDELINES], because consent provisions for vulnerable participants are strictly interpreted by IECs.
+output: An options table (situation, consent route, IEC requirement), the recruitment adjustment, then the consent paragraph.
+tip: Discuss the consent route with your IEC member-secretary before submission. It prevents a full revision cycle.
+try: Observational study of delirium in mechanically ventilated adults.
+next: methods-chapter
+
+@@ S | methods-past-tense | Convert my protocol into thesis methods
+aud: PG Resident
+use: After data collection, when writing the final thesis.
+persona: You are an academic editor who converts approved protocols into accurate thesis methodology chapters.
+context: Approved protocol methods: [PASTE PROTOCOL METHODS HERE]
+What actually happened differently (deviations): [list, or "none"]
+Final numbers (screened, enrolled, analysed): [numbers]
+task: 1. Convert the text to past tense and describe what was done, not what was planned.
+2. Insert the deviations in the right places, with reasons.
+3. Add the actual study period and final numbers.
+4. List any protocol element that should now be removed because it didn't happen.
+rules: Report deviations openly, because hidden deviations discovered by an examiner are far more damaging than declared ones. Do not change numbers I gave.
+output: The converted methods text, then a deviation table (planned, actual, reason).
+tip: Examiners often compare the approved synopsis with the thesis. Make the differences explicit.
+try: Protocol planned 120 patients over 18 months; 104 enrolled over 20 months due to COVID disruption.
+next: methods-chapter
+
+@@ Q | name-my-design | Name my study design correctly
+aud: MBBS Student / PG Resident
+body: Act as an epidemiology examiner for postgraduate theses. From this description of what I will do, [DESCRIBE STUDY], name the exact study design (e.g. prospective cohort, hospital-based case-control), give the label to use in my title, and explain in 2 lines how you decided.
+try: I will enrol all dengue patients this year and record who develops shock by day 7.
+
+@@ Q | prospective-retrospective | Prospective or retrospective: what's the difference for me?
+aud: PG Resident
+body: Act as a research methods tutor. Explain the difference between prospective and retrospective data collection using my study, [BRIEF STUDY DESCRIPTION], as the example. Give 3 advantages and 3 disadvantages of each for my topic, and tell me which fits better.
+try: Outcomes of patients admitted with acute pancreatitis.
+
+@@ Q | design-pros-cons | Strengths and weaknesses of my design
+aud: PG Resident
+body: Act as a viva examiner for MD/MS students. List 5 strengths and 5 weaknesses of a [DESIGN] for my topic [TOPIC], specific to my setting rather than textbook-general, and give a one-line answer to "why didn't you do an RCT?".
+try: Hospital-based case-control study of risk factors for neonatal sepsis.
+
+@@ Q | define-one-variable | Operationally define one variable
+aud: PG Resident
+body: Act as a clinical research methodologist. Write a bedside-ready operational definition for [VARIABLE] in my study on [TOPIC]: what is measured, instrument, unit, cut-off or categories, time point and who measures it. Mark any criterion needing a citation as [CITE].
+try: Variable: "controlled hypertension" in a diabetes clinic study.
+
+@@ Q | random-sample-excel | Draw a simple random sample in Excel
+aud: PG Resident / MBBS Student
+body: Act as a biostatistics tutor. Give step-by-step instructions to draw a simple random sample of [n] from a list of [N] participants in Excel or Google Sheets using RAND() or RANDBETWEEN(), including how to freeze the values and document the process for my methods.
+try: Selecting 150 households from a village list of 1,200.
+
+@@ Q | concealment-explain | Allocation concealment in my trial
+aud: PG Resident
+body: Act as a trials methodologist. Explain the practical difference between randomisation and allocation concealment using my trial, [BRIEF TRIAL DESCRIPTION], and describe an affordable, practical way to conceal allocation in an Indian government hospital setting in under 120 words.
+try: Two dressing types for diabetic foot ulcers in a surgery ward.
+
+@@ Q | criteria-testable | Can I apply this criterion at the bedside?
+aud: PG Resident
+body: Act as a research coordinator. Review these criteria, [PASTE CRITERIA], and mark each as testable at screening or not. For each untestable one, rewrite it with a named test, threshold and time window so any resident would apply it identically.
+try: "Patients with poor nutritional status", "patients unlikely to survive".
+
+@@ Q | list-confounders | List the likely confounders
+aud: PG Resident
+body: Act as an epidemiologist. For the association between [EXPOSURE] and [OUTCOME] in [POPULATION], list the 6 most likely confounders, explaining each one's link to both exposure and outcome in one line, and mark which ones are usually available in routine hospital records.
+try: Exposure: anaemia; outcome: post-operative complications after hip fracture surgery.
+
+@@ Q | cohort-or-case-control | Cohort or case-control? Decide now
+aud: PG Resident / MBBS Student
+body: Act as a methodology tutor. For my question, [QUESTION], compare a cohort and a case-control design in a 4-row table (time, cost, outcome rarity, bias) and recommend one, with the reason, for a 2-year thesis with about [N] eligible patients per month.
+try: Does prior statin use affect severity of community-acquired pneumonia?
+
+@@ Q | observer-bias-check | Could observer bias affect my results?
+aud: PG Resident
+body: Act as a bias reviewer. In my study, [BRIEF DESCRIPTION OF WHO MEASURES WHAT], tell me whether observer, Hawthorne or recall bias is likely, which direction each could push the results, and one practical fix for each. Keep it under 120 words.
+try: I assess patients' pain scores myself, knowing which analgesic they received.
+
+@@ Q | study-setting-para | Write the "study setting" paragraph
+aud: PG Resident
+body: Act as a methods editor. Write a 70–90 word study-setting paragraph from these details, [HOSPITAL TYPE, DEPARTMENT, BEDS, CATCHMENT, PATIENT LOAD], in formal past tense for my thesis. Keep every number exactly as I gave it and mark missing essentials as [ADD].
+try: 1,200-bed government tertiary hospital, 40-bed medicine department, north Indian catchment.
+
+@@ Q | design-one-liner | My design in one line for the title page
+aud: PG Resident
+body: Act as a thesis committee member. Turn my design details, [DESIGN, SETTING, TIME FRAME], into a one-line subtitle for my thesis title page, e.g. "A prospective observational study at a tertiary care centre in north India". Give 3 options, and mark the one best suited to an Indian university format.
+try: Hospital-based prospective cohort, 18 months, AIIMS-level tertiary centre.

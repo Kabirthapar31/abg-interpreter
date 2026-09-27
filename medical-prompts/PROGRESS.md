@@ -20,7 +20,7 @@ Commit and push after every section file.
 | 1.3 Writing the Introduction | 30 | done |
 | 1.4 Review of Literature | 40 | done |
 | 1.5 Aims, objectives & hypotheses | 20 | done |
-| 1.6 Study design & methodology | 40 | pending |
+| 1.6 Study design & methodology | 40 | done |
 | 1.7 Sample size & statistics | 45 | pending |
 | 1.8 Results, tables & figures | 25 | pending |
 | 1.9 Discussion, conclusion & limitations | 30 | pending |
