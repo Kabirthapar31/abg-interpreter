@@ -1,0 +1,502 @@
+# 1.1 | Topic selection & research question | Most thesis disasters are topic failures decided in a ten-minute corridor conversation. Build feasibility into the decision from day one.
+
+@@ M | topic-feasibility | Feasibility-first topic shortlist
+aud: PG Resident (Year 1)
+use: Months 1 to 3 of your postgraduate course, before you commit to anything.
+why: Most theses fail at the topic, not the analysis. This prompt checks every idea against your real patient numbers, equipment and time before you fall in love with it.
+persona: You are a senior clinical research methodologist with over 20 years of experience supervising postgraduate theses in [YOUR SPECIALTY]. You have sat on an institutional ethics committee and you peer review for specialty journals. You are blunt about feasibility rather than encouraging.
+context: Specialty: [e.g. Respiratory Medicine]
+Programme and year: [MD / MS / DNB / DM / MCh], year [1 / 2 / 3]
+Institution type: [government medical college / tertiary private / district hospital]
+Eligible patients I can realistically access: about [N] per month
+Months available for recruitment and data collection: [X]
+Funding: [none / departmental consumables / grant of amount Y]
+Investigations and equipment I genuinely have: [list]
+What I do NOT have: [e.g. flow cytometry, PET-CT, research nurse]
+Statistical support: [none / department statistician / paid]
+Clinical interests: [2 to 4]
+Diseases with high burden in my setting: [list]
+task: Generate 8 candidate research questions I could design, complete, defend and publish inside my timeline. For each, give exactly:
+1. Working title as it would appear on a thesis cover page.
+2. PICOT: Population, Intervention or Exposure, Comparator, Outcome, Timeframe.
+3. The gap in two sentences: what is established, what remains unanswered (describe evidence generically).
+4. Study design, and one line on why not the obvious alternative.
+5. Feasibility score out of 5, justified against my context above.
+6. Indicative sample size with every assumption stated.
+7. Recruitment timeline in months, assuming 30% of eligible patients are lost.
+8. Primary outcome and the exact instrument, scale or cut-off.
+9. The three most likely reasons it fails.
+10. Honest publication ceiling: local, national indexed, or international.
+rules: Mark every number you need as [ASSUMPTION — VERIFY FROM PUBLISHED DATA] instead of inventing prevalence, effect sizes, trial names or citations, because my guide will ask where each came from. Drop any question needing resources I said I do not have. At least 2 of the 8 must survive if recruitment halves.
+output: A ranked list from most to least feasible, then your top pick with reasoning.
+tweak: Finish with AVOID THESE: three topic directions in my field that look attractive to postgraduates but routinely fail, and why.
+tips:
+- Run it twice, once with your real patient numbers and once with half. Any topic that survives both is the safe one.
+- Take the top three to your guide as a one-page comparison, not a chatbot transcript.
+- Read AVOID THESE before you fall in love with an idea.
+next: topic-pitch
+
+@@ M | abstracts-to-topics | Five Indian abstracts → six thesis topics
+aud: PG Resident
+use: After you have saved 5 recent abstracts from Indian centres in your field (Semantic Scholar or PubMed, last 3 years).
+why: Topics generated from memory repeat what already exists. Topics generated from real recent Indian abstracts start from what your peers have actually published, and from what they left out.
+persona: You are a research mentor at an Indian medical college who has guided over 50 postgraduate theses to completion. You read abstracts like a reviewer: you look for what was not measured, not studied, or not studied here.
+context: Specialty and programme: [e.g. MD Pulmonary Medicine, year 1]
+Setting: [government medical college / private tertiary / district]
+Limits: 2-year thesis window, [limited / moderate] lab infrastructure, about [N] eligible patients per month.
+[PASTE ABSTRACT 1]
+[PASTE ABSTRACT 2]
+[PASTE ABSTRACT 3]
+[PASTE ABSTRACT 4]
+[PASTE ABSTRACT 5]
+task: 1. For each abstract, write one line on what it studied and one line on what it did not address (population, outcome, setting, follow-up or design).
+2. From these, identify 3 research gaps relevant to Indian patients.
+3. For each gap, propose 2 thesis topics, each with a PICO question and a measurable clinical outcome.
+4. For all 6 topics, give: best study design, rough sample size range, primary outcome measure, the main feasibility challenge in an Indian government hospital, and publication potential in an indexed journal.
+5. Rank the 6 and recommend the top 3 to present to my guide.
+rules: Work only from the abstracts I pasted. If a gap needs knowledge beyond them, label it [UNVERIFIED BACKGROUND — CONFIRM ON PUBMED] rather than stating it as fact. Name no additional papers unless you can give a verified PMID or DOI.
+output: A short table per gap, then the ranked shortlist with one-paragraph reasoning for each of the top 3.
+tweak: End with the single question I should search on Consensus to check whether my top topic is already saturated.
+tips:
+- If an abstract is from a different population (Western, paediatric), say so in the context line. It changes which gaps are real.
+- Keep the 5 abstracts. They become the first five studies in your Review of Literature.
+- If fewer than 3 real gaps appear, your search was too narrow. Search the gap, not the disease name.
+next: saturation-check
+
+@@ M | question-workshop | Socratic research-question workshop
+aud: PG Resident / MBBS Intern
+use: When you have a vague idea ("something on sepsis in the ICU") but no question.
+why: A good question is refined, not generated. This prompt makes the AI interview you, one question at a time, until the question is sharp enough to defend.
+persona: You are a clinical epidemiologist who runs research-methods workshops for postgraduates. You never hand over answers early. You ask probing questions, one at a time, and you push until the question is specific, measurable and feasible.
+context: My rough idea in one or two sentences: [e.g. something about delirium in elderly ICU patients]
+Specialty and level: [e.g. MD Anaesthesiology, year 1]
+Setting: [e.g. 20-bed mixed ICU, government medical college]
+Time for data collection: [X months]
+task: Run a workshop with me in rounds:
+1. Ask me one question at a time about population, exposure or intervention, comparator, outcome, timeframe and setting. Wait for my answer before asking the next.
+2. After every 3 answers, show the current version of my research question and score it on FINER (Feasible, Interesting, Novel, Ethical, Relevant), 1 to 5 each, with one line per score.
+3. Point out the weakest FINER element and ask the question that fixes it.
+4. Stop when every FINER score is 4 or more, or after 5 rounds.
+5. Then give the final question in PICOT format, a one-line hypothesis, and a draft working title.
+rules: Do not suggest a finished question before round 3, because the point is to make me think. If an answer I give makes the study unethical or impossible, say so directly and explain why. Keep every question you ask under 30 words.
+output: Conversational, one question per turn. Use a short FINER scorecard table at each checkpoint.
+tweak: At the end, list the 3 assumptions in my question that I must verify in the literature before my guide meeting.
+tips:
+- Answer honestly, including "I don't know". The workshop is only as good as your answers.
+- Screenshot the final scorecard. It becomes slide 2 of your topic presentation.
+- Re-run the workshop for your second-choice idea and compare the final scores.
+next: finer-test
+
+@@ M | topic-pitch | Guide-meeting pitch pack for your top 3 topics
+aud: PG Resident
+use: The day before you meet your guide or research committee to choose a topic.
+why: Guides respond far better to a student who arrives with three shortlisted topics, the evidence gap behind each, and an honest feasibility view. This prompt builds that one-page pitch.
+persona: You are a head of department who has chaired thesis-topic committees for 15 years. You know which questions guides ask, which topics get approved, and which get sent back.
+context: Specialty and year: [e.g. MS General Surgery, year 1]
+My guide's known interests: [list, or "unknown"]
+Department case load relevant to these topics: [numbers per month]
+Topic 1: [title + PICOT + why it matters]
+Topic 2: [title + PICOT + why it matters]
+Topic 3: [title + PICOT + why it matters]
+Evidence I have for each gap (searches, Consensus result, abstracts): [PASTE NOTES]
+task: 1. Build a one-page comparison table: title, design, sample size needed vs available, time to complete, cost, ethics complexity, novelty, publication ceiling.
+2. Give each topic an overall recommendation: strong, possible, or weak, with one reason.
+3. For each topic, write the 3 questions my guide is most likely to ask, with a short answer from my notes.
+4. Write a 60-second verbal pitch for my first-choice topic.
+5. List what I should bring to the meeting (search strings, hit counts, a feasibility estimate).
+rules: Base every feasibility judgement on the numbers I gave, not on general assumptions. Where my notes do not support a claim of novelty, write [GAP NOT YET VERIFIED] instead of asserting it, because a guide will test it. Keep my voice: a first-year resident, not a professor.
+output: The comparison table first, then the per-topic questions, the pitch script, and a checklist. Fits on two printed pages.
+tweak: Finish with the one weakness in my first-choice topic that I should raise before my guide does, and how to present it.
+tips:
+- Print the table. A one-page comparison beats scrolling a phone in a guide's office.
+- If your guide rejects all three, ask which constraint mattered most, then re-run topic-feasibility with that constraint added.
+- Practise the 60-second pitch out loud twice.
+next: title-writer
+
+@@ S | india-gap-finder | India gap finder: 15 topics from scratch
+aud: PG Resident (Year 1)
+use: When you have no abstracts or ideas yet and need a starting list today.
+persona: You are a senior researcher in [SPECIALTY] at an Indian medical college, known for steering residents towards questions that matter to Indian patients rather than copying Western topics.
+context: I am doing my [MD / MS / DNB] in [SPECIALTY] at a [government medical college / private college] in India. I have limited lab infrastructure and a 2-year thesis window.
+task: Generate 15 potential thesis topics that:
+1. Address conditions with a high burden in India (e.g. TB, diabetes, COPD, anaemia, dengue, snakebite, hypertension) relevant to my specialty.
+2. Have limited published data from Indian populations.
+3. Can be done as observational, cross-sectional or simple interventional studies.
+4. Need no advanced laboratory infrastructure.
+For each, state the gap it addresses in one line and rate feasibility out of 10.
+rules: Describe gaps generically. Do not name papers or quote prevalence figures from memory; write [VERIFY] where a number would help, because every gap must be checked on PubMed before I pitch it.
+output: A numbered table: topic, gap, design, feasibility /10. Then the 3 you would pick and why.
+tip: Paste your 3 favourites into Consensus as yes/no questions. Keep only the ones with mixed or insufficient evidence.
+try: MD General Medicine, government medical college in Bihar.
+next: consensus-questions
+
+@@ S | hunch-to-picot | Clinical hunch → PICOT question
+aud: PG Resident / MBBS Intern
+use: When you have noticed something on the ward ("these patients seem to do worse") and want to turn it into a question.
+persona: You are a clinical research mentor who helps residents turn bedside observations into answerable research questions.
+context: What I noticed on the ward or in OPD: [describe the observation in 2–3 lines]
+Specialty and setting: [e.g. Paediatrics, tertiary PICU]
+Rough patient numbers per month: [N]
+task: 1. Restate my observation as a clear clinical question.
+2. Convert it into 3 alternative PICOT (or PECO) questions: one descriptive, one comparative, one prognostic.
+3. For each, name the study design that answers it and the primary outcome.
+4. Say which is most feasible for a postgraduate thesis and why.
+rules: Keep each question to one sentence. If my observation is more likely explained by bias or chance (e.g. referral pattern), say so first, because that changes the question.
+output: A table of the 3 PICOT versions, then a recommendation in 3 sentences.
+tip: Write your observation down the day you notice it. Specific details ("three patients this month on drug X") make much better questions than vague impressions.
+try: Elderly patients with hip fracture on our ward seem to develop delirium more often when surgery is delayed beyond 48 hours.
+next: finer-test
+
+@@ S | finer-test | FINER stress-test of my research question
+aud: PG Resident
+use: Before you submit your topic to the department or research committee.
+persona: You are a research committee member at an Indian medical college who scores postgraduate topics every term. You are fair but you do not pass weak questions.
+context: My research question: [paste in PICOT form]
+Study design: [design]
+Resources and patient numbers: [brief]
+Time available: [months]
+task: 1. Score my question on each FINER criterion (Feasible, Interesting, Novel, Ethical, Relevant) from 1 to 5, with two lines of justification each.
+2. Identify the single weakest criterion.
+3. Rewrite the question twice: once to fix the weakest criterion, once to make it simpler.
+4. Say which of the three versions you would approve and why.
+rules: Judge novelty only on what you can reason from the question itself; where novelty depends on the literature, mark it [CHECK ON PUBMED] instead of guessing, because false novelty claims are caught at the viva.
+output: A FINER scorecard table, the two rewrites, and a verdict of 3 sentences or fewer.
+tip: A score of 3 on "Novel" is fine for a thesis. A score below 3 on "Feasible" is not.
+try: Is serum vitamin D level associated with exacerbation frequency in COPD patients at a tertiary hospital in north India?
+next: saturation-check
+
+@@ S | saturation-check | Is this topic already done to death?
+aud: PG Resident
+use: After shortlisting, when you suspect your topic may already be heavily studied.
+persona: You are a systematic reviewer who can tell within minutes whether a research question is saturated, contested or open.
+context: My proposed question: [PICOT]
+Search results I found (titles or abstracts from PubMed, Consensus or Perplexity): [PASTE TITLES / ABSTRACTS HERE]
+task: 1. Sort the studies I pasted by design and setting (Indian vs international).
+2. Judge the evidence state: saturated (consistent findings, many studies), contested (mixed findings), or open (few or no studies).
+3. If saturated, suggest 3 angles that would still be original (new population, setting, outcome, follow-up, or measurement method).
+4. If contested, identify what explains the disagreement and whether my study could resolve it.
+rules: Judge only from what I pasted. If the sample is too small to judge, say so and tell me which search to run next, because a verdict based on six titles is not a verdict.
+output: One-line verdict, then a short table of studies, then the angles or next search.
+tip: Consensus's meter is a quick first pass. This prompt is the second pass on what it returns.
+try: Paste 10 PubMed titles for "neutrophil-lymphocyte ratio sepsis mortality".
+next: angle-finder
+
+@@ S | consensus-questions | Turn gaps into Consensus yes/no questions
+aud: PG Resident
+use: Between gap-finding (Perplexity) and topic selection, before you check evidence density.
+persona: You are a medical librarian who trains residents to query evidence engines such as Consensus effectively.
+context: Research gaps or problem areas I have noted: [PASTE 5–8 GAP AREAS HERE]
+Population of interest: [e.g. Indian adults with type 2 diabetes]
+task: 1. Convert each gap into one binary research question in the form "Does [factor] affect [outcome] in [population]?"
+2. Give a second, narrower version of each question.
+3. Tell me how to read the result: what a strong-agreement, mixed or insufficient-evidence result would mean for choosing my thesis.
+rules: Keep each question under 20 words and answerable with yes or no. Use my population exactly, because broad populations return Western data that does not apply to my setting.
+output: A numbered list: broad question, then narrow question, for each gap. Then a 3-row interpretation guide.
+tip: Keep only the questions whose result is mixed or insufficient. Strong agreement means that topic is done.
+try: Gaps: sarcopenia in COPD, vitamin D in TB outcomes, early mobilisation in ICU.
+next: saturation-check
+
+@@ S | records-topics | Topics I can do from existing hospital records
+aud: PG Resident / DNB Trainee
+use: When prospective recruitment looks slow, or your thesis window is short.
+persona: You are a clinical researcher who has published multiple retrospective and record-based studies from Indian hospitals, and you know their pitfalls.
+context: Specialty: [SPECIALTY]
+Records available: [e.g. ICU admission registers 2019–2024, discharge summaries, lab information system, OPD registers]
+How complete and reliable these records are, in my honest view: [brief]
+Approximate number of records: [N]
+task: 1. Suggest 8 thesis questions answerable from these records.
+2. For each, list the variables needed and whether they are routinely recorded.
+3. Flag the main bias for each (missing data, misclassification, selection).
+4. Say which questions most need an ethics waiver of consent, and what the IEC will want.
+rules: Prefer outcomes that are hard to misrecord (death, readmission, length of stay) over soft outcomes. Mark any question that needs data my records probably lack as [CHECK DATA AVAILABILITY] rather than assuming it is there.
+output: A table: question, variables, bias risk (low / medium / high), IEC note.
+tip: Pull 20 random files before committing. If more than a quarter are missing your key variable, choose another question.
+try: Medicine ward records of acute kidney injury, 2020–2024, about 900 admissions.
+next: topic-risk-register
+
+@@ S | short-window-topics | Topics that fit a 12-month data window
+aud: DNB Trainee / PG Resident (late start)
+use: When your approved data-collection window is 12 months or less.
+persona: You are a thesis coordinator who has rescued many late-starting postgraduate theses by right-sizing the question.
+context: Specialty: [SPECIALTY]
+Months left for data collection: [X]
+Eligible patients per month: [N]
+Current (too ambitious) topic idea, if any: [describe]
+task: 1. Tell me honestly whether my current idea fits the window, with the arithmetic.
+2. Suggest 5 alternative or scaled-down questions with outcomes measurable within days or weeks, not months.
+3. For each, estimate the patients needed and the months to recruit at my numbers.
+rules: Prefer cross-sectional, diagnostic-accuracy or short-follow-up designs. Show every calculation with its assumptions marked [ASSUMPTION], because I will have to defend the timeline to my guide.
+output: A verdict paragraph, then a table: question, design, patients needed, months to recruit.
+tip: Build in a 2-month buffer. Theses almost never finish recruitment on schedule.
+try: DNB Orthopaedics, 10 months left, about 15 eligible patients per month.
+next: pilot-feasibility
+
+@@ S | zero-budget-topics | Topics needing only routine investigations
+aud: PG Resident
+use: When there is no funding and you can only use tests the hospital already does free or routinely.
+persona: You are a researcher who has built a publication record entirely on routine clinical data in low-resource Indian hospitals.
+context: Specialty: [SPECIALTY]
+Routine tests available at no cost to patients: [e.g. CBC, LFT, RFT, ABG, chest X-ray, ECG, bedside USG]
+Tests I cannot afford: [list]
+Patient groups I see often: [list]
+task: 1. Suggest 10 thesis topics that use only the routine tests I listed.
+2. For each, give the research question, the key routine variable, the outcome, and why the question still matters clinically.
+3. Mark the 3 with the best publication potential.
+rules: Exclude any topic needing a test from my "cannot afford" list, and do not suggest workarounds that shift cost to patients, because the IEC will reject that.
+output: A numbered table with a one-line clinical-value note for each, then the top 3.
+tip: Ratios and indices built from routine tests are popular but crowded. Pair them with a hard outcome to stand out.
+try: MD Medicine; routine CBC, RFT, LFT, ABG, ECG, chest X-ray; lots of sepsis, CKD and snakebite.
+next: finer-test
+
+@@ S | score-validation | Validate an existing clinical score in my population
+aud: PG Resident
+use: When you want a solid, publishable design with a clear outcome, and a well-known score exists in your field.
+persona: You are a clinical epidemiologist experienced in external validation of prognostic and diagnostic scores in Indian populations.
+context: Candidate score or rule: [e.g. qSOFA, CURB-65, Alvarado, Wells]
+Population where it was developed (if known): [describe or "unsure"]
+My population and setting: [describe]
+Outcome the score predicts: [e.g. 28-day mortality]
+task: 1. Explain why validating this score in my population is (or is not) a genuine gap.
+2. Outline the validation design: inclusion criteria, timing of scoring, outcome ascertainment, blinding of assessors.
+3. Name the performance measures to report (discrimination, calibration) and what each means clinically.
+4. Give the sample-size logic for validation studies (events needed, not just total patients).
+rules: Do not claim the score has never been validated in India; write [CHECK EXISTING INDIAN VALIDATIONS ON PUBMED], because that search decides whether this topic is novel.
+output: Four short headed sections, under 400 words in total.
+tip: Validation studies are strongest when the score is calculated before the outcome is known. Build that into your protocol.
+try: CURB-65 for 30-day mortality in community-acquired pneumonia at a district hospital.
+next: primary-outcome-picker
+
+@@ S | qi-audit-topics | Quality-improvement and audit thesis topics
+aud: PG Resident / Faculty
+use: When your department wants a thesis that also improves care, or clinical trials are impractical.
+persona: You are a quality-improvement lead trained in PDSA cycles and clinical audit, who has supervised QI projects in Indian hospitals.
+context: Specialty and unit: [e.g. Obstetrics labour room]
+Care processes that often go wrong or vary: [list 3–5]
+Existing standards we could measure against: [e.g. WHO, national guideline, hospital protocol, or "unsure"]
+task: 1. Suggest 6 audit or QI topics, each with the standard, the measurable indicator and the target.
+2. For the best one, outline a before-and-after design with one PDSA cycle.
+3. Explain how to report it (SQUIRE 2.0 headings) and whether it counts as research needing full IEC review.
+rules: Name a standard only if it is a real, named guideline; otherwise write [STANDARD TO BE CONFIRMED], because an audit without a verifiable standard is not an audit.
+output: A table of 6 topics, then the outline for the best one, under 350 words.
+tip: Ask your IEC early whether QI counts as research at your institution. The answer changes consent requirements.
+try: Time from admission to first antibiotic in suspected sepsis in the medical emergency.
+next: finer-test
+
+@@ S | questionnaire-topics | Questionnaire-based topics without the KAP trap
+aud: PG Resident / MBBS Intern
+use: When your topic will rely on a questionnaire or scale.
+persona: You are a psychometrics-trained researcher who reviews questionnaire studies and is tired of weak knowledge-attitude-practice (KAP) surveys.
+context: Area of interest: [e.g. inhaler adherence, depression in dialysis patients]
+Population: [describe]
+Languages my patients speak: [list]
+task: 1. Suggest 5 questionnaire-based questions that go beyond a descriptive KAP survey (e.g. linking a validated score to a clinical outcome).
+2. For each, name the kind of validated instrument needed and whether a validated version in my patients' language is likely to exist.
+3. Explain what translation and validation steps I need if it does not.
+rules: Do not name a specific instrument's Indian-language validation unless you are sure; write [CHECK FOR VALIDATED TRANSLATION], because using an unvalidated translation is a classic viva question.
+output: A table of 5 topics with instrument type and translation status, then the validation steps as a numbered list.
+tip: A validated instrument plus a hard clinical outcome makes a questionnaire study publishable.
+try: Adherence to inhaled therapy and exacerbations in asthma, Hindi-speaking OPD patients.
+next: finer-test
+
+@@ S | topic-decision-matrix | Head-to-head decision matrix for 2–3 topics
+aud: PG Resident
+use: When you are stuck choosing between two or three final topics.
+persona: You are a pragmatic research supervisor who helps residents decide with criteria, not gut feel.
+context: Topic A: [title + design + patient numbers]
+Topic B: [title + design + patient numbers]
+Topic C (optional): [title + design + patient numbers]
+What matters most to me (rank): [e.g. finishing on time, publication, learning a skill, guide's interest]
+task: 1. Build a decision matrix with my priorities as weighted criteria.
+2. Score each topic 1 to 5 per criterion, with one line of reasoning.
+3. Calculate weighted totals and give a clear recommendation.
+4. State what new information would change the recommendation.
+rules: Use only the facts I gave. Where a score needs information I did not supply, mark it [NEED INFO] rather than guessing, because a guessed matrix decides nothing.
+output: The matrix table, then a 3-sentence recommendation.
+tip: If two topics tie, pick the one with the more reliable primary outcome measurement.
+try: A: CPAP adherence in OSA (cohort, 8/month). B: Lung ultrasound vs X-ray for pneumonia (diagnostic, 25/month).
+next: topic-pitch
+
+@@ S | title-writer | Thesis title that passes the committee
+aud: PG Resident
+use: When your topic is fixed and you need the formal thesis title.
+persona: You are a university thesis committee member who has seen hundreds of titles rejected for being vague, too long or overclaiming.
+context: Research question (PICOT): [paste]
+Study design: [design]
+Setting: [hospital, city]
+My university's title rules, if any: [e.g. word limit, must mention design]
+task: 1. Write 6 title options: descriptive, design-first, PICO-style, question-form, short, and conservative.
+2. Check each against the common committee objections (vague population, missing design, causal words, excessive length).
+3. Recommend one and explain why.
+rules: Use associational wording (association, correlation, comparison) unless my design is randomised, because causal wording in an observational title is the first thing examiners question.
+output: A numbered list of 6 titles with word counts, a one-line check result for each, and the recommendation.
+tip: Most universities like the design and setting in the title: "A prospective observational study at a tertiary care centre in north India".
+try: Association of serum albumin with 28-day mortality in adult sepsis, prospective cohort, AIIMS Rishikesh.
+next: primary-outcome-picker
+
+@@ S | topic-risk-register | What could kill this topic? A risk register
+aud: PG Resident
+use: Right after your topic is approved, before protocol writing.
+persona: You are a research operations manager who has seen theses fail for practical reasons: recruitment, equipment breakdowns, lost records and ethics delays.
+context: Approved topic and design: [paste]
+Recruitment source and expected numbers: [brief]
+Key equipment or tests: [list]
+People I depend on (lab, radiology, statistician): [list]
+task: 1. List the 10 most likely risks to completing this thesis on time.
+2. For each, rate likelihood and impact (low / medium / high).
+3. Give one prevention step and one fallback plan for each.
+4. Highlight the 3 risks to discuss with my guide now.
+rules: Be specific to my topic, not generic. Where a risk depends on local facts I did not give, write [CHECK LOCALLY], because generic risk lists get ignored.
+output: A risk-register table: risk, likelihood, impact, prevention, fallback. Then the top 3.
+tip: Review this register every 3 months. Add risks as they appear.
+try: Prospective cohort of 150 stroke patients needing MRI within 72 hours.
+next: pilot-feasibility
+
+@@ S | primary-outcome-picker | Choose a measurable primary outcome
+aud: PG Resident
+use: When your topic is agreed but the primary outcome is still vague ("better outcome", "improvement").
+persona: You are a trial methodologist who insists every primary outcome is defined precisely enough for two observers to agree.
+context: Research question: [PICOT]
+Candidate outcomes I am considering: [list]
+Follow-up I can actually do: [e.g. in-hospital only, 30-day phone call, 3-month OPD visit]
+task: 1. Evaluate each candidate outcome for clinical relevance, measurability, reliability and feasibility with my follow-up.
+2. Recommend one primary outcome and up to 3 secondary outcomes.
+3. For the primary, write an operational definition: instrument, unit, cut-off and time point.
+rules: Prefer validated scales and objective measures. If an outcome needs a scale, say whether a validated version exists or write [VERIFY VALIDATED TOOL], because unvalidated outcomes weaken the whole thesis.
+output: An evaluation table, then the recommended outcomes, then the operational definition in 3–4 lines.
+tip: Your sample size depends on the primary outcome. Fix this before you calculate anything.
+try: Candidates for ARDS: mortality, ventilator-free days, P/F ratio at day 3, length of ICU stay.
+next: pilot-feasibility
+
+@@ S | guide-questions | The questions my guide will ask about my topic
+aud: PG Resident
+use: Before your first topic discussion with your guide, or before a departmental topic presentation.
+persona: You are an experienced thesis guide in [SPECIALTY] who probes every new resident's topic for weaknesses.
+context: My topic and design: [paste]
+What I know about the background: [brief notes]
+My expected patient numbers and time: [brief]
+task: 1. List the 12 questions you would ask me about this topic, from basic to tough.
+2. For each, show what a weak answer and a strong answer look like.
+3. Mark the 3 questions I am least prepared for, based on my notes.
+rules: Ground the model answers in my notes. Where a strong answer needs facts I have not given, write [FIND THIS BEFORE THE MEETING] instead of supplying numbers, because my guide will ask where they came from.
+output: A numbered list of questions with weak and strong answer pairs, then the 3 danger questions.
+tip: Answer the 3 danger questions in writing before the meeting.
+try: Topic: point-of-care lung ultrasound vs chest X-ray for pneumonia in children under 5.
+next: topic-pitch
+
+@@ S | guideline-gap-topics | Topics from the gaps in a clinical guideline
+aud: PG Resident / Faculty
+use: When a recent guideline in your field lists recommendations based on weak evidence or states "further research needed".
+persona: You are a guideline methodologist familiar with GRADE and with how evidence gaps turn into research agendas.
+context: Guideline document or recommendations section: [PASTE OR UPLOAD THE GUIDELINE / SECTION]
+My specialty and setting: [brief]
+task: 1. Extract every recommendation graded low or very low certainty, conditional, or expert opinion, and every explicit "research needed" statement.
+2. For each, say whether it could become a feasible postgraduate thesis question in my setting.
+3. Turn the best 5 into PICOT questions with a suggested design.
+rules: Quote the guideline wording for each gap in quotation marks so I can verify it. Do not describe recommendations that are not in the text I provided, because guideline misquotes are easy to catch.
+output: A table: quoted recommendation, certainty grade, feasible (yes / no), PICOT. Then the top 5.
+tip: Topics built on guideline gaps are easy to justify in the introduction. The gap is already published.
+try: Upload the research-gaps section of a recent national TB or sepsis guideline.
+next: finer-test
+
+@@ S | pilot-feasibility | Four-week feasibility check before you commit
+aud: PG Resident
+use: After topic approval, before the full protocol, if recruitment numbers are uncertain.
+persona: You are a research methodologist who believes in testing recruitment before promising it.
+context: Topic and design: [paste]
+Assumed eligible patients per month: [N]
+Key procedures per patient: [list]
+task: 1. Design a 4-week screening-log exercise: what to record for every potentially eligible patient (screened, eligible, excluded with reason, would consent).
+2. Give a simple log template with columns.
+3. Define go / amend / stop criteria based on the numbers the log produces.
+4. Explain how to present the log to my guide and the IEC.
+rules: A screening log records no patient identifiers; use serial numbers only, because it is collected before formal consent.
+output: A step list, the log template as a table, and the decision criteria.
+tip: A 4-week log is the strongest evidence you can give that your sample size is realistic.
+try: Diabetic foot ulcer patients undergoing offloading, assumed 12 per month.
+next: topic-risk-register
+
+@@ S | angle-finder | Five original angles on a crowded topic
+aud: PG Resident
+use: When the topic you love turns out to be heavily studied.
+persona: You are a researcher skilled at finding original angles within well-studied areas without resorting to trivial changes.
+context: Crowded topic: [describe]
+What is already well established (from my reading): [brief]
+My setting's special features: [e.g. rural referral hospital, high TB co-infection, altitude, tribal population]
+task: Give 5 original angles, one each from: a different population, a different setting, a different outcome, a different measurement method, and longer follow-up. For each, write the new PICOT question and explain why it adds value rather than repeating existing work.
+rules: Ground each angle in my setting's special features. Where novelty depends on the literature, mark it [VERIFY NOVELTY], because the angle only counts if nobody has published it.
+output: A table of 5 angles: new question, what it adds, feasibility (low / medium / high).
+tip: The strongest angles usually come from what is unusual about your hospital's patients.
+try: Crowded topic: HbA1c and outcomes in diabetic foot. Setting: tribal district hospital in Jharkhand.
+next: finer-test
+
+@@ S | sts-project | Two-month project for an MBBS student (ICMR-STS style)
+aud: MBBS Student
+use: When you are an undergraduate applying for a short-term studentship or doing your first research project.
+persona: You are a medical college research mentor who has guided many MBBS students through short, two-month research projects, including ICMR Short-Term Studentship applications.
+context: My year of MBBS: [e.g. 2nd year]
+Departments where I have access or a willing mentor: [list]
+Time available: about 2 months, alongside classes
+Interests: [list]
+task: 1. Suggest 6 projects completable in 2 months by a student, e.g. a questionnaire study, a record review or a simple cross-sectional study.
+2. For each, give the research question, design, a realistic sample size and the data-collection method.
+3. Pick the best one and outline a one-page proposal: title, introduction (3 lines), objectives, methods, expected outcome.
+rules: Keep every project within student ethics limits: no invasive procedures and no interventions. Put [CHECK CURRENT STS GUIDELINES] wherever application rules matter, because scheme rules change every year.
+output: A table of 6 projects, then the one-page proposal.
+tip: Mentors say yes faster when you arrive with a one-page proposal instead of "any topic, sir?".
+try: 2nd-year MBBS, mentor in Community Medicine, interested in hypertension awareness.
+next: sharpen-question
+
+@@ Q | ten-seeds | Ten quick topic seeds in my specialty
+aud: PG Resident (Year 1)
+body: Act as a senior [SPECIALTY] faculty member at an Indian medical college. Give me 10 thesis topic seeds for a [government / private] hospital with routine investigations only. For each, give one line on the clinical question and one on why it matters in India. Keep it to a numbered list, and mark any claim that needs checking as [VERIFY].
+try: MD Dermatology, government medical college, high burden of fungal infections.
+
+@@ Q | sharpen-question | Sharpen my research question to one line
+aud: PG Resident / MBBS Intern
+body: Act as a research methods tutor. My current research question is: [PASTE QUESTION]. Rewrite it in 3 sharper one-line versions that name the population, exposure or intervention, comparator and outcome. Put the best one first and explain in one sentence why it is better.
+try: Does obesity affect asthma?
+
+@@ Q | pico-or-peco | PICO or PECO? Frame my question correctly
+aud: MBBS Student / PG Resident
+body: Act as a clinical epidemiology teacher. My study idea is: [DESCRIBE IDEA]. Tell me whether it should be framed as PICO (intervention) or PECO (exposure), explain the difference in two lines, then write my question in the correct framework with each element labelled.
+try: Comparing outcomes of smokers and non-smokers after coronary bypass surgery.
+
+@@ Q | ongoing-trials | Check ongoing trials before you commit
+aud: PG Resident
+body: Act as a medical librarian. For my topic [TOPIC], give me 5 search-term combinations to check CTRI (ctri.nic.in) and ClinicalTrials.gov for ongoing or recently completed studies, and tell me what to look for in each registry entry to judge whether my thesis would duplicate it.
+try: Early enteral nutrition in acute pancreatitis.
+
+@@ Q | india-follow-up | The follow-up that surfaces Indian gaps
+aud: PG Resident
+body: Act as a research-gap analyst. Based on your previous answer about research gaps in [TOPIC], list what has NOT been studied in Indian or South Asian populations specifically. Give 5 points, each with the population, the missing outcome and why it matters here. Mark claims to verify as [VERIFY].
+try: Follow-up after a Perplexity answer on gaps in COPD management.
+
+@@ Q | variables-map | Identify the variables in my question
+aud: MBBS Student / PG Resident
+body: Act as a biostatistics tutor. For my research question [PASTE QUESTION], identify the dependent variable, the independent variable, likely confounders and effect modifiers. Present them in a 4-row table with the data type and unit of each (continuous, binary, ordinal, categorical).
+try: Is anaemia in pregnancy associated with low birth weight at a district hospital?
+
+@@ Q | narrow-topic | My topic is too broad: narrow it three ways
+aud: PG Resident
+body: Act as a thesis supervisor. My topic [TOPIC] is too broad for a 2-year thesis. Narrow it three different ways: by population, by outcome and by setting. Give each as a one-line research question, then say which is most feasible with about [N] patients per month.
+try: Outcomes of diabetes in India.
+
+@@ Q | infrastructure-check | What infrastructure does this topic need?
+aud: PG Resident
+body: Act as a research operations planner. For the study [TITLE + DESIGN], list every piece of equipment, test, trained person, software and consumable needed from recruitment to analysis. Mark each as routine, special or costly, and flag anything a government medical college may not have.
+try: Diagnostic accuracy of bedside lung ultrasound for pleural effusion.
+
+@@ Q | western-to-india | Does this Western topic apply in India?
+aud: PG Resident
+body: Act as a global health researcher. The topic [TOPIC] is well studied in Western populations. Give 5 reasons its findings may not transfer to Indian patients (disease burden, genetics, nutrition, care access, practice patterns), and turn the strongest reason into an India-specific research question.
+try: Statin response and LDL targets in young adults with premature coronary disease.
+
+@@ Q | hypothesis-type | Hypothesis-generating or hypothesis-testing?
+aud: PG Resident
+body: Act as a research methods examiner. For my study [PASTE QUESTION + DESIGN], tell me whether it is hypothesis-generating or hypothesis-testing, why, and what that changes about my sample size, analysis and the wording of my conclusion. Keep it under 150 words.
+try: A cross-sectional survey of sleep quality among ICU nurses on night shifts.
+
+@@ Q | topic-in-one-slide | Summarise my topic on one slide
+aud: PG Resident
+body: Act as an academic presentation coach. Turn my topic [TITLE + PICOT + GAP] into one slide for a departmental topic presentation: a title, 4 bullets (problem, gap, question, design) and a one-line "why now". Keep each bullet under 15 words.
+try: Frailty index and post-operative complications in elderly emergency laparotomy.
