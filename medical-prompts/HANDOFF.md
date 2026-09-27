@@ -13,11 +13,14 @@ black-and-orange design.
   - `prompts/vol1/*.txt`, `prompts/vol2/*.txt`, `prompts/vol3/*.txt`: prompt source files (one file per section).
   - `build/library.py`: parser + QA. Run `python3 build/library.py N` (N = volume) and it must print `QA clean`.
   - `build/render.py`: renders `VolN_*.pdf` via headless Chromium. Run `python3 build/render.py N`.
+    `python3 build/render.py all` builds the combined edition (render volumes 1–3 first; it merges them with pymupdf).
   - `build/fonts/`: Poppins and Lora woff2 files (already downloaded).
   - Deliverables: `Medical_Prompt_Guidelines.pdf` (step 1), `1000_Prompts_Blueprint.pdf` (step 2),
-    `Vol1_Thesis_Research_Publication.pdf` (done, 400 prompts, 210 pages).
+    `Vol1_Thesis_Research_Publication.pdf` (400 prompts, 210 pages), `Vol2_Seminars_JournalClubs_Presentations.pdf`
+    (300 prompts, 154 pages), `Vol3_Study_Exam_Viva.pdf` (300 prompts, 154 pages) and
+    `The_1000_Medical_Prompts_Complete.pdf` (combined edition, 1,000 prompts, 523 pages).
 - Chromium binary: `/opt/pw-browsers/chromium-1194/chrome-linux/chrome` (already set in render.py).
-  Python deps: `pip install pymupdf pypdf` if missing.
+  Python deps: `pip install pymupdf` if missing (pypdf can't import in this container; use pymupdf).
 
 ## Decisions the user approved (do not re-ask)
 1. Three volumes + a combined edition. **Exactly 1,000 prompts**: Vol 1 Thesis 400 (#1–400), Vol 2 Seminars 300
@@ -101,6 +104,8 @@ See PROGRESS.md for the section targets and status. Planned sections:
 - Vol 1 section 1.13 already covers research conference abstracts, posters and oral papers, so Vol 2 sections 2.4
   and 2.5 focus on general teaching talks, CMEs, educational posters and visual aids (no duplicates).
 
-## After all three volumes
-Build the combined edition: add a combined mode to render.py that loads vol1–3 and uses one cover titled "The 1,000
-Medical Prompts", then send all PDFs. Final numbering must run from 1 to 1000 with no gaps.
+## Status: COMPLETE
+All 1,000 prompts are written and QA-clean (`python3 build/library.py 1|2|3`, which prints `QA clean` for each).
+All three volumes and the combined edition are rendered, committed and sent. Future work is whatever the user
+asks next (for example, review edits). After editing a section: run QA, re-render that volume, then run
+`python3 build/render.py all` again so the combined edition stays in sync.

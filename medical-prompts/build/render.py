@@ -1,6 +1,7 @@
 """Render a volume of the library to HTML and PDF in the Parabox design system.
 
-Usage: python3 build/render.py 1
+Usage: python3 build/render.py 1   (one volume)
+       python3 build/render.py all (combined edition; render volumes 1-3 first)
 """
 import subprocess
 import sys
@@ -243,7 +244,7 @@ def card(p):
             + (f'<li>{nxt}</li>' if nxt else "") + '</ul></div>')
 
 
-def front_matter(vol, cfg, secs, total, counts):
+def front_matter(vol, cfg, secs, total, counts, cover_html=None, toc_html=None):
     first, last = cfg["start"], cfg["start"] + total - 1
     sec_html = "".join(f'<div><b>{s["num"]}</b>{fmt(s["title"])}</div>' for s in secs)
     cover = f"""
@@ -313,7 +314,7 @@ def front_matter(vol, cfg, secs, total, counts):
 <div class="toc">{toc_rows}</div>
 <div class="callout" style="margin-top:6mm"><div class="kick">The full library</div>
 <span class="small"><b>Volume 1</b> · Thesis, Research &amp; Publication (#1–400) · <b>Volume 2</b> · Seminars, Journal Clubs &amp; Presentations (#401–700) · <b>Volume 3</b> · Study, Exam &amp; Viva Prep (#701–1000). The full index of this volume is at the back.</span></div></div>"""
-    return cover + first_page + framework + toc
+    return (cover_html or cover) + first_page + framework + (toc_html or toc)
 
 
 def section_html(s):
@@ -383,5 +384,63 @@ def render(vol):
     print(f"wrote {out_pdf.name}: {total} prompts {counts}")
 
 
+COMBINED_FILE = "The_1000_Medical_Prompts_Complete"
+
+
+def render_combined():
+    """Front matter for the whole library, followed by the three volume PDFs (each keeps its own cover as a divider)."""
+    import pymupdf
+    vols = {v: load_volume(v, VOLUMES[v]["start"]) for v in VOLUMES}
+    all_secs = [s for v in vols for s in vols[v]]
+    total, counts = stats(all_secs)
+    vol_html = "".join(
+        f'<div><b>Vol {v}</b>{VOLUMES[v]["plain"]} · #{VOLUMES[v]["start"]}–{VOLUMES[v]["start"] + stats(vols[v])[0] - 1}</div>'
+        for v in VOLUMES)
+    cover = f"""
+<div class="cover"><div class="top"><div class="brand">PARABOX AI</div>
+<div class="kick">The complete library · Volumes 1–3</div>
+<h1>The 1,000<br><em>Medical Prompts.</em></h1>
+<p class="lead">Clinician-grade AI prompts for medical students, interns and residents: thesis and publication, seminars and journal clubs, and study, exam and viva preparation, all built on one framework.</p>
+<div class="stat"><div><b>{total}</b>prompts · #1–{total}</div><div><b>{len(all_secs)}</b>sections</div>
+<div><b>{counts["M"]} · {counts["S"]} · {counts["Q"]}</b>Master · Standard · Quick</div></div>
+<div class="secs">{vol_html}</div></div>
+<div class="band"><div><div class="nm">Dr. Abhishek J. Benur</div><div class="cr">MD Respiratory Medicine, AIIMS Rishikesh · Co-Founder, Parabox AI</div></div>
+<div class="h">@abhishekjbenur<span>paraboxai.com</span></div></div></div>"""
+    rows = []
+    for v in VOLUMES:
+        rows.append(f'<div class="row"><span>Vol {v}</span><span><b>{VOLUMES[v]["plain"]}</b></span><span></span></div>')
+        rows += [f'<div class="row"><span>{s["num"]}</span><span>{fmt(s["title"])}</span>'
+                 f'<span>#{s["prompts"][0]["n"]}–{s["prompts"][-1]["n"]}</span></div>' for s in vols[v]]
+    toc = f"""<div class="brk"><div class="kick">Contents</div><h2>What's in <em>the library.</em></h2>
+<div class="toc">{"".join(rows)}</div>
+<div class="callout" style="margin-top:6mm"><div class="kick">How this edition works</div>
+<span class="small">Each volume follows with its own cover, contents, prompts and index. Prompt numbers run 1–1000 across the whole library, and every <span class="nx">→ NEXT</span> link points to a prompt in the same volume.</span></div></div>"""
+    body = front_matter(0, VOLUMES[1], all_secs, total, counts, cover_html=cover, toc_html=toc)
+    out_html = ROOT / "build" / "combined_front.html"
+    out_html.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>The 1,000 Medical Prompts</title><link rel="stylesheet" href="fonts/fonts.css">
+<style>{(CSS % {"vol": "1–3"}).replace("· VOL 1–3", "· COMPLETE EDITION")}</style></head><body>{body}</body></html>""", encoding="utf-8")
+    front_pdf = ROOT / "build" / "combined_front.pdf"
+    subprocess.run([CHROME, "--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
+                    "--allow-file-access-from-files", "--virtual-time-budget=10000",
+                    f"--print-to-pdf={front_pdf}", str(out_html)], check=True, capture_output=True)
+    out_doc = pymupdf.open(str(front_pdf))
+    toc = [[1, "The 1,000 Medical Prompts", 1]]
+    for v in VOLUMES:
+        vol_doc = pymupdf.open(str(ROOT / f"{VOLUMES[v]['file']}.pdf"))
+        offset = len(out_doc)
+        out_doc.insert_pdf(vol_doc)
+        toc.append([1, f"Volume {v} · {VOLUMES[v]['plain']}", offset + 1])
+        toc += [[lvl + 1, title, page + offset] for lvl, title, page in vol_doc.get_toc()]
+    out_doc.set_toc(toc)
+    out_doc.set_metadata({"title": "The 1,000 Medical Prompts", "author": "Dr. Abhishek J. Benur · Parabox AI"})
+    out = ROOT / f"{COMBINED_FILE}.pdf"
+    out_doc.save(str(out), garbage=3, deflate=True)
+    print(f"wrote {out.name}: {total} prompts {counts}, {len(out_doc)} pages")
+
+
 if __name__ == "__main__":
-    render(int(sys.argv[1]))
+    if sys.argv[1] == "all":
+        render_combined()
+    else:
+        render(int(sys.argv[1]))

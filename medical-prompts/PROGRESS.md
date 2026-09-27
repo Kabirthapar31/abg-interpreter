@@ -59,6 +59,9 @@ Commit and push after every section file.
 | 3.6 Clinical reasoning & differential diagnosis | 60 | done |
 | 3.7 Memory aids & high-yield summaries | 30 | done |
 
+## Combined edition: done
+`python3 build/render.py all` → `The_1000_Medical_Prompts_Complete.pdf` (1,000 prompts, 523 pages).
+
 ## Sparse-page check (run after rendering)
 ```
 python3 -c "import pymupdf; d=pymupdf.open('VolN_….pdf'); [print(i+1) for i,p in enumerate(d) if len(p.get_text().split())<60]"
