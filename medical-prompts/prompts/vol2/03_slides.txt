@@ -41,7 +41,7 @@ Screen types: [projector / large display / online]
 task: 1. Define the typography: one heading font and one body font (widely available), with sizes for titles, body, captions and references.
 2. Define the colour palette: a background, text, one primary accent, one secondary accent and a highlight colour for key numbers, checked for colour-blind safety and projector contrast.
 3. Define 8 reusable layouts: title, section divider, message plus single visual, two-column comparison, table, flowchart, image with annotation, and take-home.
-4. Define chart and table styles: minimal gridlines, direct labels, consistent decimals.
+4. Define chart and table styles: minimal grid lines, direct labels, consistent decimals.
 5. Define rules for icons, images and references on slides.
 6. Give the step-by-step set-up of the master template in my tool.
 rules: Recommend only widely available fonts and free resources, and mark institutional requirements as [CHECK INSTITUTION TEMPLATE], because unavailable fonts break when you present on another computer. Keep contrast high enough for poor projectors.
@@ -91,7 +91,7 @@ Tool: [PowerPoint / Excel / Google Sheets / Canva]
 Audience and room size: [brief]
 task: 1. For each table, identify the single message it supports.
 2. Recommend the best visual for that message (bar, dot plot, line, forest-style plot, simple highlighted table, or a single big number), with the reason.
-3. Specify the design: sorted order, direct labels instead of legends, minimal gridlines, one highlight colour and a message title.
+3. Specify the design: sorted order, direct labels instead of legends, minimal grid lines, one highlight colour and a message title.
 4. Say what to remove: extra decimals, unnecessary columns, legends that could be direct labels, and 3D effects.
 5. Give step-by-step build instructions in my tool.
 6. Write the message title and a one-line speaker note for each visual.

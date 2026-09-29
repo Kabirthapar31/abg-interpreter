@@ -18,7 +18,7 @@ Clinical interests: [2 to 4]
 Diseases with high burden in my setting: [list]
 task: Generate 8 candidate research questions I could design, complete, defend and publish inside my timeline. For each, give exactly:
 1. Working title as it would appear on a thesis cover page.
-2. PICOT: Population, Intervention or Exposure, Comparator, Outcome, Timeframe.
+2. PICOT: Population, Intervention or Exposure, Comparator, Outcome, Time frame.
 3. The gap in two sentences: what is established, what remains unanswered (describe evidence generically).
 4. Study design, and one line on why not the obvious alternative.
 5. Feasibility score out of 5, justified against my context above.
@@ -73,7 +73,7 @@ Specialty and level: [e.g. MD Anaesthesiology, year 1]
 Setting: [e.g. 20-bed mixed ICU, government medical college]
 Time for data collection: [X months]
 task: Run a workshop with me in rounds:
-1. Ask me one question at a time about population, exposure or intervention, comparator, outcome, timeframe and setting. Wait for my answer before asking the next.
+1. Ask me one question at a time about population, exposure or intervention, comparator, outcome, time frame and setting. Wait for my answer before asking the next.
 2. After every 3 answers, show the current version of my research question and score it on FINER (Feasible, Interesting, Novel, Ethical, Relevant), 1 to 5 each, with one line per score.
 3. Point out the weakest FINER element and ask the question that fixes it.
 4. Stop when every FINER score is 4 or more, or after 5 rounds.

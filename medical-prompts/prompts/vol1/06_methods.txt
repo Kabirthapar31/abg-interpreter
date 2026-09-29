@@ -314,14 +314,14 @@ persona: You are a measurement methodologist who designs reliability checks for 
 context: Measurements needing judgement: [list]
 Observers available: [brief]
 Equipment needing calibration: [list]
-task: 1. Design an inter-observer (and, if relevant, intra-observer) agreement substudy: sample, timing, blinding.
+task: 1. Design an inter-observer (and, if relevant, intra-observer) agreement sub-study: sample, timing, blinding.
 2. Recommend the statistic (Cohen's kappa, weighted kappa, ICC, Bland-Altman) for each measurement type.
 3. Describe training and standardisation before data collection.
 4. Describe equipment calibration and documentation.
 5. Write the quality-control paragraph for my methods.
 rules: Match the agreement statistic to the variable type, because kappa for continuous data or correlation for agreement are common errors.
 output: Numbered plan, a statistic-choice table, then the paragraph.
-tip: Twenty to thirty paired readings are often enough for a thesis agreement substudy. Confirm with your statistician.
+tip: Twenty to thirty paired readings are often enough for a thesis agreement sub-study. Confirm with your statistician.
 try: Echocardiographic ejection fraction and a delirium scale, each measured by two residents.
 next: operational-definitions
 

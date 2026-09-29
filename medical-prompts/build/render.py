@@ -77,7 +77,7 @@ BACK = {
 
 CSS = """
 @page { size: A4; margin: 15mm 16mm 17mm 16mm; background: #0a0808;
-  @bottom-left { content: "THE 1,000 MEDICAL PROMPTS · VOL %(vol)s"; font-family: Poppins; font-size: 6.5pt; letter-spacing: .1em; color: #8a7f75; }
+  @bottom-left { content: "1,000 MEDICAL PROMPTS · %(vol)s"; font-family: Poppins; font-size: 6.5pt; letter-spacing: .1em; color: #8a7f75; }
   @bottom-right { content: "@abhishekjbenur · " counter(page); font-family: Poppins; font-size: 6.5pt; color: #ff641e; }
 }
 @page cover { margin: 0; @bottom-left { content: none; } @bottom-right { content: none; } }
@@ -150,6 +150,8 @@ tr { break-inside: avoid; }
 .opener.long .meta { margin: 4mm 0 5mm; }
 .opener.xlong { padding-top: 8mm; }
 .opener.xlong .lead { margin-bottom: 3mm; font-size: 10.5pt; }
+.opener.xlong .meta { margin: 3mm 0 4mm; }
+.opener.xlong .howsec { padding: 2.2mm 3.5mm; margin-bottom: 3.5mm; }
 .opener.xlong ol { columns: 3; column-gap: 5mm; font-size: 6.6pt; }
 .opener.xlong ol li { padding: .8mm 0; grid-template-columns: 8mm 1fr; }
 .opener .big { font-size: 64pt; font-weight: 800; color: var(--or); line-height: 1; }
@@ -206,7 +208,112 @@ tr { break-inside: avoid; }
 .idx .r { display: grid; grid-template-columns: 8mm 1fr 5mm; padding: .55mm 0; border-bottom: 1px solid #1d1614; break-inside: avoid; }
 .idx .r span:first-child { color: var(--or); font-weight: 600; }
 .idx .r span:last-child { color: var(--dim); font-size: 6pt; text-align: right; }
+
+a { color: inherit; text-decoration: none; }
+.h2 { font-weight: 700; color: var(--ink); font-size: 19pt; line-height: 1.15; margin-bottom: 4mm; }
+.h2 em { font-style: normal; color: var(--or); }
+.h3 { font-weight: 600; color: var(--ink); font-size: 10pt; margin: 4mm 0 2mm; }
+/* new cover */
+.cover h1 { font-size: 50pt; }
+.cover .volline { color: var(--or); font-weight: 600; font-size: 11.5pt; margin: -1mm 0 5mm; }
+.cover .chips { display: flex; flex-wrap: wrap; gap: 2mm; margin-top: 5mm; }
+.cover .chips span { border: 1px solid var(--line); border-radius: 5mm; padding: 1.2mm 3.2mm; font-size: 6.8pt; font-weight: 600; color: var(--ink); letter-spacing: .1em; text-transform: uppercase; }
+.cover .top { display: flex; flex-direction: column; }
+.cover .author { margin-top: auto; margin-bottom: 14mm; border-top: 2px solid var(--or); padding-top: 4mm; max-width: 130mm; }
+.cover .author .nm { font-size: 17pt; font-weight: 700; color: var(--ink); }
+.cover .author .cr { font-size: 9pt; color: var(--muted); margin-top: 1mm; }
+.cover .band { align-items: center; gap: 10mm; }
+.cover .band .promise { font-size: 11.5pt; line-height: 1.45; max-width: 128mm; font-weight: 500; }
+.cover .band .promise b { color: #1a0d05; font-weight: 800; }
+/* how to use */
+.ways { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; margin: 1mm 0 3mm; }
+.ways > div { background: var(--panel); border: 1px solid var(--line); border-radius: 2mm; padding: 3mm 3.5mm; font-size: 7.6pt; color: var(--muted); }
+.ways .k { color: var(--or); font-weight: 800; font-size: 16pt; line-height: 1; margin-bottom: 1.5mm; }
+.ways b { display: block; font-size: 9.5pt; margin-bottom: 1mm; }
+.wgrid { display: grid; gap: 4mm; }
+.wgrid.n3 { grid-template-columns: repeat(3, 1fr); }
+.wgrid.n1 ul { columns: 2; column-gap: 6mm; }
+.wcol .wv { color: var(--or); font-weight: 700; font-size: 8pt; margin-bottom: 1mm; border-bottom: 1px solid var(--or); padding-bottom: 1mm; }
+.wcol ul { list-style: none; font-size: 7.4pt; }
+.wcol li { padding: .6mm 0; break-inside: avoid; }
+.wcol li span { color: var(--or); font-weight: 600; display: inline-block; width: 8mm; }
+ol.steps { padding-left: 5mm; font-size: 8pt; }
+ol.steps li { margin-bottom: 1.2mm; padding-left: 1mm; }
+ol.steps li::marker { color: var(--or); font-weight: 700; }
+.howsec { border: 1px solid var(--or); background: var(--or-soft); border-radius: 2mm; padding: 3mm 4mm; margin: 0 0 5mm; }
+.howsec p { font-size: 8pt; margin-bottom: 1mm; }
+.howsec p:last-child { margin-bottom: 0; }
+.howsec a { color: var(--or); font-weight: 600; }
+/* linked lists */
+.toc .row { display: block; padding: 0; }
+.toc .row a { display: grid; grid-template-columns: 14mm 1fr 26mm; padding: 1.7mm 0; }
+.toc .row.vol a { color: var(--ink); font-weight: 700; font-size: 10pt; border-bottom: 1px solid var(--or); margin-top: 3mm; }
+.toc .row.sub a { font-size: 7.4pt; color: var(--muted); padding: .75mm 0; }
+.toc .row.sub span:last-child { font-size: 7pt; }
+.opener ol li { display: block; }
+.opener ol li a { display: grid; grid-template-columns: 9mm 1fr; }
+.opener.xlong ol li a { grid-template-columns: 8mm 1fr; }
+.idx .r { display: block; }
+.idx .r a { display: grid; grid-template-columns: 8mm 1fr 5mm; }
+.idx .s a { color: var(--or); }
+/* volume divider (complete edition) */
+.divider { break-before: page; padding-top: 22mm; }
+.divider h1 { font-weight: 800; color: var(--ink); font-size: 34pt; line-height: 1.05; margin: 3mm 0 5mm; text-transform: uppercase; }
+.divider h1 em { font-style: normal; color: var(--or); }
+.divider .lead { font-size: 12pt; max-width: 150mm; }
+.divider .meta, .opener .meta { display: flex; gap: 8mm; margin: 6mm 0 8mm; }
+.divider .meta div { border-top: 2px solid var(--or); padding-top: 2mm; font-size: 7.2pt; color: var(--muted); min-width: 22mm; }
+.divider .meta b { display: block; font-size: 16pt; font-weight: 800; color: var(--ink); line-height: 1.1; }
+.divider ol { list-style: none; font-size: 9pt; }
+.divider ol li a { display: grid; grid-template-columns: 12mm 1fr 24mm; padding: 2.2mm 0; border-bottom: 1px dotted var(--line); }
+.divider ol li span { color: var(--or); font-weight: 700; }
+.divider ol li em { font-style: normal; text-align: right; color: var(--muted); font-size: 8pt; }
 """
+
+
+AUTHOR = "Dr. Abhishek J. Benur"
+AUTHOR_ROLE = "Clinical Pulmonologist · Founder, Parabox AI (AI health-tech company)"
+PROMISE = ("Every task you will face in your medical career, from exams and thesis to seminars, publications "
+           "and patient care, has a prompt in this book. <b>The first and last prompt book you will ever need.</b>")
+
+# One line per section: when to reach for it. Shown in the "How to use this section" box on each opener.
+SECTION_USE = {
+    "1.1": "Use it in your first months of residency, before you commit to a thesis topic or write a synopsis.",
+    "1.2": "Use it before you read anything: build a reproducible search, then screen and store what you find.",
+    "1.3": "Use it once your literature review is done and you know your gap, to write a tight, sourced introduction.",
+    "1.4": "Use it after your search, to build an evidence table and a gap statement you can defend.",
+    "1.5": "Use it before your synopsis: every method, table and conclusion must trace back to these objectives.",
+    "1.6": "Use it while writing the protocol and methods, to answer the questions your guide, IEC and examiners will ask.",
+    "1.7": "Use it before data collection to fix the sample size and analysis plan, and again when you analyse.",
+    "1.8": "Use it after analysis, to turn software output into clean tables, figures and past-tense results.",
+    "1.9": "Use it with your final results and key papers in hand, to write a discussion that doesn't overclaim.",
+    "1.10": "Use it before the IEC meeting and your synopsis submission.",
+    "1.11": "Use it after thesis submission to convert it into a paper, choose a journal, submit and answer reviewers.",
+    "1.12": "Use it when you see an unusual case: check whether it is publishable first, then write to CARE.",
+    "1.13": "Use it when an abstract deadline, a poster or a conference slot is coming up.",
+    "2.1": "Use it one to two weeks before your seminar, to plan the objectives, the evidence and the flow.",
+    "2.2": "Use it the week you are assigned a paper: appraise it first, then build the presentation.",
+    "2.3": "Use it once your content is ready, to turn it into clear slides that are readable from the back row.",
+    "2.4": "Use it for CMEs, invited lectures, community talks and panel discussions.",
+    "2.5": "Use it for ward posters, infographics, patient leaflets, pocket cards and teaching visuals.",
+    "2.6": "Use it before case presentations, grand rounds and mortality meetings.",
+    "2.7": "Use it in the last days before any talk, and whenever you teach or give feedback.",
+    "3.1": "Use it the first time you study a topic, to understand it rather than memorise it.",
+    "3.2": "Use it at the start of your preparation, and again at every revision cycle.",
+    "3.3": "Use it daily for NEET-PG, UPSC CMS or university MCQ practice, and after every mock test.",
+    "3.4": "Use it for university theory papers: practise the structure, diagrams and timing of your answers.",
+    "3.5": "Use it in the weeks before practicals, vivas and OSCEs, and always practise aloud.",
+    "3.6": "Use it to practise diagnostic reasoning on cases and exam vignettes, never as a substitute for bedside judgement.",
+    "3.7": "Use it after you finish each topic, to build flashcards, mnemonics and one-page sheets for revision.",
+}
+
+
+def sid(s, suffix=""):
+    return "s" + s["num"].replace(".", "-") + suffix
+
+
+def link(anchor, inner):
+    return f'<a href="#{anchor}">{inner}</a>'
 
 
 def card(p):
@@ -216,10 +323,11 @@ def card(p):
             f'<span class="badge {t}">{TIERS[t]}</span></div>'
             f'<div class="pc-meta">{p["section"]} {fmt(p["section_title"])} · {fmt(p["aud"])}</div>')
     nxt = ""
-    if p.get("next"):
-        nxt = f' <span class="nx">→ NEXT #{p["next_n"]}</span> {fmt(p["next_title"])}'
+    if p.get("next_n"):
+        nxt = link(f'p{p["next_n"]}', f'<span class="nx">→ NEXT #{p["next_n"]}</span> {fmt(p["next_title"])}')
+    anchor = f' id="p{p["n"]}"'
     if t == "Q":
-        return (f'<div class="card">{head}<div class="prompt">{fmt(p["body"])}</div>'
+        return (f'<div class="card"{anchor}>{head}<div class="prompt">{fmt(p["body"])}</div>'
                 f'<div class="tipline"><span class="lab">Try it with</span>{fmt(p["try"])}</div></div>')
     blocks = [("Persona", "persona"), ("My context", "context"), ("Task", "task"),
               ("Rules", "rules"), ("Output", "output")]
@@ -232,52 +340,183 @@ def card(p):
             extra += f'<div class="tipline"><span class="lab">Try it with</span>{fmt(p["try"])}</div>'
         if nxt:
             extra += f'<div class="tipline">{nxt}</div>'
-        return (f'<div class="card">{head}<div class="use"><span class="lab">Use it</span>{fmt(p["use"])}</div>'
+        return (f'<div class="card"{anchor}>{head}<div class="use"><span class="lab">Use it</span>{fmt(p["use"])}</div>'
                 f'<div class="prompt">{body}</div>{extra}</div>')
     tips = "".join(f"<li>{fmt(x.lstrip('- ').strip())}</li>" for x in p["tips"].splitlines() if x.strip())
     dense = " dense xdense" if words(p) > 410 else " dense" if words(p) > 380 else ""
-    return (f'<div class="card master{dense}">{head}'
+    return (f'<div class="card master{dense}"{anchor}>{head}'
             f'<div class="duo"><div><span class="lab">Use it</span>{fmt(p["use"])}</div>'
             f'<div class="why" style="margin:0"><span class="lab" style="font-family:Poppins;font-style:normal">Why</span>{fmt(p["why"])}</div></div>'
             f'<div class="copy">COPY THE PROMPT BELOW</div><div class="prompt">{body}</div>'
-            f'<h3>How to get more out of it</h3><ul class="arrow small tips">{tips}'
+            f'<div class="h3">How to get more out of it</div><ul class="arrow small tips">{tips}'
             + (f'<li>{nxt}</li>' if nxt else "") + '</ul></div>')
 
 
-def front_matter(vol, cfg, secs, total, counts, cover_html=None, toc_html=None):
-    first, last = cfg["start"], cfg["start"] + total - 1
-    sec_html = "".join(f'<div><b>{s["num"]}</b>{fmt(s["title"])}</div>' for s in secs)
-    cover = f"""
+def srange(s):
+    return f"#{s['prompts'][0]['n']}–{s['prompts'][-1]['n']}"
+
+
+def vol_range(v, secs):
+    return f'#{secs[0]["prompts"][0]["n"]}–{secs[-1]["prompts"][-1]["n"]}'
+
+
+def cover(vols, books):
+    """books: {vol: sections}. One volume -> volume cover; three -> complete edition."""
+    allsecs = [s for v in vols for s in books[v]]
+    total, counts = stats(allsecs)
+    if len(vols) == 1:
+        v = vols[0]
+        kick = f"The medical AI prompt ebook · Volume {v} of 3"
+        volline = f'<div class="volline">Volume {v} · {VOLUMES[v]["plain"]} · {vol_range(v, books[v])}</div>'
+        chips = [f"{total} prompts", vol_range(v, books[v]), f"{len(allsecs)} sections",
+                 f'{counts["M"]} Master · {counts["S"]} Standard · {counts["Q"]} Quick']
+    else:
+        kick = "The medical AI prompt ebook"
+        volline = ""
+        chips = ["1,000 prompts", "3 volumes", "Thesis &amp; Research", "Seminars &amp; Presentations", "Study, Exams &amp; Viva"]
+    chip_html = "".join(f"<span>{c}</span>" for c in chips)
+    return f"""
 <div class="cover"><div class="top"><div class="brand">PARABOX AI</div>
-<div class="kick">The 1,000 Medical Prompts · Volume {vol} of 3</div>
-<h1>{cfg["title"]}</h1><p class="lead">{cfg["lead"]}</p>
-<div class="stat"><div><b>{total}</b>prompts · #{first}–{last}</div><div><b>{len(secs)}</b>sections</div>
-<div><b>{counts["M"]} · {counts["S"]} · {counts["Q"]}</b>Master · Standard · Quick</div></div>
-<div class="secs">{sec_html}</div></div>
-<div class="band"><div><div class="nm">Dr. Abhishek J. Benur</div><div class="cr">MD Respiratory Medicine, AIIMS Rishikesh · Co-Founder, Parabox AI</div></div>
+<div class="kick">{kick}</div>
+<h1>1,000 Medical<br><em>Prompts.</em></h1>{volline}
+<p class="lead">Ready-to-use AI prompts for doctors, residents and medical students, from your first exam to your last publication.</p>
+<div class="chips">{chip_html}</div>
+<div class="author"><div class="nm">{AUTHOR}</div><div class="cr">{AUTHOR_ROLE}</div></div></div>
+<div class="band"><div class="promise">{PROMISE}</div>
 <div class="h">@abhishekjbenur<span>paraboxai.com</span></div></div></div>"""
 
-    first_page = """
+
+def how_to(vols, books):
+    cols = []
+    for v in vols:
+        items = "".join("<li>" + link(sid(s), "<span>" + s["num"] + "</span>" + fmt(s["title"])) + "</li>" for s in books[v])
+        head = link(f"vol{v}" if len(vols) > 1 else sid(books[v][0]), f'Volume {v} · {VOLUMES[v]["plain"]}')
+        cols.append(f'<div class="wcol"><div class="wv">{head}</div><ul>{items}</ul></div>')
+    others = ""
+    if len(vols) == 1:
+        others = ('<p class="small" style="margin-top:2mm">The full library: <b>Volume 1</b> Thesis, Research &amp; Publication (#1–400) · '
+                  '<b>Volume 2</b> Seminars, Journal Clubs &amp; Presentations (#401–700) · <b>Volume 3</b> Study, Exam &amp; Viva Prep (#701–1000).</p>')
+    return f"""
+<div class="brk howto"><div class="kick">How to use this ebook</div><h2>Find the right prompt <em>in seconds.</em></h2>
+<p class="lead">You never need to read this book cover to cover. Find the task in front of you today, copy its prompt, fill in your details and paste it into ChatGPT, Claude, Gemini or Copilot.</p>
+<div class="ways">
+<div><div class="k">01</div><b>Search</b>Press <span class="ph">Ctrl + F</span> (<span class="ph">Cmd + F</span> on a Mac), or tap the search icon in your phone's PDF reader. Type your task, for example "sample size", "journal club", "viva" or "discharge", or a prompt number such as "#415".</div>
+<div><div class="k">02</div><b>Tap the contents</b>Every section and sub-section in the Contents is a link that takes you straight there. Your PDF reader's bookmarks panel shows the same map.</div>
+<div><div class="k">03</div><b>Follow the chain</b>Most prompts end with <span class="nx">→ NEXT</span>, the prompt to run after it. Tap it to go to the next step. The index at the back links to every prompt by number.</div>
+</div>
+<h3>What's inside</h3>
+<div class="wgrid n{len(vols)}">{"".join(cols)}</div>{others}
+<h3>Using a prompt, step by step</h3>
+<ol class="steps">
+<li>Copy the full prompt. The length is what makes the answer specific to you.</li>
+<li>Replace every <span class="ph">[SQUARE BRACKET]</span> with your real details. Where a bracket offers options separated by "/", keep the one that applies.</li>
+<li>Put anything you paste (abstracts, drafts, results, notes) where the prompt shows <span class="ph">[PASTE …]</span>.</li>
+<li>Switch on web search or document upload whenever the prompt asks for evidence.</li>
+<li>Start a fresh chat for each new task, so old assumptions don't carry over.</li>
+<li>Push back. If the answer is generic, reply: "Be more specific. Tie every point to my context." Then check every fact before you use it.</li>
+</ol></div>"""
+
+
+READ_FIRST = """
 <div class="brk"><div class="kick">Before you start</div><h2>Read this <em>first.</em></h2>
-<p class="lead">These prompts are written the way a research supervisor thinks, not the way a chatbot answers. Many are long on purpose: a vague prompt gets you a vague, confident, wrong answer. Before you paste anything, five non-negotiables.</p>
+<p class="lead">These prompts are written the way a senior clinician and teacher thinks, not the way a chatbot answers. Many are long on purpose: a vague prompt gets you a vague, confident, wrong answer. Before you paste anything, five non-negotiables.</p>
 <div class="nn">
 <div class="it"><div class="k">01</div><div><b>The AI does not know your patients.</b>Every prompt has a context block. Fill it honestly. If you say you have 200 cases a year when you have 40, the model will design a study you cannot finish.</div></div>
 <div class="it"><div class="k">02</div><div><b>Never accept a citation you have not opened.</b>Language models fabricate references that look flawless: real journal, real authors, wrong or non-existent paper. Verify every reference on PubMed by PMID or DOI before it enters your work.</div></div>
 <div class="it"><div class="k">03</div><div><b>Never paste identifiable patient data.</b>No names, hospital IDs, MRNs or scans with burned-in identifiers. De-identify before the data touches a chatbot. This is an ethics committee issue, not a preference.</div></div>
-<div class="it"><div class="k">04</div><div><b>The AI drafts. You decide.</b>Use it to speed up structure, phrasing and pre-checking. The scientific judgement, the assumptions and the interpretation stay yours. Your name goes on the paper, not the model's.</div></div>
-<div class="it"><div class="k">05</div><div><b>Declare AI use where required.</b>ICMJE and most journals require disclosure of generative AI use. AI cannot be an author. Check your journal's policy and your university's thesis rules before submission.</div></div>
-</div>
-<h3>How to use each prompt</h3>
-<ul class="arrow">
-<li>Copy the full prompt. The length is what makes the output specific.</li>
-<li>Replace every <span class="ph">[SQUARE BRACKET]</span> with your real details. Options inside a bracket are separated by "/"; keep the one that applies.</li>
-<li>Put anything you paste (abstracts, drafts, results) where the prompt shows <span class="ph">[PASTE …]</span>, above the task.</li>
-<li>Use a model with web search or document upload switched on wherever the prompt asks for evidence.</li>
-<li>Run each stage in a fresh chat so the model doesn't carry assumptions from earlier steps.</li>
-<li>Push back. If the output is generic, reply: "Be more specific. Tie every point to my context."</li>
-</ul></div>"""
+<div class="it"><div class="k">04</div><div><b>The AI drafts. You decide.</b>Use it to speed up structure, phrasing and pre-checking. The clinical and scientific judgement, the assumptions and the interpretation stay yours. Your name goes on the work, not the model's.</div></div>
+<div class="it"><div class="k">05</div><div><b>Declare AI use where required.</b>ICMJE and most journals require disclosure of generative AI use. AI cannot be an author. Check your journal's policy and your university's thesis and exam rules.</div></div>
+</div></div>"""
 
-    framework = """
+
+def contents(vols, books):
+    rows = []
+    for v in vols:
+        if len(vols) > 1:
+            rows.append('<div class="row vol">' + link(f"vol{v}", f"<span>Vol {v}</span><span>{VOLUMES[v]['plain']}</span><span>{vol_range(v, books[v])}</span>") + "</div>")
+        for s in books[v]:
+            rows.append('<div class="row">' + link(sid(s), "<span>" + s["num"] + "</span><span>" + fmt(s["title"]) + "</span><span>" + srange(s) + "</span>") + "</div>")
+            if True:
+                for k, lbl in (("M", "Master prompts"), ("S", "Standard prompts"), ("Q", "Quick prompts")):
+                    ps = [p for p in s["prompts"] if p["tier"] == k]
+                    if ps:
+                        rows.append('<div class="row sub">' + link(sid(s, "-" + k.lower()), f"<span></span><span>{lbl}</span><span>#{ps[0]['n']}–{ps[-1]['n']}</span>") + "</div>")
+    where = "the library" if len(vols) > 1 else "this volume"
+    note = ("Every volume, section and sub-section below is a link. Each section opens with its own linked list of prompts, and the index at the back of each volume links to every single prompt."
+            if len(vols) > 1 else "Every section and sub-section below is a link. The index at the back links to every single prompt.")
+    return f"""<div class="brk"><div class="kick">Contents</div><h2>What's in <em>{where}.</em></h2>
+<p class="small" style="margin-bottom:3mm">{note}</p><div class="toc">{"".join(rows)}</div></div>"""
+
+
+def divider(v, secs):
+    total, counts = stats(secs)
+    items = "".join("<li>" + link(sid(s), "<span>" + s["num"] + "</span>" + fmt(s["title"]) + "<em>" + srange(s) + "</em>") + "</li>" for s in secs)
+    return f"""<div class="divider" id="vol{v}"><div class="kick">Volume {v} of 3 · {vol_range(v, secs)}</div>
+<h1>{VOLUMES[v]["title"]}</h1><p class="lead">{VOLUMES[v]["lead"]}</p>
+<div class="meta"><div><b>{total}</b>prompts</div><div><b>{len(secs)}</b>sections</div><div><b>{counts["M"]}</b>Master</div><div><b>{counts["S"]}</b>Standard</div><div><b>{counts["Q"]}</b>Quick</div></div>
+<ol>{items}</ol></div>"""
+
+
+def section_html(s):
+    items = "".join("<li>" + link(f"p{p['n']}", f"<span>#{p['n']}</span>" + fmt(p["title"])) + "</li>" for p in s["prompts"])
+    c = {k: sum(1 for p in s["prompts"] if p["tier"] == k) for k in TIERS}
+    rng = {k: [p["n"] for p in s["prompts"] if p["tier"] == k] for k in TIERS}
+    n_p = len(s["prompts"])
+    cls = "opener long xlong" if n_p > 40 else "opener long" if n_p > 28 else "opener"
+
+    def r(k):
+        return link(sid(s, "-" + k.lower()), f'#{rng[k][0]}–{rng[k][-1]}' if len(rng[k]) > 1 else f'#{rng[k][0]}')
+    parts = []
+    if rng["M"]:
+        parts.append(f'Start with the Master prompt{"s" if len(rng["M"]) > 1 else ""} ({r("M")}) for the full workflow')
+    if rng["S"]:
+        parts.append(f'use the Standard prompts ({r("S")}) for one task at a time')
+    if rng["Q"]:
+        parts.append(f'reach for the Quick prompts ({r("Q")}) when you have two minutes')
+    tiers = "; ".join(parts) + ". Tap any title below to jump to it, and follow <span class=\"nx\">→ NEXT</span> to move to the next step."
+    how = (f'<div class="howsec"><div class="kick">How to use this section</div>'
+           f'<p><b>{SECTION_USE[s["num"]]}</b></p><p>{tiers[0].upper() + tiers[1:]}</p></div>')
+    opener = f"""<div class="{cls}" id="{sid(s)}"><div class="kick">Section {s["num"]}</div><div class="big">{s["num"]}</div>
+<h2>{fmt(s["title"])}</h2><p class="lead">{fmt(s["why"])}</p>
+<div class="meta"><div><b>{n_p}</b>prompts</div><div><b>{c["M"]}</b>Master</div><div><b>{c["S"]}</b>Standard</div><div><b>{c["Q"]}</b>Quick</div></div>
+{how}<ol>{items}</ol></div>"""
+    masters = "".join(card(p) for p in s["prompts"] if p["tier"] == "M")
+    if masters:
+        masters = f'<div id="{sid(s, "-m")}">{masters}</div>'
+    stds = "".join(card(p) for p in s["prompts"] if p["tier"] == "S")
+    quicks = [p for p in s["prompts"] if p["tier"] == "Q"]
+    qhtml = ""
+    if quicks:
+        qhtml = (f'<div class="qhead" id="{sid(s, "-q")}"><div class="kick">Quick prompts · ' + s["num"] + '</div></div>'
+                 '<div class="qgrid">' + "".join(card(p) for p in quicks) + "</div>")
+    std_block = f'<div class="brk" id="{sid(s, "-s")}">{stds}</div>' if stds else ""
+    return opener + masters + std_block + qhtml
+
+
+def back_matter(vol, secs, closing=True):
+    rows = []
+    for s in secs:
+        rows.append('<div class="s">' + link(sid(s), s["num"] + " · " + fmt(s["title"])) + "</div>")
+        rows += ['<div class="r">' + link(f"p{p['n']}", f"<span>#{p['n']}</span><span>" + fmt(p["title"]) + f"</span><span>{p['tier']}</span>") + "</div>"
+                 for p in s["prompts"]]
+    index = f"""<div class="brk"><div class="kick">Index · Volume {vol}</div><div class="h2">Every prompt <em>at a glance.</em></div>
+<p class="small">Tap any prompt to jump to it. Q = Quick · S = Standard · M = Master</p><div class="idx">{"".join(rows)}</div></div>"""
+    b = BACK[vol]
+    rows_html = "".join(f"<tr><td>{a}</td><td>{t}</td><td>{w}</td></tr>" for a, t, w in b["tools"])
+    ethics = "".join(f"<li>{x}</li>" for x in b["ethics"])
+    tools = f"""<div class="brk"><div class="kick">Tools · Volume {vol}</div><div class="h2">Which AI tool <em>for which job.</em></div>
+<table><tr><th style="width:32%">Job</th><th style="width:28%">Best tool</th><th>Why</th></tr>{rows_html}</table>
+<div class="callout"><div class="kick">{b["ethics_title"]}</div><ul class="arrow" style="margin-top:1mm">{ethics}</ul></div>"""
+    if closing:
+        tools += f"""<h3 style="margin-top:8mm">One last thing.</h3>
+<p class="lead">{b["closing"]}</p>
+<p><b>{b["slogan"]}</b></p>
+<p class="small" style="margin-top:6mm">More AI in medicine every week: Instagram <span class="ph">@abhishekjbenur</span> · paraboxai.com</p>"""
+    tools += f"""<p class="small" style="margin-top:4mm">{b["disclaimer"]}</p></div>"""
+    return index + tools
+
+
+FRAMEWORK = """
 <div class="brk"><div class="kick">The framework</div><h2>Every prompt is built on <em>P-R-O-M-P-T.</em></h2>
 <p class="lead">One formula, six layers. Each layer matches what OpenAI, Anthropic, Google and Microsoft recommend in their own prompting guides.</p>
 <div class="pp">
@@ -307,136 +546,71 @@ def front_matter(vol, cfg, secs, total, counts, cover_html=None, toc_html=None):
 </table>
 <p class="small">Every prompt works in ChatGPT, Claude, Gemini and Copilot. <span class="nx">→ NEXT</span> points to the prompt to run after this one.</p></div>"""
 
-    toc_rows = "".join(
-        f'<div class="row"><span>{s["num"]}</span><span>{fmt(s["title"])}</span>'
-        f'<span>#{s["prompts"][0]["n"]}–{s["prompts"][-1]["n"]}</span></div>' for s in secs)
-    toc = f"""<div class="brk"><div class="kick">Contents</div><h2>What's in <em>this volume.</em></h2>
-<div class="toc">{toc_rows}</div>
-<div class="callout" style="margin-top:6mm"><div class="kick">The full library</div>
-<span class="small"><b>Volume 1</b> · Thesis, Research &amp; Publication (#1–400) · <b>Volume 2</b> · Seminars, Journal Clubs &amp; Presentations (#401–700) · <b>Volume 3</b> · Study, Exam &amp; Viva Prep (#701–1000). The full index of this volume is at the back.</span></div></div>"""
-    return (cover_html or cover) + first_page + framework + (toc_html or toc)
 
-
-def section_html(s):
-    items = "".join(f'<li><span>#{p["n"]}</span>{fmt(p["title"])}</li>' for p in s["prompts"])
-    c = {k: sum(1 for p in s["prompts"] if p["tier"] == k) for k in TIERS}
-    n_p = len(s["prompts"])
-    cls = "opener long xlong" if n_p > 48 else "opener long" if n_p > 28 else "opener"
-    opener = f"""<div class="{cls}"><div class="kick">Section {s["num"]}</div><div class="big">{s["num"]}</div>
-<h2>{fmt(s["title"])}</h2><p class="lead">{fmt(s["why"])}</p>
-<div class="meta"><div><b>{len(s["prompts"])}</b>prompts</div><div><b>{c["M"]}</b>Master</div><div><b>{c["S"]}</b>Standard</div><div><b>{c["Q"]}</b>Quick</div></div>
-<ol>{items}</ol></div>"""
-    masters = "".join(card(p) for p in s["prompts"] if p["tier"] == "M")
-    stds = "".join(card(p) for p in s["prompts"] if p["tier"] == "S")
-    quicks = [p for p in s["prompts"] if p["tier"] == "Q"]
-    qhtml = ""
-    if quicks:
-        qhtml = ('<div class="qhead"><div class="kick">Quick prompts · ' + s["num"] + '</div></div>'
-                 '<div class="qgrid">' + "".join(card(p) for p in quicks) + "</div>")
-    std_block = f'<div class="brk">{stds}</div>' if stds else ""
-    return opener + masters + std_block + qhtml
-
-
-def back_matter(vol, secs):
-    rows = []
-    for s in secs:
-        rows.append(f'<div class="s">{s["num"]} · {fmt(s["title"])}</div>')
-        rows += [f'<div class="r"><span>#{p["n"]}</span><span>{fmt(p["title"])}</span><span>{p["tier"]}</span></div>'
-                 for p in s["prompts"]]
-    index = f"""<div class="brk"><div class="kick">Index</div><h2>Every prompt <em>at a glance.</em></h2>
-<p class="small">Q = Quick · S = Standard · M = Master</p><div class="idx">{"".join(rows)}</div></div>"""
-    b = BACK[vol]
-    rows_html = "".join(f"<tr><td>{a}</td><td>{t}</td><td>{w}</td></tr>" for a, t, w in b["tools"])
-    ethics = "".join(f"<li>{x}</li>" for x in b["ethics"])
-    tools = f"""<div class="brk"><div class="kick">Tools</div><h2>Which AI tool <em>for which job.</em></h2>
-<table><tr><th style="width:32%">Job</th><th style="width:28%">Best tool</th><th>Why</th></tr>{rows_html}</table>
-<div class="callout"><div class="kick">{b["ethics_title"]}</div><ul class="arrow" style="margin-top:1mm">{ethics}</ul></div>
-<h3 style="margin-top:8mm">One last thing.</h3>
-<p class="lead">{b["closing"]}</p>
-<p><b>{b["slogan"]}</b></p>
-<p class="small" style="margin-top:6mm">More AI in medicine every week: Instagram <span class="ph">@abhishekjbenur</span> · paraboxai.com</p>
-<p class="small" style="margin-top:4mm">{b["disclaimer"]}</p></div>"""
-    return index + tools
-
-
-def render(vol):
-    cfg = VOLUMES[vol]
-    secs = load_volume(vol, cfg["start"])
-    probs, slugs = qa(secs)
-    if probs:
-        print("QA problems:\n" + "\n".join(probs))
-    for s in secs:
-        for p in s["prompts"]:
-            if p.get("next") and p["next"] in slugs:
-                p["next_n"] = slugs[p["next"]]["n"]
-                p["next_title"] = slugs[p["next"]]["title"]
-    total, counts = stats(secs)
-    body = front_matter(vol, cfg, secs, total, counts) + "".join(section_html(s) for s in secs) + back_matter(vol, secs)
-    out_html = ROOT / "build" / f"vol{vol}.html"
+def build(vols, file, footer):
+    books = {v: load_volume(v, VOLUMES[v]["start"]) for v in vols}
+    for v in vols:
+        probs, slugs = qa(books[v])
+        if probs:
+            print("QA problems:\n" + "\n".join(probs))
+        for s in books[v]:
+            for p in s["prompts"]:
+                if p.get("next") and p["next"] in slugs:
+                    p["next_n"] = slugs[p["next"]]["n"]
+                    p["next_title"] = slugs[p["next"]]["title"]
+    body = cover(vols, books) + how_to(vols, books) + READ_FIRST + FRAMEWORK + contents(vols, books)
+    for v in vols:
+        if len(vols) > 1:
+            body += divider(v, books[v])
+        body += "".join(section_html(s) for s in books[v]) + back_matter(v, books[v], closing=(v == vols[-1] or len(vols) == 1))
+    title = "1,000 Medical Prompts" + (f" · Volume {vols[0]}" if len(vols) == 1 else "")
+    out_html = ROOT / "build" / f"{file}.html"
     out_html.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>The 1,000 Medical Prompts · Vol {vol}</title><link rel="stylesheet" href="fonts/fonts.css">
-<style>{CSS % {"vol": vol}}</style></head><body>{body}</body></html>""", encoding="utf-8")
-    out_pdf = ROOT / f"{cfg['file']}.pdf"
+<title>{title}</title><link rel="stylesheet" href="fonts/fonts.css">
+<style>{CSS % {"vol": footer}}</style></head><body>{body}</body></html>""", encoding="utf-8")
+    out_pdf = ROOT / f"{file}.pdf"
     subprocess.run([CHROME, "--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
-                    "--allow-file-access-from-files", "--virtual-time-budget=10000",
+                    "--allow-file-access-from-files", "--virtual-time-budget=20000",
                     "--generate-pdf-document-outline", f"--print-to-pdf={out_pdf}", str(out_html)],
-                   check=True, capture_output=True)
+                   check=True, capture_output=True, timeout=600)
+    tidy_outline(out_pdf, len(vols) > 1)
+    total, counts = stats([s for v in vols for s in books[v]])
     print(f"wrote {out_pdf.name}: {total} prompts {counts}")
+
+
+def tidy_outline(pdf, combined):
+    """Bookmarks: front pages and sections at the top level; in the complete edition, sections sit under their volume."""
+    import pymupdf
+    d = pymupdf.open(str(pdf))
+    toc, in_volume = [], False
+    for lvl, title, page in d.get_toc():
+        title = " ".join(title.split())
+        if lvl > 2:
+            continue
+        if lvl == 1 and title.upper().startswith("1,000 MEDICAL"):
+            title = "Cover"
+        elif lvl == 1 and combined:
+            in_volume = True
+            v = sum(1 for x in toc if x[0] == 1 and x[1].startswith("Volume")) + 1
+            title = f"Volume {v} · {VOLUMES[v]['plain']}"
+            page = next((i + 1 for i in range(len(d)) if f"VOLUME {v} OF 3 ·" in d[i].get_text()[:400].upper()
+                         and "MEDICAL AI PROMPT EBOOK" not in d[i].get_text().upper()), page)
+        if not (combined and in_volume):
+            lvl = 1
+        toc.append([lvl, title, page])
+    d.set_toc(toc)
+    d.saveIncr()
 
 
 COMBINED_FILE = "The_1000_Medical_Prompts_Complete"
 
 
+def render(vol):
+    build([vol], VOLUMES[vol]["file"], f"VOL {vol}")
+
+
 def render_combined():
-    """Front matter for the whole library, followed by the three volume PDFs (each keeps its own cover as a divider)."""
-    import pymupdf
-    vols = {v: load_volume(v, VOLUMES[v]["start"]) for v in VOLUMES}
-    all_secs = [s for v in vols for s in vols[v]]
-    total, counts = stats(all_secs)
-    vol_html = "".join(
-        f'<div><b>Vol {v}</b>{VOLUMES[v]["plain"]} · #{VOLUMES[v]["start"]}–{VOLUMES[v]["start"] + stats(vols[v])[0] - 1}</div>'
-        for v in VOLUMES)
-    cover = f"""
-<div class="cover"><div class="top"><div class="brand">PARABOX AI</div>
-<div class="kick">The complete library · Volumes 1–3</div>
-<h1>The 1,000<br><em>Medical Prompts.</em></h1>
-<p class="lead">Clinician-grade AI prompts for medical students, interns and residents: thesis and publication, seminars and journal clubs, and study, exam and viva preparation, all built on one framework.</p>
-<div class="stat"><div><b>{total}</b>prompts · #1–{total}</div><div><b>{len(all_secs)}</b>sections</div>
-<div><b>{counts["M"]} · {counts["S"]} · {counts["Q"]}</b>Master · Standard · Quick</div></div>
-<div class="secs">{vol_html}</div></div>
-<div class="band"><div><div class="nm">Dr. Abhishek J. Benur</div><div class="cr">MD Respiratory Medicine, AIIMS Rishikesh · Co-Founder, Parabox AI</div></div>
-<div class="h">@abhishekjbenur<span>paraboxai.com</span></div></div></div>"""
-    rows = []
-    for v in VOLUMES:
-        rows.append(f'<div class="row"><span>Vol {v}</span><span><b>{VOLUMES[v]["plain"]}</b></span><span></span></div>')
-        rows += [f'<div class="row"><span>{s["num"]}</span><span>{fmt(s["title"])}</span>'
-                 f'<span>#{s["prompts"][0]["n"]}–{s["prompts"][-1]["n"]}</span></div>' for s in vols[v]]
-    toc = f"""<div class="brk"><div class="kick">Contents</div><h2>What's in <em>the library.</em></h2>
-<div class="toc">{"".join(rows)}</div>
-<div class="callout" style="margin-top:6mm"><div class="kick">How this edition works</div>
-<span class="small">Each volume follows with its own cover, contents, prompts and index. Prompt numbers run 1–1000 across the whole library, and every <span class="nx">→ NEXT</span> link points to a prompt in the same volume.</span></div></div>"""
-    body = front_matter(0, VOLUMES[1], all_secs, total, counts, cover_html=cover, toc_html=toc)
-    out_html = ROOT / "build" / "combined_front.html"
-    out_html.write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>The 1,000 Medical Prompts</title><link rel="stylesheet" href="fonts/fonts.css">
-<style>{(CSS % {"vol": "1–3"}).replace("· VOL 1–3", "· COMPLETE EDITION")}</style></head><body>{body}</body></html>""", encoding="utf-8")
-    front_pdf = ROOT / "build" / "combined_front.pdf"
-    subprocess.run([CHROME, "--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
-                    "--allow-file-access-from-files", "--virtual-time-budget=10000",
-                    f"--print-to-pdf={front_pdf}", str(out_html)], check=True, capture_output=True)
-    out_doc = pymupdf.open(str(front_pdf))
-    toc = [[1, "The 1,000 Medical Prompts", 1]]
-    for v in VOLUMES:
-        vol_doc = pymupdf.open(str(ROOT / f"{VOLUMES[v]['file']}.pdf"))
-        offset = len(out_doc)
-        out_doc.insert_pdf(vol_doc)
-        toc.append([1, f"Volume {v} · {VOLUMES[v]['plain']}", offset + 1])
-        toc += [[lvl + 1, title, page + offset] for lvl, title, page in vol_doc.get_toc()]
-    out_doc.set_toc(toc)
-    out_doc.set_metadata({"title": "The 1,000 Medical Prompts", "author": "Dr. Abhishek J. Benur · Parabox AI"})
-    out = ROOT / f"{COMBINED_FILE}.pdf"
-    out_doc.save(str(out), garbage=3, deflate=True)
-    print(f"wrote {out.name}: {total} prompts {counts}, {len(out_doc)} pages")
+    build([1, 2, 3], COMBINED_FILE, "COMPLETE EDITION")
 
 
 if __name__ == "__main__":

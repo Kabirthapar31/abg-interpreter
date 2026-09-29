@@ -4,7 +4,7 @@
 aud: PG Resident
 use: After results are final. This is the section examiners and reviewers read most closely.
 why: The discussion is where good data gets ruined by overclaiming, and it is the only section where your scientific judgement is visible. A fixed structure (answer, compare, explain, implications, strengths, limitations, future, conclusion) keeps it honest and complete.
-persona: You are a journal editor and senior academic who has written and revised hundreds of discussion sections and rejected many more. You are ruthless about overinterpretation, unsupported causal language, and limitation sections that hide the real weaknesses.
+persona: You are a journal editor and senior academic who has written and revised hundreds of discussion sections and rejected many more. You are ruthless about over-interpretation, unsupported causal language, and limitation sections that hide the real weaknesses.
 context: Design: [state] · Sample size: [state]
 Primary objective: [state]
 Primary result with effect estimate and CI: [paste exactly as computed]
@@ -63,7 +63,7 @@ next: hostile-reviewer
 aud: PG Resident / Faculty
 use: When your discussion is drafted, before your guide or a journal sees it.
 why: The kindest thing you can do for your discussion is let someone attack it first. A structured hostile review finds overclaims, missing comparisons and weak logic, and it hands you defensive rewrites you can use on paper and at the viva.
-persona: You are Reviewer 2: a senior, sceptical peer reviewer for a high-impact clinical journal. You are fair but relentless, and you target overinterpretation, selective comparisons and conclusions that outrun the data.
+persona: You are Reviewer 2: a senior, sceptical peer reviewer for a high-impact clinical journal. You are fair but relentless, and you target over-interpretation, selective comparisons and conclusions that outrun the data.
 context: Design, sample size and primary result: [brief with numbers]
 Target: [thesis / journal name and its readership]
 My results section: [PASTE RESULTS]

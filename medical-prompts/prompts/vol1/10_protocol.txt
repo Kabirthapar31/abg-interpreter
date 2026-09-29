@@ -139,7 +139,7 @@ Protocol summary: [PASTE SUMMARY]
 IEC approval status: [approved on date / pending]
 Sites and investigators: [brief]
 task: 1. Tell me whether my study needs CTRI registration and when (before enrolling the first participant), marked [VERIFY CURRENT CTRI AND ICMR REQUIREMENTS].
-2. Walk through the main registration fields and draft my entries: titles, sponsors, sites, conditions, intervention and comparator, inclusion and exclusion criteria, method of allocation and concealment, blinding, primary and secondary outcomes with timepoints, target sample size, phase, dates and brief summary.
+2. Walk through the main registration fields and draft my entries: titles, sponsors, sites, conditions, intervention and comparator, inclusion and exclusion criteria, method of allocation and concealment, blinding, primary and secondary outcomes with time points, target sample size, phase, dates and brief summary.
 3. Flag fields residents commonly get wrong.
 4. Explain what happens after submission and how to update the record.
 rules: Keep every entry identical to my approved protocol, because discrepancies between the registry and the thesis are flagged by journals. Mark any field name you are unsure of as [CHECK CURRENT FORM].

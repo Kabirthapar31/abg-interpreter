@@ -45,7 +45,7 @@ Chapter word counts: [introduction, ROL, methods, results, discussion]
 Number of tables and figures in the thesis: [numbers]
 Target journal type and its word limit: [e.g. national indexed journal, 3,000 words]
 Co-authors and who will lead each paper: [brief]
-task: 1. Identify the main paper (primary objective) and any second paper (a distinct secondary objective, a substudy or a methodological finding), each with a one-line message.
+task: 1. Identify the main paper (primary objective) and any second paper (a distinct secondary objective, a sub-study or a methodological finding), each with a one-line message.
 2. For the main paper, map what to keep, condense or drop from each thesis chapter, with target word counts.
 3. Select the 3–5 tables or figures that carry the main message.
 4. Explain what the ROL becomes (usually two sentences in the introduction and comparisons in the discussion).

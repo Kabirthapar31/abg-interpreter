@@ -122,7 +122,7 @@ task: 1. Check brackets, Boolean operators (upper case), field tags, quotation m
 rules: Keep my intended logic unless it is clearly wrong; if you change the logic, say so explicitly, because a silent change alters which papers I find.
 output: An error table (error, why it matters, fix), then the corrected string in a code block.
 tip: Always read PubMed's search translation. It shows what PubMed actually searched, not what you typed.
-try: (asthma OR wheez*) AND inhaler adherance AND (child* OR paediatric
+try: (asthma OR wheez*) AND inhaler adherence AND (child* OR paediatric
 next: hit-count-fix
 
 @@ S | hit-count-fix | Too many or too few hits: fix my search

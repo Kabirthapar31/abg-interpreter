@@ -37,7 +37,7 @@ context: Objectives: [PASTE OBJECTIVES]
 Results for each objective (brief, with the variable types): [PASTE SUMMARY]
 Number of tables and figures allowed (thesis or journal): [e.g. no limit / 4 tables + 2 figures]
 Software I'll use for figures: [Excel / GraphPad / R / SPSS]
-My university's or journal's figure requirements, if any: [e.g. 300 dpi, grayscale, maximum width]
+My university's or journal's figure requirements, if any: [e.g. 300 dpi, greyscale, maximum width]
 task: 1. Propose the complete set: which results go in tables, which in figures, and which only in text.
 2. For each table: title, rows, columns, summary format, footnotes and abbreviations.
 3. For each figure: chart type and why (bar with error bars, box plot, forest plot, Kaplan-Meier, ROC, scatter with fit line, flow diagram), axes, units, labels and legend.
@@ -179,7 +179,7 @@ task: 1. Give step-by-step instructions (or code) to create the chart.
 4. Write the figure title and legend.
 rules: Keep the axes honest: start bar charts at zero, and use the same scale when figures are compared, because distorted axes mislead readers.
 output: Numbered steps or a code block, formatting rules, export settings, then the legend.
-tip: Make the chart in grayscale first. If it still works, colour will only improve it.
+tip: Make the chart in greyscale first. If it still works, colour will only improve it.
 try: Kaplan-Meier curves for two groups with the number at risk, in R.
 next: caption-writer
 

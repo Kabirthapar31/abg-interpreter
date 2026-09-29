@@ -350,7 +350,7 @@ The clinical question they address: [one line]
 task: 1. Build a table: trial, year, design, population, intervention versus comparator, primary outcome and result, and key limitation.
 2. Write a one-line "what it changed" for each trial.
 3. Put the trials in a timeline showing how the evidence evolved.
-4. Write speaker notes for a 3-minute evidence walkthrough.
+4. Write speaker notes for a 3-minute evidence walk-through.
 rules: Use only the uploaded or pasted trial details, with numbers reproduced exactly, and mark missing details [NOT IN SOURCE], because trial details are what experts in the audience check.
 output: The trials table, the timeline, then the speaker notes.
 tip: One slide with 4–6 trials is enough. Pick the ones that changed practice.

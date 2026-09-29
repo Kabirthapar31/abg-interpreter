@@ -104,6 +104,16 @@ See PROGRESS.md for the section targets and status. Planned sections:
 - Vol 1 section 1.13 already covers research conference abstracts, posters and oral papers, so Vol 2 sections 2.4
   and 2.5 focus on general teaching talks, CMEs, educational posters and visual aids (no duplicates).
 
+## Revision 2 (user review)
+- New cover on every edition: "1,000 Medical Prompts." by Dr. Abhishek J. Benur, Clinical Pulmonologist · Founder,
+  Parabox AI (AI health-tech company), with the approved promise line in the orange band.
+- Page 2 "How to use this ebook" (search, clickable contents, → NEXT chain, what's inside, step-by-step use).
+- Clickable contents (sections + Master/Standard/Quick sub-sections), linked opener lists, linked index, linked → NEXT.
+- "How to use this section" box on every section opener (text in SECTION_USE in build/render.py).
+- The complete edition is now one continuous book (render.py all builds it directly, no merging) with volume dividers.
+- Spelling passes: hunspell en_GB over prompts, placeholders and titles; US/UK consistency; repeated words;
+  article and punctuation checks. British spelling is the house style ("specialty" kept, as NMC/NBEMS use it).
+
 ## Status: COMPLETE
 All 1,000 prompts are written and QA-clean (`python3 build/library.py 1|2|3`, which prints `QA clean` for each).
 All three volumes and the combined edition are rendered, committed and sent. Future work is whatever the user
