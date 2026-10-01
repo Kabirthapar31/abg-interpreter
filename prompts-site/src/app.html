@@ -1,0 +1,349 @@
+<title>1,000 Medical Prompts</title>
+<meta name="description" content="Find the right AI prompt for your thesis, seminar, journal club, exam or viva. 1,000 ready-to-use prompts for doctors, residents and medical students by Dr. Abhishek J. Benur, Parabox AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Lora:ital,wght@1,400;1,500&display=swap">
+<style>
+/* Layout: one search column. Ask bar on top, the answer card below it, related prompts and the topic browser beside it on wide screens. Parabox brand: black with one orange accent, single dark look by design. */
+:root {
+  --bg: #0a0808; --panel: #141010; --panel-2: #1b1513; --line: #2e2420;
+  --ink: #fbf4ec; --body: #e3d8cc; --muted: #ab9e92; --dim: #7d726a;
+  --or: #ff641e; --or-soft: rgba(255, 100, 30, .12); --or-ink: #1a0d05;
+  --sans: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --serif: "Lora", Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--body); font-family: var(--sans); font-size: 15px; line-height: 1.55; margin: 0; padding-inline: 16px; padding-block: 0 48px; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+button, select, input, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--or); outline-offset: 2px; }
+.wrap { max-width: 1120px; margin: 0 auto; }
+
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 20px; }
+.brand { display: flex; align-items: center; gap: 9px; font-size: 11px; font-weight: 600; letter-spacing: .38em; color: var(--ink); text-decoration: none; }
+.brand::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--or); }
+.top .ebook { font-size: 12px; color: var(--muted); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; }
+.top .ebook:hover { color: var(--ink); border-color: var(--or); }
+
+.hero { padding-block: 28px 18px; }
+.kick { font-size: 11px; font-weight: 600; letter-spacing: .28em; text-transform: uppercase; color: var(--or); }
+h1 { font-size: clamp(30px, 6vw, 54px); line-height: 1.02; font-weight: 800; color: var(--ink); margin: 10px 0 12px; text-transform: uppercase; letter-spacing: -.01em; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--or); }
+.hero p { font-family: var(--serif); font-style: italic; color: var(--muted); font-size: 17px; margin: 0; max-width: 62ch; }
+
+form.ask { margin-top: 22px; display: flex; gap: 8px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 6px; }
+form.ask:focus-within { border-color: var(--or); }
+form.ask input { flex: 1; min-width: 0; background: transparent; border: 0; padding: 12px 12px; font-size: 16px; color: var(--ink); }
+form.ask input::placeholder { color: var(--dim); }
+form.ask input:focus { outline: none; }
+.btn { text-decoration: none; display: inline-flex; align-items: center; border: 0; border-radius: 10px; padding: 10px 18px; font-weight: 600; cursor: pointer; background: var(--or); color: var(--or-ink); white-space: nowrap; }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.btn.ghost:hover { border-color: var(--or); }
+.btn.sm { padding: 7px 12px; font-size: 13px; border-radius: 8px; }
+
+.tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 12px; }
+.tools label { font-size: 12px; color: var(--muted); }
+select#topic { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; color: var(--ink); max-width: 100%; min-width: 0; flex: 1 1 260px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chip { font-size: 12.5px; border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 6px 11px; color: var(--body); cursor: pointer; }
+.chip:hover { border-color: var(--or); color: var(--ink); }
+
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 22px; margin-top: 26px; align-items: start; }
+@media (max-width: 880px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+
+.notice { border: 1px solid var(--or); background: var(--or-soft); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px; }
+.notice b { color: var(--ink); }
+.notice p { margin: 0 0 8px; }
+.notice .chips { margin-top: 6px; }
+
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; min-width: 0; }
+.card .head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+.num { font-size: 13px; font-weight: 700; color: var(--or); letter-spacing: .04em; }
+.card h2 { font-size: clamp(20px, 3vw, 26px); line-height: 1.2; color: var(--ink); margin: 4px 0 6px; font-weight: 700; text-wrap: balance; }
+.badge { flex: none; font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; border-radius: 999px; padding: 3px 10px; border: 1px solid var(--or); color: var(--or); }
+.badge.S { background: var(--or); color: var(--or-ink); }
+.badge.M { background: var(--ink); border-color: var(--ink); color: var(--or-ink); }
+.meta { font-size: 12px; color: var(--dim); text-transform: uppercase; letter-spacing: .06em; }
+.meta a { text-decoration: none; color: var(--muted); }
+.meta a:hover { color: var(--or); }
+.use { margin-top: 14px; display: grid; gap: 8px; }
+.use p { margin: 0; }
+.lab { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--or); margin-right: 8px; }
+.why { font-family: var(--serif); font-style: italic; color: var(--muted); }
+.ptext-wrap { margin-top: 16px; }
+.pbar { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.pbar .kick { font-size: 10.5px; }
+.pbar .acts { display: flex; flex-wrap: wrap; gap: 6px; }
+pre.ptext { margin: 0; white-space: pre-wrap; word-wrap: break-word; background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 16px; font-family: var(--mono); font-size: 13.5px; line-height: 1.6; color: var(--body); max-height: 560px; overflow: auto; }
+pre.ptext .ph { color: var(--or); }
+pre.ptext .lbl { color: var(--ink); font-weight: 700; }
+.fillnote { font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+.extras { margin-top: 16px; display: grid; gap: 10px; font-size: 14px; }
+.extras ul { margin: 6px 0 0; padding-left: 18px; }
+.extras li { margin-bottom: 4px; }
+.extras li::marker { color: var(--or); }
+.nextlink { display: inline-flex; gap: 8px; align-items: baseline; text-decoration: none; border-top: 1px solid var(--line); padding-top: 12px; margin-top: 4px; }
+.nextlink b { color: var(--or); }
+.nextlink:hover span { color: var(--ink); }
+.copied { color: var(--or); font-size: 12.5px; }
+
+aside { display: grid; gap: 18px; min-width: 0; }
+.side h3 { font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: var(--or); margin: 0 0 8px; }
+.list { display: grid; gap: 2px; }
+.item { display: grid; grid-template-columns: 46px minmax(0, 1fr) auto; gap: 8px; align-items: baseline; text-align: left; background: transparent; border: 0; border-bottom: 1px solid var(--line); padding: 9px 2px; cursor: pointer; color: var(--body); font-size: 13.5px; width: 100%; }
+.item:hover, .item[aria-current="true"] { color: var(--ink); }
+.item[aria-current="true"] .n { color: var(--ink); }
+.item .n { color: var(--or); font-weight: 600; font-variant-numeric: tabular-nums; }
+.item .tr { font-size: 10px; letter-spacing: .1em; color: var(--dim); }
+.tiers { display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.tiers button { font-size: 12px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: transparent; cursor: pointer; color: var(--muted); }
+.tiers button[aria-pressed="true"] { border-color: var(--or); color: var(--ink); }
+.secline { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+
+footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 12.5px; color: var(--dim); }
+footer b { color: var(--muted); font-weight: 600; }
+@media (prefers-reduced-motion: no-preference) { .card { animation: rise .25s ease-out; } @keyframes rise { from { transform: translateY(6px); opacity: .6; } } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="https://paraboxai.com">PARABOX AI</a>
+    <a class="ebook" href="#about">By Dr. Abhishek J. Benur</a>
+  </header>
+
+  <section class="hero">
+    <div class="kick">Medical AI prompt finder</div>
+    <h1>1,000 Medical <em>Prompts.</em></h1>
+    <p>Type the task in front of you. Get the exact prompt to paste into ChatGPT, Claude, Gemini or Copilot, written for doctors, residents and medical students.</p>
+    <form class="ask" id="ask" autocomplete="off">
+      <label for="q" class="sr" hidden>What do you need a prompt for?</label>
+      <input id="q" name="q" type="search" placeholder="e.g. introduction of my thesis" aria-label="What do you need a prompt for?">
+      <button class="btn" type="submit">Find prompt</button>
+    </form>
+    <div class="tools">
+      <label for="topic">Or browse by topic</label>
+      <select id="topic"><option value="">All 27 topics…</option></select>
+    </div>
+    <div class="chips" id="examples"></div>
+  </section>
+
+  <div class="grid">
+    <main id="main">
+      <div id="notice"></div>
+      <article class="card" id="card"></article>
+    </main>
+    <aside>
+      <section class="side" id="related"></section>
+      <section class="side" id="browse"></section>
+    </aside>
+  </div>
+
+  <footer id="about">
+    <span><b>1,000 Medical Prompts</b> · Dr. Abhishek J. Benur, Clinical Pulmonologist · Founder, Parabox AI</span>
+    <span>@abhishekjbenur · paraboxai.com</span>
+    <span>AI drafts. You decide. Verify every fact, dose and reference before you use it.</span>
+  </footer>
+</div>
+
+<script id="data" type="application/json">/*__DATA__*/</script>
+<script>
+(() => {
+  const DATA = JSON.parse(document.getElementById("data").textContent);
+  const P = DATA.prompts, SEC = DATA.sections;
+  const byN = new Map(P.map(p => [p.n, p]));
+  const secById = new Map(SEC.map(s => [s.id, s]));
+  const TIER = { Q: "Quick", S: "Standard", M: "Master" };
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  // ---------- search ----------
+  const STOP = new Set("a an the of to for in on at by with and or my me i we you your our is are be can could would should please give get show need want help some any this that these those how what which who when where it its from about into prompt prompts ai chatgpt claude gemini copilot using use make do does doing write writing create".split(" "));
+  // phrase and word synonyms, applied before tokenising
+  const PHRASES = [
+    [/\blit(erature)? review\b|\brol\b|\breview of lit(erature)?\b/g, " review literature "],
+    [/\bintro\b/g, " introduction "], [/\bjc\b/g, " journal club "], [/\bddx\b|\bdifferentials?\b/g, " differential diagnosis "],
+    [/\bdx\b/g, " diagnosis "], [/\bstats?\b/g, " statistics "], [/\bppt\b|\bpowerpoint\b|\bdeck\b/g, " slides presentation "],
+    [/\bsample size\b/g, " samplesize "], [/\bcase reports?\b/g, " casereport "], [/\bjournal club\b/g, " journalclub "],
+    [/\bneet[ -]?pg\b/g, " neet "], [/\bupsc[ -]?cms\b/g, " upsc "], [/\bresearch question\b/g, " researchquestion "],
+    [/\bsynopsis\b/g, " synopsis protocol "], [/\bethics committee\b|\biec\b|\birb\b/g, " ethics iec "],
+    [/\bpaper\b|\barticle\b/g, " manuscript paper "], [/\bpublish(ing)?\b|\bpublication\b/g, " publication journal "],
+    [/\bflash ?cards?\b|\banki\b/g, " flashcard "], [/\bmnemonics?\b/g, " mnemonic "], [/\bmcqs?\b/g, " mcq "],
+    [/\bpresent(ation|ing)?\b|\btalk\b|\blecture\b/g, " presentation talk "], [/\bcme\b/g, " cme talk "],
+    [/\bposters?\b/g, " poster "], [/\bviva voce\b/g, " viva "], [/\bosces?\b/g, " osce "],
+    [/\bmethodology\b|\bmethods\b/g, " methods methodology "], [/\bresults?\b/g, " results "], [/\btables?\b/g, " table "],
+    [/\breferences?\b|\bcitations?\b/g, " reference citation "], [/\bstudy plan\b|\btimetable\b|\bschedule\b/g, " plan revision "],
+    [/\bseminars?\b/g, " seminar "], [/\bthesis\b|\bdissertation\b/g, " thesis "], [/\bhypothes[ie]s\b/g, " hypothesis "],
+    [/\baims?\b|\bobjectives?\b/g, " aims objectives "], [/\babstracts?\b/g, " abstract "], [/\bdiscussion\b/g, " discussion "],
+    [/\bconclusions?\b/g, " conclusion "], [/\blimitations?\b/g, " limitation "], [/\breviewers?\b|\bpeer review\b/g, " reviewer "],
+    [/\bgrand rounds?\b/g, " grandrounds case presentation "], [/\bspotters?\b/g, " spotter "], [/\bexams?\b|\bexamination\b/g, " exam "],
+  ];
+  const stem = w => w.length > 4 ? w.replace(/(ations?|ings?|ies|es|s|ed|ly)$/, "") : w;
+  function terms(text) {
+    let t = " " + text.toLowerCase().replace(/[^a-z0-9&\- ]+/g, " ") + " ";
+    for (const [re, rep] of PHRASES) t = t.replace(re, rep);
+    return t.split(/[\s\-]+/).filter(w => w && !STOP.has(w) && w.length > 1).map(stem);
+  }
+  function plain(p) { const s = secById.get(p.s); return s.t + " " + s.why; }
+  // field-weighted index
+  const FIELDS = [["t", 6], ["sec", 4], ["slug", 3], ["use", 2], ["p", 1]];
+  const DOCS = P.map(p => {
+    const s = secById.get(p.s);
+    const f = { t: terms(p.t), sec: terms(s.t), slug: terms(p.slug.replace(/-/g, " ")), use: terms((p.use || "") + " " + (p.why || "") + " " + p.aud), p: terms(p.p) };
+    const tf = new Map();
+    for (const [k, w] of FIELDS) for (const term of f[k]) tf.set(term, (tf.get(term) || 0) + w);
+    return { p, tf, titleSet: new Set(f.t), secSet: new Set(f.sec) };
+  });
+  const DF = new Map();
+  for (const d of DOCS) for (const term of d.tf.keys()) DF.set(term, (DF.get(term) || 0) + 1);
+  const VOCAB = [...DF.keys()].filter(w => w.length > 3);
+  const idf = t => Math.log(1 + P.length / (1 + (DF.get(t) || 0)));
+
+  function lev(a, b) {
+    if (Math.abs(a.length - b.length) > 2) return 9;
+    const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+    for (let j = 1; j <= b.length; j++) d[0][j] = j;
+    for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    return d[a.length][b.length];
+  }
+  function correct(t) {
+    if (DF.has(t)) return t;
+    if (t.length < 5) return null;
+    const maxd = t.length >= 7 ? 2 : 1;
+    let best = null, bd = maxd + 1;
+    for (const v of VOCAB) { const dd = lev(t, v); if (dd < bd || (dd === bd && best && (DF.get(v) > DF.get(best)))) { bd = dd; best = v; } }
+    return bd <= maxd ? best : null;
+  }
+  function search(q) {
+    const raw = [...new Set(terms(q))];
+    const fixed = [], unknown = [];
+    for (const t of raw) { const c = correct(t); if (c) fixed.push(c); else unknown.push(t); }
+    const qs = [...new Set(fixed)];
+    if (!qs.length) return { hits: [], qs, unknown, corrected: false };
+    const hits = [];
+    for (const d of DOCS) {
+      let sc = 0, matched = 0;
+      for (const t of qs) {
+        const tf = d.tf.get(t);
+        if (tf) { matched++; sc += idf(t) * (1 + Math.log(tf)); if (d.titleSet.has(t)) sc += 1.5 * idf(t); if (d.secSet.has(t)) sc += idf(t); }
+      }
+      if (!matched) continue;
+      const cover = matched / (qs.length + unknown.length);
+      sc *= (0.4 + 0.6 * cover) * (d.p.tier === "M" ? 1.12 : 1);
+      hits.push({ p: d.p, sc, cover });
+    }
+    hits.sort((a, b) => b.sc - a.sc || (a.p.tier === "M" ? -1 : 1));
+    return { hits, qs, unknown, corrected: qs.join(" ") !== raw.join(" ") };
+  }
+
+  // ---------- render ----------
+  function fmtPrompt(text) {
+    return esc(text)
+      .replace(/^(MY CONTEXT|TASK|RULES|OUTPUT|TWEAK):/gm, '<span class="lbl">$1:</span>')
+      .replace(/\[[^\]\n]+\]/g, m => `<span class="ph">${m}</span>`);
+  }
+  let current = null;
+  function show(n, opts = {}) {
+    const p = byN.get(n); if (!p) return;
+    current = p;
+    const s = secById.get(p.s);
+    const nx = p.next ? byN.get(p.next) : null;
+    const tips = p.tips.length ? `<div><span class="lab">${p.tier === "M" ? "How to get more out of it" : "Pro tip"}</span><ul>${p.tips.map(t => `<li>${esc(t)}</li>`).join("")}</ul></div>` : "";
+    const enc = encodeURIComponent(p.p);
+    $("card").innerHTML = `
+      <div class="head"><div><div class="num">#${p.n}</div><h2>${esc(p.t)}</h2></div><span class="badge ${p.tier}">${TIER[p.tier]}</span></div>
+      <div class="meta"><a href="#s${p.s.replace(".", "-")}" data-sec="${p.s}">${p.s} ${esc(s.t)}</a> · Volume ${s.v} · ${esc(p.aud)}</div>
+      ${p.use || p.why ? `<div class="use">${p.use ? `<p><span class="lab">Use it</span>${esc(p.use)}</p>` : ""}${p.why ? `<p class="why"><span class="lab" style="font-style:normal;font-family:var(--sans)">Why</span>${esc(p.why)}</p>` : ""}</div>` : ""}
+      <div class="ptext-wrap">
+        <div class="pbar"><span class="kick">Copy the prompt</span>
+          <span class="acts"><button class="btn sm" type="button" id="copy">Copy prompt</button>
+          <a class="btn sm ghost" href="https://chatgpt.com/?q=${enc}" target="_blank" rel="noopener">Open in ChatGPT</a>
+          <a class="btn sm ghost" href="https://claude.ai/new?q=${enc}" target="_blank" rel="noopener">Open in Claude</a></span></div>
+        <pre class="ptext" id="ptext">${fmtPrompt(p.p)}</pre>
+        <div class="fillnote">Replace every <span style="color:var(--or)">[square bracket]</span> with your own details before you send it. <span class="copied" id="copied" aria-live="polite"></span></div>
+      </div>
+      <div class="extras">${p.try ? `<div><span class="lab">Try it with</span>${esc(p.try)}</div>` : ""}${tips}
+      ${nx ? `<a class="nextlink" href="#p${nx.n}" data-n="${nx.n}"><b>→ NEXT #${nx.n}</b><span>${esc(nx.t)}</span></a>` : ""}</div>`;
+    $("copy").onclick = () => {
+      const done = msg => { $("copied").textContent = msg; };
+      try {
+        navigator.clipboard.writeText(p.p).then(() => done("Copied."), () => { selectText(); done("Press Ctrl + C to copy."); });
+      } catch (e) { selectText(); done("Press Ctrl + C to copy."); }
+    };
+    if (!opts.keepBrowse) renderBrowse(p.s, p.n);
+    else markCurrent();
+    if (!opts.noHash) setHash("p" + p.n);
+    if (opts.scroll) $("main").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  function selectText() { const r = document.createRange(); r.selectNodeContents($("ptext")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); }
+  function setHash(h) { try { history.replaceState(null, "", h ? "#" + h : location.pathname + location.search); } catch (e) { /* hash optional */ } }
+
+  function itemBtn(p) {
+    return `<button class="item" type="button" data-n="${p.n}"><span class="n">#${p.n}</span><span>${esc(p.t)}</span><span class="tr">${p.tier}</span></button>`;
+  }
+  function markCurrent() {
+    document.querySelectorAll(".item").forEach(b => b.setAttribute("aria-current", current && +b.dataset.n === current.n ? "true" : "false"));
+  }
+  function renderRelated(list, title) {
+    $("related").innerHTML = list.length ? `<h3>${esc(title)}</h3><div class="list">${list.map(itemBtn).join("")}</div>` : "";
+    markCurrent();
+  }
+  let browseTier = "";
+  function renderBrowse(secId, highlight) {
+    const s = secById.get(secId);
+    $("topic").value = secId;
+    const ps = P.filter(p => p.s === secId && (!browseTier || p.tier === browseTier));
+    $("browse").innerHTML = `<h3>${s.id} · ${esc(s.t)}</h3><p class="secline">${esc(s.why)}</p>
+      <div class="tiers">${["", "M", "S", "Q"].map(k => `<button type="button" data-tier="${k}" aria-pressed="${browseTier === k}">${k ? TIER[k] : "All"}</button>`).join("")}</div>
+      <div class="list">${ps.map(itemBtn).join("")}</div>`;
+    markCurrent();
+  }
+
+  function ask(q) {
+    q = q.trim(); if (!q) return;
+    const { hits, qs, unknown, corrected } = search(q);
+    const strong = hits.length && hits[0].sc >= 6 && hits[0].cover >= (qs.length + unknown.length <= 2 ? 0.99 : 0.6);
+    if (!hits.length || !strong) {
+      // no confident match: suggest questions the library can answer
+      const secHits = new Map();
+      for (const h of hits.slice(0, 40)) secHits.set(h.p.s, (secHits.get(h.p.s) || 0) + h.sc);
+      const secs = [...secHits.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id]) => secById.get(id));
+      const fallback = secs.length ? secs : [secById.get("1.3"), secById.get("2.2"), secById.get("3.3")];
+      const sugg = fallback.flatMap(s => P.filter(p => p.s === s.id && p.tier !== "Q").slice(0, 2)).slice(0, 5);
+      $("notice").innerHTML = `<div class="notice"><p><b>There isn't a prompt for exactly "${esc(q)}" in the library.</b>${unknown.length ? ` I didn't recognise: ${unknown.map(esc).join(", ")}.` : ""} Can you ask this instead?</p>
+        <div class="chips">${sugg.map(p => `<button class="chip" type="button" data-ask="${esc(p.t)}">${esc(p.t)}</button>`).join("")}</div>
+        <p style="margin:10px 0 0;font-size:13px">Or pick a topic from <b>Browse by topic</b> above. Closest topics: ${fallback.map(s => `<a href="#s${s.id.replace(".", "-")}" data-sec="${s.id}">${s.id} ${esc(s.t)}</a>`).join(" · ")}.</p></div>`;
+      if (hits.length) { show(hits[0].p.n, { noHash: true }); renderRelated(hits.slice(1, 9).map(h => h.p), "Other close matches"); }
+      return;
+    }
+    $("notice").innerHTML = corrected ? `<div class="notice"><p>Showing results for <b>${esc(qs.join(" "))}</b>.</p></div>` : "";
+    show(hits[0].p.n, { scroll: window.innerWidth < 880 });
+    renderRelated(hits.slice(1, 9).map(h => h.p), "Related prompts");
+  }
+
+  // ---------- wire up ----------
+  const vols = DATA.vols;
+  $("topic").innerHTML = `<option value="">All 27 topics…</option>` + Object.keys(vols).map(v =>
+    `<optgroup label="Volume ${v} · ${esc(vols[v])}">${SEC.filter(s => String(s.v) === v).map(s => `<option value="${s.id}">${s.id} ${esc(s.t)} (#${s.a}–${s.b})</option>`).join("")}</optgroup>`).join("");
+  $("topic").onchange = e => { if (e.target.value) { $("notice").innerHTML = ""; const s = secById.get(e.target.value); browseTier = ""; show(P.find(p => p.s === s.id).n); renderRelated([], ""); } };
+  const EXAMPLES = ["Introduction of my thesis", "Sample size calculation", "Journal club presentation", "Seminar slides", "Case report", "Differential diagnosis practice", "NEET-PG MCQ practice", "Viva preparation", "Reply to peer reviewers", "Flashcards for revision"];
+  $("examples").innerHTML = EXAMPLES.map(e => `<button class="chip" type="button" data-ask="${esc(e)}">${esc(e)}</button>`).join("");
+  $("ask").addEventListener("submit", e => { e.preventDefault(); ask($("q").value); });
+  document.addEventListener("click", e => {
+    const a = e.target.closest("[data-ask]"); if (a) { $("q").value = a.dataset.ask; ask(a.dataset.ask); return; }
+    const it = e.target.closest("[data-n]"); if (it) { e.preventDefault(); show(+it.dataset.n, { keepBrowse: it.classList.contains("item"), scroll: true }); return; }
+    const sc = e.target.closest("[data-sec]"); if (sc) { e.preventDefault(); browseTier = ""; renderBrowse(sc.dataset.sec); $("browse").scrollIntoView({ behavior: "smooth", block: "start" }); return; }
+    const tb = e.target.closest("[data-tier]"); if (tb) { browseTier = tb.dataset.tier; renderBrowse($("topic").value || current.s); }
+  });
+
+  // start: deep link (#p415 or #s1-3) or a worked example
+  const h = (location.hash || "").slice(1);
+  if (/^p\d+$/.test(h) && byN.has(+h.slice(1))) show(+h.slice(1), { noHash: true });
+  else if (/^s\d+-\d+$/.test(h) && secById.has(h.slice(1).replace("-", "."))) { const id = h.slice(1).replace("-", "."); show(P.find(p => p.s === id).n, { noHash: true }); }
+  else { $("q").value = "Give me a prompt for the introduction of my thesis"; ask($("q").value); setHash(""); }
+})();
+</script>
